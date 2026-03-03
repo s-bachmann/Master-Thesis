@@ -16,5 +16,1324 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{barteltPhysicalSNOWPACKModel2002}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ae851b409c7b31809f239b4c1bdc05d5}{%
+           family={Bartelt},
+           familyi={B\bibinitperiod},
+           given={Perry},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01e53f2003ec2ed8e81f6ad9f25dd417}{%
+           family={Lehning},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{fullhash}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{fullhashraw}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{bibnamehash}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{authorbibnamehash}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{authornamehash}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{authorfullhash}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{authorfullhashraw}{2a3dbb3e2568c38aab848f67540bdf77}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The numerical formulation of a one-dimensional physical snowpack model is presented. The model is operationally employed on a day-to-day basis by avalanche warners to predict snowpack settlement, layering, surface energy exchange and mass balance. Meteorological data obtained from automatic weather stations positioned near avalanche starting zones is used as model input. In this paper, the one-dimensional equations governing the heat transfer, water transport, vapour diffusion and mechanical deformation of a phase changing snowpack are stated. New snow, wind drift and snow ablation are treated as special mass boundary conditions. Snow is modelled as a three-component (ice, water, air) porous material capable of undergoing large irreversible viscous deformations. Phase changes between the components are simulated. Snow layers are defined not only in terms of height and density, but also microstructure. That is, by the size, shape and bonding of the grains composing the ice lattice. The governing differential equations are solved using a fully implicit Lagrangian Gauss--Seidel finite-element method. Example calculations from the catastrophic avalanche winter 1999 are presented to document model performance. The overall mass balance evaluation shows that the model accurately predicts the build-up and ablation of the seasonal alpine snowcover.}
+      \field{issn}{0165-232X}
+      \field{journaltitle}{Cold Regions Science and Technology}
+      \field{month}{11}
+      \field{number}{3}
+      \field{shorttitle}{A Physical {{SNOWPACK}} Model for the {{Swiss}} Avalanche Warning}
+      \field{title}{A Physical {{SNOWPACK}} Model for the {{Swiss}} Avalanche Warning: {{Part I}}: Numerical Model}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{35}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \field{pages}{123\bibrangedash 145}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1016/S0165-232X(02)00074-5
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/53IXB2MM/S0165232X02000745.html
+      \endverb
+      \keyw{Avalanche,Finite element model,Heat and mass transfer,Phase change,Snow,Snow deformation}
+    \endentry
+    \entry{bobillierMicromechanicalModelingSnow2020}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=2a140ece15f75305fa9a7a03d791c707}{%
+           family={Bobillier},
+           familyi={B\bibinitperiod},
+           given={Grégoire},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45cd7f65b6ceeddfce73beb6b18c5124}{%
+           family={Bergfeld},
+           familyi={B\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd2ff5e9bbdec786a53d0299bae434cf}{%
+           family={Capelli},
+           familyi={C\bibinitperiod},
+           given={Achille},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ccc26f5ca81df4eb735fda4f78a0e7fd}{%
+           family={Dual},
+           familyi={D\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{240f0fe28bd2dce16683b363a3cca394}
+      \strng{fullhash}{17422a5b08a45e89e5b7097ce9012acd}
+      \strng{fullhashraw}{17422a5b08a45e89e5b7097ce9012acd}
+      \strng{bibnamehash}{17422a5b08a45e89e5b7097ce9012acd}
+      \strng{authorbibnamehash}{17422a5b08a45e89e5b7097ce9012acd}
+      \strng{authornamehash}{240f0fe28bd2dce16683b363a3cca394}
+      \strng{authorfullhash}{17422a5b08a45e89e5b7097ce9012acd}
+      \strng{authorfullhashraw}{17422a5b08a45e89e5b7097ce9012acd}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dry-snow slab avalanches start with the formation of a local failure in a highly porous weak layer underlying a cohesive snow slab. If followed by rapid crack propagation within the weak layer and finally a tensile fracture through the slab, a slab avalanche releases. While the basic concepts of avalanche release are relatively well understood, performing fracture experiments in the laboratory or in the field can be difficult due to the fragile nature of weak snow layers. Numerical simulations are a valuable tool for the study of micromechanical processes that lead to failure in snow. We used a three-dimensional discrete element method (3-D DEM) to simulate and analyze failure processes in snow. Cohesive and cohesionless ballistic deposition allowed us to reproduce porous weak layers and dense cohesive snow slabs, respectively. To analyze the micromechanical behavior at the scale of the snowpack ({$\sim$}1\&thinsp;m), the particle size was chosen as a compromise between low computational costs and detailed representation of important micromechanical processes. The 3-D-DEM snow model allowed reproduction of the macroscopic behavior observed during compression and mixed-mode loading of dry-snow slab and the weak snow layer. To be able to reproduce the range of snow behavior (elastic modulus, strength), relations between DEM particle and contact parameters and macroscopic behavior were established. Numerical load-controlled failure experiments were performed on small samples and compared to results from load-controlled laboratory tests. Overall, our results show that the discrete element method allows us to realistically simulate snow failure processes. Furthermore, the presented snow model seems appropriate for comprehensively studying how the mechanical properties of the slab and weak layer influence crack propagation preceding avalanche release.}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Micromechanical Modeling of Snow Failure}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{14}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{39\bibrangedash 49}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.5194/tc-14-39-2020
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/E44MI2DV/Bobillier et al. - 2020 - Micromechanical modeling of snow failure.pdf
+      \endverb
+    \endentry
+    \entry{bobillierNumericalInvestigationCrack2024}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=2a140ece15f75305fa9a7a03d791c707}{%
+           family={Bobillier},
+           familyi={B\bibinitperiod},
+           given={Grégoire},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45cd7f65b6ceeddfce73beb6b18c5124}{%
+           family={Bergfeld},
+           familyi={B\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ccc26f5ca81df4eb735fda4f78a0e7fd}{%
+           family={Dual},
+           familyi={D\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{240f0fe28bd2dce16683b363a3cca394}
+      \strng{fullhash}{9c33477e8413b86d6180b57ae68c8566}
+      \strng{fullhashraw}{9c33477e8413b86d6180b57ae68c8566}
+      \strng{bibnamehash}{9c33477e8413b86d6180b57ae68c8566}
+      \strng{authorbibnamehash}{9c33477e8413b86d6180b57ae68c8566}
+      \strng{authornamehash}{240f0fe28bd2dce16683b363a3cca394}
+      \strng{authorfullhash}{9c33477e8413b86d6180b57ae68c8566}
+      \strng{authorfullhashraw}{9c33477e8413b86d6180b57ae68c8566}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A snow slab avalanche releases after failure initiation and crack propagation in a highly porous weak snow layer buried below a cohesive slab. While our knowledge of crack propagation during avalanche formation has greatly improved over the last decades, it still remains unclear how snow mechanical properties affect the dynamics of crack propagation. This is partly due to a lack of non-invasive measurement methods to investigate the micro-mechanical aspects of the process. Using a DEM model, we therefore analyzed the influence of snow cover properties on the dynamics of crack propagation in weak snowpack layers. By focusing on the steady-state crack speed, our results showed two distinct fracture process regimes that depend on slope angle, leading to very different crack propagation speeds. For long experiments on level terrain, weak layer fracture is mainly driven by compressive stresses. Steady-state crack speed mainly depends on slab and weak layer elastic moduli as well as weak layer strength. We suggest a semi-empirical model to predict crack speed, which can be up to 0.6 times the slab shear wave speed. For long experiments on steep slopes, a supershear regime appeared, where the crack propagation speed reached approximately 1.6 times the slab shear wave speed. A detailed micro-mechanical analysis of stresses revealed a fracture principally driven by shear. Overall, our findings provide new insight into the micro-mechanics of dynamic crack propagation in snow, and how these are linked to snow cover properties.}
+      \field{issn}{1434-7636}
+      \field{journaltitle}{Granular Matter}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{3}
+      \field{title}{Numerical Investigation of Crack Propagation Regimes in Snow Fracture Experiments}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{26}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{58}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s10035-024-01423-5
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/VLU8T7JQ/Bobillier et al. - 2024 - Numerical investigation of crack propagation regimes in snow fracture experiments.pdf
+      \endverb
+      \keyw{Crack Propagation,Discrete Element Method Modeling,Snow Avalanche,Supershear}
+    \endentry
+    \entry{brunNumericalModelSimulate1992}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=4cac7d658fc0118bb76ad0780019e861}{%
+           family={Brun},
+           familyi={B\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db8970ea7897cb700d533df376ddde33}{%
+           family={David},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b9e463adcd3d9343a75ecbb70ad6e14}{%
+           family={Sudul},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb0cb3d9c55daf45355c2d72361f5bd6}{%
+           family={Brunot},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{faa4dbe39a9c7db21123396bd6834104}
+      \strng{fullhash}{72586087dcce2fe933295b68a7b3ec3e}
+      \strng{fullhashraw}{72586087dcce2fe933295b68a7b3ec3e}
+      \strng{bibnamehash}{72586087dcce2fe933295b68a7b3ec3e}
+      \strng{authorbibnamehash}{72586087dcce2fe933295b68a7b3ec3e}
+      \strng{authornamehash}{faa4dbe39a9c7db21123396bd6834104}
+      \strng{authorfullhash}{72586087dcce2fe933295b68a7b3ec3e}
+      \strng{authorfullhashraw}{72586087dcce2fe933295b68a7b3ec3e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Laws of snow metamorphism have been introduced in a numerical model which simulates the evolution of temperature, density and liquid-water profiles of snow cover as a function of weather conditions.To establish these laws, the authors have summarized previous studies on temperature gradient and on wet-snow metamorphism and they have also conducted metamorphism experiments on dry or wet fresh-snow samples. An original formalism was developed to allow a description of snow with parameters evolving continuously throughout time.The introduction of laws of metamorphism has improved significantly the derivation of the settlement of internal layers and of snow-covered albedo, which depend on the simulated stratigraphy, i.e. the type and size of snow grains of different layers of the snow cover.The model was tested during a whole winter season without any re-initialization. Comparison between the simulated characteristics of the snow cover and the observations made in the field are described in detail. The model proved itself to be very efficient in simulating accurately the evolution of the snow-cover stratigraphy throughout the whole winter season.}
+      \field{issn}{0022-1430, 1727-5652}
+      \field{journaltitle}{Journal of Glaciology}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{128}
+      \field{title}{A Numerical Model to Simulate Snow-Cover Stratigraphy for Operational Avalanche Forecasting}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{38}
+      \field{year}{1992}
+      \field{urldateera}{ce}
+      \field{pages}{13\bibrangedash 22}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.3189/S0022143000009552
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/4DJ98AFL/Brun et al. - 1992 - A numerical model to simulate snow-cover stratigraphy for operational avalanche forecasting.pdf
+      \endverb
+    \endentry
+    \entry{cundallDiscreteNumericalModel1979}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d5dd574aba8f7acf574d7a33b2a3c9ed}{%
+           family={Cundall},
+           familyi={C\bibinitperiod},
+           given={P.\bibnamedelimi A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73afe83d6beccacf41e0e0fd4b93130d}{%
+           family={Strack},
+           familyi={S\bibinitperiod},
+           given={O.\bibnamedelimi D.\bibnamedelimi L.},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{95c063cb8336718e96baaceeced88d01}
+      \strng{fullhash}{95c063cb8336718e96baaceeced88d01}
+      \strng{fullhashraw}{95c063cb8336718e96baaceeced88d01}
+      \strng{bibnamehash}{95c063cb8336718e96baaceeced88d01}
+      \strng{authorbibnamehash}{95c063cb8336718e96baaceeced88d01}
+      \strng{authornamehash}{95c063cb8336718e96baaceeced88d01}
+      \strng{authorfullhash}{95c063cb8336718e96baaceeced88d01}
+      \strng{authorfullhashraw}{95c063cb8336718e96baaceeced88d01}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The distinct element method is a numerical model capable of describing the mechanical behaviour of assemblies of discs and spheres. The method is based on the use of an explicit numerical scheme in which the interaction of the particles is monitored contact by contact and the motion of the particles modelled particle by particle. The main features of the distinct element method are described. The method is validated by comparing force vector plots obtained from the computer program BALL with the corresponding plots obtained from a photoelastic analysis. The photoelastic analysis used for the comparison is the one applied to an assembly of discs by De Josselin de Jong and Verruijt (1969). The force vector diagrams obtained numerically closely resemble those obtained photoelastically. It is concluded from this comparison that the distinct element method and the program BALL are valid tools for research into the behaviour of granular assemblies.La méthode des éléments distincts est un modèle numérique capable de décrire le comportement mécanique de l'assemblage de disques et de sphères. La méthode est basée sur l'utilisation d'un système numérique explicite dans lequel l'interaction des particules est contrôlée contact par contact et le mouvement des particules simulé particule par particule. Les caracteristiques principales de la méthode des eléments distints sont décrites. La méthode est validée en comparant les tracés de vecteur de force obtenus par le programme sur ordicateur BALL avec les tracés correspondants obtanus a l'aide d'une analyse photo-élastique. L'analyse photo-élastique utilisée pour la comparaison est celle appliquée sur un assemblage de disques par De Josselin de Jong et Verruijt (1969). Les diagrammes de vecteur de force obtenus numériquement sont très voisins de ceux obtenus photo-élastiquement. Cette comparaison permet de conclure que la methode des éléments distincts et le programme BALL sont des instruments valables pour la recherche du comportement des assemblages granulaires.}
+      \field{issn}{0016-8505}
+      \field{journaltitle}{Géotechnique}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{A Discrete Numerical Model for Granular Assemblies}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{29}
+      \field{year}{1979}
+      \field{urldateera}{ce}
+      \field{pages}{47\bibrangedash 65}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1680/geot.1979.29.1.47
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/RDMHB5GA/Cundall and Strack - 1979 - A discrete numerical model for granular assemblies.pdf;/Users/salomebachmann/Zotero/storage/23R9HWVH/geot.1979.29.1.html
+      \endverb
+    \endentry
+    \entry{gaumeModelingCrackPropagation2015}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e772559f9d1c403eec44521d61b399a4}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b00285ad021271e67874fa4fbd65472}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0175c41468776197652bd30b5bc3728c}{%
+           family={Chambon},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea15836e9b957b6592c223abea3a1d4d}{%
+           family={Birkeland},
+           familyi={B\bibinitperiod},
+           given={K.\bibnamedelimi W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7de90264c9b21df59df1140db9f75bb6}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{fullhash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{fullhashraw}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{bibnamehash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{authorbibnamehash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{authornamehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{authorfullhash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{authorfullhashraw}{a077172f1e0786d0af96cf9266b4889f}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dry-snow slab avalanches are generally caused by a sequence of fracture processes including (1) failure initiation in a weak snow layer underlying a cohesive slab, (2) crack propagation within the weak layer and (3) tensile fracture through the slab which leads to its detachment. During the past decades, theoretical and experimental work has gradually led to a better understanding of the fracture process in snow involving the collapse of the structure in the weak layer during fracture. This now allows us to better model failure initiation and the onset of crack propagation, i.e., to estimate the critical length required for crack propagation. On the other hand, our understanding of dynamic crack propagation and fracture arrest propensity is still very limited. To shed more light on this issue, we performed numerical propagation saw test (PST) experiments applying the discrete element (DE) method and compared the numerical results with field measurements based on particle tracking. The goal is to investigate the influence of weak layer failure and the mechanical properties of the slab on crack propagation and fracture arrest propensity. Crack propagation speeds and distances before fracture arrest were derived from the DE simulations for different snowpack configurations and mechanical properties. Then, in order to compare the numerical and experimental results, the slab mechanical properties (Young's modulus and strength) which are not measured in the field were derived from density. The simulations nicely reproduced the process of crack propagation observed in field PSTs. Finally, the mechanical processes at play were analyzed in depth which led to suggestions for minimum column length in field PSTs.}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{5}
+      \field{title}{Modeling of Crack Propagation in Weak Snowpack Layers Using the Discrete Element Method}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{1915\bibrangedash 1932}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.5194/tc-9-1915-2015
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/VZ7EZF64/Gaume et al. - 2015 - Modeling of crack propagation in weak snowpack layers using the discrete element method.pdf
+      \endverb
+    \endentry
+    \entry{gaumeSnowFractureRelation2017a}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=201c20657efc8ba9ab901a29f000ef47}{%
+           family={Chambon},
+           familyi={C\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f6b397043b02adbd7b1e22348339ee21}{%
+           family={Wever},
+           familyi={W\bibinitperiod},
+           given={Nander},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
+      \strng{fullhash}{3507f8435e03c0574550cd83c824584b}
+      \strng{fullhashraw}{3507f8435e03c0574550cd83c824584b}
+      \strng{bibnamehash}{3507f8435e03c0574550cd83c824584b}
+      \strng{authorbibnamehash}{3507f8435e03c0574550cd83c824584b}
+      \strng{authornamehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
+      \strng{authorfullhash}{3507f8435e03c0574550cd83c824584b}
+      \strng{authorfullhashraw}{3507f8435e03c0574550cd83c824584b}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The failure of a weak snow layer buried below cohesive slab layers is a necessary, but insufficient, condition for the release of a dry-snow slab avalanche. The size of the crack in the weak layer must also exceed a critical length to propagate across a slope. In contrast to pioneering shear-based approaches, recent developments account for weak layer collapse and allow for better explaining typical observations of remote triggering from low-angle terrain. However, these new models predict a critical length for crack propagation that is almost independent of slope angle, a rather surprising and counterintuitive result. Based on discrete element simulations we propose a new analytical expression for the critical crack length. This new model reconciles past approaches by considering for the first time the complex interplay between slab elasticity and the mechanical behavior of the weak layer including its structural collapse. The crack begins to propagate when the stress induced by slab loading and deformation at the crack tip exceeds the limit given by the failure envelope of the weak layer. The model can reproduce crack propagation on low-angle terrain and the decrease in critical length with increasing slope angle as modeled in numerical experiments. The good agreement of our new model with extensive field data and the ease of implementation in the snow cover model SNOWPACK opens a promising prospect for improving avalanche forecasting.}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{Snow Fracture in Relation to Slab Avalanche Release}
+      \field{title}{Snow Fracture in Relation to Slab Avalanche Release: Critical State for the Onset of Crack Propagation}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{11}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{217\bibrangedash 228}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.5194/tc-11-217-2017
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/TJ6952VW/Gaume et al. - 2017 - Snow fracture in relation to slab avalanche release critical state for the onset of crack propagati.pdf
+      \endverb
+    \endentry
+    \entry{gaumeInvestigatingReleaseFlow2019}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd5446bf01a813877483c438517f8dd1}{%
+           family={Gast},
+           familyi={G\bibinitperiod},
+           given={Ted},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=607723b8a48656868aeb4efee654160d}{%
+           family={Teran},
+           familyi={T\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e23acb91338712715b1e858a29723c6b}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Chenfanfu},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
+      \strng{fullhash}{8ca67275596b9d472f4651204a7a99be}
+      \strng{fullhashraw}{8ca67275596b9d472f4651204a7a99be}
+      \strng{bibnamehash}{8ca67275596b9d472f4651204a7a99be}
+      \strng{authorbibnamehash}{8ca67275596b9d472f4651204a7a99be}
+      \strng{authornamehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
+      \strng{authorfullhash}{8ca67275596b9d472f4651204a7a99be}
+      \strng{authorfullhashraw}{8ca67275596b9d472f4651204a7a99be}
+      \field{extraname}{3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Snow slab avalanches start with a failure in a weak snow layer buried below a cohesive snow slab. After failure, the very porous character of the weak layer leads to its volumetric collapse and thus closing of crack faces due to the weight of the overlaying slab. This complex process, generally referred to as anticrack, explains why avalanches that release on steep slopes can be triggered from flat terrain. On the basis of a new elastoplastic model for porous cohesive materials and the Material Point Method, we investigate the dynamics of mixed-mode anticracks, the subsequent detachment of the slab and the flow of the avalanche. In particular, we performed two and three dimensional slope scale simulations of both the release and flow of slab avalanches triggered either directly or remotely. We describe the fracture and flow dynamics on a realistic topography and focus on the volumetric plastic strain, stress invariants, propagation speed and flow velocity. Our simulations reproduce typical observations of ``en-echelon'' fractures and the propagation speed reached up to three times that measured in field experiments. In addition, slab fracture always started from the top in the Propagation Saw Test while it systematically initiated at the interface with the weak layer at the crown of slope-scale simulations in agreement with limited field observations. During the avalanche flow, snow granulation, erosion and deposition processes were naturally simulated and do not need additional implementations. Our unified model represents a significant step forward as it allows simulating the entire avalanche process, from failure initiation to crack propagation and to solid-fluid phase transitions, which is of paramount importance to forecast and mitigate snow avalanches.}
+      \field{issn}{0165-232X}
+      \field{journaltitle}{Cold Regions Science and Technology}
+      \field{month}{12}
+      \field{title}{Investigating the Release and Flow of Snow Avalanches at the Slope-Scale Using a Unified Model Based on the Material Point Method}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{168}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{102847}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.coldregions.2019.102847
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/JEVHGGC8/Gaume et al. - 2019 - Investigating the release and flow of snow avalanches at the slope-scale using a unified model based.pdf;/Users/salomebachmann/Zotero/storage/TFR3K349/S0165232X19302149.html
+      \endverb
+      \keyw{Crack propagation,Finite strain elastoplasticity,Material point method,MPM,Slab,Snow avalanche,Weak layer}
+    \endentry
+    \entry{mulakNumericalInvestigationMixedmode2019}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cb2bbe32c0cdb4bf3a4b1c4e5035f811}{%
+           family={Mulak},
+           familyi={M\bibinitperiod},
+           given={Dominika},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{fullhash}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{fullhashraw}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{bibnamehash}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{authorbibnamehash}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{authornamehash}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{authorfullhash}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{authorfullhashraw}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The failure of a weak snow layer underlying a cohesive slab is the primary step in the release process of a dry snow slab avalanche. The complex and heterogeneous microstructure of snow limits our understanding of failure initiation inside the weak layer, especially under mixed-mode shear--compression loading. Further complication arises from the dependence of snow strength on the loading rate induced by the balance between bond breaking and bond formation (sintering) during the failure process. Here, we use the discrete element method to investigate the influence of mixed-mode loading and fast sintering on the failure of a weak layer generated using cohesive ballistic deposition. Both fast and slow loading simulations resulted in a mixed-mode failure envelope in good agreement with laboratory experiments. We show that the number of broken bonds at failure and the weak layer strength significantly decreases with increasing loading angle, regardless of the loading rate. While the influence of loading rate appears negligible in shear-dominant loading (for loading angles above 30{$\circ$}), simulations suggest a significant increase in the weak layer strength at low loading angles and low loading rates, characteristic of natural avalanches, due to the presence of an active sintering mechanism.}
+      \field{issn}{2196-4386}
+      \field{journaltitle}{Computational Particle Mechanics}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{Numerical Investigation of the Mixed-Mode Failure of Snow}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{6}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{439\bibrangedash 447}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/s40571-019-00224-5
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/CL8ZBB3S/Mulak and Gaume - 2019 - Numerical investigation of the mixed-mode failure of snow.pdf;/Users/salomebachmann/Zotero/storage/QC456XP9/S2196438625006679.html
+      \endverb
+      \keyw{Avalanche,Cohesion,DEM,Discrete element method,Failure envelope,Mixed-mode failure,Sintering,Slab,Snow,Weak layer}
+    \endentry
+    \entry{rosendahlModelingSnowSlab2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=46516e5984264a24cd3aedc2e9eac8fa}{%
+           family={Rosendahl},
+           familyi={R\bibinitperiod},
+           given={Philipp\bibnamedelima L.},
+           giveni={P\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=206fa05600939d81a6c1ad3921e28dd3}{%
+           family={Wei{ß}graeber},
+           familyi={W\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{fullhash}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{fullhashraw}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{bibnamehash}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{authorbibnamehash}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{authornamehash}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{authorfullhash}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{authorfullhashraw}{517ff9551e2f667945bcc96c16b29bb9}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Using the analytical model presented in Part 1 of this two-part paper, a new conceptual understanding of anticrack nucleation in weak layers is proposed. To obtain a sufficient condition for onset of failure, two necessary conditions must be satisfied simultaneously: (i) the weak layer must be overloaded in terms of stress and (ii) the initiating crack must release enough energy for the formation of new surfaces. This so-called coupled criterion was proposed by Leguillon (2002). No assumptions on initial defects within the weak layer are needed. Instead, the failure criterion provides both critical loading and the size of initiating cracks. It only requires the fundamental material properties strength and fracture toughness as inputs. Crack initiation and subsequent propagation are covered by a single criterion containing both a strength-of-materials and a fracture mechanics condition. Analyses of skier-loaded snowpacks show the impact of slab thickness and slope angle on critical loading and crack initiation length. In the limit cases of very thick slabs and very steep slopes, we obtain natural avalanche release. A discussion of different mixed-mode stress and energy criteria reveals that a wrong choice of mixed-mode hypotheses can yield unphysical results. The effect of material parameters such as density and compliance on weak-layer collapse is illustrated. The framework presented in this two-part series harnesses the efficiency of closed-form solutions to provide fast and physically sound predictions of critical snowpack loads using a new conceptual understanding of mixed-mode weak-layer failure. It emphasized the importance of both stress and energy in avalanche release.}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{Modeling Snow Slab Avalanches Caused by Weak-Layer Failure -- {{Part}} 2}
+      \field{title}{Modeling Snow Slab Avalanches Caused by Weak-Layer Failure -- {{Part}} 2: {{Coupled}} Mixed-Mode Criterion for Skier-Triggered Anticracks}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{14}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{131\bibrangedash 145}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.5194/tc-14-131-2020
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/JBCXEFGK/Rosendahl and Weißgraeber - 2020 - Modeling snow slab avalanches caused by weak-layer failure – Part 2 Coupled mixed-mode criterion fo.pdf
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{barteltPhysicalSNOWPACKModel2002}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ae851b409c7b31809f239b4c1bdc05d5}{%
+           family={Bartelt},
+           familyi={B\bibinitperiod},
+           given={Perry},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01e53f2003ec2ed8e81f6ad9f25dd417}{%
+           family={Lehning},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{fullhash}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{fullhashraw}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{bibnamehash}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{authorbibnamehash}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{authornamehash}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{authorfullhash}{2a3dbb3e2568c38aab848f67540bdf77}
+      \strng{authorfullhashraw}{2a3dbb3e2568c38aab848f67540bdf77}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The numerical formulation of a one-dimensional physical snowpack model is presented. The model is operationally employed on a day-to-day basis by avalanche warners to predict snowpack settlement, layering, surface energy exchange and mass balance. Meteorological data obtained from automatic weather stations positioned near avalanche starting zones is used as model input. In this paper, the one-dimensional equations governing the heat transfer, water transport, vapour diffusion and mechanical deformation of a phase changing snowpack are stated. New snow, wind drift and snow ablation are treated as special mass boundary conditions. Snow is modelled as a three-component (ice, water, air) porous material capable of undergoing large irreversible viscous deformations. Phase changes between the components are simulated. Snow layers are defined not only in terms of height and density, but also microstructure. That is, by the size, shape and bonding of the grains composing the ice lattice. The governing differential equations are solved using a fully implicit Lagrangian Gauss--Seidel finite-element method. Example calculations from the catastrophic avalanche winter 1999 are presented to document model performance. The overall mass balance evaluation shows that the model accurately predicts the build-up and ablation of the seasonal alpine snowcover.}
+      \field{issn}{0165-232X}
+      \field{journaltitle}{Cold Regions Science and Technology}
+      \field{month}{11}
+      \field{number}{3}
+      \field{shorttitle}{A Physical {{SNOWPACK}} Model for the {{Swiss}} Avalanche Warning}
+      \field{title}{A Physical {{SNOWPACK}} Model for the {{Swiss}} Avalanche Warning: {{Part I}}: Numerical Model}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{35}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \field{pages}{123\bibrangedash 145}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1016/S0165-232X(02)00074-5
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/53IXB2MM/S0165232X02000745.html
+      \endverb
+      \keyw{Avalanche,Finite element model,Heat and mass transfer,Phase change,Snow,Snow deformation}
+    \endentry
+    \entry{bobillierMicromechanicalModelingSnow2020}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=2a140ece15f75305fa9a7a03d791c707}{%
+           family={Bobillier},
+           familyi={B\bibinitperiod},
+           given={Grégoire},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45cd7f65b6ceeddfce73beb6b18c5124}{%
+           family={Bergfeld},
+           familyi={B\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd2ff5e9bbdec786a53d0299bae434cf}{%
+           family={Capelli},
+           familyi={C\bibinitperiod},
+           given={Achille},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ccc26f5ca81df4eb735fda4f78a0e7fd}{%
+           family={Dual},
+           familyi={D\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{240f0fe28bd2dce16683b363a3cca394}
+      \strng{fullhash}{17422a5b08a45e89e5b7097ce9012acd}
+      \strng{fullhashraw}{17422a5b08a45e89e5b7097ce9012acd}
+      \strng{bibnamehash}{17422a5b08a45e89e5b7097ce9012acd}
+      \strng{authorbibnamehash}{17422a5b08a45e89e5b7097ce9012acd}
+      \strng{authornamehash}{240f0fe28bd2dce16683b363a3cca394}
+      \strng{authorfullhash}{17422a5b08a45e89e5b7097ce9012acd}
+      \strng{authorfullhashraw}{17422a5b08a45e89e5b7097ce9012acd}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dry-snow slab avalanches start with the formation of a local failure in a highly porous weak layer underlying a cohesive snow slab. If followed by rapid crack propagation within the weak layer and finally a tensile fracture through the slab, a slab avalanche releases. While the basic concepts of avalanche release are relatively well understood, performing fracture experiments in the laboratory or in the field can be difficult due to the fragile nature of weak snow layers. Numerical simulations are a valuable tool for the study of micromechanical processes that lead to failure in snow. We used a three-dimensional discrete element method (3-D DEM) to simulate and analyze failure processes in snow. Cohesive and cohesionless ballistic deposition allowed us to reproduce porous weak layers and dense cohesive snow slabs, respectively. To analyze the micromechanical behavior at the scale of the snowpack ({$\sim$}1\&thinsp;m), the particle size was chosen as a compromise between low computational costs and detailed representation of important micromechanical processes. The 3-D-DEM snow model allowed reproduction of the macroscopic behavior observed during compression and mixed-mode loading of dry-snow slab and the weak snow layer. To be able to reproduce the range of snow behavior (elastic modulus, strength), relations between DEM particle and contact parameters and macroscopic behavior were established. Numerical load-controlled failure experiments were performed on small samples and compared to results from load-controlled laboratory tests. Overall, our results show that the discrete element method allows us to realistically simulate snow failure processes. Furthermore, the presented snow model seems appropriate for comprehensively studying how the mechanical properties of the slab and weak layer influence crack propagation preceding avalanche release.}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Micromechanical Modeling of Snow Failure}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{14}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{39\bibrangedash 49}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.5194/tc-14-39-2020
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/E44MI2DV/Bobillier et al. - 2020 - Micromechanical modeling of snow failure.pdf
+      \endverb
+    \endentry
+    \entry{bobillierNumericalInvestigationCrack2024}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=2a140ece15f75305fa9a7a03d791c707}{%
+           family={Bobillier},
+           familyi={B\bibinitperiod},
+           given={Grégoire},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45cd7f65b6ceeddfce73beb6b18c5124}{%
+           family={Bergfeld},
+           familyi={B\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ccc26f5ca81df4eb735fda4f78a0e7fd}{%
+           family={Dual},
+           familyi={D\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{240f0fe28bd2dce16683b363a3cca394}
+      \strng{fullhash}{9c33477e8413b86d6180b57ae68c8566}
+      \strng{fullhashraw}{9c33477e8413b86d6180b57ae68c8566}
+      \strng{bibnamehash}{9c33477e8413b86d6180b57ae68c8566}
+      \strng{authorbibnamehash}{9c33477e8413b86d6180b57ae68c8566}
+      \strng{authornamehash}{240f0fe28bd2dce16683b363a3cca394}
+      \strng{authorfullhash}{9c33477e8413b86d6180b57ae68c8566}
+      \strng{authorfullhashraw}{9c33477e8413b86d6180b57ae68c8566}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A snow slab avalanche releases after failure initiation and crack propagation in a highly porous weak snow layer buried below a cohesive slab. While our knowledge of crack propagation during avalanche formation has greatly improved over the last decades, it still remains unclear how snow mechanical properties affect the dynamics of crack propagation. This is partly due to a lack of non-invasive measurement methods to investigate the micro-mechanical aspects of the process. Using a DEM model, we therefore analyzed the influence of snow cover properties on the dynamics of crack propagation in weak snowpack layers. By focusing on the steady-state crack speed, our results showed two distinct fracture process regimes that depend on slope angle, leading to very different crack propagation speeds. For long experiments on level terrain, weak layer fracture is mainly driven by compressive stresses. Steady-state crack speed mainly depends on slab and weak layer elastic moduli as well as weak layer strength. We suggest a semi-empirical model to predict crack speed, which can be up to 0.6 times the slab shear wave speed. For long experiments on steep slopes, a supershear regime appeared, where the crack propagation speed reached approximately 1.6 times the slab shear wave speed. A detailed micro-mechanical analysis of stresses revealed a fracture principally driven by shear. Overall, our findings provide new insight into the micro-mechanics of dynamic crack propagation in snow, and how these are linked to snow cover properties.}
+      \field{issn}{1434-7636}
+      \field{journaltitle}{Granular Matter}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{3}
+      \field{title}{Numerical Investigation of Crack Propagation Regimes in Snow Fracture Experiments}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{26}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{58}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s10035-024-01423-5
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/VLU8T7JQ/Bobillier et al. - 2024 - Numerical investigation of crack propagation regimes in snow fracture experiments.pdf
+      \endverb
+      \keyw{Crack Propagation,Discrete Element Method Modeling,Snow Avalanche,Supershear}
+    \endentry
+    \entry{brunNumericalModelSimulate1992}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=4cac7d658fc0118bb76ad0780019e861}{%
+           family={Brun},
+           familyi={B\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db8970ea7897cb700d533df376ddde33}{%
+           family={David},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b9e463adcd3d9343a75ecbb70ad6e14}{%
+           family={Sudul},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb0cb3d9c55daf45355c2d72361f5bd6}{%
+           family={Brunot},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{faa4dbe39a9c7db21123396bd6834104}
+      \strng{fullhash}{72586087dcce2fe933295b68a7b3ec3e}
+      \strng{fullhashraw}{72586087dcce2fe933295b68a7b3ec3e}
+      \strng{bibnamehash}{72586087dcce2fe933295b68a7b3ec3e}
+      \strng{authorbibnamehash}{72586087dcce2fe933295b68a7b3ec3e}
+      \strng{authornamehash}{faa4dbe39a9c7db21123396bd6834104}
+      \strng{authorfullhash}{72586087dcce2fe933295b68a7b3ec3e}
+      \strng{authorfullhashraw}{72586087dcce2fe933295b68a7b3ec3e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Laws of snow metamorphism have been introduced in a numerical model which simulates the evolution of temperature, density and liquid-water profiles of snow cover as a function of weather conditions.To establish these laws, the authors have summarized previous studies on temperature gradient and on wet-snow metamorphism and they have also conducted metamorphism experiments on dry or wet fresh-snow samples. An original formalism was developed to allow a description of snow with parameters evolving continuously throughout time.The introduction of laws of metamorphism has improved significantly the derivation of the settlement of internal layers and of snow-covered albedo, which depend on the simulated stratigraphy, i.e. the type and size of snow grains of different layers of the snow cover.The model was tested during a whole winter season without any re-initialization. Comparison between the simulated characteristics of the snow cover and the observations made in the field are described in detail. The model proved itself to be very efficient in simulating accurately the evolution of the snow-cover stratigraphy throughout the whole winter season.}
+      \field{issn}{0022-1430, 1727-5652}
+      \field{journaltitle}{Journal of Glaciology}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{128}
+      \field{title}{A Numerical Model to Simulate Snow-Cover Stratigraphy for Operational Avalanche Forecasting}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{38}
+      \field{year}{1992}
+      \field{urldateera}{ce}
+      \field{pages}{13\bibrangedash 22}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.3189/S0022143000009552
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/4DJ98AFL/Brun et al. - 1992 - A numerical model to simulate snow-cover stratigraphy for operational avalanche forecasting.pdf
+      \endverb
+    \endentry
+    \entry{cundallDiscreteNumericalModel1979}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d5dd574aba8f7acf574d7a33b2a3c9ed}{%
+           family={Cundall},
+           familyi={C\bibinitperiod},
+           given={P.\bibnamedelimi A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73afe83d6beccacf41e0e0fd4b93130d}{%
+           family={Strack},
+           familyi={S\bibinitperiod},
+           given={O.\bibnamedelimi D.\bibnamedelimi L.},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{95c063cb8336718e96baaceeced88d01}
+      \strng{fullhash}{95c063cb8336718e96baaceeced88d01}
+      \strng{fullhashraw}{95c063cb8336718e96baaceeced88d01}
+      \strng{bibnamehash}{95c063cb8336718e96baaceeced88d01}
+      \strng{authorbibnamehash}{95c063cb8336718e96baaceeced88d01}
+      \strng{authornamehash}{95c063cb8336718e96baaceeced88d01}
+      \strng{authorfullhash}{95c063cb8336718e96baaceeced88d01}
+      \strng{authorfullhashraw}{95c063cb8336718e96baaceeced88d01}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The distinct element method is a numerical model capable of describing the mechanical behaviour of assemblies of discs and spheres. The method is based on the use of an explicit numerical scheme in which the interaction of the particles is monitored contact by contact and the motion of the particles modelled particle by particle. The main features of the distinct element method are described. The method is validated by comparing force vector plots obtained from the computer program BALL with the corresponding plots obtained from a photoelastic analysis. The photoelastic analysis used for the comparison is the one applied to an assembly of discs by De Josselin de Jong and Verruijt (1969). The force vector diagrams obtained numerically closely resemble those obtained photoelastically. It is concluded from this comparison that the distinct element method and the program BALL are valid tools for research into the behaviour of granular assemblies.La méthode des éléments distincts est un modèle numérique capable de décrire le comportement mécanique de l'assemblage de disques et de sphères. La méthode est basée sur l'utilisation d'un système numérique explicite dans lequel l'interaction des particules est contrôlée contact par contact et le mouvement des particules simulé particule par particule. Les caracteristiques principales de la méthode des eléments distints sont décrites. La méthode est validée en comparant les tracés de vecteur de force obtenus par le programme sur ordicateur BALL avec les tracés correspondants obtanus a l'aide d'une analyse photo-élastique. L'analyse photo-élastique utilisée pour la comparaison est celle appliquée sur un assemblage de disques par De Josselin de Jong et Verruijt (1969). Les diagrammes de vecteur de force obtenus numériquement sont très voisins de ceux obtenus photo-élastiquement. Cette comparaison permet de conclure que la methode des éléments distincts et le programme BALL sont des instruments valables pour la recherche du comportement des assemblages granulaires.}
+      \field{issn}{0016-8505}
+      \field{journaltitle}{Géotechnique}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{A Discrete Numerical Model for Granular Assemblies}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{29}
+      \field{year}{1979}
+      \field{urldateera}{ce}
+      \field{pages}{47\bibrangedash 65}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1680/geot.1979.29.1.47
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/RDMHB5GA/Cundall and Strack - 1979 - A discrete numerical model for granular assemblies.pdf;/Users/salomebachmann/Zotero/storage/23R9HWVH/geot.1979.29.1.html
+      \endverb
+    \endentry
+    \entry{gaumeModelingCrackPropagation2015}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e772559f9d1c403eec44521d61b399a4}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b00285ad021271e67874fa4fbd65472}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0175c41468776197652bd30b5bc3728c}{%
+           family={Chambon},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea15836e9b957b6592c223abea3a1d4d}{%
+           family={Birkeland},
+           familyi={B\bibinitperiod},
+           given={K.\bibnamedelimi W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7de90264c9b21df59df1140db9f75bb6}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{fullhash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{fullhashraw}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{bibnamehash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{authorbibnamehash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{authornamehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{authorfullhash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{authorfullhashraw}{a077172f1e0786d0af96cf9266b4889f}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dry-snow slab avalanches are generally caused by a sequence of fracture processes including (1) failure initiation in a weak snow layer underlying a cohesive slab, (2) crack propagation within the weak layer and (3) tensile fracture through the slab which leads to its detachment. During the past decades, theoretical and experimental work has gradually led to a better understanding of the fracture process in snow involving the collapse of the structure in the weak layer during fracture. This now allows us to better model failure initiation and the onset of crack propagation, i.e., to estimate the critical length required for crack propagation. On the other hand, our understanding of dynamic crack propagation and fracture arrest propensity is still very limited. To shed more light on this issue, we performed numerical propagation saw test (PST) experiments applying the discrete element (DE) method and compared the numerical results with field measurements based on particle tracking. The goal is to investigate the influence of weak layer failure and the mechanical properties of the slab on crack propagation and fracture arrest propensity. Crack propagation speeds and distances before fracture arrest were derived from the DE simulations for different snowpack configurations and mechanical properties. Then, in order to compare the numerical and experimental results, the slab mechanical properties (Young's modulus and strength) which are not measured in the field were derived from density. The simulations nicely reproduced the process of crack propagation observed in field PSTs. Finally, the mechanical processes at play were analyzed in depth which led to suggestions for minimum column length in field PSTs.}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{5}
+      \field{title}{Modeling of Crack Propagation in Weak Snowpack Layers Using the Discrete Element Method}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{1915\bibrangedash 1932}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.5194/tc-9-1915-2015
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/VZ7EZF64/Gaume et al. - 2015 - Modeling of crack propagation in weak snowpack layers using the discrete element method.pdf
+      \endverb
+    \endentry
+    \entry{gaumeSnowFractureRelation2017a}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=201c20657efc8ba9ab901a29f000ef47}{%
+           family={Chambon},
+           familyi={C\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f6b397043b02adbd7b1e22348339ee21}{%
+           family={Wever},
+           familyi={W\bibinitperiod},
+           given={Nander},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
+      \strng{fullhash}{3507f8435e03c0574550cd83c824584b}
+      \strng{fullhashraw}{3507f8435e03c0574550cd83c824584b}
+      \strng{bibnamehash}{3507f8435e03c0574550cd83c824584b}
+      \strng{authorbibnamehash}{3507f8435e03c0574550cd83c824584b}
+      \strng{authornamehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
+      \strng{authorfullhash}{3507f8435e03c0574550cd83c824584b}
+      \strng{authorfullhashraw}{3507f8435e03c0574550cd83c824584b}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The failure of a weak snow layer buried below cohesive slab layers is a necessary, but insufficient, condition for the release of a dry-snow slab avalanche. The size of the crack in the weak layer must also exceed a critical length to propagate across a slope. In contrast to pioneering shear-based approaches, recent developments account for weak layer collapse and allow for better explaining typical observations of remote triggering from low-angle terrain. However, these new models predict a critical length for crack propagation that is almost independent of slope angle, a rather surprising and counterintuitive result. Based on discrete element simulations we propose a new analytical expression for the critical crack length. This new model reconciles past approaches by considering for the first time the complex interplay between slab elasticity and the mechanical behavior of the weak layer including its structural collapse. The crack begins to propagate when the stress induced by slab loading and deformation at the crack tip exceeds the limit given by the failure envelope of the weak layer. The model can reproduce crack propagation on low-angle terrain and the decrease in critical length with increasing slope angle as modeled in numerical experiments. The good agreement of our new model with extensive field data and the ease of implementation in the snow cover model SNOWPACK opens a promising prospect for improving avalanche forecasting.}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{Snow Fracture in Relation to Slab Avalanche Release}
+      \field{title}{Snow Fracture in Relation to Slab Avalanche Release: Critical State for the Onset of Crack Propagation}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{11}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{217\bibrangedash 228}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.5194/tc-11-217-2017
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/TJ6952VW/Gaume et al. - 2017 - Snow fracture in relation to slab avalanche release critical state for the onset of crack propagati.pdf
+      \endverb
+    \endentry
+    \entry{gaumeInvestigatingReleaseFlow2019}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd5446bf01a813877483c438517f8dd1}{%
+           family={Gast},
+           familyi={G\bibinitperiod},
+           given={Ted},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=607723b8a48656868aeb4efee654160d}{%
+           family={Teran},
+           familyi={T\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e23acb91338712715b1e858a29723c6b}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Chenfanfu},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
+      \strng{fullhash}{8ca67275596b9d472f4651204a7a99be}
+      \strng{fullhashraw}{8ca67275596b9d472f4651204a7a99be}
+      \strng{bibnamehash}{8ca67275596b9d472f4651204a7a99be}
+      \strng{authorbibnamehash}{8ca67275596b9d472f4651204a7a99be}
+      \strng{authornamehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
+      \strng{authorfullhash}{8ca67275596b9d472f4651204a7a99be}
+      \strng{authorfullhashraw}{8ca67275596b9d472f4651204a7a99be}
+      \field{extraname}{3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Snow slab avalanches start with a failure in a weak snow layer buried below a cohesive snow slab. After failure, the very porous character of the weak layer leads to its volumetric collapse and thus closing of crack faces due to the weight of the overlaying slab. This complex process, generally referred to as anticrack, explains why avalanches that release on steep slopes can be triggered from flat terrain. On the basis of a new elastoplastic model for porous cohesive materials and the Material Point Method, we investigate the dynamics of mixed-mode anticracks, the subsequent detachment of the slab and the flow of the avalanche. In particular, we performed two and three dimensional slope scale simulations of both the release and flow of slab avalanches triggered either directly or remotely. We describe the fracture and flow dynamics on a realistic topography and focus on the volumetric plastic strain, stress invariants, propagation speed and flow velocity. Our simulations reproduce typical observations of ``en-echelon'' fractures and the propagation speed reached up to three times that measured in field experiments. In addition, slab fracture always started from the top in the Propagation Saw Test while it systematically initiated at the interface with the weak layer at the crown of slope-scale simulations in agreement with limited field observations. During the avalanche flow, snow granulation, erosion and deposition processes were naturally simulated and do not need additional implementations. Our unified model represents a significant step forward as it allows simulating the entire avalanche process, from failure initiation to crack propagation and to solid-fluid phase transitions, which is of paramount importance to forecast and mitigate snow avalanches.}
+      \field{issn}{0165-232X}
+      \field{journaltitle}{Cold Regions Science and Technology}
+      \field{month}{12}
+      \field{title}{Investigating the Release and Flow of Snow Avalanches at the Slope-Scale Using a Unified Model Based on the Material Point Method}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{168}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{102847}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.coldregions.2019.102847
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/JEVHGGC8/Gaume et al. - 2019 - Investigating the release and flow of snow avalanches at the slope-scale using a unified model based.pdf;/Users/salomebachmann/Zotero/storage/TFR3K349/S0165232X19302149.html
+      \endverb
+      \keyw{Crack propagation,Finite strain elastoplasticity,Material point method,MPM,Slab,Snow avalanche,Weak layer}
+    \endentry
+    \entry{mulakNumericalInvestigationMixedmode2019}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cb2bbe32c0cdb4bf3a4b1c4e5035f811}{%
+           family={Mulak},
+           familyi={M\bibinitperiod},
+           given={Dominika},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{fullhash}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{fullhashraw}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{bibnamehash}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{authorbibnamehash}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{authornamehash}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{authorfullhash}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \strng{authorfullhashraw}{e5dcebfdf1f57558fd8fecd652ca545b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The failure of a weak snow layer underlying a cohesive slab is the primary step in the release process of a dry snow slab avalanche. The complex and heterogeneous microstructure of snow limits our understanding of failure initiation inside the weak layer, especially under mixed-mode shear--compression loading. Further complication arises from the dependence of snow strength on the loading rate induced by the balance between bond breaking and bond formation (sintering) during the failure process. Here, we use the discrete element method to investigate the influence of mixed-mode loading and fast sintering on the failure of a weak layer generated using cohesive ballistic deposition. Both fast and slow loading simulations resulted in a mixed-mode failure envelope in good agreement with laboratory experiments. We show that the number of broken bonds at failure and the weak layer strength significantly decreases with increasing loading angle, regardless of the loading rate. While the influence of loading rate appears negligible in shear-dominant loading (for loading angles above 30{$\circ$}), simulations suggest a significant increase in the weak layer strength at low loading angles and low loading rates, characteristic of natural avalanches, due to the presence of an active sintering mechanism.}
+      \field{issn}{2196-4386}
+      \field{journaltitle}{Computational Particle Mechanics}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{Numerical Investigation of the Mixed-Mode Failure of Snow}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{6}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{439\bibrangedash 447}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/s40571-019-00224-5
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/CL8ZBB3S/Mulak and Gaume - 2019 - Numerical investigation of the mixed-mode failure of snow.pdf;/Users/salomebachmann/Zotero/storage/QC456XP9/S2196438625006679.html
+      \endverb
+      \keyw{Avalanche,Cohesion,DEM,Discrete element method,Failure envelope,Mixed-mode failure,Sintering,Slab,Snow,Weak layer}
+    \endentry
+    \entry{rosendahlModelingSnowSlab2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=46516e5984264a24cd3aedc2e9eac8fa}{%
+           family={Rosendahl},
+           familyi={R\bibinitperiod},
+           given={Philipp\bibnamedelima L.},
+           giveni={P\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=206fa05600939d81a6c1ad3921e28dd3}{%
+           family={Wei{ß}graeber},
+           familyi={W\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{fullhash}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{fullhashraw}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{bibnamehash}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{authorbibnamehash}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{authornamehash}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{authorfullhash}{517ff9551e2f667945bcc96c16b29bb9}
+      \strng{authorfullhashraw}{517ff9551e2f667945bcc96c16b29bb9}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Using the analytical model presented in Part 1 of this two-part paper, a new conceptual understanding of anticrack nucleation in weak layers is proposed. To obtain a sufficient condition for onset of failure, two necessary conditions must be satisfied simultaneously: (i) the weak layer must be overloaded in terms of stress and (ii) the initiating crack must release enough energy for the formation of new surfaces. This so-called coupled criterion was proposed by Leguillon (2002). No assumptions on initial defects within the weak layer are needed. Instead, the failure criterion provides both critical loading and the size of initiating cracks. It only requires the fundamental material properties strength and fracture toughness as inputs. Crack initiation and subsequent propagation are covered by a single criterion containing both a strength-of-materials and a fracture mechanics condition. Analyses of skier-loaded snowpacks show the impact of slab thickness and slope angle on critical loading and crack initiation length. In the limit cases of very thick slabs and very steep slopes, we obtain natural avalanche release. A discussion of different mixed-mode stress and energy criteria reveals that a wrong choice of mixed-mode hypotheses can yield unphysical results. The effect of material parameters such as density and compliance on weak-layer collapse is illustrated. The framework presented in this two-part series harnesses the efficiency of closed-form solutions to provide fast and physically sound predictions of critical snowpack loads using a new conceptual understanding of mixed-mode weak-layer failure. It emphasized the importance of both stress and energy in avalanche release.}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{Modeling Snow Slab Avalanches Caused by Weak-Layer Failure -- {{Part}} 2}
+      \field{title}{Modeling Snow Slab Avalanches Caused by Weak-Layer Failure -- {{Part}} 2: {{Coupled}} Mixed-Mode Criterion for Skier-Triggered Anticracks}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{14}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{131\bibrangedash 145}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.5194/tc-14-131-2020
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/JBCXEFGK/Rosendahl and Weißgraeber - 2020 - Modeling snow slab avalanches caused by weak-layer failure – Part 2 Coupled mixed-mode criterion fo.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
