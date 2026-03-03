@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.3.8)  3 MAR 2026 09:27
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.3.8)  3 MAR 2026 09:34
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"/Users/salomebachmann/Desktop/schuhule/applied geophysics/master thesis/Master-Thesis/literature_review"
@@ -484,12 +484,12 @@ Here is how much of LuaTeX's memory you used:
  125165,1144653 words of node,token memory allocated
  476 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 4 attribute, 62 glue_spec, 4 attribute_list, 1 write nodes
-   avail lists: 2:116,3:34,4:3,5:49,6:16,7:284,9:96,10:2,11:22
+   avail lists: 2:152,3:66,4:3,5:55,6:20,7:430,9:104,10:2,11:32
  33282 multiletter control sequences out of 65536+600000
  17 fonts using 986807 bytes
  66i,11n,78p,789b,801s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf>
-Output written on literature_review.pdf (1 page, 7888 bytes).
+Output written on literature_review.pdf (1 page, 9262 bytes).
 
 PDF statistics: 22 PDF objects out of 1000 (max. 8388607)
  12 compressed objects within 1 object stream
