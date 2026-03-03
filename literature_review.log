@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.3.8)  3 MAR 2026 13:26
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.3.8)  3 MAR 2026 15:38
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"/Users/salomebachmann/Desktop/schuhule/applied geophysics/master thesis/Master-Thesis/literature_review"
@@ -515,7 +515,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--56
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
@@ -525,31 +530,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
  []
 
 
+
+[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 
-
-[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-/Users/salomebachmann/Desktop/schuhule/applied geophysics/master thesis/Master-Thesis/literature_review.tex:67: Misplaced alignment tab character &.
-l.67 ...behavior of a material composed of disks &
-                                                   spheres. This is relevant...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
@@ -559,23 +554,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
  []
 
 
+
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
-[2]
+ []
+
+/Users/salomebachmann/Desktop/schuhule/applied geophysics/master thesis/Master-Thesis/literature_review.tex:79: Misplaced alignment tab character &.
+l.79 ...behavior of a material composed of disks &
+                                                   spheres. This is relevant...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+
 
 [3]
 
+[4]
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 85.
+(Font)              <7> on input line 97.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 85.
+(Font)              <5> on input line 97.
 
 
-[4] ("/Users/salomebachmann/Desktop/schuhule/applied geophysics/master thesis/Master-Thesis/literature_review.aux")
+[5] ("/Users/salomebachmann/Desktop/schuhule/applied geophysics/master thesis/Master-Thesis/literature_review.aux")
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -599,15 +626,15 @@ Here is how much of LuaTeX's memory you used:
  125165,1373583 words of node,token memory allocated
  481 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 4 attribute, 63 glue_spec, 4 attribute_list, 1 write nodes
-   avail lists: 2:768,3:436,4:48,5:711,6:41,7:11829,8:49,9:219,10:31,11:838
+   avail lists: 2:768,3:436,4:48,5:719,6:38,7:12142,8:49,9:237,10:43,11:971
  34346 multiletter control sequences out of 65536+600000
  31 fonts using 2135247 bytes
  66i,11n,78p,2635b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf>
-Output written on literature_review.pdf (4 pages, 39603 bytes).
+Output written on literature_review.pdf (5 pages, 46176 bytes).
 
-PDF statistics: 45 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+PDF statistics: 48 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
