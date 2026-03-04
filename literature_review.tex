@@ -90,13 +90,20 @@ Numerical modelling, such as described by \cite{cundallDiscreteNumericalModel197
 
 \subsection{Dynamic anticrack propagation in snow \parencite{gaumeDynamicAnticrackPropagation2018}}
 
-\subsection{Modeling snow slab avalanches caused by weak-layer failure – Part 2: Coupled mixed-mode criterion for skier-triggered anticracks \parencite{rosendahlModelingSnowSlab2020}}
+\subsection{Modeling snow slab avalanches caused by weak-layer failure - Part 2: Coupled mixed-mode criterion for skier-triggered anticracks \parencite{rosendahlModelingSnowSlab2020}}
 
 
-\subsection{Snow fracture in relation to slab avalanche release: critical state
-for the onset of crack propagation \parencite{gaumeSnowFractureRelation2017a}}
-\textbf{Main Question of article:}
-\textbf{Why this is relevant for the thesis:}
+\subsection{Snow fracture in relation to slab avalanche release: critical state for the onset of crack propagation \parencite{gaumeSnowFractureRelation2017a}}
+\textbf{Main Question of article:} How can the critical crack length needed for avalanche release be modeled and which parameters influence this? \\
+\textbf{Why this is relevant for the thesis:} The critical crack length and the parameters which influences this are important because it influences what can be seen in DAS data. This is in relation where data is measured: slope angle etc has an influence on how many avalanches are recorded by DAS and subsequently how large the dataset for breakoff observation is \\
+
+\cite{gaumeSnowFractureRelation2017a} develop an equation which describes the relation of critical crack length to snowpack parameters. The release of a dry-snow slab avalanche requires the formation of a weak layer, the initial failure is a macroscopic crack in the weak layer \parencite{gaumeSnowFractureRelation2017a}. The length of this crack cannot exceed the critical crack length, because else there will be material failure and avalanche release \parencite{gaumeSnowFractureRelation2017a}. This is because the critical crack length is the length of the crack which is present when the shear stress is equal to the shear strength of the material. Understanding the influences of different snow and terrain parameters on critical crack length is relevant for DAS observations of avalanche breakoff because it can be understood how many avalanches occur and why. Previous modeling of avalanche release to \cite{gaumeSnowFractureRelation2017a} made simplifications to crack propagation, which results in inaccurate predictions. \\
+
+\cite{gaumeSnowFractureRelation2017a} estimate critical crack length using a discrete element model as described by \cite{cundallDiscreteNumericalModel1979}, where the cracking is due to sawing in the weak layer, similar to \cite{gaumeModelingCrackPropagation2015}. The modeled data is then compared to experimental data. The numerical simulations by \cite{gaumeSnowFractureRelation2017a} show that critical crack length increases, if elastic modulus of the slab increases or the weak layer thickness increases. The critical crack length on the other hand decreases if the slab density increases, the slab thickness increases or the slope angle increases \parencite{gaumeSnowFractureRelation2017a}, this means that under these conditions, cracks need to be less long for failure to occur. \cite{gaumeSnowFractureRelation2017a} state that the shear stress at the crack tip can be decomposed into a part caused by slab tension and a second part caused by slab bending. The analytical expression for critical crack length taking into account snow and terrain parameters agree with experimental results of saw tests conducted by \cite{gaumeSnowFractureRelation2017a}. The length of the critical crack is also relevant for the thesis because maybe shorter cracks show up less well in DAS data (less of a displacement). The analytical expression derived describes critical crack length better than the anticrack model, especially in regard to weak layer thickness and slope angle \parencite{gaumeSnowFractureRelation2017a}. The anticrack model shows that critcial crack length is not dependent on slope angle, this is because the model makes assumptions for simplification which the new expression by \cite{gaumeSnowFractureRelation2017a} does not make. \\
+
+The new expression derived by \cite{gaumeSnowFractureRelation2017a} has some limitations, the dependance of critical length on slope angle could also be caused by young's modulus and slab thickness, if these two are decreased, the critical length decreases less with increasing slope angle. Furthermore, \cite{gaumeSnowFractureRelation2017a} do not account for the shear stresses caused by slab bending, but suggest that this effect is small because simulation results are in good agreement with observations. The models described here assume a homogenous slab, where in reality the snowpack has multiple layers of different strengths, which can have an effect \parencite{gaumeSnowFractureRelation2017a}. 
+
+
 
 
 \subsection{Modeling of crack propagation in weak snowpack layers using the discrete element method \parencite{gaumeModelingCrackPropagation2015}}
