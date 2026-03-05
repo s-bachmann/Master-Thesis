@@ -424,6 +424,80 @@
       \verb /Users/salomebachmann/Zotero/storage/VZ7EZF64/Gaume et al. - 2015 - Modeling of crack propagation in weak snowpack layers using the discrete element method.pdf
       \endverb
     \endentry
+    \entry{gaumeDynamicAnticrackPropagation2018}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e772559f9d1c403eec44521d61b399a4}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4747fee44f01c861cddd96b65fd98b7c}{%
+           family={Gast},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c89ea0873d3ee8a41824e2e3fcf458ea}{%
+           family={Teran},
+           familyi={T\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b00285ad021271e67874fa4fbd65472}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a64771aee5f9d82f63ef7bf9159c3f7}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{fullhash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{fullhashraw}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{bibnamehash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{authorbibnamehash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{authornamehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{authorfullhash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{authorfullhashraw}{dc9788698cae2c9b42ddbf83828e43a8}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Continuum numerical modeling of dynamic crack propagation has been a great challenge over the past decade. This is particularly the case for anticracks in porous materials, as reported in sedimentary rocks, deep earthquakes, landslides, and snow avalanches, as material inter-penetration further complicates the problem. Here, on the basis of a new elastoplasticity model for porous cohesive materials and a large strain hybrid Eulerian--Lagrangian numerical method, we accurately reproduced the onset and propagation dynamics of anticracks observed in snow fracture experiments. The key ingredient consists of a modified strain-softening plastic flow rule that captures the complexity of porous materials under mixed-mode loading accounting for the interplay between cohesion loss and volumetric collapse. Our unified model represents a significant step forward as it simulates solid-fluid phase transitions in geomaterials which is of paramount importance to mitigate and forecast gravitational hazards.}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{Dynamic Anticrack Propagation in Snow}
+      \field{urlday}{4}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{3047}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-018-05181-w
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/5HA7C8LY/Gaume et al. - 2018 - Dynamic anticrack propagation in snow.pdf
+      \endverb
+      \keyw{Applied mathematics,Mechanical engineering,Natural hazards}
+    \endentry
     \entry{gaumeSnowFractureRelation2017a}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
@@ -468,7 +542,7 @@
       \strng{authornamehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
       \strng{authorfullhash}{3507f8435e03c0574550cd83c824584b}
       \strng{authorfullhashraw}{3507f8435e03c0574550cd83c824584b}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -539,7 +613,7 @@
       \strng{authornamehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
       \strng{authorfullhash}{8ca67275596b9d472f4651204a7a99be}
       \strng{authorfullhashraw}{8ca67275596b9d472f4651204a7a99be}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -674,6 +748,92 @@
       \verb{file}
       \verb /Users/salomebachmann/Zotero/storage/JBCXEFGK/Rosendahl and Weißgraeber - 2020 - Modeling snow slab avalanches caused by weak-layer failure – Part 2 Coupled mixed-mode criterion fo.pdf
       \endverb
+    \endentry
+    \entry{trottetTransitionSubRayleighAnticrack2022}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=aa439e1bfa733cc2891c7dbf28770c78}{%
+           family={Trottet},
+           familyi={T\bibinitperiod},
+           given={Bertil},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1d29dff480ef7400a4ae4e5211f99c2}{%
+           family={Simenhois},
+           familyi={S\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95db8610b06a0495ae9e84659c58aa7c}{%
+           family={Bobillier},
+           familyi={B\bibinitperiod},
+           given={Gregoire},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45cd7f65b6ceeddfce73beb6b18c5124}{%
+           family={Bergfeld},
+           familyi={B\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e23acb91338712715b1e858a29723c6b}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Chenfanfu},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{ac72662e061ea6b3c4b65a63f462df4c}
+      \strng{fullhash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{fullhashraw}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{bibnamehash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{authorbibnamehash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{authornamehash}{ac72662e061ea6b3c4b65a63f462df4c}
+      \strng{authorfullhash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{authorfullhashraw}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Snow slab avalanches, characterized by a distinct, broad fracture line, are released following anticrack propagation in highly porous weak snow layers buried below cohesive slabs. The anticrack mechanism is driven by the volumetric collapse of the weak layer, which leads to the closure of crack faces and to the onset of frictional contact. Here, on the basis of snow fracture experiments, full-scale avalanche measurements and numerical simulations, we report the existence of a transition from sub-Rayleigh anticrack to supershear crack propagation. This transition follows the Burridge--Andrews mechanism, in which a supershear daughter crack nucleates ahead of the main fracture front and eventually propagates faster than the shear wave speed. Furthermore, we show that the supershear propagation regime can exist even if the shear-to-normal stress ratio is lower than the static friction coefficient as a result of the loss of frictional resistance during collapse. This finding shows that snow slab avalanches have fundamental similarities with strike-slip earthquakes.}
+      \field{issn}{1745-2481}
+      \field{journaltitle}{Nature Physics}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Transition from Sub-{{Rayleigh}} Anticrack to Supershear Crack Propagation in Snow Avalanches}
+      \field{urlday}{4}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{18}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{1094\bibrangedash 1098}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/s41567-022-01662-4
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/2PW34P2Q/Trottet et al. - 2022 - Transition from sub-Rayleigh anticrack to supershear crack propagation in snow avalanches.pdf
+      \endverb
+      \keyw{Applied physics,Computational science,Soft materials}
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global/global}
@@ -1009,6 +1169,80 @@
       \verb /Users/salomebachmann/Zotero/storage/RDMHB5GA/Cundall and Strack - 1979 - A discrete numerical model for granular assemblies.pdf;/Users/salomebachmann/Zotero/storage/23R9HWVH/geot.1979.29.1.html
       \endverb
     \endentry
+    \entry{gaumeDynamicAnticrackPropagation2018}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e772559f9d1c403eec44521d61b399a4}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4747fee44f01c861cddd96b65fd98b7c}{%
+           family={Gast},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c89ea0873d3ee8a41824e2e3fcf458ea}{%
+           family={Teran},
+           familyi={T\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b00285ad021271e67874fa4fbd65472}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a64771aee5f9d82f63ef7bf9159c3f7}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{fullhash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{fullhashraw}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{bibnamehash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{authorbibnamehash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{authornamehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{authorfullhash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{authorfullhashraw}{dc9788698cae2c9b42ddbf83828e43a8}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Continuum numerical modeling of dynamic crack propagation has been a great challenge over the past decade. This is particularly the case for anticracks in porous materials, as reported in sedimentary rocks, deep earthquakes, landslides, and snow avalanches, as material inter-penetration further complicates the problem. Here, on the basis of a new elastoplasticity model for porous cohesive materials and a large strain hybrid Eulerian--Lagrangian numerical method, we accurately reproduced the onset and propagation dynamics of anticracks observed in snow fracture experiments. The key ingredient consists of a modified strain-softening plastic flow rule that captures the complexity of porous materials under mixed-mode loading accounting for the interplay between cohesion loss and volumetric collapse. Our unified model represents a significant step forward as it simulates solid-fluid phase transitions in geomaterials which is of paramount importance to mitigate and forecast gravitational hazards.}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{Dynamic Anticrack Propagation in Snow}
+      \field{urlday}{4}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{3047}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-018-05181-w
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/5HA7C8LY/Gaume et al. - 2018 - Dynamic anticrack propagation in snow.pdf
+      \endverb
+      \keyw{Applied mathematics,Mechanical engineering,Natural hazards}
+    \endentry
     \entry{gaumeModelingCrackPropagation2015}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=e772559f9d1c403eec44521d61b399a4}{%
@@ -1053,7 +1287,7 @@
       \strng{authornamehash}{b064550235e4e81f319bbf8f77522884}
       \strng{authorfullhash}{a077172f1e0786d0af96cf9266b4889f}
       \strng{authorfullhashraw}{a077172f1e0786d0af96cf9266b4889f}
-      \field{extraname}{1}
+      \field{extraname}{2}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -1126,7 +1360,7 @@
       \strng{authornamehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
       \strng{authorfullhash}{3507f8435e03c0574550cd83c824584b}
       \strng{authorfullhashraw}{3507f8435e03c0574550cd83c824584b}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -1197,7 +1431,7 @@
       \strng{authornamehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
       \strng{authorfullhash}{8ca67275596b9d472f4651204a7a99be}
       \strng{authorfullhashraw}{8ca67275596b9d472f4651204a7a99be}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -1332,6 +1566,92 @@
       \verb{file}
       \verb /Users/salomebachmann/Zotero/storage/JBCXEFGK/Rosendahl and Weißgraeber - 2020 - Modeling snow slab avalanches caused by weak-layer failure – Part 2 Coupled mixed-mode criterion fo.pdf
       \endverb
+    \endentry
+    \entry{trottetTransitionSubRayleighAnticrack2022}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=aa439e1bfa733cc2891c7dbf28770c78}{%
+           family={Trottet},
+           familyi={T\bibinitperiod},
+           given={Bertil},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1d29dff480ef7400a4ae4e5211f99c2}{%
+           family={Simenhois},
+           familyi={S\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95db8610b06a0495ae9e84659c58aa7c}{%
+           family={Bobillier},
+           familyi={B\bibinitperiod},
+           given={Gregoire},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45cd7f65b6ceeddfce73beb6b18c5124}{%
+           family={Bergfeld},
+           familyi={B\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e23acb91338712715b1e858a29723c6b}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Chenfanfu},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{ac72662e061ea6b3c4b65a63f462df4c}
+      \strng{fullhash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{fullhashraw}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{bibnamehash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{authorbibnamehash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{authornamehash}{ac72662e061ea6b3c4b65a63f462df4c}
+      \strng{authorfullhash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{authorfullhashraw}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Snow slab avalanches, characterized by a distinct, broad fracture line, are released following anticrack propagation in highly porous weak snow layers buried below cohesive slabs. The anticrack mechanism is driven by the volumetric collapse of the weak layer, which leads to the closure of crack faces and to the onset of frictional contact. Here, on the basis of snow fracture experiments, full-scale avalanche measurements and numerical simulations, we report the existence of a transition from sub-Rayleigh anticrack to supershear crack propagation. This transition follows the Burridge--Andrews mechanism, in which a supershear daughter crack nucleates ahead of the main fracture front and eventually propagates faster than the shear wave speed. Furthermore, we show that the supershear propagation regime can exist even if the shear-to-normal stress ratio is lower than the static friction coefficient as a result of the loss of frictional resistance during collapse. This finding shows that snow slab avalanches have fundamental similarities with strike-slip earthquakes.}
+      \field{issn}{1745-2481}
+      \field{journaltitle}{Nature Physics}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Transition from Sub-{{Rayleigh}} Anticrack to Supershear Crack Propagation in Snow Avalanches}
+      \field{urlday}{4}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{18}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{1094\bibrangedash 1098}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/s41567-022-01662-4
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/2PW34P2Q/Trottet et al. - 2022 - Transition from sub-Rayleigh anticrack to supershear crack propagation in snow avalanches.pdf
+      \endverb
+      \keyw{Applied physics,Computational science,Soft materials}
     \endentry
   \enddatalist
 \endrefsection
