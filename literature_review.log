@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.3.8)  4 MAR 2026 17:37
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.3.8)  5 MAR 2026 11:22
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"/Users/salomebachmann/Desktop/schuhule/applied geophysics/master thesis/Master-Thesis/literature_review"
@@ -515,7 +515,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--45
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
@@ -525,7 +530,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
 
@@ -534,52 +539,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--55
 [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 67--69
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
 
 
 [3]
-/Users/salomebachmann/Desktop/schuhule/applied geophysics/master thesis/Master-Thesis/literature_review.tex:80: Misplaced alignment tab character &.
-l.80 ...behavior of a material composed of disks &
+/Users/salomebachmann/Desktop/schuhule/applied geophysics/master thesis/Master-Thesis/literature_review.tex:79: Misplaced alignment tab character &.
+l.79 ...behavior of a material composed of disks &
                                                    spheres. This is relevant...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -589,88 +594,105 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 
-LaTeX Warning: Citation 'trottetTransitionSubRayleighAnticrack2022' on page 4 undefined on input line 96.
+LaTeX Warning: Citation 'trottetTransitionSubRayleighAnticrack2022' on page 4 undefined on input line 95.
 
 
-LaTeX Warning: Citation 'gaumeDynamicAnticrackPropagation2018' on page 4 undefined on input line 98.
+LaTeX Warning: Citation 'gaumeDynamicAnticrackPropagation2018' on page 4 undefined on input line 97.
 
 
-Overfull \hbox (65.69601pt too wide) in paragraph at lines 98--98
+Overfull \hbox (65.69601pt too wide) in paragraph at lines 97--97
 []\TU/lmr/bx/n/12 Dy-namic an-t-i-crack prop-a-ga-tion in snow ([]) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
 
 
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 107--108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
 
 
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
 
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
 
 
 [7]
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+
+
+[8]
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 144.
+(Font)              <7> on input line 153.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 144.
+(Font)              <5> on input line 153.
 
 
-[8] ("/Users/salomebachmann/Desktop/schuhule/applied geophysics/master thesis/Master-Thesis/literature_review.aux")
+[9] ("/Users/salomebachmann/Desktop/schuhule/applied geophysics/master thesis/Master-Thesis/literature_review.aux")
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -694,15 +716,15 @@ Here is how much of LuaTeX's memory you used:
  125165,1373583 words of node,token memory allocated
  486 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 4 attribute, 64 glue_spec, 4 attribute_list, 1 write nodes
-   avail lists: 1:1,2:768,3:436,4:56,5:791,6:36,7:12347,8:49,9:259,10:73,11:996,12:1
+   avail lists: 2:768,3:436,4:56,5:730,6:36,7:12269,8:49,9:259,10:99,11:979,12:1
  34348 multiletter control sequences out of 65536+600000
  31 fonts using 2135247 bytes
- 66i,12n,78p,2696b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 66i,11n,78p,2694b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf>
-Output written on literature_review.pdf (8 pages, 61017 bytes).
+Output written on literature_review.pdf (9 pages, 66488 bytes).
 
-PDF statistics: 57 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+PDF statistics: 60 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
