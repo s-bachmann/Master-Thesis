@@ -1,5 +1,10 @@
 %Please use LuaLaTeX or XeLaTeX
 \documentclass[11pt,aspectratio=169]{beamer}
+\usepackage[
+  style=apa,
+  backend=biber
+]{biblatex}
+\addbibresource{master thesis.bib}
 
 \title{Literature Review}
 \date[]{\today}
@@ -16,7 +21,7 @@
 %\def\titlefigure{elements/title-page-image}		% Default image
 %\def\titlefigure{elements/title-page-image-43}	% Use this for 4:3 presentations
 
- \titleframe
+\titleframe
 
 % \colorlet{titlefgcolor}{ETHPurple}
 % \def\titlefigure{elements/title-page-image-alt}
@@ -32,7 +37,6 @@
 % \tocframe
 
 \section{Layout}
-\tableofcontents
 
 \begin{frame}{Overview of literature review}
     \begin{itemize}
@@ -41,7 +45,10 @@
         \item Modeling methods: Material Point Method (MPM) and Discrete Element Method (DEM)
     \end{itemize}
 
+\end{frame}
 
+\begin{frame}{}
+    
 \end{frame}
 
 % \begin{frame}[fragile]{Title page}
@@ -234,6 +241,11 @@
 % 	\email{name@ethz.ch}
 
 % \end{frame}
+
+\begin{frame}
+    \typeout{}
+    \printbibliography
+\end{frame}
 
 \begin{closingframe}
 
