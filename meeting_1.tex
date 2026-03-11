@@ -1,5 +1,6 @@
 %Please use LuaLaTeX or XeLaTeX
 \documentclass[11pt,aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
 \usepackage[
   style=apa,
   backend=biber
@@ -73,15 +74,17 @@
         \item Others state shear cracks to be the main failure mode
         \item \cite{bergfeldSignaturesSubRayleighSupershear2025} combine the two main hypotheses: anticrack early in avalanche propagation, shearing later 
     \end{itemize}
-
+\end{frame}
 
 \begin{frame}{Factors influencing crack propagation}
     \begin{itemize}
-        \item 
+        \item Slope angle: higher slope angle generally increases crack speed and can trigger transition from sub-Rayleigh to supershear; it can also reduce the critical crack length needed for release \parencite{bobillierNumericalInvestigationCrack2024, trottetTransitionSubRayleighAnticrack2022, gaumeSnowFractureRelation2017a}
+        \item Slab stiffness (elastic modulus): stiffer slabs lead to lower normalized crack speed in some DEM results, but it tends to increase critical crack length (more crack growth needed before release) \parencite{bobillierNumericalInvestigationCrack2024, gaumeSnowFractureRelation2017a}
+        \item Weak layer strength \& elastic modulus: higher weak-layer elastic modulus can increase crack speed; stronger weak layers generally require more energy/longer cracks for release \parencite{bobillierNumericalInvestigationCrack2024, gaumeSnowFractureRelation2017a, gaumeModelingCrackPropagation2015}
+        \item Slab density: higher slab density is associated with faster propagation in some models, while also reducing critical crack length for release \parencite{gaumeModelingCrackPropagation2015, gaumeSnowFractureRelation2017a}
+        \item Slab thickness: thicker slabs can increase propagation speed in DEM studies; in critical-crack formulations, greater slab thickness lowers critical crack length \parencite{gaumeModelingCrackPropagation2015, gaumeSnowFractureRelation2017a}
+        \item Weak layer thickness: thinner weak layers can lead to faster crack propagation and lower critical crack length for release \parencite{gaumeModelingCrackPropagation2015, gaumeSnowFractureRelation2017a}
     \end{itemize}
-\end{frame}
-
-    
 \end{frame}
 
 % \begin{frame}[fragile]{Title page}
