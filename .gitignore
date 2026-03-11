@@ -19,6 +19,9 @@
 *.snm
 *.vrb
 *.xdv
+*.sty
+*.zip
+*.md
 
 # Biber files
 *.bib.bak
