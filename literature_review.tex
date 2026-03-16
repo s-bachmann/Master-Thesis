@@ -33,15 +33,15 @@
 
 \section{Introduction for Thesis}
 
-\begin{itemize}
-  \item \textbf{General Introduction:} what are avalanches, how do they form? \par
+%\begin{itemize}
+  %\item \textbf{General Introduction:} what are avalanches, how do they form? \par
   Avalanches are rapid masses of snow, which move down mountain slopes due to gravity \parencite{anceySnowAvalanches2001}. Snow avalanches can either be loose snow, which starts from a point in a cohesionless surface, or snow slab avalanches \parencite{schweizerSnowAvalancheFormation2003}. In this Master Thesis, the focus will be on dry snow slab avalanches. Snow slab avalanches consist of a cohesive slab of snow \parencite{schweizerSnowAvalancheFormation2003}, which are released because of loading at the surface, which triggers crack propagation in a weak layer \parencite{gaumeSnowFractureRelation2017a}. Weak layers are characzetized by the grain shape of snow, which leads to lower cohesion of those layers \parencite{fohnMechanicalStructuralProperties1998}. 
 
-  \item \textbf{Relevance:} Why model avalanches? \par
+  %\item \textbf{Relevance:} Why model avalanches? \par
 
   Snow avalanches are a major natural hazard in mountainous region, not only do they endanger human life but also infrastructure \parencite{schweizerSnowAvalancheFormation2003}. The Swiss institute for snow and avalanche research has reported an average of 22 fatalities caused by avalanches every year with the number of non-fatal accidents being tenfolds higher \parencite{LongtermStatistics}. This data shows that it is crucial to understand how avalanches form and propagate in order to protect people and infrastructure better. 
 
-  \item \textbf{Motivation:} why avalanches \& DAS, how is this different from papers discussed in introduction \par
+  %\item \textbf{Motivation:} why avalanches \& DAS, how is this different from papers discussed in introduction \par
   
   In this master thesis, the aim is to detect avalanche slab breakoff and crack propagation using distributed acoustic sensing (DAS). \par
 
@@ -51,9 +51,9 @@
 
   A pilot early-waring system using distributed acoustic sensing has been implemented in Norway, where avalanches are detected by their seismic signature \parencite{turquetAutomatedSnowAvalanche2024}, meaning when the avalanche is already moving downhill. The detectability of avalanches by DAS has also been studied in the Swiss alps by \cite{paitzPhenomenologyAvalancheRecordings2023} and \cite{edmeFiberopticDetectionSnow2023}, but the detectability of the slab breakoff itself has not been studied. 
 
-  \item \textbf{Modeling methods:} Introduce snowpack/crocus, why are they relevant, why will they not be used, introduce MPM, DEM, advantages \& disadvantages, introduce salvus and why is this needed \par
+  %\item \textbf{Modeling methods:} Introduce snowpack/crocus, why are they relevant, why will they not be used, introduce MPM, DEM, advantages \& disadvantages, introduce salvus and why is this needed \par
   
-   \item \textbf{Previous models:} Introduce previous models, methods used, limitations \& further developmemts \par
+   %\item \textbf{Previous models:} Introduce previous models, methods used, limitations \& further developmemts \par
   
 A multitude of models are used to study different processes in snow. The SNOWPACK and CROCUS models used in the Swiss and French alps model the structure and evolution of snow \parencite{brunNumericalModelSimulate1992,barteltPhysicalSNOWPACKModel2002}. These models were developed to understand how snow evolves under different conditions, for example a changing temperature gradient and water content and what consequences this has for the formation of weak layers where failure likely occurs and avalanches are triggered \parencite{brunNumericalModelSimulate1992,barteltPhysicalSNOWPACKModel2002}. SNOWPACK and CROCUS are comprehensive models that take into account multiple governing equations and processes and what consequences they have for the structure of snow. While it is important to understand the influences on for example temperature gradient on the snow structure and weak layer formation and stability as a consequence, this is not the focus of the thesis. This is because these models are too complex and comprehensive for the purpose of trying to detect slab breakoff in DAS data as they model the entire snow structure. Using SNOWPACK or CROCUS to investigate how different snowpack compositions and factors influence the DAS signal is beyond the scope of this thesis. \par
 
@@ -64,7 +64,7 @@ This problem is solved by using the material point method (MPM). In this method,
 \textcolor{magenta}{does this need to be more detailed? like explain what spectral elements is as well and more how salvus works?}
 In order to understand how crack propagation and slab breakoff would look like in DAS data, numerical modeling is done. This is done in SALVUS, which is a package which utilizes spectral elements to model seismic wavefields \parencite{afanasievSalvusFlexibleHighperformance2017}. \par
 
-  \item \textbf{Crack Propagation:} intro to modes of crack propagation, where and how cracks propagate, influencing factors like snow properties, slope angle etc, cracking modes transitions \& influences on transitions \par
+  %\item \textbf{Crack Propagation:} intro to modes of crack propagation, where and how cracks propagate, influencing factors like snow properties, slope angle etc, cracking modes transitions \& influences on transitions \par
   
   While it is important to understand the different modeling methods and their limitations, it is also important to understand the different types of crack propagation and what factors influence them. Understanding how fast a crack can propagate and which factors influence this is important for warning, as it relates the time of the initial crack to the time where the slab breaks off depending on snow and terrain parameters.  \par
 
@@ -78,13 +78,13 @@ Independent of crack propagation mode, different factors influence the speed and
 
 
 
-  \item \textbf{Considerations relevant for thesis}: how does scale influence models, what factors influence DAS modelling, open questions \par
+  %\item \textbf{Considerations relevant for thesis}: how does scale influence models, what factors influence DAS modelling, open questions \par
   
   Based on the above information, there are multiple considerations necessary in order to model DAS data of crack propagation accurately. The scale of the models is an important factor, because as mentioned, it influences the direction of crack propagation. This influences at which location along or relative to the DAS cable slab breakoff will occur, which changes the measured data. Furthermore, multiple parameters influence the time passed between initial cracking and slab breakoff, these are important to consider when interpreting data. The different modes of crack propagation are also important to consider, it is possible that a transition between sub-Rayleigh and supershear crack propagation can be observed in the data. The loading rate can also be considered, because slower loading leads to stabilizing processes such as sintering. \par
 
   \textcolor{magenta}{here i elaborate the research questions, but I don't know which one I will focus on yet} 
 
-\end{itemize}
+%\end{itemize}
 
 
 
