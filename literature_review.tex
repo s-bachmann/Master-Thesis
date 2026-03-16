@@ -64,10 +64,18 @@ This problem is solved by using the material point method (MPM). In this method,
 \textcolor{magenta}{does this need to be more detailed? like explain what spectral elements is as well and more how salvus works?}
 In order to understand how crack propagation and slab breakoff would look like in DAS data, numerical modeling is done. This is done in SALVUS, which is a package which utilizes spectral elements to model seismic wavefields \parencite{afanasievSalvusFlexibleHighperformance2017}. \par
 
-
-
- 
   \item \textbf{Crack Propagation:} intro to modes of crack propagation, where and how cracks propagate, influencing factors like snow properties, slope angle etc, cracking modes transitions \& influences on transitions \par
+  
+  While it is important to understand the different modeling methods and their limitations, it is also important to understand the different types of crack propagation and what factors influence them. Understanding how fast a crack can propagate and which factors influence this is important for warning, as it relates the time of the initial crack to the time where the slab breaks off depending on snow and terrain parameters.  \par
+
+  
+  Two main types of crack propagation are believed to be important for weak layer failure: anticrack propagation and shear crack propagation \parencite{bergfeldSignaturesSubRayleighSupershear2025}. There are three ways which cracks can open up: mode I, where space is opened up between the crack faces under tensile loading, mode II and mode III which represent paralell shearing and diagonal shearing \parencite{heierliAnticracksNewTheory2003}. In anticrack propagation, the weak layer consolidates under loading \parencite{knightSuperheatedIceTrue1972}, while cracks propagate in a combination of modes I-III \parencite{heierliAnticracksNewTheory2003}. \cite{gaumeDynamicAnticrackPropagation2018} modeled anticrack propagation induced by a propagation saw test (PST) using MPM, which showed that the scale of the simulations influences the propagation direction of the cracks. For smaller scale simulations, cracks propagate from top to bottom of a slope, whereas for slope-scale simulations, cracks propagate bottom to top, which means that remote triggering of avalanches is possible \parencite{gaumeDynamicAnticrackPropagation2018}. This is an important consideration for the thesis because it influences where the slab breakoff would be observed in terms of DAS cable location. Other models also show that the crack propagation speed of anticracks are influenced by slope angle and curvature: concave slope areas have higher propagation speeds than convex areas of the slope \parencite{gaumeInvestigatingReleaseFlow2019}. Furthermore, there is a directionality in propagation speed, simulations by \cite{gaumeInvestigatingReleaseFlow2019} show that cracks propagate twice as fast upslope than in the downslope direction, which is especially important when thinking about remote triggering. The slab breaks off when the slope angle exceeds the friction angle of the material \parencite{gaumeInvestigatingReleaseFlow2019}. Slope angle also influences which mode of crack propagation is more dominant \parencite{rosendahlModelingSnowSlab2020}. In steeper terrains, shear modes (II and III) dominate, whereas in flatter terrain, mode I dominates the crack propagation \parencite{rosendahlModelingSnowSlab2020}. The critical force (skier force) needed for weak layer failure is also dependent on slope angle, it decreases with increasing slope angle \parencite{rosendahlModelingSnowSlab2020}. Snow parameters also have an influence on this critical force, as shown by simulations by \cite{rosendahlModelingSnowSlab2020}: the thicker the slab or the higher the slab tensile strength, the better the force by the skier can be distributed on the weak layer and there is more force needed for failure. \par
+
+
+
+
+
+
   \item \textbf{Considerations relevant for thesis}: how does scale influence models, what factors influence DAS modelling, open questions \par
 \end{itemize}
 
