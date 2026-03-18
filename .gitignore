@@ -53,3 +53,9 @@
 # slide style files
 elements
 Miniforge3.sh
+
+
+# Salvus files
+
+
+simulation_wavefield_output/
