@@ -63,3 +63,5 @@ simulation_wavefield_output/
 
 # File with figures for meeting
 figures/
+
+simulation_wavefield_output_moment_tensor/
