@@ -59,3 +59,7 @@ Miniforge3.sh
 
 
 simulation_wavefield_output/
+
+
+# File with figures for meeting
+figures/
