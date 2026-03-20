@@ -1,0 +1,401 @@
+%Please use LuaLaTeX or XeLaTeX
+\documentclass[11pt,aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[
+  style=apa,
+  backend=biber
+]{biblatex}
+\addbibresource{master thesis.bib}
+
+\title{Literature Review}
+\date[]{\today}
+\author{Salome Bachmann}
+\institute{}
+
+\usetheme{eth}
+
+\colorlet{titlefgcolor}{ETHGreen}
+\colorlet{accentcolor}{ETHPurple}
+
+\begin{document}
+
+%\def\titlefigure{elements/title-page-image}		% Default image
+%\def\titlefigure{elements/title-page-image-43}	% Use this for 4:3 presentations
+
+\titleframe
+
+% \colorlet{titlefgcolor}{ETHPurple}
+% \def\titlefigure{elements/title-page-image-alt}
+% \title{Different background}
+% \titleframe
+
+% \colorlet{titlebgcolor}{ETHGreen}
+% \def\titlefigure{}
+% \setlength{\titleboxwidth}{0.75\textwidth}			% Change box width
+% \title{Or even a plain color, especially if your title is very long and leaves no space for what's behind the colored box}
+% \titleframe
+
+% \tocframe
+
+%\section{Layout}
+
+\begin{frame}{Overview of literature review}
+    \begin{itemize}
+        \item Literature review of 13 papers
+        \item Main topics: crack propagation in snow, snow modeling, modeling in more general sense (introduction to different modeling methods used)
+        \item Modeling methods: Material Point Method (MPM) and Discrete Element Method (DEM)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Motivation}
+    \begin{itemize}
+        \item Understanding the different modeling methods and their limitation is important for thesis to understand which methods are suited for what
+        \item Understanding how cracks propagate and which factors influence them is important for risk assessment
+        \item Understanding which factors lead to supershear crack propagation is also important for risk assessment
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Modeling Methods}
+    \begin{itemize}
+        \item Two main methods used: MPM and DEM
+        \item DEM described by \cite{cundallDiscreteNumericalModel1979}, material of disks \& spheres, contact forces and resulting displacements calculated
+        \item MPM where material is discretized in points with Eulerian background mesh to calculate stresses at points and time-dependent equations, for example in \cite{gaumeDynamicAnticrackPropagation2018}
+        \item MPM is more favorable for slope-scale simulations because of modelling of grain contacts
+        \item Other models for snow such as SNOWPACK \parencite{barteltPhysicalSNOWPACKModel2002} and CROCUS \parencite{brunNumericalModelSimulate1992} model snowpack response to external factors
+    \end{itemize}
+    
+\end{frame}
+
+
+\begin{frame}{Avalanche Release - General Crack Propagation}
+    \begin{itemize}
+        \item All papers agree on avalanche formation by loading - weak layer failure
+        \item Some papers discuss anticrack propagation (closure of cracks formed) like eg \cite{gaumeDynamicAnticrackPropagation2018}
+        \item Others state shear cracks to be the main failure mode
+        \item \cite{bergfeldSignaturesSubRayleighSupershear2025} combine the two main hypotheses: anticrack early in avalanche propagation, shearing later 
+        \item Critical crack length: length of the crack needed for breakoff \parencite{gaumeSnowFractureRelation2017a}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Factors influencing crack propagation}
+    \begin{itemize}
+        \item Slope angle: higher slope angle generally increases crack speed and can trigger transition from sub-Rayleigh to supershear; it can also reduce the critical crack length needed for release \parencite{bobillierNumericalInvestigationCrack2024, trottetTransitionSubRayleighAnticrack2022, gaumeSnowFractureRelation2017a}
+        \item Slab stiffness (elastic modulus): stiffer slabs lead to lower normalized crack speed in some DEM results, but it tends to increase critical crack length (more crack growth needed before release) \parencite{bobillierNumericalInvestigationCrack2024, gaumeSnowFractureRelation2017a}
+        \item Weak layer strength \& elastic modulus: higher weak-layer elastic modulus can increase crack speed; stronger weak layers generally require more energy/longer cracks for release \parencite{bobillierNumericalInvestigationCrack2024, gaumeSnowFractureRelation2017a, gaumeModelingCrackPropagation2015}
+    
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Factors influencing crack propagation (continued)}
+    \begin{itemize}
+        \item Slab density: higher slab density is associated with faster propagation in some models, while also reducing critical crack length for release \parencite{gaumeModelingCrackPropagation2015, gaumeSnowFractureRelation2017a}
+        \item Slab thickness: thicker slabs can increase propagation speed in DEM studies; in critical-crack formulations, greater slab thickness lowers critical crack length \parencite{gaumeModelingCrackPropagation2015, gaumeSnowFractureRelation2017a}, but thicker slabs can also distribute load more easily \parencite{rosendahlModelingSnowSlab2020}
+        \item Weak layer thickness: thinner weak layers can lead to faster crack propagation and lower critical crack length for release \parencite{gaumeModelingCrackPropagation2015, gaumeSnowFractureRelation2017a}
+        \item Snow structure and loading rate: sintering and lower loading rates can lead to more stable snowpacks, which means higher critical crack lenths \parencite{mulakNumericalInvestigationMixedmode2019}
+        \item Loading rate: slow loading (like from snow accumulation) can lead to formation of new bonds (sintering): strengthens snowpack \parencite{mulakNumericalInvestigationMixedmode2019}
+    \end{itemize}
+    
+\end{frame}
+
+
+\begin{frame}{Deformation stages}
+    \begin{itemize}
+        \item After loading, multiple stages of deformation
+        \item loading response by an elastic regime, a drop in pressure and shear stress, volumetric collapse of the weak layer and lastly dense packing \parencite{gaumeDynamicAnticrackPropagation2018}
+        \item Slab bending induced by weak layer collapse at bottom of snowpack \parencite{bergfeldSignaturesSubRayleighSupershear2025}
+        \item Deformation because of slab tension at top of snow \parencite{bergfeldSignaturesSubRayleighSupershear2025}
+
+    \end{itemize}
+    
+\end{frame}
+
+
+\begin{frame}{Crack propagation direction \& mode}
+\begin{itemize}
+    \item Direction of crack propagation dependent on simulation scale \parencite{trottetTransitionSubRayleighAnticrack2022}
+    \item Small-scale: propagation upslope (remote triggering), because collapse depth for bending limited by weak layer collapse \parencite{trottetTransitionSubRayleighAnticrack2022}
+    \item Large-scale: downslope, because propagation speed can increase because of slab tension \parencite{trottetTransitionSubRayleighAnticrack2022}
+    \item Mode I (normal to crack face), Mode II (tangential to existing faces) dependent on slope angle \parencite{rosendahlModelingSnowSlab2020}
+    \item In steep slopes, more mode II \parencite{rosendahlModelingSnowSlab2020}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Supershear crack propagation}
+    \begin{itemize}
+        \item Supershear crack propagation when cracks propagate above elastic wave speed in snow \parencite{trottetTransitionSubRayleighAnticrack2022}
+        \item Snow properties influence if supershear speed is reached
+        \item High slab tensile strength: supershear cracks \parencite{trottetTransitionSubRayleighAnticrack2022}
+        \item Increased slab tension in steep terrains: high speeds (possible supershear) \parencite{trottetTransitionSubRayleighAnticrack2022}
+        \item Slope angle dependance: at below 30°, sub-rayleigh, at above 30°: supershear \parencite{bobillierNumericalInvestigationCrack2024}
+        \item Also property dependent (weak layer elastic modulus & snow elastic modulus) \parencite{bobillierNumericalInvestigationCrack2024}
+        \item Generally: the "longer" cracks can propagate before breakoff, the higher the speed they can reach (direct failure in weak slabs, no failure in very strong slabs)
+        \item Early stages of crack propagation are anticrack, later stages supershear \parencite{bergfeldSignaturesSubRayleighSupershear2025}
+    \end{itemize}
+    
+\end{frame}
+
+
+\begin{frame}{Understanding questions}
+    \begin{itemize}
+        \item Just to make sure: MPM will be used in thesis?
+        \item Snow data (like snow properties available?)
+    \end{itemize}
+    
+\end{frame}
+
+
+\begin{frame}{Ideas / Concept questions}
+    \begin{itemize}
+        \item Differentiation between crack propagation regimes in DAS data? (Supershear vs Sub-Rayleigh)
+        \item Different models based on loading rate to see difference in cracking of slow vs fast loading and to see effect of sintering
+        \item Seperetate processes observed in DAS data? (Weak layer collapse, slab bending, slab breakoff etc)
+        \item Different fracture stages observed? \cite{gaumeInvestigatingReleaseFlow2019} talks about crown fracture, flank fracture etc
+        \item Idea of link between snow properties - possible supershear /crack propagation speed to make assumptions based on time between initial crack - slab breakoff
+        \item Relationship between crack propagation speed - release area like referenced in \cite{bergfeldSignaturesSubRayleighSupershear2025}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Furter steps}
+    \begin{itemize}
+        \item Read papers that I have missed --> Suggestions?
+        \item Maybe implement a MPM model because I don't fully understand how it works yet
+        \item Expand the synthesis to be more like a state of the art / can be used as  an introduction to thesis
+    \end{itemize}
+    
+\end{frame}
+
+% \begin{frame}[fragile]{Title page}
+
+% 	The cover image can be changed by using the command \verb+\def\titlefigure{...}+ before \verb+\titleframe+, as long as the figure as a 2:1 aspect ratio.
+	
+% 	For example:
+% 	\begin{verbatim}
+% 		\def\titlefigure{elements/title-page-image-alt}
+% 	\end{verbatim}
+	
+% 	\medskip
+	
+% 	If you want a solid color, use \verb+\def\titlefigure{}+
+	
+% 	\medskip
+
+% 	The command	
+% 	\begin{verbatim}
+% 		\setlength{\titleboxwidth}{0.65\textwidth}
+% 	\end{verbatim}
+% 	changes the width of the titlebox if you need more space.
+
+% \end{frame}
+
+% \begin{frame}[fragile]{Aspect ratio}
+
+% 	The official ETH template only comes in 16:9.
+	
+% 	You can obtain 4:3 slides by passing the option \verb+aspectratio=43+
+% 	\begin{verbatim}
+% 		\documentclass[11pt,aspectratio=43]{beamer}	
+% 	\end{verbatim}
+		
+% 	\bigskip
+	
+% 	In this case, you probably want to use the cover image \verb+\def\titlefigure{elements/title-page-image-43}+
+% 	or any other image in 14:10 aspect ratio, for example \verb+\def\titlefigure{elements/title-page-image-alt-43}+
+	
+	
+% \end{frame}
+
+% \section{Text and colors}
+
+% \begin{frame}[fragile]{Font size}
+
+% 	The font sizes match the official ETH template quite accurately when the default option \verb+11pt+ is used.
+	
+% 	\bigskip
+	
+% 	You can get slightly smaller or larger text by passing the options \verb+10pt+ or \verb+12pt+, respectively.
+% 	\begin{verbatim}
+% 		\documentclass[10pt,aspectratio=169]{beamer}
+% 		\documentclass[11pt,aspectratio=169]{beamer}		% default
+% 		\documentclass[12pt,aspectratio=169]{beamer}
+% 	\end{verbatim}	
+	
+% 	\bigskip
+% 	You can also fine-tune the font sizes by modifying the \verb+beamerfontthemeeth.sty+ file.
+
+% \end{frame}
+
+% \begin{frame}[fragile]{Colors}
+
+% 	You need to pick these colors
+% 	\begin{itemize}
+% 		\item \texttt{accentcolor} (alert text, blocks)
+% 		\item \texttt{titlefgcolor} (the box on the title page)
+% 		\item \texttt{titlebgcolor} (the background on the title page, in case you don't use an image)
+% 	\end{itemize}
+% 	Use these commands at the beginning of the document
+% 	\begin{verbatim}
+% 		\colorlet{titlefgcolor}{ETHGreen}
+% 		\colorlet{titlebgcolor}{ETHGreen}
+% 		\colorlet{accentcolor}{ETHRed}
+% 	\end{verbatim}
+
+% 	\medskip
+
+% 	\begin{tabular}{ll}
+% 	\textcolor{ETHBlue}{\rule{4mm}{3mm}} ETH Blue &
+% 	\textcolor{ETHGreen}{\rule{4mm}{3mm}} ETH Green \\
+% 	\textcolor{ETHPurple}{\rule{4mm}{3mm}} ETH Purple &
+% 	\textcolor{ETHGray}{\rule{4mm}{3mm}} ETH Gray \\
+% 	\textcolor{ETHRed}{\rule{4mm}{3mm}} ETH Red &
+% 	\textcolor{ETHPetrol}{\rule{4mm}{3mm}} ETH Petrol \\
+% 	\textcolor{ETHBronze}{\rule{4mm}{3mm}} ETH Bronze
+% 	\end{tabular}
+	
+% \end{frame}
+
+% \begin{frame}
+
+% 	\frametitle{Title}
+% 	\framesubtitle{Subtitle}
+	
+% 	Text and some \alert{alert text}
+	
+% 	\[
+% 	m_a^\top h(\cdot)
+% 	\]
+	
+	
+% 	\begin{itemize}
+% 	\item list one
+% 	\item list another one
+% 		\begin{itemize}
+% 		\item test 1
+% 		\item test 2
+% 		\end{itemize}
+% 	\end{itemize}
+
+% \end{frame}
+
+% \section{Blocks and boxes}
+
+% \begin{frame}{Title with no subtitle}
+
+% 	\begin{block}{Large box}
+% 	Notice that blocks are a bit larger than the text, that's intended.
+% 	\end{block}
+	
+% 	Column environments also eat some margins. Use the option \texttt{[onlytextwidth]} if you want to align columns to the wide blocks.
+	
+% 	\begin{columns}[onlytextwidth]
+% 	\begin{column}{0.45\textwidth}
+% 		\begin{block}{Small box}
+% 		With some more text
+% 		\end{block}
+% 	\end{column}
+% 	\begin{column}{0.5\textwidth}
+% 		Think outside the box!
+% 	\end{column}
+% 	\end{columns}
+
+% \end{frame}
+
+% \section{Figures and tables}
+
+% \begin{frame}{And, of course, figures!}
+
+% 	\begin{columns}
+% 		\begin{column}{0.33\textwidth}
+% 			\includegraphics[width=\columnwidth]{example-image-a}
+% 		\end{column}
+% 		\begin{column}{0.33\textwidth}
+% 			\includegraphics[width=\columnwidth]{example-image-b}
+% 		\end{column}
+% 		\begin{column}{0.33\textwidth}
+% 			\includegraphics[width=\columnwidth]{example-image-c}
+% 		\end{column}
+% 	\end{columns}
+
+% \end{frame}
+
+% \begin{frame}
+
+% 	\frametitle{Tables}
+% 	\framesubtitle{Don't use vanilla \LaTeX{}  tables please}
+	
+% 		\begin{center}
+% 			\begin{tabular}{@{}llr@{}}
+% 				\toprule\multicolumn{2}{c}{Item} \\
+% 				\cmidrule(r){1-2}Animal & Description & Price (\$)\\
+% 				\midrule
+% 				Gnat  & per gram  & 13.65 \\
+% 				& each      & 0.01 \\
+% 				Gnu   & stuffed   & 92.50 \\
+% 				Emu   & stuffed   & 33.33 \\
+% 				Armadillo & frozen & 8.99 \\
+% 				\bottomrule
+% 			\end{tabular}
+% 		\end{center}
+
+% \end{frame}
+
+% \section{URLs and links}
+
+% \begin{frame}{Clickable links}
+
+% 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+% 	Ut enim ad minim veniam, quis nostrud exercitation...
+	
+% 	\medskip
+
+% 	\url{http://control.ee.ethz.ch}
+	
+% 	\href{http://control.ee.ethz.ch}{Automatic Control Laboratory}
+	
+% 	\email{name@ethz.ch}
+
+% \end{frame}
+
+\begin{frame}[allowframebreaks]{Bibliography}
+    \typeout{}
+    \printbibliography
+\end{frame}
+
+\begin{closingframe}
+
+Salome Bachmann\\
+Master Student\\
+\email{sbachmann@student.ethz.ch}
+
+\medskip
+
+ETH Zurich\\
+D-EAPS\\
+
+\end{closingframe}
+
+
+% \begin{closingframe}
+
+% 	You can edit the content of the \texttt{closingframe} environment to design your own closing frame. Example:
+	
+% 	\vspace{15mm}
+
+% 	\begin{columns}
+% 		\begin{column}{0.55\textwidth}
+% 			\raggedleft
+% 			\includegraphics[width=45mm]{elements/IFA_logo_ENG_colours_horizontal} 
+% 		\end{column}
+% 		\begin{column}{0.45\textwidth}
+% 			\textbf{Author name}\\
+% 			\email{name@ethz.ch}	
+% 		\end{column}
+% 	\end{columns}
+
+% 	\vspace{20mm}
+			
+% \end{closingframe}
+
+
+\end{document}
