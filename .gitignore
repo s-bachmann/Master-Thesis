@@ -65,3 +65,5 @@ simulation_wavefield_output/
 figures/
 
 simulation_wavefield_output_moment_tensor/
+
+simulation_wavefield_output_moment_tensor_larger/
