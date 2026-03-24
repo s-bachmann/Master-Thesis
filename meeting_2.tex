@@ -199,7 +199,28 @@
 \end{frame}
 
 
+\begin{frame}{Topography in meshes}
+    \begin{itemize}
+        \item Extracted topography csv file from map geo admin
+        \item wrote script to create mesh in salvus from topography, 3 layers of 1m spacing 
+    \end{itemize}
 
+    \begin{figure}
+        \centering
+        \begin{subfigure}[t]{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{figures/map.geo.admin.ch_PDF_2026-03-24T11_22_24.pdf}
+            \caption{Topography from map geo admin taken along red dashed line}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[t]{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{figures/topo_interfaces_test.png}
+            \caption{Topography interfaces in salvus mesh}
+        \end{subfigure}
+    \end{figure}
+    
+\end{frame}
 
 
 \begin{frame}{Problems / Questions}
