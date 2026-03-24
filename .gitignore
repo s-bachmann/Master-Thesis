@@ -69,3 +69,5 @@ simulation_wavefield_output_moment_tensor/
 simulation_wavefield_output_moment_tensor_larger/
 
 simulation_wavefield_output_multi/
+
+simulation_wavefield_output_topo/
