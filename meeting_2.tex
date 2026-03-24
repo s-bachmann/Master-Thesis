@@ -158,16 +158,21 @@
 \end{frame}
 
 \begin{frame}{Fixing the vector point source trace \& PSD}
-    \begin{itemize}
-        \item Single traces at other reciever locations show ricker pulse, but very noisy coda 
-        \item Bandpass filtering of traces like in wiggle plots? 
-    \end{itemize}
-    \begin{figure}
-        \includegraphics[width=0.4\textwidth]{figures/traces_bandpassed.png}
-        \caption{Bandpassed trace (pink, vs normal trace), bandpassed PSD (pink)vs normal (gray) and spectrogram}
-    \end{figure}
-
-    
+    \begin{columns}[T,onlytextwidth]
+        \begin{column}{0.52\textwidth}
+            \begin{itemize}
+                \item Single traces at other reciever locations show ricker pulse, but very noisy coda
+                \item Bandpass filtering of traces like in wiggle plots?
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{figures/traces_bandpassed.png}
+                \caption{Bandpassed trace (pink, vs normal trace), bandpassed PSD (pink) vs normal (gray), and spectrogram.}
+            \end{figure}
+        \end{column}
+    \end{columns}
 \end{frame}
 
 \begin{frame}
