@@ -159,18 +159,21 @@
 
 \begin{frame}{Fixing the vector point source trace \& PSD}
     \begin{columns}[T,onlytextwidth]
-        \begin{column}{0.52\textwidth}
+        \begin{column}[T]{0.52\textwidth}
+            \vspace{0pt}
             \begin{itemize}
                 \item Single traces at other reciever locations show ricker pulse, but very noisy coda
                 \item Bandpass filtering of traces like in wiggle plots?
+                \item This shows clearer PSD around source frequency
+                \item Bandpass leads to clear domination of source frequency in spectrogram (light green)
             \end{itemize}
         \end{column}
-        \begin{column}{0.4\textwidth}
-            \begin{figure}
-                \centering
-                \includegraphics[width=\textwidth]{figures/traces_bandpassed.png}
-                \caption{Bandpassed trace (pink, vs normal trace), bandpassed PSD (pink) vs normal (gray), and spectrogram.}
-            \end{figure}
+        \begin{column}[T]{0.46\textwidth}
+            \vspace{0pt}
+            \centering
+            \includegraphics[width=\textwidth]{figures/traces_bandpassed.png}
+
+            {\scriptsize Bandpassed trace (pink vs normal), bandpassed PSD (pink) vs normal (gray), and spectrogram.}
         \end{column}
     \end{columns}
 \end{frame}
@@ -203,8 +206,7 @@
     \begin{itemize}
         \item Simulations take very long to run on remote machine (2+ hours)
         \item Kernel keeps crashing for larger domain simulation
-        \item Does it make sense to add topography to simulations?
-        \item Does it make sense to add eg old snow layer (make the simulations multilayered)?
+        \item Kernel also crashes in 4 layered simulation (old and fresh snow layer)
     \end{itemize}
     
 \end{frame}
