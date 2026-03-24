@@ -157,6 +157,19 @@
     
 \end{frame}
 
+\begin{frame}{Fixing the vector point source trace \& PSD}
+    \begin{itemize}
+        \item Single traces at other reciever locations show ricker pulse, but very noisy coda 
+        \item Bandpass filtering of traces like in wiggle plots? 
+    \end{itemize}
+    \begin{figure}
+        \includegraphics[width=0.4\textwidth]{figures/traces_bandpassed.png}
+        \caption{Bandpassed trace (pink, vs normal trace), bandpassed PSD (pink)vs normal (gray) and spectrogram}
+    \end{figure}
+
+    
+\end{frame}
+
 \begin{frame}
     \begin{figure}
         \centering
@@ -184,6 +197,7 @@
 \begin{frame}{Problems / Questions}
     \begin{itemize}
         \item Simulations take very long to run on remote machine (2+ hours)
+        \item Kernel keeps crashing for larger domain simulation
         \item Does it make sense to add topography to simulations?
         \item Does it make sense to add eg old snow layer (make the simulations multilayered)?
     \end{itemize}
