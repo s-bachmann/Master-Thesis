@@ -1,5 +1,6 @@
 %Please use LuaLaTeX or XeLaTeX
 \documentclass[11pt,aspectratio=169]{beamer}
+\usepackage{subcaption}
 \usepackage[utf8]{inputenc}
 \usepackage[
   style=apa,
@@ -64,7 +65,18 @@
 
 \begin{frame}{Wavefield Waterfall plots}
     \begin{figure}
-        \includegraphics{}
+        \centering
+        \begin{subfigure}[t]{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{figures/waterfall.png}
+            \caption{Vector point 2D source with $f_y=-1$. Source location indicated by white line. Colorbar shows particle velocity (m/s).}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[t]{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{figures/waterfall_momentt.png}
+            \caption{Moment tensor source with $m_{xx}=0$, $m_{yy}=0$, $m_{xy}=3\times10^4$. Source location indicated by white line. Colorbar shows particle velocity (m/s).}
+        \end{subfigure}
     \end{figure}
 \end{frame}
 
