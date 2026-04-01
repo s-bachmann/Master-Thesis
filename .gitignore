@@ -73,3 +73,5 @@ simulation_wavefield_output_multi/
 simulation_wavefield_output_topo/
 
 simulation_wavefield_output_dense/
+
+simulation_wavefield_output_denser/
