@@ -83,3 +83,5 @@ simulation_wavefield_output_very_denser/
 simulation_wavefield_output_larger/
 
 simulation_wavefield_output_moment_tensor_bigger/
+
+simulation_wavefield_output_multi_mom/
