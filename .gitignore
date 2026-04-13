@@ -90,3 +90,5 @@ simulation_wavefield_output_moment_tensor_bigger/
 simulation_wavefield_output_multi_mom/
 
 simulation_wavefield_moving_source/
+
+simulation_wavefield_moving_source_momentt/
