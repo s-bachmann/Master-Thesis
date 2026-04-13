@@ -92,3 +92,5 @@ simulation_wavefield_output_multi_mom/
 simulation_wavefield_moving_source/
 
 simulation_wavefield_moving_source_momentt/
+
+simulation_wavefield_moving_source_momentt_subrayleigh/
