@@ -1,0 +1,2160 @@
+{
+    "run_statistics": {
+        "salvus_version": "2025.1.2",
+        "runtime_in_seconds": 2.606801406,
+        "start_time": "2026-04-21T09:51:13Z",
+        "end_time": "2026-04-21T09:51:16Z",
+        "working_directory": "/home/sbachmann/salvus_data/run_directory/job_2604211151415564_a61bb98cbc",
+        "number_of_ranks": 4
+    },
+    "machine_statistics": {
+        "username": "sbachmann",
+        "hostname": "dreamstation",
+        "working_directory": "/home/sbachmann/salvus_data/run_directory/job_2604211151415564_a61bb98cbc",
+        "operating_system": "Linux",
+        "compile_time_mpi_version": "3.1",
+        "run_time_mpi_version": "3.1",
+        "cpu_statistics": {
+            "architecture": "X86",
+            "brand_string": "AMD Ryzen Threadripper PRO 3975WX 32-Cores     ",
+            "family": 23,
+            "model": 49,
+            "stepping": 0,
+            "architecture": "X86",
+            "microarchitecture": "AMD_ZEN2",
+            "feature_flags": [
+                "fpu",
+                "tsc",
+                "cx8",
+                "clfsh",
+                "mmx",
+                "aes",
+                "f16c",
+                "fma3",
+                "bmi1",
+                "bmi2",
+                "rdseed",
+                "clflushopt",
+                "clwb",
+                "sse",
+                "sse2",
+                "sse3",
+                "ssse3",
+                "sse4_1",
+                "sse4_2",
+                "sse4a",
+                "avx",
+                "avx2",
+                "pclmulqdq",
+                "cx16",
+                "sha",
+                "popcnt",
+                "movbe",
+                "rdrnd",
+                "adx",
+                "lzcnt"
+            ]
+        }
+    },
+    "forward_run_input": {
+        "domain": {
+            "dimension": 2,
+            "geometry": {
+                "filename": "/home/sbachmann/salvus_data/run_directory/job_2604211151415564_a61bb98cbc/input/mesh.h5",
+                "format": "hdf5"
+            },
+            "mesh": {
+                "filename": "/home/sbachmann/salvus_data/run_directory/job_2604211151415564_a61bb98cbc/input/mesh.h5",
+                "format": "hdf5"
+            },
+            "model": {
+                "filename": "/home/sbachmann/salvus_data/run_directory/job_2604211151415564_a61bb98cbc/input/mesh.h5",
+                "format": "hdf5"
+            },
+            "polynomial_order": 4
+        },
+        "hardware": {
+            "gpu": false
+        },
+        "output": {
+            "meta_data": {
+                "meta_json_filename": "/home/sbachmann/salvus_data/run_directory/job_2604211151415564_a61bb98cbc/output/meta.json",
+                "progress_json_filename": "/home/sbachmann/salvus_data/run_directory/job_2604211151415564_a61bb98cbc/output/progress.json"
+            },
+            "volume_data": {
+                "fields": [
+                    "velocity",
+                    "displacement"
+                ],
+                "filename": "/home/sbachmann/salvus_data/tmp_directory/job_2604211151415564_a61bb98cbc/volume_data_output.h5",
+                "format": "hdf5",
+                "sampling_interval_in_time_steps": 50,
+                "gradient_subsampling_interval": 1
+            }
+        },
+        "physics": {
+            "wave_equation": {
+                "attenuation": false,
+                "boundaries": [
+                    {
+                        "side_sets": [
+                            "x0",
+                            "x1",
+                            "y0"
+                        ],
+                        "taper_amplitude": 25.0,
+                        "type": "absorbing",
+                        "width_in_meters": 15.0
+                    }
+                ],
+                "courant_number": 0.6,
+                "end_time_in_seconds": 2.0,
+                "point_source": [
+                    {
+                        "location": [
+                            30.0,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.3,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            686.7,
+                            686.7,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            31.800000000000004,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.3144,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            309.01500000000004,
+                            309.01500000000004,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            34.20000000000001,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.32880000000000004,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            295.28443590036204,
+                            295.28443590036204,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            36.600000000000016,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.34320000000000006,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            282.2958787768783,
+                            282.2958787768783,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            39.00000000000002,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.35760000000000014,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            270.00923017848237,
+                            270.00923017848237,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            40.800000000000026,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.37200000000000016,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            258.3865585956997,
+                            258.3865585956997,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            43.20000000000003,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.3864000000000002,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            247.39198235797286,
+                            247.39198235797286,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            45.60000000000004,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.4008000000000002,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            236.9915588592778,
+                            236.9915588592778,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            48.00000000000004,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.41520000000000024,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            227.15317977004682,
+                            227.15317977004682,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            49.80000000000005,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.4296000000000003,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            217.84647191189447,
+                            217.84647191189447,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            52.20000000000005,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.44400000000000034,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            209.04270348912618,
+                            209.04270348912618,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            54.60000000000006,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.45840000000000036,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            200.7146953875462,
+                            200.7146953875462,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            57.000000000000064,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.4728000000000004,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            192.83673726672436,
+                            192.83673726672436,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            59.40000000000007,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.4872000000000004,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            185.38450818668196,
+                            185.38450818668196,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            61.200000000000074,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.5016000000000005,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            178.33500152395354,
+                            178.33500152395354,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            63.60000000000008,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.5160000000000005,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            171.6664539452242,
+                            171.6664539452242,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            66.00000000000009,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.5304000000000005,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            165.35827821926992,
+                            165.35827821926992,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            68.40000000000009,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.5448000000000006,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            159.39099965977567,
+                            159.39099965977567,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            70.2000000000001,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.5592000000000006,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            153.7461960028178,
+                            153.7461960028178,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            72.60000000000011,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.5736000000000007,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            148.4064405333989,
+                            148.4064405333989,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            75.00000000000011,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.5880000000000007,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            143.35524828545542,
+                            143.35524828545542,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            77.40000000000012,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.6024000000000007,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            138.57702514924483,
+                            138.57702514924483,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            79.80000000000013,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.6168000000000007,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            134.05701972899706,
+                            134.05701972899706,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            81.60000000000012,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.6312000000000008,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            129.78127780220376,
+                            129.78127780220376,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            84.00000000000013,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.6456000000000008,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            125.73659923995201,
+                            125.73659923995201,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            86.40000000000013,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.6600000000000008,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            121.91049725530576,
+                            121.91049725530576,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            88.80000000000014,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.6744000000000009,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            118.29115985392666,
+                            118.29115985392666,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            90.60000000000014,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.688800000000001,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            114.86741336792367,
+                            114.86741336792367,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            93.00000000000014,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.7032000000000009,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            111.6286879603529,
+                            111.6286879603529,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            95.40000000000015,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.7176000000000009,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            108.56498499387241,
+                            108.56498499387241,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            97.80000000000015,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.7320000000000011,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            105.66684616281245,
+                            105.66684616281245,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            99.60000000000016,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.7464000000000011,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            102.92532429336487,
+                            102.92532429336487,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            102.00000000000017,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.760800000000001,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            100.33195572174598,
+                            100.33195572174598,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            104.40000000000018,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.7752000000000011,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            97.87873416505788,
+                            97.87873416505788,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            106.80000000000018,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.7896000000000012,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            95.55808600418254,
+                            95.55808600418254,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            109.20000000000019,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.8040000000000012,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            93.36284690240149,
+                            93.36284690240149,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            111.0000000000002,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.8184000000000011,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            91.28623968755728,
+                            91.28623968755728,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            113.4000000000002,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.8328000000000013,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            89.32185342947531,
+                            89.32185342947531,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            115.80000000000021,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.8472000000000013,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            87.46362364805236,
+                            87.46362364805236,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            118.20000000000022,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.8616000000000013,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            85.70581359091075,
+                            85.70581359091075,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            120.00000000000021,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.8760000000000014,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            84.04299652281811,
+                            84.04299652281811,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            122.40000000000022,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.8904000000000014,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            82.47003897219608,
+                            82.47003897219608,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            124.80000000000022,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.9048000000000014,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            80.9820848829968,
+                            80.9820848829968,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            127.20000000000023,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.9192000000000016,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            79.57454062302018,
+                            79.57454062302018,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            129.60000000000025,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.9336000000000015,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            78.24306080238993,
+                            78.24306080238993,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            131.40000000000023,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.9480000000000015,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            76.98353485840647,
+                            76.98353485840647,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            133.80000000000024,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.9624000000000015,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            75.79207436536159,
+                            75.79207436536159,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            136.20000000000024,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.9768000000000017,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            74.66500103013746,
+                            74.66500103013746,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            138.60000000000025,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 0.9912000000000016,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            73.59883533652985,
+                            73.59883533652985,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            140.40000000000026,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.0056000000000016,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            72.59028580323819,
+                            72.59028580323819,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            142.80000000000027,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.0200000000000018,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            71.63623882235945,
+                            71.63623882235945,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            145.20000000000027,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.0344000000000018,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            70.7337490470153,
+                            70.7337490470153,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            147.60000000000028,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.0488000000000017,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            69.88003029843695,
+                            69.88003029843695,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            149.4000000000003,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.0632000000000017,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            69.07244696443604,
+                            69.07244696443604,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            151.8000000000003,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.077600000000002,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            68.30850586270655,
+                            68.30850586270655,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            154.2000000000003,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.0920000000000019,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            67.58584854383851,
+                            67.58584854383851,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            156.6000000000003,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.1064000000000018,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            66.9022440102805,
+                            66.9022440102805,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            159.0000000000003,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.120800000000002,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            66.2555818287737,
+                            66.2555818287737,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            160.8000000000003,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.135200000000002,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            65.64386561499344,
+                            65.64386561499344,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            163.20000000000033,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.149600000000002,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            65.06520687028421,
+                            65.06520687028421,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            165.6000000000003,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.1640000000000021,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            64.51781915146081,
+                            64.51781915146081,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            168.00000000000034,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.1784000000000021,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            64.00001255567655,
+                            64.00001255567655,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            169.80000000000032,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.192800000000002,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            63.51018850333204,
+                            63.51018850333204,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            172.20000000000033,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.207200000000002,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            63.04683480291847,
+                            63.04683480291847,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            174.60000000000034,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.2216000000000022,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            62.60852098255926,
+                            62.60852098255926,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            177.00000000000034,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.2360000000000022,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            62.19389387383778,
+                            62.19389387383778,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            179.40000000000035,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.2504000000000022,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            61.801673434277255,
+                            61.801673434277255,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            181.20000000000036,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.2648000000000024,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            61.4306487955762,
+                            61.4306487955762,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            183.60000000000036,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.2792000000000023,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            61.07967452539923,
+                            61.07967452539923,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            186.00000000000037,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.2936000000000023,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            60.74766709118268,
+                            60.74766709118268,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            188.40000000000038,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.3080000000000025,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            60.433601515038085,
+                            60.433601515038085,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            190.2000000000004,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.3224000000000025,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            60.13650820942646,
+                            60.13650820942646,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            192.6000000000004,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.3368000000000024,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            59.855469983834325,
+                            59.855469983834325,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            195.0000000000004,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.3512000000000026,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            59.589619213210696,
+                            59.589619213210696,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            197.4000000000004,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.3656000000000026,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            59.33813515942311,
+                            59.33813515942311,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            199.2000000000004,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.3800000000000026,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            59.10024143746369,
+                            59.10024143746369,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            201.60000000000042,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.3944000000000027,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            58.875203618582695,
+                            58.875203618582695,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            204.0000000000004,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.4088000000000027,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            58.6623269629501,
+                            58.6623269629501,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            206.40000000000043,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.4232000000000027,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            58.460954274845236,
+                            58.460954274845236,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            208.8000000000004,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.4376000000000027,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            58.27046387375323,
+                            58.27046387375323,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            210.60000000000042,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.4520000000000028,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            58.0902676751044,
+                            58.0902676751044,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            213.00000000000043,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.4664000000000028,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            57.919809374731535,
+                            57.919809374731535,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            215.40000000000043,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.4808000000000028,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            57.75856273144007,
+                            57.75856273144007,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            217.80000000000044,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.495200000000003,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            57.60602994238908,
+                            57.60602994238908,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            219.60000000000045,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.509600000000003,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            57.461740106267534,
+                            57.461740106267534,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            222.00000000000045,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.524000000000003,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            57.325247769521354,
+                            57.325247769521354,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            224.40000000000046,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.538400000000003,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            57.1961315511431,
+                            57.1961315511431,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            226.80000000000047,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.552800000000003,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            57.07399284177875,
+                            57.07399284177875,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            229.20000000000047,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.567200000000003,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            56.95845457313549,
+                            56.95845457313549,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            231.00000000000048,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.581600000000003,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            56.84916005389131,
+                            56.84916005389131,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            233.4000000000005,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.5960000000000032,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            56.74577186851266,
+                            56.74577186851266,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            235.8000000000005,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.6104000000000032,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            56.647970835580644,
+                            56.647970835580644,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            238.2000000000005,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.6248000000000031,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            56.55545502240974,
+                            56.55545502240974,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            240.0000000000005,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.6392000000000033,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            56.467938812917104,
+                            56.467938812917104,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            242.4000000000005,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.6536000000000033,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            56.38515202586473,
+                            56.38515202586473,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            244.80000000000052,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.6680000000000033,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            56.30683908075216,
+                            56.30683908075216,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            247.2000000000005,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.6824000000000032,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            56.23275820878495,
+                            56.23275820878495,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            249.0000000000005,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.6968000000000034,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            56.1626807064827,
+                            56.1626807064827,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            251.40000000000052,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.7112000000000034,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            56.09639022962256,
+                            56.09639022962256,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            253.80000000000052,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.7256000000000034,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            56.03368212533835,
+                            56.03368212533835,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            256.2000000000005,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.7400000000000035,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.97436280031352,
+                            55.97436280031352,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            258.60000000000053,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.7544000000000035,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.918249123117114,
+                            55.918249123117114,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            260.40000000000055,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.7688000000000035,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.86516785883801,
+                            55.86516785883801,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            262.8000000000005,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.7832000000000037,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.814955134271635,
+                            55.814955134271635,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            265.20000000000056,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.7976000000000036,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.76745593200847,
+                            55.76745593200847,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            267.6000000000006,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.8120000000000036,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.72252361186211,
+                            55.72252361186211,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            269.40000000000055,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.8264000000000036,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.68001945815971,
+                            55.68001945815971,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            271.8000000000006,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.8408000000000038,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.63981225149706,
+                            55.63981225149706,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            274.2000000000006,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.8552000000000037,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.60177786363624,
+                            55.60177786363624,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            276.6000000000006,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.8696000000000037,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.56579887429521,
+                            55.56579887429521,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            279.00000000000057,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.884000000000004,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.531764208646386,
+                            55.531764208646386,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            280.8000000000006,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.8984000000000039,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.49956879440479,
+                            55.49956879440479,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            283.2000000000006,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.9128000000000038,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.46911323744758,
+                            55.46911323744758,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            285.6000000000006,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.927200000000004,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.440303514963084,
+                            55.440303514963084,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            288.0000000000006,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.941600000000004,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.41305068518229,
+                            55.41305068518229,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            289.80000000000064,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.956000000000004,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.38727061279665,
+                            55.38727061279665,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            292.2000000000006,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.970400000000004,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.362883709214344,
+                            55.362883709214344,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            294.60000000000065,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.9848000000000041,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.33981468685336,
+                            55.33981468685336,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            297.0000000000006,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 1.999200000000004,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.317992326712556,
+                            55.317992326712556,
+                            0.0
+                        ]
+                    },
+                    {
+                        "location": [
+                            299.40000000000066,
+                            2.5
+                        ],
+                        "source_time_function": {
+                            "center_frequency": 10.0,
+                            "time_shift_in_seconds": 2.013600000000004,
+                            "wavelet": "ricker"
+                        },
+                        "spatial_type": "moment_tensor",
+                        "spatial_weights": [
+                            55.29734925850347,
+                            55.29734925850347,
+                            0.0
+                        ]
+                    }
+                ],
+                "start_time_in_seconds": -0.3,
+                "time_stepping_scheme": "newmark",
+                "time_step_in_seconds": 0.00047817047817047813
+            }
+        }
+    }
+}
