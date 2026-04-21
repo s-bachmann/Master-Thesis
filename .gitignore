@@ -116,3 +116,5 @@ simulation_wavefield_moving_source_vector_slight_subrayleigh_x_pos/
 simulation_wavefield_moving_source_moment_slight_subrayleigh_x_pos/
 
 simulation_wavefield_moving_source_slight_subrayleigh_different_sources/
+
+simulation_fault_zone/
