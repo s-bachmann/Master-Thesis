@@ -118,3 +118,11 @@ simulation_wavefield_moving_source_moment_slight_subrayleigh_x_pos/
 simulation_wavefield_moving_source_slight_subrayleigh_different_sources/
 
 simulation_fault_zone/
+
+simulation_fault_zone_mode_1/
+
+simulation_fault_zone_mode_2/
+
+simulation_fault_zone_czm/
+
+simulation_fault_zone_czm_adjusted_time_domain/
