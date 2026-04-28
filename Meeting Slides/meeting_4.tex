@@ -7,7 +7,7 @@
 ]{biblatex}
 \addbibresource{master thesis.bib}
 
-\title{Literature Review}
+\title{Meeting 4}
 \date[]{\today}
 \author{Salome Bachmann}
 \institute{}
@@ -49,6 +49,27 @@
         \item Make domain bigger but keep simulation time to get rid of ABC effects
         \item Summary of crack types
     \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Summary of Model}
+    \begin{itemize}
+        \item Implemented cohesive zone model described by \cite{mahajanModelingInterfacialCrack2008}
+        \item Implemented functions described by \cite{mahajanModelingInterfacialCrack2008}
+        \item Accounts for cohesive zone (weak layer)
+        \item Focuses primarily on mode II cracks 
+        \item Two-layered model: snow and air
+        \item Fault mechanism: 10Hz moment tensor sources
+        \item Forces of sources are computed by using a fraction of crack modes: eg mxy is calculated by total force times fraction of mode II
+        \item Sources every 2m 
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Pcolormesh vs imshow}
+    \begin{figure}
+        
+    \end{figure}
 \end{frame}
 
 
@@ -249,6 +270,7 @@
     \typeout{}
     \printbibliography
 \end{frame}
+
 
 \begin{closingframe}
 
