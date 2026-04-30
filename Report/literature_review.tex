@@ -129,6 +129,10 @@ The different snow processes described have differenit implications for the seis
     \item Mode I represents tensile crack which is not usually important for dynamic rupture, but point-source models can account for fault opening by separating tensor into different components
     \item Different modeling methods use different forms of eqations: FE and SE use weak form, PSE and FD use strong form. Weak form implicitly satisfies Neumann boundary conditions, which means that only Dirichlet need to be implemented. Meshes can also be more complex, because a lower oder derivative of the equations is used
     \item During dynamic rupture, the cohesive zone width is a critical parameter, it can be estimated depending on the friction law used: for the linear slip-weakening friction law (frictional coefficient decreases linearly as slip propagates): $ \ \Lambda = \frac{C_1}{C_2} [\frac{GD_c}{\Delta \sigma_d}]^2[\frac{1}{1 + \frac{L_0^2}{L^2}}]$, where $ \ L_0$ is the critical half-crack length
+    \item Friction law describes how the friction evolves over time, this is an important choice
+    \item Slip weakening when slip is greater than dynamic friction coefficient
+    \item SLip strengthening when slip is smaller than static friction coefficient -> this can be used to model crac k arrest
+    \item No energy to grow crack when they are equal 
   \end{itemize}
 
   \subsection{Processes linked to crack propagation}
