@@ -127,6 +127,7 @@ The different snow processes described have differenit implications for the seis
     \item In mode II ruptures, two degrees of freedom lead to the generation of P- and SV-waves (vertically polarized shear wave)
     \item Mode III can only generate SH-waves in homogenous media
     \item Mode I represents tensile crack which is not usually important for dynamic rupture, but point-source models can account for fault opening by separating tensor into different components
+    \item Different modeling methods use different forms of eqations: FE and SE use weak form, PSE and FD use strong form. Weak form implicitly satisfies Neumann boundary conditions, which means that only Dirichlet need to be implemented. Meshes can also be more complex, because a lower oder derivative of the equations is used
   \end{itemize}
 
   \subsection{Processes linked to crack propagation}
