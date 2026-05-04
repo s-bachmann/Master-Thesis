@@ -14,7 +14,7 @@
 
 \usetheme{eth}
 
-\colorlet{titlefgcolor}{ETHRed}
+\colorlet{titlefgcolor}{ETHPetrol}
 \colorlet{accentcolor}{ETHPurple}
 
 \begin{document}
@@ -27,6 +27,10 @@
 \def\titlefigure{elements/mountains.jpeg}
 % rotate the title image if its orientation metadata is wrong
 \def\titlefigureangle{180}
+% mirror the title image horizontally
+\def\titlefiguremirror{-1}
+% hide the ETH logo on the title slide
+\def\showtitlelogo{0}
 \title{Thesis Talk}
 \titleframe
 
@@ -39,6 +43,17 @@
 % \tocframe
 
 %\section{Layout}
+
+\begin{frame}{Overview of Topics}
+    \begin{itemize}
+        \item Context
+        \item Theoretical Introduction (sorry)
+        \item Overview of Models
+        \item Results of Cohesive Zone Model
+        \item Disucussion
+    \end{itemize}
+    
+\end{frame}
 
 
 
