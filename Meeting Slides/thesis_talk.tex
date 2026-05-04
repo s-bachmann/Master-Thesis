@@ -5,6 +5,7 @@
   style=apa,
   backend=biber
 ]{biblatex}
+\usepackage{caption}
 \addbibresource{../master thesis.bib}
 
 \title{Thesis Talk}
@@ -73,12 +74,9 @@
         \item Slab: Part of the snowpack which breaks off and slides downhill as a cohesive unit (the avalanche itself, I'm looking at dry-snow slab avalanches) \parencite{schweizerSnowAvalancheFormation2003}
         \item Weak layer: Layer with different mechanical properties than the rest of the snow, cracks usually propagate in this layer because it's weaker than the rest of the snowpack \parencite{schweizerSnowAvalancheFormation2003}
         \item Mode I, Mode II and Mode III cracks: cracks opening as a response to stress in different directions: 
-        \item \begin{figure}
-            \centering
-            \includegraphics{../figures/fracture_modes}
-            \caption{Fracture modes according to \cite{philippEffectsMechanicalLayering2013}}
-            
-            \end{figure}
+          \centering
+    \includegraphics[width=0.4\linewidth]{../figures/fracture_modes.png}
+    \captionof{figure}{Fracture modes according to \cite{philippEffectsMechanicalLayering2013}}
     \end{itemize}
     
 \end{frame}
