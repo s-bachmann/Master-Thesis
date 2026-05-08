@@ -120,7 +120,7 @@ The different snow processes described have differenit implications for the seis
     \item The parameters used come from laboratory measurements of snow
     \item In the model, Young's modulus (E) and shear modulus ($\ \mu$) are calculated from shear and p wave speeds using standard elastic relations: $\ \mu = \rho v_s^2$ and $\ E = \mu \frac{3v_p^2 -4v_s^2}{v_p^2 -v _s^2}$. This is done to convert measured values (wave speeds) into material properties
     \item Normal and shear fracture energy also from measured values in paper
-    \item 
+    \item Function that calculates slip distribution: how much each of the subfaults slips. Cohesive weakening curve is integrated over the full normalized opening range (from 0 to 1). For each x position, the distance behind the crack tip is calculated, if the point is ahead of the tip, the slip is set to zero, if the point is in the cohesive zone, a normalized opening fraction is calculated from the distance to the tip and the length of the cohesive zone. The stress profile up to the opening is sampled and the released traction deficit integrated. If the point is far behind the tip, full slip is applied. 
   \end{itemize}
 
 \subsection{Crack Types Relevant for Avalanche Release}
