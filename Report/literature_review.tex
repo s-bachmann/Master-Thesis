@@ -103,12 +103,12 @@ The different snow processes described have differenit implications for the seis
 
   \subsection{Model implemented by me}
   \begin{itemize}
-    \item Cohesive zone model according to \cite{mahajanModelingInterfacialCrack2008}
+    \item Cohesive zone model according to \cite{mahajanModelingInterfacialCrack2008} (if not stated otherwise, this is the source for all bullet points below)
     \item Faulure either in weak layer or at interface where contacts between grains are bonded poorly (according to \cite{mcclungFractureMechanicalModels1981,schweizerSnowAvalancheFormation2003})
     \item Cohesive zone model is different from previous models, because: it is assumed to have a narrow band fracture zone precedes the crack front. This means that before a point in the material shows cracking, there is microcracks or other weakening in the material
     \item In the model, this relation is described by a softening-force relation. This is different from linear elastic behavior (where the area under the force-displacement curve represents the separation of crack faces) because additional parameters are introduced: characteristic opening displacement and peak stress. Peak stress is the stress at which damage is initiated -> new crack faces are formed, traction between them is reduced to zero. 
     \item Stress state in the snowpack due to uniform applied pressure: $ \ \int_v s: \delta F dv - \int_{s_{int}} T.\delta \Delta dS- \int_v \rho g \delta udv = \int_{s_{ext}} T.\delta udS - \int_v \rho \frac{\delta^2u}{\delta t^2}. \delta u dv$, which is the lagrangian formulation for virtual work for dynamics
-    \item 
+    \item In this relation, F is the deformation gradient, V the volume in refrence configuriation (initial configuration), $ \ \Delta $ the virtual jump displacement across the cohesive element faces, $ \ s_{ext}$ is the external surface area, on which the traction vector T with pressure and friction components is applied. $\ S_{int}$ is the internal surface area of the body, $ \ \rho$ is the density and g gravitational acceleration 
   \end{itemize}
 
 \subsection{Crack Types Relevant for Avalanche Release}
