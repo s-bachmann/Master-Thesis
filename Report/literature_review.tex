@@ -6,6 +6,7 @@
 \usepackage{setspace}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{amsmath}
 \usepackage{color}
 \usepackage[
   style=apa,
@@ -107,13 +108,33 @@ The different snow processes described have differenit implications for the seis
     \item Faulure either in weak layer or at interface where contacts between grains are bonded poorly (according to \cite{mcclungFractureMechanicalModels1981,schweizerSnowAvalancheFormation2003})
     \item Cohesive zone model is different from previous models, because: it is assumed to have a narrow band fracture zone precedes the crack front. This means that before a point in the material shows cracking, there is microcracks or other weakening in the material
     \item In the model, this relation is described by a softening-force relation. This is different from linear elastic behavior (where the area under the force-displacement curve represents the separation of crack faces) because additional parameters are introduced: characteristic opening displacement and peak stress. Peak stress is the stress at which damage is initiated -> new crack faces are formed, traction between them is reduced to zero. 
-    \item Stress state in the snowpack due to uniform applied pressure: $ \ \int_v s: \delta F dv - \int_{s_{int}} T.\delta \Delta dS- \int_v \rho g \delta udv = \int_{s_{ext}} T.\delta udS - \int_v \rho \frac{\delta^2u}{\delta t^2}. \delta u dv$, which is the lagrangian formulation for virtual work for dynamics
+    \item Stress state in the snowpack due to uniform applied pressure is given by the lagrangian formulation for virtual work for dynamics:
+    \[
+    \begin{aligned}
+    \int_v s : \delta F \, dv - \int_{s_{int}} T \cdot \delta \Delta \, dS - \int_v \rho g \, \delta u \, dv
+    &= \int_{s_{ext}} T \cdot \delta u \, dS \\
+    &\quad - \int_v \rho \frac{\delta^2 u}{\delta t^2} \cdot \delta u \, dv
+    \end{aligned}
+    \]
     \item In this relation, F is the deformation gradient, V the volume in refrence configuriation (initial configuration), $ \ \Delta $ the virtual jump displacement across the cohesive element faces, $ \ s_{ext}$ is the external surface area, on which the traction vector T with pressure and friction components is applied. $\ S_{int}$ is the internal surface area of the body, $ \ \rho$ is the density and g gravitational acceleration 
     \item Layers are assumed to be isotropic elastic: have young's modulus E and v, which is the Poisson's ratio
-    \item Constitutive law for zero thickness cohesive elements at the interface (elements between boundaries): characterized by stress-opening displacement potential ($ \phi$) function: 
-    $\phi(\Delta) = \phi_n \phi_n \exp\left(-\frac{\Delta_n}{\delta_n}\right) \left\{ \left[1+\frac{\Delta_n}{\delta_n}\right] q\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right]\right\}$ 
+    \item Constitutive law for zero thickness cohesive elements at the interface (elements between boundaries): characterized by the stress-opening displacement potential ($ \phi$) function:
+    \[
+    \phi(\Delta) = \phi_n \phi_n \exp\left(-\frac{\Delta_n}{\delta_n}\right)
+    \left\{ \left[1+\frac{\Delta_n}{\delta_n}\right] q\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right]\right\}
+    \]
     \item $ \ \phi_n$ is the work of normal separation , $ \ \phi_t$ of tangential separation, $ \ q = \frac{\phi_n}{\phi_t}$ is the ratio between them. $\ \delta_n$ and $\ \delta_t$ are the characteristic normal and tangential separations as a function of traction.
-    \item As the cohesive surfaces seperate, traction first increases to a maximum and then goes to zero with increase in separation. The cohesive surface tractions are written as: $\ T_n = -\frac{\phi_n}{\delta_n}\exp\left(-\frac{\Delta_n}{\delta_n}\right) \left\{ \frac{\Delta_n}{\delta_n}\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right) + (1-q)\left[ 1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right] \frac{\Delta_n}{\delta_n}\right\}$ and $\ T_t = -\frac{\phi_n}{\delta_n}(2\frac{\delta_n}{\delta_t}) \left\{q(1+\frac{\Delta_n}{\delta_n})\right\} x exp(-\frac{\Delta_n}{\delta_n})exp(-\frac{\Delta_t^2}{\delta_t})$
+    \item As the cohesive surfaces seperate, traction first increases to a maximum and then goes to zero with increase in separation. The cohesive surface tractions are written as:
+    \[
+    \begin{aligned}
+    T_n &= -\frac{\phi_n}{\delta_n}\exp\left(-\frac{\Delta_n}{\delta_n}\right)
+    \left\{ \frac{\Delta_n}{\delta_n}\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)
+    + (1-q)\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right] \frac{\Delta_n}{\delta_n}\right\} \\
+    T_t &= -\frac{\phi_n}{\delta_n}\left(2\frac{\delta_n}{\delta_t}\right)
+    \left\{q\left(1+\frac{\Delta_n}{\delta_n}\right)\right\}
+    x\exp\left(-\frac{\Delta_n}{\delta_n}\right)\exp\left(-\frac{\Delta_t^2}{\delta_t}\right)
+    \end{aligned}
+    \]
     \item The normal traction is maximal when $\ \sigma_{max}, \Delta_n=\delta_n$, the shear traction is maximal when $\ |\Delta_t| = \frac{\delta_t}{\sqrt{2}}$
     \item The normal and shear work of separation are: $ \ \phi_n = e\sigma_{max}\delta_n$ and $\ \phi_t = \sqrt{\frac{e}{2}}\tau_{max}\delta_t$, where e is exp(1), $\ \sigma_{max}$ is the cohesive surface normal strength, $\ \tau_{max}$ is the cohesive surface tangential strength, $\ \delta_n, \delta_t$ are the opening and shear distances which govern the fracture process ahead of the crack tip, when these have been exceeded, strain softening occurs
     \item The fracture zone is the distance between the crack tip and a point where one of these distances has been exceeded
