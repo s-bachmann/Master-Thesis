@@ -167,6 +167,8 @@ The different snow processes described have differenit implications for the seis
   \node (pro1) [process, below of = in1] {Definition of stress profile with $\  x_i = \frac{\delta}{\delta_c}$};
   \node (stress1) [decision, right of=pro1, xshift=5cm, yshift=-0.8cm] {Linear: $\  \sigma = [0, 1-x_i]$};
   \node (stress2) [decision, below of= stress1, yshift=-3cm] {Elastic:$ \ \sigma = exp(-x_i * log(2))$ }; 
+  \node (pro2) [process, below of=pro1] {Calculation of Lamé-Parameters: $\ \mu = \rho v_s^2, \lambda = \rho (v_p^2 -v_s^2)$};
+  \node (pro3) [process, below of=pro2] {Calculation of Elastic modulus from Lamé-Parameters: $\ E = \mu * (3.0 * \lambda + 2.0 * \mu) / (\lambda + \mu)$};
 
 
 \end{tikzpicture}
