@@ -10,10 +10,10 @@
 \usepackage{color}
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows}
-\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=magenta!30]
-\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=teal!30]
-\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
-\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=cyan!30]
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=magenta!30, font=\tiny]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=teal!30, font=\tiny]
+\tikzstyle{process} = [rectangle, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=orange!30, font=\tiny]
+\tikzstyle{decision} = [diamond, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=cyan!30, font=\tiny]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 
 
@@ -160,7 +160,7 @@ The different snow processes described have differenit implications for the seis
   \end{itemize}
 
 \subsection{Code workflow}
-\begin{tikzpicture}[node distance=2cm]
+\begin{tikzpicture}[node distance=3cm]
   \centering
   \node (start) [startstop] {Domain Geometry definition: x and y extents};
   \node (in1) [io, below of=start] {Layer definition: number of layers, thickness of layers, $\ \rho, v_p, v_s$ of layers};
