@@ -139,3 +139,5 @@ simulation_wavefield_output_rupture_domain/
 simulation_fault_zone_czm_adjusted_time_sub/
 
 simulation_fault_zone_czm_adjusted_time_supershear_xx/
+
+simulation_fault_zone_czm_mode1/
