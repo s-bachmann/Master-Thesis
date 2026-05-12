@@ -176,6 +176,7 @@ The different snow processes described have differenit implications for the seis
   \node (in3) [io, below of=pro6] {Rupture speed calculation: minimum shear wave speed is adjusted for thickness and stiffness of interface according to the [0.5,2] interval of $\ \sqrt{\frac{E_{eff}}{10e6},\sqrt{thickness}}$. These corrections are the weighted, rupture velocity is calculated according to bounds described by \cite{trottetTransitionSubRayleighAnticrack2022}: between 0.25 and 0.6 vs for sub-Rayleigh, above 1.6 vs for supershear };
   \node (pro7) [process, below of=in3] {Calculation of rise time (duration of slip) from cohesive zone length and rupture speed: $\ t = \frac{l_{cz}}{v_{rupture}} $}; 
   \node (in4) [io, below of=pro7] {Definition of crack zone length by defining start and end x position, spacing of sources, ratio between mode I and mode II}; 
+  \node (pro8) [process, below of=in4] {Calculation of moment tensor source direction: $\ M0 = \mu * slip * \Delta x,  m_{xy} = mode_{mix} * M0, m_{yy} = -(1.0 - mode_{mix}) * M0, m_{xx} = 0.0$ }; 
 
 
 \end{tikzpicture}
