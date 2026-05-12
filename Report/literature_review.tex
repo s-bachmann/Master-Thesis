@@ -164,11 +164,13 @@ The different snow processes described have differenit implications for the seis
   \centering
   \node (start) [startstop] {Domain Geometry definition: x and y extents};
   \node (in1) [io, below of=start] {Layer definition: number of layers, thickness of layers, $\ \rho, v_p, v_s$ of layers};
-  \node (pro1) [process, below of = in1] {Definition of stress profile with $\  x_i = \frac{\delta}{\delta_c}$};
+  \node (pro1) [io, below of = in1] {Definition of stress profile with $\  x_i = \frac{\delta}{\delta_c}$};
   \node (stress1) [decision, right of=pro1, xshift=5cm, yshift=-0.8cm] {Linear: $\  \sigma = [0, 1-x_i]$};
   \node (stress2) [decision, left of= pro1, xshift=-5cm, yshift=-0.8cm] {Elastic:$ \ \sigma = exp(-x_i * log(2))$ }; 
   \node (pro2) [process, below of=pro1] {Calculation of Lamé-Parameters: $\ \mu = \rho v_s^2, \lambda = \rho (v_p^2 -v_s^2)$};
   \node (pro3) [process, below of=pro2] {Calculation of Elastic modulus from Lamé-Parameters: $\ E = \mu * (3.0 * \lambda + 2.0 * \mu) / (\lambda + \mu)$};
+  \node (pro4) [process, below of=pro3] {Calculating slip profile: array of zeros at every slip position, $\int_{0}^{1}(1-\sigma(\xi))d\xi$, where $\ \sigma(\xi)$ is the stress profile};
+  \node (pro5) [process, below of=pro4] {Calculating slip distance: distance between current position and crack tip is calculated, if in front of tip, the slip is 0. If the current position is behind the crack tip, then: $\ x_i = \frac{1 - \Delta x}{l_{cz}}$, where $\ l_{cz}$ is the cohesive zone length};
 
 
 \end{tikzpicture}
