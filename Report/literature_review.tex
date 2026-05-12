@@ -102,7 +102,7 @@ The different snow processes described have differenit implications for the seis
   \section{Crack Propagation \& Representation}
 
 
-  \subsection{Model implemented by me}
+  \subsection{Model implemented by me - Description and theoretical backround}
   \begin{itemize}
     \item Cohesive zone model according to \cite{mahajanModelingInterfacialCrack2008} (if not stated otherwise, this is the source for all bullet points below)
     \item Faulure either in weak layer or at interface where contacts between grains are bonded poorly (according to \cite{mcclungFractureMechanicalModels1981,schweizerSnowAvalancheFormation2003})
@@ -149,6 +149,10 @@ The different snow processes described have differenit implications for the seis
     \item The rupture speeds are calculated from the shear wave speed of the slowest layer. This is adjusted for the stiffness and the thickness of the slab: this is done because stiffer slabs have more slab bending, thicker slabs have more gravitaional energy (slab pull). The numerical values used are typical snow values. The rupture speeds are then calculated from the bounds defined by \cite{trottetTransitionSubRayleighAnticrack2022}: 0.25 to 0.6 times the shear wave speed for sub-rayleigh, and 1.6 times the shear wave speed for supershear. 
     \item The characteristic length of a crack is calculated using the Irwing characteristic length: $\ l_{ch}= \frac{E_{eff}G_{II_c}}{\tau_s^2}$, the process zone length using Dugdale-Barenblatt approximation: $\ l_{cz}= \frac{\pi}{8} l_{ch}$
   \end{itemize}
+
+\subsection{Code workflow}
+
+
 
 \subsection{Crack Types Relevant for Avalanche Release}
   \begin{itemize}
