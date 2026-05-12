@@ -165,8 +165,8 @@ The different snow processes described have differenit implications for the seis
   \node (start) [startstop] {Domain Geometry definition: x and y extents};
   \node (in1) [io, below of=start] {Layer definition: number of layers, thickness of layers, $\ \rho, v_p, v_s$ of layers};
   \node (pro1) [process, below of = in1] {Definition of stress profile with $\  x_i = \frac{\delta}{\delta_c}$};
-  \node (stress1) [decision, right of=pro1] {Linear: $\  \sigma = [0, 1-x_i]$};
-  \node (stress2) [decision, below of= stress1] {Elastic:$ \ \sigma = exp(-x_i * log(2))$ }; 
+  \node (stress1) [decision, right of=pro1, xshift=5cm, yshift=-0.8cm] {Linear: $\  \sigma = [0, 1-x_i]$};
+  \node (stress2) [decision, below of= stress1, yshift=-3cm] {Elastic:$ \ \sigma = exp(-x_i * log(2))$ }; 
 
 
 \end{tikzpicture}
