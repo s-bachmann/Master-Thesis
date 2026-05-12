@@ -181,6 +181,23 @@ The different snow processes described have differenit implications for the seis
   \node (pro10) [process, below of=pro9] {Appending all subfault slip distances, source directions and onset times to salvus project};
   \node (end) [startstop, below of=pro10] {Simualtion launch and plotting}; 
 
+  \draw [arrow] (start) -- (in1);
+  \draw [arrow] (in1) -- (pro1);
+  \draw [arrow] (pro1) -- (stress1);
+  \draw [arrow] (pro1) -- (stress2);
+  \draw [arrow] (pro1) -- (pro2);
+  \draw [arrow] (pro2) -- (pro3);
+  \draw [arrow] (pro3) -- (pro4);
+  \draw [arrow] (pro4) -- (pro5);
+  \draw [arrow] (pro5) -- (in2);
+  \draw [arrow] (in2) -- (pro6);
+  \draw [arrow] (pro6) -- (in3);
+  \draw [arrow] (in3) -- (pro7);
+  \draw [arrow] (pro7) -- (in4);
+  \draw [arrow] (in4) -- (pro8);
+  \draw [arrow] (pro8) -- (pro9);
+  \draw [arrow] (pro9) -- (pro10);
+  \draw [arrow] (pro10) -- (end);
 
 \end{tikzpicture}
 
