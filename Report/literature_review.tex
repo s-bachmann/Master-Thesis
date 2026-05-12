@@ -179,6 +179,7 @@ The different snow processes described have differenit implications for the seis
   \node (pro8)[process, below of=in4]{Calculation of onest time (time where source at x position needs to fire): $\ t_{onest} = (x_i - x_0) / v_{rupture}$}; 
   \node (pro9) [process, below of=pro8] {Calculation of moment tensor source direction: $\ M0 = \mu * slip * \Delta x,  m_{xy} = mode_{mix} * M0, m_{yy} = -(1.0 - mode_{mix}) * M0, m_{xx} = 0.0$ }; 
   \node (pro10) [process, below of=pro9] {Appending all subfault slip distances, source directions and onset times to salvus project};
+  \node (end) [startstop, below of=pro10] {Simualtion launch and plotting}; 
 
 
 \end{tikzpicture}
