@@ -173,7 +173,7 @@ The different snow processes described have differenit implications for the seis
   \node (pro5) [process, below of=pro4] {Calculating slip distance: distance between current position and crack tip is calculated, if in front of tip, the slip is 0. If the current position is behind the crack tip, then: $\ x_i = \frac{1 - \Delta x}{l_{cz}}$, where $\ l_{cz}$ is the cohesive zone length};
   \node (in2) [io, below of=pro5] {Normal and shear strengths and critical fracture energies measured by \cite{mahajanModelingInterfacialCrack2008} used to calculate critical separations: $\ \Delta n = 2*G_I$ / \sigma}; 
   \node (pro6) [process, below of=in2] {Calculating process zone lengths for shear and normal forces: $\  l_{ch} = E_{eff} * G_{IIc} / max(\tau_s^2, 1e-12), l_{cz} = \pi / 8.0 * l_{ch}$}; 
-  \
+  \node (in3) [io, below of=pro6] {Rupture speed calculation: minimum shear wave speed is adjusted for thickness and stiffness of interface according to the [0.5,2] interval of $\ \sqrt{\frac{E_{eff}}{10e6},\sqrt{thickness}}$. These corrections are the weighted, rupture velocity is calculated according to bounds described by \cite{trottetTransitionSubRayleighAnticrack2022}: between 0.25 and 0.6 vs for sub-Rayleigh, above 1.6 vs for supershear };
 
 
 \end{tikzpicture}
