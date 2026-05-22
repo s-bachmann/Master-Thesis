@@ -109,19 +109,31 @@ The different snow processes described have differenit implications for the seis
 
 \section{Methods - Cohesive Zone Model}
 
-The model implemented to model crack propagation in snow is a Cohesive Zone Model (CZM) according to \cite{mahajanModelingInterfacialCrack2008}. The domain has an extent of 400m in x-direction and 3m in y, it consists of a 1.5m thick snow layer and a 1.5m air layer. The material properties for snow were taken from \cite{guillemotEffectSnowfallChanges2021}. \par
+The rupture model used in the simulations is implemented as a mixed-mode Cohesive Zone Model (CZM) following \cite{mahajanModelingInterfacialCrack2008}. The computational domain extends 400 m in the horizontal (x) direction and 3 m in the vertical (y) direction and contains a 1.5 m snow layer over a 1.5 m air layer. Material parameters for the snow layer are taken from \cite{guillemotEffectSnowfallChanges2021}. \par
 
-After the mesh is set up to resolve a maximum frequency of the 95th percentile of the source wavelet frequency content, the cohesive stress profile is computed. Cohesive traction t is calculated as a function of normal opening $\ \xi = \frac{\delta}{\delta_c}$ according to \cite{mahajanModelingInterfacialCrack2008}. For a linear softening case, traction is computed elemet-wise: $\ \sigma = 0, 1-\xi $, this means there is a positive linear decay for $\ 0 ≤ \xi ≤ 1, \xi = \frac{x - x_0}{l_{crack}}$, from the current x position, initial x, and crack length. Next, the Lamé parameters are calculated from the input model parameters: $\ v_s = \sqrt{\frac{\mu}{\rho}}$ which can be rearranged to $\ \mu = v_s^2*\rho$ \parencite{kAkiRichards19801981}. Similarly, $\ v_p = \sqrt{\frac{\lambda + 2\mu}{\rho}}$ can be rearranged to $\ \lambda = \rho * (v_p^2 -2v_s^2)$. From the Lamé parameters, Young's Modulus E is calculated: $\ E =  \frac{\mu (3\lambda + 2\mu)}{\lambda + \mu}$. This is done for all the materials in the domain. \par
+The mesh is generated to resolve wave propagation up to the 95th percentile of the source wavelet's frequency content. Cohesive tractions are prescribed on zero-thickness interface elements and depend on the normalized opening \(\xi=\delta/\delta_c\). For the linear softening law used here the traction in a given cohesive element follows
+\[ T(\xi) = T_\mathrm{peak}\,(1-\xi) \quad\text{for } 0\leq\xi\leq1,\qquad T(\xi)=0\ \text{for }\xi>1, \]
+where \(T_\mathrm{peak}\) is the peak cohesive traction and \(\delta_c\) the critical opening. The normalized opening can be related to the local crack coordinate as \(\xi=(x-x_0)/l_{crack}\) for a crack front with initial position \(x_0\) and local process length \(l_{crack}\). \par
 
-The critical separations are calulated for the normal and shear opening case (Mode I and Mode II) and then combined into a critical opening distance $\ \delta_c$for a mixed-mode crack: $\ \delta_{nc} = \frac{2*G_I}{\sigma_n}, \delta_{sc} = \frac{2*G_{II}}{\tau_s}, \delta_c = \sqrt{(1-r_{mode})\delta_{nc}^2 + r_{mode}*\delta_{sc}}$, where $ \ G_I, G_{II}$ are the mode I and II fracture energies and $\ r_{mode}$ is the ratio between mode I (0) and mode II (1). The slip over all faults is linear, it is equal to the critical slip distance. \par
+Lamé parameters are derived from input seismic speeds and density: \(v_s=\sqrt{\mu/\rho}\) so that \(\mu=\rho v_s^2\), and \(v_p=\sqrt{(\lambda+2\mu)/\rho}\) so that \(\lambda=\rho(v_p^2-2v_s^2)\). Young's modulus is then computed from the Lamé parameters: \(E=\dfrac{\mu(3\lambda+2\mu)}{\lambda+\mu}\). These conversions are applied for every material in the model. \par
 
-The process zone length is calculated as $\ l_{ch} = \frac{E*G_{II}}{\tau_s^2}$, this is the length of the zone where a shear crack can occur. From this, the cohesive zone length is calculated as $\ l_{cz}= \frac{\pi}{8}*l_{ch}$, this is the length of the zone infront of the crack face where damage already happens. \par
+The critical opening distances for pure normal (Mode I) and shear (Mode II) separations are computed from the corresponding fracture energies and peak tractions as
+\[ \delta_{n,c}=\frac{2G_I}{\sigma_n},\qquad \delta_{s,c}=\frac{2G_{II}}{\tau_s}, \]
+and combined for mixed-mode behaviour using
+\[ \delta_c = \sqrt{(1-r_{\rm mode})\,\delta_{n,c}^2 + r_{\rm mode}\,\delta_{s,c}^2 }, \]
+where \(r_{\rm mode}\in[0,1]\) controls the Mode I/II mix. In the current implementation the slip on each subfault follows the prescribed linear slip law up to the critical slip distance. \par
 
-The rupture speed is calculated from the shear wave speeds according to the bounds described by \cite{trottetTransitionSubRayleighAnticrack2022} for supershear and sub-rayleigh. The rupture speeds are adjusted for thickness and stiffness of the slab to take slab bending into account. \par
+The characteristic Irwin length for shear is calculated as \(l_{ch}=E_{\rm eff}G_{II}/\tau_s^2\), and the cohesive zone length is taken as \(l_{cz}=\tfrac{\pi}{8}l_{ch}\), which sets the spatial extent over which cohesive weakening is active ahead of the crack tip. \par
 
-The location of the cracks is calculated using crack x start and end and the spacing of subfaults. The time at which a source needs to fire, the onset time, is calculated from the total number of sources, the x position of the current source and the rupture speed: $\ t_o = \frac{x - x_{start}}{v_{rupture}}$. The directions of the moment tensor source are calculated from the user-input ratio between mode I and mode II cracks and the total crack energy calculated from the slip distance, the shear modulus of the cracking layer and the fault spacing: $\ M_0 = \mu * x_{slip} * \Delta x$. This leads to the moment tensor directions $\ m_{xx} = 0, m_{xy} = M_0 * r_{mode}, m_{yy} = -(1-r_{mode})*M_0$. This means that if there is no mode mix (pure mode I for example), then one of the components of the moment tensor is always zero. \par
+Rupture propagation speed is chosen with respect to the local shear-wave speed and the bounds discussed in \cite{trottetTransitionSubRayleighAnticrack2022}. Where appropriate, the rupture speed is corrected for finite slab thickness and bending stiffness to account for slab flexure effects. The rupture front is discretized into a sequence of subfaults: each subfault is activated at an onset time
+\[ t_o = \frac{x-x_{\rm start}}{v_{\rm rupture}}, \]
+using the subfault horizontal position \(x\), the rupture starting position \(x_{\rm start}\), and the prescribed rupture speed \(v_{\rm rupture}\). \par
 
-From the moment tensor directions and the firing time of the sources, a SALVUS source array is built, they all have the same central frequency of the source wavelet, source wavelet shape and spacing. The sources also all have the same direction and intensity. \par
+Each activated subfault is represented as a point/source in the SALVUS source array. The scalar seismic moment for a subfault is computed from the shear modulus, the prescribed slip, and the subfault width \(\Delta x\):
+\[ M_0 = \mu\,x_{\rm slip}\,\Delta x. \]
+Moment-tensor components are set according to the user-specified mode-mix ratio, e.g. here the implementation uses
+\( m_{xx}=0,\; m_{xy}=M_0\,r_{\rm mode},\; m_{yy}=-(1-r_{\rm mode})M_0\),
+which yields pure mode behaviour at the extremes of \(r_{\rm mode}=0\) or \(1\). All subfault sources use the same central frequency, wavelet shape, and amplitude scaling so the rupture is represented as a coherent moving source in the wave propagation simulations. \par
 
   \section{Crack Propagation \& Representation}
 
