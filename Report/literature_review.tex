@@ -213,56 +213,56 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
 
 
 
-  \section{Crack Propagation \& Representation}
+%   \section{Crack Propagation \& Representation}
 
 
-  \subsection{Model implemented by me - Description and theoretical backround}
-  \begin{itemize}
-    \item Cohesive zone model according to \cite{mahajanModelingInterfacialCrack2008} (if not stated otherwise, this is the source for all bullet points below)
-    \item Faulure either in weak layer or at interface where contacts between grains are bonded poorly (according to \cite{mcclungFractureMechanicalModels1981,schweizerSnowAvalancheFormation2003})
-    \item Cohesive zone model is different from previous models, because: it is assumed to have a narrow band fracture zone precedes the crack front. This means that before a point in the material shows cracking, there is microcracks or other weakening in the material
-    \item In the model, this relation is described by a softening-force relation. This is different from linear elastic behavior (where the area under the force-displacement curve represents the separation of crack faces) because additional parameters are introduced: characteristic opening displacement and peak stress. Peak stress is the stress at which damage is initiated -> new crack faces are formed, traction between them is reduced to zero. 
-    \item Stress state in the snowpack due to uniform applied pressure is given by the lagrangian formulation for virtual work for dynamics:
-    \[
-    \begin{aligned}
-    \int_v s : \delta F \, dv - \int_{s_{int}} T \cdot \delta \Delta \, dS - \int_v \rho g \, \delta u \, dv
-    &= \int_{s_{ext}} T \cdot \delta u \, dS \\
-    &\quad - \int_v \rho \frac{\delta^2 u}{\delta t^2} \cdot \delta u \, dv
-    \end{aligned}
-    \]
-    \item In this relation, F is the deformation gradient, V the volume in refrence configuriation (initial configuration), $ \ \Delta $ the virtual jump displacement across the cohesive element faces, $ \ s_{ext}$ is the external surface area, on which the traction vector T with pressure and friction components is applied. $\ S_{int}$ is the internal surface area of the body, $ \ \rho$ is the density and g gravitational acceleration 
-    \item Layers are assumed to be isotropic elastic: have young's modulus E and v, which is the Poisson's ratio
-    \item Constitutive law for zero thickness cohesive elements at the interface (elements between boundaries): characterized by the stress-opening displacement potential ($ \phi$) function:
-    \[
-    \phi(\Delta) = \phi_n \phi_n \exp\left(-\frac{\Delta_n}{\delta_n}\right)
-    \left\{ \left[1+\frac{\Delta_n}{\delta_n}\right] q\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right]\right\}
-    \]
-    \item $ \ \phi_n$ is the work of normal separation , $ \ \phi_t$ of tangential separation, $ \ q = \frac{\phi_n}{\phi_t}$ is the ratio between them. $\ \delta_n$ and $\ \delta_t$ are the characteristic normal and tangential separations as a function of traction.
-    \item As the cohesive surfaces seperate, traction first increases to a maximum and then goes to zero with increase in separation. The cohesive surface tractions are written as:
-    \[
-    \begin{aligned}
-    T_n &= -\frac{\phi_n}{\delta_n}\exp\left(-\frac{\Delta_n}{\delta_n}\right)
-    \left\{ \frac{\Delta_n}{\delta_n}\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)
-    + (1-q)\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right] \frac{\Delta_n}{\delta_n}\right\} \\
-    T_t &= -\frac{\phi_n}{\delta_n}\left(2\frac{\delta_n}{\delta_t}\right)
-    \left\{q\left(1+\frac{\Delta_n}{\delta_n}\right)\right\}
-    x\exp\left(-\frac{\Delta_n}{\delta_n}\right)\exp\left(-\frac{\Delta_t^2}{\delta_t}\right)
-    \end{aligned}
-    \]
-    \item The normal traction is maximal when $\ \sigma_{max}, \Delta_n=\delta_n$, the shear traction is maximal when $\ |\Delta_t| = \frac{\delta_t}{\sqrt{2}}$
-    \item The normal and shear work of separation are: $ \ \phi_n = e\sigma_{max}\delta_n$ and $\ \phi_t = \sqrt{\frac{e}{2}}\tau_{max}\delta_t$, where e is exp(1), $\ \sigma_{max}$ is the cohesive surface normal strength, $\ \tau_{max}$ is the cohesive surface tangential strength, $\ \delta_n, \delta_t$ are the opening and shear distances which govern the fracture process ahead of the crack tip, when these have been exceeded, strain softening occurs
-    \item The fracture zone is the distance between the crack tip and a point where one of these distances has been exceeded
-    \item The parameters used come from laboratory measurements of snow
-    \item In the model, Young's modulus (E) and shear modulus ($\ \mu$) are calculated from shear and p wave speeds using standard elastic relations: $\ \mu = \rho v_s^2$ and $\ E = \mu \frac{3v_p^2 -4v_s^2}{v_p^2 -v _s^2}$. This is done to convert measured values (wave speeds) into material properties
-    \item Normal and shear fracture energy also from measured values in paper
-    \item Function that calculates slip distribution: how much each of the subfaults slips. Cohesive weakening curve is integrated over the full normalized opening range (from 0 to 1). For each x position, the distance behind the crack tip is calculated, if the point is ahead of the tip, the slip is set to zero, if the point is in the cohesive zone, a normalized opening fraction is calculated from the distance to the tip and the length of the cohesive zone. The stress profile up to the opening is sampled and the released traction deficit integrated. If the point is far behind the tip, full slip is applied. 
-    \item The cracks are then written at defined x positions (at a depth with certain spacing). The cracks have a rise time, which is calculated according to the damage zone and is the time it takes one subfault to complete it's entire process. The onset time of each subfault is how long after the initial crack it fires (how long it takes the damage or the crack to reach this specific fault lodation), it's calcuated from the distance between the crack and the initial crack and the rupture speed.
-    \item The slip of each subfault is dependent on it's location from the initial crack: it ranges from 0 to 1: $\ slip = \Delta_c\sqrt{4\xi(1-\xi)}$, where $\xi$ is the parameter used for normalization so the last subfault reaches exaclty critical slip distance. The moment tensor forces are then calculated according to the slip for each location as well as the fraction between mode I and mode II opening
-    \item Critical slip distance calculated from softening law: in linear softening law, the peak strength is the material tensile or shea strength, this is where breaking happens. At the point where the material fully fails, the stress drops to zero, this is the critical slip distance. Because the curve in the linear softening law is a triangle, the area of which is the fracture energy: $\ \delta_c = \frac{2G_c}{\tau_s}$, where $\ \tau_s$ is the shear strength of the interface. When this decreases, the critical slip increases. 
-    \item The values used for the simulation are: $\ \sigma_n = 0.00184 MPa$, which is the normal interface strength, the shear interface strength $\ \tau_s = 0.004 MPa$, the fracture energy of normal and shear modes were calculated from the total fracture energy and the mode mix. These come from lab experiments done
-    \item The rupture speeds are calculated from the shear wave speed of the slowest layer. This is adjusted for the stiffness and the thickness of the slab: this is done because stiffer slabs have more slab bending, thicker slabs have more gravitaional energy (slab pull). The numerical values used are typical snow values. The rupture speeds are then calculated from the bounds defined by \cite{trottetTransitionSubRayleighAnticrack2022}: 0.25 to 0.6 times the shear wave speed for sub-rayleigh, and 1.6 times the shear wave speed for supershear. 
-    \item The characteristic length of a crack is calculated using the Irwing characteristic length: $\ l_{ch}= \frac{E_{eff}G_{II_c}}{\tau_s^2}$, the process zone length using Dugdale-Barenblatt approximation: $\ l_{cz}= \frac{\pi}{8} l_{ch}$
-  \end{itemize}
+%   \subsection{Model implemented by me - Description and theoretical backround}
+%   \begin{itemize}
+%     \item Cohesive zone model according to \cite{mahajanModelingInterfacialCrack2008} (if not stated otherwise, this is the source for all bullet points below)
+%     \item Faulure either in weak layer or at interface where contacts between grains are bonded poorly (according to \cite{mcclungFractureMechanicalModels1981,schweizerSnowAvalancheFormation2003})
+%     \item Cohesive zone model is different from previous models, because: it is assumed to have a narrow band fracture zone precedes the crack front. This means that before a point in the material shows cracking, there is microcracks or other weakening in the material
+%     \item In the model, this relation is described by a softening-force relation. This is different from linear elastic behavior (where the area under the force-displacement curve represents the separation of crack faces) because additional parameters are introduced: characteristic opening displacement and peak stress. Peak stress is the stress at which damage is initiated -> new crack faces are formed, traction between them is reduced to zero. 
+%     \item Stress state in the snowpack due to uniform applied pressure is given by the lagrangian formulation for virtual work for dynamics:
+%     \[
+%     \begin{aligned}
+%     \int_v s : \delta F \, dv - \int_{s_{int}} T \cdot \delta \Delta \, dS - \int_v \rho g \, \delta u \, dv
+%     &= \int_{s_{ext}} T \cdot \delta u \, dS \\
+%     &\quad - \int_v \rho \frac{\delta^2 u}{\delta t^2} \cdot \delta u \, dv
+%     \end{aligned}
+%     \]
+%     \item In this relation, F is the deformation gradient, V the volume in refrence configuriation (initial configuration), $ \ \Delta $ the virtual jump displacement across the cohesive element faces, $ \ s_{ext}$ is the external surface area, on which the traction vector T with pressure and friction components is applied. $\ S_{int}$ is the internal surface area of the body, $ \ \rho$ is the density and g gravitational acceleration 
+%     \item Layers are assumed to be isotropic elastic: have young's modulus E and v, which is the Poisson's ratio
+%     \item Constitutive law for zero thickness cohesive elements at the interface (elements between boundaries): characterized by the stress-opening displacement potential ($ \phi$) function:
+%     \[
+%     \phi(\Delta) = \phi_n \phi_n \exp\left(-\frac{\Delta_n}{\delta_n}\right)
+%     \left\{ \left[1+\frac{\Delta_n}{\delta_n}\right] q\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right]\right\}
+%     \]
+%     \item $ \ \phi_n$ is the work of normal separation , $ \ \phi_t$ of tangential separation, $ \ q = \frac{\phi_n}{\phi_t}$ is the ratio between them. $\ \delta_n$ and $\ \delta_t$ are the characteristic normal and tangential separations as a function of traction.
+%     \item As the cohesive surfaces seperate, traction first increases to a maximum and then goes to zero with increase in separation. The cohesive surface tractions are written as:
+%     \[
+%     \begin{aligned}
+%     T_n &= -\frac{\phi_n}{\delta_n}\exp\left(-\frac{\Delta_n}{\delta_n}\right)
+%     \left\{ \frac{\Delta_n}{\delta_n}\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)
+%     + (1-q)\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right] \frac{\Delta_n}{\delta_n}\right\} \\
+%     T_t &= -\frac{\phi_n}{\delta_n}\left(2\frac{\delta_n}{\delta_t}\right)
+%     \left\{q\left(1+\frac{\Delta_n}{\delta_n}\right)\right\}
+%     x\exp\left(-\frac{\Delta_n}{\delta_n}\right)\exp\left(-\frac{\Delta_t^2}{\delta_t}\right)
+%     \end{aligned}
+%     \]
+%     \item The normal traction is maximal when $\ \sigma_{max}, \Delta_n=\delta_n$, the shear traction is maximal when $\ |\Delta_t| = \frac{\delta_t}{\sqrt{2}}$
+%     \item The normal and shear work of separation are: $ \ \phi_n = e\sigma_{max}\delta_n$ and $\ \phi_t = \sqrt{\frac{e}{2}}\tau_{max}\delta_t$, where e is exp(1), $\ \sigma_{max}$ is the cohesive surface normal strength, $\ \tau_{max}$ is the cohesive surface tangential strength, $\ \delta_n, \delta_t$ are the opening and shear distances which govern the fracture process ahead of the crack tip, when these have been exceeded, strain softening occurs
+%     \item The fracture zone is the distance between the crack tip and a point where one of these distances has been exceeded
+%     \item The parameters used come from laboratory measurements of snow
+%     \item In the model, Young's modulus (E) and shear modulus ($\ \mu$) are calculated from shear and p wave speeds using standard elastic relations: $\ \mu = \rho v_s^2$ and $\ E = \mu \frac{3v_p^2 -4v_s^2}{v_p^2 -v _s^2}$. This is done to convert measured values (wave speeds) into material properties
+%     \item Normal and shear fracture energy also from measured values in paper
+%     \item Function that calculates slip distribution: how much each of the subfaults slips. Cohesive weakening curve is integrated over the full normalized opening range (from 0 to 1). For each x position, the distance behind the crack tip is calculated, if the point is ahead of the tip, the slip is set to zero, if the point is in the cohesive zone, a normalized opening fraction is calculated from the distance to the tip and the length of the cohesive zone. The stress profile up to the opening is sampled and the released traction deficit integrated. If the point is far behind the tip, full slip is applied. 
+%     \item The cracks are then written at defined x positions (at a depth with certain spacing). The cracks have a rise time, which is calculated according to the damage zone and is the time it takes one subfault to complete it's entire process. The onset time of each subfault is how long after the initial crack it fires (how long it takes the damage or the crack to reach this specific fault lodation), it's calcuated from the distance between the crack and the initial crack and the rupture speed.
+%     \item The slip of each subfault is dependent on it's location from the initial crack: it ranges from 0 to 1: $\ slip = \Delta_c\sqrt{4\xi(1-\xi)}$, where $\xi$ is the parameter used for normalization so the last subfault reaches exaclty critical slip distance. The moment tensor forces are then calculated according to the slip for each location as well as the fraction between mode I and mode II opening
+%     \item Critical slip distance calculated from softening law: in linear softening law, the peak strength is the material tensile or shea strength, this is where breaking happens. At the point where the material fully fails, the stress drops to zero, this is the critical slip distance. Because the curve in the linear softening law is a triangle, the area of which is the fracture energy: $\ \delta_c = \frac{2G_c}{\tau_s}$, where $\ \tau_s$ is the shear strength of the interface. When this decreases, the critical slip increases. 
+%     \item The values used for the simulation are: $\ \sigma_n = 0.00184 MPa$, which is the normal interface strength, the shear interface strength $\ \tau_s = 0.004 MPa$, the fracture energy of normal and shear modes were calculated from the total fracture energy and the mode mix. These come from lab experiments done
+%     \item The rupture speeds are calculated from the shear wave speed of the slowest layer. This is adjusted for the stiffness and the thickness of the slab: this is done because stiffer slabs have more slab bending, thicker slabs have more gravitaional energy (slab pull). The numerical values used are typical snow values. The rupture speeds are then calculated from the bounds defined by \cite{trottetTransitionSubRayleighAnticrack2022}: 0.25 to 0.6 times the shear wave speed for sub-rayleigh, and 1.6 times the shear wave speed for supershear. 
+%     \item The characteristic length of a crack is calculated using the Irwing characteristic length: $\ l_{ch}= \frac{E_{eff}G_{II_c}}{\tau_s^2}$, the process zone length using Dugdale-Barenblatt approximation: $\ l_{cz}= \frac{\pi}{8} l_{ch}$
+%   \end{itemize}
 
 \subsection{Code workflow}
 
@@ -323,148 +323,148 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
 
 
 
-\subsection{Crack Types Relevant for Avalanche Release}
-  \begin{itemize}
-    \item Anticracks: Cracks that close after opening \parencite{gaumeDynamicAnticrackPropagation2018}, in other words, this means that the weak layer collapses under loading, which leads to the opening of cracks in layers above because of the collapse \parencite{knightSuperheatedIceTrue1972}. This introduces frictional contact between the crack faces. 
-    \item Mode I: space is opened between the crack faces under tensile loading \parencite{heierliAnticracksNewTheory2003}.
-    \item Mode II: parallel shearing \parencite{heierliAnticracksNewTheory2003}.
-    \item Mode III: diagonal shearing \parencite{heierliAnticracksNewTheory2003}. (see figure in \cite{mahajanModelingInterfacialCrack2008} for clarifiction)
-  \end{itemize}
+% \subsection{Crack Types Relevant for Avalanche Release}
+%   \begin{itemize}
+%     \item Anticracks: Cracks that close after opening \parencite{gaumeDynamicAnticrackPropagation2018}, in other words, this means that the weak layer collapses under loading, which leads to the opening of cracks in layers above because of the collapse \parencite{knightSuperheatedIceTrue1972}. This introduces frictional contact between the crack faces. 
+%     \item Mode I: space is opened between the crack faces under tensile loading \parencite{heierliAnticracksNewTheory2003}.
+%     \item Mode II: parallel shearing \parencite{heierliAnticracksNewTheory2003}.
+%     \item Mode III: diagonal shearing \parencite{heierliAnticracksNewTheory2003}. (see figure in \cite{mahajanModelingInterfacialCrack2008} for clarifiction)
+%   \end{itemize}
 
-  \subsection{Terminology according to \cite{ramosWorkingDynamicEarthquake2022}}
-  \begin{itemize}
-    \item Cohesive zone \Lambda : fundamenta length scale in rupture models where the fault strength decreases from static to dynamic level
-    \item Critical slip distance: slip needed for fault strength to drop from static level to dynamic level
-    \item Cracklike rupture: in such a model, the rise time is about equal to the total rupture duration: this means it takes the same amount of time for the slip to reach its highest value, as the time the whole fault rupture lasts
-    \item Dynamic fault strength: fault strength during the rupture: $\ \sigma_d = \sigma_n ^{eff} x \mu_{dynamic} $, which is the product of effective normal stress and the dynamic friction coefficient
-    \item Dynamic stress drop: difference in shear stress before and during earthquake (rupture)
-    \item Fracture energy: energy needed to grow a propagating crack
-    \item Slip: displacement at a given location on a fault
-    \item Stress drop: difference between static strength (strength before) and thedynamic strength (during rupture)
-    \item Static stress drop: difference in shear stress before and after, the average over the fault area is $ \ \Delta \sigma = \bar{\Delta \sigma_s} = \frac{1}{A} \int \Delta \sigma_s dA$, where $ \ \sigma_s$ is the static fault strength
-    \item Static afult strength: fault strength before movement: $ \ \sigma_s = \sigma_n ^{eff} x \mu_{static}$
-  \end{itemize}
+%   \subsection{Terminology according to \cite{ramosWorkingDynamicEarthquake2022}}
+%   \begin{itemize}
+%     \item Cohesive zone \Lambda : fundamenta length scale in rupture models where the fault strength decreases from static to dynamic level
+%     \item Critical slip distance: slip needed for fault strength to drop from static level to dynamic level
+%     \item Cracklike rupture: in such a model, the rise time is about equal to the total rupture duration: this means it takes the same amount of time for the slip to reach its highest value, as the time the whole fault rupture lasts
+%     \item Dynamic fault strength: fault strength during the rupture: $\ \sigma_d = \sigma_n ^{eff} x \mu_{dynamic} $, which is the product of effective normal stress and the dynamic friction coefficient
+%     \item Dynamic stress drop: difference in shear stress before and during earthquake (rupture)
+%     \item Fracture energy: energy needed to grow a propagating crack
+%     \item Slip: displacement at a given location on a fault
+%     \item Stress drop: difference between static strength (strength before) and thedynamic strength (during rupture)
+%     \item Static stress drop: difference in shear stress before and after, the average over the fault area is $ \ \Delta \sigma = \bar{\Delta \sigma_s} = \frac{1}{A} \int \Delta \sigma_s dA$, where $ \ \sigma_s$ is the static fault strength
+%     \item Static afult strength: fault strength before movement: $ \ \sigma_s = \sigma_n ^{eff} x \mu_{static}$
+%   \end{itemize}
 
-  \subsection{Other points from \cite{ramosWorkingDynamicEarthquake2022}}
-  \begin{itemize}
-    \item In mode II ruptures, two degrees of freedom lead to the generation of P- and SV-waves (vertically polarized shear wave)
-    \item Mode III can only generate SH-waves in homogenous media
-    \item Mode I represents tensile crack which is not usually important for dynamic rupture, but point-source models can account for fault opening by separating tensor into different components
-    \item Different modeling methods use different forms of eqations: FE and SE use weak form, PSE and FD use strong form. Weak form implicitly satisfies Neumann boundary conditions, which means that only Dirichlet need to be implemented. Meshes can also be more complex, because a lower oder derivative of the equations is used
-    \item During dynamic rupture, the cohesive zone width is a critical parameter, it can be estimated depending on the friction law used: for the linear slip-weakening friction law (frictional coefficient decreases linearly as slip propagates): $ \ \Lambda = \frac{C_1}{C_2} [\frac{GD_c}{\Delta \sigma_d}]^2[\frac{1}{1 + \frac{L_0^2}{L^2}}]$, where $ \ L_0$ is the critical half-crack length
-    \item Friction law describes how the friction evolves over time, this is an important choice
-    \item Slip weakening when slip is greater than dynamic friction coefficient
-    \item SLip strengthening when slip is smaller than static friction coefficient -> this can be used to model crac k arrest
-    \item No energy to grow crack when they are equal 
-    \item Velocity dependent frcition weakening law 
-  \end{itemize}
+%   \subsection{Other points from \cite{ramosWorkingDynamicEarthquake2022}}
+%   \begin{itemize}
+%     \item In mode II ruptures, two degrees of freedom lead to the generation of P- and SV-waves (vertically polarized shear wave)
+%     \item Mode III can only generate SH-waves in homogenous media
+%     \item Mode I represents tensile crack which is not usually important for dynamic rupture, but point-source models can account for fault opening by separating tensor into different components
+%     \item Different modeling methods use different forms of eqations: FE and SE use weak form, PSE and FD use strong form. Weak form implicitly satisfies Neumann boundary conditions, which means that only Dirichlet need to be implemented. Meshes can also be more complex, because a lower oder derivative of the equations is used
+%     \item During dynamic rupture, the cohesive zone width is a critical parameter, it can be estimated depending on the friction law used: for the linear slip-weakening friction law (frictional coefficient decreases linearly as slip propagates): $ \ \Lambda = \frac{C_1}{C_2} [\frac{GD_c}{\Delta \sigma_d}]^2[\frac{1}{1 + \frac{L_0^2}{L^2}}]$, where $ \ L_0$ is the critical half-crack length
+%     \item Friction law describes how the friction evolves over time, this is an important choice
+%     \item Slip weakening when slip is greater than dynamic friction coefficient
+%     \item SLip strengthening when slip is smaller than static friction coefficient -> this can be used to model crac k arrest
+%     \item No energy to grow crack when they are equal 
+%     \item Velocity dependent frcition weakening law 
+%   \end{itemize}
 
-  \subsection{Processes linked to crack propagation}
-  \begin{itemize}
-    \item Loading \& loading rate: initial loading which can trigger crack propagation. The propagation of cracks can be upslope from the loading point, which can mean that avalanches are triggered remotely \parencite{gaumeDynamicAnticrackPropagation2018} or propagation can be downslope, which means that the avalanche is triggered at the loading point \parencite{gaumeDynamicAnticrackPropagation2018}. Which direction the propagating cracks have, is influenced by model scale, as discussed by \cite{gaumeDynamicAnticrackPropagation2018}. Loading can be slow, for example by snow accumulation, or rapid, for example by a skier or an explosion. Slow loading can lead to sintering, which means that new bonds are formed between snow grains, which can strengthen the material and delay failure \parencite{mulakNumericalInvestigationMixedmode2019}. Rapid loading does not allow for sintering to occur, which means that there is still failure \parencite{mulakNumericalInvestigationMixedmode2019}.
-    \item Coupled criteria: There needs to be enough stress on the slab to exceed the weak layer strength (enough force for cracks to initiate because of failure), but also enough energy so that cracks can propagate. This means that two conditions need to be met for avalanche release. 
-    \item Snow Mechanical Properties: properties of the snowpack influence crack propagation. Slab bending in steep terrains for example can lead to supershear crack propagation \parencite{trottetTransitionSubRayleighAnticrack2022}. The weak layer thickness also has an influence on crack propagation \parencite{gaumeModelingCrackPropagation2015}. 
-    \item Strain softening: this means that less stress is required to have deformation, in other words, the material becomes weaker as it deforms. This is important because strain softening can lead to faster crack propagation, which could lead to faster slab breakoff. 
-  \end{itemize}
+%   \subsection{Processes linked to crack propagation}
+%   \begin{itemize}
+%     \item Loading \& loading rate: initial loading which can trigger crack propagation. The propagation of cracks can be upslope from the loading point, which can mean that avalanches are triggered remotely \parencite{gaumeDynamicAnticrackPropagation2018} or propagation can be downslope, which means that the avalanche is triggered at the loading point \parencite{gaumeDynamicAnticrackPropagation2018}. Which direction the propagating cracks have, is influenced by model scale, as discussed by \cite{gaumeDynamicAnticrackPropagation2018}. Loading can be slow, for example by snow accumulation, or rapid, for example by a skier or an explosion. Slow loading can lead to sintering, which means that new bonds are formed between snow grains, which can strengthen the material and delay failure \parencite{mulakNumericalInvestigationMixedmode2019}. Rapid loading does not allow for sintering to occur, which means that there is still failure \parencite{mulakNumericalInvestigationMixedmode2019}.
+%     \item Coupled criteria: There needs to be enough stress on the slab to exceed the weak layer strength (enough force for cracks to initiate because of failure), but also enough energy so that cracks can propagate. This means that two conditions need to be met for avalanche release. 
+%     \item Snow Mechanical Properties: properties of the snowpack influence crack propagation. Slab bending in steep terrains for example can lead to supershear crack propagation \parencite{trottetTransitionSubRayleighAnticrack2022}. The weak layer thickness also has an influence on crack propagation \parencite{gaumeModelingCrackPropagation2015}. 
+%     \item Strain softening: this means that less stress is required to have deformation, in other words, the material becomes weaker as it deforms. This is important because strain softening can lead to faster crack propagation, which could lead to faster slab breakoff. 
+%   \end{itemize}
 
 
-  \subsection{Crack Areas}
-  \begin{itemize}
-    \item Crack tip: front of the crack, this is where the crack propagates
-    \item 
-  \end{itemize}
+%   \subsection{Crack Areas}
+%   \begin{itemize}
+%     \item Crack tip: front of the crack, this is where the crack propagates
+%     \item 
+%   \end{itemize}
 
-  \subsection{Governing equations of crack propagation}
-  \begin{itemize}
-    \item Nucleation: Stress condition: $\ \sigma ≥ \sigma_c$, which means that the stress due to loading ($\ \sigma $) must exceed the weak layer strength ($\ \sigma_c $) over a certain distance \parencite{rosendahlModelingSnowSlab2020}. 
-    \item Energy criterion: $\ G ≥ G_c $: the energy available from the slab deformation (G) needs to be greater or equal than the fracture toughness of the weak layer, which means there needs to be enough energy for new cracks to form and to propagate \parencite{rosendahlModelingSnowSlab2020}.
-    \item Critical crack length: $ \ r_c = \Lambda \sqrt{\frac{2E'G_c}{\sigma^2}}$. E' is the slab elastic modulus, \sigma the applied stress. The critcial crack length is the length at which a crack becomes self-propagating and can lead to slab breakoff \parencite{gaumeModelingCrackPropagation2015}. 
-    \item Timoshenko beam representation: takes into account shear and rotational deformation of a beam, \cite{mahajanModelingInterfacialCrack2008} represent the snow slab as a Timoshenko beam. 
-    \item Slip and displacement: relative displacement between slab and weak layer \parencite{mahajanModelingInterfacialCrack2008}
-    \item Fracture energy: Energy required to create a crack is the area under the traction-separation curve \parencite{mahajanModelingInterfacialCrack2008}
-  \end{itemize}
+%   \subsection{Governing equations of crack propagation}
+%   \begin{itemize}
+%     \item Nucleation: Stress condition: $\ \sigma ≥ \sigma_c$, which means that the stress due to loading ($\ \sigma $) must exceed the weak layer strength ($\ \sigma_c $) over a certain distance \parencite{rosendahlModelingSnowSlab2020}. 
+%     \item Energy criterion: $\ G ≥ G_c $: the energy available from the slab deformation (G) needs to be greater or equal than the fracture toughness of the weak layer, which means there needs to be enough energy for new cracks to form and to propagate \parencite{rosendahlModelingSnowSlab2020}.
+%     \item Critical crack length: $ \ r_c = \Lambda \sqrt{\frac{2E'G_c}{\sigma^2}}$. E' is the slab elastic modulus, \sigma the applied stress. The critcial crack length is the length at which a crack becomes self-propagating and can lead to slab breakoff \parencite{gaumeModelingCrackPropagation2015}. 
+%     \item Timoshenko beam representation: takes into account shear and rotational deformation of a beam, \cite{mahajanModelingInterfacialCrack2008} represent the snow slab as a Timoshenko beam. 
+%     \item Slip and displacement: relative displacement between slab and weak layer \parencite{mahajanModelingInterfacialCrack2008}
+%     \item Fracture energy: Energy required to create a crack is the area under the traction-separation curve \parencite{mahajanModelingInterfacialCrack2008}
+%   \end{itemize}
 
-\subsection{Crack representation in past models}
+% \subsection{Crack representation in past models}
 
-\subsubsection{\cite{burridgeAdmissibleSpeedsPlaneStrain1973}}
-\begin{itemize}
-  \item discusses different cases for crack propagation speed based on equations
-  \item Modeled a crack that propagates at a constant velocity from a point
-  \item Crack modeled has friction, but no cohesion, this means that the resistance which needs to be overcome is only from friction
-  \item For rayleigh-speed propagating cracks: a peak shear stress develops ahead of the crack tip 
-  \item Speed of the crack depends on static friction: if this is high, then crack propagates sub-Rayleigh
-  \item If static friction is lower, then the low stress peak at the front can exceed material strength before the crack arrives 
-\end{itemize}
+% \subsubsection{\cite{burridgeAdmissibleSpeedsPlaneStrain1973}}
+% \begin{itemize}
+%   \item discusses different cases for crack propagation speed based on equations
+%   \item Modeled a crack that propagates at a constant velocity from a point
+%   \item Crack modeled has friction, but no cohesion, this means that the resistance which needs to be overcome is only from friction
+%   \item For rayleigh-speed propagating cracks: a peak shear stress develops ahead of the crack tip 
+%   \item Speed of the crack depends on static friction: if this is high, then crack propagates sub-Rayleigh
+%   \item If static friction is lower, then the low stress peak at the front can exceed material strength before the crack arrives 
+% \end{itemize}
 
-\subsubsection{\cite{andrewsRuptureVelocityPlane1976}}
-\begin{itemize}
-  \item Stress drops when slip starts: this is mathematically the same as motion
-  \item Material can only support a certain amount of stress: stress singularity satisfying fracture criterion (critical stress needed for fracture formation)
-  \item Elastic energy loss at the crack tip in previous media
-  \item Different friction law where friction at crack tip decreases linearly over critical slip distance
-  \item Mother daughter mechanism of cracks: crack nucleates at sub-rayleigh speed, stress peak grows at it accelerates toward rayleigh speed, stress peak nucleates a daughter crack, which moves at supershear speeds, eventually the daughter crack fuses with the mother crack again
-\end{itemize}
+% \subsubsection{\cite{andrewsRuptureVelocityPlane1976}}
+% \begin{itemize}
+%   \item Stress drops when slip starts: this is mathematically the same as motion
+%   \item Material can only support a certain amount of stress: stress singularity satisfying fracture criterion (critical stress needed for fracture formation)
+%   \item Elastic energy loss at the crack tip in previous media
+%   \item Different friction law where friction at crack tip decreases linearly over critical slip distance
+%   \item Mother daughter mechanism of cracks: crack nucleates at sub-rayleigh speed, stress peak grows at it accelerates toward rayleigh speed, stress peak nucleates a daughter crack, which moves at supershear speeds, eventually the daughter crack fuses with the mother crack again
+% \end{itemize}
 
-\subsubsection{\cite{mcclungFractureMechanicalModels1981}}
-\begin{itemize}
-  \item linear elastic fracture mechanism: stress is singular at the crack tip --> only works if there is no deformation before crack propagation
-  \item Discusses a shear crack model: shear band \& slip deformations
-  \item Displacement of crack is related to stress applied
-  \item No friction on crack faces
-  \item End zone is the length where the stress drops from initial stress to the residual stress. This is observed because of strain softening: stress needed for same displacement is less with time
-  \item If crack length is about the same as the size of the zone where deformation is plastic, there is no propagation becaus ethe energy needed for propagation is too large and there is yielding instead of propagation of cracks
-  \item The propagation of cracks is dependent on the intensity factor of modes I and II stresses, initial and residual stress, the average slip in the end zone. Resulting from this is the propagation condition for the shear band.
-  \item The crack length might be many slab thicknesses large, this means that there is a relationship between slab thickness
-  \item Model focuses on large-scale deformations instead of microscale failure. These are independent of slab properties
-  \item Model represents crack propagation in weak layer (described as shear band) with initial loading, but no loading after initial loading
-  \item Shear band is described by contrast in material properties
-  \item Different shapes of weak layers discussed: band, but also elipsoidal inclusion with fixed location
-  \item For elipsoidal zone: stress is related to normal strain, weakened zone parameters, shear stress magnitude and axis ratio of elipsoidal weak zone
-  \item Incremental relationships describing yielding vs dilatancy (volume increase under loading), which can also be made slope-angle dependent
-  \item Plastic softening / hardening is 0 in a flat zone 
-  \item In this model, slope angle has no effect on critical moduli relations, but it's important for plastic deformation 
-  \item There can be localized shear band formation (new shear bands form in different locations) because deformation pattern can bifurcate 
-  \item The first fracture observed is a tension fracture whcih propagates across the slope because of stress propagation in the weak layer. The angle between the shear bed and the tension fracture is observed to be 90° ± 10° . 
-  \item Tension stresses cannot be formed before there is a shear band in this model (no stresses without a weak layer)
-  \item Stresses at different locations of shear band can be calculated
-  \item If distance needed for stress to drop from initial to residual is lower than one slab thickness, then the principal tension stress increases and concentrates -> again slab thickness dependency
-  \item If the propagation speed increases, the initial angle of propagation also increases
-  \item Shear disturbances need some anisotropy to propagate
-  \item Initial fracture location dependent on stress concentration due to topographic effects
-  \item Sequence of fractures: Initial shear failure first, the strain softeing, propagation of the shear disturbance, followed by tension fracture in the snow slab which is concentrated at the shear bed surface, loading drives disturbance further, which leads to flank fracturesa and lastly failure at the lower boundary of slab
-  \item Weak layer thickness has no effect in this model because deformation is mostly shear
-\end{itemize}
+% \subsubsection{\cite{mcclungFractureMechanicalModels1981}}
+% \begin{itemize}
+%   \item linear elastic fracture mechanism: stress is singular at the crack tip --> only works if there is no deformation before crack propagation
+%   \item Discusses a shear crack model: shear band \& slip deformations
+%   \item Displacement of crack is related to stress applied
+%   \item No friction on crack faces
+%   \item End zone is the length where the stress drops from initial stress to the residual stress. This is observed because of strain softening: stress needed for same displacement is less with time
+%   \item If crack length is about the same as the size of the zone where deformation is plastic, there is no propagation becaus ethe energy needed for propagation is too large and there is yielding instead of propagation of cracks
+%   \item The propagation of cracks is dependent on the intensity factor of modes I and II stresses, initial and residual stress, the average slip in the end zone. Resulting from this is the propagation condition for the shear band.
+%   \item The crack length might be many slab thicknesses large, this means that there is a relationship between slab thickness
+%   \item Model focuses on large-scale deformations instead of microscale failure. These are independent of slab properties
+%   \item Model represents crack propagation in weak layer (described as shear band) with initial loading, but no loading after initial loading
+%   \item Shear band is described by contrast in material properties
+%   \item Different shapes of weak layers discussed: band, but also elipsoidal inclusion with fixed location
+%   \item For elipsoidal zone: stress is related to normal strain, weakened zone parameters, shear stress magnitude and axis ratio of elipsoidal weak zone
+%   \item Incremental relationships describing yielding vs dilatancy (volume increase under loading), which can also be made slope-angle dependent
+%   \item Plastic softening / hardening is 0 in a flat zone 
+%   \item In this model, slope angle has no effect on critical moduli relations, but it's important for plastic deformation 
+%   \item There can be localized shear band formation (new shear bands form in different locations) because deformation pattern can bifurcate 
+%   \item The first fracture observed is a tension fracture whcih propagates across the slope because of stress propagation in the weak layer. The angle between the shear bed and the tension fracture is observed to be 90° ± 10° . 
+%   \item Tension stresses cannot be formed before there is a shear band in this model (no stresses without a weak layer)
+%   \item Stresses at different locations of shear band can be calculated
+%   \item If distance needed for stress to drop from initial to residual is lower than one slab thickness, then the principal tension stress increases and concentrates -> again slab thickness dependency
+%   \item If the propagation speed increases, the initial angle of propagation also increases
+%   \item Shear disturbances need some anisotropy to propagate
+%   \item Initial fracture location dependent on stress concentration due to topographic effects
+%   \item Sequence of fractures: Initial shear failure first, the strain softeing, propagation of the shear disturbance, followed by tension fracture in the snow slab which is concentrated at the shear bed surface, loading drives disturbance further, which leads to flank fracturesa and lastly failure at the lower boundary of slab
+%   \item Weak layer thickness has no effect in this model because deformation is mostly shear
+% \end{itemize}
 
-\subsubsection{\cite{bazantFractureSizeEffect2019}}
-\begin{itemize}
-  \item Fracture mechanics determines material failure by energy criteria, sometimes in combination with strength criteria
-  \item Fracture theory considers failure to propagate through the medium rather than through the entire failure zone at the same time
-  \item Previously, fracture mechanics only applicable to homogenous britte materials (like glass, which is homogenous but still fails in a brittle manner)
-  \item This is a problem, because many materials, including snow, are heterogenous but still have brittle failure: this book focuses on concrete
-  \item Linear elastic failure mechanics based on the solution for stresses at the vertex of an ellipsoidal cavity: stress cannot be used as a criterion because at the crack tip, stress is infinite --> crack propagation if energy is available 
-  \item Energy which needs to be available is $ \ 2\gamma_s$, where $ \ \gamma_s$ is the specific surface energy of the elastic solid
-  \item Energy required for crack propagation is larger than specific surface energy, it was later defined as crack resistance -> can be described as a curve dependent on crack length
-  \item Fracture mechanics requires a certain energy to form crack: crack initiation energy 
-  \item Smeared cracking: does not take into account fracture mechanics, stress is a finite element limited by tensile stregth of material. after stress limit is reached, stress must decrease -> gradual release of stress as strain softening 
-  \item Two main types of failure: plastic and brittle. In plastic failure, structure develops a single degree of failure mechanism, this means that failure proceeds simulatiously at different points in the material. Plastic failure when the yield plateau is long on the load-deflection diagram: large area where deformation is plastic. If such a plateau does not exist, there is brittle failure
-\end{itemize}
+% \subsubsection{\cite{bazantFractureSizeEffect2019}}
+% \begin{itemize}
+%   \item Fracture mechanics determines material failure by energy criteria, sometimes in combination with strength criteria
+%   \item Fracture theory considers failure to propagate through the medium rather than through the entire failure zone at the same time
+%   \item Previously, fracture mechanics only applicable to homogenous britte materials (like glass, which is homogenous but still fails in a brittle manner)
+%   \item This is a problem, because many materials, including snow, are heterogenous but still have brittle failure: this book focuses on concrete
+%   \item Linear elastic failure mechanics based on the solution for stresses at the vertex of an ellipsoidal cavity: stress cannot be used as a criterion because at the crack tip, stress is infinite --> crack propagation if energy is available 
+%   \item Energy which needs to be available is $ \ 2\gamma_s$, where $ \ \gamma_s$ is the specific surface energy of the elastic solid
+%   \item Energy required for crack propagation is larger than specific surface energy, it was later defined as crack resistance -> can be described as a curve dependent on crack length
+%   \item Fracture mechanics requires a certain energy to form crack: crack initiation energy 
+%   \item Smeared cracking: does not take into account fracture mechanics, stress is a finite element limited by tensile stregth of material. after stress limit is reached, stress must decrease -> gradual release of stress as strain softening 
+%   \item Two main types of failure: plastic and brittle. In plastic failure, structure develops a single degree of failure mechanism, this means that failure proceeds simulatiously at different points in the material. Plastic failure when the yield plateau is long on the load-deflection diagram: large area where deformation is plastic. If such a plateau does not exist, there is brittle failure
+% \end{itemize}
 
-\subsubsection{\cite{mahajanModelingInterfacialCrack2008}}
-\begin{itemize}
-  \item Desrcibe a cohesvie zone model (CZM)
-  \item Focuses primarily on mode II fractures
-  \item Model is defined by 4 physical properties of snow, which were determined by experments: tenisle and shear stregth, normal and shear fracture energy
-  \item Here, a narrow-band fracture can exist ahead of the crack tip. This is important because the fracture process is distributed over a finite zone, so the crack can be described by a traction-displacement relation across the band rather than by a single sharp tip.
-  \item In the CZM, there is softening to force relation: the opening of the cracks and peak stresses are contained under the force-displacement curve -> softening law 
-  \item Cracks occur, when the peak stress occurs and traction is reduced to zero
-  \item Material characterized on both sides of narrow-band frcature: relation between traction and displacement across the band 
-  \item Initial crack needed for further failure in model 
-  \item Mass matrix as a combination of internal and external forces 
-  \item Initial forces contribute to cohesive element tracttions, external forces to body forces and external loads
-  \item Stress opening is a potential function with tangential and normal components, which have characteristic normal and shear separation distances
-  \item Traction decreases as cohesive surfaces separate, it approaches 0 as the separation increases
-  \item Strain softening occurs in this model when the separation distances corresponding to cohesive normal and tangential strength have been exceeded
-\end{itemize}
+% \subsubsection{\cite{mahajanModelingInterfacialCrack2008}}
+% \begin{itemize}
+%   \item Desrcibe a cohesvie zone model (CZM)
+%   \item Focuses primarily on mode II fractures
+%   \item Model is defined by 4 physical properties of snow, which were determined by experments: tenisle and shear stregth, normal and shear fracture energy
+%   \item Here, a narrow-band fracture can exist ahead of the crack tip. This is important because the fracture process is distributed over a finite zone, so the crack can be described by a traction-displacement relation across the band rather than by a single sharp tip.
+%   \item In the CZM, there is softening to force relation: the opening of the cracks and peak stresses are contained under the force-displacement curve -> softening law 
+%   \item Cracks occur, when the peak stress occurs and traction is reduced to zero
+%   \item Material characterized on both sides of narrow-band frcature: relation between traction and displacement across the band 
+%   \item Initial crack needed for further failure in model 
+%   \item Mass matrix as a combination of internal and external forces 
+%   \item Initial forces contribute to cohesive element tracttions, external forces to body forces and external loads
+%   \item Stress opening is a potential function with tangential and normal components, which have characteristic normal and shear separation distances
+%   \item Traction decreases as cohesive surfaces separate, it approaches 0 as the separation increases
+%   \item Strain softening occurs in this model when the separation distances corresponding to cohesive normal and tangential strength have been exceeded
+% \end{itemize}
 
 
 
