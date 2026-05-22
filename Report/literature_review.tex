@@ -120,7 +120,7 @@ The mixed-mode potential used in the code follows the form from \cite{mahajanMod
 \[
 \phi(\Delta)=\phi_n\,\exp\left(-\frac{\Delta_n}{\delta_n}\right)\left\{\left[1+\frac{\Delta_n}{\delta_n}\right]+q\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right]\right\},
 \]
-from which the normal and tangential tractions are obtained (the implementation uses the same closed-form expressions so that peak tractions occur at $\Delta_n=\delta_n$ and $|\Delta_t|=\delta_t/\sqrt{2}$). The normal and shear works of separation relate to peak strengths via
+from which the normal and tangential tractions are obtained, the implementation uses the same closed-form expressions. This is so that peak tractions occur at $\Delta_n=\delta_n$ and $|\Delta_t|=\delta_t/\sqrt{2}$. The normal and shear works of separation relate to peak strengths via
 \[ \phi_n = e\,\sigma_{\max}\,\delta_n, \qquad \phi_t = \sqrt{\tfrac{e}{2}}\,\tau_{\max}\,\delta_t, \]
 and the critical openings for pure modes are computed as
 \[ \delta_{n,c}=\frac{2G_I}{\sigma_n},\qquad \delta_{s,c}=\frac{2G_{II}}{\tau_s}, \]
@@ -153,7 +153,7 @@ The following numerical settings and checks are applied consistently across simu
 \begin{itemize}
   \item Mesh resolution: element/subfault spacing $h$ is chosen to resolve the cohesive zone and the shortest seismic wavelength; practical rule: $h\le\min(l_{cz}/4,\;\lambda_{\min}/8)$, where $\lambda_{\min}=v_{\min}/f_{95}$ and $f_{95}$ is the 95\%ile source frequency.
   \item Time stepping: explicit scheme with CFL-like stability criterion $\Delta t\lesssim s\,h/v_{\max}$ and safety factor $s\approx0.3$--0.5.
-  \item Boundaries: use absorbing boundary conditions (PML or sponge layers) to minimise reflections at domain edges.
+  \item Boundaries: use absorbing boundary conditions to minimize reflections at domain edges.
   \item Rupture discretization: subfault onset times follow $t_o=(x-x_{\rm start})/v_{\rm rupture}$; rise time is taken as $t_{rise}\approx l_{cz}/v_{\rm rupture}$; scalar moment per subfault $M_0=\mu\,x_{\rm slip}\,\Delta x$.
 \end{itemize}
 
