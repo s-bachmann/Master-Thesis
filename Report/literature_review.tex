@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{color}
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows}
@@ -115,6 +116,18 @@ The mesh is generated to resolve frequencies up to the 95th percentile of the so
 \[ T(\xi) = T_\mathrm{peak}\,(1-\xi) \quad\text{for } 0\leq\xi\leq1,\qquad T(\xi)=0\ \text{for }\xi>1, \]
 where \(T_\mathrm{peak}\) is the peak cohesive traction and \(\delta_c\) the critical opening. The normalized opening can be related to the local crack coordinate as \(\xi=\frac{(x-x_0)}{l_{crack}}\) for a crack front with initial position \(x_0\) and local process length \(l_{crack}\). \par
 
+The mixed-mode potential used in the code follows the form from \cite{mahajanModelingInterfacialCrack2008}. With $\Delta=(\Delta_n,\Delta_t)$ denoting normal and tangential separations, the potential is written as
+\[
+\phi(\Delta)=\phi_n\,\exp\left(-\frac{\Delta_n}{\delta_n}\right)\left\{\left[1+\frac{\Delta_n}{\delta_n}\right]+q\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right]\right\},
+\]
+from which the normal and tangential tractions are obtained (the implementation uses the same closed-form expressions so that peak tractions occur at $\Delta_n=\delta_n$ and $|\Delta_t|=\delta_t/\sqrt{2}$). The normal and shear works of separation relate to peak strengths via
+\[ \phi_n = e\,\sigma_{\max}\,\delta_n, \qquad \phi_t = \sqrt{\tfrac{e}{2}}\,\tau_{\max}\,\delta_t, \]
+and the critical openings for pure modes are computed as
+\[ \delta_{n,c}=\frac{2G_I}{\sigma_n},\qquad \delta_{s,c}=\frac{2G_{II}}{\tau_s}, \]
+with the mixed-mode critical opening
+\[ \delta_c=\sqrt{(1-r_{\rm mode})\,\delta_{n,c}^2 + r_{\rm mode}\,\delta_{s,c}^2 }\;.
+\]
+
 Lamé parameters are derived from input seismic speeds and density: \(v_s=\sqrt{\frac{\mu}{\rho}}\) so that \(\mu=\rho v_s^2\), and \(v_p=\sqrt{\frac{(\lambda+2\mu)}{\rho}}\) so that \(\lambda=\rho(v_p^2-2v_s^2)\). Young's modulus is then computed from the Lamé parameters: \(E=\dfrac{\mu(3\lambda+2\mu)}{\lambda+\mu}\) \parencite{kAkiRichards19801981}. These conversions are applied for every material in the model. \par
 
 The critical opening distances for pure normal (Mode I) and shear (Mode II) separations are computed from the corresponding fracture energies, strenghts, and peak tractions as
@@ -134,6 +147,8 @@ Each activated subfault is represented as a point/source in the SALVUS source ar
 Moment-tensor components are set according to the user-specified mode-mix ratio, e.g. here the implementation uses
 \( m_{xx}=0,\; m_{xy}=M_0\,r_{\rm mode},\; m_{yy}=-(1-r_{\rm mode})M_0\),
 which yields pure mode behaviour at the extremes of \(r_{\rm mode}=0\) or \(1\), which means that an additional component of the moment tensor source becomes 0. All subfault sources use the same central frequency, wavelet shape, and amplitude scaling so the rupture is represented as a coherent moving source in the wave propagation simulations. \par
+
+
 
   \section{Crack Propagation \& Representation}
 
