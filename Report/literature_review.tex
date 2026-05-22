@@ -121,7 +121,7 @@ The critical opening distances for pure normal (Mode I) and shear (Mode II) sepa
 \[ \delta_{n,c}=\frac{2G_I}{\sigma_n},\qquad \delta_{s,c}=\frac{2G_{II}}{\tau_s}, \]
 and combined for mixed-mode behaviour using
 \[ \delta_c = \sqrt{(1-r_{\rm mode})\,\delta_{n,c}^2 + r_{\rm mode}\,\delta_{s,c}^2 }, \]
-where \(r_{\rm mode}\in[0,1]\) controls the Mode I/II mix. In the current implementation the slip on each subfault follows the prescribed linear slip law up to the critical slip distance. The mode mix is an user-input parameter, while all the other parameters are derived from laboratory experiments from \cite{mahajanModelingInterfacialCrack2008}.  \par
+where \(r_{\rm mode}\in[0,1]\) controls the mode I/II mix, where 0 is pure mode I and 1 is pure mode II. In the current implementation the slip on each subfault follows the prescribed linear slip law up to the critical slip distance. The mode mix is an user-input parameter, while all the other parameters are derived from laboratory experiments from \cite{mahajanModelingInterfacialCrack2008}.  \par
 
 The characteristic Irwin length for shear is calculated as \(l_{ch}=\frac{E_{\rm eff}G_{II}}{\tau_s^2}\), and the cohesive zone length is taken as \(l_{cz}=\tfrac{\pi}{8}l_{ch}\), which sets the spatial extent over which cohesive weakening is active ahead of the crack tip. \par
 
