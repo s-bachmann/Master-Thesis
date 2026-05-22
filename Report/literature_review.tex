@@ -115,7 +115,9 @@ After the mesh is set up to resolve a maximum frequency of the 95th percentile o
 
 The critical separations are calulated for the normal and shear opening case (Mode I and Mode II) and then combined into a critical opening distance $\ \delta_c$for a mixed-mode crack: $\ \delta_{nc} = \frac{2*G_I}{\sigma_n}, \delta_{sc} = \frac{2*G_{II}}{\tau_s}, \delta_c = \sqrt{(1-r_{mode})\delta_{nc}^2 + r_{mode}*\delta_{sc}}$, where $ \ G_I, G_{II}$ are the mode I and II fracture energies and $\ r_{mode}$ is the ratio between mode I (0) and mode II (1). The slip over all faults is linear, it is equal to the critical slip distance. \par
 
-The process zone length is calculated as $\ l_{ch} = \frac{E*G_{II}}{\tau_s^2}$, this is the length of the zone where a shear crack can occur. From this, the cohesive zone length is calculated as $\ l_{cz}= \frac{\pi}{8}*l_{ch}$, this is the length of the zone infront of the crack face where damage already happens. \par 
+The process zone length is calculated as $\ l_{ch} = \frac{E*G_{II}}{\tau_s^2}$, this is the length of the zone where a shear crack can occur. From this, the cohesive zone length is calculated as $\ l_{cz}= \frac{\pi}{8}*l_{ch}$, this is the length of the zone infront of the crack face where damage already happens. \par
+
+The rupture speed is calculated from the shear wave speeds according to the bounds described by \cite{trottetTransitionSubRayleighAnticrack2022} for supershear and sub-rayleigh. The rupture speeds are adjusted for thickness and stiffness of the slab to take slab bending into account. \par
 
 
   \section{Crack Propagation \& Representation}
