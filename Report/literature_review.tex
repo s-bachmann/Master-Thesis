@@ -46,40 +46,39 @@
 \section{Nomenclature}
 Symbols, definition and unit 
 \begin{description}
-  \item[$t_o$]: Subfault onset time [s], e.g. $t_o=(x-x_{\rm start})/v_{\rm rupture}$.
-  \item[$x,\,x_{\rm start}$]: Horizontal coordinate and rupture starting position [m].
-  \item[$v_{\rm rupture}$]: Prescribed rupture propagation speed [m s$^{-1}$].
-  \item[$t_{rise}$]: Rise time of a subfault/source [s].
-  \item[$\Delta x$]: Subfault width or discretisation length in x [m].
-  \item[$x_{\rm slip}$]: Prescribed slip on a subfault [m].
-  \item[$M_0$]: Scalar seismic moment per subfault [N m].
-  \item[$m_{ij}$]: Moment tensor components [N m]. 
-  \item[$r_{\rm mode}$]: Mode mix parameter [dimensionless].
-  \item[$l_{cz}$]: Cohesive process (fracture) zone length [m].
-  \item[$l_{ch}$]: Irwin characteristic length [m].
-  \item[$\lambda_{\min}$]: Shortest wavelength to resolve [m].
-  \item[$v_{\min},v_{\max}$]: Minimum and maximum relevant wave speeds in the model [m s$^{-1}$].
-  \item[$\Delta t$]: Time step [s] for explicit time integration.
-  \item[$\xi$]: Normalized opening [dimensionless].
-  \item[$\delta$]: Local opening (separation) displacement across the interface [m].
-  \item[$\delta_c$]: Mixed-mode critical opening [m] used to nondimensionalize openings.
-  \item[$\delta_{n,c},\,\delta_{s,c}$] Single-mode critical openings for Mode I (normal) and Mode II (shear) [m].
-  \item[$T(\xi)$]: Cohesive traction as a function of normalised opening [Pa or N m$^{-2}$].
-  \item[$T_{\mathrm{peak}}$]: Peak cohesive traction [Pa].
-  \item[$\phi(\Delta)$] Mixed-mode cohesive potential [J m$^{-2}$] with $\Delta=(\Delta_n,\Delta_t)$.
-  \item[$\Delta_n,\,\Delta_t$]: Normal and tangential separations [m].
-  \item[$\delta_n,\,\delta_t$]: Normal and tangential length scales in the cohesive potential [m].
-  \item[$q$] Coupling parameter in the mixed-mode cohesive potential [dimensionless].
-  \item[$\phi_n,\,\phi_t$]: Work (energies) of separation for pure normal and tangential modes [J m$^{-2}$].
-  \item[$\sigma_{\max},\,\tau_{\max}$]: Peak normal strength and peak shear strength [Pa]. 
-  \item [$\sigma_n$, $\tau_s$] Normal and shear strength [Pa].
-  \item[$G_I,\,G_{II}$]: Fracture energies for Mode I and Mode II [J m$^{-2}$].
-  \item[$\sigma_n,\,\tau_s$]: Nominal normal and shear strengths [Pa]. 
-  \item[$v_s,\,v_p$]: Pressure and Shear seismic wave speeds [m s$^{-1}$].
-  \item[$\rho$]: Mass density [kg m$^{-3}$].
-  \item[$\mu,\,\lambda$] Lamé parameters [Pa]
-  \item[$E$]: Young's modulus [Pa]
-  \item[$l_{crack},\,x_0$]: Local crack process length and initial crack front position [m] used in local coordinate definitions.
+  \item[$\boldsymbol{t_o}$]: Subfault onset time [s], e.g. $t_o=(x-x_{\rm start})/v_{\rm rupture}$.
+  \item[$\boldsymbol{x},\,\boldsymbol{x}_{\rm start}$]: Horizontal coordinate and rupture starting position [m].
+  \item[$\boldsymbol{v}_{\rm rupture}$]: Prescribed rupture propagation speed [m s$^{-1}$].
+  \item[$\boldsymbol{t}_{rise}$]: Rise time of a subfault/source [s].
+  \item[$\boldsymbol{\Delta x}$]: Subfault width or discretisation length in x [m].
+  \item[$\boldsymbol{x}_{\rm slip}$]: Prescribed slip on a subfault [m].
+  \item[$\boldsymbol{M}_0$]: Scalar seismic moment per subfault [N m].
+  \item[$\boldsymbol{m}_{ij}$]: Moment tensor components [N m]. 
+  \item[$\boldsymbol{r}_{\rm mode}$]: Mode mix parameter [dimensionless].
+  \item[$\boldsymbol{l}_{cz}$]: Cohesive process (fracture) zone length [m].
+  \item[$\boldsymbol{l}_{ch}$]: Irwin characteristic length [m].
+  \item[$\boldsymbol{\lambda}_{\min}$]: Shortest wavelength to resolve [m].
+  \item[$\boldsymbol{v}_{\min},\,\boldsymbol{v}_{\max}$]: Minimum and maximum relevant wave speeds in the model [m s$^{-1}$].
+  \item[$\boldsymbol{\Delta t}$]: Time step [s] for explicit time integration.
+  \item[$\boldsymbol{\xi}$]: Normalized opening [dimensionless].
+  \item[$\boldsymbol{\delta}$]: Local opening (separation) displacement across the interface [m].
+  \item[$\boldsymbol{\delta}_c$]: Mixed-mode critical opening [m] used to nondimensionalize openings.
+  \item[$\boldsymbol{\delta}_{n,c},\,\boldsymbol{\delta}_{s,c}$]: Single-mode critical openings for Mode I (normal) and Mode II (shear) [m].
+  \item[$\boldsymbol{T}(\boldsymbol{\xi})$]: Cohesive traction as a function of normalised opening [Pa or N m$^{-2}$].
+  \item[$\boldsymbol{T}_{\mathrm{peak}}$]: Peak cohesive traction [Pa].
+  \item[$\boldsymbol{\phi}(\boldsymbol{\Delta})$]: Mixed-mode cohesive potential [J m$^{-2}$] with $\Delta=(\Delta_n,\Delta_t)$.
+  \item[$\boldsymbol{\Delta}_n,\,\boldsymbol{\Delta}_t$]: Normal and tangential separations [m].
+  \item[$\boldsymbol{\delta}_n,\,\boldsymbol{\delta}_t$]: Normal and tangential length scales in the cohesive potential [m].
+  \item[$\boldsymbol{q}$]: Coupling parameter in the mixed-mode cohesive potential [dimensionless].
+  \item[$\boldsymbol{\phi}_n,\,\boldsymbol{\phi}_t$]: Work (energies) of separation for pure normal and tangential modes [J m$^{-2}$].
+  \item[$\boldsymbol{\sigma}_{\max},\,\boldsymbol{\tau}_{\max}$]: Peak normal strength and peak shear strength [Pa]. 
+  \item[$\boldsymbol{\sigma}_n,\,\boldsymbol{\tau}_s$]: Normal and shear strength [Pa].
+  \item[$\boldsymbol{G}_I,\,\boldsymbol{G}_{II}$]: Fracture energies for Mode I and Mode II [J m$^{-2}$].
+  \item[$\boldsymbol{v}_s,\,\boldsymbol{v}_p$]: Pressure and Shear seismic wave speeds [m s$^{-1}$].
+  \item[$\boldsymbol{\rho}$]: Mass density [kg m$^{-3}$].
+  \item[$\boldsymbol{\mu},\,\boldsymbol{\lambda}$]: Lamé parameters [Pa].
+  \item[$\boldsymbol{E}$]: Young's modulus [Pa].
+  \item[$\boldsymbol{l}_{crack},\,\boldsymbol{x}_0$]: Local crack process length and initial crack front position [m] used in local coordinate definitions.
 \end{description}
 
 
