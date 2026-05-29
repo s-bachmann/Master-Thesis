@@ -174,7 +174,7 @@ FE methods uses the weak form of the governing equations \parencite{FiniteElemen
 \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. The divergence theorem relates the flux of a vector field through a closed surface to the divergence of the field in an enclosed volume: $\ \iiint_V (\nabla \cdot F) dV = \oiint_s (F \cdot \hat{n}) dS $, where F is the vector field. When this is applied to the first term on the right in \ref{eq: first weak form }, this leads to \begin{equation}
   \int_{G} \rho w \cdot \delta_t^2 u d^n x = \int_{\delta G} w \cdot ()\sigma \cdot \hat{n}) d^{n-1}x - \int_G \frac{\nabla w} {\sigma d^n x} + \int_G w \cdot f d^m x
   \label{eq:second weak form}
-\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. The first integral on the left side of \ref{eq:second weak form} is the boundary integral, which changed depending on the boundary conditions implemented. 
+\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. The first integral on the left side of \ref{eq:second weak form} is the boundary integral, which changed depending on the boundary conditions implemented. The inegral on the right hand side is the mass term, the second on the left hand side is the stiffness term, and the last on the left hand side is the external forcing term, all in \ref{eq:second weak form}. 
 
 
 \subsection{Cohesive Zone Model}
