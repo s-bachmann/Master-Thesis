@@ -190,7 +190,7 @@ To solve \ref{eq:abstract weak form}, the Galerkin approach is used, the test fu
 To evaluate the integrals in \ref{eq:abstract weak form}, numerical quadrature is used \cite{afanasievModularFlexibleSpectralelement2019}. A certain number of intergration weights W are combined, g(x) and the derivative of g(x) are evaluated at a set of integration points $\ x_i$ \parencite{afanasievModularFlexibleSpectralelement2019}. This resluts in \begin{equation}
 \int_G g(x)d^n x \approx \sum_{i=1}^{M}W_i^G \sum_{j=1}^{N}F_j\phi_j(x_i)
   \label{eq:weighted weak form}
-\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. 
+\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. In FE, an element-specific referency coordinate system $\ \theta$ is used. To transfrom the integrals and derivaties to physical coordinates x, the element-specific jacobian $\ \frac{\delta x}{\delta \theta}$ is used \parencite{afanasievModularFlexibleSpectralelement2019}. 
 
 
 \subsection{Cohesive Zone Model}
