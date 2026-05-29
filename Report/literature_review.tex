@@ -179,8 +179,13 @@ FE methods uses the weak form of the governing equations \parencite{FiniteElemen
   \label{eq:compact weak form}
 \end{equation}, using the notations $\ (a,b)_G = \int_g a \cdot b d^nx, \langle a,b\rangle_{\delta_G} = \int_{\delta G}  a \cdot b d^{n-1}x$  as well as Hoek's law \parencite{afanasievModularFlexibleSpectralelement2019}. This can be even more compacted by describing a mathematical model I with M for mass term, B for boundary term, S for stiffness and F for forcing term: \begin{equation}
 I_I(M) - I_I(B) + I_I(S) = I_I(F) = \sum_{P \in \{ M,B,S,F \}  I_I(P) = 0}
-  \label{eq:abstract weak form}
+\label{eq:abstract weak form}
 \end{equation}  \parencite{afanasievModularFlexibleSpectralelement2019}. \par 
+
+To solve \ref{eq:abstract weak form}, the Galerkin approach is used, the test function w and solution u are approximated by $\ \phi$, which are a set of functions from the same space \parencite{afanasievModularFlexibleSpectralelement2019}. Any discrete function, for example displacement can be approximated this way: \begin{equation}
+  g(x) \approxeq \sum_{j=1}^{N} F_j \phi_j(x)
+  \label{eq:galerkin displacement}
+\end{equation}, where $\ F_j$ is the expansion of the basis and g is the continous function which is the approximation \parencite{afanasievModularFlexibleSpectralelement2019}. 
 
 
 \subsection{Cohesive Zone Model}
