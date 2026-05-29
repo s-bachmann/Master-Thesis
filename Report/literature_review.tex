@@ -152,7 +152,7 @@ The different snow processes described have differenit implications for the seis
 \section{Methods}
 
 \subsection{Wave Propagation Modeling}
-The model described in \ref{sec:czm methods} is implemented using the finite-element (FE) method in SALVUS. To discretize a domain, the domain is divided into a finite number of elements \parencite{FiniteElementMethod}. The boundaries of these elements describe the mesh, the mesh has a finite number of grid-points (edge points of the elements) \parencite{FiniteElementMethod}. The governing equations are determined at every element node, so for rectangular elements with nodes 1,2,3 and 4, there is the system $\ eq_{element}= \begin{pmatrix}eq_1^1 \\ eq_2^1 \\ eq_3^1\\ eq_4^1 \end{pmatrix}$ \parencite{FiniteElementMethod}. 
+The model described in \ref{sec:czm methods} is implemented using the finite-element (FE) method in SALVUS. To discretize a domain, the domain is divided into a finite number of elements \parencite{FiniteElementMethod}. The boundaries of these elements describe the mesh, the mesh has a finite number of grid-points (edge points of the elements) \parencite{FiniteElementMethod}. The governing equations are determined at every element node, so for rectangular elements with nodes 1,2,3 and 4, there is the system $\ r^1 = \begin{pmatrix}r_1^1 \\ r_2^1 \\ r_3^1\\ r_4^1 \end{pmatrix}$ for force  and $\ u^1 = \begin{pmatrix}u_1^1 \\ u_2^1 \\ u_3^1\\ u_4^1 \end{pmatrix}$ for displacement \parencite{FiniteElementMethod}. 
 
 
 \subsection{Cohesive Zone Model}
