@@ -148,7 +148,10 @@ The different snow processes described have differenit implications for the seis
 
 %\end{itemize}
 
-\section{Methods - Cohesive Zone Model}
+\section{Methods}
+
+
+\subsection{Cohesive Zone Model}
 
 The rupture model used in the simulations is implemented as a mixed-mode Cohesive Zone Model (CZM) following \cite{mahajanModelingInterfacialCrack2008}. This model was chosen because there is a narrow band ahead of the fracture zone, the cohesive zone, where the material is already weakened. This means that before a point in the material cracks, there is already weakening of the material before. This seems to be reasonable for representing crack propagation in snow, since failure occurs as a consequence of loading and is not spontaneous. The computational domain extends 400 m in the horizontal (x) direction and 3 m in the vertical (y) direction and contains a 1.5 m snow layer over a 1.5 m air layer. Material parameters for the snow layer are taken from \cite{guillemotEffectSnowfallChanges2021}. The mixed-mode behavior is implemented because in reality, crack propagation can involve both normal and shear displacement.  \par
 
