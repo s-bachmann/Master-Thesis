@@ -158,7 +158,11 @@ The model described in \ref{sec:czm methods} is implemented using the finite-ele
 The governing equation considered in this case is the elastic wave equation, because real-life crack propagation has p- and s-waves. The wave equation for a heterogenous elastic solid in the n-dimensional domain G is 
 \begin{equation}
   \rho\delta_t^2u = \nabla \cdot \sigma + f
-\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}
+  \label{eq:waveeq simple}
+\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019,kAkiRichards19801981}. Stress can be related to displacement using Hoek's law: $\ \sigma = \frac{C}{\nabla u}$, where C is a 4th order tensor which characterizes the stiffness of the medium \parencite{afanasievModularFlexibleSpectralelement2019}. Combining \ref{eq:waveeq simple} with Hoek's law, this leads to \begin{equation}
+\rho\delta_t^2u = \nabla \cdot \frac{C}{\nabla u} + f
+\label{eq:strong form}
+\end{equation}, which is the strong form of the linear elastic wave equation. 
 
 
 \subsection{Cohesive Zone Model}
