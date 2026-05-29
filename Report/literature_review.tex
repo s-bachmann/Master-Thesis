@@ -160,9 +160,12 @@ The governing equation considered in this case is the elastic wave equation, bec
   \rho\delta_t^2u = \nabla \cdot \sigma + f
   \label{eq:waveeq simple}
 \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019,kAkiRichards19801981}. Stress can be related to displacement using Hoek's law: $\ \sigma = \frac{C}{\nabla u}$, where C is a 4th order tensor which characterizes the stiffness of the medium \parencite{afanasievModularFlexibleSpectralelement2019}. Combining \ref{eq:waveeq simple} with Hoek's law, this leads to \begin{equation}
-\rho\delta_t^2u = \nabla \cdot \frac{C}{\nabla u} + f
+\rho\delta_t^2u = \nabla \cdot \frac{C}{\nabla u} + f, 
 \label{eq:strong form}
-\end{equation}, which is the strong form of the linear elastic wave equation. 
+\end{equation} which is the strong form of the linear elastic wave equation. \par
+
+
+Boundary conditions, such as free surfaces, as well as initial conditions must be stated explicitly, they have the form $\ \sigma \cdot \hat{n}|_{/delta_G} = \bar{\tau}(x), u|_{t=0} = \bar{u}(x), v|_{t=0} = \bar{v}(x)$ \parencite{afanasievModularFlexibleSpectralelement2019}. In this case, $\ \bar{\tau}(x), \bar{u}(x), \bar{v}(x) $ are the spatially variable distributions of traction, displacement and velocity \parencite{afanasievModularFlexibleSpectralelement2019}. The outward pointing normal vector on the boundary of domain G is described by $\ \hat{n}|_{\delta G}$. 
 
 
 \subsection{Cohesive Zone Model}
