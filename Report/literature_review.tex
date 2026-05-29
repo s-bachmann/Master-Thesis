@@ -183,13 +183,12 @@ I_I(M) - I_I(B) + I_I(S) = I_I(F) = \sum_{P \in \{ M,B,S,F \}  I_I(P) = 0}
 \end{equation}  \parencite{afanasievModularFlexibleSpectralelement2019}. \par 
 
 To solve \ref{eq:abstract weak form}, the Galerkin approach is used, the test function w and solution u are approximated by $\ \phi$, which are a set of functions from the same space \parencite{afanasievModularFlexibleSpectralelement2019}. Any discrete function, for example displacement can be approximated this way: \begin{equation}
-  g(x) \approxeq \sum_{j=1}^{N} F_j \phi_j(x)
+  g(x) \approx \sum_{j=1}^{N} F_j \phi_j(x)
   \label{eq:galerkin displacement}
 \end{equation}, where $\ F_j$ is the expansion of the basis and g is the continous function which is the approximation \parencite{afanasievModularFlexibleSpectralelement2019}. The derivatives of a function can then be approximated by the derivatives of $\ \phi$. \par
 
 To evaluate the integrals in \ref{eq:abstract weak form}, numerical quadrature is used \cite{afanasievModularFlexibleSpectralelement2019}. A certain number of intergration weights W are combined, g(x) and the derivative of g(x) are evaluated at a set of integration points $\ x_i$ \parencite{afanasievModularFlexibleSpectralelement2019}. This resluts in \begin{equation}
-
-  \int_G g(x)d^n x \approxeq \sum_{i=1}^{M}W_i^G \sum_{j=1}^{N}F_j\phi_j(x_i)
+\int_G g(x)d^n x \approx \sum_{i=1}^{M}W_i^G \sum_{j=1}^{N}F_j\phi_j(x_i)
   \label{eq:weighted weak form}
 \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. 
 
