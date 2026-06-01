@@ -192,6 +192,12 @@ To evaluate the integrals in \ref{eq:abstract weak form}, numerical quadrature i
 \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. In FE, an element-specific reference coordinate system $\ \theta$ is used. In this thesis, the domain consists of a snow layer and an air layer, which means there is a sharp discountinuity in model parameters. As \cite{afanasievModularFlexibleSpectralelement2019} state, the model parameters and strain field are not differentiable. This is why a smooth polynomial basis of the governing equations over the whole domain is not appropriate, the basis B needs to consist of piecewise functions G defined on the individual elements \parencite{afanasievModularFlexibleSpectralelement2019}. The integration weights and basis function derivatives used, according to \cite{afanasievModularFlexibleSpectralelement2019}, are pre-tabulated in the element-specific coordinate system $\ \theta$. To transfrom the integrals and derivaties to physical coordinates x, so the coordinates of the snow extent in this case, the element-specific Jacobian $\ \frac{\delta x}{\delta \theta}$ is used \parencite{afanasievModularFlexibleSpectralelement2019}. Equations \ref{eq:galerkin displacement} and \ref{eq:weighted weak form} and their derivatives become: \begin{equation}
 g(x) \approx \sum_{N}^{j=1} F_j \phi_j(\theta(x))
 \label{eq:first galerkin}
+\end{equation} and \begin{equation}
+  \nabla g(x) \approx \sum_{j=1}^{N} F_j \frac{\delta}{\delta \theta} \phi_j (\theta(x))\frac{\delta\theta}{\delta x}
+  \label{eq:second galerkin}
+\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. 
+
+
 % \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. In equation \ref{eq:first galerkin}, the derivatuves of g(x) can be approximated by $\ \phi_j$, the derivatives of the set of functions approximating the test function w and the solution u \parencite{afanasievModularFlexibleSpectralelement2019}. This results in: \begin{equation}
 %   \nabla g(x) \approx \sum_{j=1}^{N}F_j\nabla \phi_j(x).
 %   \label{eq:second galerkin}
