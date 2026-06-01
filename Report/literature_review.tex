@@ -153,7 +153,7 @@ The different snow processes described have differenit implications for the seis
 \section{Methods}
 
 \subsection{Wave Propagation Modeling}
-The model described in \ref{sec:czm methods} is implemented using the finite-element (FE) method in SALVUS. To discretize a domain, the domain is divided into a finite number of elements \parencite{FiniteElementMethod}. The boundaries of these elements describe the mesh, the mesh has a finite number of grid-points (edge points of the elements) \parencite{FiniteElementMethod}. The governing equations are determined at every element node, so for rectangular elements with nodes 1,2,3 and 4, there is the system $\ r^1 = \begin{pmatrix}r_1^1 \\ r_2^1 \\ r_3^1\\ r_4^1 \end{pmatrix}$ for force  and $\ u^1 = \begin{pmatrix}u_1^1 \\ u_2^1 \\ u_3^1\\ u_4^1 \end{pmatrix}$ for displacement \parencite{FiniteElementMethod}. The residual or characteristic relationship of linear elastic elements is of the form $\ r^1 = f^1-K^1u^1 $, where f are the nodal forces distributing load on the nodes and K is the stiffness matrix of a specific element \parencite{FiniteElementMethod}. Because in FE, the approximation of the wavefield by basis functions leads to a representation over the whole domain and not just at a set of points \parencite{afanasievModularFlexibleSpectralelement2019}. This means integrals can be calculated over surfaces or even volumes \parencite{afanasievModularFlexibleSpectralelement2019}. \par
+The model described in \ref{sec:czm methods} is implemented using the finite-element (FE) method in SALVUS. The following section describes the physics used by SALVUS. To discretize a domain, the domain is divided into a finite number of elements \parencite{FiniteElementMethod}. The boundaries of these elements describe the mesh, the mesh has a finite number of grid-points (edge points of the elements) \parencite{FiniteElementMethod}. The governing equations are determined at every element node, so for rectangular elements with nodes 1,2,3 and 4, there is the system $\ r^1 = \begin{pmatrix}r_1^1 \\ r_2^1 \\ r_3^1\\ r_4^1 \end{pmatrix}$ for force  and $\ u^1 = \begin{pmatrix}u_1^1 \\ u_2^1 \\ u_3^1\\ u_4^1 \end{pmatrix}$ for displacement \parencite{FiniteElementMethod}. The residual or characteristic relationship of linear elastic elements is of the form $\ r^1 = f^1-K^1u^1 $, where f are the nodal forces distributing load on the nodes and K is the stiffness matrix of a specific element \parencite{FiniteElementMethod}. Because in FE, the approximation of the wavefield by basis functions leads to a representation over the whole domain and not just at a set of points \parencite{afanasievModularFlexibleSpectralelement2019}. This means integrals can be calculated over surfaces or even volumes \parencite{afanasievModularFlexibleSpectralelement2019}. \par
 
 The governing equation considered in this case is the elastic wave equation, because real-life crack propagation has P- and S-waves. The wave equation for a heterogenous elastic solid in the n-dimensional domain G is 
 \begin{equation}
@@ -201,17 +201,12 @@ g(x) \approx \sum_{N}^{j=1} F_j \phi_j(\theta(x))
 \end{equation} for the volume and \begin{equation}
   int_{\delta G_e} g(x)\,\mathrm{d}^{n-1} x \approx \sum_{i=1}^{M} W_i^{\delta G_e} \sum_{j=1}^{N} F_j\,\phi_j(\theta(x_i))\left|\frac{\partial x}{\partial \theta}\right|_{x=x_i}^{n-1}
   \label{eq:surface integral}
-\end{equation} for the surface of the domain \parencite{afanasievModularFlexibleSpectralelement2019}. 
+\end{equation} for the surface of the domain \parencite{afanasievModularFlexibleSpectralelement2019}. \par
 
-
-% \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. In equation \ref{eq:first galerkin}, the derivatuves of g(x) can be approximated by $\ \phi_j$, the derivatives of the set of functions approximating the test function w and the solution u \parencite{afanasievModularFlexibleSpectralelement2019}. This results in: \begin{equation}
-%   \nabla g(x) \approx \sum_{j=1}^{N}F_j\nabla \phi_j(x).
-%   \label{eq:second galerkin}
-% \end{equation} In equations \ref{eq:first galerkin} and \ref{eq:second galerkin}, the function space V is approximated as $\ V_h \approx V$, this means the accuracy of the approximation in equation \ref{eq:second galerkin} is dependent on how well the original function space is approximated \parencite{afanasievModularFlexibleSpectralelement2019}. The integrals of displacement in respect to $\ (u,w)_G, (\nabla u \cdot\hat{n},w)_{\delta G}$ are evaluated using numerical quadrature, where a set of M integration weights $\ W_i$ are combined with g(x) and $\nabla g(x)$ are evaluated at a set of points $\ x_i$ \parencite{afanasievModularFlexibleSpectralelement2019}. For volume integrals, this results in \begin{equation}
-%   \int_G g(x) d^n x \approx \sum_{i=1}^{M} \sum_{j=1}^{N} F_j \phi_j (x_i)
-%   \label{eq:volume approx}. 
-% \end{equation} \par
-
+The dependence on the reference coordinate system is described by E, which is a model containing the physical coordinate to reference coordinate transformation, in other words, the determinant of the Jacobian matrix and its inverse \parencite{afanasievModularFlexibleSpectralelement2019}. The basis B of the polynomial functions of the approximation $\ V_h$ the abstract form in \ref{eq:abstract weak form} becomes \begin{equation}
+  sum_{P \in \{M,B,S,F\}} I_I(P,B(E)) = 0
+  \label{eq:abstract approximation}
+\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. 
 
 \subsection{Cohesive Zone Model}
 \label{sec:czm methods}
