@@ -198,3 +198,4 @@ job_*/
 *.mat
 *.sqlite3
 *.ipynb
+*.code-workspace
