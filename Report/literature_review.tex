@@ -198,8 +198,10 @@ g(x) \approx \sum_{N}^{j=1} F_j \phi_j(x)
 \end{equation} In equations \ref{eq:first galerkin} and \ref{eq:second galerkin}, the function space V is approximated as $\ V_h \approx V$, this means the accuracy of the approximation in equation \ref{eq:second galerkin} is dependent on how well the original function space is approximated \parencite{afanasievModularFlexibleSpectralelement2019}. The integrals of displacement in respect to $\ (u,w)_G, (\nabla u \cdot\hat{n},w)_{\delta G}$ are evaluated using numerical quadrature, where a set of M integration weights $\ W_i$ are combined with g(x) and $\nabla g(x)$ are evaluated at a set of points $\ x_i$ \parencite{afanasievModularFlexibleSpectralelement2019}. For volume integrals, this results in \begin{equation}
   \int_G g(x) d^n x \approx \sum_{i=1}^{M} \sum_{j=1}^{N} F_j \phi_j (x_i)
   \label{eq:volume approx}. 
-\end{equation}
+\end{equation} \par
 
+
+As mentioned, the model domain needs to be mapped to real-world coordinates. In this thesis, the domain consists of a snow layer and an air layer, which means there is a sharp discountinuity in model parameters. As \cite{afanasievModularFlexibleSpectralelement2019} state, the model parameters and strain field are not differentiable. This is why a smooth polynomial basis of the governing equations over the whole domain is not appropriate, the basis B needs to consist of piecewise functions G defined on the individual elements \parencite{afanasievModularFlexibleSpectralelement2019}. 
 
 
 
