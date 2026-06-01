@@ -92,6 +92,7 @@ Symbols, definition and unit
   \item[$\boldsymbol{M}$]: Mass term of elastic wave equation.
   \item[$\boldsymbol{S}$]: Stiffness term of elastic wave equation.
   \item[$\boldsymbol{B}$]: Boundary term of elastic wave equation.  
+  \item[$\boldsymbol{\partial}$]: Partial derivative in respect to one variable. 
 \end{description}
 \newpage
 
@@ -168,26 +169,26 @@ The model described in \ref{sec:czm methods} is implemented using the finite-ele
 
 The governing equation considered in this case is the elastic wave equation, because real-life crack propagation has P- and S-waves. The wave equation for a heterogenous elastic solid in the n-dimensional domain G is 
 \begin{equation}
-  \rho\delta_t^2u = \nabla \cdot \sigma + f
+  \rho\partial_t^2u = \nabla \cdot \sigma + f
   \label{eq:waveeq simple}
 \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019,kAkiRichards19801981}. Stress can be related to displacement using Hoek's law: $\ \sigma = \frac{C}{\nabla u}$, where C is a 4th order tensor which characterizes the stiffness of the medium \parencite{afanasievModularFlexibleSpectralelement2019}. Combining \ref{eq:waveeq simple} with Hoek's law, this leads to \begin{equation}
-\rho\delta_t^2u = \nabla \cdot \frac{C}{\nabla u} + f, 
+\rho\partial_t^2u = \nabla \cdot \frac{C}{\nabla u} + f,
 \label{eq:strong form}
 \end{equation} which is the strong form of the linear elastic wave equation. \par
 
 
-Boundary conditions, such as free surfaces, as well as initial conditions must be stated explicitly, they have the form $\ \sigma \cdot \hat{n}|_{\delta_G} = \bar{\tau}(x), u|_{t=0} = \bar{u}(x), v|_{t=0} = \bar{v}(x)$ \parencite{afanasievModularFlexibleSpectralelement2019}. In this case, $\ \bar{\tau}(x), \bar{u}(x), \bar{v}(x) $ are the spatially variable distributions of traction, displacement and velocity \parencite{afanasievModularFlexibleSpectralelement2019}. The outward pointing normal vector on the boundary of domain G is described by $\ \hat{n}|_{\delta G}$. \par
+Boundary conditions, such as free surfaces, as well as initial conditions must be stated explicitly, they have the form $\ \sigma \cdot \hat{n}|_{\partial_G} = \bar{\tau}(x), u|_{t=0} = \bar{u}(x), v|_{t=0} = \bar{v}(x)$ \parencite{afanasievModularFlexibleSpectralelement2019}. In this case, $\ \bar{\tau}(x), \bar{u}(x), \bar{v}(x) $ are the spatially variable distributions of traction, displacement and velocity \parencite{afanasievModularFlexibleSpectralelement2019}. The outward pointing normal vector on the boundary of domain G is described by $\ \hat{n}|_{\partial G}$. \par
 
 FE methods use the weak form of the governing equations \parencite{FiniteElementMethod}. To obtain the weak form of the linear elastic wave equation in \ref{eq:waveeq simple}, the whole equation needs to be multiplied with a test function w, which is not time-dependent \parencite{afanasievModularFlexibleSpectralelement2019}. The weak form enforces the solution of the governing equation across the domain, instead of solving the equation everywhere, an integration over time leads to \begin{equation}
-  \int_{G} \rho w \cdot \delta_t^2u\, d^n x = \int_G w \cdot (\nabla \cdot \sigma)\, d^n x + \int_G w \cdot f\, d^n x
+  \int_{G} \rho w \cdot \partial_t^2u\, d^n x = \int_G w \cdot (\nabla \cdot \sigma)\, d^n x + \int_G w \cdot f\, d^n x
   \label{eq: first weak form }
 \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. The divergence theorem relates the flux of a vector field through a closed surface to the divergence of the field in an enclosed volume: $\ \iiint_V (\nabla \cdot F) dV = \oiint_s (F \cdot \hat{n}) dS $, where F is the vector field. When this is applied to the first term on the right in \ref{eq: first weak form }, this leads to \begin{equation}
-  \int_{G} \rho w \cdot \delta_t^2 u\, d^n x = \int_{\delta G} w \cdot (\sigma \cdot \hat{n})\, d^{n-1}x - \int_G (\nabla w : \sigma)\, d^n x + \int_G w \cdot f\, d^n x
+  \int_{G} \rho w \cdot \partial_t^2 u\, d^n x = \int_{\partial G} w \cdot (\sigma \cdot \hat{n})\, d^{n-1}x - \int_G (\nabla w : \sigma)\, d^n x + \int_G w \cdot f\, d^n x
   \label{eq:second weak form}
 \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. The first integral on the left side of \ref{eq:second weak form} is the boundary integral, which changes depending on the boundary conditions implemented. The inegral on the right hand side is the mass term, the second on the left hand side is the stiffness term, and the last on the left hand side is the external forcing term, all in \ref{eq:second weak form}. Equation \ref{eq:second weak form} can be compacted to \begin{equation}
-  (\rho\delta_t^2u,w)_G - \langle \sigma \cdot \hat{n}, w \rangle_{\delta G} + (\sigma, \nabla w)_G = (f,w)_G,
+  (\rho\partial_t^2u,w)_G - \langle \sigma \cdot \hat{n}, w \rangle_{\partial G} + (\sigma, \nabla w)_G = (f,w)_G,
   \label{eq:compact weak form}
-\end{equation} using the notations $\ (a,b)_G = \int_g a \cdot b d^nx, \langle a,b\rangle_{\delta_G} = \int_{\delta G}  a \cdot b d^{n-1}x$  as well as Hoek's law \parencite{afanasievModularFlexibleSpectralelement2019}. This can be even more compacted by describing a mathematical model I with M for mass term, B for boundary term, S for stiffness and F for forcing term: \begin{equation}
+\end{equation} using the notations $\ (a,b)_G = \int_g a \cdot b d^nx, \langle a,b\rangle_{\partial_G} = \int_{\partial G}  a \cdot b d^{n-1}x$  as well as Hoek's law \parencite{afanasievModularFlexibleSpectralelement2019}. This can be even more compacted by describing a mathematical model I with M for mass term, B for boundary term, S for stiffness and F for forcing term: \begin{equation}
 I_I(M) - I_I(B) + I_I(S) = I_I(F) = \sum_{P \in \{M,B,S,F\}} I_I(P) = 0
 \label{eq:abstract weak form}
 \end{equation}  \parencite{afanasievModularFlexibleSpectralelement2019}. \par 
@@ -204,13 +205,13 @@ To evaluate the integrals in \ref{eq:abstract weak form}, numerical quadrature i
 g(x) \approx \sum_{N}^{j=1} F_j \phi_j(\theta(x))
 \label{eq:first galerkin}
 \end{equation} and \begin{equation}
-  \nabla g(x) \approx \sum_{j=1}^{N} F_j \frac{\delta}{\delta \theta} \phi_j (\theta(x))\frac{\delta\theta}{\delta x}
+  \nabla g(x) \approx \sum_{j=1}^{N} F_j \frac{\partial}{\partial \theta} \phi_j (\theta(x))\frac{\partial\theta}{\partial x}
   \label{eq:second galerkin}
 \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. In equations \ref{eq:first galerkin} and \ref{eq:second galerkin}, the function space V is approximated as $\ V_h \approx V$ in a previous step, this means the accuracy of the approximation is dependent on how well the original function space is approximated \parencite{afanasievModularFlexibleSpectralelement2019}. To make calculations over the whole domain G, the contributions from each element need to be summed: \begin{equation} 
   \int_{G_e} g(x)\,\mathrm{d}^n x \approx \sum_{i=1}^{M} W_i^{G_e} \sum_{j=1}^{N} F_j\,\phi_j(\theta(x_i))\left|\frac{\partial x}{\partial \theta}\right|_{x=x_i}^n
   \label{eq:domain integral}
 \end{equation} for the volume and \begin{equation}
-  int_{\delta G_e} g(x)\,\mathrm{d}^{n-1} x \approx \sum_{i=1}^{M} W_i^{\delta G_e} \sum_{j=1}^{N} F_j\,\phi_j(\theta(x_i))\left|\frac{\partial x}{\partial \theta}\right|_{x=x_i}^{n-1}
+  \int_{\partial G_e} g(x)\,\mathrm{d}^{n-1} x \approx \sum_{i=1}^{M} W_i^{\partial G_e} \sum_{j=1}^{N} F_j\,\phi_j(\theta(x_i))\left|\frac{\partial x}{\partial \theta}\right|_{x=x_i}^{n-1}
   \label{eq:surface integral}
 \end{equation} for the surface of the domain \parencite{afanasievModularFlexibleSpectralelement2019}. \par
 
