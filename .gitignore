@@ -199,3 +199,5 @@ job_*/
 *.sqlite3
 *.ipynb
 *.code-workspace
+
+simulation_fault_zone_czm_adjusted_time_sub_linear_m1_f20_single/
