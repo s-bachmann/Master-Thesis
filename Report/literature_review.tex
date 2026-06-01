@@ -196,7 +196,7 @@ g(x) \approx \sum_{N}^{j=1} F_j \phi_j(\theta(x))
   \nabla g(x) \approx \sum_{j=1}^{N} F_j \frac{\delta}{\delta \theta} \phi_j (\theta(x))\frac{\delta\theta}{\delta x}
   \label{eq:second galerkin}
 \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. In equations \ref{eq:first galerkin} and \ref{eq:second galerkin}, the function space V is approximated as $\ V_h \approx V$ in a previous step, this means the accuracy of the approximation is dependent on how well the original function space is approximated \parencite{afanasievModularFlexibleSpectralelement2019}. To make calculations over the whole domain G, the contributions from each element need to be summed: \begin{equation} 
-  \int_G_e g(x)d^n x \approx \sum_{i=1}^{M} W_i^G_e \sum_{j=1}^{N} F_j \phi_j(\theta(x_i)) |\frac{\delta x}{\delta \theta}|_{x=x_i}^n
+  \int_{G_e} g(x)\,\mathrm{d}^n x \approx \sum_{i=1}^{M} W_i^{G_e} \sum_{j=1}^{N} F_j\,\phi_j(\theta(x_i))\left|\det\frac{\partial x}{\partial \theta}\right|_{x=x_i}
   \label{eq:domain integral}
 \end{equation} for the volume and 
 
