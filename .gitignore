@@ -191,3 +191,5 @@ simulation_fault_zone_czm_adjusted_time_sub_linear_m1_f20_wide/
 simulation_fault_zone_czm_adjusted_time_sub_linear_m1_f20_jitter/
 
 simulation_fault_zone_czm_adjusted_time_sub_linear_m1_f20_jitter_opt/
+job_*
+*.sqlite3
