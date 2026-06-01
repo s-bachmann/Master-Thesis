@@ -195,7 +195,10 @@ g(x) \approx \sum_{N}^{j=1} F_j \phi_j(x)
 \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. In equation \ref{eq:first galerkin}, the derivatuves of g(x) can be approximated by $\ \phi_j$, the derivatives of the set of functions approximating the test function w and the solution u \parencite{afanasievModularFlexibleSpectralelement2019}. This results in: \begin{equation}
   \nabla g(x) \approx \sum_{j=1}^{N}F_j\nabla \phi_j(x).
   \label{eq:second galerkin}
-\end{equation} In equations \ref{eq:first galerkin} and \ref{eq:second galerkin}, the function space V is approximated as $\ V_h \approx V$, this means the accuracy of the approximation in equation \ref{eq:second galerkin} is dependent on how well the original function space is approximated \parencite{afanasievModularFlexibleSpectralelement2019}. The integrals of displacement in respect to $\ (u,w)_G, (\nabla u \cdot\hat{n},w)_{\delta G}$ are evaluated using numerical quadrature, where a set of M integration weights $\ W_i$ are combined with g(x) and $\nabla g(x)$ are evaluated at a set of points $\ x_i$ \parencite{afanasievModularFlexibleSpectralelement2019}. 
+\end{equation} In equations \ref{eq:first galerkin} and \ref{eq:second galerkin}, the function space V is approximated as $\ V_h \approx V$, this means the accuracy of the approximation in equation \ref{eq:second galerkin} is dependent on how well the original function space is approximated \parencite{afanasievModularFlexibleSpectralelement2019}. The integrals of displacement in respect to $\ (u,w)_G, (\nabla u \cdot\hat{n},w)_{\delta G}$ are evaluated using numerical quadrature, where a set of M integration weights $\ W_i$ are combined with g(x) and $\nabla g(x)$ are evaluated at a set of points $\ x_i$ \parencite{afanasievModularFlexibleSpectralelement2019}. For volume integrals, this results in \begin{equation}
+  \int_G g(x) d^n x \approx \sum_{i=1}^{M} \sum_{j=1}^{N} F_j \phi_j (x_i)
+  \label{eq:volume approx}. 
+\end{equation}
 
 
 
