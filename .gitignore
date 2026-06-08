@@ -209,3 +209,5 @@ simulation_fault_zone_czm_adjusted_time_sub_linear_m1_f20_simple/
 simulation_wavefield_moving_source_like_czm_subrayleigh/
 
 moving_source_wavefield_output/
+
+simulation_wavefield_moving_source_simple_test/
