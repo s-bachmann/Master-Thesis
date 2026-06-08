@@ -211,3 +211,5 @@ simulation_wavefield_moving_source_like_czm_subrayleigh/
 moving_source_wavefield_output/
 
 simulation_wavefield_moving_source_simple_test/
+
+simulation_wavefield_moving_source_simple_test_multiple_src/
