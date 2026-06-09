@@ -410,6 +410,23 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
 \subsection{Slab Mechanics}
 \cite{sironTheoreticalFrameworkDynamic2023} model their snow slab as a Timoshenko beam. Such beams are thick beams, sandwich composite beams, or beams where the wavelength is similar to the beam thickness \parencite{sironTheoreticalFrameworkDynamic2023}. With a central frequency of $\ f_0 = 20 Hz$, the wavelength of the source used in this thesis is $\ \nu = \frac{\lambda}{v}$, where $\ \nu$ is the frequency and v is the speed of the medium. This leads to a central frequency wavelength of 15m for the shear wave and 30m for the compressional wave, this means the snow slab layer can be seen as a Timoshenko beam. 
 
+\subsection{Lamb Wave propagation Physics}
+Lamb waves are elastic guided waves that occur in plates \parencite{suFundamentalsAnalysisLamb2009}. They consist of particle motion in the direction of the wave polarization as well as the direction perpendicular to it \parencite{suFundamentalsAnalysisLamb2009}. They are guided by the boundaries of the layer or media in which they propagate and have a symmetric and an asymmetric mode \parencite{suFundamentalsAnalysisLamb2009}. The symmetric mode dominates the in-plate motion, while the antisymmetric mode dominates the vertical (out of plane motion ) \parencite{suFundamentalsAnalysisLamb2009}. Lamb waves are dispersive. Lamb waves in a plate with thickness d and half thickness h can be described as \begin{equation}
+  \frac{tan(qh)}{tan(ph)} = \frac{4k^2qp\mu}{(\lambda k^2 + \lambda p^2 + 2\mu p^2)(k^2-q^2)}
+  \label{eq:lamb wave}
+\end{equation} \parencite{suFundamentalsAnalysisLamb2009}. This can be split up into \begin{equation}
+  \frac{tan(qh)}{tan(ph)} = -\frac{4k^2qp}{(k^2-q^2)^2}
+  \label{eq:lamb symmetric}
+\end{equation} for symmetric and \begin{equation}
+  \frac{tan(qh)}{tan(ph) = -\frac{(k^2-q^2)^2}{4k^2qp}}
+  \label{eq:lamb antisymmetric}
+\end{equation} for antisymmetric modes \parencite{suFundamentalsAnalysisLamb2009}. In isotropic materials these equations are \begin{equation}
+  \frac{tan(qh)}{q} = \frac{4k^2ptan(ph)}{(k^2-q^2)^2 = 0}
+  \label{eq:isotropic symmetric lamb}
+\end{equation} in the symmetric case and \begin{equation}
+  qtan(qh) + \frac{(k^2-q^2)^2 tan(ph)}{4k^2p} = 0
+  \label{eq:isotropic asymetric lamb}
+\end{equation} for the antisymetric waves \parencite{suFundamentalsAnalysisLamb2009}. These are also the dispersion equations of the two Lamb wave modes , the symmetrical mode is more dispersive than the antisymmetric mode because of the division by q in equation \ref{eq:isotropic symmetric lamb} \parencite{suFundamentalsAnalysisLamb2009}. 
 
 
 % \subsection{Crack Types Relevant for Avalanche Release}
@@ -556,10 +573,6 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
 % \end{itemize}
 
 
-
-\section{\textbf{Notes}}
-
-- Look into wave modes (flexural and other mode)
 
 
 
