@@ -228,3 +228,5 @@ simulation_wavefield_moving_source_like_czm_subrayleigh_manual_t/
 simulation_wavefield_moving_source_like_czm_no_input/
 
 simulation_wavefield_moving_source_no_input/
+
+simulation_wavefield_moving_source_only_input/
