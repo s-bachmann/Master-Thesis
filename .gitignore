@@ -196,7 +196,7 @@ job_*
 job_*/
 *.h5
 *.mat
-*.ipynb
+#*.ipynb
 *.sqlite3
 *.code-workspace
 
@@ -236,3 +236,5 @@ simulation_wavefield_moving_source_no_input_/
 simulation_wavefield_moving_source_forced/
 
 simulation_wavefield_experiment/
+
+simulation_wavefield_moving_source_like_czm_no_input_COPY/
