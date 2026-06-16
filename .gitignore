@@ -196,7 +196,7 @@ job_*
 job_*/
 *.h5
 *.mat
-*.ipynb
+#*.ipynb
 *.sqlite3
 *.code-workspace
 
