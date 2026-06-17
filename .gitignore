@@ -252,3 +252,5 @@ simulation_fault_zone_czm_adjusted_time_super_linear_m1_f20_simple/
 simulation_wavefield_custom_SUPER_stf_rolled_denser/
 
 simulation_wavefield_custom_SUPER_stf_rolled/
+
+simulation_wavefield_custom_stf_weighted/
