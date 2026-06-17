@@ -296,6 +296,12 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
 \end{tabular}
 \end{center}
 
+\subsection{MPM PSD test in FE}
+\begin{itemize}
+  \item How exactly is the mpm data processed for fe input????
+  \item The different components resulting from the MPM data are weighted in arrays and then translated into SALVUS sources. This is done by defining weights for every component in every source location. These are then passed to custom source time functions in SALVUS, where the mxx, myy and mxy components of every wavelet at the source location is weighted. 
+\end{itemize}
+
 
 %   \section{Crack Propagation \& Representation}
 
