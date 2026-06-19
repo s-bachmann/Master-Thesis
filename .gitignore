@@ -256,3 +256,7 @@ simulation_wavefield_custom_SUPER_stf_rolled/
 simulation_wavefield_custom_stf_weighted/
 
 simulation_wavefield_custom_stf_weighted_denser/
+
+simulation_wavefield_custom_stf_weighted_simpler_mesh/
+
+custom_job_moving_source_all_sources/
