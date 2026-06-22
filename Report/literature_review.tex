@@ -437,6 +437,16 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
   \item Timoshenko beam effects
   \item FE vs MPM model discussion explained by different methodology, or find another way to explain differences
   \item I would like to lead from my input wave equation to the resulting waves observed in the results in a mathematrical way, eg show the input equation, all the interactions and then the resulting equations of for example lamb waves: 
+  \item From the equation of motion in an elastic solid, which is \begin{equation}
+    \mu \nabla^2 u + (\lambda + \mu) \nabla (\nabla \cdot u) = \rho \frac{\partial^2 u}{\partial t^2}
+    \label{eq:motion}
+  \end{equation}, the scalar and vector potential for P- and S-waves (Potentials $\ \phi, \psi$)can be derived using the Helmholtz-Decomposition and the displacement becomes \begin{equation}
+    u = \nabla \phi + \nabla \times \psi
+  \end{equation}. Splitting this into the horizontal and vertical component of displacement: \begin{equation}
+    u_x = \frac{\partial \phi}{\partial x} - \frac{\partial \psi}{\partial z}
+  \end{equation} and \begin{equation}
+    u_z = \frac{\partial\phi}{\partial z} + \frac{\partial \psi}{\partial x}
+  \end{equation}. 
   \item Possibly link different observations to physical processes (eg leading wavefronts) that could be useful in detecting slab breakoff in real-world data
   \item Also show fk plots of all the case and discuss which speed dominates when (eg in sub-rayleigh it's the slab speed)
   \item I would like to discuss the implications of the different wave types: eg have a clear, physical explaiantion for what different types of waves mean and how this is shown in terms of the crack or the snowpack
