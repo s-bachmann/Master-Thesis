@@ -7,6 +7,12 @@
 % Good luck and have fun with your Master Research in Applied Geophysics! Kind regards, Niels Grobbe
 
 \documentclass[a4paper,11pt]{MScThesis}
+\usepackage[
+  style=apa,
+  backend=biber,
+  natbib=true
+]{biblatex}
+\addbibresource{../master thesis.bib} % Points to your .bib database
 %
 %\usepackage{pifont}
 \mscName{Salome Anna Bachmann}
@@ -43,7 +49,7 @@
 
 %2 Uncomment the command below:
 
-\includepdf[scale=1,pages=-]{RWTH_only_Eidesstattliche_Versicherung.pdf}
+% \includepdf[scale=1,pages=-]{RWTH_only_Eidesstattliche_Versicherung.pdf}
 
 %3 Sign the form once your thesis is printed
 
@@ -81,7 +87,6 @@
         \acro{DEM} Discrete Element Method
         \acro{FE, FEM} Finite Element Method
         \acro{PST} Propagation Saw Test
-\end{description}
     \end{acronym}%
     %
     \cleardoublepage%
@@ -93,6 +98,7 @@
 %
 % Introduction
 \include{chapter1} % notice how the reference to the introduction takes place.. It refers to the name.tex
+
 
 \cleardoublepage
 
@@ -106,8 +112,9 @@
 
 %
 % Bibliography
-    \bibliographystyle{apalike}
-    \printbib{../master thesis.bib} % in MyBib.bib you add all your reference information, following the correct format.
+    % Bibliography
+    \cleardoublepage
+    \printbibliography[heading=bibintoc, title={Bibliography}] % in MyBib.bib you add all your reference information, following the correct format.
     % The *.bin file needs to be compiled using the Bib-compile option of your LaTeX text editor. Sometimes, the bib file needs to be built several times, as well as the main file, before all references occur correctly in your PDF.
 
 
