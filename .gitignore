@@ -23,6 +23,60 @@
 *.zip
 *.md
 
+# same for idea leaague layout
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.aux
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.bbl
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.bcf
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.blg
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.idx
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.ilg
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.ind
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.lof
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.log
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.lot
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.out
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.run.xml
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.toc
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.synctex.gz
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.fls
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.fdb_latexmk
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.nav
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.snm
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.vrb
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.xdv
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.sty
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.zip
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.md
+
+# Biber files
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.bib.bak
+
+# Glossaries
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.acn
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.acr
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.alg
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.glg
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.glo
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.gls
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.ist
+
+# TikZ / externalization
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.tikz
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.dpth
+
+Report/IDEA_league_MSc thesis standard layout_RWTH/StyleStuff/
+
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.png
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.gif
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.ps
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.cls
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.bat
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.cb
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.txt
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.thm
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.el
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.eps
+
 # Biber files
 *.bib.bak
 
