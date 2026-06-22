@@ -475,7 +475,19 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
     \sigma_{zz} = \lambda (\frac{\partial^2 \phi}{\partial x^2} + \frac{\partial^2\phi}{\partial z^2}) + 2\mu (\frac{\partial^2\phi}{\partial z^2} + \frac{\partial^2 \psi}{\partial x \partial z})
   \end{equation}, \begin{equation}
     \sigma_{xz} = \mu (\frac{\partial^2 \phi}{\partial x \partial z} - \frac{\partial^2 \psi }{\partial z^2} + \frac{\partial^2 \phi}{\partial x \partial z} + \frac{\partial^2 \psi}{\partial x^2})
-  \end{equation}, of which the first terms can be substituted with the wavespeed using the wavenumber-frequency and velocity relationship from the Lamé parameters. 
+  \end{equation}, of which the first terms can be substituted with the wavespeed using the wavenumber-frequency and velocity relationship from the Lamé parameters. This results in \begin{equation}
+    \sigma_{zz} = \mu [(q^2 -k^2) \phi + \frac{\partial^2\psi}{\partial x \partial z}]
+  \end{equation} and \begin{equation}
+    \sigma_{xz} = \mu [2 \frac{\partial^2 \phi}{\partialx \partial z} + \frac{\partial^2 \psi}{\partial x^2} - \frac{\partial^2 \psi}{\partial z^2}]
+  \end{equation}, from which harmonic solutions containing sin and cos can be obtained. Here, a derivative is a multiplication with ik, which leads to \begin{equation}
+    \sigma_{zz} = \mu [(q^2- k^2) \phi + 2ik \frac{\partial \psi}{\partial z}]
+  \end{equation} and \begin{equation}
+    \sigma_{xz} = \mu [2ik \frac{\partial \phi}{\partial z} + (q^2 - k^2)\psi]
+  \end{equation}. When taking into account the stress free boundary and substituting $\ K = (q^2 - k^2)$, then the normal stress at ±z becomes \begin{equation}
+    \sigma_n = K [A cos (p±z) + Bsin(p±z) + 2ik (-q(sin(q±z) + qDcos(p±z)))] = 0
+  \end{equation} and for the shear stress \begin{equation}
+    \sigma_s = 2ik[-pAsin(p±z) + pBcos(p±z)] + K[Ccos(q±z) + Dsin(q±z)] = 0
+  \end{equation} at the top and botto boundary of the snow layer. The matrix for sy
 
 
 
