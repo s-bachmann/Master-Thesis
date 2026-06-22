@@ -439,8 +439,8 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
   \item I would like to lead from my input wave equation to the resulting waves observed in the results in a mathematrical way, eg show the input equation, all the interactions and then the resulting equations of for example lamb waves: 
   \item From the equation of motion in an elastic solid, which is \begin{equation}
     \mu \nabla^2 u + (\lambda + \mu) \nabla (\nabla \cdot u) = \rho \frac{\partial^2 u}{\partial t^2}
-    \label{eq:motion}
-  \end{equation}, the scalar and vector potential for P- and S-waves (Potentials $\ \phi, \psi$)can be derived using the Helmholtz-Decomposition and the displacement becomes \begin{equation}
+    \label{eq:motion},
+  \end{equation} the scalar and vector potential for P- and S-waves (Potentials $\ \phi, \psi$)can be derived using the Helmholtz-Decomposition and the displacement becomes \begin{equation}
     u = \nabla \phi + \nabla \times \psi
   \end{equation}. Splitting this into the horizontal and vertical component of displacement: \begin{equation}
     u_x = \frac{\partial \phi}{\partial x} - \frac{\partial \psi}{\partial z}
@@ -459,8 +459,8 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
   \end{equation}. When these are substituted into the wave equations, f(z) and g(z) yield ordinary differental equations, which are \begin{equation}
     \frac{d^2f}{dz^2} + p^2f = 0
   \end{equation} and \begin{equation}
-    \frac{d^2g}{dz^2} + q^2g = 0 
-  \end{equation}, with $\ p^2 =  \frac{\omega^2}{c_p^s} -k^2$ and $\ q^2 =  \frac{\omega^2}{c_s^s} -k^2$. These equations lead to the general solutions \begin{equation}
+    \frac{d^2g}{dz^2} + q^2g = 0 ,
+  \end{equation} with $\ p^2 =  \frac{\omega^2}{c_p^s} -k^2$ and $\ q^2 =  \frac{\omega^2}{c_s^s} -k^2$. These equations lead to the general solutions \begin{equation}
     \phi = [Acos(pz) + Bsin(pz)]e^{i(kx-\omega t)}
   \end{equation} and \begin{equation}
     \psi = [Ccos(qz) + Dsin(qz)]e^{i(kx-\omega t)}
@@ -472,18 +472,18 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
   \end{equation} and \begin{equation}
     \sigma_{xz} = \mu (\frac{\partial u_x}{\partial z} + \frac{\partial u_z}{\partial x}) = 0
   \end{equation}. These can be expressed in terms of the scalar and vector potential using the displacement potentials. \begin{equation}
-    \sigma_{zz} = \lambda (\frac{\partial^2 \phi}{\partial x^2} + \frac{\partial^2\phi}{\partial z^2}) + 2\mu (\frac{\partial^2\phi}{\partial z^2} + \frac{\partial^2 \psi}{\partial x \partial z})
-  \end{equation}, \begin{equation}
-    \sigma_{xz} = \mu (\frac{\partial^2 \phi}{\partial x \partial z} - \frac{\partial^2 \psi }{\partial z^2} + \frac{\partial^2 \phi}{\partial x \partial z} + \frac{\partial^2 \psi}{\partial x^2})
-  \end{equation}, of which the first terms can be substituted with the wavespeed using the wavenumber-frequency and velocity relationship from the Lamé parameters. This results in \begin{equation}
+    \sigma_{zz} = \lambda (\frac{\partial^2 \phi}{\partial x^2} + \frac{\partial^2\phi}{\partial z^2}) + 2\mu (\frac{\partial^2\phi}{\partial z^2} + \frac{\partial^2 \psi}{\partial x \partial z}),
+  \end{equation} \begin{equation}
+    \sigma_{xz} = \mu (\frac{\partial^2 \phi}{\partial x \partial z} - \frac{\partial^2 \psi }{\partial z^2} + \frac{\partial^2 \phi}{\partial x \partial z} + \frac{\partial^2 \psi}{\partial x^2}),
+  \end{equation} of which the first terms can be substituted with the wavespeed using the wavenumber-frequency and velocity relationship from the Lamé parameters. This results in \begin{equation}
     \sigma_{zz} = \mu [(q^2 -k^2) \phi + \frac{\partial^2\psi}{\partial x \partial z}]
   \end{equation} and \begin{equation}
-    \sigma_{xz} = \mu [2 \frac{\partial^2 \phi}{\partialx \partial z} + \frac{\partial^2 \psi}{\partial x^2} - \frac{\partial^2 \psi}{\partial z^2}]
-  \end{equation}, from which harmonic solutions containing sin and cos can be obtained. Here, a derivative is a multiplication with ik, which leads to \begin{equation}
+    \sigma_{xz} = \mu [2 \frac{\partial^2 \phi}{\partialx \partial z} + \frac{\partial^2 \psi}{\partial x^2} - \frac{\partial^2 \psi}{\partial z^2}], 
+  \end{equation} from which harmonic solutions containing sin and cos can be obtained. Here, a derivative is a multiplication with ik, which leads to \begin{equation}
     \sigma_{zz} = \mu [(q^2- k^2) \phi + 2ik \frac{\partial \psi}{\partial z}]
   \end{equation} and \begin{equation}
-    \sigma_{xz} = \mu [2ik \frac{\partial \phi}{\partial z} + (q^2 - k^2)\psi]
-  \end{equation}. When taking into account the stress free boundary and substituting $\ K = (q^2 - k^2)$, then the normal stress at ±z becomes \begin{equation}
+    \sigma_{xz} = \mu [2ik \frac{\partial \phi}{\partial z} + (q^2 - k^2)\psi].
+  \end{equation} When taking into account the stress free boundary and substituting $\ K = (q^2 - k^2)$, then the normal stress at ±z becomes \begin{equation}
     \sigma_n = K [A cos (p±z) + Bsin(p±z) + 2ik (-q(sin(q±z) + qDcos(p±z)))] = 0
   \end{equation} and for the shear stress \begin{equation}
     \sigma_s = 2ik[-pAsin(p±z) + pBcos(p±z)] + K[Ccos(q±z) + Dsin(q±z)] = 0
@@ -499,8 +499,8 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
       A \\ D
     \end{pmatrix} = \begin{pmatrix}
       0 \\ 0
-    \end{pmatrix}
-  \end{equation}. If the determinant of this matrix is set to zero, this results in \begin{equation}
+    \end{pmatrix}.
+  \end{equation} If the determinant of this matrix is set to zero, this results in \begin{equation}
     \frac{tan(qz)}{tan(pz)} = -\frac{2k^2pq}{(q^2-k^2)^2}
   \end{equation}, which is the dispersion of the symmetric mode of the Lamb waves, as described by \cite{suFundamentalsAnalysisLamb2009}. The same can be done for the asymmetric Lamb wave mode if the operations of the stresses are opposite. \par
 
