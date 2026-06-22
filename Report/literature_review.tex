@@ -446,7 +446,11 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
     u_x = \frac{\partial \phi}{\partial x} - \frac{\partial \psi}{\partial z}
   \end{equation} and \begin{equation}
     u_z = \frac{\partial\phi}{\partial z} + \frac{\partial \psi}{\partial x}
-  \end{equation}. 
+  \end{equation}. When these are substituted into \ref{eq:motion}, it becomes \begin{equation}
+    \nabla^2 \phi = \frac{1}{c_p^2}\frac{\partial^2\phi}{\partial t^2}
+  \end{equation} for P-waves and \begin{equation}
+    \nabla^2 \psi = \frac{1}{c_s^2} \frac{\partial^2 \psi}{\partial t^2}
+  \end{equation} for S-waves, the wave speeds are derived from the Lamé-Parameters, as described in \ref{sec:czm methods}. 
   \item Possibly link different observations to physical processes (eg leading wavefronts) that could be useful in detecting slab breakoff in real-world data
   \item Also show fk plots of all the case and discuss which speed dominates when (eg in sub-rayleigh it's the slab speed)
   \item I would like to discuss the implications of the different wave types: eg have a clear, physical explaiantion for what different types of waves mean and how this is shown in terms of the crack or the snowpack
