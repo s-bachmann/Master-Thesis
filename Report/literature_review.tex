@@ -441,12 +441,12 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
     \mu \nabla^2 u + (\lambda + \mu) \nabla (\nabla \cdot u) = \rho \frac{\partial^2 u}{\partial t^2}
     \label{eq:motion},
   \end{equation} the scalar and vector potential for P- and S-waves (Potentials $\ \phi, \psi$)can be derived using the Helmholtz-Decomposition and the displacement becomes \begin{equation}
-    u = \nabla \phi + \nabla \times \psi
-  \end{equation}. Splitting this into the horizontal and vertical component of displacement: \begin{equation}
+    u = \nabla \phi + \nabla \times \psi. 
+  \end{equation} Splitting this into the horizontal and vertical component of displacement: \begin{equation}
     u_x = \frac{\partial \phi}{\partial x} - \frac{\partial \psi}{\partial z}
   \end{equation} and \begin{equation}
-    u_z = \frac{\partial\phi}{\partial z} + \frac{\partial \psi}{\partial x}
-  \end{equation}. When these are substituted into \ref{eq:motion}, it becomes \begin{equation}
+    u_z = \frac{\partial\phi}{\partial z} + \frac{\partial \psi}{\partial x}.
+  \end{equation} When these are substituted into \ref{eq:motion}, it becomes \begin{equation}
     \nabla^2 \phi = \frac{1}{c_p^2}\frac{\partial^2\phi}{\partial t^2}
   \end{equation} for P-waves and \begin{equation}
     \nabla^2 \psi = \frac{1}{c_s^2} \frac{\partial^2 \psi}{\partial t^2}
@@ -470,8 +470,8 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
   At the snow-air interface, there is a stress-free boundary because of the impedance contrast. This means that both the normal and the shear stress need to be zero: \begin{equation}
     \sigma_{zz} = \lambda \nabla^2\phi + 2\mu \frac{\partial u_z}{\partial z} = 0
   \end{equation} and \begin{equation}
-    \sigma_{xz} = \mu (\frac{\partial u_x}{\partial z} + \frac{\partial u_z}{\partial x}) = 0
-  \end{equation}. These can be expressed in terms of the scalar and vector potential using the displacement potentials. \begin{equation}
+    \sigma_{xz} = \mu (\frac{\partial u_x}{\partial z} + \frac{\partial u_z}{\partial x}) = 0.
+  \end{equation} These can be expressed in terms of the scalar and vector potential using the displacement potentials. \begin{equation}
     \sigma_{zz} = \lambda (\frac{\partial^2 \phi}{\partial x^2} + \frac{\partial^2\phi}{\partial z^2}) + 2\mu (\frac{\partial^2\phi}{\partial z^2} + \frac{\partial^2 \psi}{\partial x \partial z}),
   \end{equation} \begin{equation}
     \sigma_{xz} = \mu (\frac{\partial^2 \phi}{\partial x \partial z} - \frac{\partial^2 \psi }{\partial z^2} + \frac{\partial^2 \phi}{\partial x \partial z} + \frac{\partial^2 \psi}{\partial x^2}),
