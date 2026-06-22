@@ -450,7 +450,20 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
     \nabla^2 \phi = \frac{1}{c_p^2}\frac{\partial^2\phi}{\partial t^2}
   \end{equation} for P-waves and \begin{equation}
     \nabla^2 \psi = \frac{1}{c_s^2} \frac{\partial^2 \psi}{\partial t^2}
-  \end{equation} for S-waves, the wave speeds are derived from the Lamé-Parameters, as described in \ref{sec:czm methods}. 
+  \end{equation} for S-waves, the wave speeds are derived from the Lamé-Parameters, as described in \ref{sec:czm methods}. All of this is done according to \cite{achenbachCHAPTER6WITHDRAWN1975}\par
+
+  When assuming harmonic plane wave solutions for waves with wavenumber k and frequency $\ \omega$, the harmonic solutions have the form \begin{equation}
+    \phi(x,z,t) = f(z)e^{i(kx-\omega t)}
+  \end{equation} and \begin{equation}
+    \psi(x,z,t) = g(z)e^{i(kx-\omega t)}
+  \end{equation}. When these are substituted into the wave equations, f(z) and g(z) yield ordinary differental equations, which are \begin{equation}
+    \frac{d^2f}{dz^2} + p^2f = 0
+  \end{equation} and \begin{equation}
+    \frac{d^2g}{dz^2} + q^2g = 0 
+  \end{equation}, with $\ p^2 =  \frac{\omega^2}{c_p^s} -k^2$ and $\ q^2 =  \frac{\omega^2}{c_s^s} -k^2$. 
+
+
+
   \item Possibly link different observations to physical processes (eg leading wavefronts) that could be useful in detecting slab breakoff in real-world data
   \item Also show fk plots of all the case and discuss which speed dominates when (eg in sub-rayleigh it's the slab speed)
   \item I would like to discuss the implications of the different wave types: eg have a clear, physical explaiantion for what different types of waves mean and how this is shown in terms of the crack or the snowpack
