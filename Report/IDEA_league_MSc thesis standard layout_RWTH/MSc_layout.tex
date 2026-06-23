@@ -8,34 +8,6 @@
 
 \documentclass[11pt,a4paper,openany,oneside]{MScThesis}
 
-% --- FORCE RESTORATION OF STRUCTURAL PRINTING ---
-\makeatletter
-% Fix Table of Contents
-\renewcommand{\tableofcontents}{%
-  \chapter*{\contentsname}%
-  \@starttoc{toc}%
-}
-
-% Fix Nomenclature (\printnomencl)
-\OuterFrameSep=0pt
-\parsep=0pt
-\def\printnomencl{%
-  \InputIfFileExists{\jobname.nls}{}{%
-    \chapter*{Nomenclature}%
-    \textbf{Nomenclature File Not Found!} To show your symbols:\\
-    1. Open Terminal on your Mac.\\
-    2. Run: \texttt{cd "\underline{\space\space your project folder path\space\space}"}\\
-    3. Run: \texttt{makeindex \jobname.glo -s nomencl.ist -o \jobname.nls}\\
-    4. Compile with LuaLaTeX two more times.
-  }%
-}
-
-% Fix legacy page building layout bugs
-\maxdeadcycles=2000
-\setbox\box255=\vbox{}
-\def\cl@enddocument{\vfill\supereject\ifnum\outputpenalty>-\@M\else\null\fi}
-\makeatother
-% ------------------------------------------------
 
 \usepackage[
   style=apa,
