@@ -285,13 +285,13 @@ Moment-tensor components are set according to the user-specified mode-mix ratio,
 which yields pure mode behaviour at the extremes of \(r_{\rm mode}=0\) or \(1\), which means that an additional component of the moment tensor source becomes 0. All subfault sources use the same central frequency, wavelet shape, and amplitude scaling so the rupture is represented as a coherent moving source in the wave propagation simulations. \par
 
 
-The following numerical settings and checks are applied consistently across simulations to ensure stability and reproducibility:
-\begin{itemize}
-  \item Mesh resolution: element/subfault spacing $h$ is chosen to resolve the cohesive zone and the shortest seismic wavelength; practical rule: $h\le\min(l_{cz}/4,\;\lambda_{\min}/8)$, where $\lambda_{\min}=v_{\min}/f_{95}$ and $f_{95}$ is the 95\%ile source frequency.
-  \item Time stepping: explicit scheme with CFL-like stability criterion $\Delta t\lesssim s\,h/v_{\max}$ and safety factor $s\approx0.3$--0.5.
-  \item Boundaries: use absorbing boundary conditions to minimize reflections at domain edges.
-  \item Rupture discretization: subfault onset times follow $t_o=(x-x_{\rm start})/v_{\rm rupture}$; rise time is taken as $t_{rise}\approx l_{cz}/v_{\rm rupture}$; scalar moment per subfault $M_0=\mu\,x_{\rm slip}\,\Delta x$.
-\end{itemize}
+% The following numerical settings and checks are applied consistently across simulations to ensure stability and reproducibility:
+% \begin{itemize}
+%   \item Mesh resolution: element/subfault spacing $h$ is chosen to resolve the cohesive zone and the shortest seismic wavelength; practical rule: $h\le\min(l_{cz}/4,\;\lambda_{\min}/8)$, where $\lambda_{\min}=v_{\min}/f_{95}$ and $f_{95}$ is the 95\%ile source frequency.
+%   \item Time stepping: explicit scheme with CFL-like stability criterion $\Delta t\lesssim s\,h/v_{\max}$ and safety factor $s\approx0.3$--0.5.
+%   \item Boundaries: use absorbing boundary conditions to minimize reflections at domain edges.
+%   \item Rupture discretization: subfault onset times follow $t_o=(x-x_{\rm start})/v_{\rm rupture}$; rise time is taken as $t_{rise}\approx l_{cz}/v_{\rm rupture}$; scalar moment per subfault $M_0=\mu\,x_{\rm slip}\,\Delta x$.
+% \end{itemize}
 
 Key parameters and their provenance used in the simulations are summarised below:
 \begin{center}
