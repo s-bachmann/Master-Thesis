@@ -76,7 +76,7 @@ Report/IDEA_league_MSc thesis standard layout_RWTH/*.txt
 Report/IDEA_league_MSc thesis standard layout_RWTH/*.thm
 Report/IDEA_league_MSc thesis standard layout_RWTH/*.el
 Report/IDEA_league_MSc thesis standard layout_RWTH/*.eps
-
+Report/IDEA_league_MSc thesis standard layout_RWTH/*.nls
 # Biber files
 *.bib.bak
 

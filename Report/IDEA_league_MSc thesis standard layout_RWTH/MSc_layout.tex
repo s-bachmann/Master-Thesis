@@ -6,7 +6,37 @@
 % This MSc thesis standard layout is optimized for double sided printing on A4 format paper.
 % Good luck and have fun with your Master Research in Applied Geophysics! Kind regards, Niels Grobbe
 
-\documentclass[a4paper,11pt]{MScThesis}
+\documentclass[11pt,a4paper,openany,oneside]{MScThesis}
+
+% --- FORCE RESTORATION OF STRUCTURAL PRINTING ---
+\makeatletter
+% Fix Table of Contents
+\renewcommand{\tableofcontents}{%
+  \chapter*{\contentsname}%
+  \@starttoc{toc}%
+}
+
+% Fix Nomenclature (\printnomencl)
+\OuterFrameSep=0pt
+\parsep=0pt
+\def\printnomencl{%
+  \InputIfFileExists{\jobname.nls}{}{%
+    \chapter*{Nomenclature}%
+    \textbf{Nomenclature File Not Found!} To show your symbols:\\
+    1. Open Terminal on your Mac.\\
+    2. Run: \texttt{cd "\underline{\space\space your project folder path\space\space}"}\\
+    3. Run: \texttt{makeindex \jobname.glo -s nomencl.ist -o \jobname.nls}\\
+    4. Compile with LuaLaTeX two more times.
+  }%
+}
+
+% Fix legacy page building layout bugs
+\maxdeadcycles=2000
+\setbox\box255=\vbox{}
+\def\cl@enddocument{\vfill\supereject\ifnum\outputpenalty>-\@M\else\null\fi}
+\makeatother
+% ------------------------------------------------
+
 \usepackage[
   style=apa,
   backend=biber,
@@ -74,7 +104,10 @@
 
 %
 % table of contents, (\toc or \toclof or \tocloflot )
-    \tocloflot
+    \tableofcontents %
+    \listoffigures
+    \listoftables
+    \newpage
 %
 % Nomenclature
     \printnomencl %
@@ -90,7 +123,7 @@
         \acro{PST} Propagation Saw Test
     \end{acronym}%
     %
-    \cleardoublepage%
+    \newpage%
 %
 %
 %============================= Main matter =========================================
@@ -99,6 +132,52 @@
 %
 % Introduction
 \include{chapter1} % notice how the reference to the introduction takes place.. It refers to the name.tex
+\nomenclature{$\boldsymbol{t_o}$}{Subfault onset time [s], e.g. $t_o=(x-x_{\rm start})/v_{\rm rupture}$.}
+\nomenclature{$\boldsymbol{x},\,\boldsymbol{x}_{\rm start}$}{Horizontal coordinate and rupture starting position [m].}
+\nomenclature{$\boldsymbol{v}_{\rm rupture}$}{Prescribed rupture propagation speed [m s$^{-1}$].}
+\nomenclature{$\boldsymbol{t}_{rise}$}{Rise time of a subfault/source [s].}
+\nomenclature{$\boldsymbol{\Delta x}$}{Subfault width or discretisation length in x [m].}
+\nomenclature{$\boldsymbol{x}_{\rm slip}$}{Prescribed slip on a subfault [m].}
+\nomenclature{$\boldsymbol{M}_0$}{Scalar seismic moment per subfault [N m].}
+\nomenclature{$\boldsymbol{m}_{ij}$}{Moment tensor components [N m].}
+\nomenclature{$\boldsymbol{r}_{\rm mode}$}{Mode mix parameter [dimensionless].}
+\nomenclature{$\boldsymbol{l}_{cz}$}{Cohesive process (fracture) zone length [m].}
+\nomenclature{$\boldsymbol\tau_s$}{Shear strength of interface [Pa].}
+\nomenclature{$\boldsymbol{l}_{ch}$}{Irwin characteristic length [m].}
+\nomenclature{$\boldsymbol{\lambda}_{\min}$}{Shortest wavelength to resolve [m].}
+\nomenclature{$\boldsymbol{v}_{\min},\,\boldsymbol{v}_{\max}$}{Minimum and maximum relevant wave speeds in the model [m s$^{-1}$].}
+\nomenclature{$\boldsymbol{\Delta t}$}{Time step [s] for explicit time integration.}
+\nomenclature{$\boldsymbol{\xi}$}{Normalized opening [dimensionless].}
+\nomenclature{$\boldsymbol{\delta}$}{Local opening (separation) displacement across the interface [m].}
+\nomenclature{$\boldsymbol{\delta}_c$}{Mixed-mode critical opening [m] used to nondimensionalize openings.}
+\nomenclature{$\boldsymbol{\delta}_{n,c},\,\boldsymbol{\delta}_{s,c}$}{Single-mode critical openings for Mode I (normal) and Mode II (shear) [m].}
+\nomenclature{$\boldsymbol{T}(\boldsymbol{\xi})$}{Cohesive traction as a function of normalised opening [Pa or N m$^{-2}$].}
+\nomenclature{$\boldsymbol{T}_{\mathrm{peak}}$}{Peak cohesive traction [Pa].}
+\nomenclature{$\boldsymbol{\phi}(\boldsymbol{\Delta})$}{Mixed-mode cohesive potential [J m$^{-2}$] with $\Delta=(\Delta_n,\Delta_t)$.}
+\nomenclature{$\boldsymbol{\Delta}_n,\,\boldsymbol{\Delta}_t$}{Normal and tangential separations [m].}
+\nomenclature{$\boldsymbol{\delta}_n,\,\boldsymbol{\delta}_t$}{Normal and tangential length scales in the cohesive potential [m].}
+\nomenclature{$\boldsymbol{q}$}{Coupling parameter in the mixed-mode cohesive potential [dimensionless].}
+\nomenclature{$\boldsymbol{\phi}_n,\,\boldsymbol{\phi}_t$}{Work (energies) of separation for pure normal and tangential modes [J m$^{-2}$].}
+\nomenclature{$\boldsymbol{\sigma}_{\max},\,\boldsymbol{\tau}_{\max}$}{Peak normal strength and peak shear strength [Pa].}
+\nomenclature{$\boldsymbol{\sigma}_n,\,\boldsymbol{\tau}_s$}{Normal and shear strength [Pa].}
+\nomenclature{$\boldsymbol{G}_I,\,\boldsymbol{G}_{II}$}{Fracture energies for Mode I and Mode II [J m$^{-2}$].}
+\nomenclature{$\boldsymbol{v}_s,\,\boldsymbol{v}_p$}{Pressure and Shear seismic wave speeds [m s$^{-1}$].}
+\nomenclature{$\boldsymbol{\rho}$}{Mass density [kg m$^{-3}$].}
+\nomenclature{$\boldsymbol{\mu},\,\boldsymbol{\lambda}$}{Lamé parameters [Pa].}
+\nomenclature{$\boldsymbol{E}$}{Young's modulus [Pa].}
+\nomenclature{$\boldsymbol{l}_{crack},\,\boldsymbol{x}_0$}{Local crack process length and initial crack front position [m] used in local coordinate definitions.}
+\nomenclature{$\boldsymbol{\nabla}$}{Component-wise partial derivative operator (nabla).}
+\nomenclature{$\boldsymbol{\theta}$}{Reference coordinate system in respect to mesh elements used in SALVUS.}
+\nomenclature{$\boldsymbol{w}$}{Test function used to obtain the weak form of FE equations [dimensionless].}
+\nomenclature{$\boldsymbol{G}$}{Model domain [dimensionless].}
+\nomenclature{$\boldsymbol{V}$}{Galerkin space [dimensionless].}
+\nomenclature{$\boldsymbol{u}$}{Scalar displacement potential [dimensionless].}
+\nomenclature{$\boldsymbol{\phi}$}{Set of functions which approximate solution of w or u [dimensionless].}
+\nomenclature{$\boldsymbol{F}$}{Forcing term of elastic wave equation.}
+\nomenclature{$\boldsymbol{M}$}{Mass term of elastic wave equation.}
+\nomenclature{$\boldsymbol{S}$}{Stiffness term of elastic wave equation.}
+\nomenclature{$\boldsymbol{B}$}{Boundary term of elastic wave equation.}
+\nomenclature{$\boldsymbol{\partial}$}{Partial derivative in respect to one variable.}
 
 
 \cleardoublepage
