@@ -42,7 +42,7 @@
 \begin{document}
 
 % If you want a title *inline*, not a title page:
-{\centering \Large \textbf{Literature Review for Master Thesis}\par}
+{\centering \Large \textbf{From Particles to Waves: Coupling Crack Propagation in Snow in FE and Dynamic Snow Modelling to Detect Cracks in DAS Data}\par}
 
 \section{Nomenclature}
 \subsection{List of Abbreviations}
@@ -425,9 +425,12 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
 
 \section{Results}
 \begin{itemize}
-  \item Results of Complex Model in FE, supersher vs sub-rayleigh, possibly weak layer vs no weak layer
+  \item For all cases show: \textbf{Space time plots:} Strain (x) rate plots, Strain (x), velocity, in all cases at crack depth and snow bottom. \textbf{FK plots with velocites drawn}, \textbf{wiggle plots or single traces}, possibly PSD and STF plots to support certain cases, but i'm not sure these are needed because they look similar in all cases? 
+  \item Put animations via link, stills of all animation cases 
+  \item Results of Complex Model (Cohesive zone) in FE, supersher vs sub-rayleigh, possibly weak layer vs no weak layer
   \item Results for simple FE model, all the same comparisons
   \item Results of MPM-based model, all the same comparisons
+  \item MAYBE: show some tests of weighted / custom stf so process can be followed better
 \end{itemize}
 
 \section{Discussion}
@@ -506,11 +509,13 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
 
   Lamb waves are elastic guided waves that occur in plates \parencite{suFundamentalsAnalysisLamb2009}. They consist of particle motion in the direction of the wave polarization as well as the direction perpendicular to it \parencite{suFundamentalsAnalysisLamb2009}. They are guided by the boundaries of the layer or media in which they propagate and have a symmetric and an asymmetric mode \parencite{suFundamentalsAnalysisLamb2009}. The symmetric mode dominates the in-plate motion, while the antisymmetric mode dominates the vertical (out of plane motion ) \parencite{suFundamentalsAnalysisLamb2009}. \par
 
-  \item Copmare a figure of lamb wave propagation of the different modes to the results obtained in GIFS to clearly show that they are presnet
+  \item Copmare a figure of lamb wave propagation of the different modes to the results obtained in GIFS to clearly show that they are presnet: 
+  \item In space time plots: describe the different wavefronts which can be seen. In sub-rayleigh, slope of stongest main front is sources firing (same as propagation speed), wavefront which travels ahead of this is smaller. In supershear, only one distinct front and backwards propagation: WHICH TYPES OF WAVES ARE THEY AND WHY 
   \item Possibly link different observations to physical processes (eg leading wavefronts) that could be useful in detecting slab breakoff in real-world data
   \item Also show fk plots of all the case and discuss which speed dominates when (eg in sub-rayleigh it's the slab speed) \rightarrow possibly timoshenko effects here because of the 4th order term when frequency goes higher approximates medium speed ? I think i'll explain this primarily with the highest speed present: in the sub-rayleigh case, the p-wave speed of the slab is the highest speed in the system, in the supershear case, the highest speed present is the crack propagation speed. 
   \item I would like to discuss the implications of the different wave types: eg have a clear, physical explaiantion for what different types of waves mean and how this is shown in terms of the crack or the snowpack \rightarrow the lamb waves are caused by the impedance contrast at snow-air causing a stress free-boundary, which then guides the waves (link to derivation)
   \item Tie all of this to literature of fracutre mechanics and avalanche modelling, to also show where the phenomena come from and they could for example show up in not seismic data 
+  \item Important caveat: different stages of crack propagation as described by \cite{bobillierNumericalInvestigationCrack2024} are irrelevant here, because crack propagates at constant speed \rightarrow this is also not very physical and an important consideration for comparison to data as well as interpretation
 \end{itemize}
 
 \section{Conlcusion}
@@ -518,6 +523,8 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
   \item Link between all different models and scenarios and big takeaways for DAS data
   \item Summary of observations, compare and contrast models
   \item What can be built on this? eg more accurate Salvus model with multiple layers and topography etc
+  \item also add cracks not at steady state speed: crack propagation in transition mechanisms described in introduction 
+  \item Slope effects will probably change results a lot
   \item It would be nice to have a "how to detect slab braekoff in DAS data" here, for example what types of waves to look for, what order they have etc
 \end{itemize}
 
