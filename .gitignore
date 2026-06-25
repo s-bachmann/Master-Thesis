@@ -317,3 +317,6 @@ custom_job_moving_source_all_sources/
 
 
 simulation_wavefield_custom_stf_weighted_simpler_mesh_dense/
+simulation_wavefield_custom_stf_simpler_mesh_dense/
+
+simulation_wavefield_custom_stf_simpler_mesh_dense_SUB/
