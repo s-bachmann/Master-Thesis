@@ -450,7 +450,7 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
     \nabla^2 \phi = \frac{1}{c_p^2}\frac{\partial^2\phi}{\partial t^2}
   \end{equation} for P-waves and \begin{equation}
     \nabla^2 \psi = \frac{1}{c_s^2} \frac{\partial^2 \psi}{\partial t^2}
-  \end{equation} for S-waves, the wave speeds are derived from the Lamé-Parameters, as described in \ref{sec:czm methods}. All of this is done according to \cite{achenbachCHAPTER6WITHDRAWN1975}. \par
+  \end{equation} for S-waves, the wave speeds are derived from the Lamé-Parameters, as described in \ref{sec:czm methods}. \par
 
   When assuming harmonic plane wave solutions for waves with wavenumber k and frequency $\ \omega$, the harmonic solutions have the form \begin{equation}
     \phi(x,z,t) = f(z)e^{i(kx-\omega t)}
@@ -463,11 +463,11 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
   \end{equation} with $\ p^2 =  \frac{\omega^2}{c_p^s} -k^2$ and $\ q^2 =  \frac{\omega^2}{c_s^s} -k^2$. These equations lead to the general solutions \begin{equation}
     \phi = [Acos(pz) + Bsin(pz)]e^{i(kx-\omega t)}
   \end{equation} and \begin{equation}
-    \psi = [Ccos(qz) + Dsin(qz)]e^{i(kx-\omega t)}
-  \end{equation} \parencite{achenbachCHAPTER6WITHDRAWN1975}. \par
+    \psi = [Ccos(qz) + Dsin(qz)]e^{i(kx-\omega t)}.
+  \end{equation} \par
 
 
-  At the snow-air interface, there is a stress-free boundary because of the impedance contrast. This means that both the normal and the shear stress need to be zero: \begin{equation}
+  At the snow-air interface, there is a stress-free boundary because of the impedance contrast, accoding to \cite{igelComputationalSeismologyPractical2016}. This means that both the normal and the shear stress need to be zero: \begin{equation}
     \sigma_{zz} = \lambda \nabla^2\phi + 2\mu \frac{\partial u_z}{\partial z} = 0
   \end{equation} and \begin{equation}
     \sigma_{xz} = \mu (\frac{\partial u_x}{\partial z} + \frac{\partial u_z}{\partial x}) = 0.
