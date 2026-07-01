@@ -1,0 +1,220 @@
+% tex/preamble.tex
+% ──────────────────────────────────────────────────────────────────────────────
+% Packages
+% ──────────────────────────────────────────────────────────────────────────────
+\usepackage[a4paper, margin=2.5cm, bindingoffset=0.5cm]{geometry}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage{csquotes}
+\usepackage{emptypage}            % suppresses headers on blank pages
+
+% ── Fonts ─────────────────────────────────────────────────────────────────────
+\usepackage{isomath}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage[scaled=0.98,sups]{XCharter}
+\usepackage[scaled=0.94,ttdefault,type1]{sourcecodepro}
+\usepackage[type1]{sourcesanspro}
+\usepackage[xcharter,vvarbb,scaled=1.13]{newtxmath}
+
+% ── Figures & tables ──────────────────────────────────────────────────────────
+\usepackage{graphicx}
+\usepackage[font=sf,bf,justification=centering]{caption}
+\captionsetup[table]{position=top}
+\usepackage[font=sf]{floatrow}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+
+% ── Layout & spacing ──────────────────────────────────────────────────────────
+\usepackage{parskip}
+\usepackage[titles]{tocloft}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{anyfontsize}
+
+% ── Science & units ───────────────────────────────────────────────────────────
+\usepackage[exponent-product=\cdot]{siunitx}
+\usepackage{chemmacros}
+
+% ── Code listings ─────────────────────────────────────────────────────────────
+\usepackage{listings}
+\usepackage{lstautogobble}
+
+% ── Colour ────────────────────────────────────────────────────────────────────
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+
+% ── TikZ ──────────────────────────────────────────────────────────────────────
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning}
+
+% ── Date ──────────────────────────────────────────────────────────────────────
+\usepackage[showdow,en-US]{datetime2}
+
+% ── Appendix ──────────────────────────────────────────────────────────────────
+\usepackage[titletoc]{appendix}
+
+% ── IDEA League chapter heading style (fncychap "Bjarne" ruled style) ─────────
+\usepackage{fncychap}
+\makeatletter
+  \ChNameVar{\raggedleft\Large\sffamily}
+  \ChNumVar{\Large\sffamily}
+  \ChTitleVar{\raggedleft\Huge\sffamily\bfseries}
+  \ChRuleWidth{2pt}
+  \renewcommand{\DOCH}{%
+    \vskip -0.5\baselineskip
+    \mghrulefill{\RW}\par\nobreak
+    \CNV\FmN{\@chapapp}\space\CNoV\thechapter
+    \par\nobreak
+    \vskip -0.5\baselineskip
+  }
+  \renewcommand{\DOTI}[1]{%
+    \mghrulefill{\RW}\par\nobreak
+    \CTV\FmTi{#1}\par\nobreak
+    \vskip 50\p@
+  }
+  \renewcommand{\DOTIS}[1]{%
+    \mghrulefill{\RW}\par\nobreak
+    \CTV\FmTi{#1}\par\nobreak
+    \vskip 50\p@
+  }
+\makeatother
+
+% ── Title decoration (for cover page) ─────────────────────────────────────────
+\usepackage{eso-pic}              % AddToShipoutPicture
+\usepackage{pdfpages}             % \includepdf
+
+% ── Font encoding (pdflatex fallback) ─────────────────────────────────────────
+\ifdefined\directlua\else
+  \usepackage[T1]{fontenc}
+\fi
+
+% ──────────────────────────────────────────────────────────────────────────────
+% Bibliography  (lualatex → biber → lualatex × 2)
+% ──────────────────────────────────────────────────────────────────────────────
+\usepackage[
+  style=authoryear,
+  sorting=nyt,
+  maxbibnames=5,
+  maxcitenames=2,
+  giveninits=true,
+  uniquelist=false,
+  uniquename=init,
+  seconds=true,
+  url=false,
+  backend=biber,
+]{biblatex}
+\addbibresource{../../master_thesis.bib}
+\DeclareDelimFormat{nameyeardelim}{\addcomma\space}
+\newcommand\citep{\parencite}
+
+% ──────────────────────────────────────────────────────────────────────────────
+% ETH Zürich / IDEA League colours
+% ──────────────────────────────────────────────────────────────────────────────
+\definecolor{eth-blau}{RGB}{33,92,175}
+\definecolor{eth-petrol}{RGB}{0,120,148}
+\definecolor{eth-grun}{RGB}{98,115,19}
+\definecolor{eth-bronze}{RGB}{142,103,19}
+\definecolor{eth-rot}{RGB}{183,53,45}
+\definecolor{eth-purpur}{RGB}{167,17,122}
+\definecolor{eth-grau}{RGB}{111,111,111}
+\definecolor{idea-dark}{gray}{.25}
+
+% ──────────────────────────────────────────────────────────────────────────────
+% Graphics path
+% ──────────────────────────────────────────────────────────────────────────────
+\graphicspath{{./figures/}}
+
+% ──────────────────────────────────────────────────────────────────────────────
+% SI units fix (lualatex)
+% ──────────────────────────────────────────────────────────────────────────────
+\DeclareSIPrefix\micro{\text{\textmu}}{-3}
+\DeclareSIUnit\gal{Gal}
+
+% ──────────────────────────────────────────────────────────────────────────────
+% Math commands
+% ──────────────────────────────────────────────────────────────────────────────
+\renewcommand{\vec}{\vectorsym}
+\DeclareMathOperator{\Grad}{grad}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Curl}{curl}
+\newcommand{\oh}{\mathcal{O}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\La}{\mathscr{L}}
+
+% ──────────────────────────────────────────────────────────────────────────────
+% Misc formatting
+% ──────────────────────────────────────────────────────────────────────────────
+\linespread{1.04}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum height=1cm,
+    text width=4cm, text centered, draw=black, fill=gray!20]
+\tikzstyle{process}   = [rectangle, minimum height=1cm,
+    text width=4cm, text centered, draw=black, fill=blue!10]
+\tikzstyle{arrow}     = [thick,->,>=stealth]
+
+% ── Equation parameters environment ───────────────────────────────────────────
+\newenvironment{conditions}
+  {\par\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+  {\end{tabular}\par\vspace{0.5\belowdisplayskip}}
+
+% ── Code listing style ────────────────────────────────────────────────────────
+\lstdefinestyle{code}{
+    backgroundcolor=\color{white},
+    basicstyle=\small\ttfamily,
+    breaklines=true,
+    commentstyle=\itshape\color{eth-grau},
+    escapeinside={\%*}{*)},
+    frame=lines,
+    keepspaces=true,
+    keywordstyle=\color{eth-blau},
+    numbers=left,
+    numbersep=5pt,
+    numberstyle=\small\ttfamily\color{eth-grau},
+    rulecolor=\color{black},
+    showspaces=false,
+    showstringspaces=false,
+    stringstyle=\color{eth-petrol},
+    autogobble=true,
+    tabsize=2,
+}
+\lstset{style=code}
+
+% ──────────────────────────────────────────────────────────────────────────────
+% Hyperref (load near end; cleveref must come after)
+% ──────────────────────────────────────────────────────────────────────────────
+\usepackage[
+  colorlinks=true,
+  linkcolor=eth-blau,
+  citecolor=eth-purpur,
+  urlcolor=eth-green,
+]{hyperref}
+\usepackage{bookmark}
+
+% ── Differentials (after hyperref) ────────────────────────────────────────────
+\renewcommand\d{\mathop{}\!\mathrm{d}}
+\renewcommand\p{\mathop{}\!\mathrm{\partial}}
+
+% ── cleveref (after hyperref) ────────────────────────────────────────────────
+\usepackage{cleveref}
+\crefname{table}{Table}{Tables}
+\crefname{chapter}{Chapter}{Chapters}
+\crefname{section}{Section}{Sections}
+\crefname{subsection}{Subsection}{Subsections}
+\crefname{figure}{Figure}{Figures}
+\crefname{equation}{equation}{equations}
+
+% ── headheight fix ────────────────────────────────────────────────────────────
+\setlength{\headheight}{14pt}
+
+
+% tkiz--------------------------------------------------------------------------
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=magenta!30, font=\tiny]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=teal!30, font=\tiny]
+\tikzstyle{process} = [rectangle, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=orange!30, font=\tiny]
+\tikzstyle{decision} = [diamond, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=cyan!30, font=\tiny]
+\tikzstyle{arrow} = [thick,->,>=stealth]

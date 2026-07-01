@@ -1,0 +1,109 @@
+%% MSc Thesis — main.tex
+%% IDEA League visual design + working_template file structure
+%% Compiler: LuaLaTeX → biber → LuaLaTeX × 2
+%%
+\documentclass[a4paper,11pt,twoside,openright]{report}
+%
+% ── Thesis metadata ──────────────────────────────────────────────────────────
+\newcommand{\mythesistitle}{From Particles to Waves}
+\newcommand{\mysubtitle}{Towards coupling Dynamic Snow Modelling and Spectral Elements to detect Avalanche Breakoff in DAS Data.}
+\newcommand{\myauthor}{Salome Anna Bachmann}
+\newcommand{\mysupervisor}{Johannes Aichele \textbar{} Pascal Edme \textbar{} Johan Gaume}
+\newcommand{\myreaderone}{Johannes Aichele}
+\newcommand{\myreadertwo}{Pascal Edme}
+\newcommand{\myreaderthree}{Johan Gaume}   % leave blank {} if unused
+\newcommand{\myinstitution}{IDEA LEAGUE \textbar{} ETH Zürich}
+\newcommand{\mydate}{\today}
+%
+% ── Preamble (packages, colours, commands) ───────────────────────────────────
+\input{tex/preamble.tex}
+
+% ── Nomenclature Configuration ───────────────────────────────────────────────
+\usepackage{nomencl}
+\makenomenclature
+\renewcommand{\nomname}{Nomenclature}
+
+% ── Matter Command Emulation for report class ────────────────────────────────
+\makeatletter
+\newcommand{\frontmatter}{\cleardoublepage\pagenumbering{roman}}
+\newcommand{\mainmatter}{\cleardoublepage\pagenumbering{arabic}\setcounter{page}{1}}
+\newcommand{\backmatter}{\cleardoublepage}
+\makeatother
+
+% ── Nomenclature Configuration ───────────────────────────────────────────────
+\usepackage{nomencl}
+\makenomenclature
+\renewcommand{\nomname}{Nomenclature}
+%
+% ── PDF metadata (after hyperref is loaded in preamble) ──────────────────────
+\hypersetup{
+  pdftitle  = {MSc Thesis: \mythesistitle},
+  pdfauthor = {\myauthor},
+  pdfsubject= {\mysubtitle},
+}
+%
+% ── Fancy headers ─────────────────────────────────────────────────────────────
+\fancypagestyle{fancy}{%
+  \fancyhf{}
+  \fancyhead[LE]{\nouppercase{\bfseries\thepage\quad\leftmark}}
+  \fancyhead[RO]{\nouppercase{\bfseries\rightmark\quad\thepage}}
+  \renewcommand{\headrulewidth}{0.4pt}
+}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \cfoot{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+%
+%══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+%══════════════════════════════════════════════════════════════════════════════
+%
+%% ── FRONT MATTER ────────────────────────────────────────────────────────────
+\frontmatter          % roman page numbers, suppresses chapter numbers
+\pagestyle{plain}
+%
+% Cover pages (IDEA League style: cover + second title + supervisor page)
+\input{tex/titlepage.tex}
+%
+% Abstract
+\input{tex/frontmatter/abstract.tex}
+%
+% Acknowledgements
+\input{tex/frontmatter/acknowledgements.tex}
+%
+% Table of contents / figures / tables
+% Table of contents / figures / tables
+\cleardoublepage
+{\setlength{\baselineskip}{0.6cm}\tableofcontents}
+\cleardoublepage
+{\setlength{\baselineskip}{0.6cm}\listoffigures}
+\cleardoublepage
+{\setlength{\baselineskip}{0.6cm}\listoftables}
+\cleardoublepage
+{\setlength{\baselineskip}{0.6cm}\printnomenclature}
+\cleardoublepage
+%
+%% ── MAIN MATTER ─────────────────────────────────────────────────────────────
+\mainmatter           % arabic page numbers, chapter numbers active
+\pagestyle{fancy}
+%
+\input{tex/body.tex}
+
+The subfault onset time is given by $\boldsymbol{t_o}$.
+\nomenclature{$\boldsymbol{t_o}$}{Subfault onset time [s], e.g. $t_o=(x-x_{\rm start})/v_{\rm rupture}$.}
+
+Horizontal coordinates match $\boldsymbol{x}$.
+\nomenclature{$\boldsymbol{x},\,\boldsymbol{x}_{\rm start}$}{Horizontal coordinate and rupture starting position [m].}
+%
+%% ── BACK MATTER ─────────────────────────────────────────────────────────────
+\backmatter
+%
+% Appendix
+\input{tex/appendix.tex}
+%
+% Bibliography
+\cleardoublepage
+\printbibliography[heading=bibintoc, title={Bibliography}]
+%
+\end{document}

@@ -1,0 +1,92 @@
+% tex/sections/methodology.tex
+% ──────────────────────────────────────────────────────────────────────────────
+\chapter{Methodology}
+\label{chap:methodology}
+% ──────────────────────────────────────────────────────────────────────────────
+%
+% TODO: Write methodology.
+%
+% Suggested structure:
+%   - Study site / experimental setup
+%   - Data acquisition
+%   - Processing pipeline
+%   - Inversion / analysis methods
+%   - Uncertainty / error treatment
+
+\section{Model Setups}
+\label{sec:model_setups}
+
+\subsection{Simple Model}
+\label{sec:simple_model}
+The same two-layer medium as in section \ref{sec:czm_methods} was set up. In the simple case, a series of SALVUS moment tensor sources are set up with a certain distance. The time delay with which the sources fire is dependend on the sub-rayleigh or supershear case which is implemented. The bedrock or soil is not considered in both models. This is because preliminary tests of a 3-layered medium have shown that it acts as a transmitter of waves. For computational efficiency, the bedrock layer was thus neglected and the bottom of the snow was made a regular boundary,in other words, reflecting, to mimick the presence of a layer below the snow. 
+
+\subsection{Cohesive Zone Model}
+\label{sec:czm_methods}
+
+A graphical representation of the model setup and the equations used can be found in appendix \ref{app:B}.
+
+The rupture model used in the simulations is implemented as a mixed-mode Cohesive Zone Model (CZM) following \cite{mahajanModelingInterfacialCrack2008}. This model was chosen because there is a narrow band ahead of the fracture zone, the cohesive zone, where the material is already weakened. This means that before a point in the material cracks, there is already weakening of the material before. This seems to be reasonable for representing crack propagation in snow, since failure occurs as a consequence of loading and is not spontaneous. The computational domain extends 400 m in the horizontal (x) direction and 3 m in the vertical (y) direction and contains a 1.5 m snow layer over a 1.5 m air layer. Material parameters for the snow layer are taken from \cite{guillemotEffectSnowfallChanges2021}. The mixed-mode behavior is implemented because in reality, crack propagation can involve both normal and shear displacement.  \par
+
+The mesh is generated to resolve frequencies up to the 95th percentile of the source wavelet's frequency content. Cohesive tractions are prescribed on zero-thickness interface elements and depend on the normalized opening \(\xi=\frac{\delta}{\delta_c}\). The zero-thickness interface elements are implemented by not solving for volumetric strain but displacement between interfaces instead. For the linear softening law used here the traction in a given cohesive element follows
+\[ T(\xi) = T_\mathrm{peak}\,(1-\xi) \quad\text{for } 0\leq\xi\leq1,\qquad T(\xi)=0\ \text{for }\xi>1, \]
+where \(T_\mathrm{peak}\) is the peak cohesive traction and \(\delta_c\) the critical opening. The normalized opening can be related to the local crack coordinate as \(\xi=\frac{(x-x_0)}{l_{crack}}\) for a crack front with initial position \(x_0\) and local process length \(l_{crack}\). \par
+
+The mixed-mode potential used in the code follows the form from \cite{mahajanModelingInterfacialCrack2008}. With $\Delta=(\Delta_n,\Delta_t)$ denoting normal and tangential separations, the potential is written as
+\[
+\phi(\Delta)=\phi_n\,\exp\left(-\frac{\Delta_n}{\delta_n}\right)\left\{\left[1+\frac{\Delta_n}{\delta_n}\right]+q\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right]\right\},
+\]
+from which the normal and tangential tractions are obtained, the implementation uses the same closed-form expressions. This is so that peak tractions occur at $\Delta_n=\delta_n$ and $|\Delta_t|=\delta_t/\sqrt{2}$. The normal and shear works of separation relate to peak strengths via
+\[ \phi_n = e\,\sigma_{\max}\,\delta_n, \qquad \phi_t = \sqrt{\tfrac{e}{2}}\,\tau_{\max}\,\delta_t, \]
+and the critical openings for pure modes are computed as
+\[ \delta_{n,c}=\frac{2G_I}{\sigma_n},\qquad \delta_{s,c}=\frac{2G_{II}}{\tau_s}, \]
+with the mixed-mode critical opening
+\[ \delta_c=\sqrt{(1-r_{\rm mode})\,\delta_{n,c}^2 + r_{\rm mode}\,\delta_{s,c}^2 }\;.
+\]
+
+Lamé parameters are derived from input seismic speeds and density: \(v_s=\sqrt{\frac{\mu}{\rho}}\) so that \(\mu=\rho v_s^2\), and \(v_p=\sqrt{\frac{(\lambda+2\mu)}{\rho}}\) so that \(\lambda=\rho(v_p^2-2v_s^2)\). Young's modulus is then computed from the Lamé parameters: \(E=\dfrac{\mu(3\lambda+2\mu)}{\lambda+\mu}\) \parencite{kAkiRichards19801981}. These conversions are applied for every material in the model. \par
+
+The critical opening distances for pure normal (Mode I) and shear (Mode II) separations are computed from the corresponding fracture energies, strenghts, and peak tractions as
+\[ \delta_{n,c}=\frac{2G_I}{\sigma_n},\qquad \delta_{s,c}=\frac{2G_{II}}{\tau_s}, \]
+and combined for mixed-mode behaviour using
+\[ \delta_c = \sqrt{(1-r_{\rm mode})\,\delta_{n,c}^2 + r_{\rm mode}\,\delta_{s,c}^2 }, \]
+where \(r_{\rm mode}\in[0,1]\) controls the mode I/II mix, where 0 is pure mode I and 1 is pure mode II. In the current implementation the slip on each subfault follows the prescribed linear slip law up to the critical slip distance. The mode mix is an user-input parameter, while all the other parameters are derived from laboratory experiments from \cite{mahajanModelingInterfacialCrack2008}.  \par
+
+The characteristic Irwin length for shear is calculated as \(l_{ch}=\frac{E_{\rm eff}G_{II}}{\tau_s^2}\), and the cohesive zone length is taken as \(l_{cz}=\tfrac{\pi}{8}l_{ch}\), which sets the spatial extent over which cohesive weakening is active ahead of the crack tip. \par
+
+Rupture propagation speed is chosen with respect to the local shear-wave speed and the bounds discussed in \cite{trottetTransitionSubRayleighAnticrack2022}. Where appropriate, the rupture speed is corrected for finite slab thickness and bending stiffness to account for slab flexure effects. The rupture front is discretized into a sequence of subfaults: each subfault is activated at an onset time
+\[ t_o = \frac{x-x_{\rm start}}{v_{\rm rupture}}, \]
+using the subfault horizontal position \(x\), the rupture starting position \(x_{\rm start}\), and the prescribed rupture speed \(v_{\rm rupture}\). \par
+
+Each activated subfault is represented as a point/source in the SALVUS source array. The scalar seismic moment for a subfault is computed from the shear modulus, the prescribed slip, and the subfault width \(\Delta x\):
+\[ M_0 = \mu\,x_{\rm slip}\,\Delta x. \]
+Moment-tensor components are set according to the user-specified mode-mix ratio, e.g. here the implementation uses
+\( m_{xx}=0,\; m_{xy}=M_0\,r_{\rm mode},\; m_{yy}=-(1-r_{\rm mode})M_0\),
+which yields pure mode behaviour at the extremes of \(r_{\rm mode}=0\) or \(1\), which means that an additional component of the moment tensor source becomes 0. All subfault sources use the same central frequency, wavelet shape, and amplitude scaling so the rupture is represented as a coherent moving source in the wave propagation simulations. \par
+
+
+% The following numerical settings and checks are applied consistently across simulations to ensure stability and reproducibility:
+% \begin{itemize}
+%   \item Mesh resolution: element/subfault spacing $h$ is chosen to resolve the cohesive zone and the shortest seismic wavelength; practical rule: $h\le\min(l_{cz}/4,\;\lambda_{\min}/8)$, where $\lambda_{\min}=v_{\min}/f_{95}$ and $f_{95}$ is the 95\%ile source frequency.
+%   \item Time stepping: explicit scheme with CFL-like stability criterion $\Delta t\lesssim s\,h/v_{\max}$ and safety factor $s\approx0.3$--0.5.
+%   \item Boundaries: use absorbing boundary conditions to minimize reflections at domain edges.
+%   \item Rupture discretization: subfault onset times follow $t_o=(x-x_{\rm start})/v_{\rm rupture}$; rise time is taken as $t_{rise}\approx l_{cz}/v_{\rm rupture}$; scalar moment per subfault $M_0=\mu\,x_{\rm slip}\,\Delta x$.
+% \end{itemize}
+
+Key parameters and their provenance used in the simulations are summarised below:
+\begin{center}
+\begin{tabular}{ll}
+\hline
+Parameter & Typical value / source \\
+\hline
+$\sigma_n$ & 0.00184 MPa from \cite{mahajanModelingInterfacialCrack2008} \\
+$\tau_s$ & 0.004 MPa from \cite{mahajanModelingInterfacialCrack2008} \\
+$G_I, G_{II}$ & 0.35, 0.50 $\ J/m^s$from \cite{mahajanModelingInterfacialCrack2008} \\
+$v_s, v_p, \rho$ & 150, 332 m/s from \cite{guillemotEffectSnowfallChanges2021} (converted to $\mu,\lambda,E$) \\
+$r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\section{Source Generation}
+

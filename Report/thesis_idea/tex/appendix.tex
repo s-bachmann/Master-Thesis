@@ -1,0 +1,69 @@
+% tex/appendix.tex
+% ──────────────────────────────────────────────────────────────────────────────
+\begin{appendices}
+%
+\chapter{Code Repository}
+\label{app:A}
+
+% TODO: Add appendix content — additional figures, derivations, tables, etc.
+
+The complete code of all models described can be found on github: \url{https://github.com/s-bachmann/Master-Thesis}. 
+
+\chapter{Code Workflow}
+\label{app:B}
+\subsection*{Part 1: Domain and Stress Profile Setup}
+\begin{tikzpicture}[node distance=2.8cm]
+  \centering
+  \node (start) [startstop] {Domain Geometry definition: x and y extents};
+  \node (in1) [io, below of=start] {Layer definition: number of layers, thickness of layers, $\ \rho, v_p, v_s$ of layers};
+  \node (pro1) [io, below of = in1] {Definition of stress profile with $\  x_i = \frac{\delta}{\delta_c}$};
+  \node (stress1) [decision, right of=pro1, xshift=5cm, yshift=-0.8cm] {Linear: $\  \sigma = [0, 1-x_i]$};
+  \node (stress2) [decision, left of= pro1, xshift=-5cm, yshift=-0.8cm] {Exponential:$ \ \sigma = exp(-x_i * log(2))$ }; 
+  \node (pro2) [process, below of=pro1] {Calculation of Lamé-Parameters: $\ \mu = \rho v_s^2, \lambda = \rho (v_p^2 -v_s^2)$};
+
+  \draw [arrow] (start) -- (in1);
+  \draw [arrow] (in1) -- (pro1);
+  \draw [arrow] (pro1) -- (stress1);
+  \draw [arrow] (pro1) -- (stress2);
+  \draw [arrow] (pro1) -- (pro2);
+\end{tikzpicture}
+
+\subsection*{Part 2: Material Properties and Process Zone Calculation}
+\begin{tikzpicture}[node distance=3.8cm]
+  \centering
+  % \node (pro2) [process] {Calculation of Lamé-Parameters: $\ \mu = \rho v_s^2, \lambda = \rho (v_p^2 -v_s^2)$};
+  \node (pro3) [process, below of=pro2] {Calculation of Elastic modulus from Lamé-Parameters: $\ E = \mu * (3.0 * \lambda + 2.0 * \mu) / (\lambda + \mu)$};
+  \node (pro4) [process, below of=pro3] {Calculating slip profile: array of zeros at every slip position, $\int_{0}^{1}(1-\sigma(\xi))d\xi$, where $\ \sigma(\xi)$ is the stress profile. The slip is distributed elliptically: $\ slip \propto \sqrt{4\xi (1-\xi)}$, where $\ \xi = \frac{x-x_{start}}{x_{end}-x_{start}}$};
+  \node (pro5) [process, below of=pro4] {Calculating slip distance: distance between current position and crack tip is calculated, if in front of tip, the slip is 0. If the current position is behind the crack tip, then: $\ x_i = \frac{1 - \Delta x}{l_{cz}}$, where $\ l_{cz}$ is the cohesive zone length};
+  \node (in2) [io, below of=pro5] {Normal and shear strengths and critical fracture energies measured by \cite{mahajanModelingInterfacialCrack2008} used to calculate critical separations: $\ \Delta_n = 2G_I / \sigma_n$}; 
+  \node (pro6) [process, below of=in2] {Calculating process zone lengths for shear and normal forces: $\  l_{ch} = E_{eff} * G_{IIc} / max(\tau_s^2, 1e-12), l_{cz} = \pi / 8.0 * l_{ch}$}; 
+  \node (in3) [io, below of=pro6, yshift=-3cm] {Rupture speed calculation: minimum shear wave speed is adjusted for thickness and stiffness of interface according to the [0.5,2] interval of $\ \sqrt{\frac{E_{eff}}{10e6},\sqrt{thickness}}$. These corrections are the weighted, rupture velocity is calculated according to bounds described by \cite{trottetTransitionSubRayleighAnticrack2022}: between 0.25 and 0.6 vs for sub-Rayleigh, above 1.6 vs for supershear };
+
+  % \draw [arrow] (pro2) -- (pro3);
+  \draw [arrow] (pro3) -- (pro4);
+  \draw [arrow] (pro4) -- (pro5);
+  \draw [arrow] (pro5) -- (in2);
+  \draw [arrow] (in2) -- (pro6);
+  \draw [arrow] (pro6) -- (in3);
+\end{tikzpicture}
+
+\subsection*{Part 3: Rupture Propagation and Source Definition}
+\begin{tikzpicture}[node distance=3.8cm]
+  \centering
+  % \node (in3) [io] {Rupture speed calculation: minimum shear wave speed is adjusted for thickness and stiffness of interface according to the [0.5,2] interval of $\ \sqrt{\frac{E_{eff}}{10e6},\sqrt{thickness}}$. These corrections are the weighted, rupture velocity is calculated according to bounds described by \cite{trottetTransitionSubRayleighAnticrack2022}: between 0.25 and 0.6 vs for sub-Rayleigh, above 1.6 vs for supershear };
+  \node (pro7) [process, below of=in3] {Calculation of rise time (duration of slip) from cohesive zone length and rupture speed: $\ t = \frac{l_{cz}}{v_{rupture}} $}; 
+  \node (in4) [io, below of=pro7] {Definition of crack zone length by defining start and end x position, spacing of sources, ratio between mode I and mode II}; 
+  \node (pro8)[process, below of=in4]{Calculation of onest time (time where source at x position needs to fire): $\ t_{onest} = (x_i - x_0) / v_{rupture}$}; 
+  \node (pro9) [process, below of=pro8] {Calculation of moment tensor source direction: $\ M0 = \mu * slip * \Delta x,  m_{xy} = mode_{mix} * M0, m_{yy} = -(1.0 - mode_{mix}) * M0, m_{xx} = 0.0$ }; 
+  \node (pro10) [process, below of=pro9] {Appending all subfault slip distances, source directions and onset times to salvus project};
+  \node (end) [startstop, below of=pro10] {Simualtion launch and plotting}; 
+
+  \draw [arrow] (in3) -- (pro7);
+  \draw [arrow] (pro7) -- (in4);
+  \draw [arrow] (in4) -- (pro8);
+  \draw [arrow] (pro8) -- (pro9);
+  \draw [arrow] (pro9) -- (pro10);
+  \draw [arrow] (pro10) -- (end);
+\end{tikzpicture}
+
+\end{appendices}

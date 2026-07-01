@@ -1,0 +1,82 @@
+% tex/titlepage.tex
+% ──────────────────────────────────────────────────────────────────────────────
+% Three-page IDEA League front matter:
+%   1. Cover page  (logo + thick rule + title flush-right + name + date)
+%   2. Second title page  (full formal title + degree statement + date)
+%   3. Supervisor / committee signature page
+% ──────────────────────────────────────────────────────────────────────────────
+
+%% ── PAGE 1: Cover ─────────────────────────────────────────────────────────────
+\begin{titlepage}
+  \thispagestyle{empty}
+  \setlength{\parindent}{0mm}
+  \setlength{\parskip}{0mm}
+  %
+  % IDEA League logo centred at top
+  \begin{center}
+    \includegraphics[width=8cm]{IDEA_League_Logo}\\[1em]
+    {\LARGE\textsc{Master of Science in Applied Geophysics}}\\[0.5em]
+    {\LARGE\textsc{Research Thesis}}
+  \end{center}
+  %
+  \newcommand{\HRule}{\rule{\linewidth}{1mm}}
+  \vspace*{\stretch{2}}
+  \HRule
+  \begin{flushright}
+    {\Huge\textbf{\textsf{\mythesistitle}}}\\[0.4em]
+    {\Large\textbf{\textsf{\mysubtitle}}}\\[5mm]
+    {\Large\textbf{\textsf{\myauthor}}}
+  \end{flushright}
+  \HRule\\[0.5em]
+  {\large\mydate}
+  \vspace*{\stretch{2}}
+\end{titlepage}
+
+%% ── PAGE 2: Formal title page ─────────────────────────────────────────────────
+\clearpage
+\thispagestyle{empty}
+\setcounter{page}{1}
+\begin{center}
+  {\Huge\textbf{\textsf{\mythesistitle}}}\\[0.4em]
+  {\Large\textbf{\textsf{\mysubtitle}}}\\[1.5cm]
+  {\Large\textsc{Master of Science Thesis}}\\[1cm]
+  {\large for the degree of Master of Science in Applied Geophysics}\\[0.3em]
+  {\large by}\\[1cm]
+  {\Large\myauthor}\\[1cm]
+  {\large\mydate}
+\end{center}
+\vspace*{\stretch{1}}
+\cleardoublepage
+
+%% ── PAGE 3: Supervisor / committee signature page ─────────────────────────────
+\thispagestyle{empty}
+\vspace*{8em}
+\begin{center}
+  {\large IDEA LEAGUE}\\
+  {\large JOINT MASTER'S IN APPLIED GEOPHYSICS}\\[3em]
+  Delft University of Technology, The Netherlands\\
+  ETH Zürich, Switzerland\\
+  RWTH Aachen, Germany
+\end{center}
+
+\vspace{2cm}
+\mbox{}\hfill Dated: \textit{\mydate}
+\vspace{2cm}
+
+\noindent
+Supervisor(s): \hfill \underline{\hspace{7cm}}\\
+\mbox{}        \hfill \myreaderone\\[1em]
+%
+\mbox{}        \hfill \underline{\hspace{7cm}}\\
+\mbox{}        \hfill \myreadertwo\\[2em]
+%
+Committee Members: \hfill \underline{\hspace{7cm}}\\
+\mbox{}            \hfill \myreaderone\\[1em]
+%
+\mbox{}            \hfill \underline{\hspace{7cm}}\\
+\mbox{}            \hfill \myreadertwo\\[1em]
+%
+\mbox{}            \hfill \underline{\hspace{7cm}}\\
+\mbox{}            \hfill \myreaderthree
+
+\cleardoublepage
