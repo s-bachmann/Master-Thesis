@@ -16,12 +16,12 @@
 \section{Model Setups}
 \label{sec:model_setups}
 
-\subsection{Model setups}
-\label{sec:simple model}
-The same two-layer medium as in section \ref{sec:czm methods} was set up. In the simple case, a series of SALVUS moment tensor sources are set up with a certain distance. The time delay with which the sources fire is dependend on the sub-rayleigh or supershear case which is implemented. The bedrock or soil is not considered in both models. This is because preliminary tests of a 3-layered medium have shown that it acts as a transmitter of waves. For computational efficiency, the bedrock layer was thus neglected and the bottom of the snow was made a regular boundary,in other words, reflecting, to mimick the presence of a layer below the snow. 
+\subsection{Simple Model}
+\label{sec:simple_model}
+The same two-layer medium as in section \ref{sec:czm_methods} was set up. In the simple case, a series of SALVUS moment tensor sources are set up with a certain distance. The time delay with which the sources fire is dependend on the sub-rayleigh or supershear case which is implemented. The bedrock or soil is not considered in both models. This is because preliminary tests of a 3-layered medium have shown that it acts as a transmitter of waves. For computational efficiency, the bedrock layer was thus neglected and the bottom of the snow was made a regular boundary,in other words, reflecting, to mimick the presence of a layer below the snow. 
 
 \subsection{Cohesive Zone Model}
-\label{sec:czm methods}
+\label{sec:czm_methods}
 
 The rupture model used in the simulations is implemented as a mixed-mode Cohesive Zone Model (CZM) following \cite{mahajanModelingInterfacialCrack2008}. This model was chosen because there is a narrow band ahead of the fracture zone, the cohesive zone, where the material is already weakened. This means that before a point in the material cracks, there is already weakening of the material before. This seems to be reasonable for representing crack propagation in snow, since failure occurs as a consequence of loading and is not spontaneous. The computational domain extends 400 m in the horizontal (x) direction and 3 m in the vertical (y) direction and contains a 1.5 m snow layer over a 1.5 m air layer. Material parameters for the snow layer are taken from \cite{guillemotEffectSnowfallChanges2021}. The mixed-mode behavior is implemented because in reality, crack propagation can involve both normal and shear displacement.  \par
 
@@ -84,3 +84,6 @@ $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
 \hline
 \end{tabular}
 \end{center}
+
+
+\section{}
