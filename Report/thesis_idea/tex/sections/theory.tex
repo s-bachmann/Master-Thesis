@@ -12,8 +12,8 @@
 %   - Relevant prior models or theoretical results
 %   - Any assumptions made throughout
 
-\section{Wave Propagation Modeling}
-\label{sec:wave_propagation_modeling}
+\section{Spectral ElementWave Propagation Modeling}
+\label{sec:se_wave_propagation_modeling}
 
 The model described in \ref{sec:czm methods} is implemented using the finite-element (FE) method in SALVUS. The following section describes the physics used by SALVUS. Understanding the phsysics behind the modeling has relevance for understanding and interpreting the results, but also what can be modeled. To discretize a domain, the domain is divided into a finite number of elements \parencite{FiniteElementMethod}. The number of elements in this case is defined by the maximum wave frequency that needs to be resolved accurately, the number of mesh elements per wavelength is user-input. The boundaries of these elements describe the mesh, the mesh has a finite number of grid-points (edge points of the elements) \parencite{FiniteElementMethod}. The governing equations are determined at every element node, so for rectangular elements with nodes 1,2,3 and 4, there is the system $\ r^1 = \begin{pmatrix}r_1^1 \\ r_2^1 \\ r_3^1\\ r_4^1 \end{pmatrix}$ for force  and $\ u^1 = \begin{pmatrix}u_1^1 \\ u_2^1 \\ u_3^1\\ u_4^1 \end{pmatrix}$ for displacement \parencite{FiniteElementMethod}. The residual or characteristic relationship of linear elastic elements is of the form $\ r^1 = f^1-K^1u^1 $, where f are the nodal forces distributing load on the nodes and K is the stiffness matrix of a specific element \parencite{FiniteElementMethod}. Because in FE, the approximation of the wavefield by basis functions leads to a representation over the whole domain and not just at a set of points \parencite{afanasievModularFlexibleSpectralelement2019}. This means integrals can be calculated over surfaces or even volumes \parencite{afanasievModularFlexibleSpectralelement2019}. \par
 
@@ -72,5 +72,6 @@ The dependence on the reference coordinate system is described by E, which is a 
   \label{eq:abstract approximation}
 \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. This means that fields such as displacement and velocity are calculated in this way. From these fields, the data from the model in section \ref{sec:czm methods} is obtained and plotted. 
 
-
+\section{From Particles to Waves: Translating MPM to SE}
+\label{sec:from_mpm_to_se}
 
