@@ -75,3 +75,12 @@ The dependence on the reference coordinate system is described by E, which is a 
 \section{From Particles to Waves: Translating MPM to SE}
 \label{sec:from_mpm_to_se}
 
+The material point simulations of the PST performed by \textcolor{magenta}{NEED TO CITE WHO MADE THE MPM HERE} result in the recorded stresses in the model according to \cite{gaumeInvestigatingReleaseFlow2019}. This results in the stretch factor $\ \epsilon$ comprised of the material properties $\ C_{ij}$ such as Young's modulus, Lamé parameters and Poisson ratio as well as the stress matrix $\ \sigma$: \begin{equation}
+  \epsilon = C_{ij}\sigma
+\end{equation} \parencite{holzapfelNonlinearSolidMechanics2010}. The equation can be rewritten to obtain the stresses in different directions, in the xx direction for example: \begin{equation}
+  \sigma_{xx} = (\lamba + 2\mu)\epsilon_{xx} + \lambda \epsilon_{yy}
+\end{equation} \parencite{kAkiRichards19801981}. When scaling this with the particle volume, the individual moment tensor components can be obtained using \begin{equation}
+  M_{ij} = \sigma_{ij} V_p.
+\end{equation} \par
+
+These moment tensor components can then be input into SALVUS as custom source time functions. \textcolor{Magenta}{How are the waveforms of the stfs obtained}
