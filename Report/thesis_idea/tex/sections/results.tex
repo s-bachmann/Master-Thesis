@@ -16,6 +16,23 @@
 
 The following results shown are for the supershear and sub-rayleigh case of the custom stfs. The sources are spaced 0.1m apart between 30m and 270m and have a ricker wavelet in the xx, a morlet in the yy and a gaussian in the xy direction. The xx and xy direction forces are positive with magnitude 1, the xy direction is negative in -1.
 
+\subsection{Velocity plots}
+The following plots show horizontal (vx) and vertical (vy) particle velocity at two reciever depths: 2.25m, which is the snow bottom, and 2.625m which is the depth of the crack. 
+
+\begin{figure}[H]
+    \centering
+   \includegraphics[width=\textwidth]{prelimninary_super_vel.png}
+   \caption{Sub-Rayleigh Particle velocity: vertical velocity in top row, horizontal in bottom row. Crack depth in left, snow bottom in right column. Colorbar is unscaled, showing velocity (m/s).}
+   \label{fig:sub_vel}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+   \includegraphics[width=\textwidth]{preliminary_sub_vel.png}
+   \caption{Supershear Particle velocity: vertical velocity in top row, horizontal in bottom row. Crack depth in left, snow bottom in right column. Colorbar is unscaled, showing velocity (m/s).}
+   \label{fig:super_vel}
+\end{figure}
+
 \subsection{Frequency-Wavenumber (fk) Plot}
 
 \begin{figure}[H]
@@ -51,22 +68,8 @@ The strong contrast in how the energy is concentrated between the sub-rayleigh a
 The observation that at higher frequencies in figure \ref{fig:preliminary_fk}, the lines of the energy present do not match as well anymore with the concentration of energy, can be explained by numerical dispersion. As \cite{komatitschIntroductionSpectralElement1999} describe, as frequency increases, the wavelength decreases. This means that higher frequencies are not resloved as well by a spatial grid with a certain spacing \cite{yilmazSeismicDataAnalysis2001}, this starts bending the energy in the fk plot. This could explain the mismatch between the physical velocity lines and the concetrations of energy. \par
 
 
-\subsection{Velocity plots}
-The following plots show horizontal (vx) and vertical (vy) particle velocity at two reciever depths: 2.25m, which is the snow bottom, and 2.625m which is the depth of the crack. 
 
-\begin{figure}[H]
-    \centering
-   \includegraphics[width=\textwidth]{preliminary_sub_vel.png}
-   \caption{Supershear Particle velocity: vertical velocity in top row, horizontal in bottom row. Crack depth in left, snow bottom in right column. Colorbar is unscaled, showing velocity (m/s).}
-   \label{fig:super_vel}
-\end{figure}
 
-\begin{figure}[H]
-    \centering
-   \includegraphics[width=\textwidth]{prelimninary_super_vel.png}
-   \caption{Sub-Rayleigh Particle velocity: vertical velocity in top row, horizontal in bottom row. Crack depth in left, snow bottom in right column. Colorbar is unscaled, showing velocity (m/s).}
-   \label{fig:sub_vel}
-\end{figure}
 
 % Example figure placeholder:
 % \begin{figure}[htbp]
