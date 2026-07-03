@@ -327,3 +327,5 @@ simulation_wavefield_custom_stf_simpler_mesh_dense_copy/
 simulation_wavefield_custom_stf_rolled_super/
 
 simulation_wavefield_custom_stf_weighted_super/
+
+simulation_wavefield_custom_stf_weighted_sub/
