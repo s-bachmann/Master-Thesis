@@ -50,7 +50,7 @@ The presence of waves with opposite polarity can be proven mathematically. From 
     \nabla^2 \phi = \frac{1}{c_p^2}\frac{\partial^2\phi}{\partial t^2}
   \end{equation} for P-waves and \begin{equation}
     \nabla^2 \psi = \frac{1}{c_s^2} \frac{\partial^2 \psi}{\partial t^2}
-  \end{equation} for S-waves, the wave speeds are derived from the Lamé-Parameters, as described in \ref{sec:czm methods}. \par
+  \end{equation} for S-waves, the wave speeds are derived from the Lamé-Parameters, as described in \ref{sec:czm_methods}. \par
 
   When assuming harmonic plane wave solutions for waves with wavenumber k and frequency $\ \omega$, the harmonic solutions have the form \begin{equation}
     \phi(x,z,t) = f(z)e^{i(kx-\omega t)}
@@ -78,7 +78,7 @@ The presence of waves with opposite polarity can be proven mathematically. From 
   \end{equation} of which the first terms can be substituted with the wavespeed using the wavenumber-frequency and velocity relationship from the Lamé parameters. This results in \begin{equation}
     \sigma_{zz} = \mu [(q^2 -k^2) \phi + \frac{\partial^2\psi}{\partial x \partial z}]
   \end{equation} and \begin{equation}
-    \sigma_{xz} = \mu [2 \frac{\partial^2 \phi}{\partialx \partial z} + \frac{\partial^2 \psi}{\partial x^2} - \frac{\partial^2 \psi}{\partial z^2}], 
+    \sigma_{xz} = \mu [2 \frac{\partial^2 \phi}{\partial x \partial z} + \frac{\partial^2 \psi}{\partial x^2} - \frac{\partial^2 \psi}{\partial z^2}], 
   \end{equation} from which harmonic solutions containing sin and cos can be obtained. Here, a derivative is a multiplication with ik, which leads to \begin{equation}
     \sigma_{zz} = \mu [(q^2- k^2) \phi + 2ik \frac{\partial \psi}{\partial z}]
   \end{equation} and \begin{equation}
@@ -104,7 +104,34 @@ The presence of waves with opposite polarity can be proven mathematically. From 
     \frac{tan(qz)}{tan(pz)} = -\frac{2k^2pq}{(q^2-k^2)^2}
   \end{equation}, which is the dispersion of the symmetric mode of the Lamb waves, as described by \cite{suFundamentalsAnalysisLamb2009}. The same can be done for the asymmetric Lamb wave mode if the operations of the stresses are opposite. \par
 
+  The presence of opposite polarities across both velocity components ($v_x, v_y$) and across both propagation regimes (sub-Rayleigh and supershear) is a direct consequence of the waveguide's geometric symmetry and the nature of the fracture source. Dynamically, the two recording depths, $y = 2.625\,\text{m}$ and $y = 2.25\,\text{m}$, are perfectly symmetric about the mid-plane of the snow slab ($y = 2.4375\,\text{m}$), mapping precisely to $\pm z$ in the analytical framework. 
+
+The fact that this phase-reversal persists across both the sub-Rayleigh and supershear regimes demonstrates that while the rupture velocity changes the radiation pattern (e.g., generating dispersive wave trains versus non-dispersive Mach shock fronts), the underlying phase relationships remain strictly governed by the structural eigenfunctions of the plate waveguide. 
+
+The presence of opposite polarities in both the horizontal and vertical velocity fields simultaneously indicates that the wavefield is not a single  mode, but rather a superposition of both symmetric ($u^{\text{sym}}$) and antisymmetric ($u^{\text{asym}}$) modes:
+\begin{equation}
+u_x(x, \pm z, t) = u_x^{\text{sym}}(x, \pm z, t) + u_x^{\text{asym}}(x, \pm z, t)
+\label{eq:superposition_x}
+\end{equation}
+\begin{equation}
+u_z(x, \pm z, t) = u_z^{\text{sym}}(x, \pm z, t) + u_z^{\text{asym}}(x, \pm z, t)
+\label{eq:superposition_z}
+\end{equation}
+
+Because a crack propagating along a weak layer acts as an asymmetric boundary source, it breaks the symmetry of the slab and couples energy into both structural types simultaneously. Evaluating Equations \ref{eq:superposition_x} and \ref{eq:superposition_z} at $+z$ versus $-z$ activates the opposing parities of the underlying $\sin$ and $\cos$ depth functions:
+\begin{equation}
+u_x(x, -z, t) = u_x^{\text{sym}}(x, z, t) - u_x^{\text{asym}}(x, z, t)
+\label{eq:parity_flip_x}
+\end{equation}
+\begin{equation}
+u_z(x, -z, t) = -u_z^{\text{sym}}(x, z, t) + u_z^{\text{asym}}(x, z, t)
+\label{eq:parity_flip_z}
+\end{equation}
+
+This modal interference shifts the cumulative phase balances, causing a reversal of wave-train polarity between the crack depth and the snowpack bottom for both components of motion \parencite{suFundamentalsAnalysisLamb2009}. \par
+
   Lamb waves are elastic guided waves that occur in plates \parencite{suFundamentalsAnalysisLamb2009}. They consist of particle motion in the direction of the wave polarization as well as the direction perpendicular to it \parencite{suFundamentalsAnalysisLamb2009}. They are guided by the boundaries of the layer or media in which they propagate and have a symmetric and an asymmetric mode \parencite{suFundamentalsAnalysisLamb2009}. The symmetric mode dominates the in-plate motion, while the antisymmetric mode dominates the vertical (out of plane motion ) \parencite{suFundamentalsAnalysisLamb2009}. \par
+
 
 \subsection{Strain and strain rate space-time plots}
 

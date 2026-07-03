@@ -414,6 +414,50 @@
       \endverb
       \keyw{Avalanche,Finite element model,Heat and mass transfer,Phase change,Snow,Snow deformation}
     \endentry
+    \entry{ben-menahemRadiationSeismicSurfacewaves1961}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bb5b5e5cfe933ee549b3091b52c011e9}{%
+           family={{Ben-Menahem}},
+           familyi={B\bibinitperiod},
+           given={Ari},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bb5b5e5cfe933ee549b3091b52c011e9}
+      \strng{fullhash}{bb5b5e5cfe933ee549b3091b52c011e9}
+      \strng{fullhashraw}{bb5b5e5cfe933ee549b3091b52c011e9}
+      \strng{bibnamehash}{bb5b5e5cfe933ee549b3091b52c011e9}
+      \strng{authorbibnamehash}{bb5b5e5cfe933ee549b3091b52c011e9}
+      \strng{authornamehash}{bb5b5e5cfe933ee549b3091b52c011e9}
+      \strng{authorfullhash}{bb5b5e5cfe933ee549b3091b52c011e9}
+      \strng{authorfullhashraw}{bb5b5e5cfe933ee549b3091b52c011e9}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A therory is proposed for the propagation of seismic surface-waves from finite moving sources. The method consists of obtaining, in the first place, basic solutions for surface displacements from directional sources. These solutions are integrated to obtain the effect of a moving fault with arbitrary dip angle. Displacements are evaluated for Rayleigh and Love waves at long ranges. It is shown that the dimensions of the source and the speed of rupture play an important role in the wave-pattern and cannot be ignored whenever the dimensions of the source are of the order of the radiation's dominant wave-length. It is demonstrated how this theory may lead to a derivation of the velocity of rupture and the length of faulting from seismic records of a single station.}
+      \field{issn}{0037-1106}
+      \field{journaltitle}{Bulletin of the Seismological Society of America}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{Radiation of Seismic Surface-Waves from Finite Moving Sources}
+      \field{urlday}{2}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{51}
+      \field{year}{1961}
+      \field{urldateera}{ce}
+      \field{pages}{401\bibrangedash 435}
+      \range{pages}{35}
+      \verb{doi}
+      \verb 10.1785/BSSA0510030401
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/TW3MEV5R/BSSA0510030401.html
+      \endverb
+    \endentry
     \entry{bergfeldSignaturesSubRayleighSupershear2025}{article}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=45cd7f65b6ceeddfce73beb6b18c5124}{%
@@ -851,6 +895,48 @@
       \verb /Users/salomebachmann/Zotero/storage/RDMHB5GA/Cundall and Strack - 1979 - A discrete numerical model for granular assemblies.pdf;/Users/salomebachmann/Zotero/storage/23R9HWVH/geot.1979.29.1.html
       \endverb
     \endentry
+    \entry{dunhamNearsourceGroundMotion2005}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e76bbd55bb7c2b200dd436b13530f48e}{%
+           family={Dunham},
+           familyi={D\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16ae12d1d18b612fc3cfe24172385f80}{%
+           family={Archuleta},
+           familyi={A\bibinitperiod},
+           given={Ralph},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1bb02281ddb42d3c6658b81c5b0555c3}
+      \strng{fullhash}{1bb02281ddb42d3c6658b81c5b0555c3}
+      \strng{fullhashraw}{1bb02281ddb42d3c6658b81c5b0555c3}
+      \strng{bibnamehash}{1bb02281ddb42d3c6658b81c5b0555c3}
+      \strng{authorbibnamehash}{1bb02281ddb42d3c6658b81c5b0555c3}
+      \strng{authornamehash}{1bb02281ddb42d3c6658b81c5b0555c3}
+      \strng{authorfullhash}{1bb02281ddb42d3c6658b81c5b0555c3}
+      \strng{authorfullhashraw}{1bb02281ddb42d3c6658b81c5b0555c3}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Ground motion from two-dimensional steady state dy-namic ruptures is examined for both subshear and supers-hear rupture velocities. Synthetic seismograms demonstrate that coherent high-frequency information about the source process rapidly attenuates with distance from the fault for subshear ruptures. Such records provide almost no resolu-tion of the spatial extent of the stress breakdown zone. At supershear speeds, S waves radiate away from the fault, pre-serving the full source spectrum and carrying an exact his-tory of the slip velocity on both the fault-parallel and fault-normal components of motion, whose amplitudes are given by a function of rupture speed that vanishes at \textsurd{} 2 times the S wave speed. The energy liberated from the strain field by the passage of a supershear rupture is partitioned into frac-ture energy dissipated within the fault zone and far-field S wave radiation. The partition depends on both the rupture velocity and the size of the breakdown zone.}
+      \field{journaltitle}{Geophysical Research Letters - GEOPHYS RES LETT}
+      \field{month}{2}
+      \field{title}{Near-Source Ground Motion from Steady State Dynamic Rupture Pulses}
+      \field{volume}{32}
+      \field{year}{2005}
+      \verb{doi}
+      \verb 10.1029/2004GL021793
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/KCKA4YCS/Dunham and Archuleta - 2005 - Near-source ground motion from steady state dynamic rupture pulses.pdf
+      \endverb
+    \endentry
     \entry{edmeFiberopticDetectionSnow2023}{misc}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=d4e81c1228428233e54ddc020d0be1c6}{%
@@ -1272,6 +1358,38 @@
       \endverb
       \keyw{Crack propagation,Finite strain elastoplasticity,Material point method,MPM,Slab,Snow avalanche,Weak layer}
     \endentry
+    \entry{graffWaveMotionElastic1975}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=418a1e66b308d5797fd1798fd7a4dbe3}{%
+           family={Graff},
+           familyi={G\bibinitperiod},
+           given={Karl\bibnamedelima F.},
+           giveni={K\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Ohio State University Press}%
+      }
+      \strng{namehash}{418a1e66b308d5797fd1798fd7a4dbe3}
+      \strng{fullhash}{418a1e66b308d5797fd1798fd7a4dbe3}
+      \strng{fullhashraw}{418a1e66b308d5797fd1798fd7a4dbe3}
+      \strng{bibnamehash}{418a1e66b308d5797fd1798fd7a4dbe3}
+      \strng{authorbibnamehash}{418a1e66b308d5797fd1798fd7a4dbe3}
+      \strng{authornamehash}{418a1e66b308d5797fd1798fd7a4dbe3}
+      \strng{authorfullhash}{418a1e66b308d5797fd1798fd7a4dbe3}
+      \strng{authorfullhashraw}{418a1e66b308d5797fd1798fd7a4dbe3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-8142-0232-6}
+      \field{langid}{english}
+      \field{title}{Wave {{Motion}} in {{Elastic Solids}}}
+      \field{year}{1975}
+      \keyw{Science / Mechanics / Statics}
+    \endentry
     \entry{guillemotEffectSnowfallChanges2021}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=3d763134440297f27f504ce842b78f75}{%
@@ -1435,6 +1553,82 @@
       \verb /Users/salomebachmann/Zotero/storage/B389RKSQ/Heierli et al. - 2003 - Anticracks a new theory of fracture initiation and fracture propagation in snow.pdf
       \endverb
     \endentry
+    \entry{holzapfelNonlinearSolidMechanics2010}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bd4d65e88aa9506f60ccc23dd7adbd4c}{%
+           family={Holzapfel},
+           familyi={H\bibinitperiod},
+           given={Gerhard\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Chichester Weinheim}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{bd4d65e88aa9506f60ccc23dd7adbd4c}
+      \strng{fullhash}{bd4d65e88aa9506f60ccc23dd7adbd4c}
+      \strng{fullhashraw}{bd4d65e88aa9506f60ccc23dd7adbd4c}
+      \strng{bibnamehash}{bd4d65e88aa9506f60ccc23dd7adbd4c}
+      \strng{authorbibnamehash}{bd4d65e88aa9506f60ccc23dd7adbd4c}
+      \strng{authornamehash}{bd4d65e88aa9506f60ccc23dd7adbd4c}
+      \strng{authorfullhash}{bd4d65e88aa9506f60ccc23dd7adbd4c}
+      \strng{authorfullhashraw}{bd4d65e88aa9506f60ccc23dd7adbd4c}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{Repr}
+      \field{isbn}{978-0-471-82319-3 978-0-471-82304-9}
+      \field{langid}{english}
+      \field{shorttitle}{Nonlinear Solid Mechanics}
+      \field{title}{Nonlinear Solid Mechanics: A Continuum Approach for Engineering}
+      \field{year}{2010}
+    \endentry
+    \entry{igelComputationalSeismologyPractical2016}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=433fff8c5fbd6fe68ccdace60b6c4b36}{%
+           family={Igel},
+           familyi={I\bibinitperiod},
+           given={Heiner},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{433fff8c5fbd6fe68ccdace60b6c4b36}
+      \strng{fullhash}{433fff8c5fbd6fe68ccdace60b6c4b36}
+      \strng{fullhashraw}{433fff8c5fbd6fe68ccdace60b6c4b36}
+      \strng{bibnamehash}{433fff8c5fbd6fe68ccdace60b6c4b36}
+      \strng{authorbibnamehash}{433fff8c5fbd6fe68ccdace60b6c4b36}
+      \strng{authornamehash}{433fff8c5fbd6fe68ccdace60b6c4b36}
+      \strng{authorfullhash}{433fff8c5fbd6fe68ccdace60b6c4b36}
+      \strng{authorfullhashraw}{433fff8c5fbd6fe68ccdace60b6c4b36}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This volume is an introductory text to a range of numerical methods used today to simulate time-dependent processes in Earth science, physics, engineering, and many other fields. The physical problem of elastic wave propagation in 1D serves as a model system with which the various numerical methods are introduced and compared. The theoretical background is presented with substantial graphical material supporting the concepts. The results can be reproduced with the supplementary electronic material provided as Python codes embedded in Jupyter notebooks. The volume starts with a primer on the physics of elastic wave propagation, and a chapter on the fundamentals of parallel programming, computational grids, mesh generation, and hardware models. The core of the volume is the presentation of numerical solutions of the wave equation with six different methods: (1) the finite-difference method; (2) the pseudospectral method (Fourier and Chebyshev); (3) the linear finite-element method; (4) the spectral-element method; (5) the finite-volume method; and (6) the discontinuous Galerkin method. Each chapter contains comprehension questions, and theoretical and programming exercises. The volume closes with a discussion of domains of application and criteria for the choice of a specific numerical method, and the presentation of current challenges.}
+      \field{isbn}{978-0-19-871740-9}
+      \field{month}{11}
+      \field{shorttitle}{Computational {{Seismology}}}
+      \field{title}{Computational {{Seismology}}: {{A Practical Introduction}}}
+      \field{urlday}{16}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1093/acprof:oso/9780198717409.001.0001
+      \endverb
+    \endentry
     \entry{knightSuperheatedIceTrue1972}{article}{}{}
       \name{author}{2}{}{%
         {{un=1,uniquepart=given,hash=8e2e6f9ec640365aedb3eb1ec94fd50c}{%
@@ -1486,6 +1680,56 @@
       \endverb
       \verb{file}
       \verb /Users/salomebachmann/Zotero/storage/Q7RKHKC6/Knight and Knight - 1972 - Superheated Ice True Compression Fractures and Fast Internal Melting.pdf
+      \endverb
+    \endentry
+    \entry{komatitschIntroductionSpectralElement1999}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6ebc37feae5a296190a5b4dc90096105}{%
+           family={Komatitsch},
+           familyi={K\bibinitperiod},
+           given={Dimitri},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89b5dc07097f898af47df233237a12c1}{%
+           family={Tromp},
+           familyi={T\bibinitperiod},
+           given={Jeroen},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{36ca4e5e89f2efcd30cef37f36ca04d5}
+      \strng{fullhash}{36ca4e5e89f2efcd30cef37f36ca04d5}
+      \strng{fullhashraw}{36ca4e5e89f2efcd30cef37f36ca04d5}
+      \strng{bibnamehash}{36ca4e5e89f2efcd30cef37f36ca04d5}
+      \strng{authorbibnamehash}{36ca4e5e89f2efcd30cef37f36ca04d5}
+      \strng{authornamehash}{36ca4e5e89f2efcd30cef37f36ca04d5}
+      \strng{authorfullhash}{36ca4e5e89f2efcd30cef37f36ca04d5}
+      \strng{authorfullhashraw}{36ca4e5e89f2efcd30cef37f36ca04d5}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present an introduction to the spectral element method, which provides an innovative numerical approach to the calculation of synthetic seismograms in 3-D earth models. The method combines the flexibility of a finite element method with the accuracy of a spectral method. One uses a weak formulation of the equations of motion, which are solved on a mesh of hexahedral elements that is adapted to the free surface and to the main internal discontinuities of the model. The wavefield on the elements is discretized using high-degree Lagrange interpolants, and integration over an element is accomplished based upon the Gauss-Lobatto-Legendre integration rule. This combination of discretization and integration results in a diagonal mass matrix, which greatly simplifies the algorithm. We illustrate the great potential of the method by comparing it to a discrete wavenumber/reflectivity method for layer-cake models. Both body and surface waves are accurately represented, and the method can handle point force as well as moment tensor sources. For a model with very steep surface topography we successfully benchmark the method against an approximate boundary technique. For a homogeneous medium with strong attenuation we obtain excellent agreement with the analytical solution for a point force.}
+      \field{issn}{0956-540X}
+      \field{journaltitle}{Geophysical Journal International}
+      \field{month}{12}
+      \field{number}{3}
+      \field{title}{Introduction to the Spectral Element Method for Three-Dimensional Seismic Wave Propagation}
+      \field{urlday}{2}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{139}
+      \field{year}{1999}
+      \field{urldateera}{ce}
+      \field{pages}{806\bibrangedash 822}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1046/j.1365-246x.1999.00967.x
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/F2WTA2C9/j.1365-246x.1999.00967.html
       \endverb
     \endentry
     \entry{koushikDevelopmentSeismicSignalbased2024}{article}{}{}
@@ -1596,6 +1840,50 @@
       \verb /Users/salomebachmann/Zotero/storage/JK8HUXPJ/S0045782512002034.html
       \endverb
       \keyw{Adaptive finite element method,Impact,Material point method,Penetration,Soil collapse}
+    \endentry
+    \entry{madariagaHighfrequencyRadiationCrack1977}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8e64e910292884653f8dd76d1a7ad587}{%
+           family={Madariaga},
+           familyi={M\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{fullhash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{fullhashraw}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{bibnamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorbibnamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authornamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorfullhash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorfullhashraw}{8e64e910292884653f8dd76d1a7ad587}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a theory for the radiation of high-frequency waves by earthquake faults. We model the fault as a planar region in which the stress drops to the kinematic friction during slip. This model is entirely equivalent to a shear crack. For two-dimensional fault models we show that the high frequencies originate from the stress and slip velocity concentrations in the vicinity of the fault's edges. These stress concentrations radiate when the crack expands with accelerated motion. The most efficient generation of high-frequency waves occurs when the rupture velocity changes abruptly. In this case, the displacement spectrum has an {$\omega-$}2 behaviour at high frequencies. The excitation is proportional to the intensity of the stress concentration near the crack tips and to the change in the focusing factor due to rupture velocity. We extend these two-dimensional results to more general three-dimensional fault models in the case when the rupture velocity changes simultaneously on the rupture front. Results are similar to those described for two-dimensional faults. We apply the theory to the case of a circular fault that grows at constant velocity and stops suddenly. The present theory is in excellent agreement with a numerical solution of the same problem.Our results provide upper bounds to the high-frequency radiation from more realistic models in which rupture velocity does not change suddenly. The {$\omega-$}2 is the minimum possible decay at high frequencies for any crack model of the source.}
+      \field{issn}{0956-540X}
+      \field{journaltitle}{Geophysical Journal International}
+      \field{month}{12}
+      \field{number}{3}
+      \field{title}{High-Frequency Radiation from Crack (Stress Drop) Models of Earthquake Faulting}
+      \field{urlday}{2}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{51}
+      \field{year}{1977}
+      \field{urldateera}{ce}
+      \field{pages}{625\bibrangedash 651}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1111/j.1365-246X.1977.tb04211.x
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/DIDSBK92/j.1365-246X.1977.tb04211.html
+      \endverb
     \endentry
     \entry{mahajanModelingInterfacialCrack2008}{article}{}{}
       \name{author}{2}{}{%
@@ -1953,6 +2241,53 @@
       \verb /Users/salomebachmann/Zotero/storage/5WQGNEHR/Podolskiy et al. - 2013 - A review of finite-element modelling in snow mechanics.pdf
       \endverb
     \endentry
+    \entry{rosakisIntersonicShearCracks2002}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cbb9af2c191cc42782353a8752c9d8e9}{%
+           family={Rosakis},
+           familyi={R\bibinitperiod},
+           given={Ares\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{cbb9af2c191cc42782353a8752c9d8e9}
+      \strng{fullhash}{cbb9af2c191cc42782353a8752c9d8e9}
+      \strng{fullhashraw}{cbb9af2c191cc42782353a8752c9d8e9}
+      \strng{bibnamehash}{cbb9af2c191cc42782353a8752c9d8e9}
+      \strng{authorbibnamehash}{cbb9af2c191cc42782353a8752c9d8e9}
+      \strng{authornamehash}{cbb9af2c191cc42782353a8752c9d8e9}
+      \strng{authorfullhash}{cbb9af2c191cc42782353a8752c9d8e9}
+      \strng{authorfullhashraw}{cbb9af2c191cc42782353a8752c9d8e9}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent experimental observations of intersonic shear rupture events that occur in a variety of material systems have rekindled interest in the intersonic failure phenomenon. Since the early 1990s, engineers and scientists working in all length scales, from the atomistic, the structural, all the way up to the scale of the earth's deformation processes, have undertaken joint efforts to study this unexplored area of fracture mechanics. The analysis in the present article emphasizes the cooperative and complementary manner in which experimental observations and analytical and numerical developments have proceeded. The article first reviews early contributions to the theoretical literature of dynamic subsonic and intersonic fracture and highlights the significant differences between tensile and shear cracks. The article then uses direct laboratory observations as a framework for discussing the physics of intersonic shear rupture occurring in constitutively homogeneous (isotropic and anisotropic) as well as in inhomogeneous systems, all containing preferable crack paths or faults. Experiments, models, and field evidence at a variety of length scales (from the atomistic, the continuum, and up to the scale of geological ruptures) are used to discuss processes such as (1) shock wave formation, (2) large-scale frictional contact and sliding at the rupture faces, and (3) maximum attainable rupture speeds and rupture speed stability. Particular emphasis is given to geophysical field evidence and to the exploration of the possibility of intersonic fault rupture during shallow crustal earthquake events.}
+      \field{issn}{0001-8732}
+      \field{journaltitle}{Advances in Physics}
+      \field{month}{6}
+      \field{number}{4}
+      \field{title}{Intersonic Shear Cracks and Fault Ruptures}
+      \field{urlday}{2}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{51}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \field{pages}{1189\bibrangedash 1257}
+      \range{pages}{69}
+      \verb{doi}
+      \verb 10.1080/00018730210122328
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/SK7N6EPE/Rosakis - 2002 - Intersonic shear cracks and fault ruptures.pdf
+      \endverb
+    \endentry
     \entry{rosendahlModelingSnowSlab2020}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=46516e5984264a24cd3aedc2e9eac8fa}{%
@@ -2153,6 +2488,56 @@
       \field{urldateera}{ce}
       \verb{file}
       \verb /Users/salomebachmann/Zotero/storage/KYCGAATA/long-term-statistics.html
+      \endverb
+    \endentry
+    \entry{suFundamentalsAnalysisLamb2009}{inbook}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9d2acd0c7f9ff3b090112e66bdc2c864}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Zhongqing},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b083b3a54a93755c6aa5c0094aeea210}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Springer London}%
+      }
+      \strng{namehash}{b3285150fe5efb3454c06e1a79174421}
+      \strng{fullhash}{b3285150fe5efb3454c06e1a79174421}
+      \strng{fullhashraw}{b3285150fe5efb3454c06e1a79174421}
+      \strng{bibnamehash}{b3285150fe5efb3454c06e1a79174421}
+      \strng{authorbibnamehash}{b3285150fe5efb3454c06e1a79174421}
+      \strng{authornamehash}{b3285150fe5efb3454c06e1a79174421}
+      \strng{authorfullhash}{b3285150fe5efb3454c06e1a79174421}
+      \strng{authorfullhashraw}{b3285150fe5efb3454c06e1a79174421}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Identification of {{Damage Using Lamb Waves}}}
+      \field{isbn}{978-1-84882-783-7 978-1-84882-784-4}
+      \field{title}{Fundamentals and {{Analysis}} of {{Lamb Waves}}}
+      \field{urlday}{9}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{48}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \field{pages}{15\bibrangedash 58}
+      \range{pages}{44}
+      \verb{doi}
+      \verb 10.1007/978-1-84882-784-4_2
       \endverb
     \endentry
     \entry{trabattoniStrainDisplacementUsing2023}{article}{}{}
@@ -2429,6 +2814,50 @@
       \verb /Users/salomebachmann/Zotero/storage/Q796XH32/Turquet et al. - 2024 - Automated Snow Avalanche Monitoring and Alert System Using Distributed Acoustic Sensing in Norway.pdf
       \endverb
       \keyw{automated avalanche detection,distributed acoustic sensing,hazardous mass movements,natural hazards,Norway,signal processing,snow avalanche dynamics}
+    \endentry
+    \entry{yilmazSeismicDataAnalysis2001}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cb6fb4e57e46069e7829f82ac9ce9124}{%
+           family={Yilmaz},
+           familyi={Y\bibinitperiod},
+           given={Öz},
+           giveni={Ö\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Society of Exploration Geophysicists}%
+      }
+      \strng{namehash}{cb6fb4e57e46069e7829f82ac9ce9124}
+      \strng{fullhash}{cb6fb4e57e46069e7829f82ac9ce9124}
+      \strng{fullhashraw}{cb6fb4e57e46069e7829f82ac9ce9124}
+      \strng{bibnamehash}{cb6fb4e57e46069e7829f82ac9ce9124}
+      \strng{authorbibnamehash}{cb6fb4e57e46069e7829f82ac9ce9124}
+      \strng{authornamehash}{cb6fb4e57e46069e7829f82ac9ce9124}
+      \strng{authorfullhash}{cb6fb4e57e46069e7829f82ac9ce9124}
+      \strng{authorfullhashraw}{cb6fb4e57e46069e7829f82ac9ce9124}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Abstract. The Classical Greeks had a love for wisdom --It came down to us as philo sophia.And I have a passion for the seismic method --Let this be an ode to}
+      \field{isbn}{978-1-56080-158-0}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{shorttitle}{Seismic {{Data Analysis}}}
+      \field{title}{Seismic {{Data Analysis}}: {{Processing}}, {{Inversion}}, and {{Interpretation}} of {{Seismic Data}}}
+      \field{urlday}{2}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2001}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1190/1.9781560801580
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/FWXYXGR5/Yilmaz - 2001 - Seismic Data Analysis Processing, Inversion, and Interpretation of Seismic Data.pdf;/Users/salomebachmann/Zotero/storage/9GR23Q7Z/Seismic-Data-Analysis-Processing-Inversion-and.html
+      \endverb
     \endentry
     \entry{zhangModellingLargescaleLandslide2023}{article}{}{}
       \name{author}{6}{}{%
