@@ -102,6 +102,7 @@ The presence of waves with opposite polarity can be proven mathematically. From 
     \end{pmatrix}.
   \end{equation} If the determinant of this matrix is set to zero, this results in \begin{equation}
     \frac{tan(qz)}{tan(pz)} = -\frac{2k^2pq}{(q^2-k^2)^2}
+    \label{eq:symmetric dispersion}
   \end{equation}, which is the dispersion of the symmetric mode of the Lamb waves, as described by \cite{suFundamentalsAnalysisLamb2009}. The same can be done for the asymmetric Lamb wave mode if the operations of the stresses are opposite. \par
 
   The presence of opposite polarities across both velocity components ($v_x, v_y$) and across both propagation regimes (sub-Rayleigh and supershear) is a direct consequence of the waveguide's geometric symmetry and the nature of the fracture source. Dynamically, the two recording depths, $y = 2.625\,\text{m}$ and $y = 2.25\,\text{m}$, are perfectly symmetric about the mid-plane of the snow slab ($y = 2.4375\,\text{m}$), mapping precisely to $\pm z$ in the analytical framework. 
@@ -140,7 +141,43 @@ The sub-rayleigh horizontal strain and strain rate plots in figure \ref{fig:sub_
 
 Both the sub-rayleigh and the supershear strain and strain rate cases show a wave train running ahead. The slope of the first wavefront observed in figures \ref{fig:sub_strain,fig:super_strain} correspond to the p-wave velocity in snow and the rupture velocity in the supershear case. This means that in both cases, the p-waves are the first arrivals because they are fastest. This is consistent with the observations made in the velocity plots. In the supershear case, the p-waves are followed immediately by the waves from the rupture front, which would explain why there is only one clear but very broad wavefront in figure \ref{fig:super_strain}. In the sub-rayleigh strain and strain rate plots in figure \ref{fig:sub_strain}, the observations are also consistent with velocity. The first wave front to arrive are the p-waves, followed by the front from the rupture and the s-waves last. The same goes for the widening of the wavefronts, which has already been discussed in the velocity section. \par 
 
-From 
+Similar to the dispersion of the symmetric mode of the Lamb waves in equation \ref{eq:symmetric dispersion}, the antisymmetric waves can be derived. For the antisymmetric mode, the vertical displacement must be an even function of depth, $u_z(-z) = u_z(z)$, while the horizontal displacement must be an odd function, $u_x(-z) = -u_x(z)$. To satisfy these geometric propetries, the integration constants representing the even component of $\phi$ and the odd component of $\psi$ must vanish, such that $A = 0$ and $D = 0$. The asymmetric potentials simplify to:
+\begin{equation}
+\phi = B\sin(pz)e^{i(kx-\omega t)}
+\label{eq:phi_asym}
+\end{equation}
+\begin{equation}
+\psi = C\cos(qz)e^{i(kx-\omega t)}
+\label{eq:psi_asym}
+\end{equation}
+
+Substituting Equations \ref{eq:phi_asym} and \ref{eq:psi_asym} into the stress-free boundary equations ($\sigma_{zz} = 0, \sigma_{xz} = 0$) at the free surfaces $\pm z$ yields the following homogeneous matrix system:
+\begin{equation}
+\begin{pmatrix}
+K\sin(pz) & -2ikq\sin(qz) \\
+2ikp\cos(pz) & K\cos(qz)
+\end{pmatrix} 
+\begin{pmatrix} B \\ C \end{pmatrix} = 
+\begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\label{eq:matrix_asym}
+\end{equation}
+where $K = (q^2 - k^2)$. Setting the determinant of the matrix to zero gives the characteristic dispersion relation for the antisymmetric Lamb wave modes:
+\begin{equation}
+\frac{\tan(pz)}{\tan(qz)} = \frac{4k^2pq}{(q^2-k^2)^2}
+\label{eq:dispersion_asym}
+\end{equation}
+
+To relate this explicitly to the strain fields, the horizontal displacement $u_x$ is computed from the potentials:
+\begin{equation}
+u_x = \frac{\partial \phi}{\partial x} - \frac{\partial \psi}{\partial z} = \left[ ik B\sin(pz) + q C\sin(qz) \right] e^{i(kx-\omega t)}
+\label{eq:ux_asym}
+\end{equation}
+
+Taking the spatial derivative with respect to $x$ to find the horizontal strain ($\varepsilon_{xx} = \partial u_x / \partial x$) transforms the expression via multiplication by $ik$ in the wavenumber domain:
+\begin{equation}
+\varepsilon_{xx}^{\text{asym}}(x, z, t) = \left[ -k^2 B\sin(pz) + ikq C\sin(qz) \right] e^{i(kx-\omega t)}. 
+\label{eq:strain_asym_final}
+\end{equation}
 
 \subsection{Discussion of fk-plot}
 
