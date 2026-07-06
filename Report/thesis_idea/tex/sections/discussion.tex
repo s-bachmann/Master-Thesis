@@ -143,13 +143,15 @@ Both the sub-rayleigh and the supershear strain and strain rate cases show a wav
 
 The first arrival of the p-wave is also consistent with wave propagation. All plots in figures \ref{fig:sub_strain,fig:super_strain} show positive horizontal strain or strain rate first, followed by compression (negative strain) and positive strain again. This propagation is characterized by extension first and then contraction \parencite{kAkiRichards19801981}. \par
 
-Similar to the dispersion of the symmetric mode of the Lamb waves in equation \ref{eq:symmetric dispersion}, the antisymmetric waves can be derived. For the antisymmetric mode, the vertical displacement must be an even function of depth, $u_z(-z) = u_z(z)$, while the horizontal displacement must be an odd function, $u_x(-z) = -u_x(z)$. To satisfy these geometric propetries, the integration constants representing the even component of $\phi$ and the odd component of $\psi$ must vanish, such that $A = 0$ and $D = 0$. The asymmetric potentials simplify to:
+This very repetitive sequence of opposite polarities is a consequence of the snow acting as a waveguide, as described above. When energy is suddenly released by a propagating crack tip, the crack acts as an impulsive source that projects disturbances into the overlying slab \parencite{heierliAnticrackNucleationTriggering2008, gaumeDynamicAnticrackPropagation2018}. The leading P-wave arrival corresponds to the high-frequency, long-wavelength limit of the symmetric ($S_0$) Lamb mode, which represents an in-plane, extensional push-pull wave packet \parencite{achenbachWavePropagationElastic2012, graffWaveMotionElastic1975}. As this transient $S_0$ pulse outruns the rupture front, the initial forward displacement stretches the material, yielding a leading zone of positive tensile strain (red color). To satisfy elastodynamic restoring forces and conserve momentum as the wavefront passes a fixed point in space, this  extension must be immediately followed by a compensating contractional phase of negative compressive strain (blue), before returning to equilibrium.
+
+Behind this fast, extensional precursor lies the slower, highly oscillatory wave train, which displays a dense pattern of alternating opposite polarities. This trailing pattern is dictated by the superposition of the symmetric mode as well as the antisymmetric ($A_0$) flexural Lamb wave mode. Similar to the dispersion of the symmetric mode of the Lamb waves in equation \ref{eq:symmetric dispersion}, the antisymmetric wave mode can be derived. For the antisymmetric mode, the vertical displacement must be an even function of depth, $u_z(-z) = u_z(z)$, while the horizontal displacement must be an odd function, $u_x(-z) = -u_x(z)$. To satisfy the geometric properties, the integration constants representing the even component of $\phi$ and the odd component of $\psi$ must vanish, such that $A = 0$ and $D = 0$. The asymmetric potentials simplify to:
 \begin{equation}
 \phi = B\sin(pz)e^{i(kx-\omega t)}
 \label{eq:phi_asym}
 \end{equation}
 \begin{equation}
-\psi = C\cos(qz)e^{i(kx-\omega t)}
+\psi = C\cos(qz)e^{i(kx-\omega t)}.
 \label{eq:psi_asym}
 \end{equation}
 
@@ -169,7 +171,7 @@ where $K = (q^2 - k^2)$. Setting the determinant of the matrix to zero gives the
 \label{eq:dispersion_asym}
 \end{equation}
 
-To relate this explicitly to the strain fields, the horizontal displacement $u_x$ is computed from the potentials:
+To relate this explicitly to the strain, the horizontal displacement $u_x$ is computed from the potentials:
 \begin{equation}
 u_x = \frac{\partial \phi}{\partial x} - \frac{\partial \psi}{\partial z} = \left[ ik B\sin(pz) + q C\sin(qz) \right] e^{i(kx-\omega t)}
 \label{eq:ux_asym}
@@ -177,9 +179,27 @@ u_x = \frac{\partial \phi}{\partial x} - \frac{\partial \psi}{\partial z} = \lef
 
 Taking the spatial derivative with respect to $x$ to find the horizontal strain ($\varepsilon_{xx} = \partial u_x / \partial x$) transforms the expression via multiplication by $ik$ in the wavenumber domain:
 \begin{equation}
-\varepsilon_{xx}^{\text{asym}}(x, z, t) = \left[ -k^2 B\sin(pz) + ikq C\sin(qz) \right] e^{i(kx-\omega t)}. 
+\varepsilon_{xx}^{\text{asym}}(x, z, t) = \left[ -k^2 B\sin(pz) + ikq C\sin(qz) \right] e^{i(kx-\omega t)}
 \label{eq:strain_asym_final}
 \end{equation}
+
+By isolating the real part of this analytical expression, the spatial and temporal variation of the flexural strain field isolates the reason for the opposite polarity patterns along the wave train. The strain can be rewritten in terms of its harmonic phase:
+\begin{equation}
+\varepsilon_{xx}^{\text{asym}}(x, z, t) = \mathcal{A}_{\text{asym}}(z) \cos(kx - \omega t + \phi_0)
+\label{eq:harmonic_strain_real}
+\end{equation}
+where $\mathcal{A}_{\text{asym}}(z)$ represents the depth-dependent amplitude envelope and $\phi_0$ is a constant phase angle. The transcendental cosine term dictates that over a fixed spatial distance of exactly half a wavelength, $\Delta x = \lambda/2 = \pi/k$, the wavefield must cycle smoothly between its maximum positive value ($\cos = +1$) and its maximum negative value ($\cos = -1$). 
+
+Physically, this represents the dynamic bending or structural "ringing" of the slab  \parencite{heierliAnticrackNucleationTriggering2008, bergfeldSignaturesSubRayleighSupershear2025}. When a section of the slab flexes vertically, the fibers located on a single side of the neutral axis experience localized horizontal squeezing ($\varepsilon_{xx} < 0$, blue bands). As the elastic wave oscillates into its next half-cycle, the local curvature reverses, subjecting those same fibers to intense horizontal stretching ($\varepsilon_{xx} > 0$, red bands). 
+
+When this is translated to the horizontal strain rate ($\dot{\varepsilon}_{xx}$), the time derivative ($\partial/\partial t \longleftrightarrow -i\omega$) shifts the wave profile into a sine function:
+\begin{equation}
+\dot{\varepsilon}_{xx}^{\text{asym}}(x, z, t) = \omega \mathcal{A}_{\text{asym}}(z) \sin(kx - \omega t + \phi_0)
+\label{eq:harmonic_rate_real}
+\end{equation}
+This differentiation scales the amplitude by the angular frequency $\omega$ and introduces a $90^\circ$ spatial phase shift, but leaves the underlying alternating pattern of opposite polarities completely intact. Because both the crack depth ($y = 2.625\,\text{m}$) and the snowpack base ($y = 2.25\,\text{m}$) reside entirely within the lower half of the slab waveguide below its neutral axis ($z < 0$), they evaluate to the same geometric sign in $\sin(pz)$. Consequently, both recording horizons register these rapid, cyclic transitions from extension to contraction perfectly in-phase with one another. 
+
+
 
 \subsection{Discussion of fk-plot}
 
