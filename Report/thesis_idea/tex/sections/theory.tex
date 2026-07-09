@@ -84,3 +84,39 @@ The material point simulations of the PST performed by \parencite{gaumeDynamicAn
 \end{equation} \par
 
 These moment tensor components can then be input into SALVUS as custom source time functions. \textcolor{magenta}{How are the waveforms of the stfs obtained}
+
+\section{Simulation of DAS data}
+
+To compare the results obtained in the SALVUS simulations to field DAS data, the numerical outputs have to be transformed. The backscattered delay of a laser pulse along a straigth cable is proportional to the integrated strain tensor components along the gauge length \parencite{noeFrontiersFullwaveformSeismology2025}. This yields the standard expression for the gauge-averaged DAS strain at a channel position: \begin{equation}
+\bar{\epsilon}_{\text{DAS}}(s_c, t) = \frac{1}{l} \int_{s_c - \frac{l}{2}}^{s_c + \frac{l}{2}} \mathbf{e}^T(s) \boldsymbol{\epsilon}(s, t) \mathbf{e}(s) \, ds,
+\end{equation} \parencite{noeFrontiersFullwaveformSeismology2025}. \par
+
+To model a physically realistic laser pulse with a tapered spatial intensity profile, the classical boxcar averaging window is generalized to a continuous, weighted spatial convolution according to \cite{noeFrontiersFullwaveformSeismology2025}:
+
+\begin{equation}
+\bar{\epsilon}_{\text{DAS}}(x, t) = \int_{-\infty}^{\infty} w(s) \cdot \epsilon_{xx}(x - s, t) \, ds,
+\end{equation}
+
+where $w(s)$ represents the normalized Gaussian spatial weighting kernel configured via the Pyber engine (\cite{noeFrontiersFullwaveformSeismology2025}, located on github), satisfying the amplitude-preserving condition:
+
+\begin{equation}
+\int_{-\infty}^{\infty} w(s) \, ds = 1
+\end{equation} \parencite{noeFrontiersFullwaveformSeismology2025}.
+
+On the discrete numerical grid output by SALVUS, this forward problem maps to a discrete 1D spatial convolution over $N_g$ sampling points within the gauge length window:
+
+\begin{equation}
+\bar{\epsilon}_{\text{DAS}}(x_i, t) \approx \sum_{k=-N_g/2}^{N_g/2} w_k \cdot \epsilon_{xx}(x_{i-k}, t).
+\end{equation}
+
+Because spatial convolution and spatial differentiation are both linear operations, they strictly commute. This linear commutativity is exploited numerically to apply the pulse filtering directly to the raw horizontal displacement field $u_x$ prior to differentiation:
+
+\begin{equation}
+\bar{\epsilon}_{\text{DAS}}(x_i, t) = \sum_{k} w_k \cdot \left( \frac{\partial u_x(x_{i-k}, t)}{\partial x} \right) = \frac{\partial}{\partial x} \left[ \sum_{k} w_k \cdot u_x(x_{i-k}, t) \right].
+\end{equation}
+
+Finally, the simulated DAS strain rate is acquired by evaluating the temporal derivative of the stabilized strain field:
+
+\begin{equation}
+\dot{\bar{\epsilon}}_{\text{DAS}}(x_i, t) = \frac{\partial}{\partial t} \left[ \bar{\epsilon}_{\text{DAS}}(x_i, t) \right].
+\end{equation}
