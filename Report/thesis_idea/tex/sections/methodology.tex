@@ -59,11 +59,11 @@ Rupture propagation speed is chosen with respect to the local shear-wave speed a
 \[ t_o = \frac{x-x_{\rm start}}{v_{\rm rupture}}, \]
 using the subfault horizontal position \(x\), the rupture starting position \(x_{\rm start}\), and the prescribed rupture speed \(v_{\rm rupture}\). \par
 
-Each activated subfault is represented as a point/source in the SALVUS source array. The scalar seismic moment for a subfault is computed from the shear modulus, the prescribed slip, and the subfault width \(\Delta x\):
-\[ M_0 = \mu\,x_{\rm slip}\,\Delta x. \]
-Moment-tensor components are set according to the user-specified mode-mix ratio, e.g. here the implementation uses
-\( m_{xx}=0,\; m_{xy}=M_0\,r_{\rm mode},\; m_{yy}=-(1-r_{\rm mode})M_0\),
-which yields pure mode behaviour at the extremes of \(r_{\rm mode}=0\) or \(1\), which means that an additional component of the moment tensor source becomes 0. All subfault sources use the same central frequency, wavelet shape, and amplitude scaling so the rupture is represented as a coherent moving source in the wave propagation simulations. \par
+Each activated subfault is represented as a point source in the SALVUS source array. The kinematic moment formulation serves as the numerical link to the underlying cohesive zone model through a strict energy balance. Within the CZM, the total strain energy released during fracture is split between the fracture energy ($G_I$ or $G_{II}$) required to break down the cohesive zone, and the remaining radiated elastic strain energy. By prescribing $x_{\rm slip}$ across a finite grid cell width $\Delta x$, the resulting scalar seismic moment $M_0$ mathematically captures the  radiated energy that propagates away from the process zone into the bulk medium as a seismic wavefield. \par
+
+To take the mixed-mode mechanics of the process zone into account, the individual components of the moment tensor are  scaled by the mode-mix ratio $r_{\rm mode}$, which can be user input:
+\[ m_{xx}=0,\quad m_{xy}=M_0\,r_{\rm mode},\quad m_{yy}=-(1-r_{\rm mode})M_0. \]
+Consequently, at the extremes of $r_{\rm mode}=0$ or $1$, the unaligned component of the moment tensor drops to zero, perfectly matching the radiation patterns of pure opening or pure shear failure. All subfault sources are driven by an identical central frequency, source wavelet, and amplitude scaling factor, thereby reconstructing the discrete subfault array into a highly coherent, continuously moving source that mimics a smooth, physical crack tip rupture throughout the wave propagation mesh. \par
 
 
 % The following numerical settings and checks are applied consistently across simulations to ensure stability and reproducibility:
