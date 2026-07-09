@@ -86,29 +86,47 @@ ricker_{base} =
    
 \end{equation} In the MPM case, the shape of the wavelets is obtained as described in \ref{sec:from_mpm_to_se}. The workflow of the code, including how the source speed is set up can be seen in the following flowchart. 
 
-\begin{tikzpicture}[node distance=2.5cm]
+\begin{figure}[htbp]
     \centering
-    \node (start) [startstop] {Source Wavelet Setup};
-    \node(in1)[io, below of=start] {Source geometry definition: Start and stop of source line, spacing};
-    \node(pro1)[io, below of = in1] {Speed definition: 1.6vs (supershear), 0.6vs (sub rayleigh, according to \cite{trottetTransitionSubRayleighAnticrack2022})};
-    \node(pro2)[process, below of =pro1] {Calculation of time delay between sources: $\ \Delta t = \frac{\Delta x}{v_{rupture}}$};
-    \node(pro3)[io, below of= pro2] {Input of base values for all directions of moment tensor (e.g. mxx = 1)};
-    \node(pro4)[io, below of=pro3] {Input of weight arrays: Calculated from MPM data or 1 in all directions};
-    \node(pro5)[process, below of=pro4]{Tapering of first and last sources to avoid injection noise};
-    \node(pro6)[process, below of =pro5]{Zero-padding of wavelet arrays before and after their firing time};
-    \node(pro7)[process, below of=pro6]{Calculation of source wavelet shape with original shape, weight, padding and taper};
-    \node(pro8)[startstop, below of=pro7]{Setup of wavelet as stf, pass to SALVUS};
+    % Setting a comfortable grid spacing via positioning keys
+    \begin{tikzpicture}[node distance=1.5cm and 2.5cm, every node/.style={text centered}]
+        
+        % --- COLUMN 1: Geometry & Kinematics ---
+        \node (start) [startstop] {Source Wavelet Setup};
+        \node (in1) [io, below=of start] {Source geometry definition: Start and stop of source line, spacing};
+        \node (pro1) [io, below=of in1] {Speed definition: $1.6v_s$ (supershear), $0.6v_s$ (sub-Rayleigh, \cite{trottetTransitionSubRayleighAnticrack2022})};
+        \node (pro2) [process, below=of pro1] {Calculation of time delay: $\Delta t = \frac{\Delta x}{v_{\text{rupture}}}$};
+        
+        % --- COLUMN 2: Moment Tensor Config ---
+        % Positioned to the right of the geometry block
+        \node (pro3) [io, right=of in1] {Input of base values for all directions of moment tensor (e.g., $m_{xx} = 1$)};
+        \node (pro4) [io, below=of pro3] {Input of weight arrays: Calculated from MPM data or 1 in all directions};
+        
+        % --- COLUMN 3: Signal Conditioning & Export ---
+        % Positioned further right
+        \node (pro5) [process, right=of pro3] {Tapering of first and last sources to avoid injection noise};
+        \node (pro6) [process, below=of pro5] {Zero-padding of wavelet arrays before and after firing time (np.roll)};
+        \node (pro7) [process, below=of pro6] {Calculation of source wavelet shape with weight, padding, and taper};
+        \node (pro8) [startstop, below=of pro7] {Setup of wavelet as stf, pass to SALVUS};
 
-    \draw[arrow] (start) -- (in1);
-    \draw[arrow] (in1) -- (pro1);
-    \draw[arrow] (pro1) -- (pro2);
-    \draw[arrow] (pro2) -- (pro3);
-    \draw[arrow] (pro3) -- (pro4);
-    \draw[arrow] (pro4) -- (pro5);
-    \draw[arrow] (pro5) -- (pro6);
-    \draw[arrow] (pro6) -- (pro7);
-    \draw[arrow] (pro7) -- (pro8);
+        % --- Connections (The S-Curve Flow) ---
+        % Down Column 1
+        \draw[arrow] (start) -- (in1);
+        \draw[arrow] (in1) -- (pro1);
+        \draw[arrow] (pro1) -- (pro2);
+        
+        % Cross over from bottom of Col 1 up to top of Col 2
+        \draw[arrow] (pro2.east) -- ++(0.5,0) |- (pro3.west);
+        \draw[arrow] (pro3) -- (pro4);
+        
+        % Cross over from bottom of Col 2 up to top of Col 3
+        \draw[arrow] (pro4.east) -- ++(0.5,0) |- (pro5.west);
+        \draw[arrow] (pro5) -- (pro6);
+        \draw[arrow] (pro6) -- (pro7);
+        \draw[arrow] (pro7) -- (pro8);
 
-\end{tikzpicture}
-
+    \end{tikzpicture}
+    \caption{Operational workflow for the SALVUS source time function (STF) setup.}
+    \label{fig:wavelet_workflow_grid}
+\end{figure}
 
