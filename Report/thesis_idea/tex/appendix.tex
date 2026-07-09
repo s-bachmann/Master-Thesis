@@ -66,4 +66,22 @@ The complete code of all models described can be found on github: \url{https://g
   \draw [arrow] (pro10) -- (end);
 \end{tikzpicture}
 
+\chapter{Parameters used in Models}
+\label{app:model_params}
+
+\begin{center}
+\begin{tabular}{ll}
+\hline
+Parameter & Typical value / source \\
+\hline
+$\sigma_n$ & 0.00184 MPa from \cite{mahajanModelingInterfacialCrack2008} \\
+$\tau_s$ & 0.004 MPa from \cite{mahajanModelingInterfacialCrack2008} \\
+$G_I, G_{II}$ & 0.35, 0.50 $\ J/m^s$from \cite{mahajanModelingInterfacialCrack2008} \\
+$v_s, v_p, \rho$ & 67.9366, 109.4 m/s, 250 kg/m³ from \cite{trottetTransitionSubRayleighAnticrack2022} (converted to $\mu,\lambda,E$) \\
+$r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
+\hline
+\caption{Parameters used in the Simulations}
+\end{tabular}
+\end{center}
+
 \end{appendices}
