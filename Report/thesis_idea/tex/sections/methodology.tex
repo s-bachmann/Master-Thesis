@@ -97,7 +97,7 @@ ricker_{base} =
     \node(pro5)[process, below of=pro4]{Tapering of first and last sources to avoid injection noise};
     \node(pro6)[process, below of =pro5]{Zero-padding of wavelet arrays before and after their firing time};
     \node(pro7)[process, below of=pro6]{Calculation of source wavelet shape with original shape, weight, padding and taper};
-    \node(pro8)[process, below of=pro7]{Setup of wavelet as stf, pass to SALVUS};
+    \node(pro8)[startstop, below of=pro7]{Setup of wavelet as stf, pass to SALVUS};
 
     \draw[arrow] (start) -- (in1);
     \draw[arrow] (in1) -- (pro1);
