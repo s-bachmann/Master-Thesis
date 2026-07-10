@@ -21,16 +21,11 @@
 \subsection{Velocity space-time plots}
 The main wavefronts which can be observed in figures \ref{fig:sub_vel} and \ref{fig:super_vel} are the crack fronts. This is because when taking the slope of these two wavefronts, it corresponds to the rupture velocity in the supershear and the sub-rayleigh case. \par
 
-The weakening of the wavefronts, especially observed in the supershear case in figure \ref{fig:super_vel} can be explained of attenuation of the different frequencies which are present in the medium. Higher frequencies are attenuated much faster than low frequencies \parencite{kAkiRichards19801981}. The attenuation coefficient is \begin{equation}
-\alpha(\omega) = \frac{\omega}{2 c Q}
-\label{eq:attenuation_coeff}
-\end{equation} \parencite{kAkiRichards19801981}, which can be used to define the spatial amplitude decay: \begin{equation}
-A(x, \omega) = A_0 e^{-\alpha(\omega) x} = A_0 e^{-\frac{\omega x}{2 c Q}}
-\label{eq:amplitude_decay}
-\end{equation} \parencite{kAkiRichards19801981}. This means that higher frequencies present in the wave train decay in amplitude faster than others with increasing distance. The resulting wavefield is described by the equation \begin{equation}
-u(x, t) = \int_{-\infty}^{\infty} U_0(\omega) e^{-\frac{\omega x}{2 c Q}} e^{i \omega \left(\frac{x}{c} - t\right)} d\omega
-\label{eq:wavefield_integral}
-\end{equation} \parencite{kAkiRichards19801981}. This is only present in the supershear case, because the crack travels faster than the guided waves \parencite{dunhamNearsourceGroundMotion2005}. A Mach-front is created, where all the waves travel together in a "shock-front" \parencite{dunhamNearsourceGroundMotion2005}, but once this front passes, there is attenuation of energy. In the sub-rayleigh case on the other hand, the guided waves are faster than the crack \parencite{kAkiRichards19801981}, there is reflection of the waves between the top and bottom of the snow, which creates the osicllations which can be seen in figure \ref{fig:sub_vel}. \par
+The weakening of the wavefronts, especially observed in the supershear case in figure \ref{fig:super_vel} can be explained of attenuation of the different frequencies which are present in the medium. Higher frequencies are attenuated much faster than low frequencies \parencite{kAkiRichards19801981}. This can be explained by looking at the wavenumber: \begin{equation}
+  k = \frac{\omega}{v_{phase}} + i\alpla_{leak}
+\end{equation} according to \cite{roseWavesPlates2014}.
+
+This is only present in the supershear case, because the crack travels faster than the guided waves \parencite{dunhamNearsourceGroundMotion2005}. A Mach-front is created, where all the waves travel together in a "shock-front" \parencite{dunhamNearsourceGroundMotion2005}, but once this front passes, there is attenuation of energy. In the sub-rayleigh case on the other hand, the guided waves are faster than the crack \parencite{kAkiRichards19801981}, there is reflection of the waves between the top and bottom of the snow, which creates the osicllations which can be seen in figure \ref{fig:sub_vel}. \par
 
 The broadening of the wavefront with increasing time can be explained by dispersion. By the reflections of the top and bottom snow boundary, the waves present start interfering with each other, which can lead to constructive or destructive interference \parencite{kAkiRichards19801981}. This means that waves can start travelling at different phase velocities, because of the interference \cite{graffWaveMotionElastic1975}. The phase and group velocities of waves are described as \begin{equation}
 v_{\text{ph}} = \frac{\omega}{k}, \quad v_{\text{g}} = \frac{d\omega}{dk}
@@ -43,7 +38,7 @@ v_{\text{ph}} = \frac{\omega}{k}, \quad v_{\text{g}} = \frac{d\omega}{dk}
 The presence of waves with opposite polarity can be proven mathematically. From the equation of motion in an elastic solid, which is \begin{equation}
     \mu \nabla^2 u + (\lambda + \mu) \nabla (\nabla \cdot u) = \rho \frac{\partial^2 u}{\partial t^2}
     \label{eq:motion},
-  \end{equation} the scalar and vector potential for P- and S-waves (Potentials $\ \phi, \psi$) can be derived using the Helmholtz-Decomposition and the displacement becomes \begin{equation}
+  \end{equation} the scalar and vector potential for P- and S-waves (Potentials $\ \phi, \psi$)  can be derived using the Helmholtz-Decomposition and the displacement becomes \begin{equation}
     u = \nabla \phi + \nabla \times \psi. 
   \end{equation} Splitting this into the horizontal and vertical component of displacement: \begin{equation}
     u_x = \frac{\partial \phi}{\partial x} - \frac{\partial \psi}{\partial z}
