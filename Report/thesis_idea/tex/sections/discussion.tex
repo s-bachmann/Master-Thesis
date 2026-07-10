@@ -21,6 +21,24 @@
 \subsection{Velocity space-time plots}
 The main wavefronts which can be observed in figures \ref{fig:sub_vel} and \ref{fig:super_vel} are the crack fronts. This is because when taking the slope of these two wavefronts, it corresponds to the rupture velocity in the supershear and the sub-rayleigh case. \par
 
+The weakening of the wavefronts, especially observed in the supershear case in figure \ref{fig:super_vel} can be explained by depth decay and geometric spreading from the source. The crack tip acts as a moving two-dimensional line source, in a 2D elastic medium, the peak amplitude $A$ of the radiated wavefield decays inversely with the square root of the radial distance $r$ from the source plane \parencite{achenbachWavePropagationElastic2012}:
+\begin{equation}
+A(r) = \frac{A_0}{\sqrt{r}}
+\label{eq:geometric_spreading_2d}
+\end{equation}
+where $r = \sqrt{(x - x_0)^2 + (y - y_{\text{src}})^2}$. As a consequence, as the wavefield travels vertically through the slab, away from the crack plane, towards the snow bottom, it experiences a geometric reduction in peak energy. \par
+
+Furthermore, for wave components whose horizontal phase velocities are slower than the bulk wave speeds of the snow, the vertical wavenumbers become purely imaginary. Defining $p = i\alpha$ and $q = i\beta$, where $\alpha = \sqrt{k^2 - (\omega/c_p)^2}$ and $\beta = \sqrt{k^2 - (\omega/c_s)^2}$ \parencite{graffWaveMotionElastic1975}, the trigonometric expressions in the wave potentials transform into hyperbolic functions:
+\begin{equation}
+\phi(x,z,t) = \left[ A \cosh(\alpha z) + B \sinh(\alpha z) \right] e^{i(kx-\omega t)}
+\label{eq:hyperbolic_phi}
+\end{equation}
+\begin{equation}
+\psi(x,z,t) = \left[ C \cosh(\beta z) + D \sinh(\beta z) \right] e^{i(kx-\omega t)}
+\label{eq:hyperbolic_psi}
+\end{equation}
+These hyperbolic profiles dictate that high-frequency, shorter wavelength  phases decay exponentially as a function of vertical distance from the location of the crack. In other words, higher frequencies are attenuated more quickly, which explains the weakening of the wavefronts observed. \par
+
 
 This is only present in the supershear case, because the crack travels faster than the guided waves \parencite{dunhamNearsourceGroundMotion2005}. A Mach-front is created, where all the waves travel together in a "shock-front" \parencite{dunhamNearsourceGroundMotion2005}, but once this front passes, there is attenuation of energy. In the sub-rayleigh case on the other hand, the guided waves are faster than the crack \parencite{kAkiRichards19801981}, there is reflection of the waves between the top and bottom of the snow, which creates the osicllations which can be seen in figure \ref{fig:sub_vel}. \par
 
