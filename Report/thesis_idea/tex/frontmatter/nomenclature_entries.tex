@@ -1,0 +1,78 @@
+% tex/frontmatter/nomenclature_entries.tex
+% Nomenclature entries (abbreviations + symbols)
+
+% Abbreviations
+\nomenclature[A01]{DAS}{Distributed acoustic sensing}
+\nomenclature[A02]{SALVUS}{Spectral-element wave propagation software framework}
+\nomenclature[A03]{SE}{Spectral element}
+\nomenclature[A04]{FE}{Finite element}
+\nomenclature[A05]{FEM}{Finite element method}
+\nomenclature[A06]{MPM}{Material point method}
+\nomenclature[A07]{DEM}{Discrete element method}
+\nomenclature[A08]{CZM}{Cohesive zone model}
+\nomenclature[A09]{PST}{Propagation saw test}
+\nomenclature[A10]{STF}{Source time function}
+\nomenclature[A11]{$S_0$}{Symmetric Lamb-wave mode}
+\nomenclature[A12]{$A_0$}{Antisymmetric Lamb-wave mode}
+
+% Core elastic-wave symbols
+\nomenclature[S01]{$\rho$}{Density [$\mathrm{kg\,m^{-3}}$]}
+\nomenclature[S02]{$\sigma$}{Stress tensor [Pa]}
+\nomenclature[S03]{$u$}{Displacement field [m]}
+\nomenclature[S04]{$v$}{Velocity field [$\mathrm{m\,s^{-1}}$]}
+\nomenclature[S05]{$f$}{Body-force density [$\mathrm{N\,m^{-3}}$]}
+\nomenclature[S06]{$C$}{Fourth-order stiffness tensor [Pa]}
+\nomenclature[S07]{$\lambda,\,\mu$}{Lam\'e parameters [Pa]}
+\nomenclature[S08]{$E$}{Young's modulus [Pa]}
+\nomenclature[S09]{$v_p,\,v_s$}{P-wave and S-wave speeds [$\mathrm{m\,s^{-1}}$]}
+\nomenclature[S10]{$G$}{Computational domain}
+\nomenclature[S11]{$\partial G$}{Boundary of the domain}
+\nomenclature[S12]{$\hat{n}$}{Outward unit normal vector on $\partial G$}
+\nomenclature[S13]{$w$}{Test function in the weak form}
+\nomenclature[S14]{$\bar{\tau}(x)$}{Prescribed boundary traction}
+\nomenclature[S15]{$\bar{u}(x),\,\bar{v}(x)$}{Initial displacement and initial velocity}
+
+% Basis and discretization
+\nomenclature[S16]{$\phi_j$}{Basis (shape) function with index $j$}
+\nomenclature[S17]{$F_j$}{Expansion coefficient of basis function $\phi_j$}
+\nomenclature[S18]{$N$}{Number of basis functions per expansion}
+\nomenclature[S19]{$M$}{Number of quadrature points}
+\nomenclature[S20]{$W_i$}{Quadrature weight at point $i$}
+\nomenclature[S21]{$x$}{Physical coordinate [m]}
+\nomenclature[S22]{$\theta$}{Reference (element-local) coordinate}
+\nomenclature[S23]{$\left|\frac{\partial x}{\partial \theta}\right|$}{Jacobian determinant of reference-to-physical mapping}
+
+% Rupture and source parameters
+\nomenclature[S24]{$t_o$}{Subfault onset time [s], e.g. $t_o=(x-x_{\rm start})/v_{\rm rupture}$}
+\nomenclature[S25]{$x_{\rm start}$}{Rupture starting position [m]}
+\nomenclature[S26]{$v_{\rm rupture}$}{Rupture propagation speed [$\mathrm{m\,s^{-1}}$]}
+\nomenclature[S27]{$\epsilon$}{Strain tensor (or strain quantity, context-dependent)}
+\nomenclature[S28]{$\dot{\epsilon}$}{Strain-rate quantity [$\mathrm{s^{-1}}$]}
+\nomenclature[S29]{$M_{ij}$}{Moment tensor component [N m]}
+\nomenclature[S30]{$M_0$}{Scalar seismic moment [N m]}
+\nomenclature[S31]{$V_p$}{Particle (or source-cell) volume [$\mathrm{m^3}$]}
+\nomenclature[S32]{$r_{\rm mode}$}{Mode-mix ratio (0: pure mode I, 1: pure mode II)}
+
+% Cohesive-zone symbols
+\nomenclature[S33]{$\Delta_n,\,\Delta_t$}{Normal and tangential separations in CZM [m]}
+\nomenclature[S34]{$\delta_n,\,\delta_t$}{Characteristic normal and tangential opening scales [m]}
+\nomenclature[S35]{$\delta_{n,c},\,\delta_{s,c},\,\delta_c$}{Critical opening distances [m]}
+\nomenclature[S36]{$\sigma_{\max},\,\tau_{\max}$}{Peak normal and shear cohesive tractions [Pa]}
+\nomenclature[S37]{$G_I,\,G_{II}$}{Mode-I and mode-II fracture energies [$\mathrm{J\,m^{-2}}$]}
+\nomenclature[S38]{$l_{ch}$}{Characteristic Irwin length [m]}
+\nomenclature[S39]{$l_{cz}$}{Cohesive-zone length [m]}
+
+% DAS forward model symbols
+\nomenclature[S40]{$\bar{\epsilon}_{\mathrm{DAS}}$}{Gauge-averaged DAS strain}
+\nomenclature[S41]{$\dot{\bar{\epsilon}}_{\mathrm{DAS}}$}{Gauge-averaged DAS strain rate}
+\nomenclature[S42]{$l$}{Gauge length [m]}
+\nomenclature[S43]{$s_c$}{Center position of DAS channel along the fiber [m]}
+\nomenclature[S44]{$\mathbf{e}(s)$}{Unit vector tangent to the fiber at arc-length position $s$}
+\nomenclature[S45]{$w(s),\,w_k$}{Continuous and discrete spatial weighting kernels}
+\nomenclature[S46]{$N_g$}{Number of grid samples within the gauge window}
+
+% Spectral analysis symbols
+\nomenclature[S47]{$k$}{Wavenumber [$\mathrm{rad\,m^{-1}}$]}
+\nomenclature[S48]{$\omega$}{Angular frequency [$\mathrm{rad\,s^{-1}}$]}
+\nomenclature[S49]{$p,\,q$}{Vertical wavenumber terms for P- and S-wave potentials}
+\nomenclature[S50]{$\alpha,\,\beta$}{Positive decay constants for evanescent wave terms}

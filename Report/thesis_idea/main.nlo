@@ -1,2 +1,62 @@
-\nomenclatureentry{a$\boldsymbol{t_o}$@[{$\boldsymbol{t_o}$}]\begingroup Subfault onset time [s], e.g. $t_o=(x-x_{\rm start})/v_{\rm rupture}$.\nomeqref {7.0}|nompageref}{30}
-\nomenclatureentry{a$\boldsymbol{x},\,\boldsymbol{x}_{\rm start}$@[{$\boldsymbol{x},\,\boldsymbol{x}_{\rm start}$}]\begingroup Horizontal coordinate and rupture starting position [m].\nomeqref {7.0}|nompageref}{30}
+\nomenclatureentry{A01DAS@[{DAS}]\begingroup Distributed acoustic sensing\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A02SALVUS@[{SALVUS}]\begingroup Spectral-element wave propagation software framework\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A03SE@[{SE}]\begingroup Spectral element\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A04FE@[{FE}]\begingroup Finite element\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A05FEM@[{FEM}]\begingroup Finite element method\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A06MPM@[{MPM}]\begingroup Material point method\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A07DEM@[{DEM}]\begingroup Discrete element method\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A08CZM@[{CZM}]\begingroup Cohesive zone model\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A09PST@[{PST}]\begingroup Propagation saw test\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A10STF@[{STF}]\begingroup Source time function\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A11$S_0$@[{$S_0$}]\begingroup Symmetric Lamb-wave mode\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A12$A_0$@[{$A_0$}]\begingroup Antisymmetric Lamb-wave mode\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S01$\rho$@[{$\rho$}]\begingroup Density [$\mathrm{kg\,m^{-3}}$]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S02$\sigma$@[{$\sigma$}]\begingroup Stress tensor [Pa]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S03$u$@[{$u$}]\begingroup Displacement field [m]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S04$v$@[{$v$}]\begingroup Velocity field [$\mathrm{m\,s^{-1}}$]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S05$f$@[{$f$}]\begingroup Body-force density [$\mathrm{N\,m^{-3}}$]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S06$C$@[{$C$}]\begingroup Fourth-order stiffness tensor [Pa]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S07$\lambda,\,\mu$@[{$\lambda,\,\mu$}]\begingroup Lam\'e parameters [Pa]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S08$E$@[{$E$}]\begingroup Young's modulus [Pa]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S09$v_p,\,v_s$@[{$v_p,\,v_s$}]\begingroup P-wave and S-wave speeds [$\mathrm{m\,s^{-1}}$]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S10$G$@[{$G$}]\begingroup Computational domain\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S11$\partial G$@[{$\partial G$}]\begingroup Boundary of the domain\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S12$\hat{n}$@[{$\hat{n}$}]\begingroup Outward unit normal vector on $\partial G$\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S13$w$@[{$w$}]\begingroup Test function in the weak form\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S14$\bar{\tau}(x)$@[{$\bar{\tau}(x)$}]\begingroup Prescribed boundary traction\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S15$\bar{u}(x),\,\bar{v}(x)$@[{$\bar{u}(x),\,\bar{v}(x)$}]\begingroup Initial displacement and initial velocity\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S16$\phi_j$@[{$\phi_j$}]\begingroup Basis (shape) function with index $j$\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S17$F_j$@[{$F_j$}]\begingroup Expansion coefficient of basis function $\phi_j$\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S18$N$@[{$N$}]\begingroup Number of basis functions per expansion\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S19$M$@[{$M$}]\begingroup Number of quadrature points\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S20$W_i$@[{$W_i$}]\begingroup Quadrature weight at point $i$\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S21$x$@[{$x$}]\begingroup Physical coordinate [m]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S22$\theta$@[{$\theta$}]\begingroup Reference (element-local) coordinate\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S23$\left|\frac{\partial x}{\partial \theta}\right|$@[{$\left|\frac{\partial x}{\partial \theta}\right|$}]\begingroup Jacobian determinant of reference-to-physical mapping\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S24$t_o$@[{$t_o$}]\begingroup Subfault onset time [s], e.g. $t_o=(x-x_{\rm start})/v_{\rm rupture}$\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S25$x_{\rm start}$@[{$x_{\rm start}$}]\begingroup Rupture starting position [m]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S26$v_{\rm rupture}$@[{$v_{\rm rupture}$}]\begingroup Rupture propagation speed [$\mathrm{m\,s^{-1}}$]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S27$\epsilon$@[{$\epsilon$}]\begingroup Strain tensor (or strain quantity, context-dependent)\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S28$\dot{\epsilon}$@[{$\dot{\epsilon}$}]\begingroup Strain-rate quantity [$\mathrm{s^{-1}}$]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S29$M_{ij}$@[{$M_{ij}$}]\begingroup Moment tensor component [N m]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S30$M_0$@[{$M_0$}]\begingroup Scalar seismic moment [N m]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S31$V_p$@[{$V_p$}]\begingroup Particle (or source-cell) volume [$\mathrm{m^3}$]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S32$r_{\rm mode}$@[{$r_{\rm mode}$}]\begingroup Mode-mix ratio (0: pure mode I, 1: pure mode II)\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S33$\Delta_n,\,\Delta_t$@[{$\Delta_n,\,\Delta_t$}]\begingroup Normal and tangential separations in CZM [m]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S34$\delta_n,\,\delta_t$@[{$\delta_n,\,\delta_t$}]\begingroup Characteristic normal and tangential opening scales [m]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S35$\delta_{n,c},\,\delta_{s,c},\,\delta_c$@[{$\delta_{n,c},\,\delta_{s,c},\,\delta_c$}]\begingroup Critical opening distances [m]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S36$\sigma_{\max},\,\tau_{\max}$@[{$\sigma_{\max},\,\tau_{\max}$}]\begingroup Peak normal and shear cohesive tractions [Pa]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S37$G_I,\,G_{II}$@[{$G_I,\,G_{II}$}]\begingroup Mode-I and mode-II fracture energies [$\mathrm{J\,m^{-2}}$]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S38$l_{ch}$@[{$l_{ch}$}]\begingroup Characteristic Irwin length [m]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S39$l_{cz}$@[{$l_{cz}$}]\begingroup Cohesive-zone length [m]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S40$\bar{\epsilon}_{\mathrm{DAS}}$@[{$\bar{\epsilon}_{\mathrm{DAS}}$}]\begingroup Gauge-averaged DAS strain\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S41$\dot{\bar{\epsilon}}_{\mathrm{DAS}}$@[{$\dot{\bar{\epsilon}}_{\mathrm{DAS}}$}]\begingroup Gauge-averaged DAS strain rate\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S42$l$@[{$l$}]\begingroup Gauge length [m]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S43$s_c$@[{$s_c$}]\begingroup Center position of DAS channel along the fiber [m]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S44$\mathbf{e}(s)$@[{$\mathbf{e}(s)$}]\begingroup Unit vector tangent to the fiber at arc-length position $s$\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S45$w(s),\,w_k$@[{$w(s),\,w_k$}]\begingroup Continuous and discrete spatial weighting kernels\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S46$N_g$@[{$N_g$}]\begingroup Number of grid samples within the gauge window\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S47$k$@[{$k$}]\begingroup Wavenumber [$\mathrm{rad\,m^{-1}}$]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S48$\omega$@[{$\omega$}]\begingroup Angular frequency [$\mathrm{rad\,s^{-1}}$]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S49$p,\,q$@[{$p,\,q$}]\begingroup Vertical wavenumber terms for P- and S-wave potentials\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S50$\alpha,\,\beta$@[{$\alpha,\,\beta$}]\begingroup Positive decay constants for evanescent wave terms\nomeqref {0}|nompageref}{1}
