@@ -250,7 +250,7 @@ job_*
 job_*/
 *.h5
 *.mat
-*.ipynb
+#*.ipynb
 *.sqlite3
 *.code-workspace
 
@@ -329,3 +329,5 @@ simulation_wavefield_custom_stf_rolled_super/
 simulation_wavefield_custom_stf_weighted_super/
 
 simulation_wavefield_custom_stf_weighted_sub/
+
+simulation_wavefield_custom_stf_weighted_sub_WIDE/
