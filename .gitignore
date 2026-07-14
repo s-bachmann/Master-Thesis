@@ -253,6 +253,7 @@ job_*/
 *.ipynb
 *.sqlite3
 *.code-workspace
+*.npz
 
 simulation_fault_zone_czm_adjusted_time_sub_linear_m1_f20_single/
 
