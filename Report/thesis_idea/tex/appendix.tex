@@ -9,7 +9,7 @@
 
 The complete code of all models and plots described can be found on github: \url{https://github.com/s-bachmann/Master-Thesis}. Meeting slides contains slides used for intermittent meetings with supervisors, Report contains all the \LaTeX documents and auxillary files used to write this thesis, and Test Simulations contains all the simulation and plotting code. 
 
-\chapter{Code Workflow}
+\chapter{Code Workflow fo CZM Model}
 \label{app:B}
 \subsection*{Part 1: Domain and Stress Profile Setup}
 \begin{tikzpicture}[node distance=2.8cm]
@@ -64,6 +64,32 @@ The complete code of all models and plots described can be found on github: \url
   \draw [arrow] (pro8) -- (pro9);
   \draw [arrow] (pro9) -- (pro10);
   \draw [arrow] (pro10) -- (end);
+\end{tikzpicture}
+
+\chapter{MPM conversion workflow}
+\label{app:E}
+\begin{tikzpicture}
+  \centering
+  \node (start) [startstop] {Output of MPM Simulation};
+  \node (in1) [io, below of=start] {Filtering out of plastic deformation using J-value};
+  \node (in2) [io, below of=in1] {Filtered stress tensor result};
+  \node (pro1) [process, below of=in2] {\begin{equation}
+  \epsilon = C_{ij}\sigma \end{equation} \parencite{holzapfelNonlinearSolidMechanics2010}};
+  \node (pro2) [process, below of=pro1] {Rewrite for stresses in individual directions}
+  \node (pro3) [process, below of=pro2] {Scale by particle volume: \begin{equation}
+  M_{ij} = \sigma_{ij} V_p.
+\end{equation}};
+\node (in3) [io, below of=pro3] {Individual moment tensor components, waveform via amplitude over time};
+\node (stop) [startstop, below of=in3] {Custom STF for SALVUS input};
+
+\draw [arrow] (start) -- (in1);
+\draw [arrow] (in1) -- (in2);
+\draw [arrow] (in2) -- (pro1);
+\draw [arrow] (pro1) -- (pro2);
+\draw [arrow] (pro2) -- (pro3);
+\draw [arrow] (pro3) -- (in3);
+\draw [arrow] (in3) -- (stop);
+
 \end{tikzpicture}
 
 \chapter{Parameters used in Models}
