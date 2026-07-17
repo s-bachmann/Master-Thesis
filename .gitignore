@@ -334,3 +334,5 @@ simulation_wavefield_custom_stf_weighted_sub/
 simulation_wavefield_custom_stf_weighted_sub_WIDE/
 
 simulation_wavefield_custom_stf_from_mpm/
+
+simulation_wavefield_custom_stf_from_mpm_only_taper/
