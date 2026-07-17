@@ -89,7 +89,7 @@ Key parameters and their provenance used in the simulations are summarized in ap
 All sources generated use SALVUS' custom source time function option. For the simple model and the cohesive zone model, this is done by writing a file with the source wavelets in them. The source wavelets have ricker shape according to \cite{RickerWavelet2021}: \begin{equation}
 ricker_{base} = 
     (1.0 - 2.0 * (\pi * f_0 * t_{local})^2)
-    e^{-((\pi * f_0 * t_local) ^2)}. 
+    e^{-((\pi * f_0 * t_{local}) ^2)}. 
    
 \end{equation} In the MPM case, the shape of the wavelets is obtained as described in \ref{sec:from_mpm_to_se}. The workflow of the code, including how the source speed is set up can be seen in the following flowchart. 
 
