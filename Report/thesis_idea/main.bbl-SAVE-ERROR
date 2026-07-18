@@ -19,6 +19,39 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{achenbachWavePropagationElastic2012}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=36ddce67fbeaa6e35b99c8f3bb54641a}{%
+           family={Achenbach},
+           familyi={A\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{fullhash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{fullhashraw}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{bibnamehash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{authorbibnamehash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{authornamehash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{authorfullhash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{authorfullhashraw}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The propagation of mechanical disturbances in solids is of interest in many branches of the physical scienses and engineering. This book aims to present an account of the theory of wave propagation in elastic solids. The material is arranged to present an exposition of the basic concepts of mechanical wave propagation within a one-dimensional setting and a discussion of formal aspects of elastodynamic theory in three dimensions, followed by chapters expounding on typical wave propagation phenomena, such as radiation, reflection, refraction, propagation in waveguides, and diffraction. The treatment necessarily involves considerable mathematical analysis. The pertinent mathematical techniques are, however, discussed at some length.}
+      \field{isbn}{978-0-08-093471-6}
+      \field{langid}{english}
+      \field{title}{Wave {{Propagation}} in {{Elastic Solids}}}
+      \field{year}{1973}
+      \keyw{Science / Mechanics / Fluids,Science / Mechanics / General,Science / Mechanics / Solids,Science / Physics / Condensed Matter}
+    \endentry
     \entry{afanasievSalvusFlexibleHighperformance2017}{article}{}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=61bfe0bd5f566e5d6781c73bb5c8b748}{%
@@ -1503,6 +1536,65 @@
       \verb /Users/salomebachmann/Zotero/storage/3LNGS7EQ/Hartog - 2017 - An Introduction to Distributed Optical Fibre Sensors.pdf
       \endverb
     \endentry
+    \entry{heierliAnticrackNucleationTriggering2008}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=46ae952760f3a1d78545ceb7cf954c64}{%
+           family={Heierli},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85e2a4ca6ebd2076b93ac4260f3e5a43}{%
+           family={Gumbsch},
+           familyi={G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f450477ded293f4e9bad6ed1b8793aa}{%
+           family={Zaiser},
+           familyi={Z\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{9b126ac5eb74154b5fbf45ace7c01dab}
+      \strng{fullhash}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{fullhashraw}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{bibnamehash}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{authorbibnamehash}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{authornamehash}{9b126ac5eb74154b5fbf45ace7c01dab}
+      \strng{authorfullhash}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{authorfullhashraw}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Snow slab avalanches are believed to begin by the gravity-driven shear failure of weak layers in stratified snow. The critical crack length for shear crack propagation along such layers should increase without bound as the slope decreases. However, recent experiments show that the critical length of artificially introduced cracks remains constant or, if anything, slightly decreases with decreasing slope. This surprising observation can be understood in terms of volumetric collapse of the weak layer during failure, resulting in the formation and propagation of mixed-mode anticracks, which are driven simultaneously by slope-parallel and slope-normal components of gravity. Such fractures may propagate even if crack-face friction impedes downhill sliding of the snowpack, indicating a scenario in which two separate conditions have to be met for slab avalanche release.}
+      \field{journaltitle}{Science}
+      \field{month}{7}
+      \field{number}{5886}
+      \field{title}{Anticrack {{Nucleation}} as {{Triggering Mechanism}} for {{Snow Slab Avalanches}}}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{321}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{240\bibrangedash 243}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1126/science.1153948
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/3B4R8NU5/Heierli et al. - 2008 - Anticrack Nucleation as Triggering Mechanism for Snow Slab Avalanches.pdf
+      \endverb
+    \endentry
     \entry{heierliAnticracksNewTheory2003}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=fee106f2ba31f0bc04711e8a84258cc5}{%
@@ -1538,6 +1630,7 @@
       \strng{authornamehash}{f965ee3127f3f32081614e4a1501dba0}
       \strng{authorfullhash}{081f8a73a0d735feaa3683562a46986d}
       \strng{authorfullhashraw}{081f8a73a0d735feaa3683562a46986d}
+      \field{extraname}{2}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
