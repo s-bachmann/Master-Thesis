@@ -77,14 +77,6 @@ The dependence on the reference coordinate system is described by E, which is a 
 
 The material point simulations of the PST performed by \parencite{gaumeDynamicAnticrackPropagation2018,trottetTransitionSubRayleighAnticrack2022} result in the recorded stresses in the model according to \cite{gaumeInvestigatingReleaseFlow2019}. The output of the model is particle velocity, the stress tensor, strain and the J-value, which distinguished between elastic and plastic deformation. The J-value is used as a filter to remove any plastic deformation. The filtering by deformation also ensures that any waves emitted by the cracking in the model are filtered out. This ensures that the data only contains the crack itself. \par
 
-%  This results in the stretch factor $\ \epsilon$ comprised of the material properties $\ C_{ij}$ such as Young's modulus, Lamé parameters and Poisson ratio as well as the stress matrix $\ \sigma$: \begin{equation}
-%   \epsilon = C_{ij}\sigma
-% \end{equation} \parencite{holzapfelNonlinearSolidMechanics2010}. The equation can be rewritten to obtain the stresses in different directions, in the xx direction for example: \begin{equation}
-%   \sigma_{xx} = (\lambda + 2\mu)\epsilon_{xx} + \lambda \epsilon_{yy}
-% \end{equation} \parencite{kAkiRichards19801981}. When scaling this with the particle volume, the individual moment tensor components can be obtained using \begin{equation}
-%   M_{ij} = \Delta\sigma_{ij} V_p.
-% \end{equation} \par
-
 To translate the continuum source to something which can be input to SALVUS, the relationship between stress and strain must be defined. The deformation of the material is described by the infinitesimal strain tensor $\ \epsilon_{ij}$, which is linearly related to the Cauchy stress tensor $\ \sigma_{ij}$ via the fourth-order stiffness tensor $C_ {ijkl}$ \parencite{holzapfelNonlinearSolidMechanics2010}. This relationship, known as generalized Hooke's law, is expressed as:
 \begin{equation}
   \sigma_{ij} = C_{ijkl} \epsilon_{ij}. 
@@ -92,7 +84,9 @@ To translate the continuum source to something which can be input to SALVUS, the
 
 For a, isotropic, linear elastic material, such as the snow in this case, the stiffness tensor simplifies and can be described by the Lamé-parameters. In the xx-direction this is: \begin{equation}
   \sigma_{xx} = (\lambda + 2\mu)\epsilon_{xx} + \lambda \epsilon_{yy}
-\end{equation} \parencite{kAkiRichards19801981}.
+\end{equation} \parencite{kAkiRichards19801981}. When scaling this with the particle volume, the individual moment tensor components can be obtained using \begin{equation}
+  M_{ij} = \Delta\sigma_{ij} V_p.
+\end{equation} \par
 
 These moment tensor components can then be input into SALVUS as custom source time functions. The waveforms are obtained via the amplitude of the different moment tensor components at different times. \par
 
