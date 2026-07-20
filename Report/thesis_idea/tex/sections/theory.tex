@@ -82,7 +82,7 @@ The material point simulations of the PST performed by \parencite{gaumeDynamicAn
 \end{equation} \parencite{holzapfelNonlinearSolidMechanics2010}. The equation can be rewritten to obtain the stresses in different directions, in the xx direction for example: \begin{equation}
   \sigma_{xx} = (\lambda + 2\mu)\epsilon_{xx} + \lambda \epsilon_{yy}
 \end{equation} \parencite{kAkiRichards19801981}. When scaling this with the particle volume, the individual moment tensor components can be obtained using \begin{equation}
-  M_{ij} = \sigma_{ij} V_p.
+  M_{ij} = \Delta\sigma_{ij} V_p.
 \end{equation} \par
 
 These moment tensor components can then be input into SALVUS as custom source time functions. The waveforms are obtained via the amplitude of the different moment tensor components at different times. \par
