@@ -143,12 +143,28 @@ The workflow of the code, including how the source speed is set up can be seen i
 
 \section{Source Generation for MPM}
 
-For the MPM results that are translated to FE, the moment tensor components and source wavelet shapes are obtained as described in section \ref{sec:from_mpm_to_se}. These are then loaded and translated into individual components, which can be passed to SALVUS easily. A visual representation for the workflow with the MPM source wavelets is: 
+For the MPM results that are translated to FE, the moment tensor components and source wavelet shapes are obtained as described in section \ref{sec:from_mpm_to_se}. These are then loaded and translated into individual components, which can be passed to SALVUS easily. The time delay previously described is already contained in the MPM data. A visual representation for the workflow with the MPM source wavelets is: 
 
 \begin{tikzpicture}
     \node (start) [startstop] {MPM Output: Stress, Strain, J-Value};
     \node (pro1) [process, below of=startstop] {Filtering out of plastic deformation and waves emitted by crack by J-Value};
     \node (pro2) [io, below of=pro1] {Stretch factor comprised of material properties};
     \node (pro3) [process, below of=pro2] {Stresses in individual directions};
+    \node (pro4) [io, below of=pro3] {Multiplication with particle volume};
+    \node (pro5) [startstop, below of=pro4] {Moment tensor components in every direction};
+    \node (pro6) [process, below of=pro5] {Read into SALVUS};
+    \node (pro7) [process, below of=pro6] {\textcolor{magenta}{FILTERING}}
+    \node (pro8) [process, below of=pro7] {Padding of MPM coordinates to be away from abcs};
+    \node (stop) [startstop, below of=pro8] {Setup of wavelet as stf, pass to SALVUS};
+
+    \draw [arrow] (start) -- (pro1);
+    \draw [arrow] (pro1) -- (pro2);
+    \draw [arrow] (pro2) -- (pro3);
+    \draw [arrow] (pro3) -- (pro4);
+    \draw [arrow] (pro4) -- (pro5);
+    \draw [arrow] (pro5) -- (pro6);
+    \draw [arrow] (pro6) -- (pro7);
+    \draw [arrow] (pro7) -- (pro8);
+    \draw [arrow] (pro8) -- (stop);
 \end{tikzpicture}
 
