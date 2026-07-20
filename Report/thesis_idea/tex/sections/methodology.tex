@@ -145,57 +145,31 @@ The workflow of the code, including how the source speed is set up can be seen i
 
 For the MPM results that are translated to FE, the moment tensor components and source wavelet shapes are obtained as described in section \ref{sec:from_mpm_to_se}. These are then loaded and translated into individual components, which can be passed to SALVUS easily. The time delay previously described is already contained in the MPM data. A visual representation for the workflow with the MPM source wavelets is: 
 
-\begin{figure}[htbp]
-    \centering
-\begin{tikzpicture}[node distance=1.5cm and 2.5cm, every node/.style={text centered}]
-    % ==========================================================
-% SECTION 1: Pre-processing (Python / MPM)
-% ==========================================================
-\node (start) [startstop] {MPM Output:\\Stress, Strain, J-Value};
+\begin{figure}
+  \centering  
 
-% Flow moves right
-\node (pro1) [process, right of=start, xshift=2cm] {Filter plastic\\deformation/waves\\(by J-Value)};
-\node (pro3) [process, right of=pro1, xshift=2cm] {Calculate stresses\\in individual\\directions};
+\begin{tikzpicture}[node distance=3.5cm and 2.5cm, every node/.style={text centered}]
+    \node (start) [startstop] {MPM Output: Stress, Strain, J-Value};
+    \node (pro1) [process, below of=startstop] {Filtering out of plastic deformation and waves emitted by crack by J-Value};
+    \node (pro2) [io, below of=pro1] {Stretch factor comprised of material properties};
+    \node (pro3) [process, below of=pro2] {Stresses in individual directions};
+    \node (pro4) [io, below of=pro3] {Multiplication with particle volume};
+    \node (pro5) [startstop, right of=start, ] {Moment tensor components in every direction};
+    \node (pro6) [process, below of=pro5] {Read into SALVUS};
+    \node (pro7) [process, below of=pro6] {\textcolor{magenta}{FILTERING}}
+    \node (pro8) [process, below of=pro7] {Padding of MPM coordinates to be away from abcs};
+    \node (stop) [startstop, below of=pro8] {Setup of wavelet as stf, pass to SALVUS};
 
-% Data inputs branch down
-\node (pro2) [io, below of=pro1, yshift=-0.5cm] {Material properties\\(Stretch factor)};
-\node (pro4) [io, below of=pro3, yshift=-0.5cm] {Particle volume};
-
-% Final output of this section
-\node (pro5) [startstop, right of=pro3, xshift=2cm] {Moment tensor\\components\\(every direction)};
-
-
-
-% ==========================================================
-% SECTION 2: SALVUS Setup
-% ==========================================================
-% Flow moves right from pro5, starting the new group
-\node (pro7) [process, right of=pro5, xshift=2.5cm] {FILTERING};
-\node (pro8) [process, right of=pro7, xshift=1.5cm] {Pad coordinates\\away from\\ABCs};
-\node (stop) [startstop, right of=pro8, xshift=1.5cm] {Setup wavelet (STF),\\pass to SALVUS};
-
-
-% ==========================================================
-% DRAW ATT THE ARROWS
-% ==========================================================
-% Main horizontal flow
-\draw [arrow] (start) -- (pro1);
-\draw [arrow] (pro1) -- (pro3);
-\draw [arrow] (pro3) -- (pro5);
-
-% Input data flows (angled)
-\draw [arrow] (pro2) -- (pro1);
-\draw [arrow] (pro4) -- (pro3);
-
-% Cross-group flow (thick arrow to imply data transfer)
-\draw [arrow, line width=1.5pt, dash pattern=on 5pt off 2pt] (pro5) -- node[anchor=south, yshift=2pt, text=black!70] {Load Data} (pro7);
-
-% Final group flow
-\draw [arrow] (pro7) -- (pro8);
-\draw [arrow] (pro8) -- (stop);
-
+    \draw [arrow] (start) -- (pro1);
+    \draw [arrow] (pro1) -- (pro2);
+    \draw [arrow] (pro2) -- (pro3);
+    \draw [arrow] (pro3) -- (pro4);
+    \draw [arrow] (pro4) -- (pro5);
+    \draw [arrow] (pro5) -- (pro6);
+    \draw [arrow] (pro6) -- (pro7);
+    \draw [arrow] (pro7) -- (pro8);
+    \draw [arrow] (pro8) -- (stop);
 \end{tikzpicture}
-\caption{Workflow for conversion of MPM data and setup as STF in SALVUS.}
+\caption{Workflow for conversion of MPM data and input as SALVUS STF.}
 \label{fig:mpm_workflow}
 \end{figure}
-
