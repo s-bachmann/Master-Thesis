@@ -84,6 +84,10 @@ Consequently, at the extremes of $r_{\rm mode}=0$ or $1$, the unaligned componen
 Key parameters and their provenance used in the simulations are summarized in appendix \ref{app:C}. 
 
 
+\subsection{Original MPM Model}
+\textcolor{magenta}{SEE IF THIS IS NECCESSARY BASED ON THE RESULTS SHOWN}
+
+
 \section{Source Generation for Simple and CZM Model}
 
 All sources generated use SALVUS' custom source time function option. For the simple model and the cohesive zone model, this is done by writing a file with the source wavelets in them. The source wavelets have ricker shape with peak frequency $\ f_m$ according to \cite{RickerWavelet2021}: \begin{equation}
@@ -138,4 +142,6 @@ The workflow of the code, including how the source speed is set up can be seen i
 \end{figure}
 
 \section{Source Generation for MPM}
+
+For the MPM results that are translated to FE, the moment tensor components and source wavelet shapes are obtained as described in section \ref{sec:from_mpm_to_se}. These are then loaded and translated into individual components, which can be passed to SALVUS easily. 
 
