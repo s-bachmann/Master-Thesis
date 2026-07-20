@@ -75,7 +75,7 @@ The dependence on the reference coordinate system is described by E, which is a 
 \section{From Particles to Waves: Translating MPM to SE}
 \label{sec:from_mpm_to_se}
 
-The material point simulations of the PST performed by \parencite{gaumeDynamicAnticrackPropagation2018,trottetTransitionSubRayleighAnticrack2022} result in the recorded stresses in the model according to \cite{gaumeInvestigatingReleaseFlow2019}. The output of the model is particle velocity, the stress tensor, strain and the J-value, which distinguished between elastic and plastic deformation. The J-value is used as a filter to remove any plastic deformation. The filtering by deformation also ensures that any waves emitted by the cracking in the model are filtered out. This ensures that the data only contains the crack itself so this data can be input into SALVUS. \par
+The material point simulations of the PST performed by \parencite{gaumeDynamicAnticrackPropagation2018,trottetTransitionSubRayleighAnticrack2022} result in the recorded stresses in the model according to \cite{gaumeInvestigatingReleaseFlow2019}. The output of the model is particle velocity, the stress tensor, strain and the J-value, which distinguished between elastic and plastic deformation. The J-value is used as a filter to remove any plastic deformation. The filtering by deformation also ensures that any waves emitted by the cracking in the model are filtered out. This ensures that the data only contains the crack itself. \par
 
 %  This results in the stretch factor $\ \epsilon$ comprised of the material properties $\ C_{ij}$ such as Young's modulus, Lamé parameters and Poisson ratio as well as the stress matrix $\ \sigma$: \begin{equation}
 %   \epsilon = C_{ij}\sigma
@@ -85,7 +85,10 @@ The material point simulations of the PST performed by \parencite{gaumeDynamicAn
 %   M_{ij} = \Delta\sigma_{ij} V_p.
 % \end{equation} \par
 
-
+To translate the continuum source to something which can be input to SALVUS, the relationship between stress and strain must be defined. The deformation of the material is described by the infinitesimal strain tensor $\ \epsilon_{ij}$, which is linearly related to the Cauchy stress tensor $\ \sigma_{ij}$ via the fourth-order stiffness tensor $C_ {ijkl}$ \parencite{holzapfelNonlinearSolidMechanics2010}. This relationship, known as generalized Hooke's law, is expressed as:
+\begin{equation}
+  \sigma_{ij} = C_{ijkl} \epsilon_{ij}. 
+\end{equation}
 
 These moment tensor components can then be input into SALVUS as custom source time functions. The waveforms are obtained via the amplitude of the different moment tensor components at different times. \par
 
