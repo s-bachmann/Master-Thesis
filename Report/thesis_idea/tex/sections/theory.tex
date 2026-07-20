@@ -91,6 +91,12 @@ The visual representation fo this workflow can be seen in appendix \ref{app:E}.
 
 \section{Simulation of DAS data}
 
-To compare the results obtained in the SALVUS simulations to field DAS data, the numerical outputs have to be transformed. The backscattered delay of a laser pulse along a straigth cable is proportional to the integrated strain tensor components along the gauge length \parencite{noeFrontiersFullwaveformSeismology2025}. The relationship between the deformation tensor F and the laser pulse is described by: \begin{equation}
-  p_{laser}(t) \propto \int_{-\frac{1}{2}}^{\frac{1}{2}} |I+F(s,t)e(s)|ds
+To compare the results obtained in the SALVUS simulations to field DAS data, the numerical outputs have to be transformed. The backscattered delay of a laser pulse along a straigth cable is proportional to the integrated strain tensor components along the gauge length \parencite{noeFrontiersFullwaveformSeismology2025}. The relationship between the deformation tensor F and the phase delay of the laser pulse is described by: \begin{equation}
+  \phi_{laser}(t) \propto \int_{-\frac{1}{2}}^{\frac{1}{2}} |I+F(s,t)e(s)|ds
+  \label{eq:phase_deformation}
 \end{equation}, according to MISSING CITATION. In this equation, I is the identity matrix abnd e is the local unit tangent vector at the arc length s along the DAS fibre in 3D \parencite{noeFrontiersFullwaveformSeismology2025}. \par 
+
+Because the deformations of interest are small, meaning that $\ F << I$, equation \ref{eq:phase_deformation} can be linearized. This leads to \begin{equation}
+  \phi_{laser} \propto \int_{-\frac{1}{2}}^{\frac{1}{2}}e^T(s)\epsilon(s,t)e(s)ds
+  \label{eq:linearized_phase_deformation}
+\end{equation}, where the strain tensor is $\ \epsilon = \frac{1}{2} (F+F^T)$ MISSING CITATION. \par
