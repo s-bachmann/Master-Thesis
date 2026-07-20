@@ -90,6 +90,7 @@ These moment tensor components can then be input into SALVUS as custom source ti
 The visual representation fo this workflow can be seen in appendix \ref{app:E}. 
 
 \section{Simulation of DAS data}
+\label{sec:das_theory}
 
 To compare the results obtained in the SALVUS simulations to field DAS data, the numerical outputs have to be transformed. The backscattered delay of a laser pulse along a straigth cable is proportional to the integrated strain tensor components along the gauge length \parencite{noeFrontiersFullwaveformSeismology2025}. The relationship between the deformation tensor F and the phase delay of the laser pulse is described by: \begin{equation}
   \phi_{laser}(t) \propto \int_{-\frac{1}{2}}^{\frac{1}{2}} |I+F(s,t)e(s)|ds
@@ -105,4 +106,4 @@ Because the deformations of interest are small, meaning that $\ F << I$, equatio
   \bar{\epsilon}_{DAS}(s_c,t)= \frac{1}{l} \int_{s_c -\frac{1}{2}}^{s_c +\frac{1}{2}}e^T(x)\epsilon(s,t)e(s)ds
 \end{equation} \parencite{noeFrontiersFullwaveformSeismology2025}. This means that the measured strain is averaged over the gauge length l \parencite{noeFrontiersFullwaveformSeismology2025}. \par
 
-\textcolor{magenta}{describe how implemented exactly}
+
