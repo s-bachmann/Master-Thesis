@@ -143,5 +143,12 @@ The workflow of the code, including how the source speed is set up can be seen i
 
 \section{Source Generation for MPM}
 
-For the MPM results that are translated to FE, the moment tensor components and source wavelet shapes are obtained as described in section \ref{sec:from_mpm_to_se}. These are then loaded and translated into individual components, which can be passed to SALVUS easily. 
+For the MPM results that are translated to FE, the moment tensor components and source wavelet shapes are obtained as described in section \ref{sec:from_mpm_to_se}. These are then loaded and translated into individual components, which can be passed to SALVUS easily. A visual representation for the workflow with the MPM source wavelets is: 
+
+\begin{tikzpicture}
+    \node (start) [startstop] {MPM Output: Stress, Strain, J-Value};
+    \node (pro1) [process, below of=startstop] {Filtering out of plastic deformation and waves emitted by crack by J-Value};
+    \node (pro2) [io, below of=pro1] {Stretch factor comprised of material properties};
+    \node (pro3) [process, below of=pro2] {Stresses in individual directions};
+\end{tikzpicture}
 
