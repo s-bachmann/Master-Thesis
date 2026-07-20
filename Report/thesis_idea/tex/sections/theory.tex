@@ -90,6 +90,10 @@ To translate the continuum source to something which can be input to SALVUS, the
   \sigma_{ij} = C_{ijkl} \epsilon_{ij}. 
 \end{equation}
 
+For a, isotropic, linear elastic material, such as the snow in this case, the stiffness tensor simplifies and can be described by the Lamé-parameters. In the xx-direction this is: \begin{equation}
+  \sigma_{xx} = (\lambda + 2\mu)\epsilon_{xx} + \lambda \epsilon_{yy}
+\end{equation} \parencite{kAkiRichards19801981}.
+
 These moment tensor components can then be input into SALVUS as custom source time functions. The waveforms are obtained via the amplitude of the different moment tensor components at different times. \par
 
 The visual representation fo this workflow can be seen in appendix \ref{app:E}. 
