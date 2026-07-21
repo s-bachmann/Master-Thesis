@@ -18,7 +18,7 @@
 
 \subsection{Simple Model}
 \label{sec:simple_model}
-The same two-layer medium as in section \ref{sec:czm_methods} was set up. This medium spans 400m in width and 3m in height. In the simple case, a series of SALVUS moment tensor sources are set up with a certain distance, they span from 30m to 270m with a spacing of 10cm. The model domain setup can be seen in figure \ref{fig:domain_sketch}. The air layer is shown in light blue, the snow layer in dark blue. Because the sources have 10cm spacing, the source extent instead of individual sources is shown in red. The time delay with which the sources fire is dependend on the sub-rayleigh or supershear case which is implemented, the bounds for the crack propagation velocity are taken from \cite{trottetTransitionSubRayleighAnticrack2022}, they are 0.6 or 1.6 times the shear wave velocity for sub-rayleigh and supershear cases respectively.\par
+The same two-layer medium as in section \ref{sec:czm_methods} was set up. The parameters for this medium are listed in appendix \ref{app:C}, table \ref{tab:simple_params}. This medium spans 400m in width and 3m in height. In the simple case, a series of SALVUS moment tensor sources are set up with a certain distance, they span from 30m to 270m with a spacing of 10cm. The model domain setup can be seen in figure \ref{fig:domain_sketch}. The air layer is shown in light blue, the snow layer in dark blue. Because the sources have 10cm spacing, the source extent instead of individual sources is shown in red. The time delay with which the sources fire is dependend on the sub-rayleigh or supershear case which is implemented, the bounds for the crack propagation velocity are taken from \cite{trottetTransitionSubRayleighAnticrack2022}, they are 0.6 or 1.6 times the shear wave velocity for sub-rayleigh and supershear cases respectively.\par
 
 \begin{figure}[h]
     \centering
@@ -31,7 +31,7 @@ The bedrock or soil is not considered in both models. This is because preliminar
 
 \subsection{MPM Model}
 \label{sec:mpm_model}
-To represent the results of the more complex source time functions obtained from the material point method simulations, the same layered model as \cite{trottetTransitionSubRayleighAnticrack2022} was implemented. \par
+To represent the results of the more complex source time functions obtained from the material point method simulations, the same layered model as \cite{trottetTransitionSubRayleighAnticrack2022} was implemented.The material properties, taken from \cite{trottetTransitionSubRayleighAnticrack2022}, are listed in appendix \ref{app:C}, table \ref{tab:mpm_params}. \par
 
 This consists of the bed layer, a weak layer and a snow slab layer. To account for the absorbing boundaries which are implemented at the top and sides, the model domain was extended. At the sides, this was done by extending the model extent to accomodate the abcs. At the top however, an air layer was added which accounts for the abcs in thickness. This was done to keep the original thickness of the snow slab layer described by \cite{trottetTransitionSubRayleighAnticrack2022} but still have a boundary which leads to no reflections from the top of the domain. The setup can be seen in \textcolor{magenta}{FIGURE}. 
 
@@ -91,7 +91,7 @@ Consequently, at the extremes of $r_{\rm mode}=0$ or $1$, the unaligned componen
 %   \item Rupture discretization: subfault onset times follow $t_o=(x-x_{\rm start})/v_{\rm rupture}$; rise time is taken as $t_{rise}\approx l_{cz}/v_{\rm rupture}$; scalar moment per subfault $M_0=\mu\,x_{\rm slip}\,\Delta x$.
 % \end{itemize}
 
-Key parameters and their provenance used in the simulations are summarized in appendix \ref{app:C}. 
+Key parameters and their provenance used in the simulations are summarized in appendix \ref{app:C}, table \ref{tab:simple_params}. 
 
 \section{Source Generation for Simple and CZM Model}
 
