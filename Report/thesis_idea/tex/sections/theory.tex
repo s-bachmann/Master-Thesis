@@ -206,7 +206,7 @@ For a, isotropic, linear elastic material, such as the snow in this case, the st
   \sigma_{xx} = (\lambda + 2\mu)\epsilon_{xx} + \lambda \epsilon_{yy}
 \end{equation} \parencite{kAkiRichards19801981}. When scaling this with the particle volume, the individual moment tensor components can be obtained using \begin{equation}
   M_{ij} = \Delta\sigma_{ij} V_p.
-\end{equation} \par
+\end{equation} The scaling with the particle volume is done because in a small material volume, such as a snow particle, the stress drop is the same as a small seismic point source \parencite{backusMomentTensorsOther1976}. This is why multiplying the stress tensor with the particle volume yields the moment tensor component.  \par
 
 These moment tensor components can then be input into SALVUS as custom source time functions. The waveforms are obtained via the amplitude of the different moment tensor components at different times. \par
 
