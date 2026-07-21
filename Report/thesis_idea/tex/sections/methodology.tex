@@ -31,7 +31,9 @@ The bedrock or soil is not considered in both models. This is because preliminar
 
 \subsection{MPM Model}
 \label{sec:mpm_model}
-To represent the results of the more complex source time functions obtained from the material point method simulations, the same model as \cite{trottetTransitionSubRayleighAnticrack2022} was implemented. \par
+To represent the results of the more complex source time functions obtained from the material point method simulations, the same layered model as \cite{trottetTransitionSubRayleighAnticrack2022} was implemented. \par
+
+This consists of the bed layer, a weak layer and a snow slab layer. To account for the absorbing boundaries which are implemented at the top and sides, the model domain was extended. At the sides, this was done by extending the model extent to accomodate the abcs. At the top however, an air layer was added which accounts for the abcs in thickness. This was done to keep the original thickness of the snow slab layer described by \cite{trottetTransitionSubRayleighAnticrack2022} but still have a boundary which leads to no reflections from the top of the domain. The setup can be seen in \textcolor{magenta}{FIGURE}. 
 
 
 
