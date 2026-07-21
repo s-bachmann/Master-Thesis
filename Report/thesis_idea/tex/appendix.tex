@@ -110,7 +110,29 @@ $G_I, G_{II}$ & 0.35, 0.50 $\ J/m^s$from \cite{mahajanModelingInterfacialCrack20
 $v_s, v_p, \rho$ & 67.9366, 109.4 m/s, 250 kg/m³ from \cite{trottetTransitionSubRayleighAnticrack2022} (converted to $\mu,\lambda,E$) \\
 $r_{\rm mode}$ & User input (0 = Mode I, 1 = Mode II) \\
 \hline
-\caption{Parameters used in the Simulations}
+\caption{Parameters used in the simple simulations.}
+\label{tab:simple_params}
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{ll}
+\hline
+Parameter & Value & from \cite{trottetTransitionSubRayleighAnticrack2022} \\
+\hline
+$\theta$ & $45^\circ$ \\
+$\rho_{\rm slab}, \rho_{\rm bed}, \rho_{\rm wl}$ & 250.0, 300.0, 100.0 $\text{kg/m}^3$ \\
+$E_{\rm slab}, E_{\rm bed}, E_{\rm wl}$ & $3\times 10^6$, $4\times 10^6$, $1\times 10^6$ Pa \\
+$\nu$ & 0.3 (Poisson's ratio) \\
+$\Delta x$ & 0.01 m \\
+$\Delta t_{\rm frame}$ & 1/500 s \\
+$\mathbf{F}$ & Deformation gradient tensor ($F_{00}$ in $xx$, $F_{11}$ in $yy$) \\
+$\mathbf{T}$ & Stress tensor ($T_{11}$ in $xx$, $T_{22}$ in $yy$) \\
+$\mathbf{P}$ & Particle position $(x, y, z)$ \\
+$\text{LogJP}$ & Cumulative plastic damage ($> 0$) \\
+\hline
+\caption{Parameters used in the MPM simulations, all taken from \cite{trottetTransitionSubRayleighAnticrack2022}.}
+\label{tab:mpm_params}
 \end{tabular}
 \end{center}
 
