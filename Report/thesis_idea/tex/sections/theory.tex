@@ -215,7 +215,7 @@ The visual representation fo this workflow can be seen in appendix \ref{app:E}.
 \section{Simulation of DAS data}
 \label{sec:das_theory}
 
-To compare the results obtained in the SALVUS simulations to field DAS data, the numerical outputs have to be transformed. The backscattered delay of a laser pulse along a straigth cable is proportional to the integrated strain tensor components along the gauge length \parencite{noeFrontiersFullwaveformSeismology2025}. The relationship between the deformation tensor F and the phase delay of the laser pulse is described by: \begin{equation}
+To compare the results obtained in the SALVUS simulations to field DAS data, the numerical outputs have to be transformed. This is because field DAS measurements, the output are the fields averaged over the gauge length \parencite{lindseyFiberOpticSeismology2021} rather than output at every point along the calble. The backscattered delay of a laser pulse along a straigth cable is proportional to the integrated strain tensor components along the gauge length \parencite{noeFrontiersFullwaveformSeismology2025}. The relationship between the deformation tensor F and the phase delay of the laser pulse is described by: \begin{equation}
   \phi_{laser}(t) \propto \int_{-\frac{1}{2}}^{\frac{1}{2}} |I+F(s,t)e(s)|ds
   \label{eq:phase_deformation}
 \end{equation}, according to \cite{fichtnerTheoryPhaseTransmission2022}. In this equation, I is the identity matrix abnd e is the local unit tangent vector at the arc length s along the DAS fibre in 3D \parencite{noeFrontiersFullwaveformSeismology2025}. \par 
