@@ -110,7 +110,7 @@ The workflow of the code, including how the source speed is set up can be seen i
 \begin{figure}[htbp]
     \centering
     % Setting a comfortable grid spacing via positioning keys
-    \begin{tikzpicture}[node distance=1.5cm and 2.5cm, every node/.style={text centered}]
+    \begin{tikzpicture}[node distance=1.5cm and 2.5cm, every node/.style={text centered}][h]
         
         % --- COLUMN 1: Geometry & Kinematics ---
         \node (start) [startstop] {Source Wavelet Setup};
@@ -158,7 +158,7 @@ For the MPM results that are translated to FE, the moment tensor components and 
 \begin{figure}[htbp]
   \centering  
 
-\begin{tikzpicture}[node distance=2.5cm and 7.5cm, every node/.style={text centered}]
+\begin{tikzpicture}[node distance=2.5cm and 7.5cm, every node/.style={text centered}][h]
     \node (start) [startstop] {MPM Output: Stress, Strain, J-Value};
     \node (pro1) [process, below of=start] {Filtering out of plastic deformation and waves emitted by crack by J-Value};
     \node (pro2) [io, below of=pro1] {Stretch factor comprised of material properties};
