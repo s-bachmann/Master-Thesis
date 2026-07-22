@@ -29,7 +29,7 @@ This precursor in the sub-rayleigh strain and strain rate plots has a slope whic
 
 In the supershear strain and strain rate plots, the main wavefront weakens with increasing time (meaning the colors are less saturated). The same is true for the precursor in the sub-rayleigh strain and strain rate plots at the snow bottom. The weakening of the wavefront is observed clearly in the supershear case, because the crack travels faster than the guided waves \parencite{dunhamNearsourceGroundMotion2005}. A Mach-front is created, where all the waves travel together in a "shock-front" \parencite{dunhamNearsourceGroundMotion2005}, but once this front passes, there is attenuation of energy. In the sub-rayleigh case on the other hand, the guided waves are faster than the crack \parencite{kAkiRichards19801981}, there is reflection of the waves between the top and bottom of the snow, which creates the osicllations which can be seen in figure \ref{fig:sub_strain}. \par
 
-In the sub-rayleigh case, the precursor wave also broadens and weakens with time (right column of figure \ref{fig:sub_strain}). At the snow bottom, they are further away from their source (which is at crack depth). Because the S0 precursor is only emitted by the first and last source, its first arrival is strongest. After that, it loses energy because there is no source emitting this type of wave anymore, and the S0 precursor loses energy \parencite{kAkiRichards19801981}, which can be seen by the colors fading. \par
+In the sub-rayleigh case, the precursor wave also broadens and weakens with time (right column of figure \ref{fig:sub_strain}). At the snow bottom, they are further away from their source (which is at crack depth). Because the S0 precursor is only emitted by the first and last source, its first arrival is strongest. After that, it loses energy because there is no source emitting this type of wave anymore, and the S0 precursor loses energy \parencite{kAkiRichards19801981}, which can be seen by the colors fading. This wavefront does not broaden, it only starts fading with increasing time. \par
 
 The broadening of the wavefront with increasing time can be explained by dispersion. By the reflections of the top and bottom snow boundary, the waves present start interfering with each other, which can lead to constructive or destructive interference \parencite{kAkiRichards19801981}. This means that waves can start travelling at different phase velocities, because of the interference \cite{graffWaveMotionElastic1975}. The phase and group velocities of waves are described as \begin{equation}
 v_{\text{ph}} = \frac{\omega}{k}, \quad v_{\text{g}} = \frac{d\omega}{dk}
@@ -86,6 +86,8 @@ Like in the strain and strain rate plots, the main wavefronts in the supershear 
 \subsubsection{Similarity to Strain and Strain Rate Plots}
 The sub-rayleigh horizontal strain and strain rate plots in figure \ref{fig:sub_strain} look very similar to the horizontal velocity plots in figure \ref{fig:sub_vel}. The same is true for the supershear strain and strain rate in figure \ref{fig:super_strain}, which look similar to all but the vertical velocity at the snow bottom (top right in figure \ref{fig:super_vel}). This is intuitive because strain is the spatial derivative of displacement ($\ \frac{\partial u}{\partial x}$), strain rate is the temporal derivative of strain ($\ \frac{\partial^2 u}{\partial x \partial t}$). Velocity on the other hand is the spatial derivative of displacement ($\ \frac{\partial u}{\partial t}$), so all the values are derived from displacement. The strain and strain rate shown is in the horizontal direction, which explains why the vertical velocity looks different from the strain (rate) plots. \par
 
+Because the velocity plots are so similar to the strain and strain rate plots, the effects observed in both results are similar. Just like in strain and strain rate, there is broadening of the wavefront in the supershear case in figure \ref{fig:super_vel}, which can be explained by dispersion and envelope spreading, shown in the strain and strain rate discussion. \par
+
 \subsubsection{Two-wavefront structure in Sub-Rayleigh}
 \label{sec:disc_sub_two_waves}
 
@@ -127,18 +129,6 @@ Furthermore, for wave components whose horizontal phase velocities are slower th
 \end{equation}
 These hyperbolic profiles dictate that high-frequency, shorter wavelength  phases decay exponentially as a function of vertical distance from the location of the crack. In other words, higher frequencies are attenuated more quickly, which explains the weakening of the wavefronts observed. This decay is not dissipative, which means that the energy is not lost, it is trapped in the near-field, which is consistent with the guided-wave trapping described by \textcite{graffWaveMotionElastic1975}. \par
 
-
-\subsubsection{Dispersion and Broadening of Wavefronts}
-
-The weakening of the wavefront is observed clearly in the supershear case, because the crack travels faster than the guided waves \parencite{dunhamNearsourceGroundMotion2005}. A Mach-front is created, where all the waves travel together in a "shock-front" \parencite{dunhamNearsourceGroundMotion2005}, but once this front passes, there is attenuation of energy. In the sub-rayleigh case on the other hand, the guided waves are faster than the crack \parencite{kAkiRichards19801981}, there is reflection of the waves between the top and bottom of the snow, which creates the osicllations which can be seen in figure \ref{fig:sub_vel}. \par
-
-The broadening of the wavefront with increasing time can be explained by dispersion. By the reflections of the top and bottom snow boundary, the waves present start interfering with each other, which can lead to constructive or destructive interference \parencite{kAkiRichards19801981}. This means that waves can start travelling at different phase velocities, because of the interference \cite{graffWaveMotionElastic1975}. The phase and group velocities of waves are described as \begin{equation}
-v_{\text{ph}} = \frac{\omega}{k}, \quad v_{\text{g}} = \frac{d\omega}{dk}
-\label{eq:velocities}.
-\end{equation} The interference leads to the broadening of the wavefront with increasing time, described by the envelope spreading law \parencite{kAkiRichards19801981} \begin{equation}
-\Delta x(t) = \Delta x_0 \sqrt{1 + \left( \frac{\frac{d^2\omega}{dk^2} t}{(\Delta x_0)^2} \right)^2}
-\label{eq:envelope_spreading}.
-\end{equation} As time goes on, there are more reflections present, so there is more potential for interference and thus dispersion. \par
 
 \subsubsection{Lamb Wave Identification}
 
