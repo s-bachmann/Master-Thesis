@@ -77,6 +77,19 @@ A consequence of this difference in depth dependence of magnitude of strain is i
 snow surface with maximum constructive interference \parencite{dunhamNearsourceGroundMotion2005, rosakisIntersonicShearCracks2002}.
 In the sub-Rayleigh regime, the energy is spread over a broader spatial and
 temporal footprint because the rupture front and the precursor waves propagate at different speeds, reducing the peak strain rate at any point in space or time. This amplitude difference has a direct implication for field measurements: supershear avalanche releases would be substantially more detectable by DAS or than sub-Rayleigh events of the same moment release, and consequently, a DAS cable that can just barely detect a supershear event would be unable to detect a sub-Rayleigh event of equal size at the same distance. The same is implied for strain and strain rate at different depths in sub-rayleigh propagation regimes. Because the magnitude of strain (rate) in figure \ref{fig:sub_strain} is one order lower at the snow bottom than at crack depth, the cable location relative to the nucleation is important. Since cables are usually installed before the first snowfall \parencite{edmeFiberopticDetectionSnow2023}, they would be located at the snow bottom rather than at the depth of the crack. This means that the sub-rayleigh crack propagation might be too small in magnitude to be recorded by the DAS cable. Since \cite{bergfeldSignaturesSubRayleighSupershear2025,sironTheoreticalFrameworkDynamic2023,trottetTransitionSubRayleighAnticrack2022, gaumeDynamicAnticrackPropagation2018} have shown that there can be a transition between sub-rayleigh and supershear crack propagation, this means that the sub-rayleigh onset of the crack might not be recorded in DAS because of its smaller magnitude. \par
+
+
+
+\subsubsection{Implications for field DAS mesurements}
+
+
+
+
+
+
+
+
+
 % The sub-rayleigh horizontal strain and strain rate plots in figure \ref{fig:sub_strain} look very similar to the velocity plots in figure \ref{fig:sub_vel}. The same is true for the supershear strain and strain rate in figure \ref{fig:super_strain}, which look similar to all but the vertical velocity at the snow bottom (top right in figure \ref{fig:super_vel}). This is intuitive because strain is the spatial derivative of displacement ($\ \frac{\partial u}{\partial x}$), strain rate is the temporal derivative of strain ($\ \frac{\partial^2 u}{\partial x \partial t}$). Velocity on the other hand is the spatial derivative of displacement ($\ \frac{\partial u}{\partial t}$), so all the values are derived from displacement. The first wave caused by lack of interference \parencite{madariagaHighfrequencyRadiationCrack1977} in the sub-rayleigh case can also be observed in the strain and strain rate plots, this disappears again when source spacing is increased (appendix \ref{app:D}, figure \ref{fig:wide_sub_strain}). \par
 
 
@@ -146,8 +159,7 @@ spatial separation between the two fronts grows linearly in time as
 speed in the medium regardless of the crack tip speed
 \parencite{kAkiRichards19801981}, so in this case, the p-wave or the S0 wave speed.Because the p-wave speed is very close to the S0 speed, this result is consistent with field observations of avalanches using seismic geophone arrays by \cite{herwijnenSeismicSensorArray2011}, a p-wave precursor to the main avalanche release was also observed. While \cite{herwijnenSeismicSensorArray2011} do not make note of the crack propagation regime, the p-wave or S0 precursor can be an important warning signal for sub-rayleigh crack propagation leading to avalanche release. \par
 
-The precursor is visible in sub-Rayleigh because the separation $\Delta x(t)$ grows fast enough to resolve the two fronts within the observation window. In the supershear case, the rupture front, S0 and the pressure wave all have velocities within a couple of metres per second of each other. This means that the wavefront could be present, but it cannot be seen as clearly because it arrives around the same time as all other waves in the medium. At the rupture arrest point however, a
-slower wave can be seen in the supershear case in figure \ref{fig:super_vel}, which could be the S0 wave. This behaviour at arrest is consistent with the stopping-phase radiation described by \textcite{madariagaHighfrequencyRadiationCrack1977}, who showed that abrupt arrest of a crack generates a burst of high-frequency energy that propagates at the bulk wave speeds of the medium, so the p-wave speed, which is close to the S0 in this case, independent of the rupture speed before the arrest. \par
+The precursor is visible in sub-Rayleigh because the separation $\Delta x(t)$ grows fast enough to resolve the two fronts within the observation window. In the supershear case, the rupture front, S0 and the pressure wave all have velocities within a couple of metres per second of each other. Nevertheless, in the vertical velocity at the snow bottom in  \ref{fig:super_vel}, two more distinct wavefronts can be seen, one which could be the S0 wave. In all supershear velocity plots, at the end of the crack, there is a fanning out of waves which can be observed, which could be a combination of the stopping phases of the different wave types. This behaviour at arrest is consistent with the stopping-phase radiation described by \textcite{madariagaHighfrequencyRadiationCrack1977}, who showed that abrupt arrest of a crack generates a burst of high-frequency energy that propagates at the bulk wave speeds of the medium, so the p-wave speed, which is close to the S0 in this case, independent of the rupture speed before the arrest. \par
 
 \subsubsection{Lamb Wave Identification}
 
@@ -157,11 +169,6 @@ The animations of the velocity wavefield in appendix \ref{app:F} show the propag
 
 The dominance of A0 over S0 follows from source-mode coupling theory. For a moment tensor source applied normal to the slab midplane (so normal to the horizontal of the slab), the coupling coefficient to A0 scales as the bending moment integrated over the source region, while coupling to S0 scales as the in-plane force resultant \parencite{roseWavesPlates2014, achenbachWavePropagationElastic2012}. Because the force applied has a negative y-component (Myy of the moment tensor) and is normal to the slab axis, this maximizes A0 excitation. Because the force is only in the negative direction, it is asymmetric, so while A0 excitation is maximized, S0 coupling is minimized at low \(f \cdot h\). This theoretical expectation is confirmed by the simulations: S0 appears primarily as a precursor in \(v_x\) (in-plane, extensional motion), consistent
 with the mode shapes described by \textcite{lambWavesElasticPlate1917} and the coupling analysis of \textcite{roseWavesPlates2014}. This identification is strengthened by the animation stills in appendix \ref{app:F}, especially vx in figure \ref{fig:vx_moving_crack}. The velocity field shows a polarity reversal around the crack, meaning that for example, the panel above the crack has positive polarity whereas the one below has negative polarity. Alongside of the comparison with figure \ref{fig:lamb_wave_modes} in appendix \ref{app:G}, this is proof for the A0 mode because S0 would have the same polarities on either side of the crack \parencite{lambWavesElasticPlate1917}. \par
-
-
-
-
-
 
 
 
