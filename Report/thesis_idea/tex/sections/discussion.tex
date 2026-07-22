@@ -39,6 +39,26 @@ v_{\text{ph}} = \frac{\omega}{k}, \quad v_{\text{g}} = \frac{d\omega}{dk}
 \label{eq:envelope_spreading}.
 \end{equation} As time goes on, there are more reflections present, so there is more potential for interference and thus dispersion. \par
 
+\subsubsection{Amplitude decay and depth dependence of velocity}
+
+The weakening of the wavefronts, especially observed in the supershear case in figure \ref{fig:super_strain} and the precursor in \ref{fig:sub_strain} can be explained by depth decay and geometric spreading from the source. The crack tip acts as a moving two-dimensional point source, travelling along a line in a 2D elastic medium, the peak amplitude $A$ of the radiated wavefield decays inversely with the square root of the radial distance $r$ from the source plane \parencite{achenbachWavePropagationElastic2012}:
+\begin{equation}
+A(r) = \frac{A_0}{\sqrt{r}}
+\label{eq:geometric_spreading_2d}
+\end{equation}
+where $r = \sqrt{(x - x_0)^2 + (y - y_{\text{src}})^2}$. As a consequence, as the wavefield travels vertically through the slab, away from the crack plane, towards the snow bottom, it experiences a geometric reduction in peak energy. \par
+
+Furthermore, for wave components whose horizontal phase velocities are slower than the bulk wave speeds of the snow, the vertical wavenumbers become purely imaginary. Defining $p = i\alpha$ and $q = i\beta$, where $\alpha = \sqrt{k^2 - (\omega/c_p)^2}$ and $\beta = \sqrt{k^2 - (\omega/c_s)^2}$ \parencite{graffWaveMotionElastic1975}, the trigonometric expressions in the wave potentials transform into hyperbolic functions:
+\begin{equation}
+\phi(x,z,t) = \left[ A \cosh(\alpha z) + B \sinh(\alpha z) \right] e^{i(kx-\omega t)}
+\label{eq:hyperbolic_phi}
+\end{equation}
+\begin{equation}
+\psi(x,z,t) = \left[ C \cosh(\beta z) + D \sinh(\beta z) \right] e^{i(kx-\omega t)}
+\label{eq:hyperbolic_psi}
+\end{equation}
+These hyperbolic profiles dictate that high-frequency, shorter wavelength  phases decay exponentially as a function of vertical distance from the location of the crack. In other words, higher frequencies are attenuated more quickly, which explains the weakening of the wavefronts observed. This decay is not dissipative, which means that the energy is not lost, it is trapped in the near-field, which is consistent with the guided-wave trapping described by \textcite{graffWaveMotionElastic1975}. \par
+
 
 % The sub-rayleigh horizontal strain and strain rate plots in figure \ref{fig:sub_strain} look very similar to the velocity plots in figure \ref{fig:sub_vel}. The same is true for the supershear strain and strain rate in figure \ref{fig:super_strain}, which look similar to all but the vertical velocity at the snow bottom (top right in figure \ref{fig:super_vel}). This is intuitive because strain is the spatial derivative of displacement ($\ \frac{\partial u}{\partial x}$), strain rate is the temporal derivative of strain ($\ \frac{\partial^2 u}{\partial x \partial t}$). Velocity on the other hand is the spatial derivative of displacement ($\ \frac{\partial u}{\partial t}$), so all the values are derived from displacement. The first wave caused by lack of interference \parencite{madariagaHighfrequencyRadiationCrack1977} in the sub-rayleigh case can also be observed in the strain and strain rate plots, this disappears again when source spacing is increased (appendix \ref{app:D}, figure \ref{fig:wide_sub_strain}). \par
 
@@ -110,27 +130,6 @@ speed in the medium regardless of the crack tip speed
 
 The precursor is visible in sub-Rayleigh because the separation $\Delta x(t)$ grows fast enough to resolve the two fronts within the observation window. In the supershear case, the rupture front, S0 and the pressure wave all have velocities within a couple of metres per second of each other. This means that the wavefront could be present, but it cannot be seen as clearly because it arrives around the same time as all other waves in the medium. At the rupture arrest point however, a
 slower wave can be seen in the supershear case in figure \ref{fig:super_vel}, which could be the S0 wave. This behaviour at arrest is consistent with the stopping-phase radiation described by \textcite{madariagaHighfrequencyRadiationCrack1977}, who showed that abrupt arrest of a crack generates a burst of high-frequency energy that propagates at the bulk wave speeds of the medium, so the p-wave speed, which is close to the S0 in this case, independent of the rupture speed before the arrest. \par
-
-\subsubsection{Amplitude decay and depth dependence of velocity}
-
-The weakening of the wavefronts, especially observed in the supershear case in figure \ref{fig:super_vel} can be explained by depth decay and geometric spreading from the source. The crack tip acts as a moving two-dimensional point source, travelling along a line in a 2D elastic medium, the peak amplitude $A$ of the radiated wavefield decays inversely with the square root of the radial distance $r$ from the source plane \parencite{achenbachWavePropagationElastic2012}:
-\begin{equation}
-A(r) = \frac{A_0}{\sqrt{r}}
-\label{eq:geometric_spreading_2d}
-\end{equation}
-where $r = \sqrt{(x - x_0)^2 + (y - y_{\text{src}})^2}$. As a consequence, as the wavefield travels vertically through the slab, away from the crack plane, towards the snow bottom, it experiences a geometric reduction in peak energy. \par
-
-Furthermore, for wave components whose horizontal phase velocities are slower than the bulk wave speeds of the snow, the vertical wavenumbers become purely imaginary. Defining $p = i\alpha$ and $q = i\beta$, where $\alpha = \sqrt{k^2 - (\omega/c_p)^2}$ and $\beta = \sqrt{k^2 - (\omega/c_s)^2}$ \parencite{graffWaveMotionElastic1975}, the trigonometric expressions in the wave potentials transform into hyperbolic functions:
-\begin{equation}
-\phi(x,z,t) = \left[ A \cosh(\alpha z) + B \sinh(\alpha z) \right] e^{i(kx-\omega t)}
-\label{eq:hyperbolic_phi}
-\end{equation}
-\begin{equation}
-\psi(x,z,t) = \left[ C \cosh(\beta z) + D \sinh(\beta z) \right] e^{i(kx-\omega t)}
-\label{eq:hyperbolic_psi}
-\end{equation}
-These hyperbolic profiles dictate that high-frequency, shorter wavelength  phases decay exponentially as a function of vertical distance from the location of the crack. In other words, higher frequencies are attenuated more quickly, which explains the weakening of the wavefronts observed. This decay is not dissipative, which means that the energy is not lost, it is trapped in the near-field, which is consistent with the guided-wave trapping described by \textcite{graffWaveMotionElastic1975}. \par
-
 
 \subsubsection{Lamb Wave Identification}
 
