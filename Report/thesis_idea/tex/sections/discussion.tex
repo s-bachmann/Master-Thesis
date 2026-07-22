@@ -25,6 +25,18 @@ In the sub-rayleigh strain and strain rate plots, two main wavefronts can be obs
 
 This precursor in the sub-rayleigh strain and strain rate plots has a slope which corresponds to a speed around the p-wave speed in the snow, which is also close to the speed of the symmetric lamb wave mode (S0). The reason for this is is discussed in the velocity section  \ref{sec:disc_sub_two_waves} because it is easier to derive from the velocity output. \par
 
+\subsubsection{Dispersion and Broadening of Wavefronts}
+
+In the supershear strain and strain rate plots, the main wavefront weakens with increasing time (meaning the colors are less saturated). The same is true for the precursor in the sub-rayleigh strain and strain rate plots at the snow bottom. The weakening of the wavefront is observed clearly in the supershear case, because the crack travels faster than the guided waves \parencite{dunhamNearsourceGroundMotion2005}. A Mach-front is created, where all the waves travel together in a "shock-front" \parencite{dunhamNearsourceGroundMotion2005}, but once this front passes, there is attenuation of energy. In the sub-rayleigh case on the other hand, the guided waves are faster than the crack \parencite{kAkiRichards19801981}, there is reflection of the waves between the top and bottom of the snow, which creates the osicllations which can be seen in figure \ref{fig:sub_vel}. \par
+
+The broadening of the wavefront with increasing time can be explained by dispersion. By the reflections of the top and bottom snow boundary, the waves present start interfering with each other, which can lead to constructive or destructive interference \parencite{kAkiRichards19801981}. This means that waves can start travelling at different phase velocities, because of the interference \cite{graffWaveMotionElastic1975}. The phase and group velocities of waves are described as \begin{equation}
+v_{\text{ph}} = \frac{\omega}{k}, \quad v_{\text{g}} = \frac{d\omega}{dk}
+\label{eq:velocities}.
+\end{equation} The interference leads to the broadening of the wavefront with increasing time, described by the envelope spreading law \parencite{kAkiRichards19801981} \begin{equation}
+\Delta x(t) = \Delta x_0 \sqrt{1 + \left( \frac{\frac{d^2\omega}{dk^2} t}{(\Delta x_0)^2} \right)^2}
+\label{eq:envelope_spreading}.
+\end{equation} As time goes on, there are more reflections present, so there is more potential for interference and thus dispersion. \par
+
 
 % The sub-rayleigh horizontal strain and strain rate plots in figure \ref{fig:sub_strain} look very similar to the velocity plots in figure \ref{fig:sub_vel}. The same is true for the supershear strain and strain rate in figure \ref{fig:super_strain}, which look similar to all but the vertical velocity at the snow bottom (top right in figure \ref{fig:super_vel}). This is intuitive because strain is the spatial derivative of displacement ($\ \frac{\partial u}{\partial x}$), strain rate is the temporal derivative of strain ($\ \frac{\partial^2 u}{\partial x \partial t}$). Velocity on the other hand is the spatial derivative of displacement ($\ \frac{\partial u}{\partial t}$), so all the values are derived from displacement. The first wave caused by lack of interference \parencite{madariagaHighfrequencyRadiationCrack1977} in the sub-rayleigh case can also be observed in the strain and strain rate plots, this disappears again when source spacing is increased (appendix \ref{app:D}, figure \ref{fig:wide_sub_strain}). \par
 
