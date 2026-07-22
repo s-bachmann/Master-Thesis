@@ -40,6 +40,7 @@ The precursor is visible in sub-Rayleigh because the separation $\Delta x(t)$ gr
 slower wave can be seen in the supershear case in figure \ref{fig:super_vel}, which could be the S0 wave. This behaviour at arrest is consistent with the stopping-phase radiation described by \textcite{madariagaHighfrequencyRadiationCrack1977}, who showed that abrupt arrest of a crack generates a burst of high-frequency energy that propagates at the bulk wave speeds of the medium, so the p-wave speed, which is close to the S0 in this case, independent of the rupture speed before the arrest. \par
 
 \subsubsection{Amplitude decay and depth dependence of velocity}
+
 The weakening of the wavefronts, especially observed in the supershear case in figure \ref{fig:super_vel} can be explained by depth decay and geometric spreading from the source. The crack tip acts as a moving two-dimensional point source, travelling along a line in a 2D elastic medium, the peak amplitude $A$ of the radiated wavefield decays inversely with the square root of the radial distance $r$ from the source plane \parencite{achenbachWavePropagationElastic2012}:
 \begin{equation}
 A(r) = \frac{A_0}{\sqrt{r}}
@@ -56,8 +57,10 @@ Furthermore, for wave components whose horizontal phase velocities are slower th
 \psi(x,z,t) = \left[ C \cosh(\beta z) + D \sinh(\beta z) \right] e^{i(kx-\omega t)}
 \label{eq:hyperbolic_psi}
 \end{equation}
-These hyperbolic profiles dictate that high-frequency, shorter wavelength  phases decay exponentially as a function of vertical distance from the location of the crack. In other words, higher frequencies are attenuated more quickly, which explains the weakening of the wavefronts observed. \par
+These hyperbolic profiles dictate that high-frequency, shorter wavelength  phases decay exponentially as a function of vertical distance from the location of the crack. In other words, higher frequencies are attenuated more quickly, which explains the weakening of the wavefronts observed. This decay is not dissipative, which means that the energy is not lost, it is trapped in the near-field, which is consistent with the guided-wave trapping described by \textcite{graffWaveMotionElastic1975}. \par
 
+
+\subsubsection{Dispersion and Broadening of Wavefronts}
 The weakening of the wavefront is observed clearly in the supershear case, because the crack travels faster than the guided waves \parencite{dunhamNearsourceGroundMotion2005}. A Mach-front is created, where all the waves travel together in a "shock-front" \parencite{dunhamNearsourceGroundMotion2005}, but once this front passes, there is attenuation of energy. In the sub-rayleigh case on the other hand, the guided waves are faster than the crack \parencite{kAkiRichards19801981}, there is reflection of the waves between the top and bottom of the snow, which creates the osicllations which can be seen in figure \ref{fig:sub_vel}. \par
 
 The broadening of the wavefront with increasing time can be explained by dispersion. By the reflections of the top and bottom snow boundary, the waves present start interfering with each other, which can lead to constructive or destructive interference \parencite{kAkiRichards19801981}. This means that waves can start travelling at different phase velocities, because of the interference \cite{graffWaveMotionElastic1975}. The phase and group velocities of waves are described as \begin{equation}
@@ -68,11 +71,14 @@ v_{\text{ph}} = \frac{\omega}{k}, \quad v_{\text{g}} = \frac{d\omega}{dk}
 \label{eq:envelope_spreading}.
 \end{equation} As time goes on, there are more reflections present, so there is more potential for interference and thus dispersion. \par
 
+\subsubsection{Lamb Wave Identification}
+
 The presence of waves with opposite polarity can be proven mathematically, the detailed derivation of this is shown in section \ref{sec:wave_physics}.
   
+The animations of the velocity wavefield in appendix \ref{app:F} show the propagation intensity of the velocity wavefield. When comparing the horizontal velocity vx in figure \ref{fig:vx_animated_wavefield} with the wavefield intensity of the two lamb wave modes, for example in \cite{cartaLambWavesDiscrete2023}, which can be found in appendix \ref{fig:lamb_wave_modes}, it becomes evident that the main mode which can be observed is the antisymmetric (A0) mode. This is because at source depth, the velocity field has a lower intensity. Above and below the sources, there are narrower bands of low intensity (blue in figure \ref{fig:vx_moving_crack}, red in the reference figure \ref{fig:lamb_wave_modes}) beside bands of higher intensity. This can be explained by the fundamental theory of lamb waves \parencite{lambWavesElasticPlate1917,roseWavesPlates2014}. Because the moment tensor used here has a distinct out of plane component (negative myy), the primary mode which is excited is A0 \parencite{roseWavesPlates2014}. As discussed, the S0 mode can also be seen, but is a precursor rather than the main wavefront and carries less energy. This precursor can also be seen in figure \ref{fig:vx_moving_crack}. \par 
 
-
-  The animations of the velocity wavefield in appendix \ref{app:F} show the propagation intensity of the velocity wavefield. When comparing the horizontal velocity vx in figure \ref{fig:vx_animated_wavefield} with the wavefield intensity of the two lamb wave modes, for example in \cite{cartaLambWavesDiscrete2023}, which can be found in appendix \ref{fig:lamb_wave_modes}, it becomes evident that the main mode which can be observed is the antisymmetric (A0) mode. This is because at source depth, the velocity field has a lower intensity. Above and below the sources, there are narrower bands of low intensity (blue in figure \ref{fig:vx_moving_crack}, red in the reference figure \ref{fig:lamb_wave_modes}) beside bands of higher intensity. This can be explained by the fundamental theory of lamb waves \parencite{lambWavesElasticPlate1917,roseWavesPlates2014}. Because the moment tensor used here has a distinct out of plane component (negative myy), the primary mode which is excited is A0 \parencite{roseWavesPlates2014}. As discussed, the S0 mode can also be seen, but is a precursor rather than the main wavefront and carries less energy. This precursor can also be seen in figure \ref{fig:vx_moving_crack}. 
+The dominance of A0 over S0 follows from source-mode coupling theory. For a moment tensor source applied normal to the slab midplane (so normal to the horizontal of the slab), the coupling coefficient to A0 scales as the bending moment integrated over the source region, while coupling to S0 scales as the in-plane force resultant \parencite{roseWavesPlates2014, achenbachWavePropagationElastic2012}. Because the force applied has a negative y-component (Myy of the moment tensor) and is normal to the slab axis, this maximizes A0 excitation. Because the force is only in the negative direction, it is asymmetric, so while A0 excitation is maximized, S0 coupling is minimized at low \(f \cdot h\). This theoretical expectation is confirmed by the simulations: S0 appears primarily as a precursor in \(v_x\) (in-plane, extensional motion), consistent
+with the mode shapes described by \textcite{lambWavesElasticPlate1917} and the coupling analysis of \textcite{roseWavesPlates2014}.
 
 
 \subsection{Strain and strain rate space-time plots}
