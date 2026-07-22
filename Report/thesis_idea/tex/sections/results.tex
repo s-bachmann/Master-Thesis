@@ -14,7 +14,38 @@
 \section{Simple Model Results}
 \label{sec:results-1}
 
-The following results shown are for the supershear and sub-rayleigh case of the custom stfs. The sources are spaced 0.1m apart between 30m and 270m and have a ricker wavelet all directions. The moment tensors have components 1 in xx and xy and -1 in yy. The simple, two layer model was set up to test the custom STF option in SALVUS and to verify how it works. The results are shown here because it is important to understand the physics underlying crack propagation in snow before moving on to the more complex case. 
+The following results shown are for the supershear and sub-rayleigh case of the custom stfs. The sources are spaced 0.1m apart between 30m and 270m and have a ricker wavelet all directions. The moment tensors have components 1 in xx and xy and -1 in yy. The simple, two layer model was set up to test the custom STF option in SALVUS and to verify how it works. The results are shown here because it is important to understand the physics underlying crack propagation in snow before moving on to the more complex case. Since the focus of this thesis is to model crack propagation as recorded by DAS data, strain and strain rate plots are shown first. The velocity results are shown to verify observations made in the strain and strain rate plots. 
+
+\subsection{Sub-rayleigh strain and strain rate plot}
+\begin{figure}[H]
+    \centering
+   \includegraphics[width=\textwidth]{preliminary_sub_strain.png}
+   \caption{Sub-rayleigh strain and strain rate (horizontal component) averaged over 10.4 m gaugue length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
+   \label{fig:sub_strain}
+\end{figure}
+
+Both the strain and the strain rate at crack depth look very similar to each other, the same is true for the snow bottom. At crack depth, both the strain and strain rate in the left column of figure \ref{fig:sub_strain} show one strong main front, which is preceded by a preliminary front. The same is true for the snow bottom, but here, the main front is thinner than the preliminary front. \par
+
+At crack depth, the main front broadens with increasing time. This is also true for the snow bottom, but the broading is much more drastic at crack depth. Between the individual fronts, there is a change in slope. \par
+
+At both depths, there is a distinct front from 0s, 30m to 6s, 270m. Especially at crack depth, this front can be distinguished clearly from the other fronts. \par
+
+In all plots, the strains and strain rates following each other have opposite polarity. The magnitude of strain and strain rate is larger at the crack depth compared to the bottom of the snow. \par
+
+\subsection{Supershear strain and strain rate plot}
+\begin{figure}[H]
+    \centering
+   \includegraphics[width=\textwidth]{preliminary_super_strain.png}
+   \caption{Supershear strain and strain rate (horizontal component) averaged over 10.4 m gaugue length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
+   \label{fig:super_strain}
+\end{figure}
+
+In the supershear case, strain and strain rate at the snow bottom and crack depth shown in figure \ref{fig:super_strain} all look very similar. There is a high magnitude wavefront arriving first, after which magnitude decays. \par
+
+The strain and strain rates observed have opposite polarity (positive followed by negative). In the strain rate plots, the different polarities can be seen a bit more clearly than in the strain plots in the bottom row of figure \ref{fig:super_strain}. \par
+
+In figure \ref{fig:super_strain}, there is no difference in the magnitude of strain and strain rate between the crack depth and snow bottom. \par
+
 
 \subsection{Sub-Rayleigh Velocity plots}
 The following plots show horizontal (vx) and vertical (vy) particle velocity at two reciever depths: 2.25m, which is the snow bottom, and 2.625m which is the depth of the crack. The particle velocity shown is derived from the displacement field, this is done to assimilate the results shown more to DAS field measurements. In DAS field data, the instantaneous particle velocity at one point is not measured, but rather avegraged over a gauge length \parencite{lindseyFiberOpticSeismology2021}. By taking the temporal derivative of displacement, the results shown here are closer to field results. \par 
@@ -52,35 +83,7 @@ The second wavefront can be clearly distingusihed in the vy plot at the snow bot
 
 The wavefronts arriving in all cases switch between polarities. While the pattern of polarity is the same in all cases, the slope of the wavefronts change. In all plots, after the first wavefront, the waves seem to slow, which means their slope flattens. \par
 
-\subsection{Sub-rayleigh strain and strain rate plot}
-\begin{figure}[H]
-    \centering
-   \includegraphics[width=\textwidth]{preliminary_sub_strain.png}
-   \caption{Sub-rayleigh strain and strain rate (horizontal component) averaged over 10.4 m gaugue length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
-   \label{fig:sub_strain}
-\end{figure}
 
-Both the strain and the strain rate at crack depth look very similar to each other, the same is true for the snow bottom. At crack depth, both the strain and strain rate in the left column of figure \ref{fig:sub_strain} show one strong main front, which is preceded by a preliminary front. The same is true for the snow bottom, but here, the main front is thinner than the preliminary front. \par
-
-At crack depth, the main front broadens with increasing time. This is also true for the snow bottom, but the broading is much more drastic at crack depth. Between the individual fronts, there is a change in slope. \par
-
-At both depths, there is a distinct front from 0s, 30m to 6s, 270m. Especially at crack depth, this front can be distinguished clearly from the other fronts. \par
-
-In all plots, the strains and strain rates following each other have opposite polarity. The magnitude of strain and strain rate is larger at the crack depth compared to the bottom of the snow. \par
-
-\subsection{Supershear strain and strain rate plot}
-\begin{figure}[H]
-    \centering
-   \includegraphics[width=\textwidth]{preliminary_super_strain.png}
-   \caption{Supershear strain and strain rate (horizontal component) averaged over 10.4 m gaugue length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
-   \label{fig:super_strain}
-\end{figure}
-
-In the supershear case, strain and strain rate at the snow bottom and crack depth shown in figure \ref{fig:super_strain} all look very similar. There is a high magnitude wavefront arriving first, after which magnitude decays. \par
-
-The strain and strain rates observed have opposite polarity (positive followed by negative). In the strain rate plots, the different polarities can be seen a bit more clearly than in the strain plots in the bottom row of figure \ref{fig:super_strain}. \par
-
-In figure \ref{fig:super_strain}, there is no difference in the magnitude of strain and strain rate between the crack depth and snow bottom. \par
 
 \subsection{Frequency-Wavenumber (fk) Plot}
 \label{sec:fk_results}
