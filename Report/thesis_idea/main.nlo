@@ -28,6 +28,13 @@
 \nomenclatureentry{S13$w$@[{$w$}]\begingroup Test function in the weak form\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S14$\bar{\tau}(x)$@[{$\bar{\tau}(x)$}]\begingroup Prescribed boundary traction\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S15$\bar{u}(x),\,\bar{v}(x)$@[{$\bar{u}(x),\,\bar{v}(x)$}]\begingroup Initial displacement and initial velocity\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S51$\nu$@[{$\nu$}]\begingroup Poisson's ratio\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S52$M_{\mathrm{shear}},\,M_{\mathrm{elastic}}$@[{$M_{\mathrm{shear}},\,M_{\mathrm{elastic}}$}]\begingroup Shear and elastic moduli [Pa]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S53$c_p,\,c_s$@[{$c_p,\,c_s$}]\begingroup P-wave and S-wave speeds in plate theory [$\mathrm{m\,s^{-1}}$]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S54$c_p^{\mathrm{plate}}$@[{$c_p^{\mathrm{plate}}$}]\begingroup Plate wave speed [$\mathrm{m\,s^{-1}}$]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S55$v_{\mathrm{ph}},\,v_g$@[{$v_{\mathrm{ph}},\,v_g$}]\begingroup Phase velocity and group velocity [$\mathrm{m\,s^{-1}}$]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S56$h$@[{$h$}]\begingroup Slab half-thickness [m]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S57$\phi,\,\psi$@[{$\phi,\,\psi$}]\begingroup Scalar P-wave potential and vector S-wave potential\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S16$\phi_j$@[{$\phi_j$}]\begingroup Basis (shape) function with index $j$\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S17$F_j$@[{$F_j$}]\begingroup Expansion coefficient of basis function $\phi_j$\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S18$N$@[{$N$}]\begingroup Number of basis functions per expansion\nomeqref {0}|nompageref}{1}
