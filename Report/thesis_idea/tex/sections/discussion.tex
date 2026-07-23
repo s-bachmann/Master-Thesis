@@ -20,7 +20,18 @@
 
 
 \subsection{Strain and strain rate space-time plots}
-The main wavefronts which can be observed in figures \ref{fig:sub_strain} and \ref{fig:super_strain} are the crack fronts. This is because when taking the slope of these two wavefronts, it corresponds to the rupture velocity in the supershear and the sub-rayleigh case. Both cases produce strain and strain rate outputs that look very different, this is important when relating the results here to field measurements. The different behaviors mean that in theory, from the velocity output, the transition point between sub-rayleigh and supershear propagation regimes, as described by \cite{trottetTransitionSubRayleighAnticrack2022,bergfeldSignaturesSubRayleighSupershear2025,sironTheoreticalFrameworkDynamic2023}, could be observed because the strain and strain rate measurement would change. \par
+The main wavefronts which can be observed in figures \ref{fig:sub_strain} and \ref{fig:super_strain} are the crack fronts. This is because when taking the slope of these two wavefronts, it corresponds to the rupture velocity in the supershear and the sub-rayleigh case. The prescribed versus the calculated speed from the figures can be seen in table \ref{tab:results_speeds}. Both cases produce strain and strain rate outputs that look very different, this is important when relating the results here to field measurements. The different behaviors mean that in theory, from the velocity output, the transition point between sub-rayleigh and supershear propagation regimes, as described by \cite{trottetTransitionSubRayleighAnticrack2022,bergfeldSignaturesSubRayleighSupershear2025,sironTheoreticalFrameworkDynamic2023}, could be observed because the strain and strain rate measurement would change. \par
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|}
+\hline
+Case         & Prescribed Speed  & Speed from Results                 \\ \hline
+Sub-Rayleigh & 0.6*vs = 40.8m/s  & $ \ \frac{270-30m}{6s} = 40m/s$    \\ \hline
+Supershear   & 1.6*vs = 108.7m/s & $ \ \frac{400-30m}{3.5s} = 105m/s$ \\ \hline
+\end{tabular}
+\caption{Simulation input rupture speeds versus speeds calculated from slopes in figures \ref{fig:sub_strain, fig:super_strain}.}
+\label{tab:results_speeds}
+\end{table}
 
 \subsection{Two-wavefront structure in Sub-Rayleigh}
 In the sub-rayleigh strain and strain rate plots, two main wavefronts can be observed. One, the main wavefront, which is broadest in the strain rate and strain plots at crack depth in figure \ref{fig:sub_strain}, corresponds in slope to the sub-rayleigh rupture speed, as discussed above. The second wavefront is faster and arrives sooner than the main wavefront and only appears to be emitted from the first source. This changes when source spacing is increased, for example from 0.1m to 10m, as shown in appendix \ref{app:D}, figure \ref{fig:wide_sub_strain}. This leads to the conclusion that the precursor to the main wavefront disappears because of interference. All other sources but the first and the last one have interference from the sources before and after it, which means that this wave type, although emitted, is cancelled out because of interference \parencite{madariagaDynamicsExpandingCircular1976}. When the source spacing is increased, the fronts of the individual sources travel further apart in space and they interfere less. \par
