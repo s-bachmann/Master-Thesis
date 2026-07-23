@@ -45,27 +45,27 @@ I_I(M) - I_I(B) + I_I(S) = I_I(F) = \sum_{P \in \{M,B,S,F\}} I_I(P) = 0
 \label{eq:abstract weak form}
 \end{equation}  \parencite{afanasievModularFlexibleSpectralelement2019}. \par 
 
-To solve \ref{eq:abstract weak form} the Galerkin approach is used, the test function w and solution u are approximated by $\ \phi$, which are a set of functions from the same space \parencite{afanasievModularFlexibleSpectralelement2019}. Any discrete function, for example displacement can be approximated this way: \begin{equation}
-  g(x) \approx \sum_{j=1}^{N} F_j \phi_j(x), 
-  \label{eq:galerkin displacement}
-\end{equation} where $\ F_j$ is the expansion of the basis and g is the continous function which is the approximation \parencite{afanasievModularFlexibleSpectralelement2019}. The derivatives of a function can then be approximated by the derivatives of $\ \phi$. \par
+% To solve \ref{eq:abstract weak form} the Galerkin approach is used, the test function w and solution u are approximated by $\ \phi$, which are a set of functions from the same space \parencite{afanasievModularFlexibleSpectralelement2019}. Any discrete function, for example displacement can be approximated this way: \begin{equation}
+%   g(x) \approx \sum_{j=1}^{N} F_j \phi_j(x), 
+%   \label{eq:galerkin displacement}
+% \end{equation} where $\ F_j$ is the expansion of the basis and g is the continous function which is the approximation \parencite{afanasievModularFlexibleSpectralelement2019}. The derivatives of a function can then be approximated by the derivatives of $\ \phi$. \par
 
-To evaluate the integrals in \ref{eq:abstract weak form}, numerical quadrature is used \cite{afanasievModularFlexibleSpectralelement2019}. A certain number of intergration weights W are combined, g(x) and the derivative of g(x) are evaluated at a set of integration points $\ x_i$ \parencite{afanasievModularFlexibleSpectralelement2019}. This resluts in \begin{equation}
-\int_G g(x)d^n x \approx \sum_{i=1}^{M}W_i^G \sum_{j=1}^{N}F_j\phi_j(x_i)
-  \label{eq:weighted weak form}
-\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. In FE, an element-specific reference coordinate system $\ \theta$ is used. In this thesis, the domain consists of a snow layer and an air layer, which means there is a sharp discountinuity in model parameters. As \cite{afanasievModularFlexibleSpectralelement2019} state, the model parameters and strain field are not differentiable. This is why a smooth polynomial basis of the governing equations over the whole domain is not appropriate, the basis B needs to consist of piecewise functions G defined on the individual elements \parencite{afanasievModularFlexibleSpectralelement2019}. The integration weights and basis function derivatives used, according to \cite{afanasievModularFlexibleSpectralelement2019}, are pre-tabulated in the element-specific coordinate system $\ \theta$. To transfrom the integrals and derivaties to physical coordinates x, so the coordinates of the snow extent in this case, the element-specific Jacobian $\ \frac{\delta x}{\delta \theta}$ is used \parencite{afanasievModularFlexibleSpectralelement2019}. Equations \ref{eq:galerkin displacement} and \ref{eq:weighted weak form} and their derivatives become: \begin{equation}
-g(x) \approx \sum_{N}^{j=1} F_j \phi_j(\theta(x))
-\label{eq:first galerkin}
-\end{equation} and \begin{equation}
-  \nabla g(x) \approx \sum_{j=1}^{N} F_j \frac{\partial}{\partial \theta} \phi_j (\theta(x))\frac{\partial\theta}{\partial x}
-  \label{eq:second galerkin}
-\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. In equations \ref{eq:first galerkin} and \ref{eq:second galerkin}, the function space V is approximated as $\ V_h \approx V$ in a previous step, this means the accuracy of the approximation is dependent on how well the original function space is approximated \parencite{afanasievModularFlexibleSpectralelement2019}. To make calculations over the whole domain G, the contributions from each element need to be summed: \begin{equation} 
-  \int_{G_e} g(x)\,\mathrm{d}^n x \approx \sum_{i=1}^{M} W_i^{G_e} \sum_{j=1}^{N} F_j\,\phi_j(\theta(x_i))\left|\frac{\partial x}{\partial \theta}\right|_{x=x_i}^n
-  \label{eq:domain integral}
-\end{equation} for the volume and \begin{equation}
-  \int_{\partial G_e} g(x)\,\mathrm{d}^{n-1} x \approx \sum_{i=1}^{M} W_i^{\partial G_e} \sum_{j=1}^{N} F_j\,\phi_j(\theta(x_i))\left|\frac{\partial x}{\partial \theta}\right|_{x=x_i}^{n-1}
-  \label{eq:surface integral}
-\end{equation} for the surface of the domain \parencite{afanasievModularFlexibleSpectralelement2019}. \par
+% To evaluate the integrals in \ref{eq:abstract weak form}, numerical quadrature is used \cite{afanasievModularFlexibleSpectralelement2019}. A certain number of intergration weights W are combined, g(x) and the derivative of g(x) are evaluated at a set of integration points $\ x_i$ \parencite{afanasievModularFlexibleSpectralelement2019}. This resluts in \begin{equation}
+% \int_G g(x)d^n x \approx \sum_{i=1}^{M}W_i^G \sum_{j=1}^{N}F_j\phi_j(x_i)
+%   \label{eq:weighted weak form}
+% \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. In FE, an element-specific reference coordinate system $\ \theta$ is used. In this thesis, the domain consists of a snow layer and an air layer, which means there is a sharp discountinuity in model parameters. As \cite{afanasievModularFlexibleSpectralelement2019} state, the model parameters and strain field are not differentiable. This is why a smooth polynomial basis of the governing equations over the whole domain is not appropriate, the basis B needs to consist of piecewise functions G defined on the individual elements \parencite{afanasievModularFlexibleSpectralelement2019}. The integration weights and basis function derivatives used, according to \cite{afanasievModularFlexibleSpectralelement2019}, are pre-tabulated in the element-specific coordinate system $\ \theta$. To transfrom the integrals and derivaties to physical coordinates x, so the coordinates of the snow extent in this case, the element-specific Jacobian $\ \frac{\delta x}{\delta \theta}$ is used \parencite{afanasievModularFlexibleSpectralelement2019}. Equations \ref{eq:galerkin displacement} and \ref{eq:weighted weak form} and their derivatives become: \begin{equation}
+% g(x) \approx \sum_{N}^{j=1} F_j \phi_j(\theta(x))
+% \label{eq:first galerkin}
+% \end{equation} and \begin{equation}
+%   \nabla g(x) \approx \sum_{j=1}^{N} F_j \frac{\partial}{\partial \theta} \phi_j (\theta(x))\frac{\partial\theta}{\partial x}
+%   \label{eq:second galerkin}
+% \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. In equations \ref{eq:first galerkin} and \ref{eq:second galerkin}, the function space V is approximated as $\ V_h \approx V$ in a previous step, this means the accuracy of the approximation is dependent on how well the original function space is approximated \parencite{afanasievModularFlexibleSpectralelement2019}. To make calculations over the whole domain G, the contributions from each element need to be summed: \begin{equation} 
+%   \int_{G_e} g(x)\,\mathrm{d}^n x \approx \sum_{i=1}^{M} W_i^{G_e} \sum_{j=1}^{N} F_j\,\phi_j(\theta(x_i))\left|\frac{\partial x}{\partial \theta}\right|_{x=x_i}^n
+%   \label{eq:domain integral}
+% \end{equation} for the volume and \begin{equation}
+%   \int_{\partial G_e} g(x)\,\mathrm{d}^{n-1} x \approx \sum_{i=1}^{M} W_i^{\partial G_e} \sum_{j=1}^{N} F_j\,\phi_j(\theta(x_i))\left|\frac{\partial x}{\partial \theta}\right|_{x=x_i}^{n-1}
+%   \label{eq:surface integral}
+% \end{equation} for the surface of the domain \parencite{afanasievModularFlexibleSpectralelement2019}. \par
 
 The dependence on the reference coordinate system is described by E, which is a model containing the physical coordinate to reference coordinate transformation, in other words, the determinant of the Jacobian matrix and its inverse \parencite{afanasievModularFlexibleSpectralelement2019}. Using basis B of the polynomial functions of the approximation $\ V_h$, which are piecewise per-element because of possible discontinuities, the abstract form in \ref{eq:abstract weak form} becomes \begin{equation}
   \sum_{P \in \{M,B,S,F\}} I_I(P,B(E)) = 0
