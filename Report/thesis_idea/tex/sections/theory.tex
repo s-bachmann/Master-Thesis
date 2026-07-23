@@ -103,7 +103,31 @@ $\psi = g(z)\,e^{i(kx-\omega t)}$, the depth functions satisfy
     \frac{d^2g}{dz^2} + q^2 g = 0,
 \end{equation}
 with $p^2 = \omega^2/c_p^2 - k^2$ and $q^2 = \omega^2/c_s^2 - k^2$. The 
-general solutions are sinusoidal in $z$  (depth) when $p^2, q^2 > 0$ (propagating through the layer thickness), and hyperbolic when $p^2$ or $q^2 < 0$ (evanescent decay with depth). The evanescent case applies to wave components whose horizontal phase velocity is slower than the bulk wave speeds, which is the A0 mode at low frequency-thickness product, like it is the case in this thesis and explains why the A0 wave train decays more rapidly between crack depth and snow bottom than the faster S0 mode \parencite{graffWaveMotionElastic1975}.
+general solutions are sinusoidal in $z$  (depth) when $p^2, q^2 > 0$ (propagating through the layer thickness), and hyperbolic when $p^2$ or $q^2 < 0$ (evanescent decay with depth). The evanescent case applies to wave components whose horizontal phase velocity is slower than the bulk wave speeds, which is the A0 mode at low frequency-thickness product, like it is the case in this thesis and explains why the A0 wave train decays more rapidly between crack depth and snow bottom than the faster S0 mode \parencite{graffWaveMotionElastic1975}. \par
+
+\subsection{Boundary conditions and the Lamb dispersion relations}
+
+At the snow-air interface, the large impedance contrast produces a stress-free boundary: normal stress $\sigma_{zz} = 0$ and shear stress $\sigma_{xz} = 0$ at the top and bottom faces of the slab \parencite{igelComputationalSeismologyPractical2016}. Applying these conditions to the general potentials yields two types of solutions depending on the symmetry of the displacement field across the slab midplane, so across the horizontal axis of the slab. \par
+
+For the symmetric mode (S0), horizontal displacement is even in $z$ and vertical displacement is odd. Setting the determinant of the 
+resulting $2 \times 2$ system to zero gives the S0 dispersion relation:
+\begin{equation}
+    \frac{\tan(qh)}{\tan(ph)} = -\frac{4k^2pq}{(q^2-k^2)^2},
+    \label{eq:symmetric dispersion}
+\end{equation}
+where $h$ is the half-thickness of the slab \parencite{suFundamentalsAnalysisLamb2009}.
+
+For the antisymmetric mode (A0), the displacement symmetries are reversed: vertical displacement is even in $z$ and horizontal displacement is odd. The 
+A0 dispersion relation is:
+\begin{equation}
+    \frac{\tan(ph)}{\tan(qh)} = \frac{4k^2pq}{(q^2-k^2)^2}.
+    \label{eq:dispersion_asym}
+\end{equation}
+
+Both relations give phase velocity as an implicit function of frequency, meaning the two modes are dispersive: different frequency components 
+propagate at different speeds \parencite{kAkiRichards19801981}. At low frequency-thickness product ($f \cdot h \ll 1$, as in this case where $f \cdot h \approx 6$ Hz$\cdot$m), A0 is strongly dispersive and slow, while S0 is nearly non-dispersive and 
+converges to the plate wave speed with $c_p^{\text{plate}} = 2c_s\sqrt{1 - v_s^2/v_p^2}$ 
+\parencite{roseWavesPlates2014}. This is why S0 appears as a narrow, fast precursor in the results and A0 produces the broad, dispersive wave train.
 
 % In the following section, the equations of the different modes of Lamb waves are derived.  . These equations are derived for completeness, but also to understand how the input described in section \ref{sec:salvus_method} leads to these types of waves. Understanding the phyiscal processes that lead to the presence of Lamb waves is important for interpreting and understanding the results and the presence of Lamb waves therein. \par
 
