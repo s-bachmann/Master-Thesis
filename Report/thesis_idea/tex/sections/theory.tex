@@ -72,10 +72,44 @@ The dependence on the reference coordinate system is described by E, which is a 
   \label{eq:abstract approximation}
 \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. This means that fields such as displacement and velocity are calculated in this way. From these fields, the data from the model in section \ref{sec:czm_methods} is obtained and plotted. 
 
+\section{Cohesive Zone Physics}
+\label{sec:czm_theory}
+
+The mesh is generated to resolve frequencies up to the 95th percentile of the source wavelet's frequency content. Cohesive tractions are prescribed on zero-thickness interface elements and depend on the normalized opening \(\xi=\frac{\partial}{\partial_c}\). The zero-thickness interface elements are implemented by not solving for volumetric strain but displacement between interfaces instead. For the linear softening law used here the traction in a given cohesive element follows
+\[ T(\xi) = T_\mathrm{peak}\,(1-\xi) \quad\text{for } 0\leq\xi\leq1,\qquad T(\xi)=0\ \text{for }\xi>1, \]
+where \(T_\mathrm{peak}\) is the peak cohesive traction and \(\delta_c\) the critical opening. The normalized opening can be related to the local crack coordinate as \(\xi=\frac{(x-x_0)}{l_{crack}}\) for a crack front with initial position \(x_0\) and local process length \(l_{crack}\). \par
+
+The mixed-mode potential used in the code follows the form from \cite{mahajanModelingInterfacialCrack2008}. With $\Delta=(\Delta_n,\Delta_t)$ denoting normal and tangential separations, the potential is written as
+\[
+\phi(\Delta)=\phi_n\,\exp\left(-\frac{\Delta_n}{\delta_n}\right)\left\{\left[1+\frac{\Delta_n}{\delta_n}\right]+q\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right]\right\},
+\]
+from which the normal and tangential tractions are obtained, the implementation uses the same closed-form expressions. This is so that peak tractions occur at $\Delta_n=\delta_n$ and $|\Delta_t|=\delta_t/\sqrt{2}$. The normal and shear works of separation relate to peak strengths via
+\[ \phi_n = e\,\sigma_{\max}\,\delta_n, \qquad \phi_t = \sqrt{\tfrac{e}{2}}\,\tau_{\max}\,\delta_t, \]
+and the critical openings for pure modes are computed as
+\[ \delta_{n,c}=\frac{2G_I}{\sigma_n},\qquad \delta_{s,c}=\frac{2G_{II}}{\tau_s}, \]
+with the mixed-mode critical opening
+\[ \delta_c=\sqrt{(1-r_{\rm mode})\,\delta_{n,c}^2 + r_{\rm mode}\,\delta_{s,c}^2 }\;.
+\]
+
+Lamé parameters are derived from input seismic speeds and density: \(v_s=\sqrt{\frac{\mu}{\rho}}\) so that \(\mu=\rho v_s^2\), and \(v_p=\sqrt{\frac{(\lambda+2\mu)}{\rho}}\) so that \(\lambda=\rho(v_p^2-2v_s^2)\). Young's modulus is then computed from the Lamé parameters: \(E=\dfrac{\mu(3\lambda+2\mu)}{\lambda+\mu}\) \parencite{kAkiRichards19801981}. These conversions are applied for every material in the model. \par
+
+The critical opening distances for pure normal (Mode I) and shear (Mode II) separations are computed from the corresponding fracture energies, strenghts, and peak tractions as
+\[ \delta_{n,c}=\frac{2G_I}{\sigma_n},\qquad \delta_{s,c}=\frac{2G_{II}}{\tau_s}, \]
+and combined for mixed-mode behaviour using
+\[ \delta_c = \sqrt{(1-r_{\rm mode})\,\delta_{n,c}^2 + r_{\rm mode}\,\delta_{s,c}^2 }, \]
+where \(r_{\rm mode}\in[0,1]\) controls the mode I/II mix, where 0 is pure mode I and 1 is pure mode II. In the current implementation the slip on each subfault follows the prescribed linear slip law up to the critical slip distance. The mode mix is an user-input parameter, while all the other parameters are derived from laboratory experiments from \cite{mahajanModelingInterfacialCrack2008}.  \par
+
+The characteristic Irwin length for shear is calculated as \(l_{ch}=\frac{E_{\rm eff}G_{II}}{\tau_s^2}\), and the cohesive zone length is taken as \(l_{cz}=\tfrac{\pi}{8}l_{ch}\), which sets the spatial extent over which cohesive weakening is active ahead of the crack tip. \par
+
+Rupture propagation speed is chosen with respect to the local shear-wave speed and the bounds discussed in \cite{trottetTransitionSubRayleighAnticrack2022}. Where appropriate, the rupture speed is corrected for finite slab thickness and bending stiffness to account for slab flexure effects. The rupture front is discretized into a sequence of subfaults: each subfault is activated at an onset time
+\[ t_o = \frac{x-x_{\rm start}}{v_{\rm rupture}}, \]
+using the subfault horizontal position \(x\), the rupture starting position \(x_{\rm start}\), and the prescribed rupture speed \(v_{\rm rupture}\). \par
+
 \section{Wave Propagation Physics}
 \label{sec:wave_physics}
 
 The snow layer in this thesis acts as a thin layer bounded by a free surface above (snow-air interface) and a rigid boundary at the bottom (either domain boundary or bedrock interface). This geometry supports the appearance of Lamb waves: Lamb waves are elastic guided waves that occur in plates \parencite{suFundamentalsAnalysisLamb2009} and their amplitude is shaped by layer boundaries \parencite{lambWavesElasticPlate1917}.  They are guided by the boundaries of the layer or media in which they propagate and have a symmetric (S0) and an antiymmetric (A0) mode \parencite{suFundamentalsAnalysisLamb2009}. The symmetric mode dominates the in-plate motion, while the antisymmetric mode dominates the vertical (out of plane motion ) \parencite{suFundamentalsAnalysisLamb2009}. A sketch of the propagation of these two modes, taken from \cite{cartaLambWavesDiscrete2023}, can be seen in appendix \ref{app:G}. Both modes are observed in the simulation results shown in \ref{sec:results-1}, and to interpret and understand the results correctly, their properties such as speeds, dispersion relations and excitation need to be understood. his section derives the dispersion relations of both modes and explains the depth-dependent amplitude structure that determines how each mode decays between the crack plane and the snow bottom. \par
+
 
 \subsection{Potentials and wave equations}
 
