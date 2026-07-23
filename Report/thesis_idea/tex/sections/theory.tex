@@ -75,7 +75,7 @@ The dependence on the reference coordinate system is described by E, which is a 
 \section{Cohesive Zone Physics}
 \label{sec:czm_theory}
 
-The mesh is generated to resolve frequencies up to the 95th percentile of the source wavelet's frequency content. Cohesive tractions are prescribed on zero-thickness interface elements and depend on the normalized opening \(\xi=\frac{\partial}{\partial_c}\). The zero-thickness interface elements are implemented by not solving for volumetric strain but displacement between interfaces instead. For the linear softening law used here the traction in a given cohesive element follows
+The cohesive zone (CZM) model is set up according to \cite{mahajanModelingInterfacialCrack2008}. This model was set up in lieu of the simpler model to take more complex physics into account. Cohesive tractions are prescribed on zero-thickness interface elements and depend on the normalized opening \(\xi=\frac{\partial}{\partial_c}\). The zero-thickness interface elements are implemented by not solving for volumetric strain but displacement between interfaces instead. For the linear softening law used here the traction in a given cohesive element follows
 \[ T(\xi) = T_\mathrm{peak}\,(1-\xi) \quad\text{for } 0\leq\xi\leq1,\qquad T(\xi)=0\ \text{for }\xi>1, \]
 where \(T_\mathrm{peak}\) is the peak cohesive traction and \(\delta_c\) the critical opening. The normalized opening can be related to the local crack coordinate as \(\xi=\frac{(x-x_0)}{l_{crack}}\) for a crack front with initial position \(x_0\) and local process length \(l_{crack}\). \par
 
@@ -104,6 +104,8 @@ The characteristic Irwin length for shear is calculated as \(l_{ch}=\frac{E_{\rm
 Rupture propagation speed is chosen with respect to the local shear-wave speed and the bounds discussed in \cite{trottetTransitionSubRayleighAnticrack2022}. Where appropriate, the rupture speed is corrected for finite slab thickness and bending stiffness to account for slab flexure effects. The rupture front is discretized into a sequence of subfaults: each subfault is activated at an onset time
 \[ t_o = \frac{x-x_{\rm start}}{v_{\rm rupture}}, \]
 using the subfault horizontal position \(x\), the rupture starting position \(x_{\rm start}\), and the prescribed rupture speed \(v_{\rm rupture}\). \par
+
+The sources are then set up as described in the methods section. A visual representation of the physics and setup workflow can be seen in appendix \ref{app:B}. \par
 
 \section{Wave Propagation Physics}
 \label{sec:wave_physics}
