@@ -38,7 +38,14 @@ To represent the results of the more complex source time functions obtained from
     v_s = \sqrt{\frac{M_{shear}}{\rho}}
 \end{equation} \parencite{kAkiRichards19801981}.  \par
 
-This consists of the bed layer, a weak layer and a snow slab layer. To account for the absorbing boundaries which are implemented at the top and sides, the model domain was extended. At the sides, this was done by extending the model extent to accomodate the abcs. At the top however, an air layer was added which accounts for the abcs in thickness. This was done to keep the original thickness of the snow slab layer described by \cite{trottetTransitionSubRayleighAnticrack2022} but still have a boundary which leads to no reflections from the top of the domain. The setup can be seen in \textcolor{magenta}{FIGURE}. 
+This consists of the bed layer, a weak layer and a snow slab layer. In order to represent a physical snowpack with a weak layer buried in snow, the weak layer here is in the middle of the slab layer. To account for the absorbing boundaries which are implemented at the top and sides, the model domain was extended. At the sides, this was done by extending the model extent to accomodate the abcs. At the top however, an air layer was added which accounts for the abcs in thickness. This was done to keep the original thickness of the snow slab layer described by \cite{trottetTransitionSubRayleighAnticrack2022} but still have a boundary which leads to no reflections from the top of the domain. The setup can be seen in figure \ref{fig:domain_sketch_mpm}. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/domain_sketch_mpm.png}
+    \caption{Layered model setup for MPM. Air layer in light blue, snow slab in light grey, weak layer dark grey and bedrock in blue grey. Source line extent in red. Model properites used can be seen in legend, but also appendix \ref{app:C}}
+    \label{fig:domain_sketch_mpm}  
+\end{figure}
 
 
 
