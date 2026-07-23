@@ -77,6 +77,34 @@ The dependence on the reference coordinate system is described by E, which is a 
 
 The snow layer in this thesis acts as a thin layer bounded by a free surface above (snow-air interface) and a rigid boundary at the bottom (either domain boundary or bedrock interface). This geometry supports the appearance of Lamb waves: Lamb waves are elastic guided waves that occur in plates \parencite{suFundamentalsAnalysisLamb2009} and their amplitude is shaped by layer boundaries \parencite{lambWavesElasticPlate1917}.  They are guided by the boundaries of the layer or media in which they propagate and have a symmetric (S0) and an antiymmetric (A0) mode \parencite{suFundamentalsAnalysisLamb2009}. The symmetric mode dominates the in-plate motion, while the antisymmetric mode dominates the vertical (out of plane motion ) \parencite{suFundamentalsAnalysisLamb2009}. A sketch of the propagation of these two modes, taken from \cite{cartaLambWavesDiscrete2023}, can be seen in appendix \ref{app:G}. Both modes are observed in the simulation results shown in \ref{sec:results-1}, and to interpret and understand the results correctly, their properties such as speeds, dispersion relations and excitation need to be understood. his section derives the dispersion relations of both modes and explains the depth-dependent amplitude structure that determines how each mode decays between the crack plane and the snow bottom. \par
 
+\subsection{Potentials and wave equations}
+
+Starting from the equation of motion for a homogeneous elastic solid used in SALVUS,
+\begin{equation}
+    \mu \nabla^2 u + (\lambda + \mu) \nabla (\nabla \cdot u) = 
+    \rho \frac{\partial^2 u}{\partial t^2},
+    \label{eq:motion}
+\end{equation}
+the displacement field is decomposed into scalar ($\phi$, P-wave) and vector 
+($\psi$, S-wave) potentials via the Helmholtz decomposition 
+\parencite{achenbachWavePropagationElastic2012}:
+\begin{equation}
+    u_x = \frac{\partial \phi}{\partial x} - \frac{\partial \psi}{\partial z}, 
+    \qquad 
+    u_z = \frac{\partial \phi}{\partial z} + \frac{\partial \psi}{\partial x}.
+\end{equation}
+Substituting into equation \ref{eq:motion} decouples the problem into 
+separate wave equations for $\phi$ and $\psi$, each propagating at the 
+P-wave speed $c_p$ and S-wave speed $c_s$ respectively. Assuming harmonic 
+plane wave solutions of the form $\phi = f(z)\,e^{i(kx-\omega t)}$ and 
+$\psi = g(z)\,e^{i(kx-\omega t)}$, the depth functions satisfy
+\begin{equation}
+    \frac{d^2f}{dz^2} + p^2 f = 0, \qquad 
+    \frac{d^2g}{dz^2} + q^2 g = 0,
+\end{equation}
+with $p^2 = \omega^2/c_p^2 - k^2$ and $q^2 = \omega^2/c_s^2 - k^2$. The 
+general solutions are sinusoidal in $z$  (depth) when $p^2, q^2 > 0$ (propagating through the layer thickness), and hyperbolic when $p^2$ or $q^2 < 0$ (evanescent decay with depth). The evanescent case applies to wave components whose horizontal phase velocity is slower than the bulk wave speeds, which is the A0 mode at low frequency-thickness product, like it is the case in this thesis and explains why the A0 wave train decays more rapidly between crack depth and snow bottom than the faster S0 mode \parencite{graffWaveMotionElastic1975}.
+
 % In the following section, the equations of the different modes of Lamb waves are derived.  . These equations are derived for completeness, but also to understand how the input described in section \ref{sec:salvus_method} leads to these types of waves. Understanding the phyiscal processes that lead to the presence of Lamb waves is important for interpreting and understanding the results and the presence of Lamb waves therein. \par
 
 % From the equation of motion in an elastic solid, which is \begin{equation}
