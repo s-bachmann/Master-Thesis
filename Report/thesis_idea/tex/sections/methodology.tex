@@ -144,7 +144,7 @@ For the MPM results that are translated to FE, the moment tensor components and 
     % Force the horizontal spread specifically for the right column
     \node (pro5) [startstop, right of=start, node distance=9cm] {Moment tensor components in every direction};
     \node (pro6) [process, below of=pro5] {Read into SALVUS};
-    \node (pro7) [process, below of=pro6] {\textcolor{magenta}{FILTERING}};
+    \node (pro7) [process, below of=pro6] {Temporal taper of first and last sources to avoid injection noise};
     \node (pro8) [process, below of=pro7] {Padding of MPM coordinates to be away from abcs};
     \node (stop) [startstop, below of=pro8] {Setup of wavelet as stf, pass to SALVUS};
 
