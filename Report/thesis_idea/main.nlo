@@ -52,10 +52,11 @@
 \nomenclatureentry{S30$M_0$@[{$M_0$}]\begingroup Scalar seismic moment [N m]\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S31$V_p$@[{$V_p$}]\begingroup Particle (or source-cell) volume [$\mathrm{m^3}$]\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S32$r_{\rm mode}$@[{$r_{\rm mode}$}]\begingroup Mode-mix ratio (0: pure mode I, 1: pure mode II)\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S58$\xi$@[{$\xi$}]\begingroup Normalized opening in CZM or Mach cone angle\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S58$\xi$@[{$\xi$}]\begingroup Normalized opening in CZM\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S59$T_{\mathrm{peak}}$@[{$T_{\mathrm{peak}}$}]\begingroup Peak cohesive traction [Pa]\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S60$\phi_n,\,\phi_t$@[{$\phi_n,\,\phi_t$}]\begingroup Normal and tangential work of separation [$\mathrm{J\,m^{-2}}$]\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S61$f_M$@[{$f_M$}]\begingroup Ricker wavelet peak frequency [Hz]\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S62$\alpha_{Mach}$@[{$\alpha_{Mach}$}]\begingroup Mach cone angle\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S33$\Delta_n,\,\Delta_t$@[{$\Delta_n,\,\Delta_t$}]\begingroup Normal and tangential separations in CZM [m]\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S34$\delta_n,\,\delta_t$@[{$\delta_n,\,\delta_t$}]\begingroup Characteristic normal and tangential opening scales [m]\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S35$\delta_{n,c},\,\delta_{s,c},\,\delta_c$@[{$\delta_{n,c},\,\delta_{s,c},\,\delta_c$}]\begingroup Critical opening distances [m]\nomeqref {0}|nompageref}{1}
