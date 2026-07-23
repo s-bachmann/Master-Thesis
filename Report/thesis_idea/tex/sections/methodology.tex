@@ -50,7 +50,6 @@ This consists of the bed layer, a weak layer and a snow slab layer. In order to 
 
 
 
-
 \subsection{Cohesive Zone Model}
 \label{sec:czm_methods}
 
@@ -78,8 +77,7 @@ Key parameters and their provenance used in the simulations are summarized in ap
 \section{Source Generation for Simple and CZM Model}
 
 All sources generated use SALVUS' custom source time function option. For the simple model and the cohesive zone model, this is done by writing a file with the source wavelets in them. The source wavelets have ricker shape with peak frequency $\ f_m$ according to \cite{RickerWavelet2021}: \begin{equation}
-f(t)=(1-2\pi ^{2}f_{_{M}}^{2}t^{2})e^{-\pi ^{2}f_{_{M}}^{2}t^{2}}.
-   
+f(t)=(1-2\pi ^{2}f_{_{M}}^{2}t^{2})e^{-\pi ^{2}f_{_{M}}^{2}t^{2}}.  
 \end{equation} 
 
 The workflow of the code, including how the source speed is set up can be seen in the following flowchart. 
