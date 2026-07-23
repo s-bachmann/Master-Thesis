@@ -93,46 +93,6 @@ temporal footprint because the rupture front and the precursor waves propagate a
 
 
 
-% The sub-rayleigh horizontal strain and strain rate plots in figure \ref{fig:sub_strain} look very similar to the velocity plots in figure \ref{fig:sub_vel}. The same is true for the supershear strain and strain rate in figure \ref{fig:super_strain}, which look similar to all but the vertical velocity at the snow bottom (top right in figure \ref{fig:super_vel}). This is intuitive because strain is the spatial derivative of displacement ($\ \frac{\partial u}{\partial x}$), strain rate is the temporal derivative of strain ($\ \frac{\partial^2 u}{\partial x \partial t}$). Velocity on the other hand is the spatial derivative of displacement ($\ \frac{\partial u}{\partial t}$), so all the values are derived from displacement. The first wave caused by lack of interference \parencite{madariagaHighfrequencyRadiationCrack1977} in the sub-rayleigh case can also be observed in the strain and strain rate plots, this disappears again when source spacing is increased (appendix \ref{app:D}, figure \ref{fig:wide_sub_strain}). \par
-
-
-% Both the sub-rayleigh and the supershear strain and strain rate cases show a wave train running ahead. The slope of the first wavefront observed in figures \ref{fig:sub_strain,fig:super_strain} is close to the p-wave velocity in snow and the rupture velocity in the supershear case, which as discussed, is also close to the velocity of the S0 mode. This means that in both cases, the S0 wave modes are the first arrivals because they are fastest, likely followed by the p-waves. This is consistent with the observations made in the velocity plots. In the supershear case, the S0 waves are followed immediately by the waves from the rupture front, and the p-waves which would explain why there is only one clear but very broad wavefront in figure \ref{fig:super_strain}. In the sub-rayleigh strain and strain rate plots in figure \ref{fig:sub_strain}, the observations are also consistent with velocity. The first wave front to arrive are the p-waves and the S0 mode, followed by the front from the rupture and the s-waves last. The same goes for the widening of the wavefronts, which has already been discussed in the velocity section. \par 
-
-% The first arrival of the p-wave and S0 mode is also consistent with wave propagation. All plots in figures \ref{fig:sub_strain,fig:super_strain} show positive horizontal strain or strain rate first, followed by compression (negative strain) and positive strain again. This propagation is characterized by extension first and then contraction \parencite{kAkiRichards19801981}. \par
-
-% This very repetitive sequence of opposite polarities is a consequence of the snow acting as a waveguide, as described above. When energy is suddenly released by a propagating crack tip, the crack acts as an impulsive source that projects disturbances into the overlying slab \parencite{heierliAnticrackNucleationTriggering2008, gaumeDynamicAnticrackPropagation2018}. The leading P-wave arrival corresponds to the high-frequency, long-wavelength limit of the symmetric ($S_0$) Lamb mode, which represents an in-plane, extensional push-pull wave packet \parencite{achenbachWavePropagationElastic2012, graffWaveMotionElastic1975}. As this transient $S_0$ pulse outruns the rupture front, the initial forward displacement stretches the material, yielding a leading zone of positive tensile strain (red color). To satisfy elastodynamic restoring forces and conserve momentum as the wavefront passes a fixed point in space, this  extension must be immediately followed by a compensating contractional phase of negative compressive strain (blue), before returning to equilibrium. \par 
-
-% Behind this fast, extensional precursor lies the slower, highly oscillatory wave train, which displays a dense pattern of alternating opposite polarities. This trailing pattern is dictated by the superposition of the symmetric mode as well as the antisymmetric ($A_0$) flexural Lamb wave mode. \par
-
-% To relate the Lamb wave modes derived in section \ref{sec:wave_physics}to strain, the horizontal displacement $u_x$ is computed from the potentials:
-% \begin{equation}
-% u_x = \frac{\partial \phi}{\partial x} - \frac{\partial \psi}{\partial z} = \left[ ik B\sin(pz) + q C\sin(qz) \right] e^{i(kx-\omega t)}
-% \label{eq:ux_asym}
-% \end{equation}
-
-% Taking the spatial derivative with respect to $x$ to find the horizontal strain ($\varepsilon_{xx} = \partial u_x / \partial x$) transforms the expression via multiplication by $ik$ in the wavenumber domain:
-% \begin{equation}
-% \varepsilon_{xx}^{\text{asym}}(x, z, t) = \left[ -k^2 B\sin(pz) + ikq C\sin(qz) \right] e^{i(kx-\omega t)}
-% \label{eq:strain_asym_final}
-% \end{equation}
-
-% By isolating the real part of this analytical expression, the spatial and temporal variation of the flexural strain field isolates the reason for the opposite polarity patterns along the wave train. The strain can be rewritten in terms of its harmonic phase:
-% \begin{equation}
-% \varepsilon_{xx}^{\text{asym}}(x, z, t) = \mathcal{A}_{\text{asym}}(z) \cos(kx - \omega t + \phi_0)
-% \label{eq:harmonic_strain_real}
-% \end{equation}
-% where $\mathcal{A}_{\text{asym}}(z)$ represents the depth-dependent amplitude envelope and $\phi_0$ is a constant phase angle. The transcendental cosine term dictates that over a fixed spatial distance of exactly half a wavelength, $\Delta x = \lambda/2 = \pi/k$, the wavefield must cycle smoothly between its maximum positive value ($\cos = +1$) and its maximum negative value ($\cos = -1$). 
-
-% Physically, this represents the dynamic bending or structural "ringing" of the slab  \parencite{heierliAnticrackNucleationTriggering2008, bergfeldSignaturesSubRayleighSupershear2025}. When a section of the slab flexes vertically, the fibers located on a single side of the neutral axis experience localized horizontal squeezing ($\varepsilon_{xx} < 0$, blue bands). As the elastic wave oscillates into its next half-cycle, the local curvature reverses, subjecting those same fibers to intense horizontal stretching ($\varepsilon_{xx} > 0$, red bands). 
-
-% When this is translated to the horizontal strain rate ($\dot{\varepsilon}_{xx}$), the time derivative ($\partial/\partial t \longleftrightarrow -i\omega$) shifts the wave profile into a sine function:
-% \begin{equation}
-% \dot{\varepsilon}_{xx}^{\text{asym}}(x, z, t) = \omega \mathcal{A}_{\text{asym}}(z) \sin(kx - \omega t + \phi_0)
-% \label{eq:harmonic_rate_real}
-% \end{equation}
-% This differentiation scales the amplitude by the angular frequency $\omega$ and introduces a $90^\circ$ spatial phase shift, but leaves the underlying alternating pattern of opposite polarities completely intact. Because both the crack depth ($y = 2.625\,\text{m}$) and the snowpack base ($y = 2.25\,\text{m}$) reside entirely within the lower half of the slab waveguide below its neutral axis ($z < 0$), they evaluate to the same geometric sign in $\sin(pz)$. Consequently, both recording horizons register these rapid, cyclic transitions from extension to contraction perfectly in-phase with one another. 
-
-
 \subsection{Velocity space-time plots}
 \label{sec:vel_disc}
 Like in the strain and strain rate plots, the main wavefronts in the supershear and sub-rayleigh case in figures \ref{fig:super_vel,fig:sub_vel} correspond in slope to the rupture speed of each case. Like in strain (rate), the velocity output is vastly different for sub-rayleigh and supershear, which means a transition between propagation regimes can not only be observed in the strain output, but also in the velocity outupt. \par
