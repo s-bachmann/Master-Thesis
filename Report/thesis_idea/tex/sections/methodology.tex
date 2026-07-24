@@ -49,31 +49,6 @@ This consists of the bed layer, a weak layer and a snow slab layer. In order to 
 
 
 
-
-\subsection{Cohesive Zone Model}
-\label{sec:czm_methods}
-
-A graphical representation of the model setup and the equations used can be found in appendix \ref{app:B}.
-
-The rupture model used in the simulations is implemented as a mixed-mode Cohesive Zone Model (CZM) following \cite{mahajanModelingInterfacialCrack2008}. This model was chosen because there is a narrow band ahead of the fracture zone, the cohesive zone, where the material is already weakened. This means that before a point in the material cracks, there is already weakening of the material before. This seems to be reasonable for representing crack propagation in snow, since failure occurs as a consequence of loading and is not spontaneous. The computational domain extends 400 m in the horizontal (x) direction and 3 m in the vertical (y) direction and contains a 1.5 m snow layer over a 1.5 m air layer. Material parameters for the snow layer are taken from \cite{guillemotEffectSnowfallChanges2021}. The mixed-mode behavior is implemented because in reality, crack propagation can involve both normal and shear displacement.  \par
-
-Each activated subfault is represented as a point source in the SALVUS source array. The kinematic moment formulation serves as the numerical link to the underlying cohesive zone model through a strict energy balance. Within the CZM, the total strain energy released during fracture is split between the fracture energy ($G_I$ or $G_{II}$) required to break down the cohesive zone, and the remaining radiated elastic strain energy. By prescribing $x_{\rm slip}$ across a finite grid cell width $\Delta x$, the resulting scalar seismic moment $M_0$ mathematically captures the  radiated energy that propagates away from the process zone into the bulk medium as a seismic wavefield. \par
-
-To take the mixed-mode mechanics of the process zone into account, the individual components of the moment tensor are  scaled by the mode-mix ratio $r_{\rm mode}$, which can be user input:
-\[ m_{xx}=0,\quad m_{xy}=M_0\,r_{\rm mode},\quad m_{yy}=-(1-r_{\rm mode})M_0. \]
-Consequently, at the extremes of $r_{\rm mode}=0$ or $1$, the unaligned component of the moment tensor drops to zero, perfectly matching the radiation patterns of pure opening or pure shear failure. All subfault sources are driven by an identical central frequency, source wavelet, and amplitude scaling factor, thereby reconstructing the discrete subfault array into a highly coherent, continuously moving source that mimics a smooth, physical crack tip rupture throughout the wave propagation mesh. \par
-
-
-% The following numerical settings and checks are applied consistently across simulations to ensure stability and reproducibility:
-% \begin{itemize}
-%   \item Mesh resolution: element/subfault spacing $h$ is chosen to resolve the cohesive zone and the shortest seismic wavelength; practical rule: $h\le\min(l_{cz}/4,\;\lambda_{\min}/8)$, where $\lambda_{\min}=v_{\min}/f_{95}$ and $f_{95}$ is the 95\%ile source frequency.
-%   \item Time stepping: explicit scheme with CFL-like stability criterion $\Delta t\lesssim s\,h/v_{\max}$ and safety factor $s\approx0.3$--0.5.
-%   \item Boundaries: use absorbing boundary conditions to minimize reflections at domain edges.
-%   \item Rupture discretization: subfault onset times follow $t_o=(x-x_{\rm start})/v_{\rm rupture}$; rise time is taken as $t_{rise}\approx l_{cz}/v_{\rm rupture}$; scalar moment per subfault $M_0=\mu\,x_{\rm slip}\,\Delta x$.
-% \end{itemize}
-
-Key parameters and their provenance used in the simulations are summarized in appendix \ref{app:C}, table \ref{tab:simple_params}. 
-
 \section{Source Generation for Simple and CZM Model}
 
 All sources generated use SALVUS' custom source time function option. For the simple model and the cohesive zone model, this is done by writing a file with the source wavelets in them. The source wavelets have ricker shape with peak frequency $\ f_m$ according to \cite{RickerWavelet2021}: \begin{equation}
@@ -125,6 +100,30 @@ The workflow of the code, including how the source speed is set up can be seen i
     \caption{Operational workflow for the SALVUS source time function (STF) setup.}
     \label{fig:wavelet_workflow_grid}
 \end{figure}
+
+\subsection{Cohesive Zone Model}
+\label{sec:czm_methods}
+
+A graphical representation of the model setup and the equations used can be found in appendix \ref{app:B}.
+
+The rupture model used in the simulations is implemented as a mixed-mode Cohesive Zone Model (CZM) following \cite{mahajanModelingInterfacialCrack2008}. This model was chosen because there is a narrow band ahead of the fracture zone, the cohesive zone, where the material is already weakened. This means that prior to the failure ofa  point in the material, there is already weakening of the material. This seems to be reasonable for representing crack propagation in snow, since failure occurs as a consequence of loading and is not spontaneous. The computational domain extends 400 m in the horizontal (x) direction and 3 m in the vertical (y) direction and contains a 1.5 m snow layer over a 1.5 m air layer. Material parameters for the snow layer are taken from \cite{guillemotEffectSnowfallChanges2021}. The mixed-mode behavior is implemented because in reality, crack propagation can involve both normal and shear displacement.  \par
+
+Each activated subfault is represented as a point source in the SALVUS source array. The kinematic moment formulation serves as the numerical link to the underlying cohesive zone model through a strict energy balance. Within the CZM, the total strain energy released during fracture is split between the fracture energy ($G_I$ or $G_{II}$) required to break down the cohesive zone, and the remaining radiated elastic strain energy. By prescribing $x_{\rm slip}$ across a finite grid cell width $\Delta x$, the resulting scalar seismic moment $M_0$ mathematically captures the  radiated energy that propagates away from the process zone into the bulk medium as a seismic wavefield. \par
+
+To take the mixed-mode mechanics of the process zone into account, the individual components of the moment tensor are  scaled by the mode-mix ratio $r_{\rm mode}$, which can be user input:
+\[ m_{xx}=0,\quad m_{xy}=M_0\,r_{\rm mode},\quad m_{yy}=-(1-r_{\rm mode})M_0. \]
+Consequently, at the extremes of $r_{\rm mode}=0$ or $1$, the unaligned component of the moment tensor drops to zero, perfectly matching the radiation patterns of pure opening or pure shear failure. All subfault sources are driven by an identical central frequency, source wavelet, and amplitude scaling factor, thereby reconstructing the discrete subfault array into a highly coherent, continuously moving source that mimics a smooth, physical crack tip rupture throughout the wave propagation mesh. \par
+
+
+% The following numerical settings and checks are applied consistently across simulations to ensure stability and reproducibility:
+% \begin{itemize}
+%   \item Mesh resolution: element/subfault spacing $h$ is chosen to resolve the cohesive zone and the shortest seismic wavelength; practical rule: $h\le\min(l_{cz}/4,\;\lambda_{\min}/8)$, where $\lambda_{\min}=v_{\min}/f_{95}$ and $f_{95}$ is the 95\%ile source frequency.
+%   \item Time stepping: explicit scheme with CFL-like stability criterion $\Delta t\lesssim s\,h/v_{\max}$ and safety factor $s\approx0.3$--0.5.
+%   \item Boundaries: use absorbing boundary conditions to minimize reflections at domain edges.
+%   \item Rupture discretization: subfault onset times follow $t_o=(x-x_{\rm start})/v_{\rm rupture}$; rise time is taken as $t_{rise}\approx l_{cz}/v_{\rm rupture}$; scalar moment per subfault $M_0=\mu\,x_{\rm slip}\,\Delta x$.
+% \end{itemize}
+
+Key parameters and their provenance used in the simulations are summarized in appendix \ref{app:C}, table \ref{tab:simple_params}. 
 
 \section{Source Generation for MPM}
 
