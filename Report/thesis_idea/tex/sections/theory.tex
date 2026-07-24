@@ -41,9 +41,9 @@ FE methods use the weak form of the governing equations \parencite{FiniteElement
   (\rho\partial_t^2u,w)_G - \langle \sigma \cdot \hat{n}, w \rangle_{\partial G} + (\sigma, \nabla w)_G = (f,w)_G,
   \label{eq:compact weak form}
 \end{equation} using the notations $\ (a,b)_G = \int_g a \cdot b d^nx, \langle a,b\rangle_{\partial_G} = \int_{\partial G}  a \cdot b d^{n-1}x$  as well as Hooke's law \parencite{afanasievModularFlexibleSpectralelement2019}. This can be even more compacted by describing a mathematical model I with M for mass term, B for boundary term, S for stiffness and F for forcing term: \begin{equation}
-I_I(M) - I_I(B) + I_I(S) = I_I(F) = \sum_{P \in \{M,B,S,F\}} I_I(P) = 0
+I_I(M) - I_I(B) + I_I(S) = I_I(F) = \sum_{P \in \{M,B,S,F\}} I_I(P) = 0.
 \label{eq:abstract weak form}
-\end{equation}  \parencite{afanasievModularFlexibleSpectralelement2019}. \par 
+\end{equation} Physically, this means that the entire model can be described as a combination of the different terms, which is very useful, especially if one of the terms is neglible \parencite{afanasievModularFlexibleSpectralelement2019}. \par 
 
 % To solve \ref{eq:abstract weak form} the Galerkin approach is used, the test function w and solution u are approximated by $\ \phi$, which are a set of functions from the same space \parencite{afanasievModularFlexibleSpectralelement2019}. Any discrete function, for example displacement can be approximated this way: \begin{equation}
 %   g(x) \approx \sum_{j=1}^{N} F_j \phi_j(x), 
