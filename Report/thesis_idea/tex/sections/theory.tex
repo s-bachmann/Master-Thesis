@@ -23,7 +23,7 @@ The governing equation considered in this case is the elastic wave equation, bec
 \begin{equation}
   \rho\partial_t^2u = \nabla \cdot \sigma + f
   \label{eq:waveeq simple}
-\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019,kAkiRichards19801981}. Stress can be related to displacement using Hoek's law: $\ \sigma = \frac{C}{\nabla u}$, where C is a 4th order tensor which characterizes the stiffness of the medium \parencite{afanasievModularFlexibleSpectralelement2019}. Combining \ref{eq:waveeq simple} with Hook's law, this leads to \begin{equation}
+\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019,kAkiRichards19801981}. Stress can be related to displacement using Hooke's law: $\ \sigma = \frac{C}{\nabla u}$, where C is a 4th order tensor which characterizes the stiffness of the medium \parencite{afanasievModularFlexibleSpectralelement2019}. Combining \ref{eq:waveeq simple} with Hook's law, this leads to \begin{equation}
 \rho\partial_t^2u = \nabla \cdot \frac{C}{\nabla u} + f,
 \label{eq:strong form}
 \end{equation} which is the strong form of the linear elastic wave equation. \par
@@ -40,7 +40,7 @@ FE methods use the weak form of the governing equations \parencite{FiniteElement
 \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. The first integral on the left side of \ref{eq:second weak form} is the boundary integral, which changes depending on the boundary conditions implemented. The inegral on the right hand side is the mass term, the second on the left hand side is the stiffness term, and the last on the left hand side is the external forcing term, all in \ref{eq:second weak form}. Equation \ref{eq:second weak form} can be compacted to \begin{equation}
   (\rho\partial_t^2u,w)_G - \langle \sigma \cdot \hat{n}, w \rangle_{\partial G} + (\sigma, \nabla w)_G = (f,w)_G,
   \label{eq:compact weak form}
-\end{equation} using the notations $\ (a,b)_G = \int_g a \cdot b d^nx, \langle a,b\rangle_{\partial_G} = \int_{\partial G}  a \cdot b d^{n-1}x$  as well as Hoek's law \parencite{afanasievModularFlexibleSpectralelement2019}. This can be even more compacted by describing a mathematical model I with M for mass term, B for boundary term, S for stiffness and F for forcing term: \begin{equation}
+\end{equation} using the notations $\ (a,b)_G = \int_g a \cdot b d^nx, \langle a,b\rangle_{\partial_G} = \int_{\partial G}  a \cdot b d^{n-1}x$  as well as Hooke's law \parencite{afanasievModularFlexibleSpectralelement2019}. This can be even more compacted by describing a mathematical model I with M for mass term, B for boundary term, S for stiffness and F for forcing term: \begin{equation}
 I_I(M) - I_I(B) + I_I(S) = I_I(F) = \sum_{P \in \{M,B,S,F\}} I_I(P) = 0
 \label{eq:abstract weak form}
 \end{equation}  \parencite{afanasievModularFlexibleSpectralelement2019}. \par 
