@@ -76,7 +76,7 @@ The workflow of the code, including how the source speed is set up can be seen i
         % --- COLUMN 3: Signal Conditioning & Export ---
         % Positioned further right
         \node (pro5) [process, right=of pro3] {Spatial tapering of first and last sources to avoid injection noise};
-        \node (pro6) [process, below=of pro5] {Zero-padding of wavelet arrays before and after firing time (np.roll)};
+        \node (pro6) [process, below=of pro5] {Zero-padding of wavelet arrays before and after firing time to have all wavelets be the same lenght};
         \node (pro7) [process, below=of pro6] {Calculation of source wavelet shape with weight, padding, and taper};
         \node (pro8) [startstop, below=of pro7] {Setup of wavelet as stf, pass to SALVUS};
 
