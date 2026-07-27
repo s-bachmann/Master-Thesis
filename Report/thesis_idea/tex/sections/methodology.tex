@@ -168,6 +168,44 @@ For the MPM results that are translated to FE, the moment tensor components and 
 \label{fig:mpm_workflow}
 \end{figure}
 
+The directionality and amplitude of the moment tensor components extracted over all sources can be seen in figure \ref{fig:mpm_moment_tensor}. The colorbar shows the amplitude of the individual comonents. This is important because 
+
+\begin{figure}[htbp]
+    \centering
+    % Top row: two plots side by side
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/}
+        \caption{Moment tensor component $M_{11}$ (horizontal stress).}
+        \label{fig:mpm_m11}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/}
+        \caption{Moment tensor component $M_{12}$ (shear stress).}
+        \label{fig:mpm_m12}
+    \end{subfigure}
+
+    \vspace{0.5em}
+
+    % Bottom row: one centred plot
+    \begin{subfigure}[t]{0.60\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{}
+        \caption{Moment tensor component $M_{22}$ (vertical stress).}
+        \label{fig:mpm_m22}
+    \end{subfigure}
+
+    \caption{Moment tensor components injected into SALVUS as custom source
+    time functions, plotted as a function of source index (horizontal axis,
+    corresponding to spatial position along the crack) and MPM timestep
+    (vertical axis). The colorbar shows amplitde (red: negative amplitude, blue: positive amplitude).The diagonal boundary separating zero (blue, lower
+    triangle) from active values (upper region) marks the crack propagation
+    front.}
+    \label{fig:mpm_moment_tensor}
+\end{figure}
+
 \section{Simulation of DAS data}
 \label{sec:methods_das}
 
