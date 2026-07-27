@@ -107,12 +107,12 @@ In the supershear case, the dark spots of concentrated energy are more broad on 
 \section{MPM Guided Results}
 \label{sec:mpm_results}
 
-The results shown here are from the MPM-guided simulation. The sources are spaced 0.01m apart from 75m to 125m. Unlike the results in section \ref{sec:results-1}, which are for a simple, 2 layer model with prescribed rupture velocities (sub-rayleigh and supershear case), the results here are for a 5-layer model with a rupture velocity coming from the MPM simulations. 
+The results shown here are from the MPM-guided simulation. The sources are spaced 0.01m apart from 75m to 125m. Unlike the results in section \ref{sec:results-1}, which are for a simple, 2 layer model with prescribed rupture velocities (sub-rayleigh and supershear case), the results here are for a 5-layer model with a rupture velocity coming from the MPM simulations. The results shown here are filtered using a low-pass filter with 50Hz cutoff \textcolor{magenta}{VERIFY WHAT FILTER IS USED IN THE END}. Because both strain and velocity are derived from displacement, the displacement field extracted is shown in appendix \ref{app:I}. The displacement data itself is unfiltered, but because strain, strain rate and velocity are derivatives, the differentiation acts as a high-pass filter which amplifies noise. Displacement is shown in the appendix to show that there are little numerical artefacts and noise in the extracted data. 
 
 \subsection{MPM Strain and Strain rate}
 \label{sec:mpm_strain}
 
-\textcolor{magenta}{RERUN PLOTS BECAUSE TITLES AND ORDER IS WRONG}
+\textcolor{magenta}{RERUN PLOTS BECAUSE TITLES AND ORDER IS WRONG, also no x-labels in top row}
 
 \begin{figure}[h]
     \centering
@@ -120,6 +120,12 @@ The results shown here are from the MPM-guided simulation. The sources are space
     \caption{Strain and strain rate (horizontal component) averaged over 10.4m gauge length to represent DAS data: strain rate in top coulmn, strain in bottom column. Crack depth on left, snow bottom on the right. Colorbar shows magnitude of strain or strain rate.}
     \label{fig:mpm_strain}
 \end{figure}
+
+The strain as well as the strain rate plots in figure \ref{fig:mpm_strain} all show a distinct v-shape initiating from the crack onset point at x=75m.\par
+
+Both strain panels (bottom column) show a front of positive strain (red, on top) arriving first, which is followed by a negative strain front. At both the crack depth as well as the snow bottom, in positive x-direction, the red front widens until about x=125m, when there is a jump and the front has about same width as the blue front. This location coincides with the crack arrest location. In the negative x-direction, both the positive and negative front have the same width from the initiation point on to the domain boundary. \par 
+
+The same positive and negative fronts from the crack onset point can be observed in the strain rate plots in the top row of figure \ref{fig:mpm_strain}. Contrary to the strain panels, where the fronts are solid colors, in the strain rate panels, these are much more heterogenous. The forward propagating positive front is much narrower in strain rate than in strain, the same is true for the backward propagating negative front. The wedge-shape to the crack arrest point observed in strain can still be seen in strain rate however. 
 
 \subsection{MPM Velocity}
 \label{sec:mpm_vel}
@@ -130,6 +136,8 @@ The results shown here are from the MPM-guided simulation. The sources are space
     \caption{Particle velocity: vertical velocity in top row, horizontal velocity (vx) in bottom row. Crack depth on left, snow bottom on the right. Colorbar shows magnitude of particle velocity (m/s).}
     \label{fig:mpm_vel}
 \end{figure}
+
+
 
 \subsection{MPM f-k plot}
 
