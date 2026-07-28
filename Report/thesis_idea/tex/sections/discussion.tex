@@ -23,10 +23,10 @@ The main wavefronts which can be observed in figures \ref{fig:sub_strain} and \r
 \begin{tabular}{|l|l|l|}
 \hline
 Case         & Prescribed Speed  & Speed from Results                 \\ \hline
-Sub-Rayleigh & 0.6*vs = 40.8m/s  & $ \ \frac{270-30m}{6s} = 40m/s$    \\ \hline
-Supershear   & 1.6*vs = 108.7m/s & $ \ \frac{270-30m}{2.3s} = 104m/s$ \\ \hline
+Sub-Rayleigh & 0.6vs = 40.8m/s  & $ \ \frac{270-30m}{6s} = 40m/s$    \\ \hline
+Supershear   & 1.6vs = 108.7m/s & $ \ \frac{270-30m}{2.3s} = 104m/s$ \\ \hline
 \end{tabular}
-\caption{Simulation input rupture speeds versus speeds calculated from slopes in figures \ref{fig:sub_strain,fig:super_strain}.}
+\caption{Simulation input rupture speeds versus speeds calculated from slopes in figures \ref{fig:sub_strain}, \ref{fig:super_strain}.}
 \label{tab:results_speeds}
 \end{table}
 
@@ -188,10 +188,11 @@ The gauge length used to simulate DAS measurements here is 10.4m, like in \cite{
 
 % \end{itemize}
 
+\subsection{Strain and Strain rate space-time plots}
 
-\subsection{MPM strain and strain rate plots}
+The v-shaped wavefronts which can be observed in figure \ref{sec:mpm_strain} are likely emitted by the crack itself. The slope of these two arms in both sides of propagation does not change from the vertex, which is the crack onset, to the end of the domain. This indicates a constant propagation speed, which means unlike simulations and experiments by \cite{trottetTransitionSubRayleighAnticrack2022,sironTheoreticalFrameworkDynamic2023,bergfeldSignaturesSubRayleighSupershear2025}, there is no transition in crack propagation speed. When taking the slope of the positive strain wavefront which arrives first in figure \ref{fig:mpm_strain}, this results in a propagation speed of 
 
-\subsection{MPM fk-plots}
+
 
 \section{Comparison between pure SE and MPM}
 
