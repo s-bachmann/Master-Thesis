@@ -193,7 +193,7 @@ The gauge length used to simulate DAS measurements here is 10.4m, like in \cite{
 
 \subsubsection{Propagation speeds observed}
 
-The v-shaped wavefronts which can be observed in figure \ref{sec:mpm_strain} are likely emitted by the crack itself. The slope of these two arms in both sides of propagation does not change from the vertex, which is the crack onset, to the end of the domain. This indicates a constant propagation speed, which means unlike simulations and experiments by \cite{trottetTransitionSubRayleighAnticrack2022,sironTheoreticalFrameworkDynamic2023,bergfeldSignaturesSubRayleighSupershear2025}, there is no transition in crack propagation speed. When taking the slope of the positive strain wavefront which arrives first in figure \ref{fig:mpm_strain}, this results in: $\ v_{prop} = \frac{125-75}{1.2-0.5} = 57.14 m/s$. Considering the medium velocities used (shown in table \ref{tab:mpm_params} but also in the f-k plot \ref{fig:mpm_fk}), this is sub-rayleigh propagation in both the weak layer but also the snow slab. \par
+The v-shaped wavefronts which can be observed in figure \ref{sec:mpm_strain} are likely emitted by the crack itself. The slope of these two arms in both sides of propagation does not change from the vertex, which is the crack onset, to the end of the domain. This indicates a constant propagation speed, which means unlike simulations and experiments by \cite{sironTheoreticalFrameworkDynamic2023,bergfeldSignaturesSubRayleighSupershear2025}, there is no transition in crack propagation speed. When taking the slope of the positive strain wavefront which arrives first in figure \ref{fig:mpm_strain}, this results in: $\ v_{prop} = \frac{125-75}{1.2-0.5} = 57.14 m/s$. Considering the medium velocities used (shown in table \ref{tab:mpm_params} but also in the f-k plot \ref{fig:mpm_fk}), this is sub-rayleigh propagation in both the weak layer but also the snow slab. \par
 
 The slope of the backward propagating arm in figure \ref{fig:mpm_strain} is calculated according to to the values in table \ref{tab:results_speeds}, the same is true for the second wavefront which is observed as well as the forward-propagating wavefront before the crack arrest. 
 
@@ -202,13 +202,19 @@ The slope of the backward propagating arm in figure \ref{fig:mpm_strain} is calc
 \hline
 Wave type                              & Slope formula                           & Calculated speed \\ \hline
 Between crack onset and arrest         & $\ v_{prop} = \frac{125-75}{1.2-0.5} $  & 57 m/s           \\ \hline
-Backward propagating                   & $\ v_{prop} = \frac{75-0}{1-1.7} $      & 107 m/s          \\ \hline
+Backward propagating                   & $\ v_{prop} = \frac{75-0}{1-1.6} $      & -125 m/s          \\ \hline
 Second wavefront                       & $\ v_{prop} = \frac{175-150}{4-3} $     & 25 m/s           \\ \hline
-Forward propagating after crack arrest & $\ v_{prop} = \frac{200-125}{1.9-1.2} $ & 107 m/s          \\ \hline
+Forward propagating after crack arrest & $\ v_{prop} = \frac{200-125}{1.8-1.2} $ & 125 m/s          \\ \hline
 \end{tabular}
 \caption{Speeds calculated from slopes in figure \ref{fig:mpm_strain}.}
 \label{tab:mpm_results_speeds}
 \end{table}
+
+From the speeds caluculated from the mpm strain results shown in table \ref{tab:mpm_results_speeds} it becomes more clear which wave types are observed. \par 
+
+The crack propagation speed of 57 m/s, which is in the sub-rayleigh regime, is consistent with the conditions needed for transition between the sub-rayleigh and supershear regimes. \cite{trottetTransitionSubRayleighAnticrack2022} state that on flat terrain, the normal stress at the crack tip is higher than the shear stress in the same location. This drives anticrack propagation, which is in the sub-rayleigh regime \parencite{gaumeDynamicAnticrackPropagation2018,trottetTransitionSubRayleighAnticrack2022}. For a transition to the supershear regime, a slope would be needed which drives a transition from a mixed-mode anticrack propagation to pure mode II crack propagation \parencite{trottetTransitionSubRayleighAnticrack2022}. The moment tensor components which were used as STFs shown in figure \ref{fig:mpm_moment_tensor} all show negative amplitudes. For a mode II crack, which is in-plane shear, the component shown in \ref{fig:mpm_m12} would have to have an alternating sign (red and blue), alongside m11 and m22 shown in \ref{fig:mpm_m11} and \ref{fig:mpm_m22} very small or zero. Since all three components have a strong negative amplitude, a mixed-mode anticrack is more likely, which would lead to sub-rayleigh crack propagation. \par 
+
+The speeds of the forward and backwards-propagating waves emitted by the crack is the same in the positive as well as the negative direction. This means that this type of wave is emitted on both sides of the crack. Its speed is between the p-wave speed of the weak layer and the p-wave speed of the snow slab (table \ref{tab:mpm_params}). This is consistent with the results discussed in the simple model section \ref{sec:simple_disc}, where a sub-rayleigh crack propagation regime emits an S0 precursor, which is also consistent with field observations of \cite{herwijnenSeismicSensorArray2011}. 
 
 
 
