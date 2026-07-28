@@ -190,7 +190,27 @@ The gauge length used to simulate DAS measurements here is 10.4m, like in \cite{
 
 \subsection{Strain and Strain rate space-time plots}
 
-The v-shaped wavefronts which can be observed in figure \ref{sec:mpm_strain} are likely emitted by the crack itself. The slope of these two arms in both sides of propagation does not change from the vertex, which is the crack onset, to the end of the domain. This indicates a constant propagation speed, which means unlike simulations and experiments by \cite{trottetTransitionSubRayleighAnticrack2022,sironTheoreticalFrameworkDynamic2023,bergfeldSignaturesSubRayleighSupershear2025}, there is no transition in crack propagation speed. When taking the slope of the positive strain wavefront which arrives first in figure \ref{fig:mpm_strain}, this results in a propagation speed of 
+
+\subsubsection{Propagation speeds observed}
+
+The v-shaped wavefronts which can be observed in figure \ref{sec:mpm_strain} are likely emitted by the crack itself. The slope of these two arms in both sides of propagation does not change from the vertex, which is the crack onset, to the end of the domain. This indicates a constant propagation speed, which means unlike simulations and experiments by \cite{trottetTransitionSubRayleighAnticrack2022,sironTheoreticalFrameworkDynamic2023,bergfeldSignaturesSubRayleighSupershear2025}, there is no transition in crack propagation speed. When taking the slope of the positive strain wavefront which arrives first in figure \ref{fig:mpm_strain}, this results in: $\ v_{prop} = \frac{125-75}{1.2-0.5} = 57.14 m/s$. Considering the medium velocities used (shown in table \ref{tab:mpm_params} but also in the f-k plot \ref{fig:mpm_fk}), this is sub-rayleigh propagation in both the weak layer but also the snow slab. \par
+
+The slope of the backward propagating arm in figure \ref{fig:mpm_strain} is calculated according to to the values in table \ref{tab:results_speeds}, the same is true for the second wavefront which is observed as well as the forward-propagating wavefront before the crack arrest. 
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|}
+\hline
+Wave type                              & Slope formula                           & Calculated speed \\ \hline
+Between crack onset and arrest         & $\ v_{prop} = \frac{125-75}{1.2-0.5} $  & 57 m/s           \\ \hline
+Backward propagating                   & $\ v_{prop} = \frac{75-0}{1-1.7} $      & 107 m/s          \\ \hline
+Second wavefront                       & $\ v_{prop} = \frac{175-150}{4-3} $     & 25 m/s           \\ \hline
+Forward propagating after crack arrest & $\ v_{prop} = \frac{200-125}{1.9-1.2} $ & 107 m/s          \\ \hline
+\end{tabular}
+\caption{Speeds calculated from slopes in figure \ref{fig:mpm_strain}.}
+\label{tab:mpm_results_speeds}
+\end{table}
+
+
 
 
 
