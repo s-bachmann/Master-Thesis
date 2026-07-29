@@ -312,8 +312,6 @@ directivity effect scales with crack length relative to wavelength \parencite{ma
 
 The MPM-guided results have sereval implications for the interpretation and measurement of field DAS data. They extend and support the concluisons drawn from the simple model results. \par
 
-\subsubsection{Validation of simple model signatures in the five-layer
-geometry}
 
 Before comparing the MPM and simple model results directly, it is
 important to establish that the wave signatures identified in the
@@ -329,13 +327,26 @@ are not specific to the simplified two-layer domain. Second, any
 differences observed between the simple model and the MPM-guided results
 can be attributed to the MPM source time functions and the more realistic physics rather than to the geometry change. This isolates the effect of the source physics on the DAS output. This separation is important for interpreting the additional features observed in the MPM results, specifically the quasi-static strain field and the different amplitude structure, as consequences of the MPM source rather than consequences of the five-layer geometry. This is why the two results can be compared to each other in the following section even though they have a different domain geometry. \par
 
-\subsubsection{Sub-Rayleigh propagation effects}
 
 The crack propagation speed measured from the MPM results
 ($v_r \approx 57$\,m/s, table \ref{tab:mpm_results_speeds}) is
 sub-Rayleigh for both the slab and weak layer material parameters. This is consistent with studies by \cite{trottetTransitionSubRayleighAnticrack2022,sironTheoreticalFrameworkDynamic2023,bergfeldSignaturesSubRayleighSupershear2025}, which show that transition between sub-rayleigh ans supershear crack propagation occurs at high slope angles and the normal to shear stress ratio at the crack tip. Because of the moment tensor input, which shows constant mixed-mode anticracks and no indication of pure mode II, which would be indicative of the transition \parencite{trottetTransitionSubRayleighAnticrack2022}, a sub-rayleigh regime is not only supported by the results, but also by the input. 
 The DAS signatures observed in the MPM strain rate panels
 (figure \ref{fig:mpm_strain}) and velocity panels are therefore those of a sub-Rayleigh crack at physically realistic material parameters and STFs, rather than the simplified speeds and Ricker wavelets used in the simple model. The two-wavefront structure, which is a fast S0/P precursor and a slower crack front, is present in the MPM results as well as in the simple model, confirming that this signature is not an artefact of the prescribed source geometry butreflects genuine wave physics of sub-Rayleigh crack propagation in snow. This is also confirmed by field data by \cite{herwijnenSeismicSensorArray2011}. \par
+
+
+In addition to the S0 precursor identified in the simple model, another effect which could be used for early warning was observed in the more complex ximulations. The most significant additional effect observed in the MPM results is the quasi-static strain field, which is absent from the simple model but
+clearly visible in the MPM strain panels (figure \ref{fig:mpm_strain},
+bottom row). A DAS cable records axial strain along the cable
+\parencite{hartogIntroductionDistributedOptical2017}, which means it
+would record both the dynamic wave radiation (visible in strain rate)
+and the cumulative static deformation (visible in strain) simultaneously.
+The quasi-static field builds up progressively as the crack propagates
+and persists after arrest, with no decay in amplitude, providing a sustained signal that does not decay with distance in the same way as the dynamic wavefield. In principle, this static component could be detectable as a slow, gradual change in DAS strain before the dynamic wavefront arrives, providing an early indicator of crack growth that precedes the impulsive dynamic signal \parencite{freundDynamicFractureMechanics1990,
+heierliAnticrackNucleationTriggering2008}. Whether this signal would
+exceed the noise floor of a field DAS system depends on the instrument
+sensitivity and environmental noise, which is beyond the scope of this
+study and remains an open question for field validation. This means that additional to the S0/P-wave precursor, which in some cases is weak in amplitude, there is an additional precursor which could help in early warning of avalanche nucleation.  \par
 
 
 
