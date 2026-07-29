@@ -308,7 +308,7 @@ produced strong directivity asymmetry between positive and negative k,
 the shorter MPM crack (40\,m) has weaker directivity because the
 directivity effect scales with crack length relative to wavelength \parencite{madariagaDynamicsExpandingCircular1976}. \par 
 
-\subsection{Implications for DAS measurements \& Synthesis of Results}
+\section{Implications for DAS measurements \& Synthesis of Results}
 
 The MPM-guided results have sereval implications for the interpretation and measurement of field DAS data. They extend and support the concluisons drawn from the simple model results. \par
 
@@ -332,7 +332,7 @@ The crack propagation speed measured from the MPM results
 ($v_r \approx 57$\,m/s, table \ref{tab:mpm_results_speeds}) is
 sub-Rayleigh for both the slab and weak layer material parameters. This is consistent with studies by \cite{trottetTransitionSubRayleighAnticrack2022,sironTheoreticalFrameworkDynamic2023,bergfeldSignaturesSubRayleighSupershear2025}, which show that transition between sub-rayleigh ans supershear crack propagation occurs at high slope angles and the normal to shear stress ratio at the crack tip. Because of the moment tensor input, which shows constant mixed-mode anticracks and no indication of pure mode II, which would be indicative of the transition \parencite{trottetTransitionSubRayleighAnticrack2022}, a sub-rayleigh regime is not only supported by the results, but also by the input. 
 The DAS signatures observed in the MPM strain rate panels
-(figure \ref{fig:mpm_strain}) and velocity panels are therefore those of a sub-Rayleigh crack at physically realistic material parameters and STFs, rather than the simplified speeds and Ricker wavelets used in the simple model. The two-wavefront structure, which is a fast S0/P precursor and a slower crack front, is present in the MPM results as well as in the simple model, confirming that this signature is not an artefact of the prescribed source geometry butreflects genuine wave physics of sub-Rayleigh crack propagation in snow. This is also confirmed by field data by \cite{herwijnenSeismicSensorArray2011}. \par
+(figure \ref{fig:mpm_strain}) and velocity panels are therefore those of a sub-Rayleigh crack at physically realistic material parameters and STFs, rather than the simplified speeds and Ricker wavelets used in the simple model. It is important to not here that since the MPM-guided results are sub-rayleigh, there is no verification for the effects observed in the simple case supershear model. The two-wavefront structure, which is a fast S0/P precursor and a slower crack front, is present in the MPM results as well as in the simple model, confirming that this signature is not an artefact of the prescribed source geometry butreflects genuine wave physics of sub-Rayleigh crack propagation in snow. This is also confirmed by field data by \cite{herwijnenSeismicSensorArray2011}. \par
 
 
 In addition to the S0 precursor identified in the simple model, another effect which could be used for early warning was observed in the more complex ximulations. The most significant additional effect observed in the MPM results is the quasi-static strain field, which is absent from the simple model but
@@ -368,38 +368,40 @@ the simulation, as shown in figure \ref{fig:mpm_strain} via their slope, suggest
 could in principle measure the rupture speed of a sub-Rayleigh 
 crack directly from the arrival time separation.\par
 
-
-
-\section{Comparison between pure SE and MPM}
-
-\subsection{Propagation speeds \& wavefronts observed}
-two wavefront strcuture might not be observed because speeds are much closer (propagation and p-wave speed)
-
-\subsection{Precursor \& Rupture Signature}
-
-In the sub-rayleigh case in section \ref{sec:simple_disc}, a precursor was identified, which travels in positive direction of propagation at the S0 wave speed in all plots. In some of the sub-rayleigh plots in the simple case, for example strain and strain rate at the snow bottom in figure \ref{fig:sub_strain}, this wavefront can also be observed propagating in the negative direction. In the MPM-guided simulations, a wavefront with speeds close to S0 and the p-wave speed was observed propagating in the positive as well as the negative direction of propagation in all plots.\textcolor{magenta}{explain why} \par
-
-While this precursor is weak in amplitude in the simple case plots, it can be seen clearly in the MPM-guided results. \textcolor{magenta}{why?}. This comparison is important for the interpretation of DAS field data, because the precursor might not always look the same. The different amplitudes but also polarity structure of the precursor S0 wave leads to the conclusion that it can be best identified via its speed. \par
-
-\subsection{Quasi-Static Wavefield}
-
-In the MPM-guided simulations, discussed in section \ref{sec:mpm_disc}, the quasi-static displacement field can be observed clearly as broad red and blue wavefronts. Such structures cannot be observed in the sub-rayleigh simple case nor the supershear simple case. The reason for this is the source wavelet used. While the ricker wavelet, which was used in the simple case, is symmetric \parencite{kAkiRichards19801981}, the MPM STFS are not symmetric. This means that their cumulative integral, unlike that of the ricker, is nonzero \parencite{kaganPointSourcesElastic1987, zhuNoteDynamicStatic2002,freundDynamicFractureMechanics1998}, which leads to a net deformation, which is negative in this case. \par 
-
-\subsection{Wave types observed}
-
-\subsection{Crack arrest signatures}
-crack arrest much broader in mpm case
+The last implication for DAS measurements of crack propagation in snow is only observed in the simple model. Since the supershear velocities observed there have higher ampltudes than their sub-rayleigh counterparts, sub-rayleigh crack propagation regimes might not be observed because they have too low amplitude. This is especially important for transitional regimes, such as the one described by \cite{trottetTransitionSubRayleighAnticrack2022,sironTheoreticalFrameworkDynamic2023}. If the crack propagation starts out as sub-rayleigh, which sends out a weak signal and then transitions into supershear with higher signal amplitude, a false conclusion of pure supershear rupture might be drawn if the sub-rayleigh regime is too weak to be measured. \par 
 
 
 
+% \section{Comparison between pure SE and MPM}
+
+% \subsection{Propagation speeds \& wavefronts observed}
+% two wavefront strcuture might not be observed because speeds are much closer (propagation and p-wave speed)
+
+% \subsection{Precursor \& Rupture Signature}
+
+% In the sub-rayleigh case in section \ref{sec:simple_disc}, a precursor was identified, which travels in positive direction of propagation at the S0 wave speed in all plots. In some of the sub-rayleigh plots in the simple case, for example strain and strain rate at the snow bottom in figure \ref{fig:sub_strain}, this wavefront can also be observed propagating in the negative direction. In the MPM-guided simulations, a wavefront with speeds close to S0 and the p-wave speed was observed propagating in the positive as well as the negative direction of propagation in all plots.\textcolor{magenta}{explain why} \par
+
+% While this precursor is weak in amplitude in the simple case plots, it can be seen clearly in the MPM-guided results. \textcolor{magenta}{why?}. This comparison is important for the interpretation of DAS field data, because the precursor might not always look the same. The different amplitudes but also polarity structure of the precursor S0 wave leads to the conclusion that it can be best identified via its speed. \par
+
+% \subsection{Quasi-Static Wavefield}
+
+% In the MPM-guided simulations, discussed in section \ref{sec:mpm_disc}, the quasi-static displacement field can be observed clearly as broad red and blue wavefronts. Such structures cannot be observed in the sub-rayleigh simple case nor the supershear simple case. The reason for this is the source wavelet used. While the ricker wavelet, which was used in the simple case, is symmetric \parencite{kAkiRichards19801981}, the MPM STFS are not symmetric. This means that their cumulative integral, unlike that of the ricker, is nonzero \parencite{kaganPointSourcesElastic1987, zhuNoteDynamicStatic2002,freundDynamicFractureMechanics1998}, which leads to a net deformation, which is negative in this case. \par 
+
+% \subsection{Wave types observed}
+
+% \subsection{Crack arrest signatures}
+% crack arrest much broader in mpm case
 
 
 
-\begin{itemize}
-  \item Compare fk plots and slopes measured: which propagation regime is observed in mpm?
-  \item Quasi-static offset comparison: why absent in simple model and why in MPM, what implications does this have
-  \item COmparison between wavefront structures: eg precursor
-  \item Comparison between types of waves present: which lamb wave modes and why
-  \item Crack arrest signature comparisons
-  \item Why absence / presence of dispersion and spreading? 
-\end{itemize}
+
+
+
+% \begin{itemize}
+%   \item Compare fk plots and slopes measured: which propagation regime is observed in mpm?
+%   \item Quasi-static offset comparison: why absent in simple model and why in MPM, what implications does this have
+%   \item COmparison between wavefront structures: eg precursor
+%   \item Comparison between types of waves present: which lamb wave modes and why
+%   \item Crack arrest signature comparisons
+%   \item Why absence / presence of dispersion and spreading? 
+% \end{itemize}
