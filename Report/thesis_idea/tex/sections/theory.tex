@@ -15,15 +15,15 @@
 \section{Spectral Element Wave Propagation Modeling}
 \label{sec:salvus_method}
 
-The model described in \ref{sec:czm_methods} is implemented using the finite-element (FE) method in SALVUS. The following section describes the physics used by SALVUS. Understanding the phsysics behind the modeling has relevance for understanding and interpreting the results, but also what can be modeled. To discretize a domain, the domain is divided into a finite number of elements \parencite{FiniteElementMethod}. The number of elements in this case is defined by the maximum wave frequency that needs to be resolved accurately, the number of mesh elements per wavelength is user-input. The boundaries of these elements describe the mesh, the mesh has a finite number of grid-points (edge points of the elements) \parencite{FiniteElementMethod}. The governing equations are determined at every element node, so for rectangular elements with nodes 1,2,3 and 4, there is the system $\ r^1 = \begin{pmatrix}r_1^1 \\ r_2^1 \\ r_3^1\\ r_4^1 \end{pmatrix}$ for force  and $\ u^1 = \begin{pmatrix}u_1^1 \\ u_2^1 \\ u_3^1\\ u_4^1 \end{pmatrix}$ for displacement \parencite{FiniteElementMethod}. The residual or characteristic relationship of linear elastic elements is of the form $\ r^1 = f^1-K^1u^1 $, where f are the nodal forces distributing load on the nodes and K is the stiffness matrix of a specific element \parencite{FiniteElementMethod}. In FE, the approximation of the wavefield by basis functions leads to a representation over the whole domain and not just at a set of points \parencite{afanasievModularFlexibleSpectralelement2019}. This means integrals can be calculated over surfaces or even volumes \parencite{afanasievModularFlexibleSpectralelement2019}. \par
+The model described in \ref{sec:czm_methods} is implemented using the finite-element (FE) method in SALVUS. The following section describes the physics used by SALVUS. Understanding the phsysics behind the modeling has relevance for understanding and interpreting the results, but also what can be modeled. To discretize a domain, the domain is divided into a finite number of elements \parencite{FiniteElementMethod}. The number of mesh elements per wavelength is user-input, but needs to be small enough to satisfy the condition for the maximum wave frequency that needs to be resolved accurately. The boundaries of these elements describe the mesh, the mesh has a finite number of grid-points (edge points of the elements) \parencite{FiniteElementMethod}. The governing equations are determined at every element node, so for rectangular elements with nodes 1,2,3 and 4, there is the system $\ r^1 = \begin{pmatrix}r_1^1 \\ r_2^1 \\ r_3^1\\ r_4^1 \end{pmatrix}$ for force  and $\ u^1 = \begin{pmatrix}u_1^1 \\ u_2^1 \\ u_3^1\\ u_4^1 \end{pmatrix}$ for displacement \parencite{FiniteElementMethod}. The residual or characteristic relationship of linear elastic elements is of the form $\ r^1 = f^1-K^1u^1 $, where f are the nodal forces distributing load on the nodes, r are the residual forces and K is the stiffness matrix of a specific element \parencite{FiniteElementMethod}. In FE, the approximation of the wavefield by basis functions leads to a representation over the whole domain and not just at a set of points \parencite{afanasievModularFlexibleSpectralelement2019}. This means integrals can be calculated over surfaces or even volumes \parencite{afanasievModularFlexibleSpectralelement2019}. \par
 
-Snow is a porous medium \parencite{mellorEngineeringPropertiesSnow1977}, which is approximated as a solid in this Thesis. This is because SALVUS meshes need an isotropic, solid material and cannot account for pore spaces. Higher frequencies in the resulting data would be atteunated much quicker in an actual porous medium \parencite{koushikDevelopmentSeismicSignalbased2024}. In addition, the presence of pore spaces in the medium would lead to complex scattering of the fields in the results, their absence is an important factor to consider when comparing simulated data to real-world data. The presence of air or water in snow is not neglected completely in the SALVUS simulations implemented however, because the material properties taken from \cite{guillemotEffectSnowfallChanges2021} are based on field measurements of snow. This means that the velocities measured by \cite{guillemotEffectSnowfallChanges2021} are not of pure snow, but snow that contains air or water. \par
+Snow is a porous medium \parencite{mellorEngineeringPropertiesSnow1977}, which is approximated as a solid in this Thesis. This is because SALVUS meshes need an isotropic, solid material and cannot account for pore spaces. Higher frequencies in the resulting data would be atteunated much quicker in an actual porous medium \parencite{koushikDevelopmentSeismicSignalbased2024}. The medium assumed here is an effective medium, because the wavelengths of interest are much larger than the pore spaces in snow, this is why such simplifications do not really have an effect on the results. The presence of air or water in snow is not neglected completely in the SALVUS simulations implemented however, because the material properties taken from \cite{guillemotEffectSnowfallChanges2021} are based on field measurements of snow. This means that the velocities measured by \cite{guillemotEffectSnowfallChanges2021} are not of pure snow, but snow that contains air or water. \par
 
 The governing equation considered in this case is the elastic wave equation, because real-life crack propagation emits P- and S-waves. The wave equation for a heterogenous elastic solid in the n-dimensional domain G is 
 \begin{equation}
   \rho\partial_t^2u = \nabla \cdot \sigma + f
   \label{eq:waveeq simple}
-\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019,kAkiRichards19801981}. Stress can be related to displacement using Hooke's law: $\ \sigma = C  : \nabla u$, where C is a 4th order tensor which characterizes the stiffness of the medium \parencite{afanasievModularFlexibleSpectralelement2019}. Combining \ref{eq:waveeq simple} with Hooke's law, this leads to \begin{equation}
+\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019,kAkiRichards19801981}, with $\ \rho $ as density of the material, u as displacement, $\ \sigma$ as stress, and f as the force. Stress can be related to displacement using Hooke's law: $\ \sigma = C  : \nabla u$, where C is a 4th order tensor which characterizes the stiffness of the medium \parencite{afanasievModularFlexibleSpectralelement2019}. Combining \ref{eq:waveeq simple} with Hooke's law, this leads to \begin{equation}
 \rho\partial_t^2u = \nabla \cdot \frac{C}{\nabla u} + f,
 \label{eq:strong form}
 \end{equation} which is the strong form of the linear elastic wave equation. \par
@@ -70,41 +70,40 @@ I_I(M) - I_I(B) + I_I(S) = I_I(F) = \sum_{P \in \{M,B,S,F\}} I_I(P) = 0.
 The dependence on the reference coordinate system is described by E, which is a model containing the physical coordinate to reference coordinate transformation, in other words, the determinant of the Jacobian matrix and its inverse \parencite{afanasievModularFlexibleSpectralelement2019}. Using basis B of the polynomial functions of the approximation $\ V_h$, which are piecewise per-element because of possible discontinuities, the abstract form in \ref{eq:abstract weak form} becomes \begin{equation}
   \sum_{P \in \{M,B,S,F\}} I_I(P,B(E)) = 0
   \label{eq:abstract approximation}
-\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. This means that fields such as displacement and velocity are calculated in this way. From these fields, the data from the model in section \ref{sec:czm_methods} is obtained and plotted. 
+\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. This means that fields such as displacement and velocity are calculated using the abstract approximation in equation \ref{eq:abstract approximation}. From these fields, the data from the model in section \ref{sec:czm_methods} is obtained and plotted. 
 
 \section{Cohesive Zone Physics}
 \label{sec:czm_theory}
 
-The cohesive zone (CZM) model is set up according to \cite{mahajanModelingInterfacialCrack2008}. This model was set up in lieu of the simpler model to take more complex physics into account. Cohesive tractions are prescribed on zero-thickness interface elements and depend on the normalized opening \(\xi=\frac{\partial}{\partial_c}\). The zero-thickness interface elements are implemented by not solving for volumetric strain but displacement between interfaces instead. For the linear softening law used here the traction in a given cohesive element follows
-\[ T(\xi) = T_\mathrm{peak}\,(1-\xi) \quad\text{for } 0\leq\xi\leq1,\qquad T(\xi)=0\ \text{for }\xi>1, \]
-where \(T_\mathrm{peak}\) is the peak cohesive traction and \(\delta_c\) the critical opening. The normalized opening can be related to the local crack coordinate as \(\xi=\frac{(x-x_0)}{l_{crack}}\) for a crack front with initial position \(x_0\) and local process length \(l_{crack}\). \par
-
-The mixed-mode potential used in the code follows the form from \cite{mahajanModelingInterfacialCrack2008}. With $\Delta=(\Delta_n,\Delta_t)$ denoting normal and tangential separations, the potential is written as
+The cohesive zone model (CZM) framework utilized in this study is based on the mixed-mode formulation by \cite{mahajanModelingInterfacialCrack2008}. This model relies on a potential function to describe the relationship between tractions and separations under mixed-mode conditions. With $\Delta=(\Delta_n,\Delta_t)$ denoting normal and tangential separations, the potential is defined as
 \[
 \phi(\Delta)=\phi_n\,\exp\left(-\frac{\Delta_n}{\delta_n}\right)\left\{\left[1+\frac{\Delta_n}{\delta_n}\right]+q\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right]\right\},
 \]
-from which the normal and tangential tractions are obtained, the implementation uses the same closed-form expressions. This is so that peak tractions occur at $\Delta_n=\delta_n$ and $|\Delta_t|=\delta_t/\sqrt{2}$. The normal and shear works of separation relate to peak strengths via
-\[ \phi_n = e\,\sigma_{\max}\,\delta_n, \qquad \phi_t = \sqrt{\tfrac{e}{2}}\,\tau_{\max}\,\delta_t, \]
-and the critical openings for pure modes are computed as
-\[ \delta_{n,c}=\frac{2G_I}{\sigma_n},\qquad \delta_{s,c}=\frac{2G_{II}}{\tau_s}, \]
-with the mixed-mode critical opening
-\[ \delta_c=\sqrt{(1-r_{\rm mode})\,\delta_{n,c}^2 + r_{\rm mode}\,\delta_{s,c}^2 }\;.
+from which normal and tangential tractions are derived. Peak tractions occur at $\Delta_n=\delta_n$ and $|\Delta_t|=\delta_t/\sqrt{2}$. The normal and shear works of separation relate to the peak strengths via
+\[
+\phi_n = e\,\sigma_{\max}\,\delta_n, \qquad \phi_t = \sqrt{\tfrac{e}{2}}\,\tau_{\max}\,\delta_t.
 \]
+The critical openings for pure normal (Mode I) and shear (Mode II) modes are computed from the corresponding fracture energies and peak tractions as
+\[
+\delta_{n,c}=\frac{2G_I}{\sigma_n},\qquad \delta_{s,c}=\frac{2G_{II}}{\tau_s}.
+\]
+For mixed-mode behavior, these are combined into a single mixed-mode critical opening:
+\[
+\delta_c=\sqrt{(1-r_{\rm mode})\,\delta_{n,c}^2 + r_{\rm mode}\,\delta_{s,c}^2 },
+\]
+where $r_{\rm mode}\in[0,1]$ controls the mode mix (where 0 represents pure Mode I and 1 represents pure Mode II).
 
-Lamé parameters are derived from input seismic speeds and density: \(v_s=\sqrt{\frac{\mu}{\rho}}\) so that \(\mu=\rho v_s^2\), and \(v_p=\sqrt{\frac{(\lambda+2\mu)}{\rho}}\) so that \(\lambda=\rho(v_p^2-2v_s^2)\). Young's modulus is then computed from the Lamé parameters: \(E=\dfrac{\mu(3\lambda+2\mu)}{\lambda+\mu}\) \parencite{kAkiRichards19801981}. These conversions are applied for every material in the model. \par
+To describe the cohesive weakening, a linear softening law is adopted. The traction $T$ depends on a normalized opening parameter $\xi$, defined as the ratio of current separation to the critical opening. The traction follows
+\[
+T(\xi) = T_\mathrm{peak}\,(1-\xi) \quad\text{for } 0\leq\xi\leq1,\qquad T(\xi)=0\ \text{for }\xi>1,
+\]
+where $T_\mathrm{peak}$ is the peak cohesive traction.
 
-The critical opening distances for pure normal (Mode I) and shear (Mode II) separations are computed from the corresponding fracture energies, strenghts,  peak tractions as the mode opening equations
-and combined for mixed-mode behaviour using
-\[ \delta_c = \sqrt{(1-r_{\rm mode})\,\delta_{n,c}^2 + r_{\rm mode}\,\delta_{s,c}^2 }, \]
-where \(r_{\rm mode}\in[0,1]\) controls the mode I/II mix, where 0 is pure mode I and 1 is pure mode II. In the current implementation the slip on each subfault follows the prescribed linear slip law up to the critical slip distance. The mode mix is an user-input parameter, while all the other parameters are derived from laboratory experiments from \cite{mahajanModelingInterfacialCrack2008}.  \par
-
-The characteristic Irwin length for shear is calculated as \(l_{ch}=\frac{E_{\rm eff}G_{II}}{\tau_s^2}\), and the cohesive zone length is taken as \(l_{cz}=\tfrac{\pi}{8}l_{ch}\), which sets the spatial extent over which cohesive weakening is active ahead of the crack tip. \par
-
-Rupture propagation speed is chosen with respect to the local shear-wave speed and the bounds discussed in \cite{trottetTransitionSubRayleighAnticrack2022}. Where appropriate, the rupture speed is corrected for finite slab thickness and bending stiffness to account for slab flexure effects. The rupture front is discretized into a sequence of subfaults: each subfault is activated at an onset time
-\[ t_o = \frac{x-x_{\rm start}}{v_{\rm rupture}}, \]
-using the subfault horizontal position \(x\), the rupture starting position \(x_{\rm start}\), and the prescribed rupture speed \(v_{\rm rupture}\). \par
-
-The sources are then set up as described in the methods section. A visual representation of the physics and setup workflow can be seen in appendix \ref{app:B}. \par
+The spatial extent over which this cohesive weakening is active ahead of the crack tip is related to the characteristic Irwin length for shear, calculated as $l_{ch}=\frac{E_{\rm eff}G_{II}}{\tau_s^2}$. The cohesive zone length is theoretically estimated as $l_{cz}=\tfrac{\pi}{8}l_{ch}$. Additionally, the bulk elastic behavior of the surrounding medium is defined by Lamé parameters, which can be derived from seismic wave speeds ($v_p$, $v_s$) and density ($\rho$) following \cite{kAkiRichards19801981}:
+\[
+\mu=\rho v_s^2, \qquad \lambda=\rho(v_p^2-2v_s^2).
+\]
+Young's modulus is subsequently computed as $E=\dfrac{\mu(3\lambda+2\mu)}{\lambda+\mu}$.
 
 \section{Wave Propagation Physics}
 \label{sec:wave_physics}
@@ -162,7 +161,7 @@ A0 dispersion relation is:
 Both relations give phase velocity as function of frequency, meaning the two modes are dispersive: different frequency components 
 propagate at different speeds \parencite{kAkiRichards19801981}. At low frequency-thickness product ($f \cdot h \ll 1$, as in this case where $f \cdot h \approx 6$ Hz$\cdot$m), A0 is strongly dispersive and slow, while S0 is nearly non-dispersive and 
 converges to the plate wave speed with $c_p^{\text{plate}} = 2c_s\sqrt{1 - v_s^2/v_p^2}$ 
-\parencite{roseWavesPlates2014}. This is why S0 appears as a narrow, fast precursor in the results and A0 produces the broad, dispersive wave train.
+\parencite{roseWavesPlates2014}.
 
 \subsection{Mode symmetry and depth dependence}
 
@@ -295,13 +294,13 @@ The static displacement field of a crack with half length a, in an elastic mediu
     \varepsilon_{xx}^{\text{static}} \propto \frac{\mu\,\delta\,a}{r^2}.
 \end{equation}  This strain accumulates as the crack grows in length, but does not propagate away from the crack location, which means it stays in the near-field \parencite{freundDynamicFractureMechanics1998}. This occurs because there are no restoring forces, the crack, which has opened, is already at equilibrium. \par
 
-The control on whether a static field occurs is the shape of the STF. The DC component of the STF, which is its integral over time or the moment rate, has to be non-zero in order for there to be a static component \parencite{kAkiRichards19801981,zhuNoteDynamicStatic2002}. For a Ricker wavelet source for example, the integral over time is zero because the positive and negative lobes are equal in area and they cancel out. For more irregular shaped source wavelets, as described by \cite{kaganPointSourcesElastic1987}, like for example the MPM STFs described in the next section, this is not true and the moment rate is non-zero. \par
+The control on whether a static field occurs is the shape of the STF. The DC component of the STF, which is its integral over time, has to be non-zero in order for there to be a static component \parencite{kAkiRichards19801981,zhuNoteDynamicStatic2002}. For a Ricker wavelet source for example, the integral over time is zero because the positive and negative lobes are equal in area and they cancel out. For more irregular shaped source wavelets, as described by \cite{kaganPointSourcesElastic1987}, like for example the MPM STFs described in the next section, this is not true and their integral is non-zero. \par
 
 
 \section{From Particles to Waves: Translating MPM to SE}
 \label{sec:from_mpm_to_se}
 
-The material point simulations of the PST performed by \parencite{gaumeDynamicAnticrackPropagation2018,trottetTransitionSubRayleighAnticrack2022} result in the recorded stresses in the model according to \cite{gaumeInvestigatingReleaseFlow2019}. The output of the model is particle velocity, the stress tensor, strain and the J-value, which distinguished between elastic and plastic deformation. The J-value is used as a filter to remove any irreversible deformation such as the weak layer collapse. Only the elastic stress field outside the plastic zone is kept, ensuring that the moment tensor represents the elastic source rather than the inelastic crack process zone itself. This also ensures that any signals emitted from the crack are not taken into account, because inputting them in SALVUS would mean that waves emitted by the crack are used as sources. \par
+The material point simulations of the PST performed by \parencite{gaumeDynamicAnticrackPropagation2018,trottetTransitionSubRayleighAnticrack2022} result in the recorded stresses in the model according to \cite{gaumeInvestigatingReleaseFlow2019}. The output of the model is particle velocity, the stress tensor, strain and the J-value, which distinguishes between elastic and plastic deformation. The J-value is used as a filter to remove any irreversible or non-elastic deformation such as the weak layer collapse. To accurately construct the equivalent seismic source, only the elastic stress field outside the inelastic plastic zone is retained for calculating the moment tensors. The inelastic deformation serves as the only physical driver for the elastic wavefield in the bulk medium. This also ensures that any signals emitted from the crack are not taken into account, because inputting them in SALVUS would mean that waves emitted by the crack are used as sources. \par
 
 To translate the continuum source to something which can be input to SALVUS, the relationship between stress and strain must be defined. The deformation of the material is described by the infinitesimal strain tensor $\ \epsilon_{ij}$, which is linearly related to the Cauchy stress tensor $\ \sigma_{ij}$ via the fourth-order stiffness tensor $C_ {ijkl}$ \parencite{holzapfelNonlinearSolidMechanics2010}. This relationship, known as generalized Hooke's law, is expressed as:
 \begin{equation}
@@ -312,9 +311,9 @@ For a, isotropic, linear elastic material, such as the snow in this case, the st
   \sigma_{xx} = (\lambda + 2\mu)\epsilon_{xx} + \lambda \epsilon_{yy}
 \end{equation} \parencite{kAkiRichards19801981}. When scaling this with the particle volume, the individual moment tensor components can be obtained using \begin{equation}
   M_{ij} = \Delta\sigma_{ij} V_p.
-\end{equation} The scaling with the particle volume is done because in a small material volume, such as a snow particle, the stress drop is the same as a small seismic point source \parencite{backusMomentTensorsOther1976}. This is why multiplying the stress tensor with the particle volume yields the moment tensor component.  \par
+\end{equation} The scaling with the particle volume is done because in a small material volume, such as a snow particle, the stress drop ($\ \Delta \sigma_{ij}$) is the same as a small seismic point source \parencite{backusMomentTensorsOther1976}. This is why multiplying the stress tensor with the particle volume yields the moment tensor component.  \par
 
-These moment tensor components can then be input into SALVUS as custom source time functions. The waveforms are obtained via the amplitude of the different moment tensor components at different times. \par
+These moment tensor components can then be input into SALVUS as custom source time functions. The waveforms are obtained via the amplitude of the different moment tensor components at different times. Each moment tensor (in all three directions of the 2D model) is injected as a point source. This means that every point source represents the localized movement of a few particles in the snowpack. \par
 
 The visual representation fo this workflow can be seen in appendix \ref{app:E}. 
 
