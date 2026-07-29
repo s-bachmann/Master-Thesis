@@ -280,10 +280,33 @@ In the vertical velocity plots in figure \ref{fig:mpm_vel}, two secondary wavefr
 Again, the crack never outruns the waves which are radiated from it, which means that the stopping phase can radiate in all directions \parencite{freundDynamicFractureMechanics1998}. The crack arrest at x=125\,m produces a v-shaped stopping-phase signature consistent with sub-Rayleigh arrest, analogous to the arrest structure identified in the simple model (section \ref{sec:simple_disc}). Both arms of the V propagate at the P-wave and S0 speed of the slab (125 m/s=, measured in table \ref{tab:mpm_results_speeds}), confirming that the stopping phase radiates in all directions at the bulk wave speed, independent of the pre-arrest rupture speed \parencite{madariagaHighfrequencyRadiationCrack1977}. \par 
 
 
-
-
-
 \subsection{F-k plot}
+The f-k plot confirmes the structures which have been observed in the previous sections. The f-k spectrum of the MPM-guided simulation (figure \ref{fig:mpm_fk})shows two pairs of symmetric energy bands, one on each side of the wavenumber axis.\par
+
+The steep inner bands in figure \ref{fig:mpm_fk}, aligned with the P-wave speeds of the slab and weak layer ($v_p \approx 127$\,m/s and $v_p^{\text{wl}} \approx 116$\,m/s, shown by the red and white lines), correspond to the S0/P-wave precursor radiating from the crack initiation and arrest points at the fastest available wave speed. This is not just because the p-wave speeds in the slab and in the weak layer are close in value, but also because the crack initiates in the weak layer and radiates into the slab. These bands appear on both the positive and negative wavenumber sides because the precursor radiates in both directions from the initiation point at $x = 75$\,m, consistent with the forward and backward propagating arms of the v after the crack locations, measured at approximately 125\,m/s in table \ref{tab:mpm_results_speeds} and with the precursor identified in
+the simple model sub-Rayleigh results. Because the slab and weak layer
+P-wave speeds are nearly identical in the MPM material
+(table \ref{tab:mpm_params}), the combined energy band appears broader than either line alone. This is consistent with the same precursor observed in field measurements by \textcite{herwijnenSeismicSensorArray2011}, where a fast P/S0-wave arrival preceded the main crack signal. \par
+
+
+The shallower outer bands, with a slope corresponding to
+$v_{rupture} \approx 57$\,m/s from table~\ref{tab:mpm_results_speeds}, are the crack propagation front itself. The crack radiates energy both forward
+(in the direction of propagation) and backward (as each source fires and
+sends energy behind the advancing tip), producing bands on both the
+positive and negative wavenumber sides. The positive side is more
+concentrated and stronger in amplitude, reflecting the net forward
+propagation of the crack from $x = 75$\,m to $x = 125$\,m. The apparent
+slope of these bands gives a rupture speed consistent with the direct
+measurement from the strain panels, providing an independent f-k
+confirmation of the sub-Rayleigh propagation regime. \par
+
+The dispersive A0 Lamb mode, which in the simple model produced distinct features between the rupture speed and P-wave speed
+lines in figure \ref{fig:preliminary_fk}, does not appear here. This is consistent with the shorter crack length in the MPM model (40\,m versus 240\,m in the simple model): a shorter source array produces less coherent beaming of A0 energy into a concentrated f-k ridge, spreading it instead into a diffuse background \parencite{roseWavesPlates2014}. This backgound could be contained in the concentration of energy around the two p-wave speeds. \par
+
+Unlike in the simple case f-k-plot, the spectrum shown in figure \ref{fig:mpm_fk} is symmetric around positive and negative wavenumbers. Unlike in the simple model where the long crack (240\,m)
+produced strong directivity asymmetry between positive and negative k,
+the shorter MPM crack (40\,m) has weaker directivity because the
+directivity effect scales with crack length relative to wavelength \parencite{madariagaDynamicsExpandingCircular1976}. \par 
 
 
 
