@@ -221,13 +221,35 @@ The speeds of the forward and backwards-propagating waves emitted by the crack i
 The third wavefront which is observed in figure \ref{fig:mpm_strain}, has a much lower propagation speed than all other wavefronts. This wavefront also broadens with time and the waves curve downward, towards the origin of the coordinate system. This wavefront could be the dispersive A0 Lamb wave mode, because at low frequency thickness product, and at the dominant frequencies present in the model, has a group velocity which is significantly below the S-wave speed of the slab \parencite{roseWavesPlates2014}. \par
 
 \subsubsection{Wavefield Structure \& Quasi-Static Strain field }
-\textcolor{magenta}{connect this to structures better}
 
 The most striking feature identidied in the strain and strain rate plots is the thick bands of positive and negative polarity coming from the crack onset. In the positive direction of propagation, the first arrival is a positive strain or strain rate, followed by a negative (blue) band of negative strain (rate). In the negative direction of propagation, this order is reversed, the negative polarity arrives first. This band changes when the crack has stopped: at x=125m, the positive wavefront suddenly jumps to be wider. In the region of the crack, so from 75m to 125m, it was a narrow wedge whereas the blue region was very broad. \par
 
-This structure is the quasi-static strain field. The positive region, which builds up in the shape of a wedge, is the static stress redistribution driven by the growing crack \parencite{freundDynamicFractureMechanics1998}. This arises because the moment tensor STF has a non-zero DC-component and there is permanent deformation, which is described in section \ref{sec:dc_static_theory}. This means that the weak layer undergoes permanent deformation after the crack has passed. The deformation resulting is collapse, which is consistent with an anticrack as described by \cite{heierliAnticrackNucleationTriggering2008,gaumeDynamicAnticrackPropagation2018,trottetTransitionSubRayleighAnticrack2022}, which can trigger avalanches. This is also supported by the moment tensor components shown in figure \ref{fig:mpm_moment_tensor}, where all components are predominantly negative. The region before crack propagation (white) can be clearly distinguished from the region where the crack is propagating or has propagated, which have a negative value. This means that there are no restoring forces after the crack has propagated, which means that the deformation stays in place. This is further supported by the cumulative integral of all moment tensor components shown in figure \ref{fig:cum_int_mpm}. All three cumulative integrals approach a negative value, which means that the displacement caused by them is also negative. In other words, because of the asymmetric shape of the moment tensor source time functions used in the MPM simulation, which do not integrate to 0 over time, there is a net displacement. Since all components result in a negative displacement, this results in an anticrack, or weak layer collapse. \par  
+The positve wedge of energy is the quasi-static strain field, as described by \cite{freundDynamicFractureMechanics1998}. It builds up progressively between $x = 75$\,m and $x = 125$\,m as the crack propagates, then transitions
+abruptly to a broad negative region (blue) after the crack arrests at
+$x = 125$\,m. This red wedge is narrow at the crack onset ($t \approx
+0.5$\,s, $x = 75$\,m) and widens to its maximum at the crack arrest
+($t \approx 1.2$\,s, $x = 125$\,m), tracing the spatial footprint of the
+growing crack. The abrupt widening of the positive front at $x = 125$\,m
+marks the moment of arrest, where the accumulated quasi-static compression is released as the crack stops, and the strain field relaxes into its
+post-failure configuration. This arises because the moment tensor STF has a non-zero DC-component and there is permanent deformation, which is described in section \ref{sec:dc_static_theory}. This means that the weak layer undergoes permanent deformation after the crack has passed. The deformation resulting is collapse, which is consistent with an anticrack as described by \cite{heierliAnticrackNucleationTriggering2008,gaumeDynamicAnticrackPropagation2018,trottetTransitionSubRayleighAnticrack2022}, which can trigger avalanches. 
+This is also supported by the moment tensor components shown in figure \ref{fig:mpm_moment_tensor}, where all components are predominantly negative. The region before crack propagation (white) can be clearly distinguished from the region where the crack is propagating or has propagated, which have a negative value. This means that there are no restoring forces after the crack has propagated, which means that the deformation stays in place. This is further supported by the cumulative integral of all moment tensor components shown in figure \ref{fig:cum_int_mpm}. All three cumulative integrals approach a negative value, which means that the displacement caused by them is also negative. In other words, because of the asymmetric shape of the moment tensor source time functions used in the MPM simulation, which do not integrate to 0 over time, there is a net displacement. Since all components result in a negative displacement, this results in an anticrack, or weak layer collapse. \par  
 
-The polarity sequence, which can be observed in the second wavefront in the strain and strain rate plots at crack depth in the left column of figure \ref{fig:mpm_strain}, is layered. This is the same structure which has alredy been observed in the simple model, the alternating polarity pattern corresponds to the A0 Lamb wave mode. This will be identified properly in the discussion of the velocity plots. \par 
+The quasi-static wavefield is contained within a v-shaped wavefront originatinf from the crack onset at x=75m. It shows high amplitude lines of positive and negative strain which are alternating. In the positive
+direction ($x > 75$\,m), the first dynamic arrival is positive strain or strain rate (red)
+followed immediately by negative strain (rate), consistent with the
+extension-first, compression-second polarity sequence of P-wave or S0 Lamb
+mode radiation \parencite{kAkiRichards19801981}. In the negative direction
+($x < 75$\,m), this order is reversed because the receiver is on the
+opposite side of the source: the compressive push from the crack initiation
+reaches a point to the left as a compression-first arrival. The slope
+of the forward-propagating arm gives the crack propagation speed
+($v_r \approx 57$\,m/s, in the region of the crack, and  $v \approx
+125$\,m/s after the crack has propagated, seen in table \ref{tab:mpm_results_speeds}). The slope of
+the backward-propagating arm gives the P-wave or S0 speed ($v \approx
+125$\,m/s), consistent with the precursor identified in the simple model
+results and with field observations of \cite{herwijnenSeismicSensorArray2011}. \par
+
+The second dispersive wave train observed in the crack depth panels on the left side of figure \ref{fig:mpm_vel} is the third feature which was identified. This front manifests as lower amplitude lines propagating from the crack onset. They alternate in polarity and have a steeper slope, which means lower apparent velocity (see table \ref{tab:mpm_results_speeds}). These are the same alternating polarity bands identified in the simple model as the dispersive A0 Lamb wave mode. Their identification as A0 is confirmed in the velocity discussion (section \ref{sec:mpm_vel_disc}), where the polarity reversal across the slab midplane is directly visible. Unlike the dynamic V-shaped wavefronts, these secondary bands broaden with increasing time and are absent from the snow bottom panel (right column), consistent with the evanescent depth decay of the A0 mode at this frequency-thickness product \parencite{roseWavesPlates2014}, which was also identified in the simple model discussion. \par 
 
 \subsubsection{Crack arrest signatures}
 
@@ -236,7 +258,7 @@ The secondary wavefronts observed in the crack depth plots, which are shown in t
 
 
 \subsection{Velocity space-time plots}
-
+\label{{sec:mpm_vel_disc}}
 \subsubsection{Similarity to Strain (Rate) plots}
 As discussed in section \ref{sec:simple_disc}, velocity, strain and strain rate are all derivatives of displacement. Since the horizontal component of strain and strain rate is shown and discussed for the MPM model, the velocity discussion section will only go in detail about phenomena which can be seen better or exclusively in the velocity plots. 
 
