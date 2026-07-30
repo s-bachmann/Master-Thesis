@@ -77,6 +77,12 @@ Concluding the observations made in the results of this thesis, there are multip
 %   - Homogeneous layers (no spatial variability in weak layer)
 %   - No field validation of simulated DAS signatures
 
+Allthough there are multiple insigths in this thesis which could be useful for avalanche breakoff detection using DAS measurements, there are limitations which need to be considered. The results shown here are all in 2D on flat terrain. It is likely that topography in 3D will introduce addintional effects which can cause the signatures described above to change. Furthermore, SALVUS solves for an elastic material, there is no attenuation or viscous effect and the presence of pore spaces in the snow is neglected. This means that the material here is highly idealized, which also becomes evident when comparing it to the snowpack in the field, which can vary throughout the day, change with temperature and compaction \parencite{barteltPhysicalSNOWPACKModel2002}. This change and inhomogeneity in material properties can have great effects on crack propagation in snow \parencite{mulakNumericalInvestigationMixedmode2019,anceySnowAvalanches2001} and might change the signals observed. \par
+
+In addition to the simplifications made in the geometry and material properties, the rupture speed which was prescribed here is also constant. Multiple studies have shown that this is not the case for crack propagation in snow, as multiple factors cause crack propagation to transition from sub-rayleigh to supershear \parencite{sironTheoreticalFrameworkDynamic2023}. \par
+
+While the effects observed in the sub-rayleigh simple model were validated by the MPM-guided results, there is no such validation for the effects observed in the supershear case. Lastly, there is no validation of these effects with field data, which makes it highly likely that effects such as the S0 precursor or the quasi-static strain field cannot be observed in the field due to noise in the DAS data. \par 
+
 \section*{Recommendations for future work}
 
 % Point to outlook chapter or summarise in 3-4 sentences:
