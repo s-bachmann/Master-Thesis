@@ -129,6 +129,7 @@ with the mode shapes described by \textcite{lambWavesElasticPlate1917} and the c
 
 Similarly to the results for the velocity and strain plots, the fk-plots shown in section \ref{sec:fk_results} show that the energy is concentrated around the p-wave speed (red line in figure \ref{fig:preliminary_fk}) and the rupture speed (blue line in figure \ref{fig:preliminary_fk}). In the supershear case, these two speeds are very close together, which leads to one energy band, whereas in the sub-rayleigh case, they are more separated and two energy bands are observed. The S0 wave speed, as discussed previously, is also very close to the p-wave speed, which also has an effect on the concentration of energy n those areas. \par
 
+\subsubsection{Wavefront \& Propagation Speed Identification}
 In the sub-Rayleigh f-k plot in figure~\ref{fig:preliminary_fk}, the energy
 between the two dominant slopes (between the rupture speed and the P-wave speed lines) is not random noise. It corresponds to the dispersive
 A0 Lamb mode, which at different frequencies propagates at different phase
@@ -143,6 +144,7 @@ which at \(v_r \approx v_p\) collapses to a nearly flat front, concentrating all
 The strong contrast in how the energy is concentrated between the sub-rayleigh and supershear case in \ref{fig:preliminary_fk} can be explained by the number of locations the energy is concentrated. As described above, the supershear regime has energy at essentially
 one slope, whereas the sub-Rayleigh case fills a wedge between two slopes. This explains why the energy bands in the supershear case appear much narrower and more concentrated compared to sub-Rayleigh. \par 
 
+\subsubsection{Dispersion Effects}
 The observation that at higher frequencies in figure \ref{fig:preliminary_fk}, the lines of the energy present do not match as well anymore with the concentration of energy, can be explained by numerical as well as physical dispersion. As \cite{komatitschIntroductionSpectralElement1999} describe, as frequency increases, the wavelength decreases. This means that higher frequencies are not resloved as well by a spatial grid with a certain spacing \cite{yilmazSeismicDataAnalysis2001}, this starts bending the energy in the fk plot. This could explain the mismatch between the physical velocity lines and the concetrations of energy. \par
 
 The horizontal striping visible in the sub-Rayleigh f-k plot at constant frequency (for example radiating from the vp-line) is a temporal aliasing artefact arising from the finite output sampling interval of the simulation, not a physical feature. This can be distinguished from the physical dispersion fan by the fact that the stripes are perfectly horizontal (constant frequency, for all wavenumbers), whereas physical A0 dispersion produces curved or oblique features in f-k space. \par
@@ -281,6 +283,7 @@ Again, the crack never outruns the waves which are radiated from it, which means
 \subsection{F-k plot}
 The f-k plot confirmes the structures which have been observed in the previous sections. The f-k spectrum of the MPM-guided simulation (figure \ref{fig:mpm_fk})shows two pairs of symmetric energy bands, one on each side of the wavenumber axis.\par
 
+\subsubsection{Wavefront \& Propagation Regime identification}
 The steep inner bands in figure \ref{fig:mpm_fk}, aligned with the P-wave speeds of the slab and weak layer ($v_p \approx 127$\,m/s and $v_p^{\text{wl}} \approx 116$\,m/s, shown by the red and white lines), correspond to the S0/P-wave precursor radiating from the crack initiation and arrest points at the fastest available wave speed. This is not just because the p-wave speeds in the slab and in the weak layer are close in value, but also because the crack initiates in the weak layer and radiates into the slab. These bands appear on both the positive and negative wavenumber sides because the precursor radiates in both directions from the initiation point at $x = 75$\,m, consistent with the forward and backward propagating arms of the v after the crack locations, measured at approximately 125\,m/s in table \ref{tab:mpm_results_speeds} and with the precursor identified in
 the simple model sub-Rayleigh results. Because the slab and weak layer
 P-wave speeds are nearly identical in the MPM material
@@ -298,8 +301,12 @@ slope of these bands gives a rupture speed consistent with the direct
 measurement from the strain panels, providing an independent f-k
 confirmation of the sub-Rayleigh propagation regime. \par
 
+\subsubsection{Lamb Wave Identification}
+
 The dispersive A0 Lamb mode, which in the simple model produced distinct features between the rupture speed and P-wave speed
 lines in figure \ref{fig:preliminary_fk}, does not appear here. This is consistent with the shorter crack length in the MPM model (40\,m versus 240\,m in the simple model): a shorter source array produces less coherent beaming of A0 energy into a concentrated f-k ridge, spreading it instead into a diffuse background \parencite{roseWavesPlates2014}. This backgound could be contained in the concentration of energy around the two p-wave speeds. \par
+
+\subsubsection{Symmetry of f-k plot}
 
 Unlike in the simple case f-k-plot, the spectrum shown in figure \ref{fig:mpm_fk} is symmetric around positive and negative wavenumbers. Unlike in the simple model where the long crack (240\,m)
 produced strong directivity asymmetry between positive and negative k,
