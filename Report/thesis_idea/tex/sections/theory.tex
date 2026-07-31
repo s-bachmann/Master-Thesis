@@ -310,12 +310,12 @@ To translate the continuum source to something which can be input to SALVUS, the
 For a, isotropic, linear elastic material, such as the snow in this case, the stiffness tensor simplifies and can be described by the Lamé-parameters. In the xx-direction this is: \begin{equation}
   \sigma_{xx} = (\lambda + 2\mu)\epsilon_{xx} + \lambda \epsilon_{yy}
 \end{equation} \parencite{kAkiRichards19801981}. When scaling this with the particle volume, the individual moment tensor components can be obtained using \begin{equation}
-  M_{ij} = \Delta\sigma_{ij} V_p.
+  M_{ij} = \Delta\sigma_{ij} vol_p.
 \end{equation} The scaling with the particle volume is done because in a small material volume, such as a snow particle, the stress drop ($\ \Delta \sigma_{ij}$) is the same as a small seismic point source \parencite{backusMomentTensorsOther1976}. This is why multiplying the stress tensor with the particle volume yields the moment tensor component.  \par
 
 These moment tensor components can then be input into SALVUS as custom source time functions. The waveforms are obtained via the amplitude of the different moment tensor components at different times. Each moment tensor (in all three directions of the 2D model) is injected as a point source. This means that every point source represents the localized movement of a few particles in the snowpack. \par
 
-The visual representation fo this workflow can be seen in appendix \ref{app:E}. 
+The visual representation fo this workflow can be seen in the methods section in figure  \ref{fig:mpm_workflow}. 
 
 \section{Simulation of DAS data}
 \label{sec:das_theory}
