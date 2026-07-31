@@ -14,7 +14,7 @@
 \section{Simple Model Results}
 \label{sec:results-1}
 
-The following results shown are for the supershear and sub-rayleigh case of the custom stfs. The sources are spaced 0.1m apart between 30m and 270m and have a ricker wavelet all directions. The moment tensors have components 1 in xx (11) and xy (12) and -1 in yy (22). These moment tensor directions were chosen to mimick a load applied to the snow, such as a skier passing over the snow, which results in compression (negative yy). The forces applied by a skier on the surface also extend in xy and xx because of the motion of the skis on the snow, to simplify the input, all components were kept at 1. The simple, two layer model was set up to test the custom STF option in SALVUS and to verify how it works. The results are shown here because it is important to understand the physics underlying crack propagation in snow before moving on to the more complex case. Since the focus of this thesis is to model crack propagation as recorded by DAS data, strain and strain rate plots are shown first. The velocity results are shown to verify observations made in the strain and strain rate plots.  \par
+The following results shown are for the Supershear and sub-Rayleigh case of the custom stfs. The sources are spaced 0.1m apart between 30m and 270m and have a ricker wavelet all directions. The moment tensors have components 1 in xx (11) and xy (12) and -1 in yy (22). These moment tensor directions were chosen to mimick a load applied to the snow, such as a skier passing over the snow, which results in compression (negative yy). The forces applied by a skier on the surface also extend in xy and xx because of the motion of the skis on the snow, to simplify the input, all components were kept at 1. The simple, two layer model was set up to test the custom STF option in SALVUS and to verify how it works. The results are shown here because it is important to understand the physics underlying crack propagation in snow before moving on to the more complex case. Since the focus of this thesis is to model crack propagation as recorded by DAS data, strain and strain rate plots are shown first. The velocity results are shown to verify observations made in the strain and strain rate plots.  \par
 
 \subsection{Sub-rayleigh strain and strain rate plot}
 \begin{figure}[H]
@@ -34,7 +34,7 @@ In all plots, the strain and strain rate fields show alternating polarity in bot
 
 The amplitude of both strain and strain rate is larger at crack depth than at the snow bottom. The colourbar range at the snow bottom is approximately one order of magnitude smaller than at crack depth, indicating strong amplitude decay over the 0.375m of vertical separation between the two receiver depths.\par
 
-At x=270m, t=6s in all sub-rayleigh plots in figure \ref{fig:sub_strain}, the main wavefront stops, but there is a new wavefront propagating from this point. This front has a change in slope, which means a different propagation speed, this is the rupture arrest front. \par 
+At x=270m, t=6s in all sub-Rayleigh plots in figure \ref{fig:sub_strain}, the main wavefront stops, but there is a new wavefront propagating from this point. This front has a change in slope, which means a different propagation speed, this is the rupture arrest front. \par 
 
 In the simulated DAS at gauge length 10.4m, a doubling of the wavefront is observed. This dual-band signature is heavily dependent on the chosen gauge length, as shown in appendix \ref{app:H}, reducing the gauge length to 1.0 m resolves the signal into a single, continuous wavefront. The 10.4m results are shown here because they correspond with DAS cables used for avalanche detection \parencite{turquetAutomatedSnowAvalanche2024}. 
 
@@ -47,13 +47,13 @@ In the simulated DAS at gauge length 10.4m, a doubling of the wavefront is obser
    \label{fig:super_strain}
 \end{figure}
 
-In the supershear case, strain and strain rate at both receiver depths in figure \ref{fig:super_strain} show a single dominant wavefront with comparable amplitude, with no significant reduction between crack depth and snow bottom. This main wavefront has strong amplitude at first, but experiences significant reduction in amplitude after about 0.5s have passed, which is stronger the more time passes. This corresponds to loss of energy of the different frequencies contained in the wavefront. \par
+In the Supershear case, strain and strain rate at both receiver depths in figure \ref{fig:super_strain} show a single dominant wavefront with comparable amplitude, with no significant reduction between crack depth and snow bottom. This main wavefront has strong amplitude at first, but experiences significant reduction in amplitude after about 0.5s have passed, which is stronger the more time passes. This corresponds to loss of energy of the different frequencies contained in the wavefront. \par
 
-The strain and strain rates observed have opposite polarity at adjacent time steps (positive followed by negative). This is again consistent with the signature of an osciallatory wave passing, as described in the sub-rayleigh case. In the strain rate plots, the polarity reversal can be seen a bit more clearly than in the strain plots in the bottom row of figure \ref{fig:super_strain}. \par
+The strain and strain rates observed have opposite polarity at adjacent time steps (positive followed by negative). This is again consistent with the signature of an osciallatory wave passing, as described in the sub-Rayleigh case. In the strain rate plots, the polarity reversal can be seen a bit more clearly than in the strain plots in the bottom row of figure \ref{fig:super_strain}. \par
 
-In figure \ref{fig:super_strain}, there is no visual difference in the amplitude of strain and strain rate between the crack depth and snow bottom. However, the peak strain rate in the supershear case is approximately one order of magnitude larger than in the sub-Rayleigh case, as indicated by the colourbar scales in figures \ref{fig:sub_strain} and\ref{fig:super_strain}. \par
+In figure \ref{fig:super_strain}, there is no visual difference in the amplitude of strain and strain rate between the crack depth and snow bottom. However, the peak strain rate in the Supershear case is approximately one order of magnitude larger than in the sub-Rayleigh case, as indicated by the colourbar scales in figures \ref{fig:sub_strain} and\ref{fig:super_strain}. \par
 
-Similarly to the sub-rayleigh plots in figure \ref{fig:sub_strain}, the supershear plots also show wavefronts with different amplitudes and slopes at the rupture arrest at 270m. Here, this is characterized as a fan of distinct wave trains coming from the rupture arrest point. \par
+Similarly to the sub-Rayleigh plots in figure \ref{fig:sub_strain}, the Supershear plots also show wavefronts with different amplitudes and slopes at the rupture arrest at 270m. Here, this is characterized as a fan of distinct wave trains coming from the rupture arrest point. \par
 
 
 \subsection{Sub-Rayleigh Velocity plots}
@@ -66,7 +66,7 @@ The following plots show the horizontal ($v_x$) and vertical ($v_y$) particle ve
    \label{fig:sub_vel}
 \end{figure}
 
-The sub-rayleigh velocity plots in figure \ref{fig:sub_vel} all show a distinct wavefront starting at 0s at 30m and ending at 270m. This main wave train ends at 6s, but sends out waves with a different speed (different angle) in direction of the source propagation. This corresponds to the arrest of the rupture which was already observed in the strain and strain rate plots. The horizontal velocity at the snow bottom also shows a backward-propagating train from the crack tip. \par
+The sub-Rayleigh velocity plots in figure \ref{fig:sub_vel} all show a distinct wavefront starting at 0s at 30m and ending at 270m. This main wave train ends at 6s, but sends out waves with a different speed (different angle) in direction of the source propagation. This corresponds to the arrest of the rupture which was already observed in the strain and strain rate plots. The horizontal velocity at the snow bottom also shows a backward-propagating train from the crack tip. \par
 
 Both vx plots (bottom row in figure \ref{fig:sub_vel}), show the main wavefront with waves travelling ahead of it, as time and distance progresses, the main wavefront gets wider. This means that they have different slopes, which corresponds to different propagation velocities. In all but the plot of vx at the snow bottom, the first couple of waves in the main wavefront are weaker in velocity. In vx at the crack depth at the bottom left of figure \ref{fig:sub_vel}, the precursor is weaker in color and thus amplitude of velocity than the main wavefront. At the snow bottom, which is shown on the bottom right, the precursor has a high amplitude of velocity initially, which then decays. \par
 
@@ -84,11 +84,11 @@ In all panels of figure \ref{fig:sub_vel}, the main wavefront between 30m and 27
    \label{fig:super_vel}
 \end{figure}
 
-In all of the supershear velocity plots in figure \ref{fig:super_vel}, a single dominant wavefront extends from 30m to the end of the medium at 400m. The slope of this front corresponds to the prescribed supershear rupture velocity. This wavefront broadens with increasing propagation time, where it also loses amplitude (weaker color). At the crack arrest at 270m, the end of the source array, the wavefront generates a fan of outward-radiating waves consistent with stopping-phase radiation from the crack arrest point \parencite{madariagaHighfrequencyRadiationCrack1977}. \par
+In all of the Supershear velocity plots in figure \ref{fig:super_vel}, a single dominant wavefront extends from 30m to the end of the medium at 400m. The slope of this front corresponds to the prescribed Supershear rupture velocity. This wavefront broadens with increasing propagation time, where it also loses amplitude (weaker color). At the crack arrest at 270m, the end of the source array, the wavefront generates a fan of outward-radiating waves consistent with stopping-phase radiation from the crack arrest point \parencite{madariagaHighfrequencyRadiationCrack1977}. \par
 
-In the vy panel at the snow bottom (top right in figure \ref{fig:super_vel}), there is a clear distinction between two wavefronts, which cannot be seen in all other supershear velocity space-time plots. The first wavefront with high amplitude corresponds in slope and therefore propagation speed to the wavefront in all other plots, it also has a fanning out of waves from 270m, so the rupture arrest. From the crack onset at 30m, there is a second wavefront which also is of a higher amplitude. This wavefront has a shallower slope and therefore a lower propagation speed than the main wavefront and does not emit a fan at the rupture arrest point. \par
+In the vy panel at the snow bottom (top right in figure \ref{fig:super_vel}), there is a clear distinction between two wavefronts, which cannot be seen in all other Supershear velocity space-time plots. The first wavefront with high amplitude corresponds in slope and therefore propagation speed to the wavefront in all other plots, it also has a fanning out of waves from 270m, so the rupture arrest. From the crack onset at 30m, there is a second wavefront which also is of a higher amplitude. This wavefront has a shallower slope and therefore a lower propagation speed than the main wavefront and does not emit a fan at the rupture arrest point. \par
 
-The oscillatory wave processes described in the previous sections can also be observed in the supershear velocity panels in figure \ref{fig:super_vel}. While the pattern of opposite polarity is the same in all cases, the slope of the wavefronts change. In all plots, after the first wavefront, the waves seem to slow, which means their slope flattens. \par
+The oscillatory wave processes described in the previous sections can also be observed in the Supershear velocity panels in figure \ref{fig:super_vel}. While the pattern of opposite polarity is the same in all cases, the slope of the wavefronts change. In all plots, after the first wavefront, the waves seem to slow, which means their slope flattens. \par
 
 \subsection{Frequency-Wavenumber (fk) Plot}
 \label{sec:fk_results}
@@ -99,25 +99,25 @@ The fk-plot in figure \ref{fig:preliminary_fk} shows the energy (colorbar) densi
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{../figures/preliminary_fk.png}
-    \caption{F-k plot for the supershear (left) and sub-rayleigh (right) case. Slab p-wave velocity in red, s-wave velocity in turquoise and respective rupture speed in blue. Colorbar shows energy normalized to the 99th percentile.}
+    \caption{F-k plot for the Supershear (left) and sub-Rayleigh (right) case. Slab p-wave velocity in red, s-wave velocity in turquoise and respective rupture speed in blue. Colorbar shows energy normalized to the 99th percentile.}
     \label{fig:preliminary_fk}
 \end{figure}
 
-The supershear and sub-Rayleigh f-k plots in figure \ref{fig:preliminary_fk} show qualitatively different energy distributions, consistent with the two distinct propagation regimes. The supershear case shows a concentration of energy around the rupture speed (blue line) and the vp (red line) of the slab on both sides of the wavenumber spectrum. It is important to note here that these speeds are very close in value, so the lines cannot be distinguised well in the plots. The sub-rayleigh case also shows two concentrations of energy. A very broad band at the vp of the slab and a concentration of energy at the rupture speed on the postive wavenumber side. In all cases, the energy is more concentrated around the vp and or rupture speed for lower frequencies, at higher frequencies, the concentration of energy starts to deviate from speeds present in the medium in figure \ref{fig:preliminary_fk}. \par
+The Supershear and sub-Rayleigh f-k plots in figure \ref{fig:preliminary_fk} show qualitatively different energy distributions, consistent with the two distinct propagation regimes. The Supershear case shows a concentration of energy around the rupture speed (blue line) and the vp (red line) of the slab on both sides of the wavenumber spectrum. It is important to note here that these speeds are very close in value, so the lines cannot be distinguised well in the plots. The sub-Rayleigh case also shows two concentrations of energy. A very broad band at the vp of the slab and a concentration of energy at the rupture speed on the postive wavenumber side. In all cases, the energy is more concentrated around the vp and or rupture speed for lower frequencies, at higher frequencies, the concentration of energy starts to deviate from speeds present in the medium in figure \ref{fig:preliminary_fk}. \par
 
-In the supershear case, the dark spots of concentrated energy are more broad on the positive side compared to the negative side, where they are narrower and less smeared out. This asymmetry reflects the directionality of the source: the crack propagates in positive x and more energy is released in that direction. In the sub-rayleigh case on the right side of figure \ref{fig:preliminary_fk}, there is no concentration of energy at negative wavenumbers. Rather than a physical absence of backward propagation, this asymmetry in sub-rayleigh is a simulation effect: due to the slower rupture speed, the backward-propagating arrest wave develops later in the time window and quickly encounters the absorbing boundary. As a result, the backward-traveling wavefield is truncated before sufficient energy can enter the time-space window analyzed by the f-k transform.\par
+In the Supershear case, the dark spots of concentrated energy are more broad on the positive side compared to the negative side, where they are narrower and less smeared out. This asymmetry reflects the directionality of the source: the crack propagates in positive x and more energy is released in that direction. In the sub-Rayleigh case on the right side of figure \ref{fig:preliminary_fk}, there is no concentration of energy at negative wavenumbers. Rather than a physical absence of backward propagation, this asymmetry in sub-Rayleigh is a simulation effect: due to the slower rupture speed, the backward-propagating arrest wave develops later in the time window and quickly encounters the absorbing boundary. As a result, the backward-traveling wavefield is truncated before sufficient energy can enter the time-space window analyzed by the f-k transform.\par
 
 \section{CZM Results}
 \label{sec:czm_results}
 
-The results of the cohesive zone model are shown here for a pure mode I, supershear crack. Unlike the simple model, the CZM model has only one moment tensor component for a pure mode I crack. This is because of the way the mode-mix is accounted for, as described in the methods section \ref{sec:czm_methods}. Nevertheless, the results look almost identical to the simple model case, this is why only one result is shown here. The setup of this model was still valuable for the thesis because it helped in understanding crack propagation and modelling in snow. \par 
+The results of the cohesive zone model are shown here for a pure mode I, Supershear crack. Unlike the simple model, the CZM model has only one moment tensor component for a pure mode I crack. This is because of the way the mode-mix is accounted for, as described in the methods section \ref{sec:czm_methods}. Nevertheless, the results look almost identical to the simple model case, this is why only one result is shown here. The setup of this model was still valuable for the thesis because it helped in understanding crack propagation and modelling in snow. \par 
 
 \subsection{CZM Strain and Strain Rate Plots}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{../figures/czm_super_strain.png}
-    \caption{CZM supershear strain and strain rate (horizontal component) averaged over 10.4 m gaugue length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
+    \caption{CZM Supershear strain and strain rate (horizontal component) averaged over 10.4 m gaugue length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
     \label{fig:czm_strain}
 \end{figure}
 
@@ -131,18 +131,18 @@ dependence, rupture arrest signature and polarity sequence are all consistent be
 \begin{figure}[H]
     \centering
    \includegraphics[width=\textwidth]{czm_super_vel.png}
-   \caption{CZM supershear Particle velocity: vertical velocity in top row, horizontal in bottom row. Crack depth in left, snow bottom in right column. Colorbar is unscaled, showing velocity (m/s).}
+   \caption{CZM Supershear Particle velocity: vertical velocity in top row, horizontal in bottom row. Crack depth in left, snow bottom in right column. Colorbar is unscaled, showing velocity (m/s).}
    \label{fig:czm_vel}
 \end{figure}
 
-The same is true for the velocity plots in figure \ref{fig:czm_vel}, which are identical to the supershear velocity plots in figure \ref{fig:super_vel}. \par 
+The same is true for the velocity plots in figure \ref{fig:czm_vel}, which are identical to the Supershear velocity plots in figure \ref{fig:super_vel}. \par 
 
 
 
 \section{MPM Guided Results}
 \label{sec:mpm_results}
 
-The results shown here are from the MPM-guided simulation. The sources are spaced 0.01m apart from 75m to 125m. Unlike the results in section \ref{sec:results-1}, which are for a simple, 2 layer model with prescribed rupture velocities (sub-rayleigh and supershear case), the results here are for a 5-layer model with a rupture velocity coming from the MPM simulations. The results shown here are filtered using a low-pass filter with 50Hz cutoff. Because both strain and velocity are derived from displacement, the displacement field extracted is shown in appendix \ref{app:I}. The displacement data itself is unfiltered, but because strain, strain rate and velocity are derivatives, the differentiation acts as a high-pass filter which amplifies noise. Displacement is shown in the appendix to show that there are little numerical artefacts and noise in the extracted data. This means that filtering strain, strain rate and velocity should not be a concern because the noise is simply from the derivative, which is a clean field.
+The results shown here are from the MPM-guided simulation. The sources are spaced 0.01m apart from 75m to 125m. Unlike the results in section \ref{sec:results-1}, which are for a simple, 2 layer model with prescribed rupture velocities (sub-Rayleigh and Supershear case), the results here are for a 5-layer model with a rupture velocity coming from the MPM simulations. The results shown here are filtered using a low-pass filter with 50Hz cutoff. Because both strain and velocity are derived from displacement, the displacement field extracted is shown in appendix \ref{app:I}. The displacement data itself is unfiltered, but because strain, strain rate and velocity are derivatives, the differentiation acts as a high-pass filter which amplifies noise. Displacement is shown in the appendix to show that there are little numerical artefacts and noise in the extracted data. This means that filtering strain, strain rate and velocity should not be a concern because the noise is simply from the derivative, which is a clean field.
 
 \subsection{MPM Strain and Strain rate}
 \label{sec:mpm_strain}
