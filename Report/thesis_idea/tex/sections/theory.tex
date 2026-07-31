@@ -75,11 +75,11 @@ The dependence on the reference coordinate system is described by E, which is a 
 \section{Cohesive Zone Physics}
 \label{sec:czm_theory}
 
-The cohesive zone model (CZM) framework utilized in this study is based on the mixed-mode formulation by \cite{mahajanModelingInterfacialCrack2008}. This model relies on a potential function to describe the relationship between tractions and separations under mixed-mode conditions. With $\Delta=(\Delta_n,\Delta_t)$ denoting normal and tangential separations, the potential is defined as
+The cohesive zone model (CZM) framework utilized in this study is based on the mixed-mode formulation by \cite{mahajanModelingInterfacialCrack2008}. This model relies on a potential function to describe the relationship between tractions and separations under mixed-mode conditions. With $\Delta=(\Delta_n,\Delta_t)$ denoting normal and tangential separations, the opening potential is defined as
 \[
 \phi(\Delta)=\phi_n\,\exp\left(-\frac{\Delta_n}{\delta_n}\right)\left\{\left[1+\frac{\Delta_n}{\delta_n}\right]+q\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right]\right\},
 \]
-from which normal and tangential tractions are derived. Peak tractions occur at $\Delta_n=\delta_n$ and $|\Delta_t|=\delta_t/\sqrt{2}$. The normal and shear works of separation relate to the peak strengths via
+from which normal and tangential tractions are derived. Peak tractions occur at $\Delta_n=\delta_n$ and $|\Delta_t|=\delta_t/\sqrt{2}$. The normal and shear work of separation relate to the peak strengths via
 \[
 \phi_n = e\,\sigma_{\max}\,\delta_n, \qquad \phi_t = \sqrt{\tfrac{e}{2}}\,\tau_{\max}\,\delta_t.
 \]
@@ -91,15 +91,15 @@ For mixed-mode behavior, these are combined into a single mixed-mode critical op
 \[
 \delta_c=\sqrt{(1-r_{\rm mode})\,\delta_{n,c}^2 + r_{\rm mode}\,\delta_{s,c}^2 },
 \]
-where $r_{\rm mode}\in[0,1]$ controls the mode mix (where 0 represents pure Mode I and 1 represents pure Mode II).
+where $r_{\rm mode}\in[0,1]$ controls the mode mix (where 0 represents pure Mode I and 1 represents pure Mode II).\par
 
 To describe the cohesive weakening, a linear softening law is adopted. The traction $T$ depends on a normalized opening parameter $\xi$, defined as the ratio of current separation to the critical opening. The traction follows
 \[
 T(\xi) = T_\mathrm{peak}\,(1-\xi) \quad\text{for } 0\leq\xi\leq1,\qquad T(\xi)=0\ \text{for }\xi>1,
 \]
-where $T_\mathrm{peak}$ is the peak cohesive traction.
+where $T_\mathrm{peak}$ is the peak cohesive traction.\par
 
-The spatial extent over which this cohesive weakening is active ahead of the crack tip is related to the characteristic Irwin length for shear, calculated as $l_{ch}=\frac{E_{\rm eff}G_{II}}{\tau_s^2}$. The cohesive zone length is theoretically estimated as $l_{cz}=\tfrac{\pi}{8}l_{ch}$. Additionally, the bulk elastic behavior of the surrounding medium is defined by Lamé parameters, which can be derived from seismic wave speeds ($v_p$, $v_s$) and density ($\rho$) following \cite{kAkiRichards19801981}:
+The spatial extent over which this cohesive weakening is active ahead of the crack tip is related to the characteristic Irwin length for shear, calculated as $l_{ch}=\frac{E_{\rm eff}G_{II}}{\tau_s^2}$ \parencite{kirchnerFractureToughnessSnow2002}. The cohesive zone length is theoretically estimated as $l_{cz}=\tfrac{\pi}{8}l_{ch}$, this is the zone where damage occurs before the crack \parencite{mahajanModelingInterfacialCrack2008}. Additionally, the bulk elastic behavior of the surrounding medium is defined by Lamé parameters, which can be derived from seismic wave speeds ($v_p$, $v_s$) and density ($\rho$) following \cite{kAkiRichards19801981}:
 \[
 \mu=\rho v_s^2, \qquad \lambda=\rho(v_p^2-2v_s^2).
 \]
