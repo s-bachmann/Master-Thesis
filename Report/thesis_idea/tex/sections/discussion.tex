@@ -16,7 +16,7 @@
 \section{Simple Model}
 \label{sec:simple_disc}
 
-\subsection{Strain and strain rate space-time plots}
+\subsection{Strain and Strain Rate Space-Time Plots}
 The main wavefronts which can be observed in figures \ref{fig:sub_strain} and \ref{fig:super_strain} are the crack fronts. This is because when taking the slope of these two wavefronts, it corresponds to the rupture velocity in the Supershear and the sub-Rayleigh case. The prescribed versus the calculated speed from the figures can be seen in table \ref{tab:results_speeds}. Both cases produce strain and strain rate outputs that look very different, this is important when relating the results here to field measurements. The different behaviors mean that in theory, from the velocity output, the transition point between sub-Rayleigh and Supershear propagation regimes, as described by \cite{trottetTransitionSubRayleighAnticrack2022,bergfeldSignaturesSubRayleighSupershear2025,sironTheoreticalFrameworkDynamic2023}, could be observed because the strain and strain rate measurement would change. \par
 
 \begin{table}[H]
@@ -30,12 +30,12 @@ Supershear   & 1.6vs = 108.7m/s & $ \ \frac{270-30m}{2.3s} = 104m/s$ \\ \hline
 \label{tab:results_speeds}
 \end{table}
 
-\subsubsection{Two-wavefront structure in Sub-Rayleigh}
+\subsubsection{Two-wavefront Structure in Sub-Rayleigh}
 In the sub-Rayleigh strain and strain rate plots, two main wavefronts can be observed. One, the main wavefront, which is broadest in the strain rate and strain plots at crack depth in figure \ref{fig:sub_strain}, corresponds in slope to the sub-Rayleigh rupture speed, as discussed above. The second wavefront is faster and arrives sooner than the main wavefront and only appears to be emitted from the first source. To confirm that this precursor is a physical wave type rather than a simulation artefact, simulations with larger source spacing were run and showed this changes when source spacing is increased, for example from 0.1m to 10m, as shown in appendix \ref{app:D}, figure \ref{fig:wide_sub_strain}. This leads to the conclusion that the precursor to the main wavefront disappears because of interference. All other sources but the first and the last one have interference from the sources before and after it, which means that this wave type, although emitted, is cancelled out because of interference \parencite{madariagaDynamicsExpandingCircular1976}. When the source spacing is increased, the fronts of the individual sources travel further apart in space and they interfere less. \par
 
 This precursor in the sub-Rayleigh strain and strain rate plots has a slope which corresponds to a speed around the p-wave speed in the snow, which is also close to the speed of the symmetric Lambwave mode (S0). The reason for this is is discussed in the velocity section  \ref{sec:disc_sub_two_waves} because it is easier to derive from the velocity output. \par
 
-\subsubsection{Wavefront identification and polarity sequence}
+\subsubsection{Wavefront Identification and Polarity Sequence}
 
 In both the sub-Rayleigh (figure \ref{fig:sub_strain}) and Supershear
 (figure \ref{fig:super_strain}) cases, all panels show a consistent polarity sequence: positive strain (extension, red) arrives first, followed immediately by negative strain (compression, blue), then a return to positive. This extension-first, compression-second sequence is the expected signature of a compressional P-wave or S0 Lamb mode arrival at a receiver ahead of the source, and is well established in elastic wave propagation theory \parencite{kAkiRichards19801981}. When the crack-tip stress field expands into the undisturbed medium, it first pushes material away from the source (extension), and the elastic restoring force of the medium then pulls it back (compression) before the wavefield equilibrates. The same sequence has been reported in field measurements of avalanches with single-component geophones where p-wave precursors have been observed in seismograms
@@ -66,7 +66,7 @@ v_{\text{ph}} = \frac{\omega}{k}, \quad v_{\text{g}} = \frac{d\omega}{dk}
 \label{eq:envelope_spreading}.
 \end{equation} As time goes on, there are more reflections present, so there is more potential for interference and thus dispersion. \par
 
-\subsubsection{Amplitude decay and depth dependence of Strain and Strain Rate}
+\subsubsection{Amplitude Decay and Depth Dependence of Strain and Strain Rate}
 
 The weakening of the wavefronts arriving after the main wavefront which has a slope consistent with the rupture speed, especially observed in the Supershear case in figure \ref{fig:super_strain} and the precursor in \ref{fig:sub_strain} can be explained by depth decay and geometric spreading from the source. The crack tip acts as a moving two-dimensional point source, travelling along a line in a 2D elastic medium, the peak amplitude $A$ of the radiated wavefield decays inversely with the square root of the radial distance $r$ from the source plane \parencite{achenbachWavePropagationElastic2012}. Wave components whose horizontal phase velocities are below the bulk wave speeds of the snow become evanescent in the vertical direction, decaying exponentially with depth from the crack plane \parencite{graffWaveMotionElastic1975}. This explains why higher-frequency content is attenuated more rapidly between crack depth and snow bottom \par
 
@@ -85,7 +85,7 @@ temporal footprint because the rupture front and the precursor waves propagate a
 
 
 
-\subsection{Velocity space-time plots}
+\subsection{Velocity Space-Time Plots}
 \label{sec:vel_disc}
 Like in the strain and strain rate plots, the main wavefronts in the Supershear and sub-Rayleigh case in figures \ref{fig:super_vel,fig:sub_vel} correspond in slope to the rupture speed of each case. Like in strain (rate), the velocity output is vastly different for sub-Rayleigh and Supershear, which means a transition between propagation regimes can not only be observed in the strain output, but also in the velocity outupt. \par
 
@@ -94,7 +94,7 @@ The sub-Rayleigh and Supershear velocity plots (Figures \ref{fig:sub_vel} and \r
 
 Because both metrics share identical wavefield signatures, suhc as wavefront broadening from dispersion, amplitude decay with depth, and precursor waves, these shared features will not be re-analyzed here. To avoid redundancy, this section focuses exclusively on observations unique to particle velocity, while the underlying physical mechanisms are detailed in the strain discussion. \par
 
-\subsubsection{Two-wavefront structure in Sub-Rayleigh}
+\subsubsection{Two-Wavefront Structure in Sub-Rayleigh}
 \label{sec:disc_sub_two_waves}
 
 The precursor wave which can be observed in the vx plots in the sub-Rayleigh case in figure \ref{fig:sub_vel} has a much faster speed than the rupture itself. This wave also only occurs in the sub-Rayleigh case in the vx plots. As for strain, simulations with larger source spacing (for example 10m spacing instead of 0.1m spacing, see appendix \ref{app:D}, figure \ref{fig:wide_sub_vel}) have shown that this precursor disappears if source spacing is increased. This leads to the same conclusion as discussed in the strain case that this is because of interference between the sources \parencite{madariagaDynamicsExpandingCircular1976}. \par
@@ -125,7 +125,7 @@ with the mode shapes described by \textcite{lambWavesElasticPlate1917} and the c
 
 
 
-\subsection{Discussion of fk-plot}
+\subsection{Discussion of f-k-Plot}
 
 Similarly to the results for the velocity and strain plots, the fk-plots shown in section \ref{sec:fk_results} show that the energy is concentrated around the p-wave speed (red line in figure \ref{fig:preliminary_fk}) and the rupture speed (blue line in figure \ref{fig:preliminary_fk}). In the Supershear case, these two speeds are very close together, which leads to one energy band, whereas in the sub-Rayleigh case, they are more separated and two energy bands are observed. The S0 wave speed, as discussed previously, is also very close to the p-wave speed, which also has an effect on the concentration of energy n those areas. \par
 
@@ -190,10 +190,10 @@ In the following sections, results from the material point method guided simulat
 
 % \end{itemize}
 
-\subsection{Strain and Strain rate space-time plots}
+\subsection{Strain and Strain Rate Space-Time Plots}
 
 
-\subsubsection{Propagation speeds \& Wavefront geometry}
+\subsubsection{Propagation Speeds \& Wavefront Geometry}
 
 The v-shaped wavefronts which can be observed in figure \ref{sec:mpm_strain} are likely emitted by the crack itself. The slope of these two arms in both sides of propagation does not change from the vertex, which is the crack onset, to the end of the domain. This indicates a constant propagation speed, which means unlike simulations and experiments by \cite{sironTheoreticalFrameworkDynamic2023,bergfeldSignaturesSubRayleighSupershear2025}, there is no transition in crack propagation speed. When taking the slope of the positive strain wavefront which arrives first in figure \ref{fig:mpm_strain}, this results in: $\ v_{prop} = \frac{125-75}{1.2-0.5} = 57.14 m/s$. Considering the medium velocities used (shown in table \ref{tab:mpm_params} but also in the f-k plot \ref{fig:mpm_fk}), this is sub-Rayleigh propagation in both the weak layer but also the snow slab. \par
 
@@ -220,7 +220,7 @@ The speeds of the forward and backwards-propagating waves emitted by the crack i
 
 The third wavefront which is observed in figure \ref{fig:mpm_strain}, has a much lower propagation speed than all other wavefronts. This wavefront also broadens with time and the waves curve downward, towards the origin of the coordinate system. This wavefront could be the dispersive A0 Lamb wave mode, because at low frequency thickness product, and at the dominant frequencies present in the model, has a group velocity which is significantly below the S-wave speed of the slab \parencite{roseWavesPlates2014}. \par
 
-\subsubsection{Wavefield Structure \& Quasi-Static Strain field }
+\subsubsection{Wavefield Structure \& Quasi-Static Strain Field }
 
 The most striking feature identidied in the strain and strain rate plots is the thick bands of positive and negative polarity coming from the crack onset. In the positive direction of propagation, the first arrival is a positive strain or strain rate, followed by a negative (blue) band of negative strain (rate). In the negative direction of propagation, this order is reversed, the negative polarity arrives first. This band changes when the crack has stopped: at x=125m, the positive wavefront suddenly jumps to be wider. In the region of the crack, so from 75m to 125m, it was a narrow wedge whereas the blue region was very broad. \par
 
@@ -251,21 +251,21 @@ results and with field observations of \cite{herwijnenSeismicSensorArray2011}. \
 
 The second dispersive wave train observed in the crack depth panels on the left side of figure \ref{fig:mpm_vel} is the third feature which was identified. This front manifests as lower amplitude lines propagating from the crack onset. They alternate in polarity and have a steeper slope, which means lower apparent velocity (see table \ref{tab:mpm_results_speeds}). These are the same alternating polarity bands identified in the simple model as the dispersive A0 Lamb wave mode. Their identification as A0 is confirmed in the velocity discussion (section \ref{sec:mpm_vel_disc}), where the polarity reversal across the slab midplane is directly visible. Unlike the dynamic v-shaped wavefronts, these secondary bands broaden with increasing time and are absent from the snow bottom panel (right column), consistent with the evanescent depth decay of the A0 mode at this frequency-thickness product \parencite{roseWavesPlates2014}, which was also identified in the simple model discussion. \par 
 
-\subsection{Curving and broadening of wavefronts}
+\subsection{Curving and Broadening of Wavefronts}
 The secondary wavefronts observed in the crack depth plots, which are shown in the left column of figure \ref{fig:mpm_strain}, spread out with time. This spreading, as in the simple model discussion, can be explained by dispersion. This is consistent with the dispersive A0 Lambwave mode discussed in section \ref{sec:simple_disc}. The same dispersion mechanism applies here: reflections between the slab boundaries produce interference between frequency components travelling at different phase velocities, broadening and curving the wave train envelope with time \parencite{graffWaveMotionElastic1975}. \par 
 
 
-\subsection{Velocity space-time plots}
+\subsection{Velocity Space-Time Plots}
 \label{{sec:mpm_vel_disc}}
-\subsubsection{Similarity to Strain (Rate) plots}
+\subsubsection{Similarity to Strain (Rate) Plots}
 As discussed in section \ref{sec:simple_disc}, velocity, strain and strain rate are all derivatives of displacement. Since the horizontal component of strain and strain rate is shown and discussed for the MPM model, the velocity discussion section will only go in detail about phenomena which can be seen better or exclusively in the velocity plots. 
 
-\subsubsection{Propagation speeds}
+\subsubsection{Propagation Speeds}
 The propagation speeds of the wave types observed in the strain and strain rate plots shown in table \ref{tab:mpm_results_speeds} are consistent with those observed in the velocity plots in figure \ref{fig:mpm_vel}. The very saturated wavefronts in the horizontal component correspond have the same slope as the S0/P-wave precursor observed already in the strain and strain rate plots. The same is true for the very faint wavefront observed in the vy plot at crack depth (top left panel of figure \ref{fig:mpm_vel}), which also has the same slope as the S0 wave. This means that the precursor can also be observed in the velocity data. \par
 
 The sub-Rayleigh crack propagation speed which was calculated from the strain and strain rate plots is the same speed which can be calculated from the slope of the line connecting the crack onset and arrest in figure \ref{fig:mpm_vel}. \par 
 
-\subsubsection{Quasi-static offset}
+\subsubsection{Quasi-Static Offset}
 The quasi-static offset is also present in the velocity plots, mainly the horizontal velocity plots in the bottom row of figure \ref{fig:mpm_vel}. Contrary to the strain and strain rate plots, the first arrival in the positive direction of propagation has negative velocity, followed by positive velocity, but it is also reversed in order in negative direction of propagation. This polarity reversal between velocity and strain for the same compressive anticrack source is expected, because a compressive source produces extensional strain ahead of the source but a negative initial velocity as material is displaced away from the crack before elastic restoring forces act \parencite{kAkiRichards19801981}. The quasi-static offset can also be seen in the animation of the velocity wavefield in appendix \ref{app:F}, figure \ref{fig:mpm_vx_moving_crack}, where the quasi-static offset manifests as broad areas of negative velocity followed by positive velocity. This is the kinematic signature of anticrack collapse: the material above the weak layer is permanently displaced in the negative direction as the weak layer fails under pressure. This is consistent with the anticrack model described by \cite{mcclungFractureMechanicalModels1981}, and the negative DC component of the moment tensor shown in \ref{fig:mpm_moment_tensor}. 
 
 \subsubsection{Lamb Wave Identification}
@@ -274,16 +274,16 @@ Like the strain and strain rate plots, all velocity plots except vx at the snow 
 
 In both animation stills  \ref{fig:mpm_vx_moving_crack} and \ref{fig:vy_moving_crack}, the crack is located at 100m. In the animation of the vertical velocity component, the velocites not only alternate in polarity, but they also switch polarity on either side of the crack. The crack depth, which is in the middle of the weak layer for example has positive polarity above it and negative polarity below it, which is characteristic for the asymmetric Lamb wave mode A0. The detailed derivation of the Lamb wave equations can be found in section \ref{sec:wave_physics}. This polarity pattern is also consistent with figure \ref{fig:lamb_wave_modes} in appendix \ref{app:G}, showing the propagation intensities of the symmetric and antisymmetric Lamb wave modes. The A0 Lamb wave mode dominates the MPM wavefield for the same reason as in the simple model: the compressive normal component $m_{22} <0$ of the moment tensor (shown in figure \ref{fig:mpm_m22}) is oriented normal to the slab and maximally couples to the A0 flexural mode at the low frequency-thickness product of this geometry \parencite{roseWavesPlates2014}. The MPM results therefore confirm the Lamb wave mode identification made in the simple model. \par
 
-\subsubsection{Rupture arrest structures}
+\subsubsection{Rupture Arrest Structures}
 In the vertical velocity plots in figure \ref{fig:mpm_vel}, two secondary wavefronts can be observed. One coming from the crack onset, which is in the foreground and can be seen clearly, and the other coming from the crack arrest point at x=125m. This structure also has a v-shaped structure, which is consistent with the rupture arrest structure observed in the simple sub-Rayleigh plots. \par
 
 Again, the crack never outruns the waves which are radiated from it, which means that the stopping phase can radiate in all directions \parencite{freundDynamicFractureMechanics1998}. The crack arrest at x=125m produces a v-shaped stopping-phase signature consistent with sub-Rayleigh arrest, analogous to the arrest structure identified in the simple model (section \ref{sec:simple_disc}). Both arms of the V propagate at the P-wave and S0 speed of the slab (125 m/s=, measured in table \ref{tab:mpm_results_speeds}), confirming that the stopping phase radiates in all directions at the bulk wave speed, independent of the pre-arrest rupture speed \parencite{madariagaHighfrequencyRadiationCrack1977}. \par 
 
 
-\subsection{F-k plot}
+\subsection{F-k Plot}
 The f-k plot confirmes the structures which have been observed in the previous sections. The f-k spectrum of the MPM-guided simulation (figure \ref{fig:mpm_fk})shows two pairs of symmetric energy bands, one on each side of the wavenumber axis.\par
 
-\subsubsection{Wavefront \& Propagation Regime identification}
+\subsubsection{Wavefront \& Propagation Regime Identification}
 The steep inner bands in figure \ref{fig:mpm_fk}, aligned with the P-wave speeds of the slab and weak layer ($v_p \approx 127m/s$ and $v_p^{\text{wl}} \approx 116 m/s$, shown by the red and white lines), correspond to the S0/P-wave precursor radiating from the crack initiation and arrest points at the fastest available wave speed. This is not just because the p-wave speeds in the slab and in the weak layer are close in value, but also because the crack initiates in the weak layer and radiates into the slab. These bands appear on both the positive and negative wavenumber sides because the precursor radiates in both directions from the initiation point at $x = 75m $\, consistent with the forward and backward propagating arms of the v after the crack locations, measured at approximately 125m/s in table \ref{tab:mpm_results_speeds} and with the precursor identified in
 the simple model sub-Rayleigh results. Because the slab and weak layer
 P-wave speeds are nearly identical in the MPM material
@@ -313,7 +313,7 @@ produced strong directivity asymmetry between positive and negative k,
 the shorter MPM crack (40m) has weaker directivity because the
 directivity effect scales with crack length relative to wavelength \parencite{madariagaDynamicsExpandingCircular1976}. \par 
 
-\section{Implications for DAS measurements \& Synthesis of Results}
+\section{Implications for DAS Measurements \& Synthesis of Results}
 
 The MPM-guided results have sereval implications for the interpretation and measurement of field DAS data. They extend and support the concluisons drawn from the simple model results. \par
 

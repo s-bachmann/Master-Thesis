@@ -16,7 +16,7 @@
 
 The following results shown are for the Supershear and sub-Rayleigh case of the custom stfs. The sources are spaced 0.1m apart between 30m and 270m and have a ricker wavelet all directions. The moment tensors have components 1 in xx (11) and xy (12) and -1 in yy (22). These moment tensor directions were chosen to mimick a load applied to the snow, such as a skier passing over the snow, which results in compression (negative yy). The forces applied by a skier on the surface also extend in xy and xx because of the motion of the skis on the snow, to simplify the input, all components were kept at 1. The simple, two layer model was set up to test the custom STF option in SALVUS and to verify how it works. The results are shown here because it is important to understand the physics underlying crack propagation in snow before moving on to the more complex case. Since the focus of this thesis is to model crack propagation as recorded by DAS data, strain and strain rate plots are shown first. The velocity results are shown to verify observations made in the strain and strain rate plots.  \par
 
-\subsection{Sub-rayleigh strain and strain rate plot}
+\subsection{Sub-Rayleigh Strain and Strain Rate Plot}
 \begin{figure}[H]
     \centering
    \includegraphics[width=\textwidth]{preliminary_sub_strain.png}
@@ -39,7 +39,7 @@ At x=270m, t=6s in all sub-Rayleigh plots in figure \ref{fig:sub_strain}, the ma
 In the simulated DAS at gauge length 10.4m, a doubling of the wavefront is observed. This dual-band signature is heavily dependent on the chosen gauge length, as shown in appendix \ref{app:H}, reducing the gauge length to 1.0 m resolves the signal into a single, continuous wavefront. The 10.4m results are shown here because they correspond with DAS cables used for avalanche detection \parencite{turquetAutomatedSnowAvalanche2024}. 
 
 
-\subsection{Supershear strain and strain rate plot}
+\subsection{Supershear Strain and Strain Rate Plot}
 \begin{figure}[H]
     \centering
    \includegraphics[width=\textwidth]{preliminary_super_strain.png}
@@ -56,7 +56,7 @@ In figure \ref{fig:super_strain}, there is no visual difference in the amplitude
 Similarly to the sub-Rayleigh plots in figure \ref{fig:sub_strain}, the Supershear plots also show wavefronts with different amplitudes and slopes at the rupture arrest at 270m. Here, this is characterized as a fan of distinct wave trains coming from the rupture arrest point. \par
 
 
-\subsection{Sub-Rayleigh Velocity plots}
+\subsection{Sub-Rayleigh Velocity Plots}
 The following plots show the horizontal ($v_x$) and vertical ($v_y$) particle velocities at two receiver depths: $y=2.25$ m (snow bottom) and $y=2.625$ m (crack depth). Particle velocity rather than displacement is shown to better align with standard seismological field observables. In the field, standard geophones directly measure particle velocity. In contrast, DAS systems intrinsically measure axial strain or strain rate averaged over a physical gauge length \parencite{lindseyFiberOpticSeismology2021}. Comparing DAS data to traditional point sensors typically requires converting the measured strain rate into an equivalent particle velocity, a process that relies on assumptions about apparent wave speeds. Deriving displacement would require a further step of time integration, which is often avoided in practice due to the amplification of low-frequency noise and baseline drift. Therefore, particle velocity serves as the most robust and common physical quantity for comparing models to field data \parencite{sayedDistributedAcousticSensing2024}. Presenting both components is highly relevant for instrumentation: the horizontal velocity ($v_x$) is fundamentally linked to the longitudinal strain fields measured by a horizontal DAS cable, while the vertical velocity ($v_y$) represents the direct signal that a traditional vertical geophone, which is the standard instrument used in snow and avalanche monitoring, would record.
 
 \begin{figure}[H]
@@ -90,7 +90,7 @@ In the vy panel at the snow bottom (top right in figure \ref{fig:super_vel}), th
 
 The oscillatory wave processes described in the previous sections can also be observed in the Supershear velocity panels in figure \ref{fig:super_vel}. While the pattern of opposite polarity is the same in all cases, the slope of the wavefronts change. In all plots, after the first wavefront, the waves seem to slow, which means their slope flattens. \par
 
-\subsection{Frequency-Wavenumber (fk) Plot}
+\subsection{Frequency-Wavenumber (f-k) Plot}
 \label{sec:fk_results}
 
 The fk-plot in figure \ref{fig:preliminary_fk} shows the energy (colorbar) density at frequencies (y-axis) and wavenumbers (x-axis) present in the results. This energy was taken from the horizontal velocity results at the snow bottom because the horizontal direction corresponds to the data measured by a horizontal DAS cable buried in snow. The plots shown are normalized to the 99th percentile of the energy present, this is done so that outliers with large energies are scaled and do not skew the color scale. 
@@ -144,7 +144,7 @@ The same is true for the velocity plots in figure \ref{fig:czm_vel}, which are i
 
 The results shown here are from the MPM-guided simulation. The sources are spaced 0.01m apart from 75m to 125m. Unlike the results in section \ref{sec:results-1}, which are for a simple, 2 layer model with prescribed rupture velocities (sub-Rayleigh and Supershear case), the results here are for a 5-layer model with a rupture velocity coming from the MPM simulations. The results shown here are filtered using a low-pass filter with 50Hz cutoff. Because both strain and velocity are derived from displacement, the displacement field extracted is shown in appendix \ref{app:I}. The displacement data itself is unfiltered, but because strain, strain rate and velocity are derivatives, the differentiation acts as a high-pass filter which amplifies noise. Displacement is shown in the appendix to show that there are little numerical artefacts and noise in the extracted data. This means that filtering strain, strain rate and velocity should not be a concern because the noise is simply from the derivative, which is a clean field.
 
-\subsection{MPM Strain and Strain rate}
+\subsection{MPM Strain and Strain Rate Plots}
 \label{sec:mpm_strain}
 
 
@@ -173,7 +173,7 @@ When comparing the strain rate plots (top column) to the strain plots, allthough
 
 
 
-\subsection{MPM Velocity}
+\subsection{MPM Velocity Plot}
 \label{sec:mpm_vel}
 
 \begin{figure}[H]
@@ -207,7 +207,7 @@ In the area where the crack propagates, so between 75m and 125m, at the early ti
 In the vertical velocity plot at crack depth, one very faint wave from the crack onset point can also be seen. This wavetrain has a different slope than all other wavefronts in the plot, but it is very weak in amplitude (color). \par 
 
 
-\subsection{MPM f-k plot}
+\subsection{MPM f-k Plot}
 
 The data used for the f-k plot is the horizontal velocity data, for the reasons described in \ref{sec:results-1}. 
 

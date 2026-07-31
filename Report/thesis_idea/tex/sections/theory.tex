@@ -111,7 +111,7 @@ Young's modulus is subsequently computed as $E=\dfrac{\mu(3\lambda+2\mu)}{\lambd
 The snow layer in this thesis acts as a thin layer bounded by a free surface above (snow-air interface) and a rigid boundary at the bottom (either domain boundary or bedrock interface). This geometry supports the appearance of Lamb waves: Lamb waves are elastic guided waves that occur in plates \parencite{suFundamentalsAnalysisLamb2009} and their amplitude is shaped by layer boundaries \parencite{lambWavesElasticPlate1917}.  They are guided by the boundaries of the layer or media in which they propagate and have a symmetric (S0) and an antiymmetric (A0) mode \parencite{suFundamentalsAnalysisLamb2009}. The symmetric mode dominates the in-plate motion, while the antisymmetric mode dominates the vertical (out of plane motion ) \parencite{suFundamentalsAnalysisLamb2009}. A sketch of the propagation of these two modes, taken from \cite{cartaLambWavesDiscrete2023}, can be seen in appendix \ref{app:G}. Both modes are observed in the simulation results shown in \ref{sec:results-1}, and to interpret and understand the results correctly, their properties such as speeds, dispersion relations and excitation need to be understood. his section derives the dispersion relations of both modes and explains the depth-dependent amplitude structure that determines how each mode decays between the crack plane and the snow bottom. \par
 
 
-\subsection{Potentials and wave equations}
+\subsection{Potentials and Wave Equations}
 
 Starting from the equation of motion for a homogeneous elastic solid used in SALVUS,
 \begin{equation}
@@ -139,7 +139,7 @@ $\psi = g(z)\,e^{i(kx-\omega t)}$, the depth functions satisfy
 with $p^2 = \omega^2/c_p^2 - k^2$ and $q^2 = \omega^2/c_s^2 - k^2$. The 
 general solutions are sinusoidal in $z$  (depth) when $p^2, q^2 > 0$ (propagating through the layer thickness), and hyperbolic when $p^2$ or $q^2 < 0$ (evanescent decay with depth). The evanescent case applies to wave components whose horizontal phase velocity is slower than the bulk wave speeds, which is the A0 mode at low frequency-thickness product, like it is the case in this thesis and explains why the A0 wave train decays more rapidly between crack depth and snow bottom than the faster S0 mode \parencite{graffWaveMotionElastic1975}. \par
 
-\subsection{Boundary conditions and the Lamb dispersion relations}
+\subsection{Boundary Conditions and the Lamb Sispersion Relations}
 
 At the snow-air interface, the large impedance contrast produces a stress-free boundary: normal stress $\sigma_{zz} = 0$ and shear stress $\sigma_{xz} = 0$ at the top and bottom faces of the slab \parencite{igelComputationalSeismologyPractical2016}. Applying these conditions to the general potentials yields two types of solutions depending on the symmetry of the displacement field across the slab midplane, so across the horizontal axis of the slab. \par
 
@@ -163,7 +163,7 @@ propagate at different speeds \parencite{kAkiRichards19801981}. At low frequency
 converges to the plate wave speed with $c_p^{\text{plate}} = 2c_s\sqrt{1 - v_s^2/v_p^2}$ 
 \parencite{roseWavesPlates2014}.
 
-\subsection{Mode symmetry and depth dependence}
+\subsection{Mode Symmetry and Depth Dependence}
 
 Because the crack source in the slab middle or weak layer acts as an asymmetric load applied below the slab midplane, it couples energy into both modes simultaneously \parencite{roseWavesPlates2014, achenbachWavePropagationElastic2012}. The two modes have distinct depth profiles: S0 carries horizontal strain or velocity that is nearly uniform through the slab thickness, while A0 horizontal strain / velocity is proportional to distance from the neutral axis and is therefore maximum at the plate boundaries \parencite{graffWaveMotionElastic1975}.\par
 
@@ -284,7 +284,7 @@ Because the crack source in the slab middle or weak layer acts as an asymmetric 
 % \label{eq:dispersion_asym}
 % \end{equation}
 
-\section{Static and Dynamic Components of Seismic sources}
+\section{Static and Dynamic Components of Seismic Sources}
 \label{sec:dc_static_theory}
 
 A moment tensor source, such as the sources used in this thesis, has two contributions to the wavefield \parencite{kAkiRichards19801981}. There is a dynamic component, which propagates away from the source as waves, and the static component, this component represents the permanent deformation field after the sources have stopped firing \parencite{freundDynamicFractureMechanics1998,zhuNoteDynamicStatic2002,archambeauGeneralTheoryElastodynamic1968}. \par
@@ -317,7 +317,7 @@ These moment tensor components can then be input into SALVUS as custom source ti
 
 The visual representation fo this workflow can be seen in the methods section in figure  \ref{fig:mpm_workflow}. 
 
-\section{Simulation of DAS data}
+\section{Simulation of DAS Data}
 \label{sec:das_theory}
 
 To compare the results obtained in the SALVUS simulations to field DAS data, the numerical outputs have to be transformed. This is because field DAS measurements, the output are the fields averaged over the gauge length \parencite{lindseyFiberOpticSeismology2021} rather than output at every point along the calble. The backscattered delay of a laser pulse along a straigth cable is proportional to the integrated strain tensor components along the gauge length \parencite{noeFrontiersFullwaveformSeismology2025}. The relationship between the deformation tensor F and the phase delay of the laser pulse is described by: \begin{equation}
