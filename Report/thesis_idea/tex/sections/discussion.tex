@@ -33,7 +33,7 @@ Supershear   & 1.6vs = 108.7m/s & $ \ \frac{270-30m}{2.3s} = 104m/s$ \\ \hline
 \subsubsection{Two-wavefront Structure in Sub-Rayleigh}
 In the sub-Rayleigh strain and strain rate plots, two main wavefronts can be observed. One, the main wavefront, which is broadest in the strain rate and strain plots at crack depth in figure \ref{fig:sub_strain}, corresponds in slope to the sub-Rayleigh rupture speed, as discussed above. The second wavefront is faster and arrives sooner than the main wavefront and only appears to be emitted from the first source. To confirm that this precursor is a physical wave type rather than a simulation artefact, simulations with larger source spacing were run and showed this changes when source spacing is increased, for example from 0.1m to 10m, as shown in appendix \ref{app:D}, figure \ref{fig:wide_sub_strain}. This leads to the conclusion that the precursor to the main wavefront disappears because of interference. All other sources but the first and the last one have interference from the sources before and after it, which means that this wave type, although emitted, is cancelled out because of interference \parencite{madariagaDynamicsExpandingCircular1976}. When the source spacing is increased, the fronts of the individual sources travel further apart in space and they interfere less. \par
 
-This precursor in the sub-Rayleigh strain and strain rate plots has a slope which corresponds to a speed around the p-wave speed in the snow, which is also close to the speed of the symmetric Lamb wave mode (S0). The reason for this is is discussed in the velocity section  \ref{sec:disc_sub_two_waves} because it is easier to derive from the velocity output. \par
+This precursor in the sub-Rayleigh strain and strain rate plots has a slope which corresponds to a speed around the p-wave speed in the snow, which is also close to the speed of the symmetric Lamb wave mode (S0). The reason for this is discussed in the velocity section \ref{sec:disc_sub_two_waves} because it is easier to derive from the velocity output. \par
 
 \subsubsection{Wavefront Identification and Polarity Sequence}
 
@@ -116,7 +116,7 @@ The precursor is visible in sub-Rayleigh because the separation $\Delta x(t)$ gr
 
 \subsubsection{Lamb Wave Identification}
 
-The polarity reversal of the velocites in both sub-Rayleigh and Supershear case is caused by oscillatory waves. The presence of these wave types can be proven mathematically, the detailed derivation of this is shown in section \ref{sec:wave_physics}.
+The polarity reversal of the velocities in both sub-Rayleigh and Supershear cases is caused by oscillatory waves. The presence of these wave types can be proven mathematically; the detailed derivation of this is shown in section \ref{sec:wave_physics}.
   
 The animations of the velocity wavefield in appendix \ref{app:F} show the propagation intensity of the velocity wavefield. When comparing the horizontal velocity vx in figure \ref{fig:vx_animated_wavefield} with the wavefield intensity of the two Lamb wave modes, for example in \cite{cartaLambWavesDiscrete2023}, which can be found in appendix \ref{fig:lamb_wave_modes}, it becomes evident that the main mode which can be observed is the antisymmetric (A0) mode. This is because at source depth, the velocity field has a negative polarity. Above and below the sources, there are narrower bands of negative polarity (blue in figure \ref{fig:vx_moving_crack}, red in the reference figure \ref{fig:lamb_wave_modes}) beside bands of positive velocity. This can be explained by the fundamental theory of Lamb waves \parencite{lambWavesElasticPlate1917,roseWavesPlates2014}. Because the moment tensor used here has a distinct out of plane component (negative myy), the primary mode which is excited is A0 \parencite{roseWavesPlates2014}. As discussed, the S0 mode can also be seen, but is a precursor rather than the main wavefront and carries less energy. This precursor can also be seen in figure \ref{fig:vx_moving_crack}. \par 
 
@@ -281,7 +281,7 @@ Again, the crack never outruns the waves which are radiated from it, which means
 
 
 \subsection{F-k Plot}
-The f-k plot confirmes the structures which have been observed in the previous sections. The f-k spectrum of the MPM-guided simulation (figure \ref{fig:mpm_fk})shows two pairs of symmetric energy bands, one on each side of the wavenumber axis.\par
+The f-k plot confirms the structures which have been observed in the previous sections. The f-k spectrum of the MPM-guided simulation (figure \ref{fig:mpm_fk}) shows two pairs of symmetric energy bands, one on each side of the wavenumber axis.\par
 
 \subsubsection{Wavefront \& Propagation Regime Identification}
 The steep inner bands in figure \ref{fig:mpm_fk}, aligned with the P-wave speeds of the slab and weak layer ($v_p \approx 127m/s$ and $v_p^{\text{wl}} \approx 116 m/s$, shown by the red and white lines), correspond to the S0/P-wave precursor radiating from the crack initiation and arrest points at the fastest available wave speed. This is not just because the p-wave speeds in the slab and in the weak layer are close in value, but also because the crack initiates in the weak layer and radiates into the slab. These bands appear on both the positive and negative wavenumber sides because the precursor radiates in both directions from the initiation point at $x = 75m $\, consistent with the forward and backward propagating arms of the v after the crack locations, measured at approximately 125m/s in table \ref{tab:mpm_results_speeds} and with the precursor identified in
@@ -304,7 +304,7 @@ confirmation of the sub-Rayleigh propagation regime. \par
 \subsubsection{Lamb Wave Identification}
 
 The dispersive A0 Lamb mode, which in the simple model produced distinct features between the rupture speed and P-wave speed
-lines in figure \ref{fig:preliminary_fk}, does not appear here. This is consistent with the shorter crack length in the MPM model (40m versus 240m in the simple model): a shorter source array produces less coherent beaming of A0 energy into a concentrated f-k ridge, spreading it instead into a diffuse background \parencite{roseWavesPlates2014}. This backgound could be contained in the concentration of energy around the two p-wave speeds. \par
+lines in figure \ref{fig:preliminary_fk}, does not appear here. This is consistent with the shorter crack length in the MPM model (40m versus 240m in the simple model): a shorter source array produces less coherent beaming of A0 energy into a concentrated f-k ridge, spreading it instead into a diffuse background \parencite{roseWavesPlates2014}. This background could be contained in the concentration of energy around the two p-wave speeds. \par
 
 \subsubsection{Symmetry of f-k plot}
 
