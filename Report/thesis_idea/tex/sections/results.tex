@@ -20,7 +20,7 @@ The following results shown are for the Supershear and sub-Rayleigh cases of the
 \begin{figure}[H]
     \centering
    \includegraphics[width=\textwidth]{preliminary_sub_strain.png}
-   \caption{Sub-Rayleigh strain and strain rate (horizontal component) averaged over 10.4 m gauge length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars scaled to minimum and maximum of dataset.}
+   \caption{Sub-Rayleigh strain and strain rate (horizontal component) averaged over 10.4 m gauge length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars scaled to minimum and maximum of dataset. In the numerical domain, y is defined as vertical elevation measured upward from the base of the air layer (y=0.0m) to the bottom snow surface (y=3.0m). Therefore, deeper positions correspond to smaller y values. The receiver line at y=2.625m (Crack Depth) is higher in elevation than y=2.25m (Snow Bottom), which correctly places the crack above the snow base.}
    \label{fig:sub_strain}
 \end{figure}
 
@@ -34,7 +34,7 @@ In all plots, the strain and strain rate fields show alternating polarity in bot
 
 The amplitude of both strain and strain rate is larger at crack depth than at the snow bottom. The colourbar range at the snow bottom is approximately one order of magnitude smaller than at crack depth, indicating strong amplitude decay over the 0.375m of vertical separation between the two receiver depths.\par
 
-At x=270m, t=6s in all sub-Rayleigh plots in figure \ref{fig:sub_strain}, the main wavefront stops, but there is a new wavefront propagating from this point. This front has a change in slope, which means a different propagation speed, this is the rupture arrest front. \par 
+At x=270m, t=6s in all sub-Rayleigh plots in figure \ref{fig:sub_strain}, the main wavefront stops, but there is a new wavefront propagating from this point. This front has a change in slope, which means a different propagation speed, this is the rupture arrest front. Thiis new wavefront is bidirectional, it propagates from the arrest point in positive as well as negative x with the same slope. \par 
 
 In the simulated DAS at gauge length 10.4m, a doubling of the wavefront is observed. This dual-band signature is heavily dependent on the chosen gauge length, as shown in appendix \ref{app:H}, reducing the gauge length to 1.0 m resolves the signal into a single, continuous wavefront. The 10.4m results are shown here because they correspond with DAS cables used for avalanche detection \parencite{turquetAutomatedSnowAvalanche2024}. 
 
@@ -43,7 +43,7 @@ In the simulated DAS at gauge length 10.4m, a doubling of the wavefront is obser
 \begin{figure}[H]
     \centering
    \includegraphics[width=\textwidth]{preliminary_super_strain.png}
-   \caption{Supershear strain and strain rate (horizontal component) averaged over 10.4 m gauge length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled. In the numerical domain, y is defined as vertical elevation measured upward from the base of the air layer (y=0.0m) to the bottom snow surface (y=3.0m). Therefore, deeper positions correspond to smaller y values. The receiver line at y=2.625m (Crack Depth) is higher in elevation than y=2.25m (Snow Bottom), which correctly places the crack above the snow base.}
+   \caption{Supershear strain and strain rate (horizontal component) averaged over 10.4 m gauge length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
    \label{fig:super_strain}
 \end{figure}
 
@@ -93,17 +93,17 @@ The oscillatory wave processes described in the previous sections can also be ob
 \subsection{Frequency-Wavenumber (f-k) Plot}
 \label{sec:fk_results}
 
-The fk-plot in figure \ref{fig:preliminary_fk} shows the energy (colorbar) density at frequencies (y-axis) and wavenumbers (x-axis) present in the results. This energy was taken from the horizontal velocity results at the snow bottom because the horizontal direction corresponds to the data measured by a horizontal DAS cable buried in snow. The plots shown are normalized to the 99th percentile of the energy present, this is done so that outliers with large energies are scaled and do not skew the color scale. 
+The f-k-plot in figure \ref{fig:preliminary_fk} shows the energy (colorbar) density at frequencies (y-axis) and wavenumbers (x-axis) present in the results. This energy was taken from the horizontal velocity results at the snow bottom because the horizontal direction corresponds to the data measured by a horizontal DAS cable buried in snow. The plots shown are normalized to the 99th percentile of the energy present, this is done so that outliers with large energies are scaled and do not skew the color scale. 
 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{../figures/preliminary_fk.png}
-    \caption{F-k plot for the Supershear (left) and sub-Rayleigh (right) case. Slab p-wave velocity in red, s-wave velocity in turquoise and respective rupture speed in blue. Colorbar shows energy normalized to the 99th percentile.}
+    \caption{F-k plot for the Supershear (left) and sub-Rayleigh (right) case. Slab P-wave velocity in red, S-wave velocity in turquoise and respective rupture speed in blue. Colorbar shows energy normalized to the 99th percentile.}
     \label{fig:preliminary_fk}
 \end{figure}
 
-The Supershear and sub-Rayleigh f-k plots in figure \ref{fig:preliminary_fk} show qualitatively different energy distributions, consistent with the two distinct propagation regimes. The Supershear case shows a concentration of energy around the rupture speed (blue line) and the vp (red line) of the slab on both sides of the wavenumber spectrum. It is important to note here that these speeds are very close in value, so the lines cannot be distinguised well in the plots. The sub-Rayleigh case also shows two concentrations of energy. A very broad band at the vp of the slab and a concentration of energy at the rupture speed on the postive wavenumber side. In all cases, the energy is more concentrated around the vp and or rupture speed for lower frequencies, at higher frequencies, the concentration of energy starts to deviate from speeds present in the medium in figure \ref{fig:preliminary_fk}. \par
+The Supershear and sub-Rayleigh f-k plots in figure \ref{fig:preliminary_fk} show qualitatively different energy distributions, consistent with the two distinct propagation regimes. The Supershear case shows a concentration of energy around the rupture speed (blue line) and the v_p (red line) of the slab on both sides of the wavenumber spectrum. It is important to note here that these speeds are very close in value, so the lines cannot be distinguised well in the plots. The sub-Rayleigh case also shows two concentrations of energy. A very broad band at the v_p of the slab and a concentration of energy at the rupture speed on the postive wavenumber side. In all cases, the energy is more concentrated around the v_p and or rupture speed for lower frequencies, at higher frequencies, the concentration of energy starts to deviate from speeds present in the medium in figure \ref{fig:preliminary_fk}. \par
 
 In the Supershear case, the dark spots of concentrated energy are more broad on the positive side compared to the negative side, where they are narrower and less smeared out. This asymmetry reflects the directionality of the source: the crack propagates in positive x and more energy is released in that direction. In the sub-Rayleigh case on the right side of figure \ref{fig:preliminary_fk}, there is no concentration of energy at negative wavenumbers. Rather than a physical absence of backward propagation, this asymmetry in sub-Rayleigh is a simulation effect: due to the slower rupture speed, the backward-propagating arrest wave develops later in the time window and quickly encounters the absorbing boundary. As a result, the backward-traveling wavefield is truncated before sufficient energy can enter the time-space window analyzed by the f-k transform.\par
 
@@ -137,12 +137,14 @@ dependence, rupture arrest signature and polarity sequence are all consistent be
 
 The same is true for the velocity plots in figure \ref{fig:czm_vel}, which are identical to the Supershear velocity plots in figure \ref{fig:super_vel}. \par 
 
+While the CZM model does not alter the DAS signature observed compared to a model with simpler crack physics, this finding might be important in demonstrating that a DAS cable with 10.4m gauge length is not sensitive to small-scale processes. Such processes, like the damage zone and the mixed-mode moment physics described in section \ref{sec:czm_theory}, allthough accounted for in the model, might not be recorded by the cable, which justifies the use of the simpler source physics case in this thesis. \par 
+
 
 
 \section{MPM Guided Results}
 \label{sec:mpm_results}
 
-The results shown here are from the MPM-guided simulation. The sources are spaced 0.01m apart from 75m to 125m. Unlike the results in section \ref{sec:results-1}, which are for a simple, 2 layer model with prescribed rupture velocities (sub-Rayleigh and Supershear case), the results here are for a 5-layer model with a rupture velocity coming from the MPM simulations. The results shown here are filtered using a low-pass filter with 50Hz cutoff. Because both strain and velocity are derived from displacement, the displacement field extracted is shown in appendix \ref{app:I}. The displacement data itself is unfiltered, but because strain, strain rate and velocity are derivatives, the differentiation acts as a high-pass filter which amplifies noise. Displacement is shown in the appendix to show that there are little numerical artefacts and noise in the extracted data. This means that filtering strain, strain rate and velocity should not be a concern because the noise is simply from the derivative, which is a clean field.
+The results shown here are from the MPM-guided simulation. The sources are spaced 0.01m apart from 75m to 125m. Unlike the results in section \ref{sec:results-1}, which are for a simple, 2 layer model with prescribed rupture velocities (sub-Rayleigh and Supershear case), the results here are for a 5-layer model with a rupture velocity coming from the MPM simulations. The results shown here are filtered using a low-pass filter with 50Hz cutoff. Because both strain and velocity are derived from displacement, the displacement field extracted is shown in appendix \ref{app:I}. The displacement data itself is unfiltered, but because strain, strain rate and velocity are derivatives, the differentiation acts as a high-pass filter which amplifies noise \parencite{igelComputationalSeismologyPractical2016}. Displacement is shown in the appendix to show that there are little numerical artefacts and noise in the extracted data. This means that filtering strain, strain rate and velocity should not be a concern because the noise is simply from the derivative, the input is a clean field.
 
 \subsection{MPM Strain and Strain Rate Plots}
 \label{sec:mpm_strain}
@@ -192,9 +194,9 @@ When comparing the strain rate plots (top column) to the strain plots, although 
 
 The velocity plots in figure \ref{fig:mpm_vel} show that both cases look pretty similar to each other independent of depth. This means that the vertical velocity in the top row, looks almost identcial at crack depth compared to the snow bottom. The vertical velocity plots can be distinguised from the horizontal velocity plots however. \par 
 
-The horizontal velocity in the bottom two panels of figure \ref{fig:mpm_vel} both show a flat v-shape from the crack origin at 75m, similar to that observed in the strain and strain rate plots in figuer \ref{sec:mpm_strain}. The forward propagating front is characterized by a wave train of negative velocity (blue), which is the first arrival, followed by a train of positive energy (red) which arrives shortly after. In the direction backwards of propagation, this order is flipped: a positive front arrives followed by a negative front. In the horizontal velocity plots in figure \ref{fig:mpm_vel}, the vertex of oscillatory fronts seems to be shifted. The first front, which is blue in positive direction of propagation and red in negative direction, is at x=75m, which is the crack onset. The vertex of the second v-shape, which has opposite polarity (red in positive, blue in negative direction), is not right below the vertex of the first v-shape. It is shifted in positive direction of propagation, which indicates that it could come from the crack arrest point a x=125m. \par 
+The horizontal velocity in the bottom two panels of figure \ref{fig:mpm_vel} both show a flat v-shape from the crack origin at 75m, similar to that observed in the strain and strain rate plots in figuer \ref{sec:mpm_strain}. The forward propagating front is characterized by a wave train of negative velocity (blue), which is the first arrival, followed by a train of positive energy (red) which arrives shortly after. In the direction backwards of propagation, this order is flipped: a positive front arrives followed by a negative front. In the horizontal velocity plots in figure \ref{fig:mpm_vel}, the vertex of oscillatory fronts seems to be shifted. The first front, which is blue in positive direction of propagation and red in negative direction, is at x=75m, which is the crack onset. The vertex of the second v-shape, which has opposite polarity (red in positive, blue in negative direction), is not right below the vertex of the first v-shape. This can also be seen in the zoomed-in section in figure \ref{fig:mpm_vel_zoom}, especially in the vy plots. It is shifted in positive direction of propagation, which indicates that it ccomes from the crack arrest point a x=125m. \par 
 
-From the same vertex, in the vx plots at crack depth (bottom left in \ref{fig:mpm_vel}), fronts with weaker amplitude originate. These wavefronts fan out from around x=125m and they are layered in polarity (positive followed by negative). They also widen as time incerases, which could indicate dispersion. Such secondary wavefronts are not present in the vx plot at the snow bottom. \par 
+From the same vertex, in the vx plots at crack depth (bottom left in \ref{fig:mpm_vel} and \ref{fig:mpm_vel_zoom}), fronts with weaker amplitude originate. These wavefronts fan out from around x=125m and they are layered in polarity (positive followed by negative). They also widen as time incerases, which could indicate dispersion. Such secondary wavefronts are not present in the vx plot at the snow bottom. \par 
 
 In the vertical velocity plots in the top row of figure \ref{fig:mpm_vel}, the secondary wavefronts are very strong and can be seen clearly at both depths. They originate in a v-shape from the crack initiation point at x=75m. These wavefronts are very strong in amplitude (saturated colors), and show the propagation of a periodic oscillatory wave. The wavefronts in both the positive and negative direction of propagation widen as time increases and their amplitude decreases, which is indicative of gemetric spreading and dispersion. When looking at the later times in the top panels of figure \ref{fig:mpm_vel}, the blue and red velocities seem to curve towards the origin of the plot (towards x=0). This is another indicator for dispersion of higher frequencies. \par
 
@@ -214,17 +216,17 @@ The data used for the f-k plot is the horizontal velocity data, for the reasons 
 \begin{figure}[H]
     \centering
     \includegraphics[width = \linewidth]{../figures/mpm_fk.png}
-    \caption{F-k plot for the MPM-guided simulation. Slab p-wave velocity in red, slab s-wave velocity in turquoise. Weak layer p-wave velocity shown by the white layer, s-wave velocity of WL shown by yellow line. Colorbar shows energy normalized to the 99th percentile to avoid outliers.}
+    \caption{F-k plot for the MPM-guided simulation. Slab P-wave velocity in red, slab S-wave velocity in turquoise. Weak layer P-wave velocity shown by the white layer, S-wave velocity of WL shown by yellow line. Colorbar shows energy normalized to the 99th percentile to avoid outliers.}
     \label{fig:mpm_fk}
 \end{figure}
 
-The frequency-wavenumber plot in figure \ref{fig:mpm_fk} shows a symmetric distribution of energy around the origin. A lot of energy is concentrated around the positive and negative slab and weak layer p-wave velocity, which are indicated by the red (slab vp) and white (wl vp) lines. \par
+The frequency-wavenumber plot in figure \ref{fig:mpm_fk} shows a symmetric distribution of energy around the origin. A lot of energy is concentrated around the positive and negative slab and weak layer P-wave velocity, which are indicated by the red (slab vp) and white (weak layer vp) lines. \par
 
 The concentration of energy is not strictly at those two speeds, the dark spot of concentrated energy is broader and more spread out and therefore not contained by the two lines. \par
 
-In the f-k plot in figure \ref{fig:mpm_fk}, there is no energy concentrated at the s-wave speeds of the slab, which is indicated by the turquoise line, or the vs of the weak layer, shown by the yellow line. \par
+In the f-k plot in figure \ref{fig:mpm_fk}, there is no energy concentrated at the S-wave speeds of the slab, which is indicated by the turquoise line, or the vs of the weak layer, shown by the yellow line. \par
 
-Additional to the energy concentrated around the p-wave speeds, there are bands of concentrated energy on the positive and negative side of the wavenumbers. These energy bands are stronger in the positive direction and they have a shallower slope than the s-wave speeds present in the medium. \par 
+Additional to the energy concentrated around the P-wave speeds, there are bands of concentrated energy on the positive and negative side of the wavenumbers. These energy bands are stronger in the positive direction and they have a shallower slope than the S-wave speeds present in the medium. \par 
 
 
 
