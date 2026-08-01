@@ -7,7 +7,7 @@
 
 % TODO: Add appendix content — additional figures, derivations, tables, etc.
 
-The complete code of all models and plots described can be found on github: \url{https://github.com/s-bachmann/Master-Thesis}. Meeting slides contains slides used for intermittent meetings with supervisors, Report contains all the \LaTeX documents and auxillary files used to write this thesis, and Test Simulations contains all the simulation and plotting code. 
+The complete code of all models and plots described can be found on GitHub: \url{https://github.com/s-bachmann/Master-Thesis}. Meeting slides contains slides used for intermittent meetings with supervisors, Report contains all the \LaTeX documents and auxiliary files used to write this thesis, and Test Simulations contains all the simulation and plotting code. 
 
 % \chapter{Research Module Report}
 % \label{app:H}
@@ -22,7 +22,7 @@ The complete code of all models and plots described can be found on github: \url
   \node (in1) [io, below of=start] {Layer definition: number of layers, thickness of layers, $\ \rho, v_p, v_s$ of layers};
   \node (pro1) [io, below of = in1] {Definition of stress profile with $\  x_i = \frac{\delta}{\delta_c}$};
   \node (stress1) [decision, right of=pro1, xshift=5cm, yshift=-0.8cm] {Linear: $\  \sigma = [0, 1-x_i]$};
-  \node (stress2) [decision, left of= pro1, xshift=-5cm, yshift=-0.8cm] {Exponential:$ \ \sigma = exp(-x_i * log(2))$ }; 
+  \node (stress2) [decision, left of= pro1, xshift=-5cm, yshift=-0.8cm] {Exponential:$\ \sigma = exp(-x_i * log(2))$};
   \node (pro2) [process, below of=pro1] {Calculation of Lamé-Parameters: $\ \mu = \rho v_s^2, \lambda = \rho (v_p^2 -v_s^2)$};
 
   \draw [arrow] (start) -- (in1);
@@ -39,9 +39,9 @@ The complete code of all models and plots described can be found on github: \url
   \node (pro3) [process, below of=pro2] {Calculation of Elastic modulus from Lamé-Parameters: $\ E = \mu * (3.0 * \lambda + 2.0 * \mu) / (\lambda + \mu)$};
   \node (pro4) [process, below of=pro3] {Calculating slip profile: array of zeros at every slip position, $\int_{0}^{1}(1-\sigma(\xi))d\xi$, where $\ \sigma(\xi)$ is the stress profile. The slip is distributed elliptically: $\ slip \propto \sqrt{4\xi (1-\xi)}$, where $\ \xi = \frac{x-x_{start}}{x_{end}-x_{start}}$};
   \node (pro5) [process, below of=pro4] {Calculating slip distance: distance between current position and crack tip is calculated, if in front of tip, the slip is 0. If the current position is behind the crack tip, then: $\ x_i = \frac{1 - \Delta x}{l_{cz}}$, where $\ l_{cz}$ is the cohesive zone length};
-  \node (in2) [io, below of=pro5] {Normal and shear strengths and critical fracture energies measured by \cite{mahajanModelingInterfacialCrack2008} used to calculate critical separations: $\ \Delta_n = 2G_I / \sigma_n$}; 
-  \node (pro6) [process, below of=in2] {Calculating process zone lengths for shear and normal forces: $\  l_{ch} = E_{eff} * G_{IIc} / max(\tau_s^2, 1e-12), l_{cz} = \pi / 8.0 * l_{ch}$}; 
-  \node (in3) [io, below of=pro6, yshift=-3cm] {Rupture speed calculation: minimum shear wave speed is adjusted for thickness and stiffness of interface according to the [0.5,2] interval of $\ \sqrt{\frac{E_{eff}}{10e6},\sqrt{thickness}}$. These corrections are the weighted, rupture velocity is calculated according to bounds described by \cite{trottetTransitionSubRayleighAnticrack2022}: between 0.25 and 0.6 vs for sub-Rayleigh, above 1.6 vs for supershear };
+  \node (in2) [io, below of=pro5] {Normal and shear strengths and critical fracture energies measured by \cite{mahajanModelingInterfacialCrack2008} used to calculate critical separations: $\ \Delta_n = 2G_I / \sigma_n$};
+  \node (pro6) [process, below of=in2] {Calculating process zone lengths for shear and normal forces: $\  l_{ch} = E_{eff} * G_{IIc} / max(\tau_s^2, 1e-12), l_{cz} = \pi / 8.0 * l_{ch}$};
+  \node (in3) [io, below of=pro6, yshift=-3cm] {Rupture speed calculation: minimum shear wave speed is adjusted for thickness and stiffness of interface according to the [0.5,2] interval of $\ \sqrt{\frac{E_{eff}}{10e6},\sqrt{thickness}}$. These corrections are the weighted, rupture velocity is calculated according to bounds described by \cite{trottetTransitionSubRayleighAnticrack2022}: between 0.25 and 0.6 vs for sub-Rayleigh, above 1.6 vs for Supershear};
 
   % \draw [arrow] (pro2) -- (pro3);
   \draw [arrow] (pro3) -- (pro4);
@@ -54,13 +54,13 @@ The complete code of all models and plots described can be found on github: \url
 \subsection*{Part 3: Rupture Propagation and Source Definition}
 \begin{tikzpicture}[node distance=3.8cm]
   \centering
-  % \node (in3) [io] {Rupture speed calculation: minimum shear wave speed is adjusted for thickness and stiffness of interface according to the [0.5,2] interval of $\ \sqrt{\frac{E_{eff}}{10e6},\sqrt{thickness}}$. These corrections are the weighted, rupture velocity is calculated according to bounds described by \cite{trottetTransitionSubRayleighAnticrack2022}: between 0.25 and 0.6 vs for sub-Rayleigh, above 1.6 vs for supershear };
-  \node (pro7) [process, below of=in3] {Calculation of rise time (duration of slip) from cohesive zone length and rupture speed: $\ t = \frac{l_{cz}}{v_{rupture}} $}; 
-  \node (in4) [io, below of=pro7] {Definition of crack zone length by defining start and end x position, spacing of sources, ratio between mode I and mode II}; 
-  \node (pro8)[process, below of=in4]{Calculation of onest time (time where source at x position needs to fire): $\ t_{onest} = (x_i - x_0) / v_{rupture}$}; 
-  \node (pro9) [process, below of=pro8] {Calculation of moment tensor source direction: $\ M0 = \mu * slip * \Delta x,  m_{xy} = mode_{mix} * M0, m_{yy} = -(1.0 - mode_{mix}) * M0, m_{xx} = 0.0$ }; 
+  % \node (in3) [io] {Rupture speed calculation: minimum shear wave speed is adjusted for thickness and stiffness of interface according to the [0.5,2] interval of $\ \sqrt{\frac{E_{eff}}{10e6},\sqrt{thickness}}$. These corrections are the weighted, rupture velocity is calculated according to bounds described by \cite{trottetTransitionSubRayleighAnticrack2022}: between 0.25 and 0.6 vs for sub-Rayleigh, above 1.6 vs for Supershear};
+  \node (pro7) [process, below of=in3] {Calculation of rise time (duration of slip) from cohesive zone length and rupture speed: $\ t = \frac{l_{cz}}{v_{rupture}} $};
+  \node (in4) [io, below of=pro7] {Definition of crack zone length by defining start and end x position, spacing of sources, ratio between mode I and mode II};
+  \node (pro8)[process, below of=in4]{Calculation of onset time (time where source at x position needs to fire): $\ t_{onset} = (x_i - x_0) / v_{rupture}$};
+  \node (pro9) [process, below of=pro8] {Calculation of moment tensor source direction: $\ M0 = \mu * slip * \Delta x,  m_{xy} = mode_{mix} * M0, m_{yy} = -(1.0 - mode_{mix}) * M0, m_{xx} = 0.0$};
   \node (pro10) [process, below of=pro9] {Appending all subfault slip distances, source directions and onset times to salvus project};
-  \node (end) [startstop, below of=pro10] {Simualtion launch and plotting}; 
+  \node (end) [startstop, below of=pro10] {Simulation launch and plotting};
 
   \draw [arrow] (in3) -- (pro7);
   \draw [arrow] (pro7) -- (in4);
@@ -137,7 +137,7 @@ Simulation End Time              & 6.545      \\ \hline
 \hline
 Parameter & Value & from \cite{trottetTransitionSubRayleighAnticrack2022} \\
 \hline
-$\theta$ & $45^\circ$ \\
+$\thea$ & $45^\circ$ \\
 $\rho_{\rm slab}, \rho_{\rm bed}, \rho_{\rm wl}$ & 250.0, 300.0, 100.0 $\text{kg/m}^3$ \\
 $E_{\rm slab}, E_{\rm bed}, E_{\rm wl}$ & $3\times 10^6$, $4\times 10^6$, $1\times 10^6$ Pa \\
 $\nu$ & 0.3 (Poisson's ratio) \\
@@ -174,12 +174,12 @@ Simulation End Time              & 6.545      \\ \hline
 \chapter{Wider Source Spacing Plots}
 \label{app:D}
 
-The following figure shows particle velocity (vx and vx) for a sub-rayleigh case with 10m source spacing. All other parameters apart from the spacing are the same as for the results shown in section \ref{sec:results-1}. 
+The following figure shows particle velocity (vx and vx) for a sub-Rayleigh case with 10m source spacing. All other parameters apart from the spacing are the same as for the results shown in section \ref{sec:results-1}. 
 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{../figures/wide_sub_vel.png}
-  \caption{Sub-rayleigh Particle velocity. Vertical velocity in top row, horizontal velocity in bottom row. Crack depth in left column, snow bottom in right coulumn. Colorbar shows velcity (m/s). Source spacing is 10m.}
+  \caption{Sub-Rayleigh Particle velocity. Vertical velocity in top row, horizontal velocity in bottom row. Crack depth in left column, snow bottom in right column. Colorbar shows velcity (m/s). Source spacing is 10m.}
   \label{fig:wide_sub_vel}
 \end{figure}
 
@@ -188,7 +188,7 @@ The results for strain show a similar effect:
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{../figures/wide_sub_strain.png}
-  \caption{Sub-rayleigh strain and strain rate. Crack depth in left column, snow bottom in right coulumn. Averaging over 4m gaugle length, strain rate in top row, strain in bottom row. Source spacing is 10m.}
+  \caption{Sub-Rayleigh strain and strain rate. Crack depth in left column, snow bottom in right column. Averaging over 4m gaugle length, strain rate in top row, strain in bottom row. Source spacing is 10m.}
   \label{fig:wide_sub_strain}
 \end{figure}
 
@@ -198,7 +198,7 @@ The results for strain show a similar effect:
 
 \subsection{Simple model}
 
-The following two animation snaphots show the velocity field for the sub-rayleigh case in the simple model. 
+The following two animation snaphots show the velocity field for the sub-Rayleigh case in the simple model. 
 
 \begin{figure}[H]
     \centering
@@ -252,13 +252,13 @@ The following figures show simulated DAS data of the simple model with a gauge l
 
 \begin{figure}[h]
   \includegraphics[width = \linewidth]{../figures/simple_sub_das_smaller.png}
-  \caption{Sub-rayleigh strain and strain rate (horizontal component) averaged over 1 m gaugue length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
+  \caption{Sub-Rayleigh strain and strain rate (horizontal component) averaged over 1 m gauge length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
   \label{fig:smaller_strain_sub}
 \end{figure}
 
 \begin{figure}
   \includegraphics[width = \linewidth]{../figures/simple_super_das_smaller.png}
-  \caption{Supershear strain and strain rate (horizontal component) averaged over 1 m gaugue length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
+  \caption{Supershear strain and strain rate (horizontal component) averaged over 1 m gauge length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
   \label{fig:smaller_strain_super}
 \end{figure}
 
@@ -266,7 +266,7 @@ The following figures show simulated DAS data of the simple model with a gauge l
 
 \begin{figure}
   \includegraphics[width = \linewidth]{../figures/mpm_strain_smaller.png}
-  \caption{MPM strain and strain rate (horizontal component) averaged over 1 m gaugue length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
+  \caption{MPM strain and strain rate (horizontal component) averaged over 1 m gauge length to represent DAS data: strain rate in top column, strain in bottom column. Crack depth on left side, snow bottom on right side. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
   \label{fig:smaller_strain_mpm}
 \end{figure}
 
@@ -285,19 +285,19 @@ The following plot shows the displacement data extracted from the MPM simulation
 \chapter{Simple Source Setup in 5-Layer Model}
 \label{app:J}
 
-The following figures show the simple sources (ricker wavelets with 0.1m spacing, sub-rayleigh case) in the same 5-layer model shown in figure \ref{fig:domain_sketch_mpm}. 
+The following figures show the simple sources (ricker wavelets with 0.1m spacing, sub-Rayleigh case) in the same 5-layer model shown in figure \ref{fig:domain_sketch_mpm}. 
 
 \begin{figure}[h]
   \centering
 \includegraphics[width=\linewidth]{../figures/ricker_stf_5layer_vel.png}
-\caption{Sub-rayleigh velocity. Crack depth in left column, snow bottom in right coulumn. Model used is 5 layer model, source spacing is 0.1m and stf is a ricker wavelet. Colorbar shows velcity (m/s).}
+\caption{Sub-Rayleigh velocity. Crack depth in left column, snow bottom in right column. Model used is 5 layer model, source spacing is 0.1m and stf is a ricker wavelet. Colorbar shows velcity (m/s).}
 \label{fig:5_layer_ricker_vel}
 \end{figure}
 
 \begin{figure}[h]
   \centering
 \includegraphics[width=\linewidth]{../figures/ricker_stf_5layer_strain.png}
-\caption{Sub-rayleigh strain and strain rate. Crack depth in left column, snow bottom in right coulumn. Model used is 5 layer model, source spacing is 0.1m and stf is a ricker wavelet. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
+\caption{Sub-Rayleigh strain and strain rate. Crack depth in left column, snow bottom in right column. Model used is 5 layer model, source spacing is 0.1m and stf is a ricker wavelet. Colorbar shows magnitude of strain or strain rate, colorbars unscaled.}
 \label{fig:5_layer_ricker_strain}
 \end{figure}
 

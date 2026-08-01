@@ -42,8 +42,8 @@
 \nomenclatureentry{S19$M$@[{$M$}]\begingroup Number of quadrature points\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S20$W_i$@[{$W_i$}]\begingroup Quadrature weight at point $i$\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S21$x$@[{$x$}]\begingroup Physical coordinate [m]\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S22$\theta$@[{$\theta$}]\begingroup Reference (element-local) coordinate\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S23$\left|\frac{\partial x}{\partial \theta}\right|$@[{$\left|\frac{\partial x}{\partial \theta}\right|$}]\begingroup Jacobian determinant of reference-to-physical mapping\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S22$\thea$@[{$\thea$}]\begingroup Reference (element-local) coordinate\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S23$\left|\frac{\partial x}{\partial \thea}\right|$@[{$\left|\frac{\partial x}{\partial \thea}\right|$}]\begingroup Jacobian determinant of reference-to-physical mapping\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S24$t_o$@[{$t_o$}]\begingroup Subfault onset time [s], e.g. $t_o=(x-x_{\rm start})/v_{\rm rupture}$\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S25$x_{\rm start}$@[{$x_{\rm start}$}]\begingroup Rupture starting position [m]\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S26$v_{\rm rupture}$@[{$v_{\rm rupture}$}]\begingroup Rupture propagation speed [$\mathrm{m\,s^{-1}}$]\nomeqref {0}|nompageref}{1}
