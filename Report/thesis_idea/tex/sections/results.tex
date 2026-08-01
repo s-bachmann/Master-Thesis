@@ -107,13 +107,16 @@ The Supershear and sub-Rayleigh f-k plots in figure \ref{fig:preliminary_fk} sho
 
 In the Supershear case, the dark spots of concentrated energy are more broad on the positive side compared to the negative side, where they are narrower and less smeared out. This asymmetry reflects the directionality of the source: the crack propagates in positive x and more energy is released in that direction. In the sub-Rayleigh case on the right side of figure \ref{fig:preliminary_fk}, there is no concentration of energy at negative wavenumbers. Rather than a physical absence of backward propagation, this asymmetry in sub-Rayleigh is a simulation effect: due to the slower rupture speed, the backward-propagating arrest wave develops later in the time window and quickly encounters the absorbing boundary. As a result, the backward-traveling wavefield is truncated before sufficient energy can enter the time-space window analyzed by the f-k transform.\par
 
+Figure \ref{fig:preliminary_fk_lamb} shows the same frequency-wavenumber spectrum. The Lamb-wave dispersion curves obtained in section \ref{sec:wave_physics} are indicated by the orange (antisymmetric, A0) and the green line (symmetric, S0). These are plotted seperately because they fall close to the vp of the slab in both cases and the lines would not be very well recognizable. 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{../figures/preliminary_sub_fk_lamb.png}
-    \caption{F-k plot for the Supershear (left) and sub-Rayleigh (right) case. Lamb wave dispersion curves calculated from \ref{sec:wave_physics}. A0 mode shown in orange, S0 mode in orange. Colorbar shows energy normalized to the 99th percentile.}
+    \caption{F-k plot for the Supershear (left) and sub-Rayleigh (right) case. Lamb wave dispersion curves calculated from \ref{sec:wave_physics}. A0 mode shown in orange, S0 mode in green. Colorbar shows energy normalized to the 99th percentile.}
     \label{fig:preliminary_fk_lamb}
 \end{figure}
+
+Both the Supershear and the sub-Rayleigh f-k plots show energy concentrated at the A0 and the S0 speeds on the positive wavenumber side, which fall close to the p-wave velocity of the slab in both cases. The lines indicating the dispersion curves follow the dark concentration of energy in both cases. In the supershear case on the left side of figure \ref{fig:preliminary_fk_lamb}, there is also energy concentrated around the negative A0 and S0 speeds. In the Supershear case, the speeds calculated from the dispersion curves in \ref{sec:wave_physics} also fall close to the rupture velocity. \par 
 
 \section{CZM Results}
 \label{sec:czm_results}
