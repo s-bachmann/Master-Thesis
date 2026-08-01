@@ -376,34 +376,35 @@ The last implication for DAS measurements of crack propagation in snow is only o
 \subsection{Signal to Noise Ratio and Field Detectability}
 \label{sec:DAS_noise}
 To assess whether the signatures in the simulated data in this thesis are even discoverable by a DAS cable, a comparison with the noise spectral density of the Silixa iDAS instrument \parencite{parkerDistributedAcousticSensing2014, idasdatasheet} was done.  This instrument was chosen because it was used for avalanche detection in the Vallée de la Sionne test site in the Swiss Alps by \cite{paitzPhenomenologyAvalancheRecordings2023, edmeFiberopticDetectionSnow2023}. For a gauge length of 10m, similar to the one used by \cite{turquetAutomatedSnowAvalanche2024} and this thesis, the amplitude spectral density, which describes how much noise is present per frequency bandwidth \parencite{hartogIntroductionDistributedOptical2017}, is $\ 2 p\epsilon per \sqrt{Hz}$ \parencite{idasdatasheet}. This noise floor is used to calculate the signal to noise ratio for the results in sections \ref{sec:results-1}, \ref{sec:mpm_results} as described in section \ref{sec:das_theory}. The input values for equations \ref{eq:rms_noise} and \ref{eq:snr} can be seen in table \ref{tab:snr_input}. 
-
- \begin{table}[H]
+\begin{table}[H]
+\centering
 \begin{tabular}{|l|l|}
 \hline
-Parameter                                                                            & Input Value                                                                                \\ \hline
-Amplitude Spectral Density                                                           & \begin{tabular}[c]{@{}l@{}}$\\ \ 2\\  p\\ \epsilon\\  per \\ \sqrt\\ {Hz}\\ $\end{tabular} \\ \hline
-$\ \Delta f$ Simple Case                                                             & 50 Hz                                                                                      \\ \hline
-$\ \Delta f$ MPM                                                                     & 30 Hz                                                                                      \\ \hline
-$\ \epsilon_{peak}$ Simple, Sub-Rayleigh                                             & $/ 3* 10^{-6}$                                                                             \\ \hline
-\begin{tabular}[c]{@{}l@{}}$\ \\ \epsilon_{peak}\\ $ Simple, Supershear\end{tabular} & $/ 3* 10^{-5}$                                                                             \\ \hline
-\begin{tabular}[c]{@{}l@{}}$\ \\ \epsilon\\ _\\ {peak}$ MPM\end{tabular}             & $/ 2* 10^{-5}$                                                                             \\ \hline
+\textbf{Parameter} & \textbf{Input Value} \\ \hline
+Amplitude Spectral Density & $2\text{ p}\epsilon/\sqrt{\text{Hz}}$ \\ \hline
+$\Delta f$ Simple Case & $50\text{ Hz}$ \\ \hline
+$\Delta f$ MPM & $30\text{ Hz}$ \\ \hline
+$\epsilon_{\text{peak}}$ Simple, Sub-Rayleigh & $3 \times 10^{-6}$ \\ \hline
+$\epsilon_{\text{peak}}$ Simple, Supershear & $3 \times 10^{-5}$ \\ \hline
+$\epsilon_{\text{peak}}$ MPM & $2 \times 10^{-5}$ \\ \hline
+\end{tabular}
 \caption{Input Parameters for signal-to-noise calculations.}
 \label{tab:snr_input}
-\end{tabular}
 \end{table}
 
 From these values, the signal-to-noise ratios for the individual cases are shown in table \ref{tab:snr_output}. 
 
 \begin{table}[H]
+\centering
 \begin{tabular}{|l|l|l|}
 \hline
-Case                & $\ RMS_{Noise}$, from equation \ref{eq:rms_noise} & SNR, from equation \ref{eq:snr} \\ \hline
-Simple Sub-Rayleigh & 0.0141n$\ \epsilon$                                                 & 212'132                                          \\ \hline
-Simple Supershear   & 0.0141n$\ \epsilon$                                                 & 2'121'320                                        \\ \hline
-MPM                 & 0.0110n$\ \epsilon$                                                 & 1'825'742                                        \\ \hline
+\textbf{Case} & \textbf{$\text{RMS}_{\text{Noise}}$ (from Eq.~\ref{eq:rms_noise})} & \textbf{SNR (from Eq.~\ref{eq:snr})} \\ \hline
+Simple Sub-Rayleigh & $0.0141\text{ n}\epsilon$ & 212'132 \\ \hline
+Simple Supershear   & $0.0141\text{ n}\epsilon$ & 2'121'320 \\ \hline
+MPM                 & $0.0110\text{ n}\epsilon$ & 1'825'742 \\ \hline
+\end{tabular}
 \caption{Outputs from signal-to-noise calculations.}
 \label{tab:snr_output}
-\end{tabular}
 \end{table}
 
 These calculations show that the DAS signals measured here can be detected against the noise floor of Silixa iDAS. However, these calculations do not account for coupling or environmental noise, which can be present in field data. \par 
