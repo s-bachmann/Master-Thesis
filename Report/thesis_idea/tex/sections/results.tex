@@ -107,6 +107,14 @@ The Supershear and sub-Rayleigh f-k plots in figure \ref{fig:preliminary_fk} sho
 
 In the Supershear case, the dark spots of concentrated energy are more broad on the positive side compared to the negative side, where they are narrower and less smeared out. This asymmetry reflects the directionality of the source: the crack propagates in positive x and more energy is released in that direction. In the sub-Rayleigh case on the right side of figure \ref{fig:preliminary_fk}, there is no concentration of energy at negative wavenumbers. Rather than a physical absence of backward propagation, this asymmetry in sub-Rayleigh is a simulation effect: due to the slower rupture speed, the backward-propagating arrest wave develops later in the time window and quickly encounters the absorbing boundary. As a result, the backward-traveling wavefield is truncated before sufficient energy can enter the time-space window analyzed by the f-k transform.\par
 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{../figures/preliminary_sub_fk_lamb.png}
+    \caption{F-k plot for the Supershear (left) and sub-Rayleigh (right) case. Lamb wave dispersion curves calculated from \ref{sec:wave_physics}. A0 mode shown in orange, S0 mode in orange. Colorbar shows energy normalized to the 99th percentile.}
+    \label{fig:preliminary_fk_lamb}
+\end{figure}
+
 \section{CZM Results}
 \label{sec:czm_results}
 
@@ -228,7 +236,12 @@ In the f-k plot in figure \ref{fig:mpm_fk}, there is no energy concentrated at t
 
 Additional to the energy concentrated around the P-wave speeds, there are bands of concentrated energy on the positive and negative side of the wavenumbers. These energy bands are stronger in the positive direction and they have a shallower slope than the S-wave speeds present in the medium. \par 
 
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{../figures/mpm_fk_lamb.png}
+    \caption{F-k plot for the MPM-guided simulation. Lamb wave dispersion curves calculated from \ref{sec:wave_physics}. A0 mode shown in orange, S0 mode in orange. Colorbar shows energy normalized to the 99th percentile.}
+    \label{fig:mpm_fk_lamb}
+\end{figure}
 
 
 % Example figure placeholder:
