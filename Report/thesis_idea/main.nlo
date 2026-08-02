@@ -65,17 +65,4 @@
 \nomenclatureentry{S36$\sigma_{\max},\,\tau_{\max}$@[{$\sigma_{\max},\,\tau_{\max}$}]\begingroup Peak normal and shear cohesive tractions [Pa]\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S37$G_I,\,G_{II}$@[{$G_I,\,G_{II}$}]\begingroup Mode-I and mode-II fracture energies [$\mathrm{J\,m^{-2}}$]\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S38$l_{ch}$@[{$l_{ch}$}]\begingroup Characteristic Irwin length [m]\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S39$l_{cz}$@[{$l_{cz}$}]\begingroup Cohesive-zone length [m]\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S40$\bar{\epsilon}_{\mathrm{DAS}}$@[{$\bar{\epsilon}_{\mathrm{DAS}}$}]\begingroup Gauge-averaged DAS strain\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S41$\dot{\bar{\epsilon}}_{\mathrm{DAS}}$@[{$\dot{\bar{\epsilon}}_{\mathrm{DAS}}$}]\begingroup Gauge-averaged DAS strain rate\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S42$l$@[{$l$}]\begingroup Gauge length [m]\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S43$s_c$@[{$s_c$}]\begingroup Center position of DAS channel along the fiber [m]\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S44$\mathbf{e}(s)$@[{$\mathbf{e}(s)$}]\begingroup Unit vector tangent to the fiber at arc-length position $s$\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S45$w(s),\,w_k$@[{$w(s),\,w_k$}]\begingroup Continuous and discrete spatial weighting kernels\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S46$N_g$@[{$N_g$}]\begingroup Number of grid samples within the gauge window\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S62$\phi_{\mathrm{laser}}$@[{$\phi_{\mathrm{laser}}$}]\begingroup DAS laser phase delay [rad]\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S63$\mathbf{F}$@[{$\mathbf{F}$}]\begingroup Deformation gradient tensor\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S47$k$@[{$k$}]\begingroup Wavenumber [$\mathrm{rad\,m^{-1}}$]\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S48$\omega$@[{$\omega$}]\begingroup Angular frequency [$\mathrm{rad\,s^{-1}}$]\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S49$p,\,q$@[{$p,\,q$}]\begingroup Vertical wavenumber terms for P- and S-wave potentials\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{S50$\alpha,\,\beta$@[{$\alpha,\,\beta$}]\begingroup Positive decay constants for evanescent wave terms\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{S39$
