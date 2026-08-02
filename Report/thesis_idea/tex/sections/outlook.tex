@@ -20,7 +20,7 @@ Because of the possibility for transition between the different propagation regi
 Furthermore, the crack modeled in this thesis is linear and at constant depth. The moment tensor extraction from MPM used here averages the stress field over the weak layer thickness, which loses information about the vertical structure of the source. MPM simulations of weak layer cracking and collapse have shown that this is not the case \parencite{trottetTransitionSubRayleighAnticrack2022}, so a next step would be to make the crack propagation modeled by seismic sources more physical. This could be done by having "jumps" of the crack into different depths of the snowpack or having multiple lines of sources firing at the same time to represent multiple smaller cracks. In the MPM case, a more refined approach would be extracting the moment tensor at individual MPM particle positions without averaging, preserving the depth-dependent stress distribution and potentially revealing differences in the Lamb wave mode excitation that are hidden by the averaging. This would also allow the crack depth to vary with propagation distance. \par
 
 Another limitation is that the simple and CZM simulations cannot account for the physical collapse
-of the weak layer that characterises anticrack propagation
+of the weak layer that characterizes anticrack propagation
 \parencite{heierliAnticrackNucleationTriggering2008,
 heierliAnticracksNewTheory2003}.This is because spectral element methods solve only the elastic wave equation in the surrounding medium and cannot
 represent inelastic failure of material elements without explicit element
