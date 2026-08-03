@@ -1,0 +1,352 @@
+% tex/sections/theory.tex
+% ──────────────────────────────────────────────────────────────────────────────
+\chapter{Theory}
+\label{chap:theory}
+% ──────────────────────────────────────────────────────────────────────────────
+%
+% TODO: Write theoretical background.
+%
+% Suggested structure:
+%   - Underlying physical / mathematical framework
+%   - Key equations and derivations
+%   - Relevant prior models or theoretical results
+%   - Any assumptions made throughout
+
+\section{Spectral Element Wave Propagation Modeling}
+\label{sec:salvus_method}
+
+The model described in \ref{sec:czm_methods} is implemented using the finite-element (FE) method in SALVUS. The following section describes the physics and workflow used by SALVUS. Understanding the physics behind the modeling is relevant for understanding and interpreting the results, but also for appreciating the limitations of the model. \par
+
+To discretize a domain, the domain is divided into a finite number of elements \parencite{FiniteElementMethod}. The number of mesh elements per wavelength is user-input, but needs to be small enough to satisfy the condition for the maximum wave frequency that needs to be resolved accurately. The boundaries of these elements describe the mesh, the mesh has a finite number of grid-points (edge points of the elements) \parencite{FiniteElementMethod}. The governing equations are determined at every element node, so for rectangular elements with nodes 1,2,3 and 4, there is the system $\ r^1 = \begin{pmatrix}r_1^1 \\ r_2^1 \\ r_3^1\\ r_4^1 \end{pmatrix}$ for force  and $\ u^1 = \begin{pmatrix}u_1^1 \\ u_2^1 \\ u_3^1\\ u_4^1 \end{pmatrix}$ for displacement \parencite{FiniteElementMethod}. The residual or characteristic relationship of linear elastic elements is of the form $\ r^1 = f^1-K^1u^1 $, where f are the nodal forces distributing load on the nodes, r are the residual forces and K is the stiffness matrix of a specific element \parencite{FiniteElementMethod}. In FE, the approximation of the wavefield by basis functions leads to a representation over the whole domain and not just at a set of points \parencite{afanasievModularFlexibleSpectralelement2019}. This means integrals can be calculated over surfaces or even volumes \parencite{afanasievModularFlexibleSpectralelement2019}. \par
+
+Snow is a porous medium \parencite{mellorEngineeringPropertiesSnow1977}, which is approximated as a solid in this Thesis. This is because SALVUS meshes need an isotropic, solid material and cannot account for pore spaces. Higher frequencies in the resulting data would be attenuated much more quickly in an actual porous medium \parencite{koushikDevelopmentSeismicSignalbased2024}. The medium assumed here is an effective medium, because the wavelengths of interest are much larger than the pore spaces in snow, this is why such simplifications do not really have an effect on the results. The presence of air or water in snow is not neglected completely in the SALVUS simulations implemented however, because the material properties taken from \cite{guillemotEffectSnowfallChanges2021,trottetTransitionSubRayleighAnticrack2022} are based on field measurements of snow. This means that the velocities measured by \cite{guillemotEffectSnowfallChanges2021} are not of pure snow, but snow that contains air or water. \par
+
+The governing equation considered in this case is the elastic wave equation, because real-life crack propagation emits P- and S-waves. The wave equation for a heterogenous elastic solid in the n-dimensional domain G is 
+\begin{equation}
+  \rho\partial_t^2u = \nabla \cdot \sigma + f
+  \label{eq:waveeq simple}
+\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019,kAkiRichards19801981}, with $\ \rho $ as density of the material, u as displacement, $\ \sigma$ as stress, and f as the force. Stress can be related to displacement using Hooke's law: $\ \sigma = C  : \nabla u$, where C is a 4th order tensor which characterizes the stiffness of the medium \parencite{afanasievModularFlexibleSpectralelement2019}. The symbol : denotes contraction over adjacent indices (so contracting indices 1 and 3 with 2, for example). Combining \ref{eq:waveeq simple} with Hooke's law, this leads to \begin{equation}
+\rho\partial_t^2u = \nabla \cdot \frac{C}{\nabla u} + f,
+\label{eq:strong form}
+\end{equation} which is the strong form of the linear elastic wave equation. \par
+
+
+Boundary conditions, such as free surfaces, as well as initial conditions must be stated explicitly, they have the form $\ \sigma \cdot \hat{n}|_{\partial_G} = \bar{\tau}(x), u|_{t=0} = \bar{u}(x), v|_{t=0} = \bar{v}(x)$ \parencite{afanasievModularFlexibleSpectralelement2019}. In this case, $\ \bar{\tau}(x), \bar{u}(x), \bar{v}(x) $ are the spatially variable distributions of traction, displacement and velocity \parencite{afanasievModularFlexibleSpectralelement2019}. The outward pointing normal vector on the boundary of domain G is described by $\ \hat{n}|_{\partial G}$. \par
+
+FE methods use the weak form of the governing equations \parencite{FiniteElementMethod}. To obtain the weak form of the linear elastic wave equation in \ref{eq:waveeq simple}, the whole equation needs to be multiplied with a test function w, which is not time-dependent \parencite{afanasievModularFlexibleSpectralelement2019}. The weak form enforces the solution of the governing equation across the domain, instead of solving the equation everywhere, an integration over time leads to \begin{equation}
+  \int_{G} \rho w \cdot \partial_t^2u\, d^n x = \int_G w \cdot (\nabla \cdot \sigma)\, d^n x + \int_G w \cdot f\, d^n x
+  \label{eq: first weak form }
+\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. The divergence theorem relates the flux of a vector field through a closed surface to the divergence of the field in an enclosed volume: $\ \iiint_V (\nabla \cdot F) dV = \oiint_s (F \cdot \hat{n}) dS $, where F is the vector field. When this is applied to the first term on the right in \ref{eq: first weak form }, this leads to \begin{equation}
+  \int_{G} \rho w \cdot \partial_t^2 u\, d^n x = \int_{\partial G} w \cdot (\sigma \cdot \hat{n})\, d^{n-1}x - \int_G (\nabla w : \sigma)\, d^n x + \int_G w \cdot f\, d^n x
+  \label{eq:second weak form}
+\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. The first integral on the left side of \ref{eq:second weak form} is the boundary integral, which changes depending on the boundary conditions implemented. The integral on the right-hand side is the mass term, the second on the left-hand side is the stiffness term, and the last on the left-hand side is the external forcing term, all in \ref{eq:second weak form}. Equation \ref{eq:second weak form} can be compacted to \begin{equation}
+  (\rho\partial_t^2u,w)_G - \langle \sigma \cdot \hat{n}, w \rangle_{\partial G} + (\sigma, \nabla w)_G = (f,w)_G,
+  \label{eq:compact weak form}
+\end{equation} using the notations $\ (a,b)_G = \int_g a \cdot b d^nx, \langle a,b\rangle_{\partial_G} = \int_{\partial G}  a \cdot b d^{n-1}x$  as well as Hooke's law \parencite{afanasievModularFlexibleSpectralelement2019}. This can be even more compacted by describing a mathematical model I with M for mass term, B for boundary term, S for stiffness and F for forcing term: \begin{equation}
+I_I(M) - I_I(B) + I_I(S) = I_I(F) = \sum_{P \in \{M,B,S,F\}} I_I(P) = 0.
+\label{eq:abstract weak form}
+\end{equation} Physically, this means that the entire model can be described as a combination of the different terms, which is very useful, especially if one of the terms is negligible \parencite{afanasievModularFlexibleSpectralelement2019}. This means that the same codebase can handle acoustic, elastic and viscoelastic media \parencite{afanasievModularFlexibleSpectralelement2019}, because different terms of equation \ref{eq:abstract weak form} can be set to zero for different materials. \par 
+
+% To solve \ref{eq:abstract weak form} the Galerkin approach is used, the test function w and solution u are approximated by $\ \phi$, which are a set of functions from the same space \parencite{afanasievModularFlexibleSpectralelement2019}. Any discrete function, for example displacement can be approximated this way: \begin{equation}
+%   g(x) \approx \sum_{j=1}^{N} F_j \phi_j(x), 
+%   \label{eq:galerkin displacement}
+% \end{equation} where $\ F_j$ is the expansion of the basis and g is the continuous function which is the approximation \parencite{afanasievModularFlexibleSpectralelement2019}. The derivatives of a function can then be approximated by the derivatives of $\ \phi$. \par
+
+% To evaluate the integrals in \ref{eq:abstract weak form}, numerical quadrature is used \cite{afanasievModularFlexibleSpectralelement2019}. A certain number of integration weights W are combined, g(x) and the derivative of g(x) are evaluated at a set of integration points $\ x_i$ \parencite{afanasievModularFlexibleSpectralelement2019}. This results in \begin{equation}
+% \int_G g(x)d^n x \approx \sum_{i=1}^{M}W_i^G \sum_{j=1}^{N}F_j\phi_j(x_i)
+%   \label{eq:weighted weak form}
+% \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. In FE, an element-specific reference coordinate system $\ \thea$ is used. In this thesis, the domain consists of a snow layer and an air layer, which means there is a sharp discontinuity in model parameters. As \cite{afanasievModularFlexibleSpectralelement2019} state, the model parameters and strain field are not differentiable. This is why a smooth polynomial basis of the governing equations over the whole domain is not appropriate, the basis B needs to consist of piecewise functions G defined on the individual elements \parencite{afanasievModularFlexibleSpectralelement2019}. The integration weights and basis function derivatives used, according to \cite{afanasievModularFlexibleSpectralelement2019}, are pre-tabulated in the element-specific coordinate system $\ \thea$. To transform the integrals and derivatives to physical coordinates x, so the coordinates of the snow extent in this case, the element-specific Jacobian $\ \frac{\delta x}{\delta \thea}$ is used \parencite{afanasievModularFlexibleSpectralelement2019}. Equations \ref{eq:galerkin displacement} and \ref{eq:weighted weak form} and their derivatives become: \begin{equation}
+% g(x) \approx \sum_{N}^{j=1} F_j \phi_j(\thea(x))
+% \label{eq:first galerkin}
+% \end{equation} and \begin{equation}
+%   \nabla g(x) \approx \sum_{j=1}^{N} F_j \frac{\partial}{\partial \thea} \phi_j (\thea(x))\frac{\partial\thea}{\partial x}
+%   \label{eq:second galerkin}
+% \end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. In equations \ref{eq:first galerkin} and \ref{eq:second galerkin}, the function space V is approximated as $\ V_h \approx V$ in a previous step, this means the accuracy of the approximation is dependent on how well the original function space is approximated \parencite{afanasievModularFlexibleSpectralelement2019}. To make calculations over the whole domain G, the contributions from each element need to be summed: \begin{equation} 
+%   \int_{G_e} g(x)\,\mathrm{d}^n x \approx \sum_{i=1}^{M} W_i^{G_e} \sum_{j=1}^{N} F_j\,\phi_j(\thea(x_i))\left|\frac{\partial x}{\partial \thea}\right|_{x=x_i}^n
+%   \label{eq:domain integral}
+% \end{equation} for the volume and \begin{equation}
+%   \int_{\partial G_e} g(x)\,\mathrm{d}^{n-1} x \approx \sum_{i=1}^{M} W_i^{\partial G_e} \sum_{j=1}^{N} F_j\,\phi_j(\thea(x_i))\left|\frac{\partial x}{\partial \thea}\right|_{x=x_i}^{n-1}
+%   \label{eq:surface integral}
+% \end{equation} for the surface of the domain \parencite{afanasievModularFlexibleSpectralelement2019}. \par
+
+The dependence on the reference coordinate system is described by E, which is a model containing the physical coordinate to reference coordinate transformation, in other words, the determinant of the Jacobian matrix and its inverse \parencite{afanasievModularFlexibleSpectralelement2019}. Using basis B of the polynomial functions of the approximation $\ V_h$, which are piecewise per-element because of possible discontinuities, the abstract form in \ref{eq:abstract weak form} becomes \begin{equation}
+  \sum_{P \in \{M,B,S,F\}} I_I(P,B(E)) = 0
+  \label{eq:abstract approximation}
+\end{equation} \parencite{afanasievModularFlexibleSpectralelement2019}. This means that fields such as displacement and velocity are calculated using the abstract approximation in equation \ref{eq:abstract approximation}. From these fields, the data from the model in section \ref{sec:czm_methods} is obtained and plotted. 
+
+\section{Cohesive Zone Physics}
+\label{sec:czm_theory}
+
+The cohesive zone model (CZM) framework utilized in this study is based on the mixed-mode formulation by \cite{mahajanModelingInterfacialCrack2008}. This model relies on a potential function to describe the relationship between tractions and separations under mixed-mode conditions. With $\Delta=(\Delta_n,\Delta_t)$ denoting normal and tangential separations, the opening potential is defined as
+\[
+\phi(\Delta)=\phi_n\,\exp\left(-\frac{\Delta_n}{\delta_n}\right)\left\{\left[1+\frac{\Delta_n}{\delta_n}\right]+q\left[1-\exp\left(-\frac{\Delta_t^2}{\delta_t^2}\right)\right]\right\},
+\]
+from which normal and tangential tractions are derived. Peak tractions occur at $\Delta_n=\delta_n$ and $|\Delta_t|=\delta_t/\sqrt{2}$. The normal and shear work of separation relate to the peak strengths via
+\[
+\phi_n = e\,\sigma_{\max}\,\delta_n, \qquad \phi_t = \sqrt{\tfrac{e}{2}}\,\tau_{\max}\,\delta_t.
+\]
+The critical openings for pure normal (Mode I) and shear (Mode II) modes are computed from the corresponding fracture energies and peak tractions as
+\[
+\delta_{n,c}=\frac{2G_I}{\sigma_n},\qquad \delta_{s,c}=\frac{2G_{II}}{\tau_s}.
+\]
+For mixed-mode behavior, these are combined into a single mixed-mode critical opening:
+\[
+\delta_c=\sqrt{(1-r_{\rm mode})\,\delta_{n,c}^2 + r_{\rm mode}\,\delta_{s,c}^2 },
+\]
+where $r_{\rm mode}\in[0,1]$ controls the mode mix (where 0 represents pure Mode I and 1 represents pure Mode II).\par
+
+To describe the cohesive weakening, a linear softening law is adopted. The traction $T$ depends on a normalized opening parameter $\xi$, defined as the ratio of current separation to the critical opening. The traction follows
+\[
+T(\xi) = T_\mathrm{peak}\,(1-\xi) \quad\text{for } 0\leq\xi\leq1,\qquad T(\xi)=0\ \text{for }\xi>1,
+\]
+where $T_\mathrm{peak}$ is the peak cohesive traction.\par
+
+The spatial extent over which this cohesive weakening is active ahead of the crack tip is related to the characteristic Irwin length for shear, calculated as $l_{ch}=\frac{E_{\rm eff}G_{II}}{\tau_s^2}$ \parencite{kirchnerFractureToughnessSnow2002}. The cohesive zone length is theoretically estimated as $l_{cz}=\tfrac{\pi}{8}l_{ch}$, this is the zone where damage occurs before the crack \parencite{mahajanModelingInterfacialCrack2008}. Additionally, the bulk elastic behavior of the surrounding medium is defined by Lamé parameters, which can be derived from seismic wave speeds ($v_p$, $v_s$) and density ($\rho$) following \cite{kAkiRichards19801981}:
+\[
+\mu=\rho v_s^2, \qquad \lambda=\rho(v_p^2-2v_s^2).
+\]
+Young's modulus is subsequently computed as $E=\dfrac{\mu(3\lambda+2\mu)}{\lambda+\mu}$ \parencite{kAkiRichards19801981}.
+
+\section{Wave Propagation Physics}
+\label{sec:wave_physics}
+
+The snow layer in this thesis acts as a thin layer bounded by a free surface above (snow-air interface) and a rigid boundary at the bottom (either domain boundary or bedrock interface). This geometry supports the appearance of Lamb waves: Lamb waves are elastic guided waves that occur in plates \parencite{suFundamentalsAnalysisLamb2009} and their amplitude is shaped by layer boundaries \parencite{lambWavesElasticPlate1917}.  They are guided by the boundaries of the layer or media in which they propagate and have a symmetric (S0) and an antiymmetric (A0) mode \parencite{suFundamentalsAnalysisLamb2009}. The symmetric mode dominates the in-plate motion, while the antisymmetric mode dominates the vertical (out of plane motion) \parencite{suFundamentalsAnalysisLamb2009}. A sketch of the propagation of these two modes, taken from \cite{cartaLambWavesDiscrete2023}, can be seen in appendix \ref{app:G}. Both modes are observed in the simulation results shown in \ref{sec:results-1}, and to interpret and understand the results correctly, their properties such as speeds, dispersion relations and excitation need to be understood. This section derives the dispersion relations of both modes and explains the depth-dependent amplitude structure that determines how each mode decays between the crack plane and the snow bottom. \par
+
+
+\subsection{Potentials and Wave Equations}
+
+Starting from the equation of motion for a homogeneous elastic solid used in SALVUS,
+\begin{equation}
+    \mu \nabla^2 u + (\lambda + \mu) \nabla (\nabla \cdot u) = 
+    \rho \frac{\partial^2 u}{\partial t^2},
+    \label{eq:motion}
+\end{equation}
+the displacement field is decomposed into scalar ($\phi$, P-wave) and vector 
+($\psi$, S-wave) potentials via the Helmholtz decomposition 
+\parencite{achenbachWavePropagationElastic2012}:
+\begin{equation}
+    u_x = \frac{\partial \phi}{\partial x} - \frac{\partial \psi}{\partial y}, 
+    \qquad 
+    u_y = \frac{\partial \phi}{\partial y} + \frac{\partial \psi}{\partial x}.
+\end{equation}
+Substituting into equation \ref{eq:motion} decouples the problem into 
+separate wave equations for $\phi$ and $\psi$, each propagating at the 
+P-wave speed $c_p$ and S-wave speed $c_s$ respectively. Assuming harmonic 
+plane wave solutions of the form $\phi = f(y)\,e^{i(kx-\omega t)}$ and 
+$\psi = g(y)\,e^{i(kx-\omega t)}$, the depth functions satisfy
+\begin{equation}
+    \frac{d^2f}{dy^2} + p^2 f = 0, \qquad 
+    \frac{d^2g}{dy^2} + q^2 g = 0,
+\end{equation}
+with $p^2 = \omega^2/c_p^2 - k^2$ and $q^2 = \omega^2/c_s^2 - k^2$. The 
+general solutions are sinusoidal in $y$  (depth) when $p^2, q^2 > 0$ (propagating through the layer thickness), and hyperbolic when $p^2$ or $q^2 < 0$ (evanescent decay with depth). The evanescent case applies to wave components whose horizontal phase velocity is slower than the bulk wave speeds, which is the A0 mode at low frequency-thickness product, like it is the case in this thesis and explains why the A0 wave train decays more rapidly between crack depth and snow bottom than the faster S0 mode \parencite{graffWaveMotionElastic1975}. \par
+
+\subsection{Boundary Conditions and the Lamb Dispersion Relations}
+
+At the snow-air interface, the large impedance contrast produces a stress-free boundary: normal stress $\sigma_{zz} = 0$ and shear stress $\sigma_{xz} = 0$ at the top and bottom faces of the slab \parencite{igelComputationalSeismologyPractical2016}. Applying these conditions to the general potentials yields two types of solutions depending on the symmetry of the displacement field across the slab midplane, so across the horizontal axis of the slab. \par
+
+For the symmetric mode (S0), horizontal displacement is even in $z$ and vertical displacement is odd. Setting the determinant of the 
+resulting $2 \times 2$ system to zero gives the S0 dispersion relation:
+\begin{equation}
+    \frac{\tan(qh)}{\tan(ph)} = -\frac{4k^2pq}{(q^2-k^2)^2},
+    \label{eq:symmetric dispersion}
+\end{equation}
+where $h$ is the half-thickness of the slab \parencite{suFundamentalsAnalysisLamb2009}.
+
+For the antisymmetric mode (A0), the displacement symmetries are reversed: vertical displacement is even in $z$ and horizontal displacement is odd. The 
+A0 dispersion relation is:
+\begin{equation}
+    \frac{\tan(ph)}{\tan(qh)} = \frac{4k^2pq}{(q^2-k^2)^2}.
+    \label{eq:dispersion_asym}
+\end{equation}
+
+Both relations give phase velocity as function of frequency, meaning the two modes are dispersive: different frequency components 
+propagate at different speeds \parencite{kAkiRichards19801981}. At low frequency-thickness product ($f \cdot h \ll 1$, as in this case, A0 is strongly dispersive and slow, while S0 is nearly non-dispersive and 
+converges to the plate wave speed with $c_p^{\text{plate}} = 2c_s\sqrt{1 - \frac{v_s^2}{v_p^2}}$ 
+\parencite{roseWavesPlates2014}.
+
+\subsection{Mode Symmetry and Depth Dependence}
+
+Because the crack source in the slab middle or weak layer acts as an asymmetric load applied below the slab midplane, it couples energy into both modes simultaneously \parencite{roseWavesPlates2014, achenbachWavePropagationElastic2012}. The two modes have distinct depth profiles: S0 carries horizontal strain or velocity that is nearly uniform through the slab thickness, while A0 horizontal strain / velocity is proportional to distance from the neutral axis and is therefore maximum at the plate boundaries (top and bottom of snow in this case)\parencite{graffWaveMotionElastic1975}.\par
+
+% In the following section, the equations of the different modes of Lamb waves are derived.  . These equations are derived for completeness, but also to understand how the input described in section \ref{sec:salvus_method} leads to these types of waves. Understanding the phyiscal processes that lead to the presence of Lamb waves is important for interpreting and understanding the results and the presence of Lamb waves therein. \par
+
+% From the equation of motion in an elastic solid, which is \begin{equation}
+%     \mu \nabla^2 u + (\lambda + \mu) \nabla (\nabla \cdot u) = \rho \frac{\partial^2 u}{\partial t^2}
+%     \label{eq:motion},
+%   \end{equation} the scalar and vector potential for P- and S-waves (Potentials $\ \phi, \psi$)  can be derived using the Helmholtz-Decomposition and the displacement becomes \begin{equation}
+%     u = \nabla \phi + \nabla \times \psi. 
+%   \end{equation} Splitting this into the horizontal and vertical component of displacement: \begin{equation}
+%     u_x = \frac{\partial \phi}{\partial x} - \frac{\partial \psi}{\partial z}
+%   \end{equation} and \begin{equation}
+%     u_z = \frac{\partial\phi}{\partial z} + \frac{\partial \psi}{\partial x}.
+%   \end{equation} When these are substituted into \ref{eq:motion}, it becomes \begin{equation}
+%     \nabla^2 \phi = \frac{1}{c_p^2}\frac{\partial^2\phi}{\partial t^2}
+%   \end{equation} for P-waves and \begin{equation}
+%     \nabla^2 \psi = \frac{1}{c_s^2} \frac{\partial^2 \psi}{\partial t^2}
+%   \end{equation} for S-waves, the wave speeds are derived from the Lamé-Parameters, as described in \ref{sec:czm_methods}. \par
+
+%   When assuming harmonic plane wave solutions for waves with wavenumber k and frequency $\ \omega$, the harmonic solutions have the form \begin{equation}
+%     \phi(x,z,t) = f(z)e^{i(kx-\omega t)}
+%   \end{equation} and \begin{equation}
+%     \psi(x,z,t) = g(z)e^{i(kx-\omega t)}
+%   \end{equation}. When these are substituted into the wave equations, f(z) and g(z) yield ordinary differental equations, which are \begin{equation}
+%     \frac{d^2f}{dz^2} + p^2f = 0
+%   \end{equation} and \begin{equation}
+%     \frac{d^2g}{dz^2} + q^2g = 0 ,
+%   \end{equation} with $\ p^2 =  \frac{\omega^2}{c_p^s} -k^2$ and $\ q^2 =  \frac{\omega^2}{c_s^s} -k^2$. These equations lead to the general solutions \begin{equation}
+%     \phi = [Acos(pz) + Bsin(pz)]e^{i(kx-\omega t)}
+%   \end{equation} and \begin{equation}
+%     \psi = [Ccos(qz) + Dsin(qz)]e^{i(kx-\omega t)}.
+%   \end{equation} \par
+
+
+%   At the snow-air interface, there is a stress-free boundary because of the impedance contrast, accoding to \cite{igelComputationalSeismologyPractical2016}. This means that both the normal and the shear stress need to be zero: \begin{equation}
+%     \sigma_{zz} = \lambda \nabla^2\phi + 2\mu \frac{\partial u_z}{\partial z} = 0
+%   \end{equation} and \begin{equation}
+%     \sigma_{xz} = \mu (\frac{\partial u_x}{\partial z} + \frac{\partial u_z}{\partial x}) = 0.
+%   \end{equation} These can be expressed in terms of the scalar and vector potential using the displacement potentials. \begin{equation}
+%     \sigma_{zz} = \lambda (\frac{\partial^2 \phi}{\partial x^2} + \frac{\partial^2\phi}{\partial z^2}) + 2\mu (\frac{\partial^2\phi}{\partial z^2} + \frac{\partial^2 \psi}{\partial x \partial z}),
+%   \end{equation} \begin{equation}
+%     \sigma_{xz} = \mu (\frac{\partial^2 \phi}{\partial x \partial z} - \frac{\partial^2 \psi }{\partial z^2} + \frac{\partial^2 \phi}{\partial x \partial z} + \frac{\partial^2 \psi}{\partial x^2}),
+%   \end{equation} of which the first terms can be substituted with the wavespeed using the wavenumber-frequency and velocity relationship from the Lamé parameters. This results in \begin{equation}
+%     \sigma_{zz} = \mu [(q^2 -k^2) \phi + \frac{\partial^2\psi}{\partial x \partial z}]
+%   \end{equation} and \begin{equation}
+%     \sigma_{xz} = \mu [2 \frac{\partial^2 \phi}{\partial x \partial z} + \frac{\partial^2 \psi}{\partial x^2} - \frac{\partial^2 \psi}{\partial z^2}], 
+%   \end{equation} from which harmonic solutions containing sin and cos can be obtained. Here, a derivative is a multiplication with ik, which leads to \begin{equation}
+%     \sigma_{zz} = \mu [(q^2- k^2) \phi + 2ik \frac{\partial \psi}{\partial z}]
+%   \end{equation} and \begin{equation}
+%     \sigma_{xz} = \mu [2ik \frac{\partial \phi}{\partial z} + (q^2 - k^2)\psi].
+%   \end{equation} When taking into account the stress free boundary and substituting $\ K = (q^2 - k^2)$, then the normal stress at $\ ±z$ becomes \begin{equation}
+%     \sigma_n = K [A cos (p±z) + Bsin(p±z) + 2ik (-q(sin(q±z) + qDcos(p±z)))] = 0
+%   \end{equation} and for the shear stress \begin{equation}
+%     \sigma_s = 2ik[-pAsin(p±z) + pBcos(p±z)] + K[Ccos(q±z) + Dsin(q±z)] = 0
+%   \end{equation} at the top and botto boundary of the snow layer. The matrix for symmetric Lamb waves is obtained by adding the top and bottom term of the normal stress and subtracting the shear stresses. This leads to \begin{equation}
+%     2KAcos(pz) + 4ikqDcos(qz) =
+%   \end{equation} and \begin{equation}
+%     -4ikpAsin(pz) + 2KDsin(qz) =
+%   \end{equation}, which can be written as a matrix: \begin{equation}
+%     \begin{pmatrix}
+%       Kcos(pz) & 2ikqcos(qz) \\
+%       -2ikpsin(pz) & Ksin(qz)
+%     \end{pmatrix} \begin{pmatrix}
+%       A \\ D
+%     \end{pmatrix} = \begin{pmatrix}
+%       0 \\ 0
+%     \end{pmatrix}.
+%   \end{equation} If the determinant of this matrix is set to zero, this results in \begin{equation}
+%     \frac{tan(qz)}{tan(pz)} = -\frac{2k^2pq}{(q^2-k^2)^2}
+%     \label{eq:symmetric dispersion}
+%   \end{equation}, which is the dispersion of the symmetric mode of the Lamb waves, as described by \cite{suFundamentalsAnalysisLamb2009}. The same can be done for the asymmetric Lamb wave mode if the operations of the stresses are opposite. \par
+
+
+% The presence of opposite polarities in both the horizontal and vertical velocity fields indicates that the wavefield is not a single  mode, but rather a superposition of both symmetric ($u^{\text{sym}}$) and antisymmetric ($u^{\text{asym}}$) modes:
+% \begin{equation}
+% u_x(x, \pm z, t) = u_x^{\text{sym}}(x, \pm z, t) + u_x^{\text{asym}}(x, \pm z, t)
+% \label{eq:superposition_x}
+% \end{equation}
+% \begin{equation}
+% u_z(x, \pm z, t) = u_z^{\text{sym}}(x, \pm z, t) + u_z^{\text{asym}}(x, \pm z, t).
+% \label{eq:superposition_z}
+% \end{equation}
+
+% Because a crack propagating along a weak layer acts as an asymmetric boundary source, it breaks the symmetry of the slab and couples energy into both Lamb wave types at the same time. Evaluating Equations \ref{eq:superposition_x} and \ref{eq:superposition_z} at $+z$ versus $-z$ activates the opposing parities (even and odd value) of the underlying $\sin$ and $\cos$ depth functions:
+% \begin{equation}
+% u_x(x, -z, t) = u_x^{\text{sym}}(x, z, t) - u_x^{\text{asym}}(x, z, t)
+% \label{eq:parity_flip_x}
+% \end{equation}
+% \begin{equation}
+% u_z(x, -z, t) = -u_z^{\text{sym}}(x, z, t) + u_z^{\text{asym}}(x, z, t).
+% \label{eq:parity_flip_z}
+% \end{equation}
+
+%  Similar to the dispersion of the symmetric mode of the Lamb waves in equation \ref{eq:symmetric dispersion}, the antisymmetric wave mode can be derived. For the antisymmetric mode, the vertical displacement must be an even function of depth, $u_z(-z) = u_z(z)$, while the horizontal displacement must be an odd function, $u_x(-z) = -u_x(z)$. To satisfy the geometric properties, the integration constants representing the even component of $\phi$ and the odd component of $\psi$ must vanish, such that $A = 0$ and $D = 0$. The asymmetric potentials simplify to:
+% \begin{equation}
+% \phi = B\sin(pz)e^{i(kx-\omega t)}
+% \label{eq:phi_asym}
+% \end{equation}
+% \begin{equation}
+% \psi = C\cos(qz)e^{i(kx-\omega t)}.
+% \label{eq:psi_asym}
+% \end{equation}
+
+% Substituting Equations \ref{eq:phi_asym} and \ref{eq:psi_asym} into the stress-free boundary equations ($\sigma_{zz} = 0, \sigma_{xz} = 0$) at the free surfaces $\pm z$ yields the following homogeneous matrix system:
+% \begin{equation}
+% \begin{pmatrix}
+% K\sin(pz) & -2ikq\sin(qz) \\
+% 2ikp\cos(pz) & K\cos(qz)
+% \end{pmatrix} 
+% \begin{pmatrix} B \\ C \end{pmatrix} = 
+% \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+% \label{eq:matrix_asym}
+% \end{equation}
+% where $K = (q^2 - k^2)$. Setting the determinant of the matrix to zero gives the characteristic dispersion relation for the antisymmetric Lamb wave modes:
+% \begin{equation}
+% \frac{\tan(pz)}{\tan(qz)} = \frac{4k^2pq}{(q^2-k^2)^2}
+% \label{eq:dispersion_asym}
+% \end{equation}
+
+\section{Static and Dynamic Components of Seismic Sources}
+\label{sec:dc_static_theory}
+
+A moment tensor source, such as the sources used in this thesis, has two contributions to the wavefield \parencite{kAkiRichards19801981}. There is a dynamic component, which propagates away from the source as waves, and the static component, this component represents the permanent deformation field after the sources have stopped firing \parencite{freundDynamicFractureMechanics1998,zhuNoteDynamicStatic2002,archambeauGeneralTheoryElastodynamic1968}. \par
+
+The static displacement field of a crack with half length a, in an elastic medium decays with $\ \frac{1}{r^2}$ with distance $r$ from the crack tip, and produces a permanent strain in the surrounding medium proportional to the total slip $\delta$ and the shear modulus $\mu$ \parencite{freundDynamicFractureMechanics1998}:
+\begin{equation}
+    \varepsilon_{xx}^{\text{static}} \propto \frac{\mu\,\delta\,a}{r^2}.
+\end{equation}  This strain accumulates as the crack grows in length, but does not propagate away from the crack location, which means it stays in the near-field \parencite{freundDynamicFractureMechanics1998}. This occurs because the static field represents the new equilibrium stress state of the medium around the opened crack, rather than a transient disturbance propagating through it. \par
+
+The control on whether a static field occurs is the shape of the STF. The direct current (DC) component of the STF, which is its integral over time, has to be non-zero in order for there to be a static component \parencite{kAkiRichards19801981,zhuNoteDynamicStatic2002}. For a Ricker wavelet source for example, the integral over time is zero because the positive and negative lobes are equal in area and they cancel out. For more irregular shaped source wavelets, as described by \cite{kaganPointSourcesElastic1987,kAkiRichards19801981}, like for example the MPM STFs described in the next section, this is not true and their integral is non-zero. \par
+
+
+\section{From Particles to Waves: Translating MPM to SE}
+\label{sec:from_mpm_to_se}
+
+The material point simulations of the PST performed by \parencite{gaumeDynamicAnticrackPropagation2018,trottetTransitionSubRayleighAnticrack2022} result in the recorded stresses in the model according to \cite{gaumeInvestigatingReleaseFlow2019}. The output of the model is particle velocity, the stress tensor, strain and the J-value, which distinguishes between elastic and plastic deformation. The J-value is used as a filter to remove any irreversible or non-elastic deformation such as the weak layer collapse. To accurately construct the equivalent seismic source, only the elastic stress field outside the inelastic plastic zone is retained for calculating the moment tensors. The inelastic deformation serves as the only physical driver for the elastic wavefield in the bulk medium. This also ensures that any signals emitted from the crack are not taken into account, because inputting them in SALVUS would mean that waves emitted by the crack are used as sources. \par
+
+To translate the continuum source to something which can be input to SALVUS, the relationship between stress and strain must be defined. The deformation of the material is described by the infinitesimal strain tensor $\ \epsilon_{ij}$, which is linearly related to the Cauchy stress tensor $\ \sigma_{ij}$ via the fourth-order stiffness tensor $C_ {ijkl}$ \parencite{holzapfelNonlinearSolidMechanics2010}. This relationship, known as generalized Hooke's law, is expressed as:
+\begin{equation}
+  \sigma_{ij} = C_{ijkl} \epsilon_{ij}. 
+\end{equation}
+
+For an isotropic, linear elastic material, such as the snow in this case, the stiffness tensor simplifies and can be described by the Lamé-parameters. In the xx-direction this is: \begin{equation}
+  \sigma_{xx} = (\lambda + 2\mu)\epsilon_{xx} + \lambda \epsilon_{yy}
+\end{equation} \parencite{kAkiRichards19801981}. When scaling this with the particle volume, the individual moment tensor components can be obtained using \begin{equation}
+  M_{ij} = \Delta\sigma_{ij} vol_p.
+\end{equation} The scaling with the particle volume is done because in a small material volume, such as a snow particle, the stress drop ($\ \Delta \sigma_{ij}$) is the same as a small seismic point source \parencite{backusMomentTensorsOther1976}. This is why multiplying the stress tensor with the particle volume yields the moment tensor component.  \par
+
+These moment tensor components can then be input into SALVUS as custom source time functions. The waveforms are obtained via the amplitude of the different moment tensor components at different times. Each moment tensor (in all three directions of the 2D model) is injected as a point source. This means that every point source represents the localized movement of a few particles in the snowpack. \par
+
+The visual representation of this workflow can be seen in the methods section in figure  \ref{fig:mpm_workflow}. 
+
+\section{Simulation of DAS Data}
+\label{sec:das_theory}
+
+To compare the results obtained in the SALVUS simulations to field DAS data, the numerical outputs have to be transformed. This is because field DAS measurements, the output are the fields averaged over the gauge length \parencite{lindseyFiberOpticSeismology2021} rather than output at every point along the cable. The backscattered delay of a laser pulse along a straight cable is proportional to the integrated strain tensor components along the gauge length \parencite{noeFrontiersFullwaveformSeismology2025}. The relationship between the deformation tensor F and the phase delay of the laser pulse is described by: \begin{equation}
+  \phi_{laser}(t) \propto \int_{-\frac{1}{2}}^{\frac{1}{2}} |I+F(s,t)e(s)|ds
+  \label{eq:phase_deformation},
+\end{equation} according to \cite{fichtnerTheoryPhaseTransmission2022}. In this equation, I is the identity matrix and e is the local unit tangent vector at the arc length s along the DAS fibre in 3D \parencite{noeFrontiersFullwaveformSeismology2025}. \par 
+
+Because the deformations of interest are small, meaning that $\ F << I$, equation \ref{eq:phase_deformation} can be linearized. This leads to \begin{equation}
+  \phi_{laser} \propto \int_{-\frac{1}{2}}^{\frac{1}{2}}e^T(s)\epsilon(s,t)e(s)ds
+  \label{eq:linearized_phase_deformation},
+\end{equation} where the strain tensor is $\ \epsilon = \frac{1}{2} (F+F^T)$ \parencite{fichtnerTheoryPhaseTransmission2022}. \par
+
+\cite{noeFrontiersFullwaveformSeismology2025} state that DAS interrogators scale phase delay measurements to convert them to strain, which leads to the vanishing of the proportionality. Equation \ref{eq:linearized_phase_deformation} becomes \begin{equation}
+  \bar{\epsilon}_{DAS}(s_c,t)= \frac{1}{l} \int_{s_c -\frac{1}{2}}^{s_c +\frac{1}{2}}e^T(x)\epsilon(s,t)e(s)ds
+\end{equation} \parencite{noeFrontiersFullwaveformSeismology2025}. This means that the measured strain is averaged over the gauge length l \parencite{noeFrontiersFullwaveformSeismology2025}. Physically, this means that the strain field recorded by DAS is smoothed because of the averaging over the gauge length. \par
+
+\subsection{Noise Floor Assessment}
+To assess the signal-to-noise ratio in the DAS data simulated in this thesis, the amplitude spectral density of the Silixa iDAS is used. To use this for comparison with the values obtained in the space-time plots generated as described in the previous subsection, the value from the factsheet \parencite{idasdatasheet} needs to be converted from the frequency- to the time domain: 
+
+\begin{equation}
+  RMS_{noise} = \frac{2 p\epsilon}{\sqrt{Hz}} \sqrt{\Delta f},
+  \label{eq:rms_noise}
+\end{equation} where $\ \Delta f$ is the frequency bandwidth of the DAS signal \parencite{parkerDistributedAcousticSensing2014}. This can then be compared to peak simulated strain (from the colorbar in the results) via the signal-to-noise ratio:
+
+\begin{equation}
+  SNR = \frac{\epsilon_{peak}}{RMS_{noise}}. 
+  \label{eq:snr}
+\end{equation} If the signal-to-noise ratio SNR is $\ \gt \gt$ 1, the signal is easily detectable, if it is $\ \leq$ 1, then the signal will be buried in the noise \parencite{guRemovingInstrumentalNoise2024}. 
+
+

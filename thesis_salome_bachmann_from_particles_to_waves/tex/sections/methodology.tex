@@ -1,0 +1,229 @@
+% tex/sections/methodology.tex
+% ──────────────────────────────────────────────────────────────────────────────
+\chapter{Methodology}
+\label{chap:methodology}
+% ──────────────────────────────────────────────────────────────────────────────
+%
+% TODO: Write methodology.
+%
+% Suggested structure:
+%   - Study site / experimental setup
+%   - Data acquisition
+%   - Processing pipeline
+%   - Inversion / analysis methods
+%   - Uncertainty / error treatment
+
+\section{Model Setups}
+\label{sec:model_setups}
+
+\subsection{Simple Model}
+\label{sec:simple_model}
+A 2-layer domain spanning 400m in the x-direction and 3m in the y-direction was set up. The domain consists of a 1.5m snow layer and a 1.5m air layer, the parameters for this medium are listed in appendix \ref{app:C}, table \ref{tab:simple_params} as well as in the sketch of the domain in figure \ref{fig:domain_sketch}. The medium extent of 400m was chosen to ensure that sources can be placed far away from the absorbing boundaries, but to still have a source line which would be physical as an avalanche release zone in terms of size. Furthermore, a large domain combined with a long simulation time ensures that both the near- and the far-field of the wave can be observed, which is important for interpretation of field DAS data, because the DAS cable might be located in either field. In the simple case, a series of SALVUS moment tensor sources are set up with a certain distance, they span from 30m to 270m with a spacing of 10cm, which results in a rupture length of 240m and 2400 sources. The small source spacing was chosen to mimic a moving, continuous source \parencite{madariagaDynamicsExpandingCircular1976}, like a crack in snow, accurately. The model domain setup can be seen in figure \ref{fig:domain_sketch}. The air layer is shown in light blue, the snow layer in dark blue. Because the sources have 10cm spacing, the source extent instead of individual sources is shown in red. The time delay with which the sources fire is dependent on the Sub-Rayleigh or Supershear case which is implemented, the bounds for the crack propagation velocity are taken from \cite{trottetTransitionSubRayleighAnticrack2022}, they are 0.6 or 1.6 times the shear wave velocity for sub-Rayleigh and Supershear cases respectively.\par
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/domain_sketch.png}
+    \caption{Layered model setup. Air layer in light blue, snow layer in darker blue. Source line extent in red. Model properties used can be seen in legend, but also appendix \ref{app:C}}
+    \label{fig:domain_sketch}  
+\end{figure}
+
+The bedrock or soil is not considered in both models. This is because preliminary tests \parencite{research_module} of a 3-layered medium have shown that it acts as a reflector of waves. This is because of the high impedance contrast between snow and bedrock, which causes waves to be reflected almost entirely at the interface \parencite{kAkiRichards19801981}. For computational efficiency, the bedrock layer was thus neglected and the bottom of the snow was made a regular boundary, in other words, reflecting, to mimic the presence of a layer below the snow. A reflecting bottom boundary is physically equivalent to a rigid half-space with infinite impedance contrast, which is a reasonable approximation given that snow P-wave speeds (109 m/s) are substantially lower than typical bedrock values (1500-3000 m/s), the same is true for the contrast between the S-waves in the medium as well \parencite{kAkiRichards19801981}. The top as well as both side boundaries of the model are set to be absorbing boundaries, which means that waves that reach these boundaries are absorbed and not reflected back into the model. This is done so that the model accurately represents the physical behavior of wave propagation in a much larger domain, which is the reality of field DAS data. The absorbing boundaries were set to be 3.5 times the maximum wavelength present in the model, this is according to the numerical requirements of the solver \parencite{afanasievSalvusFlexibleHighperformance2017}. \par
+
+\subsection{MPM Model}
+\label{sec:mpm_model}
+To represent the results of the more complex source time functions obtained from the material point method simulations, the same layered model as \cite{trottetTransitionSubRayleighAnticrack2022} was implemented. This model is more complex than the two-layer case described in order to have results that represent avalanche physics better. The material properties, taken from \cite{trottetTransitionSubRayleighAnticrack2022}, are listed in appendix \ref{app:C}, table \ref{tab:mpm_params}. The p- and S-wave velocities are computed from the material properties via the shear and elastic moduli: \begin{equation}
+    M_{shear} = \frac{E}{2  (1 + \nu)}, \quad M_{elastic} = \frac{E}{(1 - 2  \nu) (1 + \nu)}
+\end{equation} \parencite{kAkiRichards19801981}. From these, the wave velocities can be derived: \begin{equation}
+    v_p = \sqrt{\frac{M_{elastic}}{\rho}}, \quad 
+    v_s = \sqrt{\frac{M_{shear}}{\rho}}
+    \label{eq:vel_calc}
+\end{equation} \parencite{kAkiRichards19801981}.  \par
+
+The parameters obtained by equations \ref{eq:vel_calc} are vp=127.10 m/s, vs=67.94m/s for the slab, in the weak layer the wave speeds calculated are vp=116.02m/s, vs=62.02m/s. \par
+
+The 5-layer model consists of the bed layer, a weak layer and a snow slab layer. In order to represent a physical snowpack with a weak layer buried in snow \parencite{schweizerSnowAvalancheFormation2003}, the weak layer here is in the middle of the slab layer. Contrary to real-world snow conditions \parencite{barteltPhysicalSNOWPACKModel2002}, the slab above and below the weak layer used in the simulation has uniform medium properties. To account for the absorbing boundaries which are implemented at the top and sides, the model domain was extended. At the sides, this was done by extending the model extent to accommodate the abcs. At the top however, an air layer was added which accounts for the abcs in thickness. This was done to keep the original thickness of the snow slab layer described by \cite{trottetTransitionSubRayleighAnticrack2022}, but still have a boundary which leads to no reflections from the top of the domain. In other words, adding an air layer above the slab allows the snow-air free-surface boundary condition to remain at the correct physical height while the absorbing boundaries occupy the air layer above, which mimics a domain with infinite extent in y while also avoiding any interaction between the ABC and the elastic snow medium \parencite{afanasievSalvusFlexibleHighperformance2017}. Although the bed (rock) layer was omitted in the simple model for computational efficiency, it was kept in the MPM domain setup. This was done to facilitate comparison between the output of the MPM model and the MPM-guided SE model. The setup can be seen in figure \ref{fig:domain_sketch_mpm}. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/domain_sketch_mpm.png}
+    \caption{Layered model setup for MPM. Air layer in light blue, snow slab in light grey, weak layer dark grey and bedrock in blue grey. Source line extent in red. Model properties used can be seen in legend, but also appendix \ref{app:C}}
+    \label{fig:domain_sketch_mpm}  
+\end{figure}
+
+
+
+\section{Source Generation for Simple and CZM Model}
+
+All sources generated use SALVUS' custom source time function option. For the simple model and the cohesive zone model, this is done by writing a file with the source wavelets in them. The source wavelets have ricker shape with peak frequency $\ f_m$ according to \cite{kAkiRichards19801981,graffWaveMotionElastic1975,RickerWavelet2021}: \begin{equation}
+f(t)=(1-2\pi ^{2}f_{_{M}}^{2}t^{2})e^{-\pi ^{2}f_{_{M}}^{2}t^{2}}.  
+\end{equation} The ricker wavelet was chosen over other source time functions in SALVUS because its frequency content is controlled at a single value, the central frequency \parencite{kAkiRichards19801981}. \par
+
+The workflow of the code, including how the source speed is set up can be seen in the flowchart in \ref{fig:wavelet_workflow_grid}. 
+
+\begin{figure}[H]
+    \centering
+    % Setting a comfortable grid spacing via positioning keys
+    \begin{tikzpicture}[node distance=1.5cm and 2.5cm, every node/.style={text centered}][h]
+        
+        % --- COLUMN 1: Geometry & Kinematics ---
+        \node (start) [startstop] {Source Wavelet Setup};
+        \node (in1) [io, below=of start] {Source geometry definition: Start and stop of source line, spacing};
+        \node (pro1) [io, below=of in1] {Speed definition: $1.6v_s$ (Supershear), $0.6v_s$ (sub-Rayleigh, \cite{trottetTransitionSubRayleighAnticrack2022})};
+        \node (pro2) [process, below=of pro1] {Calculation of time delay: $\Delta t = \frac{\Delta x}{v_{\text{rupture}}}$};
+        
+        % --- COLUMN 2: Moment Tensor Config ---
+        % Positioned to the right of the geometry block
+        \node (pro3) [io, right=of in1] {Input of base values for all directions of moment tensor (e.g., $m_{xx} = 1$)};
+        \node (pro4) [io, below=of pro3] {Input of weight arrays: Calculated from MPM data or 1 in all directions};
+        
+        % --- COLUMN 3: Signal Conditioning & Export ---
+        % Positioned further right
+        \node (pro5) [process, right=of pro3] {Spatial tapering of first and last sources to avoid injection noise};
+        \node (pro6) [process, below=of pro5] {Zero-padding of wavelet arrays before and after firing time to have all wavelets be the same length (required for SALVUS custom STF input)};
+        \node (pro7) [process, below=of pro6] {Calculation of source wavelet shape with weight, padding, and taper};
+        \node (pro8) [startstop, below=of pro7] {Setup of wavelet as stf, pass to SALVUS};
+
+        % --- Connections (The S-Curve Flow) ---
+        % Down Column 1
+        \draw[arrow] (start) -- (in1);
+        \draw[arrow] (in1) -- (pro1);
+        \draw[arrow] (pro1) -- (pro2);
+        
+        % Cross over from bottom of Col 1 up to top of Col 2
+        \draw[arrow] (pro2.east) -- ++(0.5,0) |- (pro3.west);
+        \draw[arrow] (pro3) -- (pro4);
+        
+        % Cross over from bottom of Col 2 up to top of Col 3
+        \draw[arrow] (pro4.east) -- ++(0.5,0) |- (pro5.west);
+        \draw[arrow] (pro5) -- (pro6);
+        \draw[arrow] (pro6) -- (pro7);
+        \draw[arrow] (pro7) -- (pro8);
+
+    \end{tikzpicture}
+    \caption{Operational workflow for the SALVUS source time function (STF) setup.}
+    \label{fig:wavelet_workflow_grid}
+\end{figure}
+
+\subsection{Cohesive Zone Model}
+\label{sec:czm_methods}
+
+A graphical representation of the model setup and the equations used can be found in appendix \ref{app:B}.
+
+The rupture model used in the simulations is implemented as a mixed-mode Cohesive Zone Model (CZM) following \cite{mahajanModelingInterfacialCrack2008}. This model was chosen because there is a narrow band ahead of the fracture zone, the cohesive zone, where the material is already weakened \parencite{mahajanModelingInterfacialCrack2008}. This means that prior to the failure of a point in the material, there is already weakening of the material. This seems to be reasonable for representing crack propagation in snow, since failure occurs as a consequence of loading and is not spontaneous. The computational domain extends 400 m in the horizontal (x) direction and 3 m in the vertical (y) direction and contains a 1.5 m snow layer over a 1.5 m air layer, this is the same as in figure \ref{fig:domain_sketch}. Material parameters for the snow layer are taken from \cite{guillemotEffectSnowfallChanges2021}. The mixed-mode behavior is implemented because in reality, crack propagation can involve both normal and shear displacement.  \par
+
+Each activated subfault is represented as a point source in the SALVUS source array. The kinematic moment formulation serves as the numerical link to the underlying cohesive zone model through a strict energy balance. Within the CZM, the total strain energy released during fracture is split between the fracture energy ($G_I$ or $G_{II}$) required to break down the cohesive zone, and the remaining energy radiated as elastic waves. By prescribing $x_{\rm slip}$ across a finite grid cell width $\Delta x$, the resulting scalar seismic moment $M_0$ mathematically captures the  radiated energy that propagates away from the process zone into the bulk medium as a seismic wavefield. The scalar seismic moment per subfault is
+\begin{equation}
+    M_0 = \mu\,\delta_c\,\Delta x,
+\end{equation}
+where $\mu$ is the shear modulus of the weak layer, $\delta_c$ is the critical slip distance, and $\Delta x$ is the subfault spacing. \par
+
+To take the mixed-mode mechanics of the process zone into account, the individual components of the moment tensor are  scaled by the mode-mix ratio $r_{\rm mode}$, which can be user input:
+\[ m_{xx}=0,\quad m_{xy}=M_0\,r_{\rm mode},\quad m_{yy}=-(1-r_{\rm mode})M_0. \]
+Consequently, at the extremes of $r_{\rm mode}=0$ or $1$, the unaligned component of the moment tensor drops to zero, perfectly matching the radiation patterns of pure opening or pure shear failure. All subfault sources are driven by an identical central frequency, source wavelet, and amplitude scaling factor, thereby reconstructing the discrete subfault array into a highly coherent, continuously moving source that mimics a smooth, physical crack tip rupture throughout the wave propagation mesh. \par
+
+
+% The following numerical settings and checks are applied consistently across simulations to ensure stability and reproducibility:
+% \begin{itemize}
+%   \item Mesh resolution: element/subfault spacing $h$ is chosen to resolve the cohesive zone and the shortest seismic wavelength; practical rule: $h\le\min(l_{cz}/4,\;\lambda_{\min}/8)$, where $\lambda_{\min}=v_{\min}/f_{95}$ and $f_{95}$ is the 95\%ile source frequency.
+%   \item Time stepping: explicit scheme with CFL-like stability criterion $\Delta t\lesssim s\,h/v_{\max}$ and safety factor $s\approx0.3$--0.5.
+%   \item Boundaries: use absorbing boundary conditions to minimize reflections at domain edges.
+%   \item Rupture discretization: subfault onset times follow $t_o=(x-x_{\rm start})/v_{\rm rupture}$; rise time is taken as $t_{rise}\approx l_{cz}/v_{\rm rupture}$; scalar moment per subfault $M_0=\mu\,x_{\rm slip}\,\Delta x$.
+% \end{itemize}
+
+Key parameters and their provenance used in the simulations are summarized in appendix \ref{app:C}, table \ref{tab:simple_params}. 
+
+\section{Source Generation for MPM}
+
+For the MPM results that are translated to FE, the moment tensor components and source wavelet shapes are obtained as described in section \ref{sec:from_mpm_to_se}. These are then loaded and translated into individual components, which can be passed to SALVUS. The time delay previously described is already contained in the MPM data. A visual representation for the workflow with the MPM source wavelets is: 
+
+
+\begin{figure}[H]
+  \centering  
+
+\begin{tikzpicture}[node distance=2.5cm, every node/.style={text centered}]
+    \node (start) [startstop] {MPM Output: Stress, Strain, J-Value};
+    \node (pro1) [process, below of=start] {Filtering out of plastic deformation and waves emitted by crack by J-Value};
+    \node (pro2) [io, below of=pro1] {Stretch factor comprised of material properties};
+    \node (pro3) [process, below of=pro2] {Stresses in individual directions};
+    \node (pro4) [io, below of=pro3] {Multiplication with particle volume};
+    
+    % Force the horizontal spread specifically for the right column
+    \node (pro5) [startstop, right of=start, node distance=9cm] {Moment tensor components in every direction};
+    \node (pro6) [process, below of=pro5] {Read into SALVUS};
+    \node (pro7) [process, below of=pro6] {Temporal taper of first and last sources to avoid injection noise};
+    \node (pro8) [process, below of=pro7] {Padding of MPM coordinates to be away from abcs};
+    \node (stop) [startstop, below of=pro8] {Setup of wavelet as stf, pass to SALVUS};
+
+    \draw [arrow] (start) -- (pro1);
+    \draw [arrow] (pro1) -- (pro2);
+    \draw [arrow] (pro2) -- (pro3);
+    \draw [arrow] (pro3) -- (pro4);
+    
+    % Edged/orthogonal path routes 3.5cm to the right (up the middle) before going to pro5
+    \draw[arrow] (pro4.east) -- ++(3.5,0) |- (pro5.west);
+    
+    \draw [arrow] (pro5) -- (pro6);
+    \draw [arrow] (pro6) -- (pro7);
+    \draw [arrow] (pro7) -- (pro8);
+    \draw [arrow] (pro8) -- (stop);
+\end{tikzpicture}
+\caption{Workflow for conversion of MPM data and input as SALVUS STF.}
+\label{fig:mpm_workflow}
+\end{figure}
+
+The directionality and amplitude of the moment tensor components extracted over all sources can be seen in figure \ref{fig:mpm_moment_tensor}. The colorbar shows the amplitude of the individual components. This is important because the source components show the predominant directions of the sources, which is important for the interpretation of the wavefield. The diagonal boundary separating zero (white, lower triangle) from active values (upper region) marks the crack propagation front. The moment tensor components are injected into SALVUS as custom source time functions, plotted as a function of source index (horizontal axis, corresponding to spatial position along the crack) and MPM timestep (vertical axis).
+
+\begin{figure}[H]
+    \centering
+    % Top row: two plots side by side
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../figures/mpm_m11.png}
+        \caption{Moment tensor component $M_{11}$ (horizontal stress).}
+        \label{fig:mpm_m11}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../figures/mpm_m12.png}
+        \caption{Moment tensor component $M_{12}$ (shear stress).}
+        \label{fig:mpm_m12}
+    \end{subfigure}
+
+    \vspace{0.5em}
+
+    % Bottom row: one centred plot
+    \begin{subfigure}[t]{0.60\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../figures/mpm_m22.png}
+        \caption{Moment tensor component $M_{22}$ (vertical stress).}
+        \label{fig:mpm_m22}
+    \end{subfigure}
+
+    \caption{Moment tensor components injected into SALVUS as custom source
+    time functions, plotted as a function of source index (horizontal axis,
+    corresponding to spatial position along the crack) and MPM timestep
+    (vertical axis). The colorbar shows amplitude (blue: negative amplitude, red: positive amplitude). The diagonal boundary separating zero (blue, lower
+    triangle) from active values (upper region) marks the crack propagation
+    front.}
+    \label{fig:mpm_moment_tensor}
+\end{figure}
+
+From all figures \ref{fig:mpm_m11}, \ref{fig:mpm_m12} and \ref{fig:mpm_m22} it can be seen that the moment tensor has a predominantly negative direction that does not bounce back to neutral. To further investigate this, the cumulative integral of the moment tensor integrated in respect to space was calculated: \begin{equation}
+I_{ij}^{\mathrm{tot}}(t) = \int_{0}^{t}M_{ij}^{\mathrm{tot}}(\tau)\, \mathrm{d}\tau,
+\end{equation} which if nonzero, means that there is a residual, non-reversible deformation. This results in figure \ref{fig:cum_int_mpm}, which supports the trend seen in figure \ref{fig:mpm_moment_tensor}, that there is a negative permanent deformation in respect to y after the sources have stopped firing. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{../figures/mpm_cum_int.png}
+    \caption{Cumulative integral of moment tensor components. Blue is m11, green is m12 and orange is m22. X-axis shows time, y-axis shows magnitude of cumulative integral.}
+    \label{fig:cum_int_mpm}
+    
+\end{figure}
+
+\section{Simulation of DAS Data}
+\label{sec:methods_das}
+
+The theory in section \ref{sec:das_theory} is used to simulate DAS data from the outputs given by SALVUS. This is done by extracting the displacement output. The spatial derivative of displacement is taken to obtain strain: $\  \epsilon_x = \frac{\partial u_x}{\partial x}$, the temporal derivative of strain results in strain rate($\ \frac{\partial^2 u_x}{\partial x \partial t}$).\par 
+
+Strain and strain rate are averaged over a 10.4 m gauge length, which was chosen based on the avalanche warning system installed by \cite{turquetAutomatedSnowAvalanche2024}, which has a gauge length of 10.4m. This is combined with the Pyber library by \cite{noeFrontiersFullwaveformSeismology2025}. The Pyber gauge length physically averages the data over the input gauge length, which is the same as what is described in section \ref{sec:das_theory}. This is done by calculating weights for the points within the gauge length window, all weighted points in a window are then added up \parencite{noeFrontiersFullwaveformSeismology2025}. To replicate smoothing caused by the DAS laser pulse, Pyber uses a Gaussian window, which calculates the weights. A Gaussian window is used instead of a rectangular (boxcar) window to more accurately represent the Gaussian shape of the interrogator laser pulse, which produces a weighted rather than uniform average over the gauge length \parencite{noeFrontiersFullwaveformSeismology2025}. \par 
