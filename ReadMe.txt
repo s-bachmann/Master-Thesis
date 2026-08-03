@@ -87,4 +87,9 @@ Contains animations of the wavfield, which are also contained in thesis appendix
 ** mpm_wavefield_2d_moving_vx.gif **: Animation of MPM-5-layer horizontal velocity wavefield. 
 
 ** mpm_wavefield_2d_moving_vy.gif **: Animation of MPM-5-layer vertcial velocity wavefield. 
+
+
+**************** thesis_salome_bachmann_from_particles_to_waves ****************
+
+Contains final version of thesis, compiled in overleaf 
  
