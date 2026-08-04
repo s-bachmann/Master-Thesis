@@ -1,0 +1,91 @@
+%Please use LuaLaTeX or XeLaTeX
+\documentclass[11pt,aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[
+  style=apa,
+  backend=biber
+]{biblatex}
+\usepackage{caption}
+\addbibresource{../master thesis.bib}
+
+\title{From Particles to Waves: Towards coupling Dynamic Snow Modelling and Spectral Elements to detect Avalanche Breakoff in DAS Data.}
+\date[]{\today}
+\author{Salome Bachmann}
+\institute{}
+
+\usetheme{eth}
+
+\colorlet{titlefgcolor}{ETHPetrol}
+\colorlet{accentcolor}{ETHPurple}
+
+\begin{document}
+
+% \def\titlefigure{elements/title-page-image}		% Default image
+%\def\titlefigure{elements/title-page-image-43}	% Use this for 4:3 presentations
+
+% \titleframe
+
+\def\titlefigure{elements/mountains.jpeg}
+% rotate the title image if its orientation metadata is wrong
+\def\titlefigureangle{180}
+% mirror the title image horizontally
+\def\titlefiguremirror{-1}
+% hide the ETH logo on the title slide
+\def\showtitlelogo{0}
+\title{From Particles to Waves: Towards coupling Dynamic Snow Modelling and Spectral Elements to detect Avalanche Breakoff in DAS Data.}
+\titleframe
+
+% \colorlet{titlebgcolor}{ETHGreen}
+% \def\titlefigure{}
+% \setlength{\titleboxwidth}{0.75\textwidth}			% Change box width
+% \title{Or even a plain color, especially if your title is very long and leaves no space for what's behind the colored box}
+% \titleframe
+
+% \tocframe
+
+%\section{Layout}
+
+
+
+\begin{frame}[allowframebreaks]{Bibliography}
+    \typeout{}
+    \printbibliography
+\end{frame}
+
+\begin{closingframe}
+
+Salome Bachmann\\
+Master Student\\
+\email{sbachmann@student.ethz.ch}
+
+\medskip
+
+ETH Zurich\\
+D-EAPS\\
+
+\end{closingframe}
+
+
+% \begin{closingframe}
+
+% 	You can edit the content of the \texttt{closingframe} environment to design your own closing frame. Example:
+	
+% 	\vspace{15mm}
+
+% 	\begin{columns}
+% 		\begin{column}{0.55\textwidth}
+% 			\raggedleft
+% 			\includegraphics[width=45mm]{elements/IFA_logo_ENG_colours_horizontal} 
+% 		\end{column}
+% 		\begin{column}{0.45\textwidth}
+% 			\textbf{Author name}\\
+% 			\email{name@ethz.ch}	
+% 		\end{column}
+% 	\end{columns}
+
+% 	\vspace{20mm}
+			
+% \end{closingframe}
+
+
+\end{document}
