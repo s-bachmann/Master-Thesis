@@ -79,14 +79,6 @@
     
 \end{frame}
 
-\begin{frame}{Research Questions}
-    \begin{itemize}
-        \item What FE framework is required to to simulate DAS measurements of crack propagation in snow, and what are the key assumptions and limitations?
-        \item \textbf{What physical phenomena are observed in a two-layer model with a simple STF and how do they differ for sub-Rayleigh versus Supershear crack propagation?}
-        \item \textbf{To what extent do the results change if source wavelets from a MPM simulation of a propagation saw test (PST) are injected?}
-        \item \textbf{How could the phenomena observed be used to distinguish crack propagation regimes in real-world DAS data and aid in detecting snow slab avalanche breakoff?}
-    \end{itemize}
-\end{frame}
 
 \begin{frame}[allowframebreaks]{Simple Model}
     \begin{figure}[H]
@@ -100,6 +92,18 @@
         \item 20Hz central frequency Ricker wavelet
         \item Source Wavelet in xx (1), xy (1) and yy (-1) direction
         \item Time delay of wavelet calculated based on propagation speed: sub-Rayleigh speed is $\ 0.6v_s$, Supershear $\ 1.6v_s$ \parencite{trottetTransitionSubRayleighAnticrack2022}
+    \end{itemize}
+    
+\end{frame}
+
+\begin{frame}[allowframebreaks]{MPM-Guided Model}
+    \begin{figure}[H]
+    \includegraphics[width = 0.8\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/domain_sketch_mpm.png}
+    \caption{Five-layer model setup in SALVUS. Colors show materials, material types and properties in legend. Source line extent in red.}
+    \label{fig:mpm_model}
+    \end{figure}
+    \begin{itemize}
+        \item 
     \end{itemize}
     
 \end{frame}
