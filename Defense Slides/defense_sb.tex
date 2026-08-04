@@ -10,7 +10,7 @@
 \usetikzlibrary{shapes.geometric, arrows}
 % --- Updated TikZ Styles Matched to Palette ---
 \tikzstyle{startstop} = [rectangle, rounded corners, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=eth-purpur!30, font=\tiny]
-\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=idea-dark!10, font=\tiny]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=eth-grey!10, font=\tiny]
 \tikzstyle{process} = [rectangle, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=idea-dark!10, font=\tiny]
 \tikzstyle{decision} = [diamond, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=idea-dark!10, font=\tiny]
 \tikzstyle{arrow} = [thick,->,>=stealth, draw=idea-dark]
@@ -128,7 +128,7 @@
     \begin{figure}[H]
   \centering  
 
-\begin{tikzpicture}[node distance=2.5cm, every node/.style={text centered}]
+\begin{tikzpicture}[node distance=1.5cm, every node/.style={text centered}]
     \node (start) [startstop] {MPM Output: Stress, Strain, J-Value};
     \node (pro1) [process, below of=start] {Filtering out of plastic deformation and waves emitted by crack by J-Value};
     \node (pro2) [io, below of=pro1] {Stretch factor comprised of material properties};
