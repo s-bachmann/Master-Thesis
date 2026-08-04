@@ -125,7 +125,39 @@
 \end{frame}
 
 \begin{frame}{MPM STF Workflow}
+    \begin{figure}[H]
+  \centering  
+
+\begin{tikzpicture}[node distance=2.5cm, every node/.style={text centered}]
+    \node (start) [startstop] {MPM Output: Stress, Strain, J-Value};
+    \node (pro1) [process, below of=start] {Filtering out of plastic deformation and waves emitted by crack by J-Value};
+    \node (pro2) [io, below of=pro1] {Stretch factor comprised of material properties};
+    \node (pro3) [process, below of=pro2] {Stresses in individual directions};
+    \node (pro4) [io, below of=pro3] {Multiplication with particle volume};
     
+    % Force the horizontal spread specifically for the right column
+    \node (pro5) [startstop, right of=start, node distance=9cm] {Moment tensor components in every direction};
+    \node (pro6) [process, below of=pro5] {Read into SALVUS};
+    \node (pro7) [process, below of=pro6] {Temporal taper of first and last sources to avoid injection noise};
+    \node (pro8) [process, below of=pro7] {Padding of MPM coordinates to be away from abcs};
+    \node (stop) [startstop, below of=pro8] {Setup of wavelet as stf, pass to SALVUS};
+
+    \draw [arrow] (start) -- (pro1);
+    \draw [arrow] (pro1) -- (pro2);
+    \draw [arrow] (pro2) -- (pro3);
+    \draw [arrow] (pro3) -- (pro4);
+    
+    % Edged/orthogonal path routes 3.5cm to the right (up the middle) before going to pro5
+    \draw[arrow] (pro4.east) -- ++(3.5,0) |- (pro5.west);
+    
+    \draw [arrow] (pro5) -- (pro6);
+    \draw [arrow] (pro6) -- (pro7);
+    \draw [arrow] (pro7) -- (pro8);
+    \draw [arrow] (pro8) -- (stop);
+\end{tikzpicture}
+\caption{Workflow for conversion of MPM data and input as SALVUS STF.}
+\label{fig:mpm_workflow}
+\end{figure}
 \end{frame}
 
 \begin{closingframe}
