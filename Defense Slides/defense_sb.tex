@@ -216,20 +216,28 @@
         \item Antisymmetric mode gets excited preferentially when source is applied normal to midplane of material \parencite{lambWavesElasticPlate1917,roseWavesPlates2014,achenbachWavePropagationElastic2012}, so in this case yy
         \item Confirmed by animations of wavefield: 
     \end{itemize}
-    \animategraphics[loop,width=4cm]{10}{../Wave Propagation GIFS/custom_sub_wavefield_2d_moving_vx_crack}{0}{93}
-        % If you have a single animated GIF, extract frames first, for example:
-        % ImageMagick (recommended):
-        % magick -coalesce "path/to/your.gif" "../Wave Propagation GIFS/custom_sub_wavefield_2d_moving_vx_crack%d.png"
-        % or ffmpeg:
-        % ffmpeg -i path/to/your.gif "../Wave Propagation GIFS/custom_sub_wavefield_2d_moving_vx_crack%d.png"
-        % This will produce files named custom_sub_wavefield_2d_moving_vx_crack0.png ... 93.png
-        % Then the following animategraphics call will include them in the PDF.
-        \begin{figure}[H]
+    \begin{figure}[H]
+        \centering
+        \begin{minipage}[t]{0.48\linewidth}
             \centering
-            \includegraphics[width = 0.7\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/lamb_wave_modes.jpg}
+            % If you have a single animated GIF, extract frames first, for example:
+            % ImageMagick (recommended):
+            % magick -coalesce "path/to/your.gif" "../Wave Propagation GIFS/custom_sub_wavefield_2d_moving_vx_crack%d.png"
+            % or ffmpeg:
+            % ffmpeg -i path/to/your.gif "../Wave Propagation GIFS/custom_sub_wavefield_2d_moving_vx_crack%d.png"
+            % This will produce files named custom_sub_wavefield_2d_moving_vx_crack0.png ... 93.png
+            % Then the following animategraphics call will include them in the PDF.
+            \animategraphics[loop,width=\linewidth]{10}{../Wave Propagation GIFS/custom_sub_wavefield_2d_moving_vx_crack}{0}{93}
+            \vspace{0.5ex}
+            \small{Animation: velocity wavefield (left)}
+        \end{minipage}\hfill
+        \begin{minipage}[t]{0.48\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/lamb_wave_modes.jpg}
+            \vspace{0.5ex}
             \caption{Lamb wave modes intensity, taken from \cite{cartaLambWavesDiscrete2023}}
-            
-        \end{figure}
+        \end{minipage}
+    \end{figure}
     
 \end{frame}
 
