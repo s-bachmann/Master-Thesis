@@ -15,6 +15,7 @@
 \tikzstyle{decision} = [diamond, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=ETHGrey!10, font=\tiny]
 \tikzstyle{animate}
 \usepackage{caption}
+\usepackage{animate}
 \addbibresource{master_thesis.bib}
 
 \title{
@@ -215,7 +216,14 @@
         \item Antisymmetric mode gets excited preferentially when source is applied normal to midplane of material \parencite{lambWavesElasticPlate1917,roseWavesPlates2014,achenbachWavePropagationElastic2012}, so in this case yy
         \item Confirmed by animations of wavefield: 
     \end{itemize}
-\includemovie
+    \animategraphics[loop,width=4cm]{10}{../Wave Propagation GIFS/custom_sub_wavefield_2d_moving_vx_crack}{0}{93}
+        % If you have a single animated GIF, extract frames first, for example:
+        % ImageMagick (recommended):
+        % magick -coalesce "path/to/your.gif" "../Wave Propagation GIFS/custom_sub_wavefield_2d_moving_vx_crack%d.png"
+        % or ffmpeg:
+        % ffmpeg -i path/to/your.gif "../Wave Propagation GIFS/custom_sub_wavefield_2d_moving_vx_crack%d.png"
+        % This will produce files named custom_sub_wavefield_2d_moving_vx_crack0.png ... 93.png
+        % Then the following animategraphics call will include them in the PDF.
     
 \end{frame}
 
