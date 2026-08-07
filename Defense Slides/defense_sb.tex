@@ -266,6 +266,104 @@
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Implications for DAS field data}
+    \begin{itemize}
+        \item Identification of rupture speed via number of wavefronts \& arrest structure
+        \item Precursors in sub-Rayleigh: S0 and Quasi-Static offset
+        \item Consistent with observations by \cite{herwijnenSeismicSensorArray2011}
+        \item Structures identified as being geometry-independet
+        \item Signals identified as being larger than instrument noise of Silixa iDAS used by \cite{paitzPhenomenologyAvalancheRecordings2023}
+        \item Identification flowchart:
+    \end{itemize}
+    \begin{figure}[H]
+  \centering
+\begin{tikzpicture}
+
+  
+% ===============================
+    % 1. NODES (Scaled for Portrait A4 \textwidth)
+    % ===============================
+
+    % Root Node
+    \node[startstop, text width=7.5cm, minimum height=0.6cm] (root) at (0, 0) {
+        DAS Data (Strain, Strain Rate, Velocity)
+    };
+
+    % -------------------------------
+    % MAIN BRANCHES
+    % -------------------------------
+    % Left Branch (Sub-Rayleigh)
+    \node[process, text width=5.2cm, minimum height=1.8cm, align=left] (leftbox) at (-3.6, -1.8) {
+        \begin{itemize}
+          \item Two Wavefronts: S0/P-Wave Precursor, Main Crack Wavefront
+          \item Quasi-Static Offset
+          \item Symmetric v-shaped Arrest Signature
+          \item A0 Coda 
+        \end{itemize}
+    };
+    \node[font=\tiny\bfseries, above=0.1cm of leftbox] (leftlabel) {
+        Sub-Rayleigh
+    };
+
+    % Right Branch (Supershear)
+    \node[process, text width=5.2cm, minimum height=1.8cm, align=left] (rightbox) at (3.6, -1.8) {
+        \begin{itemize}
+          \item Single Wavefront
+          \item Fan-Shaped Unidirectional Arrest Front
+          \item Weakening of Wavefront with Increasing Time
+        \end{itemize}
+    };
+    \node[font=\tiny\bfseries, above=0.1cm of rightbox] (rightlabel) {
+       Supershear
+    };
+
+    % -------------------------------
+    % LEAF NODES (Bottom)
+    % -------------------------------
+    % Left-Left Leaf
+    \node[process, text width=2.6cm, minimum height=1.2cm] (left_leaf_1) at (-5.3, -4.5) {
+        \textbf{Crack Depth:} Strong Signal,  Crack wavefront visible very strongly
+    };
+    
+    % Left-Right Leaf
+    \node[process, text width=2.6cm, minimum height=1.2cm] (left_leaf_2) at (-1.9, -4.5) {
+        \textbf{Snow Bottom:} Weaker amplitude signal of crack, dispersion of Precursor
+    };
+
+    % Right-Left Leaf
+    \node[process, text width=2.6cm, minimum height=1.2cm] (right_leaf_1) at (1.9, -4.5) {
+        \textbf{Crack Depth:} Strong main wavefront (Stronger than sub-Rayleigh at same depth)
+    };
+    
+    % Right-Right Leaf
+    \node[process, text width=2.6cm, minimum height=1.2cm] (right_leaf_2) at (5.3, -4.5) {
+        \textbf{Snow Bottom:} Two-wavefront structure in vy
+    };
+
+
+    % ===============================
+    % 2. CONNECTIONS
+    % ===============================
+
+    % Root to Main Boxes
+    \draw[thick, draw=idea-dark] (root.south) -- (0, -0.8);
+    \draw[arrow] (0, -0.8) -| (leftbox.north);
+    \draw[arrow] (0, -0.8) -| (rightbox.north);
+
+    % Left Box to Left Leaves
+    \draw[thick, draw=idea-dark] (leftbox.south) -- (-3.6, -3.3);
+    \draw[arrow] (-3.6, -3.3) -| (left_leaf_1.north);
+    \draw[arrow] (-3.6, -3.3) -| (left_leaf_2.north);
+
+    % Right Box to Right Leaves
+    \draw[thick, draw=idea-dark] (rightbox.south) -- (3.6, -3.3);
+    \draw[arrow] (3.6, -3.3) -| (right_leaf_1.north);
+    \draw[arrow] (3.6, -3.3) -| (right_leaf_2.north);
+
+\end{tikzpicture}
+\caption{Graphical Representation to Identify Different Signatures in DAS}
+\label{fig:das_identification}
+\end{figure}
+
     
 \end{frame}
 
