@@ -14,6 +14,7 @@
 \tikzstyle{process} = [rectangle, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=ETHGrey!10, font=\tiny]
 \tikzstyle{decision} = [diamond, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=ETHGrey!10, font=\tiny]
 \tikzstyle{animate}
+\tikzset{arrow/.style={-Stealth, thick}}
 \usepackage{caption}
 \usepackage{animate}
 \addbibresource{master_thesis.bib}
@@ -279,90 +280,66 @@
     \end{itemize}
     \begin{figure}[H]
   \centering
-\begin{tikzpicture}
-
-  
-% ===============================
-    % 1. NODES (Scaled for Portrait A4 \textwidth)
-    % ===============================
+  \resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[every node/.style={inner sep=1pt}]
 
     % Root Node
-    \node[startstop, text width=7.5cm, minimum height=0.6cm] (root) at (0, 0) {
+    \node[startstop, text width=7cm, minimum height=0.7cm, font=\scriptsize] (root) at (0, 0) {
         DAS Data (Strain, Strain Rate, Velocity)
     };
 
-    % -------------------------------
-    % MAIN BRANCHES
-    % -------------------------------
-    % Left Branch (Sub-Rayleigh)
-    \node[process, text width=5.2cm, minimum height=1.8cm, align=left] (leftbox) at (-3.6, -1.8) {
+    % Main branches
+    \node[process, text width=4.3cm, minimum height=1.45cm, align=left, font=\scriptsize] (leftbox) at (-3.0, -1.7) {
         \begin{itemize}
-          \item Two Wavefronts: S0/P-Wave Precursor, Main Crack Wavefront
+          \item Two Wavefronts
           \item Quasi-Static Offset
-          \item Symmetric v-shaped Arrest Signature
-          \item A0 Coda 
+          \item Symmetric Arrest Signature
+          \item A0 Coda
         \end{itemize}
     };
-    \node[font=\tiny\bfseries, above=0.1cm of leftbox] (leftlabel) {
-        Sub-Rayleigh
-    };
+    \node[font=\tiny\bfseries, above=0.08cm of leftbox] (leftlabel) {Sub-Rayleigh};
 
-    % Right Branch (Supershear)
-    \node[process, text width=5.2cm, minimum height=1.8cm, align=left] (rightbox) at (3.6, -1.8) {
+    \node[process, text width=4.3cm, minimum height=1.45cm, align=left, font=\scriptsize] (rightbox) at (3.0, -1.7) {
         \begin{itemize}
           \item Single Wavefront
-          \item Fan-Shaped Unidirectional Arrest Front
-          \item Weakening of Wavefront with Increasing Time
+          \item Fan-Shaped Arrest Front
+          \item Weakening with Time
         \end{itemize}
     };
-    \node[font=\tiny\bfseries, above=0.1cm of rightbox] (rightlabel) {
-       Supershear
+    \node[font=\tiny\bfseries, above=0.08cm of rightbox] (rightlabel) {Supershear};
+
+    % Bottom leaves
+    \node[process, text width=2.2cm, minimum height=1.0cm, font=\scriptsize] (left_leaf_1) at (-4.7, -4.2) {
+        \textbf{Crack Depth:} Strong signal
+    };
+    \node[process, text width=2.2cm, minimum height=1.0cm, font=\scriptsize] (left_leaf_2) at (-1.6, -4.2) {
+        \textbf{Snow Bottom:} Weaker amplitude
+    };
+    \node[process, text width=2.2cm, minimum height=1.0cm, font=\scriptsize] (right_leaf_1) at (1.6, -4.2) {
+        \textbf{Crack Depth:} Strong main wavefront
+    };
+    \node[process, text width=2.2cm, minimum height=1.0cm, font=\scriptsize] (right_leaf_2) at (4.7, -4.2) {
+        \textbf{Snow Bottom:} Two-wavefront structure
     };
 
-    % -------------------------------
-    % LEAF NODES (Bottom)
-    % -------------------------------
-    % Left-Left Leaf
-    \node[process, text width=2.6cm, minimum height=1.2cm] (left_leaf_1) at (-5.3, -4.5) {
-        \textbf{Crack Depth:} Strong Signal,  Crack wavefront visible very strongly
-    };
-    
-    % Left-Right Leaf
-    \node[process, text width=2.6cm, minimum height=1.2cm] (left_leaf_2) at (-1.9, -4.5) {
-        \textbf{Snow Bottom:} Weaker amplitude signal of crack, dispersion of Precursor
-    };
+    % Connections
+    \coordinate (rootbranch) at (0, -0.45);
+    \draw[thick, draw=idea-dark] (root.south) -- (rootbranch);
+    \draw[arrow] (rootbranch) -| (leftbox.north);
+    \draw[arrow] (rootbranch) -| (rightbox.north);
 
-    % Right-Left Leaf
-    \node[process, text width=2.6cm, minimum height=1.2cm] (right_leaf_1) at (1.9, -4.5) {
-        \textbf{Crack Depth:} Strong main wavefront (Stronger than sub-Rayleigh at same depth)
-    };
-    
-    % Right-Right Leaf
-    \node[process, text width=2.6cm, minimum height=1.2cm] (right_leaf_2) at (5.3, -4.5) {
-        \textbf{Snow Bottom:} Two-wavefront structure in vy
-    };
+    \coordinate (leftbranch) at (-3.0, -2.95);
+    \draw[thick, draw=idea-dark] (leftbox.south) -- (leftbranch);
+    \draw[arrow] (leftbranch) -| (left_leaf_1.north);
+    \draw[arrow] (leftbranch) -| (left_leaf_2.north);
 
+    \coordinate (rightbranch) at (3.0, -2.95);
+    \draw[thick, draw=idea-dark] (rightbox.south) -- (rightbranch);
+    \draw[arrow] (rightbranch) -| (right_leaf_1.north);
+    \draw[arrow] (rightbranch) -| (right_leaf_2.north);
 
-    % ===============================
-    % 2. CONNECTIONS
-    % ===============================
-
-    % Root to Main Boxes
-    \draw[thick, draw=idea-dark] (root.south) -- (0, -0.8);
-    \draw[arrow] (0, -0.8) -| (leftbox.north);
-    \draw[arrow] (0, -0.8) -| (rightbox.north);
-
-    % Left Box to Left Leaves
-    \draw[thick, draw=idea-dark] (leftbox.south) -- (-3.6, -3.3);
-    \draw[arrow] (-3.6, -3.3) -| (left_leaf_1.north);
-    \draw[arrow] (-3.6, -3.3) -| (left_leaf_2.north);
-
-    % Right Box to Right Leaves
-    \draw[thick, draw=idea-dark] (rightbox.south) -- (3.6, -3.3);
-    \draw[arrow] (3.6, -3.3) -| (right_leaf_1.north);
-    \draw[arrow] (3.6, -3.3) -| (right_leaf_2.north);
-
-\end{tikzpicture}
+\end{tikzpicture}%
+}
 \caption{Graphical Representation to Identify Different Signatures in DAS}
 \label{fig:das_identification}
 \end{figure}
