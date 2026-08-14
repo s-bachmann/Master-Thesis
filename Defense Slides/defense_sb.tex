@@ -64,7 +64,7 @@
         \item 22 fatalities by avalanche in Switzerland every year \parencite{LongtermStatistics}
         \item Avalanches are danger for human life but also infrastructure \parencite{schweizerSnowAvalancheFormation2003}
         \item Understanding processes associated with avalanches important
-        \item Avalanche release because of loading, leading to crack propagation in a weal layer \parencite{gaumeSnowFractureRelation2017a}
+        \item Avalanche release because of loading, leading to crack propagation in a weak layer \parencite{gaumeSnowFractureRelation2017a}
     \end{itemize}
     
 \end{frame}
@@ -73,7 +73,7 @@
 \begin{itemize}
     \item Crack propagation at different speeds: sub-Rayleigh (below vs of material) and Supershear (above vs) \parencite{trottetTransitionSubRayleighAnticrack2022}, transition between two regimes possible \parencite{bergfeldSignaturesSubRayleighSupershear2025}
         \item Fast crack propagation $\rightarrow$ critical crack length for release \parencite{gaumeModelingCrackPropagation2015} is reached faster
-        \item Distributed Acoustic Sensing (DAS) already used to monitor avalanches in Swizterland \parencite{paitzPhenomenologyAvalancheRecordings2023,edmeFiberopticDetectionSnow2023} and Norway \parencite{turquetAutomatedSnowAvalanche2024}
+        \item Distributed Acoustic Sensing (DAS) already used to monitor avalanches in Switzerland \parencite{paitzPhenomenologyAvalancheRecordings2023,edmeFiberopticDetectionSnow2023} and Norway \parencite{turquetAutomatedSnowAvalanche2024}
         \item No knowledge if crack propagation associated with breakoff can be seen in DAS data
 \end{itemize}
 \end{frame}
@@ -146,7 +146,7 @@
         \item $\frac{\partial u_i}{\partial t}$ $\rightarrow$ velocity in x and y
         \item $\frac{\partial u_i}{\partial j}$ $\rightarrow$ strain in x and y $\epsilon$
         \item $\frac{\partial^2 u_i}{\partial t \partial t}$ $\rightarrow$ strain rate $\dot{\epsilon}$
-        \item Simulation od DAS data from $\ \epsilon$, $\ \dot{\epsilon}$ using Pyber Gauge length class by \cite{noeFrontiersFullwaveformSeismology2025}, gauge length acoording to \cite{turquetAutomatedSnowAvalanche2024}
+        \item Simulation of DAS data from $\ \epsilon$, $\ \dot{\epsilon}$ using Pyber Gauge length class by \cite{noeFrontiersFullwaveformSeismology2025}, gauge length acoording to \cite{turquetAutomatedSnowAvalanche2024}
         \item Spate-time plots of strain, strain rate and velocity at different reciever depths
         \item Frequency-wavenumber plots with theoretical speeds and dispersion curves
         \item Animations of velocity wavefields
@@ -158,7 +158,7 @@
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/preliminary_sub_strain.png}
-        \caption{Horizontal Strain and strain rate for sub-Rayleigh crack propagation in simple two-layer model. Plotted at crack depth (2.625m) and at the snow bottom (2.25m). Gaugle length is 10.4m. }
+        \caption{Horizontal Strain and strain rate for sub-Rayleigh crack propagation in simple two-layer model. Plotted at crack depth (2.625m) and at the snow bottom (2.25m). Gauge length is 10.4m. }
 
     \end{figure}
     \begin{itemize}
@@ -179,7 +179,7 @@
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/preliminary_super_strain.png}
-        \caption{Horizontal Strain and strain rate for Supershear crack propagation in simple two-layer model. Plotted at crack depth (2.625m) and at the snow bottom (2.25m). Gaugle length is 10.4m. }
+        \caption{Horizontal Strain and strain rate for Supershear crack propagation in simple two-layer model. Plotted at crack depth (2.625m) and at the snow bottom (2.25m). Gauge length is 10.4m. }
     \end{figure}
     \begin{itemize}
         \item One wavefront, contrary to sub-Rayleigh
@@ -198,7 +198,7 @@
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/mpm_strain.png}
-        \caption{Horizontal Strain and strain rate for MPM-guided model. Plotted at crack depth (0.525) and at the snow bottom (0.3m). Gaugle length is 10.4m. }
+        \caption{Horizontal Strain and strain rate for MPM-guided model. Plotted at crack depth (0.525) and at the snow bottom (0.3m). Gauge length is 10.4m. }
     \end{figure}
     \begin{itemize}
         \item One two main wavefronts observed
@@ -280,7 +280,7 @@
         \item Identification of rupture speed via number of wavefronts \& arrest structure
         \item Precursors in sub-Rayleigh: S0 and Quasi-Static offset
         \item Consistent with observations by \cite{herwijnenSeismicSensorArray2011}
-        \item Structures identified as being geometry-independet
+        \item Structures identified as being geometry-independent
         \item Signals identified as being larger than instrument noise of Silixa iDAS used by \cite{paitzPhenomenologyAvalancheRecordings2023}
         \item Supershear signals larger in amplitude: possibly false conclusions if transition happens
         \item Identification flowchart:
@@ -358,7 +358,7 @@
     \begin{itemize}
         \item Add topography to models
         \item Verify Supershear effects for more complex STFs as well
-        \item Inhomogenous, multi-layered snowpack
+        \item Inhomogeneous, multi-layered snowpack
         \item Transitional propagation regimes
         \item Comparison to field data \rightarrow amplitude of signals compared to noise
         \item 3D model
@@ -369,7 +369,7 @@
 \begin{frame}{Answer to Research Questions - Conclusions}
      \begin{itemize}
         \item \textbf{What physical phenomena are observed in a two-layer model with a simple STF and how do they differ for sub-Rayleigh versus Supershear crack propagation?} Rupture-arrest signatures depending on propagation speed, S0 precursor, A0 main wavefront for both propagation regimes. Changes in amplitude
-        \item \textbf{To what extent do the results change if source wavelets from a MPM simulation of a propagation saw test (PST) are injected?} Verification of sub-Rayleigh S0 precursor, A0 mode excitation, changes because appearange of quasi-static offset
+        \item \textbf{To what extent do the results change if source wavelets from a MPM simulation of a propagation saw test (PST) are injected?} Verification of sub-Rayleigh S0 precursor, A0 mode excitation, changes because appearance of quasi-static offset
         \item \textbf{How could the phenomena observed be used to distinguish crack propagation regimes in real-world DAS data and aid in detecting snow slab avalanche breakoff?} Precursors (S0 and quasi-static offset) used as "early" warning, identification of propagation speed using arrest structures, possibility of identifying transitions by number of wavefronts
     \end{itemize}
     
