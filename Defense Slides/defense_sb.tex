@@ -51,6 +51,25 @@
 }
 \titleframe
 
+\begin{frame}{Why model crack propagation in snow? - Relevance}
+    \begin{itemize}
+        \item 22 fatalities by avalanche in Switzerland every year \parencite{LongtermStatistics}
+        \item Avalanches are danger for human life but also infrastructure \parencite{schweizerSnowAvalancheFormation2003}
+        \item Understanding processes associated with avalanches important
+        \item Avalanche release because of loading, leading to crack propagation in a weal layer \parencite{gaumeSnowFractureRelation2017a}
+    \end{itemize}
+    
+\end{frame}
+
+\begin{frame}{Relevance}
+\begin{itemize}
+    \item Crack propagation at different speeds: sub-Rayleigh (below vs of material) and Supershear (above vs) \parencite{trottetTransitionSubRayleighAnticrack2022}, transition between two regimes possible \parencite{bergfeldSignaturesSubRayleighSupershear2025}
+        \item Fast crack propagation $\rightarrow$ critical crack length for release \parencite{gaumeModelingCrackPropagation2015} is reached faster
+        \item Distributed Acoustic Sensing (DAS) already used to monitor avalanches in Swizterland \parencite{paitzPhenomenologyAvalancheRecordings2023,edmeFiberopticDetectionSnow2023} and Norway \parencite{turquetAutomatedSnowAvalanche2024}
+        \item No knowledge if crack propagation associated with breakoff can be seen in DAS data
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Overview}
     \begin{itemize}
         \item Created 3 different models and 2 scenarios for crack propagation in snow using SALVUS
@@ -72,24 +91,7 @@
     
 \end{frame}
 
-\begin{frame}{Why model crack propagation in snow? - Relevance}
-    \begin{itemize}
-        \item 22 fatalities by avalanche in Switzerland every year \parencite{LongtermStatistics}
-        \item Avalanches are danger for human life but also infrastructure \parencite{schweizerSnowAvalancheFormation2003}
-        \item Understanding processes associated with avalanches important
-        \item Avalanche release because of loading, leading to crack propagation in a weal layer \parencite{gaumeSnowFractureRelation2017a}
-    \end{itemize}
-    
-\end{frame}
 
-\begin{frame}{Relevance}
-\begin{itemize}
-    \item Crack propagation at different speeds: sub-Rayleigh (below vs of material) and Supershear (above vs) \parencite{trottetTransitionSubRayleighAnticrack2022}, transition between two regimes possible \parencite{bergfeldSignaturesSubRayleighSupershear2025}
-        \item Fast crack propagation $\rightarrow$ critical crack length for release \parencite{gaumeModelingCrackPropagation2015} is reached faster
-        \item Distributed Acoustic Sensing (DAS) already used to monitor avalanches in Swizterland \parencite{paitzPhenomenologyAvalancheRecordings2023,edmeFiberopticDetectionSnow2023} and Norway \parencite{turquetAutomatedSnowAvalanche2024}
-        \item No knowledge if crack propagation associated with breakoff can be seen in DAS data
-\end{itemize}
-\end{frame}
 
 \begin{frame}{Research Questions}
     \begin{itemize}
@@ -439,35 +441,37 @@
 \end{frame}
 
 \begin{frame}{Simple model F-k plots and dispersion curves}
+\begin{figure}[H]
+\centering
 \begin{minipage}[t]{0.48\linewidth}
     \vspace{0pt}
     \centering
     \includegraphics[width=0.8\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/preliminary_fk.png}
-    \caption{Supershear and Sub-Rayleigh F-k spectra with medium velocities indicated by colored lines.}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.48\linewidth}
     \vspace{0pt}
     \centering
     \includegraphics[width=0.8\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/preliminary_sub_fk_lamb.png}
-    \caption{Supershear and Sub-Rayleigh F-k spectra with Lamb Wave dispersion curves indicated by colored lines.}
 \end{minipage}
+\caption{Supershear and Sub-Rayleigh F-k spectra with medium and Lamb-wave dispersion curves indicated by colored lines.}
+\end{figure}
 \end{frame}
 
 \begin{frame}{MPM F-k plots}
-    \begin{minipage}[t]{0.48\linewidth}
+\begin{figure}[H]
+\centering
+\begin{minipage}[t]{0.48\linewidth}
     \vspace{0pt}
     \centering
     \includegraphics[width=0.8\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/mpm_fk.png}
-    \caption{MPM F-k spectra with medium velocities indicated by colored lines.}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.48\linewidth}
     \vspace{0pt}
     \centering
     \includegraphics[width=0.8\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/mpm_fk_lamb.png}
-    \caption{MPM F-k spectra with Lamb Wave dispersion curves indicated by colored lines.}
 \end{minipage}
-\end{frame}
-    
+\caption{MPM F-k spectra with medium and Lamb-wave dispersion curves indicated by colored lines.}
+\end{figure}
 \end{frame}
 
 \begin{frame}{MPM STF cumulative Integral}
