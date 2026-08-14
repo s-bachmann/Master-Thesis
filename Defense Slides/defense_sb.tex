@@ -382,13 +382,15 @@
     
 \end{frame}
 
-
-\begin{frame}[allowframebreaks]{Bibliography}
+% Start appendix: these frames should not contribute to the total slide count.
+\appendix
+\setbeamertemplate{footline}{}
+\begin{frame}[allowframebreaks,noframenumbering]{Bibliography}
     \typeout{}
     \printbibliography
 \end{frame}
 
-\begin{frame}{MPM STF Workflow}
+\begin{frame}[noframenumbering]{MPM STF Workflow}
     \begin{figure}[H]
   \centering  
 
@@ -424,7 +426,7 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}[allowframebreaks]{Simple model velocity plots}
+\begin{frame}[allowframebreaks, noframenumbering]{Simple model velocity plots}
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/preliminary_sub_vel.png}
@@ -440,7 +442,7 @@
     
 \end{frame}
 
-\begin{frame}{MPM velocity plots}
+\begin{frame}[noframenumbering]{MPM velocity plots}
      \centering
      \begin{figure}[H]
         \includegraphics[width=0.5\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/mpm_vel.png}
@@ -448,7 +450,7 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Simple model F-k plots and dispersion curves}
+\begin{frame}[noframenumbering]{Simple model F-k plots and dispersion curves}
 \begin{figure}[H]
 \centering
 \begin{minipage}[t]{0.48\linewidth}
@@ -465,7 +467,7 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}{MPM F-k plots}
+\begin{frame}[noframenumbering]{MPM F-k plots}
 \begin{figure}[H]
 \centering
 \begin{minipage}[t]{0.48\linewidth}
@@ -482,7 +484,7 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}{MPM STF cumulative Integral}
+\begin{frame}[noframenumbering]{MPM STF cumulative Integral}
     \begin{figure}[H]
         \centering
         \includegraphics[width = 0.5\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/mpm_cum_int.png}
@@ -494,7 +496,7 @@
 
 
 
-\begin{closingframe}
+\begin[noframenumbering]{closingframe}
 
 Salome Bachmann\\
 Master Student\\
