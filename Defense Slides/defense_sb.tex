@@ -132,14 +132,10 @@
 
 \begin{frame}{Output} % SIMPLIFY MAJORLY
     \begin{itemize}
-        \item SALVUS Output: Displacement field u
+        \item SALVUS Output: Displacement field u, used to simulate DAS using Pyber  library by \cite{noeFrontiersFullwaveformSeismology2025}
         \item $\frac{\partial u_i}{\partial t}$ $\rightarrow$ velocity in x and y
-        \item $\frac{\partial u_i}{\partial j}$ $\rightarrow$ strain in x and y $\epsilon$
-        \item $\frac{\partial^2 u_i}{\partial t \partial t}$ $\rightarrow$ strain rate $\dot{\epsilon}$
-        \item Simulation of DAS data from $\ \epsilon$, $\ \dot{\epsilon}$ using Pyber Gauge length class by \cite{noeFrontiersFullwaveformSeismology2025}, gauge length acoording to \cite{turquetAutomatedSnowAvalanche2024}
-        \item Spate-time plots of strain, strain rate and velocity at different reciever depths
-        \item Frequency-wavenumber plots with theoretical speeds and dispersion curves
-        \item Animations of velocity wavefields
+        \item $\frac{\partial u_i}{\partial j}$ $\rightarrow$ strain in x and y ($\epsilon$)
+        \item $\frac{\partial^2 u_i}{\partial t \partial j}$ $\rightarrow$ strain rate ($\dot{\epsilon}$)
     \end{itemize}
     
 \end{frame}
