@@ -1,0 +1,2811 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{achenbachWavePropagationElastic2012}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=36ddce67fbeaa6e35b99c8f3bb54641a}{%
+           family={Achenbach},
+           familyi={A\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{fullhash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{fullhashraw}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{bibnamehash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{authorbibnamehash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{authornamehash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{authorfullhash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{authorfullhashraw}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The propagation of mechanical disturbances in solids is of interest in many branches of the physical scienses and engineering. This book aims to present an account of the theory of wave propagation in elastic solids. The material is arranged to present an exposition of the basic concepts of mechanical wave propagation within a one-dimensional setting and a discussion of formal aspects of elastodynamic theory in three dimensions, followed by chapters expounding on typical wave propagation phenomena, such as radiation, reflection, refraction, propagation in waveguides, and diffraction. The treatment necessarily involves considerable mathematical analysis. The pertinent mathematical techniques are, however, discussed at some length.}
+      \field{isbn}{978-0-08-093471-6}
+      \field{langid}{english}
+      \field{title}{Wave {{Propagation}} in {{Elastic Solids}}}
+      \field{year}{1973}
+      \keyw{Science / Mechanics / Fluids,Science / Mechanics / General,Science / Mechanics / Solids,Science / Physics / Condensed Matter}
+    \endentry
+    \entry{kAkiRichards19801981}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bd8de6cffe0dbd778578bbbe0924d3f3}{%
+           family={Aki},
+           familyi={A\bibinitperiod},
+           given={Keiiti},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=599918319bad7a13fafdfcf37a556485}{%
+           family={Richards},
+           familyi={R\bibinitperiod},
+           given={Paul\bibnamedelima G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {San Francisco}%
+      }
+      \list{publisher}{1}{%
+        {Freeman}%
+      }
+      \strng{namehash}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{fullhash}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{fullhashraw}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{bibnamehash}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{authorbibnamehash}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{authornamehash}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{authorfullhash}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{authorfullhashraw}{3e13bc9a27ceaae077a520336b0cfa38}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{//static.cambridge.org/content/id/urn\%3Acambridge.org\%3Aid\%3Aarticle\%3AS0016756800034439/resource/name/firstPage-S0016756800034439a.jpg}
+      \field{issn}{0016-7568, 1469-5081}
+      \field{journaltitle}{Geological Magazine}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{2}
+      \field{shorttitle}{K. {{Aki}} \& {{P}}. {{G}}. {{Richards}} 1980. {{Quantitative Seismology}}, {{Theory}} and {{Methods}}. {{Volume I}}}
+      \field{title}{K. {{Aki}} \& {{P}}. {{G}}. {{Richards}} 1980. {{Quantitative Seismology}}, {{Theory}} and {{Methods}}. {{Volume I}}: 557 Pp., 169 Illustrations. {{Volume II}}: 373 Pp., 116 Illustrations. {{San Francisco}}: {{Freeman}}. {{Price}}: {{Volume I}}, {{U}}.{{S}}. 35.00. {{ISBN}} 0 7167 1058 7 ({{Vol}}. {{I}}), 0 7167 1059 5 ({{Vol}}. {{II}}).}
+      \field{urlday}{22}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{118}
+      \field{year}{1981}
+      \field{urldateera}{ce}
+      \field{pages}{208\bibrangedash 208}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1017/S0016756800034439
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/5YW7ER6Y/Aki and Richards - 1981 - K. Aki & P. G. Richards 1980. Quantitative Seismology, Theory and Methods. Volume I 557 pp., 169 il.pdf
+      \endverb
+    \endentry
+    \entry{archambeauGeneralTheoryElastodynamic1968}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=14835bffa52c8a6abde78e21ab2702e0}{%
+           family={Archambeau},
+           familyi={A\bibinitperiod},
+           given={Charles\bibnamedelima B.},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{fullhash}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{fullhashraw}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{bibnamehash}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{authorbibnamehash}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{authornamehash}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{authorfullhash}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{authorfullhashraw}{14835bffa52c8a6abde78e21ab2702e0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The most important and interesting source of elastic radiation in geophysics is an earthquake, or tectonic source, because the radiation field from such an energy source provides information on the largely unknown stress field within the earth. The actual mechanisms or processes of material failure undoubtedly can be described parametrically by the radiation field in terms of rupture velocity, rupture geometry, and the initial and residual stress within the region of failure. Accurate estimates of stress and the parameters of failure are therefore of particular significance in any description of the physical state of the material and would not be unrelated to the larger-scale dynamical processes taking place within the earth. A number of methods and theories are presently used in estimating some of these parameters. The present study is intended to extend the dynamical theory of tectonic sources in order to provide a more complete description of earthquakes in terms of these basic parameters of rupture, including prestress. No assumptions are made concerning the nature of equivalent forces at the source or of their time dependence. The theory predicts the spatial and temporal form of the radiation field in terms of the initial prestress field and the basic rupture parameters. These predictions follow from the recognition that an earthquake is a relaxation source and that such a phenomenon is described analytically as an initial-value problem. Consequently, such a source satisfies the conservation of energy and linear and angular momentum conditions required for a spontaneous source. The radiation field is produced by the continuous reduction of stored potential strain energy in the elastic medium surrounding a growing rupture zone, where it is assumed that the rupture, or at least a part of the total rupture zone, has a well-defined boundary at a given time to which boundary conditions are applicable. The compatibility of this geometrically sharp, time-varying boundary condition with probable failure processes in the earth is examined and judged to be good. Analytical expressions for the radiation field from an arbitrary source of elastic radiation are given, and within the framework of this formulation the properties of a spontaneous tectonic source are contrasted with `applied force' sources and their special properties, as well as with some of the field observations of earthquake radiation fields. These considerations demonstrate the need for a more general and complete description of tectonic sources in order to explain all the observations and, more fundamentally, to deduce more precisely the nature of the physical processes of failure in the earth. It is concluded that a relaxation theory will provide the flexibility required to describe the characteristics of the observed radiation field and will also provide estimates of rupture parameters bearing on the processes of failure and the state of the material. A complete development of the dynamical relaxation theory for tectonic sources, including considerations of the total energy release and the final equilibrium field, constitutes the main result of this study, providing explicit expressions for the dynamic and static displacement and energy fields. It is shown that the radiation field will generally have a frequency-dependent shape, dependent to first order on the ratio of rupture length to radiation wavelength. A relatively simple example is considered, and the radiation pattern and displacement and energy spectra computed. The radiation pattern is contrasted with the pattern from a more complicated rupture geometry and serves to demonstrate the pattern-shape dependence on frequency, rupture geometry, and prestress. The energy and displacement spectra are also found to have maxima and minima, the number being dependent on the rupture geometry and their location and spacing being dependent on rupture length and velocity.}
+      \field{issn}{1944-9208}
+      \field{journaltitle}{Reviews of Geophysics}
+      \field{langid}{english}
+      \field{number}{3}
+      \field{title}{General Theory of Elastodynamic Source Fields}
+      \field{urlday}{27}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{6}
+      \field{year}{1968}
+      \field{urldateera}{ce}
+      \field{pages}{241\bibrangedash 288}
+      \range{pages}{48}
+      \verb{doi}
+      \verb 10.1029/RG006i003p00241
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/5QJGBMB2/RG006i003p00241.html
+      \endverb
+    \endentry
+    \entry{bergfeldSignaturesSubRayleighSupershear2025}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=45cd7f65b6ceeddfce73beb6b18c5124}{%
+           family={Bergfeld},
+           familyi={B\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95db8610b06a0495ae9e84659c58aa7c}{%
+           family={Bobillier},
+           familyi={B\bibinitperiod},
+           given={Gregoire},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb12dc1e1c97999c5929bac9b9010b0c}{%
+           family={Pellet},
+           familyi={P\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{4d7ce8f2fe2e6b3ae1c0c2909eaf6327}
+      \strng{fullhash}{3debf7c7cc92114a62ffd92be341a816}
+      \strng{fullhashraw}{3debf7c7cc92114a62ffd92be341a816}
+      \strng{bibnamehash}{3debf7c7cc92114a62ffd92be341a816}
+      \strng{authorbibnamehash}{3debf7c7cc92114a62ffd92be341a816}
+      \strng{authornamehash}{4d7ce8f2fe2e6b3ae1c0c2909eaf6327}
+      \strng{authorfullhash}{3debf7c7cc92114a62ffd92be341a816}
+      \strng{authorfullhashraw}{3debf7c7cc92114a62ffd92be341a816}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Snow slab avalanches occur when a crack propagates within a highly porous weak snow layer buried beneath a cohesive snow slab. Here, we report direct observations of a supershear event in snow fracture experiments following the spontaneous transition from sub-Rayleigh to intersonic crack propagation. The experiments involve artificially triggered avalanches on a small slope with a natural snowpack, captured with high-speed cameras and analyzed using digital image correlation. Deformation fields reveal distinct signatures: slope-normal collapse of the weak layer and slab flexure drive sub-Rayleigh propagation, while supershear fracture is related to slope-parallel deformation and slab tension. These results are further reinforced by numerical simulations that replicate the experiment and provide strong supporting evidence that the Burridge-Andrews mechanism governs the transition to supershear propagation. Analogous to supershear strike-slip earthquakes linked with substantial magnitudes, our findings suggest that supershear avalanches relate to widespread crack propagation and large avalanche dimensions, holding significant implications for risk mitigation strategies.}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{Signatures of the Sub-{{Rayleigh}} to Supershear Fracture Transition in Snow Avalanche Experiments}
+      \field{urlday}{11}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{16}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \field{pages}{11153}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-025-65825-6
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/3FDCMAJ5/Bergfeld et al. - 2025 - Signatures of the sub-Rayleigh to supershear fracture transition in snow avalanche experiments.pdf
+      \endverb
+      \keyw{Geophysics,Natural hazards}
+    \endentry
+    \entry{cartaLambWavesDiscrete2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=96781c6e1f35707169b94b3fee7119ae}{%
+           family={Carta},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6a929c4d61f82039801859f2d1b3089}{%
+           family={Nieves},
+           familyi={N\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44e5d759bdb3babea9a9552911e360a3}{%
+           family={Brun},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{03577a3c3de2c9ba7f21b29d425593b7}
+      \strng{fullhash}{153a14b672e51b908f38ae2bcc417e32}
+      \strng{fullhashraw}{153a14b672e51b908f38ae2bcc417e32}
+      \strng{bibnamehash}{153a14b672e51b908f38ae2bcc417e32}
+      \strng{authorbibnamehash}{153a14b672e51b908f38ae2bcc417e32}
+      \strng{authornamehash}{03577a3c3de2c9ba7f21b29d425593b7}
+      \strng{authorfullhash}{153a14b672e51b908f38ae2bcc417e32}
+      \strng{authorfullhashraw}{153a14b672e51b908f38ae2bcc417e32}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In this paper, we study Lamb waves propagating in a discrete strip, whose microstructure is represented by either a monatomic or a diatomic triangular lattice. In considering the in-plane vector problem, we derive an analytical solution for the dispersion relation of Lamb waves. Additionally, we investigate the main features of the eigenmodes of the system, which describe how the lattice strip vibrates at different frequencies. Further, we discuss how the dispersion properties depend on the number of the lattice's rows and on the chosen boundary conditions. For heterogeneous systems, we focus the attention on the internal stop-band and on the flat bands appearing in the dispersion diagram. Different asymptotic models are employed to approximate the low-frequency behaviour of the lattice strip, starting from the classical Euler--Bernoulli beam. The effective behaviour of a lattice strip with dense microstructure is also investigated, and we present a comparative numerical analysis with the analogous continuum for which the classical Lamb wave problem is posed. The theory developed is exploited here to design a structured medium capable of manipulating wavemodes, and, through conversion and selection, generating uni-directional wave phenomena. We envisage that the present work can fill a gap in the research field related to the analytical study of dispersive waves in microstructured media, whose dynamic performance is influenced by the presence of multiple external boundaries.}
+      \field{issn}{0997-7538}
+      \field{journaltitle}{European Journal of Mechanics - A/Solids}
+      \field{month}{7}
+      \field{shorttitle}{Lamb Waves in Discrete Homogeneous and Heterogeneous Systems}
+      \field{title}{Lamb Waves in Discrete Homogeneous and Heterogeneous Systems: {{Dispersion}} Properties, Asymptotics and Non-Symmetric Wave Propagation}
+      \field{urlday}{17}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{100}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{104695}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.euromechsol.2022.104695
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/2DFQK5FY/S0997753822001516.html
+      \endverb
+      \keyw{Diatomic lattice,Dispersion,Lamb waves,Microstructured medium,Mode conversion,Waveguide}
+    \endentry
+    \entry{edmeFiberopticDetectionSnow2023}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=d4e81c1228428233e54ddc020d0be1c6}{%
+           family={Edme},
+           familyi={E\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e76fe51e6921726e3e7565f8896c21e6}{%
+           family={Paitz},
+           familyi={P\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e6cf76cc06312c89860a3a08ace0d5d}{%
+           family={Walter},
+           familyi={W\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c1d6daa75097992335f22b5ac216eba4}{%
+           family={Herwijnen},
+           familyi={H\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c44b844ddb7f3e18c4217fbb70345cde}{%
+           family={Fichtner},
+           familyi={F\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{dc52d8a0f97d1ea053c8cb320a3036d7}
+      \strng{fullhash}{1cb6a4c99df38abc03846043d83dedb1}
+      \strng{fullhashraw}{1cb6a4c99df38abc03846043d83dedb1}
+      \strng{bibnamehash}{1cb6a4c99df38abc03846043d83dedb1}
+      \strng{authorbibnamehash}{1cb6a4c99df38abc03846043d83dedb1}
+      \strng{authornamehash}{dc52d8a0f97d1ea053c8cb320a3036d7}
+      \strng{authorfullhash}{1cb6a4c99df38abc03846043d83dedb1}
+      \strng{authorfullhashraw}{1cb6a4c99df38abc03846043d83dedb1}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We demonstrate the detectability of snow avalanches using Distributed Acoustic Sensing (DAS) with existing fiber-optic telecommunication cables. For this, during winter 2021/2022, we interrogated a 10 km long cable closely following the avalanche prone Fluelapass road in the Swiss Alps. In addition to other signals like traffic and earthquakes, the DAS data contain clear recordings of numerous snow avalanches, even though most of them do not reach the cable. Here we present two examples of snow avalanche recordings that could be verified photographically. Our results open new perspectives for cost-effective, near-real-time avalanche monitoring over long distances using pre-installed fiber-optic infrastructure.}
+      \field{eprintclass}{physics}
+      \field{eprinttype}{arXiv}
+      \field{month}{2}
+      \field{number}{arXiv:2302.12649}
+      \field{title}{Fiber-Optic Detection of Snow Avalanches Using Telecommunication Infrastructure}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2302.12649
+      \endverb
+      \verb{eprint}
+      \verb 2302.12649
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/24SYMTUA/Edme et al. - 2023 - Fiber-optic detection of snow avalanches using telecommunication infrastructure.pdf;/Users/salomebachmann/Zotero/storage/9Z8DDA3Y/2302.html
+      \endverb
+      \keyw{Physics - Geophysics}
+    \endentry
+    \entry{freundDynamicFractureMechanics1998}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c246f840d0866c70501e884e906fd009}{%
+           family={Freund},
+           familyi={F\bibinitperiod},
+           given={L.\bibnamedelimi B.},
+           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8209a6be3f4820fabeda4fcf01a903f9}{%
+           family={Freud},
+           familyi={F\bibinitperiod},
+           given={L.\bibnamedelimi B.},
+           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{fullhash}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{fullhashraw}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{bibnamehash}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{authorbibnamehash}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{authornamehash}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{authorfullhash}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{authorfullhashraw}{3f4b9581e2338d60f3e724dae58be0ab}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This volume emphasizes fundamental concepts, both on the development of mathematical models of fracture phenomena and on the analysis of these models. Cases involving stress waves impinging on cracks, tractions suddenly applied to the faces of cracks, and rapid crack growth and arrest are considered in detail. Most of the work is concerned with the behavior of nominally elastic materials, but available results on elastic-plastic and elastic-viscoplastic materials are included. Connections to experimental results and to applications in structural mechanics, seismology, and materials science are noted whenever possible.}
+      \field{isbn}{978-0-521-62922-5}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{title}{Dynamic {{Fracture Mechanics}}}
+      \field{year}{1998}
+      \keyw{Mathematics / Applied,Science / Mechanics / Fluids,Technology & Engineering / Fracture Mechanics,Technology & Engineering / Mechanical}
+    \endentry
+    \entry{gaumeModelingCrackPropagation2015}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e772559f9d1c403eec44521d61b399a4}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b00285ad021271e67874fa4fbd65472}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0175c41468776197652bd30b5bc3728c}{%
+           family={Chambon},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea15836e9b957b6592c223abea3a1d4d}{%
+           family={Birkeland},
+           familyi={B\bibinitperiod},
+           given={K.\bibnamedelimi W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7de90264c9b21df59df1140db9f75bb6}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{fullhash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{fullhashraw}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{bibnamehash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{authorbibnamehash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{authornamehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{authorfullhash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{authorfullhashraw}{a077172f1e0786d0af96cf9266b4889f}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dry-snow slab avalanches are generally caused by a sequence of fracture processes including (1) failure initiation in a weak snow layer underlying a cohesive slab, (2) crack propagation within the weak layer and (3) tensile fracture through the slab which leads to its detachment. During the past decades, theoretical and experimental work has gradually led to a better understanding of the fracture process in snow involving the collapse of the structure in the weak layer during fracture. This now allows us to better model failure initiation and the onset of crack propagation, i.e., to estimate the critical length required for crack propagation. On the other hand, our understanding of dynamic crack propagation and fracture arrest propensity is still very limited. To shed more light on this issue, we performed numerical propagation saw test (PST) experiments applying the discrete element (DE) method and compared the numerical results with field measurements based on particle tracking. The goal is to investigate the influence of weak layer failure and the mechanical properties of the slab on crack propagation and fracture arrest propensity. Crack propagation speeds and distances before fracture arrest were derived from the DE simulations for different snowpack configurations and mechanical properties. Then, in order to compare the numerical and experimental results, the slab mechanical properties (Young's modulus and strength) which are not measured in the field were derived from density. The simulations nicely reproduced the process of crack propagation observed in field PSTs. Finally, the mechanical processes at play were analyzed in depth which led to suggestions for minimum column length in field PSTs.}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{5}
+      \field{title}{Modeling of Crack Propagation in Weak Snowpack Layers Using the Discrete Element Method}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{1915\bibrangedash 1932}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.5194/tc-9-1915-2015
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/VZ7EZF64/Gaume et al. - 2015 - Modeling of crack propagation in weak snowpack layers using the discrete element method.pdf
+      \endverb
+    \endentry
+    \entry{gaumeDynamicAnticrackPropagation2018}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e772559f9d1c403eec44521d61b399a4}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4747fee44f01c861cddd96b65fd98b7c}{%
+           family={Gast},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c89ea0873d3ee8a41824e2e3fcf458ea}{%
+           family={Teran},
+           familyi={T\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b00285ad021271e67874fa4fbd65472}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a64771aee5f9d82f63ef7bf9159c3f7}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{fullhash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{fullhashraw}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{bibnamehash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{authorbibnamehash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{authornamehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{authorfullhash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{authorfullhashraw}{dc9788698cae2c9b42ddbf83828e43a8}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Continuum numerical modeling of dynamic crack propagation has been a great challenge over the past decade. This is particularly the case for anticracks in porous materials, as reported in sedimentary rocks, deep earthquakes, landslides, and snow avalanches, as material inter-penetration further complicates the problem. Here, on the basis of a new elastoplasticity model for porous cohesive materials and a large strain hybrid Eulerian--Lagrangian numerical method, we accurately reproduced the onset and propagation dynamics of anticracks observed in snow fracture experiments. The key ingredient consists of a modified strain-softening plastic flow rule that captures the complexity of porous materials under mixed-mode loading accounting for the interplay between cohesion loss and volumetric collapse. Our unified model represents a significant step forward as it simulates solid-fluid phase transitions in geomaterials which is of paramount importance to mitigate and forecast gravitational hazards.}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{Dynamic Anticrack Propagation in Snow}
+      \field{urlday}{4}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{3047}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-018-05181-w
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/5HA7C8LY/Gaume et al. - 2018 - Dynamic anticrack propagation in snow.pdf
+      \endverb
+      \keyw{Applied mathematics,Mechanical engineering,Natural hazards}
+    \endentry
+    \entry{gaumeSnowFractureRelation2017a}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=201c20657efc8ba9ab901a29f000ef47}{%
+           family={Chambon},
+           familyi={C\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f6b397043b02adbd7b1e22348339ee21}{%
+           family={Wever},
+           familyi={W\bibinitperiod},
+           given={Nander},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
+      \strng{fullhash}{3507f8435e03c0574550cd83c824584b}
+      \strng{fullhashraw}{3507f8435e03c0574550cd83c824584b}
+      \strng{bibnamehash}{3507f8435e03c0574550cd83c824584b}
+      \strng{authorbibnamehash}{3507f8435e03c0574550cd83c824584b}
+      \strng{authornamehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
+      \strng{authorfullhash}{3507f8435e03c0574550cd83c824584b}
+      \strng{authorfullhashraw}{3507f8435e03c0574550cd83c824584b}
+      \field{extraname}{3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The failure of a weak snow layer buried below cohesive slab layers is a necessary, but insufficient, condition for the release of a dry-snow slab avalanche. The size of the crack in the weak layer must also exceed a critical length to propagate across a slope. In contrast to pioneering shear-based approaches, recent developments account for weak layer collapse and allow for better explaining typical observations of remote triggering from low-angle terrain. However, these new models predict a critical length for crack propagation that is almost independent of slope angle, a rather surprising and counterintuitive result. Based on discrete element simulations we propose a new analytical expression for the critical crack length. This new model reconciles past approaches by considering for the first time the complex interplay between slab elasticity and the mechanical behavior of the weak layer including its structural collapse. The crack begins to propagate when the stress induced by slab loading and deformation at the crack tip exceeds the limit given by the failure envelope of the weak layer. The model can reproduce crack propagation on low-angle terrain and the decrease in critical length with increasing slope angle as modeled in numerical experiments. The good agreement of our new model with extensive field data and the ease of implementation in the snow cover model SNOWPACK opens a promising prospect for improving avalanche forecasting.}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{Snow Fracture in Relation to Slab Avalanche Release}
+      \field{title}{Snow Fracture in Relation to Slab Avalanche Release: Critical State for the Onset of Crack Propagation}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{11}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{217\bibrangedash 228}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.5194/tc-11-217-2017
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/TJ6952VW/Gaume et al. - 2017 - Snow fracture in relation to slab avalanche release critical state for the onset of crack propagati.pdf
+      \endverb
+    \endentry
+    \entry{heierliAnticrackNucleationTriggering2008}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=46ae952760f3a1d78545ceb7cf954c64}{%
+           family={Heierli},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85e2a4ca6ebd2076b93ac4260f3e5a43}{%
+           family={Gumbsch},
+           familyi={G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f450477ded293f4e9bad6ed1b8793aa}{%
+           family={Zaiser},
+           familyi={Z\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{9b126ac5eb74154b5fbf45ace7c01dab}
+      \strng{fullhash}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{fullhashraw}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{bibnamehash}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{authorbibnamehash}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{authornamehash}{9b126ac5eb74154b5fbf45ace7c01dab}
+      \strng{authorfullhash}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{authorfullhashraw}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Snow slab avalanches are believed to begin by the gravity-driven shear failure of weak layers in stratified snow. The critical crack length for shear crack propagation along such layers should increase without bound as the slope decreases. However, recent experiments show that the critical length of artificially introduced cracks remains constant or, if anything, slightly decreases with decreasing slope. This surprising observation can be understood in terms of volumetric collapse of the weak layer during failure, resulting in the formation and propagation of mixed-mode anticracks, which are driven simultaneously by slope-parallel and slope-normal components of gravity. Such fractures may propagate even if crack-face friction impedes downhill sliding of the snowpack, indicating a scenario in which two separate conditions have to be met for slab avalanche release.}
+      \field{journaltitle}{Science}
+      \field{month}{7}
+      \field{number}{5886}
+      \field{title}{Anticrack {{Nucleation}} as {{Triggering Mechanism}} for {{Snow Slab Avalanches}}}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{321}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{240\bibrangedash 243}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1126/science.1153948
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/3B4R8NU5/Heierli et al. - 2008 - Anticrack Nucleation as Triggering Mechanism for Snow Slab Avalanches.pdf
+      \endverb
+    \endentry
+    \entry{heierliAnticracksNewTheory2003}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=fee106f2ba31f0bc04711e8a84258cc5}{%
+           family={Heierli},
+           familyi={H\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85e2a4ca6ebd2076b93ac4260f3e5a43}{%
+           family={Gumbsch},
+           familyi={G\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=42a9d3f2abfc30a0daf5677cf3a50caf}{%
+           family={Zaiser},
+           familyi={Z\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f965ee3127f3f32081614e4a1501dba0}
+      \strng{fullhash}{081f8a73a0d735feaa3683562a46986d}
+      \strng{fullhashraw}{081f8a73a0d735feaa3683562a46986d}
+      \strng{bibnamehash}{081f8a73a0d735feaa3683562a46986d}
+      \strng{authorbibnamehash}{081f8a73a0d735feaa3683562a46986d}
+      \strng{authornamehash}{f965ee3127f3f32081614e4a1501dba0}
+      \strng{authorfullhash}{081f8a73a0d735feaa3683562a46986d}
+      \strng{authorfullhashraw}{081f8a73a0d735feaa3683562a46986d}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Shear failure models have traditionally dominated the research on slab avalanche initiation in snow science, but evidence has accumulated that they tell us only part of the story. In these models weak snowpack layers are regarded as compounds of zero thickness, but in reality they often consist of ice grain aggregates of finite thickness and high porosity. When such granular aggregates fail, the remaining fragments can rearrange in a tighter packing and the weak layer undergoes a reduction in volume. This compaction has fundamental consequences for understanding slab avalanche release. We present a new theory of fracture initiation and propagation in weak layers, based on the mathematical concept of mixed-mode anticracks. Energy criteria for crack propagation and skier triggering are obtained from the theory. Initiation and propagation of anticrack-mediated fracture are illustrated on field measurements.}
+      \field{month}{5}
+      \field{shorttitle}{Anticracks}
+      \field{title}{Anticracks: A New Theory of Fracture Initiation and Fracture Propagation in Snow}
+      \field{year}{2003}
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/B389RKSQ/Heierli et al. - 2003 - Anticracks a new theory of fracture initiation and fracture propagation in snow.pdf
+      \endverb
+    \endentry
+    \entry{herwijnenSeismicSensorArray2011}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9189ed81f0f7ccaf2298a53ad2256767}{%
+           family={Herwijnen},
+           familyi={H\bibinitperiod},
+           given={Alec\bibnamedelima Van},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{fullhash}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{fullhashraw}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{bibnamehash}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{authorbibnamehash}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{authornamehash}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{authorfullhash}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{authorfullhashraw}{7db9c8dfe4cd21389b50c37347c6b486}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In snow, acoustic emissions originate from the breaking of bonds between snow crystals and the formation of cracks. Previous research has shown that acoustic signals emanate from a natural snowpack. The relation between these signals and the stability of the snowpack has thus far remained elusive. Studies on other hazardous gravitational processes suggest that damage accumulation precedes major failure. If increased cracking activity could be detected in snow this might be used for avalanche prediction. We report on the development of a seismic sensor array to continuously monitor acoustic emissions in an avalanche start zone. During three winters, over 1400 sensor days of continuous acoustic data were collected. With the aid of automatic cameras and a microphone the main types of background noise were identified. Seismic signals generated by avalanches were also identified. Spectrograms from seismic signals generated by avalanches exhibit a unique triangular shape unlike any source of background noise, suggesting that automatic detection and classification of events is possible. Furthermore, discriminating between loose-snow and snow-slab avalanches is possible. Thus far we have not identified precursor events for natural dry-snow slab avalanche release. Detailed investigation of one dry-snow slab avalanche showed that signals observed prior to the release originated from background noise or small loose-snow avalanches.}
+      \field{issn}{0022-1430, 1727-5652}
+      \field{journaltitle}{Journal of Glaciology}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{202}
+      \field{shorttitle}{Seismic Sensor Array for Monitoring an Avalanche Start Zone}
+      \field{title}{Seismic Sensor Array for Monitoring an Avalanche Start Zone: Design, Deployment and Preliminary Results}
+      \field{urlday}{22}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{57}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \field{pages}{267\bibrangedash 276}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.3189/002214311796405933
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/IUJL62KS/Herwijnen and Schweizer - 2011 - Seismic sensor array for monitoring an avalanche start zone design, deployment and preliminary resu.pdf
+      \endverb
+    \endentry
+    \entry{lambWavesElasticPlate1917}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dc8b03b5d95543ce6576bc309ca8c8d7}{%
+           family={Lamb},
+           familyi={L\bibinitperiod},
+           given={Horace},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{fullhash}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{fullhashraw}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{bibnamehash}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{authorbibnamehash}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{authornamehash}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{authorfullhash}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{authorfullhashraw}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The theory of waves in an infinitely long cylindrical rod was discussed by Pochhammer in 1876 in a well-known paper. The somewhat simpler problem of two-dimensional waves in a solid bounded by parallel planes was considered by Lord Rayleigh and by the present writer‡{} in 1889. The main object in these various investigations was to verify, or to ascertain small corrections to, the ordinary theory of the vibrations of thin rods or plates, and the wave-length was accordingly assumed in the end to be great in comparison with the thickness. It occurred to me some time ago that a further examination of the two-dimensional problem was desirable for more than one reason. In the first place, the number of cases in which the various types of vibration of a solid, none of whose dimensions is regarded as small, have been studied is so restricted that any addition to it would have some degree of interest, if merely as a contribution to elastic theory. Again, modern seismology has suggested various questions relating to waves and vibrations in an elastic stratum imagined as resting on matter of a different elasticity and density. These questions naturally present great mathematical difficulties, and it seemed unpromising to attempt any further discussion of them unless the comparatively simple problem which forms the subject of this paper should be found to admit of a practical solution. In itself it has, of course, no bearing on the questions referred to.}
+      \field{issn}{0950-1207}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character}
+      \field{month}{3}
+      \field{number}{648}
+      \field{title}{On Waves in an Elastic Plate}
+      \field{urlday}{18}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{93}
+      \field{year}{1917}
+      \field{urldateera}{ce}
+      \field{pages}{114\bibrangedash 128}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1098/rspa.1917.0008
+      \endverb
+    \endentry
+    \entry{madariagaDynamicsExpandingCircular1976}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8e64e910292884653f8dd76d1a7ad587}{%
+           family={Madariaga},
+           familyi={M\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{fullhash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{fullhashraw}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{bibnamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorbibnamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authornamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorfullhash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorfullhashraw}{8e64e910292884653f8dd76d1a7ad587}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study a plane circular model of a frictional fault using numerical methods. The model is dynamic since we specify the effective stress at the fault. In one model we assume that the fault appears instantaneously in the medium; in another, that the rupture nucleates at the center and that rupture proceeds at constant subsonic velocity until it suddenly stops. The total source slip is larger at the center and the rise time is also longer at the center of the fault. The dynamic slip overshoots the static slip by 15 to 35 per cent. As a consequence, the stress drop is larger than the effective stress and the apparent stress is less than one half the effective stress.The far-field radiation is discussed in detail. We distinguish three spectral regions. First, the usual constant low-frequency level. Second, an intermediate region controlled by the fault size and, finally, the high-frequency asymptote. The central region includes the corner frequency and is quite complicated. The corner frequency is shown to be inversely proportional to the width of the far-field displacement pulse which, in turn, is related to the time lag between the stopping phases. The average corner frequency of S waves v0s is related to the final source radius, a, by v0s = 0.21 {$\beta$}/{$\alpha$}. The corner frequency of P waves is larger than v0s by an average factor of 1.5.}
+      \field{issn}{0037-1106}
+      \field{journaltitle}{Bulletin of the Seismological Society of America}
+      \field{month}{6}
+      \field{number}{3}
+      \field{title}{Dynamics of an Expanding Circular Fault}
+      \field{urlday}{7}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{66}
+      \field{year}{1976}
+      \field{urldateera}{ce}
+      \field{pages}{639\bibrangedash 666}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1785/BSSA0660030639
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/6NJ82EQ3/BSSA0660030639.html
+      \endverb
+    \endentry
+    \entry{madariagaHighfrequencyRadiationCrack1977}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8e64e910292884653f8dd76d1a7ad587}{%
+           family={Madariaga},
+           familyi={M\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{fullhash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{fullhashraw}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{bibnamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorbibnamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authornamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorfullhash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorfullhashraw}{8e64e910292884653f8dd76d1a7ad587}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a theory for the radiation of high-frequency waves by earthquake faults. We model the fault as a planar region in which the stress drops to the kinematic friction during slip. This model is entirely equivalent to a shear crack. For two-dimensional fault models we show that the high frequencies originate from the stress and slip velocity concentrations in the vicinity of the fault's edges. These stress concentrations radiate when the crack expands with accelerated motion. The most efficient generation of high-frequency waves occurs when the rupture velocity changes abruptly. In this case, the displacement spectrum has an {$\omega-$}2 behaviour at high frequencies. The excitation is proportional to the intensity of the stress concentration near the crack tips and to the change in the focusing factor due to rupture velocity. We extend these two-dimensional results to more general three-dimensional fault models in the case when the rupture velocity changes simultaneously on the rupture front. Results are similar to those described for two-dimensional faults. We apply the theory to the case of a circular fault that grows at constant velocity and stops suddenly. The present theory is in excellent agreement with a numerical solution of the same problem.Our results provide upper bounds to the high-frequency radiation from more realistic models in which rupture velocity does not change suddenly. The {$\omega-$}2 is the minimum possible decay at high frequencies for any crack model of the source.}
+      \field{issn}{0956-540X}
+      \field{journaltitle}{Geophysical Journal International}
+      \field{month}{12}
+      \field{number}{3}
+      \field{title}{High-Frequency Radiation from Crack (Stress Drop) Models of Earthquake Faulting}
+      \field{urlday}{2}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{51}
+      \field{year}{1977}
+      \field{urldateera}{ce}
+      \field{pages}{625\bibrangedash 651}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1111/j.1365-246X.1977.tb04211.x
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/DIDSBK92/j.1365-246X.1977.tb04211.html
+      \endverb
+    \endentry
+    \entry{noeFrontiersFullwaveformSeismology2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=302ce2ee4daadccddd04e3b9253537c2}{%
+           family={Noe},
+           familyi={N\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ETH Zurich}%
+      }
+      \strng{namehash}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{fullhash}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{fullhashraw}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{bibnamehash}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{authorbibnamehash}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{authornamehash}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{authorfullhash}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{authorfullhashraw}{302ce2ee4daadccddd04e3b9253537c2}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In this thesis, I present a collection of full-waveform seismology studies with the goal to investigate subsurface structure and seismic sources. These studies rely on data from seismometers and novel fibre-optic sensing techniques. I introduce a new global tomographic model based on seismometer data using full-waveform inversion (FWI). The Collaborative Seismic Earth Model: Generation 2 (CSEM2) is a multi-scale model that combines 22 regional and global tomographic models into one coherent global framework, consistently incorporating prior knowledge. To mitigate artefacts at submodel boundaries and further image mantle structure using the refined surface models, we perform a global inversion for a minimum period of 50 s, using the assembled submodels as the starting point. We demonstrate that CSEM2 accurately captures wave propagation at the global scale for the inverted target period while retaining the capability to explain shorter periods within the submodels. Additionally, a side project in the context of supervising a Master student leads to the development of a new tomographic model for Europe and Western Asia, using CSEM2 as the starting model. The main topic of this thesis is the development of a theoretical framework for performing source and structural inversions using full waveforms measured with fibre-optic data. This effectively transfers knowledge from global-scale FWI to this new type of data. Fibre-optic sensing, particularly distributed acoustic sensing (DAS), has emerged over the past decade as a seismic interrogation method applicable in various environments, including offshore, boreholes, landslides, glaciers, volcanoes, and urban areas. Its appeal lies in its flexibility and relative ease of deployment. However, interpreting this data to infer seismic source properties and subsurface structure is complicated by variability in fibre orientation, gauge length effects, and the measurement unit of strain. All these challenges are addressed in the FWI method presented in this thesis. The method is demonstrated through inversion examples with artificial data that showcase the powerful imaging capabilities of DAS. The associated code is publicly available as the software package Pyber In several collaborative side projects, briefly outlined here, Pyber is already being applied to inversions on various DAS datasets to investigate volcanic sources, icequakes, hydraulic stimulations, and the structure of an active landslide. While FWI is an elegant method for maximising the used data to invert for structures, it suffers from the lack of a feasible and conclusive uncertainty quantification. Due to computational constraints, comprehensive exploration of the null space and model resolution is not feasible even for relatively small problems, and especially not for most relevant seismic inverse problems. This thesis presents a more efficient approach to quantify point-spread functions using source encoding. We demonstrate, using a 2-D ultrasound imaging example of a mouse, that this method is viable and can significantly reduce computation time for point-wise model resolution assessment. Within another project, we perform a hypothesis test on an unexpected, fast, and prominent anomaly found in the global tomographic model REVEAL in the mid-mantle beneath the western Pacific, a region that is hardly covered by seismic stations. This anomaly is not imaged in travel-time tomographies. The test shows that the full-waveform data is indeed sensitive to this region, which leads us to challenge the common assumption in plate tectonic reconstructions that all fast anomalies represent subducting plates. We argue for a more nuanced interpretation as increasingly high-resolution tomographic models of Earth's interior become available. While the presented methods do not solve the issues of uncertainty quantification in FWI, they represent a step towards overcoming this challenge. Moreover, this thesis presents a novel seismic measurement technique that uses active phase-noise cancellation (PNC) of the laser signal transmitted through the entire length of the fibre, a form of integrated fibre-optic sensing (IFOS). While the dense channel sampling along the fibre as seen in DAS is lost, because the entire fibre length is treated as a single channel, this technique significantly extends the maximum interrogation length from tens of kilometers to potentially over a thousand. In close collaboration with the Swiss Metrological Service, we present the successful numerical reconstruction of an M3.9 earthquake near Mulhouse, France, measured on a 123 km fibre-optic link between two laboratories in Basel and Bern with PNC. Additional contributions to side projects using the same PNC acquisition technique include source inversion, ambient noise analysis, and earthquake measurements in Switzerland and globally. We also explore the potential for source and structural inversions with full-waveforms on artificial IFOS data. This work lays the foundation for future FWI applications as more IFOS data sets become available.}
+      \field{eprinttype}{ETH Zurich}
+      \field{langid}{english}
+      \field{shorttitle}{Frontiers of Full-Waveform Seismology}
+      \field{title}{Frontiers of Full-Waveform Seismology: {{From}} Global Tomography to Distributed and Integrated Fibre-Optic Strain Sensing}
+      \field{urlday}{9}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.3929/ETHZ-C-000788455
+      \endverb
+      \keyw{Seismology; Fiber-optic sensing,Seismology; Full-waveform inversion,Seismology; Tomography}
+    \endentry
+    \entry{paitzPhenomenologyAvalancheRecordings2023}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=e76fe51e6921726e3e7565f8896c21e6}{%
+           family={Paitz},
+           familyi={P\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a12c61ce832831ec42a2f6651397d83f}{%
+           family={Lindner},
+           familyi={L\bibinitperiod},
+           given={Nadja},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4e81c1228428233e54ddc020d0be1c6}{%
+           family={Edme},
+           familyi={E\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a11f7e7414ce171ca2f2af1e10f8a089}{%
+           family={Huguenin},
+           familyi={H\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5f5b3325bcfdb0dbe7b53c825b8a477}{%
+           family={Hohl},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd04e407c3482dcc2927d4b9af1a9db3}{%
+           family={Sovilla},
+           familyi={S\bibinitperiod},
+           given={Betty},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e6cf76cc06312c89860a3a08ace0d5d}{%
+           family={Walter},
+           familyi={W\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c44b844ddb7f3e18c4217fbb70345cde}{%
+           family={Fichtner},
+           familyi={F\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f49d44eefd9994da744c46fbbb82ccf8}
+      \strng{fullhash}{dd397fd8a18351b3bc806680ace06b68}
+      \strng{fullhashraw}{dd397fd8a18351b3bc806680ace06b68}
+      \strng{bibnamehash}{dd397fd8a18351b3bc806680ace06b68}
+      \strng{authorbibnamehash}{dd397fd8a18351b3bc806680ace06b68}
+      \strng{authornamehash}{f49d44eefd9994da744c46fbbb82ccf8}
+      \strng{authorfullhash}{dd397fd8a18351b3bc806680ace06b68}
+      \strng{authorfullhashraw}{dd397fd8a18351b3bc806680ace06b68}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Avalanches and other hazardous mass movements pose a danger to the population and critical infrastructure in alpine areas. Hence, understanding and continuously monitoring mass movements are crucial to mitigate their risk. We propose to use Distributed Acoustic Sensing (DAS) to measure strain rate along a fiber-optic cable to characterize ground deformation induced by avalanches. We recorded 12 snow avalanches of various dimensions at the Vallée de la Sionne test site in Switzerland, utilizing existing fiber-optic infrastructure and a DAS interrogation unit during the winter 2020/2021. By training a Bayesian Gaussian Mixture Model, we automatically characterize and classify avalanche-induced ground deformations using physical properties extracted from the frequency-wavenumber and frequency-velocity domain of the DAS recordings. The resulting model can estimate the probability of avalanches in the DAS data and is able to differentiate between the avalanche-generated seismic near-field, the seismo-acoustic far-field, and the mass movement propagating on top of the fiber. By analyzing the mass-movement propagation signals, we are able to identify group velocity packages within an avalanche that propagate faster than the phase velocity of the avalanche front, indicating complex internal structures. Importantly, we show that the seismo-acoustic far-field can be detected before the avalanche reaches the fiber-optic array, highlighting DAS as a potential research and early warning tool for hazardous mass movements.}
+      \field{issn}{2169-9011}
+      \field{journaltitle}{Journal of Geophysical Research: Earth Surface}
+      \field{langid}{english}
+      \field{number}{5}
+      \field{title}{Phenomenology of {{Avalanche Recordings From Distributed Acoustic Sensing}}}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{128}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{e2022JF007011}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1029/2022JF007011
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/KFWMMURI/Paitz et al. - 2023 - Phenomenology of Avalanche Recordings From Distributed Acoustic Sensing.pdf;/Users/salomebachmann/Zotero/storage/43M342AD/2022JF007011.html
+      \endverb
+      \keyw{avalanche dynamics,distributed acoustic sensing,geophysics,mass movement monitoring,natural hazard,seismology}
+    \endentry
+    \entry{schweizerSnowAvalancheFormation2003}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9a9967b7ac510599b3b7e84783e1c9c}{%
+           family={Bruce\bibnamedelima Jamieson},
+           familyi={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b242bf8d55c8ff25f1119d0e9236afa7}{%
+           family={Schneebeli},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{680a41c51cd767a645ed8e34b827c0f9}
+      \strng{fullhash}{aef64efe30bb86f3408d055491a92295}
+      \strng{fullhashraw}{aef64efe30bb86f3408d055491a92295}
+      \strng{bibnamehash}{aef64efe30bb86f3408d055491a92295}
+      \strng{authorbibnamehash}{aef64efe30bb86f3408d055491a92295}
+      \strng{authornamehash}{680a41c51cd767a645ed8e34b827c0f9}
+      \strng{authorfullhash}{aef64efe30bb86f3408d055491a92295}
+      \strng{authorfullhashraw}{aef64efe30bb86f3408d055491a92295}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Snow avalanches are a major natural hazard, endangering human life and infrastructure in mountainous areas throughout the world. In many countries with seasonally snow-covered mountains, avalanche-forecasting services reliably warn the public by issuing occurrence probabilities for a certain region. However, at present, a single avalanche event cannot be predicted in time and space. Much about the release process remains unknown, mainly because of the highly variable, layered character of the snowpack, a highly porous material that exists close to its melting point. The complex interaction between terrain, snowpack, and meteorological conditions leading to avalanche release is commonly described as avalanche formation. It is relevant to hazard mapping and essential to short-term forecasting, which involves weighting many contributory factors. Alternatively, the release process can be studied and modeled. This approach relies heavily on snow mechanics and snow properties, including texture. While the effect of meteorological conditions or changes on the deformational behavior of snow is known in qualitative or semiquantitative manner, the knowledge of the quantitative relation between snow texture and mechanical properties is limited, but promising developments are under way. Fracture mechanical models have been applied to explain the fracture propagation, and micromechanical models including the two competing processes (damage and sintering) have been applied to explain snow failure. There are knowledge gaps between the sequence of processes that lead to the release of the snow slab: snow deformation and failure, damage accumulation, fracture initiation, and fracture propagation. Simultaneously, the spatial variability that affects damage, fracture initiation, and fracture propagation has to be considered. This review focuses on dry snow slab avalanches and shows that dealing with a highly porous media close to its melting point and processes covering several orders of scale, from the size of a bond between snow grains to the size of a mountain slope, will continue to be very challenging.}
+      \field{issn}{1944-9208}
+      \field{journaltitle}{Reviews of Geophysics}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{title}{Snow Avalanche Formation}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{41}
+      \field{year}{2003}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1029/2002RG000123
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/GSH4GMQG/Schweizer et al. - 2003 - Snow avalanche formation.pdf;/Users/salomebachmann/Zotero/storage/DLB2TUC2/2002RG000123.html
+      \endverb
+      \keyw{avalanche,snow}
+    \endentry
+    \entry{LongtermStatistics}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=47733eda0c9e7e59fc426abb1be5c05c}{%
+           family={SLF},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{fullhash}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{fullhashraw}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{bibnamehash}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{authorbibnamehash}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{authornamehash}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{authorfullhash}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{authorfullhashraw}{47733eda0c9e7e59fc426abb1be5c05c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The SLF has been collecting comprehensive data on all the avalanche accidents that have occurred in Switzerland since the winter of 1936/37}
+      \field{howpublished}{https://www.slf.ch/en/avalanches/avalanches-and-avalanche-accidents/long-term-statistics/}
+      \field{journaltitle}{Institute for Snow and Avalanche Research SLF}
+      \field{langid}{american}
+      \field{title}{Avalanche {{Victims}} since 1936 - {{Long Term Statistics}}}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/KYCGAATA/long-term-statistics.html
+      \endverb
+    \endentry
+    \entry{trottetTransitionSubRayleighAnticrack2022}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=aa439e1bfa733cc2891c7dbf28770c78}{%
+           family={Trottet},
+           familyi={T\bibinitperiod},
+           given={Bertil},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1d29dff480ef7400a4ae4e5211f99c2}{%
+           family={Simenhois},
+           familyi={S\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95db8610b06a0495ae9e84659c58aa7c}{%
+           family={Bobillier},
+           familyi={B\bibinitperiod},
+           given={Gregoire},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45cd7f65b6ceeddfce73beb6b18c5124}{%
+           family={Bergfeld},
+           familyi={B\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e23acb91338712715b1e858a29723c6b}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Chenfanfu},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{ac72662e061ea6b3c4b65a63f462df4c}
+      \strng{fullhash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{fullhashraw}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{bibnamehash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{authorbibnamehash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{authornamehash}{ac72662e061ea6b3c4b65a63f462df4c}
+      \strng{authorfullhash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{authorfullhashraw}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Snow slab avalanches, characterized by a distinct, broad fracture line, are released following anticrack propagation in highly porous weak snow layers buried below cohesive slabs. The anticrack mechanism is driven by the volumetric collapse of the weak layer, which leads to the closure of crack faces and to the onset of frictional contact. Here, on the basis of snow fracture experiments, full-scale avalanche measurements and numerical simulations, we report the existence of a transition from sub-Rayleigh anticrack to supershear crack propagation. This transition follows the Burridge--Andrews mechanism, in which a supershear daughter crack nucleates ahead of the main fracture front and eventually propagates faster than the shear wave speed. Furthermore, we show that the supershear propagation regime can exist even if the shear-to-normal stress ratio is lower than the static friction coefficient as a result of the loss of frictional resistance during collapse. This finding shows that snow slab avalanches have fundamental similarities with strike-slip earthquakes.}
+      \field{issn}{1745-2481}
+      \field{journaltitle}{Nature Physics}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Transition from Sub-{{Rayleigh}} Anticrack to Supershear Crack Propagation in Snow Avalanches}
+      \field{urlday}{4}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{18}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{1094\bibrangedash 1098}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/s41567-022-01662-4
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/2PW34P2Q/Trottet et al. - 2022 - Transition from sub-Rayleigh anticrack to supershear crack propagation in snow avalanches.pdf
+      \endverb
+      \keyw{Applied physics,Computational science,Soft materials}
+    \endentry
+    \entry{turquetAutomatedSnowAvalanche2024}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=9fc4d397065c9e8086e75063e0600d6a}{%
+           family={Turquet},
+           familyi={T\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=354f94e90b61ed6bee9701fef3774ee8}{%
+           family={Wuestefeld},
+           familyi={W\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39e126a31f2968a08d2c152862772068}{%
+           family={Svendsen},
+           familyi={S\bibinitperiod},
+           given={Guro\bibnamedelima K.},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27f546561a9ccfb22610f672c20be878}{%
+           family={Nyhammer},
+           familyi={N\bibinitperiod},
+           given={Finn\bibnamedelima K{å}re},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97a5fcbe1f7e40632c377707c189d6b4}{%
+           family={Nilsen},
+           familyi={N\bibinitperiod},
+           given={Espen\bibnamedelima Lauvlund},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9b7f7fa0506a1ce217ebf3f0eac26f1}{%
+           family={Persson},
+           familyi={P\bibinitperiod},
+           given={Andreas\bibnamedelima Per-Ola},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinithyphendelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1f1a22b98cd345c7d6bcf76dd83ba03}{%
+           family={Refsum},
+           familyi={R\bibinitperiod},
+           given={Vetle},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{e6265223daef230f488788997000b4d3}
+      \strng{fullhash}{857a517c30f76b3bd86254f7ae9dd968}
+      \strng{fullhashraw}{857a517c30f76b3bd86254f7ae9dd968}
+      \strng{bibnamehash}{857a517c30f76b3bd86254f7ae9dd968}
+      \strng{authorbibnamehash}{857a517c30f76b3bd86254f7ae9dd968}
+      \strng{authornamehash}{e6265223daef230f488788997000b4d3}
+      \strng{authorfullhash}{857a517c30f76b3bd86254f7ae9dd968}
+      \strng{authorfullhashraw}{857a517c30f76b3bd86254f7ae9dd968}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Avalanches present substantial hazard risk in mountainous regions, particularly when avalanches obstruct roads, either hitting vehicles directly or leaving traffic exposed to subsequent avalanches during cycles. Traditional detection methods often are designed to cover only a limited section of a road stretch, hampering effective risk management. This research introduces a novel approach using Distributed Acoustic Sensing (DAS) for avalanche detection. The monitoring site in Northern Norway is known to be frequently impacted by avalanches. Between 2022--2024, we continuously monitored the road for avalanches blocking the traffic. The automated alert system identifies avalanches affecting the road and estimates accumulated snow. The system provides continuous, real-time monitoring with competitive sensitivity and accuracy over large areas (up to 170 km) and for multiple sites on parallel. DAS powered alert system can work unaffected by visual barriers or adverse weather conditions. The system successfully identified 10 road-impacting avalanches (100\% detection rate). Our results via DAS align with the previous works and indicate that low frequency part of the signal ({$<$}20 Hz) is crucial for detection and size estimation of avalanche events. Alternative fiber installation methods are evaluated for optimal sensitivity to avalanches. Consequently, this study demonstrates its durability and lower maintenance requirements, especially when compared to the high setup costs and coverage limitations of radar systems, or the weather and lighting vulnerabilities of cameras. Furthermore the system can detect vehicles on the road as important supplemental information for search and rescue operations, and thus the authorities can be alerted, thereby playing a vital role in urgent rescue efforts.}
+      \field{issn}{2624-795X}
+      \field{journaltitle}{GeoHazards}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Automated {{Snow Avalanche Monitoring}} and {{Alert System Using Distributed Acoustic Sensing}} in {{Norway}}}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{5}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{1326\bibrangedash 1345}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.3390/geohazards5040063
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/Q796XH32/Turquet et al. - 2024 - Automated Snow Avalanche Monitoring and Alert System Using Distributed Acoustic Sensing in Norway.pdf
+      \endverb
+      \keyw{automated avalanche detection,distributed acoustic sensing,hazardous mass movements,natural hazards,Norway,signal processing,snow avalanche dynamics}
+    \endentry
+    \entry{roseWavesPlates2014}{inbook}{}{}
+      \name{editor}{1}{}{%
+        {{hash=a7be79920f643b7e2d10bf4a1bd3758c}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={Joseph\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{editorbibnamehash}{a7be79920f643b7e2d10bf4a1bd3758c}
+      \strng{editornamehash}{a7be79920f643b7e2d10bf4a1bd3758c}
+      \strng{editorfullhash}{a7be79920f643b7e2d10bf4a1bd3758c}
+      \strng{editorfullhashraw}{a7be79920f643b7e2d10bf4a1bd3758c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{abstract}{IntroductionThis chapter presents the governing equations of elastodynamics for waves in plates, along with a series of sample problems and practical discussions. The method of displacement potentials is used to obtain a solution for the case of propagation in a free plate (see e.g., Achenbach 1984 for more detail). Also, we give a brief outline of the method of partial waves (see Auld 1990).The classical problem of Lamb wave propagation is associated with wave motion in a traction-free homogeneous and isotropic plate. The procedures we use to develop the governing equations and dispersion curve results of phase velocity versus frequency are similar to those used in a countless number of guided wave problems that incorporate bars, tubes, multiple layers, and anisotropic media. In this chapter we shall therefore detail the basic concepts of guided wave analysis. Interpretation procedures and mathematical analysis of phase and group velocity dispersion curves and wave structure can then be extended to a variety of different guided wave problems. An alternative technique of developing dispersion curves is presented Chapter 9.We will now briefly re-visit the fundamental differences between guided waves and bulk waves. Bulk waves travel in the bulk of the material -- hence, away from the boundaries. However, often there is interaction with boundaries by way of reflection and refraction, and mode conversion occurs between longitudinal and shear waves. Although bulk and guided waves are fundamentally different, they are actually governed by the same set of partial differential wave equations. Mathematically, the principal difference is that, for bulk waves, there are no boundary conditions that need to be satisfied by the proposed solution. In contrast, the solution to a guided wave problem must satisfy the governing equations as well as some physical boundary conditions.}
+      \field{booktitle}{Ultrasonic {{Guided Waves}} in {{Solid Media}}}
+      \field{isbn}{978-1-107-04895-9}
+      \field{title}{Waves in {{Plates}}}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \field{pages}{76\bibrangedash 106}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1017/CBO9781107273610.008
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/7MCTF844/EBFAA4EC2C5973D0672A70525E31B16E.html
+      \endverb
+    \endentry
+    \entry{zhuNoteDynamicStatic2002}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b481cb2962c811f1db6f03e5026b2122}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Lupei},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30df23feea612cb1dd50ddd0f0b0b48d}{%
+           family={Rivera},
+           familyi={R\bibinitperiod},
+           given={Luis\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{fullhash}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{fullhashraw}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{bibnamehash}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{authorbibnamehash}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{authornamehash}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{authorfullhash}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{authorfullhashraw}{aebd55816e5d95a7bcd5a136005d7082}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A simple and unified approach is presented to solve both the elasto-dynamic and elasto-static problems of point sources in a multi-layered half-space by using the Thompson-Haskell propagator matrix technique. It is shown that the apparent incompatibility between the two is associated with the degeneracy of the dynamic problem when {$\omega$} = 0 and both can be handled uniformly using the Jordan canonical forms of matrices. We re-derive the propagator matrices for both the dynamic and static cases. We then show that the dynamic propagator matrix and the solution converge to their static counterparts as {$\omega$} {$\rightarrow$} 0. Satisfactory static deformation can be obtained numerically using the dynamic solution at near-zero frequency.}
+      \field{issn}{0956-540X}
+      \field{journaltitle}{Geophysical Journal International}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{A Note on the Dynamic and Static Displacements from a Point Source in Multilayered Media}
+      \field{urlday}{27}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{148}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \field{pages}{619\bibrangedash 627}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1046/j.1365-246X.2002.01610.x
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{achenbachWavePropagationElastic2012}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=36ddce67fbeaa6e35b99c8f3bb54641a}{%
+           family={Achenbach},
+           familyi={A\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{fullhash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{fullhashraw}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{bibnamehash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{authorbibnamehash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{authornamehash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{authorfullhash}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \strng{authorfullhashraw}{36ddce67fbeaa6e35b99c8f3bb54641a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The propagation of mechanical disturbances in solids is of interest in many branches of the physical scienses and engineering. This book aims to present an account of the theory of wave propagation in elastic solids. The material is arranged to present an exposition of the basic concepts of mechanical wave propagation within a one-dimensional setting and a discussion of formal aspects of elastodynamic theory in three dimensions, followed by chapters expounding on typical wave propagation phenomena, such as radiation, reflection, refraction, propagation in waveguides, and diffraction. The treatment necessarily involves considerable mathematical analysis. The pertinent mathematical techniques are, however, discussed at some length.}
+      \field{isbn}{978-0-08-093471-6}
+      \field{langid}{english}
+      \field{title}{Wave {{Propagation}} in {{Elastic Solids}}}
+      \field{year}{1973}
+      \keyw{Science / Mechanics / Fluids,Science / Mechanics / General,Science / Mechanics / Solids,Science / Physics / Condensed Matter}
+    \endentry
+    \entry{kAkiRichards19801981}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bd8de6cffe0dbd778578bbbe0924d3f3}{%
+           family={Aki},
+           familyi={A\bibinitperiod},
+           given={Keiiti},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=599918319bad7a13fafdfcf37a556485}{%
+           family={Richards},
+           familyi={R\bibinitperiod},
+           given={Paul\bibnamedelima G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {San Francisco}%
+      }
+      \list{publisher}{1}{%
+        {Freeman}%
+      }
+      \strng{namehash}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{fullhash}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{fullhashraw}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{bibnamehash}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{authorbibnamehash}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{authornamehash}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{authorfullhash}{3e13bc9a27ceaae077a520336b0cfa38}
+      \strng{authorfullhashraw}{3e13bc9a27ceaae077a520336b0cfa38}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{//static.cambridge.org/content/id/urn\%3Acambridge.org\%3Aid\%3Aarticle\%3AS0016756800034439/resource/name/firstPage-S0016756800034439a.jpg}
+      \field{issn}{0016-7568, 1469-5081}
+      \field{journaltitle}{Geological Magazine}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{2}
+      \field{shorttitle}{K. {{Aki}} \& {{P}}. {{G}}. {{Richards}} 1980. {{Quantitative Seismology}}, {{Theory}} and {{Methods}}. {{Volume I}}}
+      \field{title}{K. {{Aki}} \& {{P}}. {{G}}. {{Richards}} 1980. {{Quantitative Seismology}}, {{Theory}} and {{Methods}}. {{Volume I}}: 557 Pp., 169 Illustrations. {{Volume II}}: 373 Pp., 116 Illustrations. {{San Francisco}}: {{Freeman}}. {{Price}}: {{Volume I}}, {{U}}.{{S}}. 35.00. {{ISBN}} 0 7167 1058 7 ({{Vol}}. {{I}}), 0 7167 1059 5 ({{Vol}}. {{II}}).}
+      \field{urlday}{22}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{118}
+      \field{year}{1981}
+      \field{urldateera}{ce}
+      \field{pages}{208\bibrangedash 208}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1017/S0016756800034439
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/5YW7ER6Y/Aki and Richards - 1981 - K. Aki & P. G. Richards 1980. Quantitative Seismology, Theory and Methods. Volume I 557 pp., 169 il.pdf
+      \endverb
+    \endentry
+    \entry{archambeauGeneralTheoryElastodynamic1968}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=14835bffa52c8a6abde78e21ab2702e0}{%
+           family={Archambeau},
+           familyi={A\bibinitperiod},
+           given={Charles\bibnamedelima B.},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{fullhash}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{fullhashraw}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{bibnamehash}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{authorbibnamehash}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{authornamehash}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{authorfullhash}{14835bffa52c8a6abde78e21ab2702e0}
+      \strng{authorfullhashraw}{14835bffa52c8a6abde78e21ab2702e0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The most important and interesting source of elastic radiation in geophysics is an earthquake, or tectonic source, because the radiation field from such an energy source provides information on the largely unknown stress field within the earth. The actual mechanisms or processes of material failure undoubtedly can be described parametrically by the radiation field in terms of rupture velocity, rupture geometry, and the initial and residual stress within the region of failure. Accurate estimates of stress and the parameters of failure are therefore of particular significance in any description of the physical state of the material and would not be unrelated to the larger-scale dynamical processes taking place within the earth. A number of methods and theories are presently used in estimating some of these parameters. The present study is intended to extend the dynamical theory of tectonic sources in order to provide a more complete description of earthquakes in terms of these basic parameters of rupture, including prestress. No assumptions are made concerning the nature of equivalent forces at the source or of their time dependence. The theory predicts the spatial and temporal form of the radiation field in terms of the initial prestress field and the basic rupture parameters. These predictions follow from the recognition that an earthquake is a relaxation source and that such a phenomenon is described analytically as an initial-value problem. Consequently, such a source satisfies the conservation of energy and linear and angular momentum conditions required for a spontaneous source. The radiation field is produced by the continuous reduction of stored potential strain energy in the elastic medium surrounding a growing rupture zone, where it is assumed that the rupture, or at least a part of the total rupture zone, has a well-defined boundary at a given time to which boundary conditions are applicable. The compatibility of this geometrically sharp, time-varying boundary condition with probable failure processes in the earth is examined and judged to be good. Analytical expressions for the radiation field from an arbitrary source of elastic radiation are given, and within the framework of this formulation the properties of a spontaneous tectonic source are contrasted with `applied force' sources and their special properties, as well as with some of the field observations of earthquake radiation fields. These considerations demonstrate the need for a more general and complete description of tectonic sources in order to explain all the observations and, more fundamentally, to deduce more precisely the nature of the physical processes of failure in the earth. It is concluded that a relaxation theory will provide the flexibility required to describe the characteristics of the observed radiation field and will also provide estimates of rupture parameters bearing on the processes of failure and the state of the material. A complete development of the dynamical relaxation theory for tectonic sources, including considerations of the total energy release and the final equilibrium field, constitutes the main result of this study, providing explicit expressions for the dynamic and static displacement and energy fields. It is shown that the radiation field will generally have a frequency-dependent shape, dependent to first order on the ratio of rupture length to radiation wavelength. A relatively simple example is considered, and the radiation pattern and displacement and energy spectra computed. The radiation pattern is contrasted with the pattern from a more complicated rupture geometry and serves to demonstrate the pattern-shape dependence on frequency, rupture geometry, and prestress. The energy and displacement spectra are also found to have maxima and minima, the number being dependent on the rupture geometry and their location and spacing being dependent on rupture length and velocity.}
+      \field{issn}{1944-9208}
+      \field{journaltitle}{Reviews of Geophysics}
+      \field{langid}{english}
+      \field{number}{3}
+      \field{title}{General Theory of Elastodynamic Source Fields}
+      \field{urlday}{27}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{6}
+      \field{year}{1968}
+      \field{urldateera}{ce}
+      \field{pages}{241\bibrangedash 288}
+      \range{pages}{48}
+      \verb{doi}
+      \verb 10.1029/RG006i003p00241
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/5QJGBMB2/RG006i003p00241.html
+      \endverb
+    \endentry
+    \entry{bergfeldSignaturesSubRayleighSupershear2025}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=45cd7f65b6ceeddfce73beb6b18c5124}{%
+           family={Bergfeld},
+           familyi={B\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95db8610b06a0495ae9e84659c58aa7c}{%
+           family={Bobillier},
+           familyi={B\bibinitperiod},
+           given={Gregoire},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb12dc1e1c97999c5929bac9b9010b0c}{%
+           family={Pellet},
+           familyi={P\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{4d7ce8f2fe2e6b3ae1c0c2909eaf6327}
+      \strng{fullhash}{3debf7c7cc92114a62ffd92be341a816}
+      \strng{fullhashraw}{3debf7c7cc92114a62ffd92be341a816}
+      \strng{bibnamehash}{3debf7c7cc92114a62ffd92be341a816}
+      \strng{authorbibnamehash}{3debf7c7cc92114a62ffd92be341a816}
+      \strng{authornamehash}{4d7ce8f2fe2e6b3ae1c0c2909eaf6327}
+      \strng{authorfullhash}{3debf7c7cc92114a62ffd92be341a816}
+      \strng{authorfullhashraw}{3debf7c7cc92114a62ffd92be341a816}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Snow slab avalanches occur when a crack propagates within a highly porous weak snow layer buried beneath a cohesive snow slab. Here, we report direct observations of a supershear event in snow fracture experiments following the spontaneous transition from sub-Rayleigh to intersonic crack propagation. The experiments involve artificially triggered avalanches on a small slope with a natural snowpack, captured with high-speed cameras and analyzed using digital image correlation. Deformation fields reveal distinct signatures: slope-normal collapse of the weak layer and slab flexure drive sub-Rayleigh propagation, while supershear fracture is related to slope-parallel deformation and slab tension. These results are further reinforced by numerical simulations that replicate the experiment and provide strong supporting evidence that the Burridge-Andrews mechanism governs the transition to supershear propagation. Analogous to supershear strike-slip earthquakes linked with substantial magnitudes, our findings suggest that supershear avalanches relate to widespread crack propagation and large avalanche dimensions, holding significant implications for risk mitigation strategies.}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{Signatures of the Sub-{{Rayleigh}} to Supershear Fracture Transition in Snow Avalanche Experiments}
+      \field{urlday}{11}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{16}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \field{pages}{11153}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-025-65825-6
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/3FDCMAJ5/Bergfeld et al. - 2025 - Signatures of the sub-Rayleigh to supershear fracture transition in snow avalanche experiments.pdf
+      \endverb
+      \keyw{Geophysics,Natural hazards}
+    \endentry
+    \entry{cartaLambWavesDiscrete2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=96781c6e1f35707169b94b3fee7119ae}{%
+           family={Carta},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6a929c4d61f82039801859f2d1b3089}{%
+           family={Nieves},
+           familyi={N\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44e5d759bdb3babea9a9552911e360a3}{%
+           family={Brun},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{03577a3c3de2c9ba7f21b29d425593b7}
+      \strng{fullhash}{153a14b672e51b908f38ae2bcc417e32}
+      \strng{fullhashraw}{153a14b672e51b908f38ae2bcc417e32}
+      \strng{bibnamehash}{153a14b672e51b908f38ae2bcc417e32}
+      \strng{authorbibnamehash}{153a14b672e51b908f38ae2bcc417e32}
+      \strng{authornamehash}{03577a3c3de2c9ba7f21b29d425593b7}
+      \strng{authorfullhash}{153a14b672e51b908f38ae2bcc417e32}
+      \strng{authorfullhashraw}{153a14b672e51b908f38ae2bcc417e32}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In this paper, we study Lamb waves propagating in a discrete strip, whose microstructure is represented by either a monatomic or a diatomic triangular lattice. In considering the in-plane vector problem, we derive an analytical solution for the dispersion relation of Lamb waves. Additionally, we investigate the main features of the eigenmodes of the system, which describe how the lattice strip vibrates at different frequencies. Further, we discuss how the dispersion properties depend on the number of the lattice's rows and on the chosen boundary conditions. For heterogeneous systems, we focus the attention on the internal stop-band and on the flat bands appearing in the dispersion diagram. Different asymptotic models are employed to approximate the low-frequency behaviour of the lattice strip, starting from the classical Euler--Bernoulli beam. The effective behaviour of a lattice strip with dense microstructure is also investigated, and we present a comparative numerical analysis with the analogous continuum for which the classical Lamb wave problem is posed. The theory developed is exploited here to design a structured medium capable of manipulating wavemodes, and, through conversion and selection, generating uni-directional wave phenomena. We envisage that the present work can fill a gap in the research field related to the analytical study of dispersive waves in microstructured media, whose dynamic performance is influenced by the presence of multiple external boundaries.}
+      \field{issn}{0997-7538}
+      \field{journaltitle}{European Journal of Mechanics - A/Solids}
+      \field{month}{7}
+      \field{shorttitle}{Lamb Waves in Discrete Homogeneous and Heterogeneous Systems}
+      \field{title}{Lamb Waves in Discrete Homogeneous and Heterogeneous Systems: {{Dispersion}} Properties, Asymptotics and Non-Symmetric Wave Propagation}
+      \field{urlday}{17}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{100}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{104695}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.euromechsol.2022.104695
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/2DFQK5FY/S0997753822001516.html
+      \endverb
+      \keyw{Diatomic lattice,Dispersion,Lamb waves,Microstructured medium,Mode conversion,Waveguide}
+    \endentry
+    \entry{edmeFiberopticDetectionSnow2023}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=d4e81c1228428233e54ddc020d0be1c6}{%
+           family={Edme},
+           familyi={E\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e76fe51e6921726e3e7565f8896c21e6}{%
+           family={Paitz},
+           familyi={P\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e6cf76cc06312c89860a3a08ace0d5d}{%
+           family={Walter},
+           familyi={W\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c1d6daa75097992335f22b5ac216eba4}{%
+           family={Herwijnen},
+           familyi={H\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c44b844ddb7f3e18c4217fbb70345cde}{%
+           family={Fichtner},
+           familyi={F\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{dc52d8a0f97d1ea053c8cb320a3036d7}
+      \strng{fullhash}{1cb6a4c99df38abc03846043d83dedb1}
+      \strng{fullhashraw}{1cb6a4c99df38abc03846043d83dedb1}
+      \strng{bibnamehash}{1cb6a4c99df38abc03846043d83dedb1}
+      \strng{authorbibnamehash}{1cb6a4c99df38abc03846043d83dedb1}
+      \strng{authornamehash}{dc52d8a0f97d1ea053c8cb320a3036d7}
+      \strng{authorfullhash}{1cb6a4c99df38abc03846043d83dedb1}
+      \strng{authorfullhashraw}{1cb6a4c99df38abc03846043d83dedb1}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We demonstrate the detectability of snow avalanches using Distributed Acoustic Sensing (DAS) with existing fiber-optic telecommunication cables. For this, during winter 2021/2022, we interrogated a 10 km long cable closely following the avalanche prone Fluelapass road in the Swiss Alps. In addition to other signals like traffic and earthquakes, the DAS data contain clear recordings of numerous snow avalanches, even though most of them do not reach the cable. Here we present two examples of snow avalanche recordings that could be verified photographically. Our results open new perspectives for cost-effective, near-real-time avalanche monitoring over long distances using pre-installed fiber-optic infrastructure.}
+      \field{eprintclass}{physics}
+      \field{eprinttype}{arXiv}
+      \field{month}{2}
+      \field{number}{arXiv:2302.12649}
+      \field{title}{Fiber-Optic Detection of Snow Avalanches Using Telecommunication Infrastructure}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2302.12649
+      \endverb
+      \verb{eprint}
+      \verb 2302.12649
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/24SYMTUA/Edme et al. - 2023 - Fiber-optic detection of snow avalanches using telecommunication infrastructure.pdf;/Users/salomebachmann/Zotero/storage/9Z8DDA3Y/2302.html
+      \endverb
+      \keyw{Physics - Geophysics}
+    \endentry
+    \entry{freundDynamicFractureMechanics1998}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c246f840d0866c70501e884e906fd009}{%
+           family={Freund},
+           familyi={F\bibinitperiod},
+           given={L.\bibnamedelimi B.},
+           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8209a6be3f4820fabeda4fcf01a903f9}{%
+           family={Freud},
+           familyi={F\bibinitperiod},
+           given={L.\bibnamedelimi B.},
+           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{fullhash}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{fullhashraw}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{bibnamehash}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{authorbibnamehash}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{authornamehash}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{authorfullhash}{3f4b9581e2338d60f3e724dae58be0ab}
+      \strng{authorfullhashraw}{3f4b9581e2338d60f3e724dae58be0ab}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This volume emphasizes fundamental concepts, both on the development of mathematical models of fracture phenomena and on the analysis of these models. Cases involving stress waves impinging on cracks, tractions suddenly applied to the faces of cracks, and rapid crack growth and arrest are considered in detail. Most of the work is concerned with the behavior of nominally elastic materials, but available results on elastic-plastic and elastic-viscoplastic materials are included. Connections to experimental results and to applications in structural mechanics, seismology, and materials science are noted whenever possible.}
+      \field{isbn}{978-0-521-62922-5}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{title}{Dynamic {{Fracture Mechanics}}}
+      \field{year}{1998}
+      \keyw{Mathematics / Applied,Science / Mechanics / Fluids,Technology & Engineering / Fracture Mechanics,Technology & Engineering / Mechanical}
+    \endentry
+    \entry{gaumeDynamicAnticrackPropagation2018}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e772559f9d1c403eec44521d61b399a4}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4747fee44f01c861cddd96b65fd98b7c}{%
+           family={Gast},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c89ea0873d3ee8a41824e2e3fcf458ea}{%
+           family={Teran},
+           familyi={T\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b00285ad021271e67874fa4fbd65472}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a64771aee5f9d82f63ef7bf9159c3f7}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{fullhash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{fullhashraw}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{bibnamehash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{authorbibnamehash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{authornamehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{authorfullhash}{dc9788698cae2c9b42ddbf83828e43a8}
+      \strng{authorfullhashraw}{dc9788698cae2c9b42ddbf83828e43a8}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Continuum numerical modeling of dynamic crack propagation has been a great challenge over the past decade. This is particularly the case for anticracks in porous materials, as reported in sedimentary rocks, deep earthquakes, landslides, and snow avalanches, as material inter-penetration further complicates the problem. Here, on the basis of a new elastoplasticity model for porous cohesive materials and a large strain hybrid Eulerian--Lagrangian numerical method, we accurately reproduced the onset and propagation dynamics of anticracks observed in snow fracture experiments. The key ingredient consists of a modified strain-softening plastic flow rule that captures the complexity of porous materials under mixed-mode loading accounting for the interplay between cohesion loss and volumetric collapse. Our unified model represents a significant step forward as it simulates solid-fluid phase transitions in geomaterials which is of paramount importance to mitigate and forecast gravitational hazards.}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{Dynamic Anticrack Propagation in Snow}
+      \field{urlday}{4}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{3047}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-018-05181-w
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/5HA7C8LY/Gaume et al. - 2018 - Dynamic anticrack propagation in snow.pdf
+      \endverb
+      \keyw{Applied mathematics,Mechanical engineering,Natural hazards}
+    \endentry
+    \entry{gaumeModelingCrackPropagation2015}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e772559f9d1c403eec44521d61b399a4}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b00285ad021271e67874fa4fbd65472}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0175c41468776197652bd30b5bc3728c}{%
+           family={Chambon},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea15836e9b957b6592c223abea3a1d4d}{%
+           family={Birkeland},
+           familyi={B\bibinitperiod},
+           given={K.\bibnamedelimi W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7de90264c9b21df59df1140db9f75bb6}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{fullhash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{fullhashraw}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{bibnamehash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{authorbibnamehash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{authornamehash}{b064550235e4e81f319bbf8f77522884}
+      \strng{authorfullhash}{a077172f1e0786d0af96cf9266b4889f}
+      \strng{authorfullhashraw}{a077172f1e0786d0af96cf9266b4889f}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dry-snow slab avalanches are generally caused by a sequence of fracture processes including (1) failure initiation in a weak snow layer underlying a cohesive slab, (2) crack propagation within the weak layer and (3) tensile fracture through the slab which leads to its detachment. During the past decades, theoretical and experimental work has gradually led to a better understanding of the fracture process in snow involving the collapse of the structure in the weak layer during fracture. This now allows us to better model failure initiation and the onset of crack propagation, i.e., to estimate the critical length required for crack propagation. On the other hand, our understanding of dynamic crack propagation and fracture arrest propensity is still very limited. To shed more light on this issue, we performed numerical propagation saw test (PST) experiments applying the discrete element (DE) method and compared the numerical results with field measurements based on particle tracking. The goal is to investigate the influence of weak layer failure and the mechanical properties of the slab on crack propagation and fracture arrest propensity. Crack propagation speeds and distances before fracture arrest were derived from the DE simulations for different snowpack configurations and mechanical properties. Then, in order to compare the numerical and experimental results, the slab mechanical properties (Young's modulus and strength) which are not measured in the field were derived from density. The simulations nicely reproduced the process of crack propagation observed in field PSTs. Finally, the mechanical processes at play were analyzed in depth which led to suggestions for minimum column length in field PSTs.}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{5}
+      \field{title}{Modeling of Crack Propagation in Weak Snowpack Layers Using the Discrete Element Method}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{1915\bibrangedash 1932}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.5194/tc-9-1915-2015
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/VZ7EZF64/Gaume et al. - 2015 - Modeling of crack propagation in weak snowpack layers using the discrete element method.pdf
+      \endverb
+    \endentry
+    \entry{gaumeSnowFractureRelation2017a}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=201c20657efc8ba9ab901a29f000ef47}{%
+           family={Chambon},
+           familyi={C\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f6b397043b02adbd7b1e22348339ee21}{%
+           family={Wever},
+           familyi={W\bibinitperiod},
+           given={Nander},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
+      \strng{fullhash}{3507f8435e03c0574550cd83c824584b}
+      \strng{fullhashraw}{3507f8435e03c0574550cd83c824584b}
+      \strng{bibnamehash}{3507f8435e03c0574550cd83c824584b}
+      \strng{authorbibnamehash}{3507f8435e03c0574550cd83c824584b}
+      \strng{authornamehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
+      \strng{authorfullhash}{3507f8435e03c0574550cd83c824584b}
+      \strng{authorfullhashraw}{3507f8435e03c0574550cd83c824584b}
+      \field{extraname}{3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The failure of a weak snow layer buried below cohesive slab layers is a necessary, but insufficient, condition for the release of a dry-snow slab avalanche. The size of the crack in the weak layer must also exceed a critical length to propagate across a slope. In contrast to pioneering shear-based approaches, recent developments account for weak layer collapse and allow for better explaining typical observations of remote triggering from low-angle terrain. However, these new models predict a critical length for crack propagation that is almost independent of slope angle, a rather surprising and counterintuitive result. Based on discrete element simulations we propose a new analytical expression for the critical crack length. This new model reconciles past approaches by considering for the first time the complex interplay between slab elasticity and the mechanical behavior of the weak layer including its structural collapse. The crack begins to propagate when the stress induced by slab loading and deformation at the crack tip exceeds the limit given by the failure envelope of the weak layer. The model can reproduce crack propagation on low-angle terrain and the decrease in critical length with increasing slope angle as modeled in numerical experiments. The good agreement of our new model with extensive field data and the ease of implementation in the snow cover model SNOWPACK opens a promising prospect for improving avalanche forecasting.}
+      \field{issn}{1994-0416}
+      \field{journaltitle}{The Cryosphere}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{Snow Fracture in Relation to Slab Avalanche Release}
+      \field{title}{Snow Fracture in Relation to Slab Avalanche Release: Critical State for the Onset of Crack Propagation}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{11}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{217\bibrangedash 228}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.5194/tc-11-217-2017
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/TJ6952VW/Gaume et al. - 2017 - Snow fracture in relation to slab avalanche release critical state for the onset of crack propagati.pdf
+      \endverb
+    \endentry
+    \entry{heierliAnticrackNucleationTriggering2008}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=46ae952760f3a1d78545ceb7cf954c64}{%
+           family={Heierli},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85e2a4ca6ebd2076b93ac4260f3e5a43}{%
+           family={Gumbsch},
+           familyi={G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f450477ded293f4e9bad6ed1b8793aa}{%
+           family={Zaiser},
+           familyi={Z\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{9b126ac5eb74154b5fbf45ace7c01dab}
+      \strng{fullhash}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{fullhashraw}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{bibnamehash}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{authorbibnamehash}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{authornamehash}{9b126ac5eb74154b5fbf45ace7c01dab}
+      \strng{authorfullhash}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \strng{authorfullhashraw}{45123664bc6ca8a14a9b0c30dd3c4751}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Snow slab avalanches are believed to begin by the gravity-driven shear failure of weak layers in stratified snow. The critical crack length for shear crack propagation along such layers should increase without bound as the slope decreases. However, recent experiments show that the critical length of artificially introduced cracks remains constant or, if anything, slightly decreases with decreasing slope. This surprising observation can be understood in terms of volumetric collapse of the weak layer during failure, resulting in the formation and propagation of mixed-mode anticracks, which are driven simultaneously by slope-parallel and slope-normal components of gravity. Such fractures may propagate even if crack-face friction impedes downhill sliding of the snowpack, indicating a scenario in which two separate conditions have to be met for slab avalanche release.}
+      \field{journaltitle}{Science}
+      \field{month}{7}
+      \field{number}{5886}
+      \field{title}{Anticrack {{Nucleation}} as {{Triggering Mechanism}} for {{Snow Slab Avalanches}}}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{321}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{240\bibrangedash 243}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1126/science.1153948
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/3B4R8NU5/Heierli et al. - 2008 - Anticrack Nucleation as Triggering Mechanism for Snow Slab Avalanches.pdf
+      \endverb
+    \endentry
+    \entry{heierliAnticracksNewTheory2003}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=fee106f2ba31f0bc04711e8a84258cc5}{%
+           family={Heierli},
+           familyi={H\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85e2a4ca6ebd2076b93ac4260f3e5a43}{%
+           family={Gumbsch},
+           familyi={G\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=42a9d3f2abfc30a0daf5677cf3a50caf}{%
+           family={Zaiser},
+           familyi={Z\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f965ee3127f3f32081614e4a1501dba0}
+      \strng{fullhash}{081f8a73a0d735feaa3683562a46986d}
+      \strng{fullhashraw}{081f8a73a0d735feaa3683562a46986d}
+      \strng{bibnamehash}{081f8a73a0d735feaa3683562a46986d}
+      \strng{authorbibnamehash}{081f8a73a0d735feaa3683562a46986d}
+      \strng{authornamehash}{f965ee3127f3f32081614e4a1501dba0}
+      \strng{authorfullhash}{081f8a73a0d735feaa3683562a46986d}
+      \strng{authorfullhashraw}{081f8a73a0d735feaa3683562a46986d}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Shear failure models have traditionally dominated the research on slab avalanche initiation in snow science, but evidence has accumulated that they tell us only part of the story. In these models weak snowpack layers are regarded as compounds of zero thickness, but in reality they often consist of ice grain aggregates of finite thickness and high porosity. When such granular aggregates fail, the remaining fragments can rearrange in a tighter packing and the weak layer undergoes a reduction in volume. This compaction has fundamental consequences for understanding slab avalanche release. We present a new theory of fracture initiation and propagation in weak layers, based on the mathematical concept of mixed-mode anticracks. Energy criteria for crack propagation and skier triggering are obtained from the theory. Initiation and propagation of anticrack-mediated fracture are illustrated on field measurements.}
+      \field{month}{5}
+      \field{shorttitle}{Anticracks}
+      \field{title}{Anticracks: A New Theory of Fracture Initiation and Fracture Propagation in Snow}
+      \field{year}{2003}
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/B389RKSQ/Heierli et al. - 2003 - Anticracks a new theory of fracture initiation and fracture propagation in snow.pdf
+      \endverb
+    \endentry
+    \entry{herwijnenSeismicSensorArray2011}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9189ed81f0f7ccaf2298a53ad2256767}{%
+           family={Herwijnen},
+           familyi={H\bibinitperiod},
+           given={Alec\bibnamedelima Van},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{fullhash}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{fullhashraw}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{bibnamehash}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{authorbibnamehash}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{authornamehash}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{authorfullhash}{7db9c8dfe4cd21389b50c37347c6b486}
+      \strng{authorfullhashraw}{7db9c8dfe4cd21389b50c37347c6b486}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In snow, acoustic emissions originate from the breaking of bonds between snow crystals and the formation of cracks. Previous research has shown that acoustic signals emanate from a natural snowpack. The relation between these signals and the stability of the snowpack has thus far remained elusive. Studies on other hazardous gravitational processes suggest that damage accumulation precedes major failure. If increased cracking activity could be detected in snow this might be used for avalanche prediction. We report on the development of a seismic sensor array to continuously monitor acoustic emissions in an avalanche start zone. During three winters, over 1400 sensor days of continuous acoustic data were collected. With the aid of automatic cameras and a microphone the main types of background noise were identified. Seismic signals generated by avalanches were also identified. Spectrograms from seismic signals generated by avalanches exhibit a unique triangular shape unlike any source of background noise, suggesting that automatic detection and classification of events is possible. Furthermore, discriminating between loose-snow and snow-slab avalanches is possible. Thus far we have not identified precursor events for natural dry-snow slab avalanche release. Detailed investigation of one dry-snow slab avalanche showed that signals observed prior to the release originated from background noise or small loose-snow avalanches.}
+      \field{issn}{0022-1430, 1727-5652}
+      \field{journaltitle}{Journal of Glaciology}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{202}
+      \field{shorttitle}{Seismic Sensor Array for Monitoring an Avalanche Start Zone}
+      \field{title}{Seismic Sensor Array for Monitoring an Avalanche Start Zone: Design, Deployment and Preliminary Results}
+      \field{urlday}{22}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{57}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \field{pages}{267\bibrangedash 276}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.3189/002214311796405933
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/IUJL62KS/Herwijnen and Schweizer - 2011 - Seismic sensor array for monitoring an avalanche start zone design, deployment and preliminary resu.pdf
+      \endverb
+    \endentry
+    \entry{lambWavesElasticPlate1917}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dc8b03b5d95543ce6576bc309ca8c8d7}{%
+           family={Lamb},
+           familyi={L\bibinitperiod},
+           given={Horace},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{fullhash}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{fullhashraw}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{bibnamehash}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{authorbibnamehash}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{authornamehash}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{authorfullhash}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \strng{authorfullhashraw}{dc8b03b5d95543ce6576bc309ca8c8d7}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The theory of waves in an infinitely long cylindrical rod was discussed by Pochhammer in 1876 in a well-known paper. The somewhat simpler problem of two-dimensional waves in a solid bounded by parallel planes was considered by Lord Rayleigh and by the present writer‡{} in 1889. The main object in these various investigations was to verify, or to ascertain small corrections to, the ordinary theory of the vibrations of thin rods or plates, and the wave-length was accordingly assumed in the end to be great in comparison with the thickness. It occurred to me some time ago that a further examination of the two-dimensional problem was desirable for more than one reason. In the first place, the number of cases in which the various types of vibration of a solid, none of whose dimensions is regarded as small, have been studied is so restricted that any addition to it would have some degree of interest, if merely as a contribution to elastic theory. Again, modern seismology has suggested various questions relating to waves and vibrations in an elastic stratum imagined as resting on matter of a different elasticity and density. These questions naturally present great mathematical difficulties, and it seemed unpromising to attempt any further discussion of them unless the comparatively simple problem which forms the subject of this paper should be found to admit of a practical solution. In itself it has, of course, no bearing on the questions referred to.}
+      \field{issn}{0950-1207}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character}
+      \field{month}{3}
+      \field{number}{648}
+      \field{title}{On Waves in an Elastic Plate}
+      \field{urlday}{18}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{93}
+      \field{year}{1917}
+      \field{urldateera}{ce}
+      \field{pages}{114\bibrangedash 128}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1098/rspa.1917.0008
+      \endverb
+    \endentry
+    \entry{madariagaDynamicsExpandingCircular1976}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8e64e910292884653f8dd76d1a7ad587}{%
+           family={Madariaga},
+           familyi={M\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{fullhash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{fullhashraw}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{bibnamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorbibnamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authornamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorfullhash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorfullhashraw}{8e64e910292884653f8dd76d1a7ad587}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study a plane circular model of a frictional fault using numerical methods. The model is dynamic since we specify the effective stress at the fault. In one model we assume that the fault appears instantaneously in the medium; in another, that the rupture nucleates at the center and that rupture proceeds at constant subsonic velocity until it suddenly stops. The total source slip is larger at the center and the rise time is also longer at the center of the fault. The dynamic slip overshoots the static slip by 15 to 35 per cent. As a consequence, the stress drop is larger than the effective stress and the apparent stress is less than one half the effective stress.The far-field radiation is discussed in detail. We distinguish three spectral regions. First, the usual constant low-frequency level. Second, an intermediate region controlled by the fault size and, finally, the high-frequency asymptote. The central region includes the corner frequency and is quite complicated. The corner frequency is shown to be inversely proportional to the width of the far-field displacement pulse which, in turn, is related to the time lag between the stopping phases. The average corner frequency of S waves v0s is related to the final source radius, a, by v0s = 0.21 {$\beta$}/{$\alpha$}. The corner frequency of P waves is larger than v0s by an average factor of 1.5.}
+      \field{issn}{0037-1106}
+      \field{journaltitle}{Bulletin of the Seismological Society of America}
+      \field{month}{6}
+      \field{number}{3}
+      \field{title}{Dynamics of an Expanding Circular Fault}
+      \field{urlday}{7}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{66}
+      \field{year}{1976}
+      \field{urldateera}{ce}
+      \field{pages}{639\bibrangedash 666}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1785/BSSA0660030639
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/6NJ82EQ3/BSSA0660030639.html
+      \endverb
+    \endentry
+    \entry{madariagaHighfrequencyRadiationCrack1977}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8e64e910292884653f8dd76d1a7ad587}{%
+           family={Madariaga},
+           familyi={M\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{fullhash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{fullhashraw}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{bibnamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorbibnamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authornamehash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorfullhash}{8e64e910292884653f8dd76d1a7ad587}
+      \strng{authorfullhashraw}{8e64e910292884653f8dd76d1a7ad587}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a theory for the radiation of high-frequency waves by earthquake faults. We model the fault as a planar region in which the stress drops to the kinematic friction during slip. This model is entirely equivalent to a shear crack. For two-dimensional fault models we show that the high frequencies originate from the stress and slip velocity concentrations in the vicinity of the fault's edges. These stress concentrations radiate when the crack expands with accelerated motion. The most efficient generation of high-frequency waves occurs when the rupture velocity changes abruptly. In this case, the displacement spectrum has an {$\omega-$}2 behaviour at high frequencies. The excitation is proportional to the intensity of the stress concentration near the crack tips and to the change in the focusing factor due to rupture velocity. We extend these two-dimensional results to more general three-dimensional fault models in the case when the rupture velocity changes simultaneously on the rupture front. Results are similar to those described for two-dimensional faults. We apply the theory to the case of a circular fault that grows at constant velocity and stops suddenly. The present theory is in excellent agreement with a numerical solution of the same problem.Our results provide upper bounds to the high-frequency radiation from more realistic models in which rupture velocity does not change suddenly. The {$\omega-$}2 is the minimum possible decay at high frequencies for any crack model of the source.}
+      \field{issn}{0956-540X}
+      \field{journaltitle}{Geophysical Journal International}
+      \field{month}{12}
+      \field{number}{3}
+      \field{title}{High-Frequency Radiation from Crack (Stress Drop) Models of Earthquake Faulting}
+      \field{urlday}{2}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{51}
+      \field{year}{1977}
+      \field{urldateera}{ce}
+      \field{pages}{625\bibrangedash 651}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1111/j.1365-246X.1977.tb04211.x
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/DIDSBK92/j.1365-246X.1977.tb04211.html
+      \endverb
+    \endentry
+    \entry{noeFrontiersFullwaveformSeismology2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=302ce2ee4daadccddd04e3b9253537c2}{%
+           family={Noe},
+           familyi={N\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ETH Zurich}%
+      }
+      \strng{namehash}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{fullhash}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{fullhashraw}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{bibnamehash}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{authorbibnamehash}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{authornamehash}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{authorfullhash}{302ce2ee4daadccddd04e3b9253537c2}
+      \strng{authorfullhashraw}{302ce2ee4daadccddd04e3b9253537c2}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In this thesis, I present a collection of full-waveform seismology studies with the goal to investigate subsurface structure and seismic sources. These studies rely on data from seismometers and novel fibre-optic sensing techniques. I introduce a new global tomographic model based on seismometer data using full-waveform inversion (FWI). The Collaborative Seismic Earth Model: Generation 2 (CSEM2) is a multi-scale model that combines 22 regional and global tomographic models into one coherent global framework, consistently incorporating prior knowledge. To mitigate artefacts at submodel boundaries and further image mantle structure using the refined surface models, we perform a global inversion for a minimum period of 50 s, using the assembled submodels as the starting point. We demonstrate that CSEM2 accurately captures wave propagation at the global scale for the inverted target period while retaining the capability to explain shorter periods within the submodels. Additionally, a side project in the context of supervising a Master student leads to the development of a new tomographic model for Europe and Western Asia, using CSEM2 as the starting model. The main topic of this thesis is the development of a theoretical framework for performing source and structural inversions using full waveforms measured with fibre-optic data. This effectively transfers knowledge from global-scale FWI to this new type of data. Fibre-optic sensing, particularly distributed acoustic sensing (DAS), has emerged over the past decade as a seismic interrogation method applicable in various environments, including offshore, boreholes, landslides, glaciers, volcanoes, and urban areas. Its appeal lies in its flexibility and relative ease of deployment. However, interpreting this data to infer seismic source properties and subsurface structure is complicated by variability in fibre orientation, gauge length effects, and the measurement unit of strain. All these challenges are addressed in the FWI method presented in this thesis. The method is demonstrated through inversion examples with artificial data that showcase the powerful imaging capabilities of DAS. The associated code is publicly available as the software package Pyber In several collaborative side projects, briefly outlined here, Pyber is already being applied to inversions on various DAS datasets to investigate volcanic sources, icequakes, hydraulic stimulations, and the structure of an active landslide. While FWI is an elegant method for maximising the used data to invert for structures, it suffers from the lack of a feasible and conclusive uncertainty quantification. Due to computational constraints, comprehensive exploration of the null space and model resolution is not feasible even for relatively small problems, and especially not for most relevant seismic inverse problems. This thesis presents a more efficient approach to quantify point-spread functions using source encoding. We demonstrate, using a 2-D ultrasound imaging example of a mouse, that this method is viable and can significantly reduce computation time for point-wise model resolution assessment. Within another project, we perform a hypothesis test on an unexpected, fast, and prominent anomaly found in the global tomographic model REVEAL in the mid-mantle beneath the western Pacific, a region that is hardly covered by seismic stations. This anomaly is not imaged in travel-time tomographies. The test shows that the full-waveform data is indeed sensitive to this region, which leads us to challenge the common assumption in plate tectonic reconstructions that all fast anomalies represent subducting plates. We argue for a more nuanced interpretation as increasingly high-resolution tomographic models of Earth's interior become available. While the presented methods do not solve the issues of uncertainty quantification in FWI, they represent a step towards overcoming this challenge. Moreover, this thesis presents a novel seismic measurement technique that uses active phase-noise cancellation (PNC) of the laser signal transmitted through the entire length of the fibre, a form of integrated fibre-optic sensing (IFOS). While the dense channel sampling along the fibre as seen in DAS is lost, because the entire fibre length is treated as a single channel, this technique significantly extends the maximum interrogation length from tens of kilometers to potentially over a thousand. In close collaboration with the Swiss Metrological Service, we present the successful numerical reconstruction of an M3.9 earthquake near Mulhouse, France, measured on a 123 km fibre-optic link between two laboratories in Basel and Bern with PNC. Additional contributions to side projects using the same PNC acquisition technique include source inversion, ambient noise analysis, and earthquake measurements in Switzerland and globally. We also explore the potential for source and structural inversions with full-waveforms on artificial IFOS data. This work lays the foundation for future FWI applications as more IFOS data sets become available.}
+      \field{eprinttype}{ETH Zurich}
+      \field{langid}{english}
+      \field{shorttitle}{Frontiers of Full-Waveform Seismology}
+      \field{title}{Frontiers of Full-Waveform Seismology: {{From}} Global Tomography to Distributed and Integrated Fibre-Optic Strain Sensing}
+      \field{urlday}{9}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.3929/ETHZ-C-000788455
+      \endverb
+      \keyw{Seismology; Fiber-optic sensing,Seismology; Full-waveform inversion,Seismology; Tomography}
+    \endentry
+    \entry{paitzPhenomenologyAvalancheRecordings2023}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=e76fe51e6921726e3e7565f8896c21e6}{%
+           family={Paitz},
+           familyi={P\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a12c61ce832831ec42a2f6651397d83f}{%
+           family={Lindner},
+           familyi={L\bibinitperiod},
+           given={Nadja},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4e81c1228428233e54ddc020d0be1c6}{%
+           family={Edme},
+           familyi={E\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a11f7e7414ce171ca2f2af1e10f8a089}{%
+           family={Huguenin},
+           familyi={H\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5f5b3325bcfdb0dbe7b53c825b8a477}{%
+           family={Hohl},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd04e407c3482dcc2927d4b9af1a9db3}{%
+           family={Sovilla},
+           familyi={S\bibinitperiod},
+           given={Betty},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e6cf76cc06312c89860a3a08ace0d5d}{%
+           family={Walter},
+           familyi={W\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c44b844ddb7f3e18c4217fbb70345cde}{%
+           family={Fichtner},
+           familyi={F\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f49d44eefd9994da744c46fbbb82ccf8}
+      \strng{fullhash}{dd397fd8a18351b3bc806680ace06b68}
+      \strng{fullhashraw}{dd397fd8a18351b3bc806680ace06b68}
+      \strng{bibnamehash}{dd397fd8a18351b3bc806680ace06b68}
+      \strng{authorbibnamehash}{dd397fd8a18351b3bc806680ace06b68}
+      \strng{authornamehash}{f49d44eefd9994da744c46fbbb82ccf8}
+      \strng{authorfullhash}{dd397fd8a18351b3bc806680ace06b68}
+      \strng{authorfullhashraw}{dd397fd8a18351b3bc806680ace06b68}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Avalanches and other hazardous mass movements pose a danger to the population and critical infrastructure in alpine areas. Hence, understanding and continuously monitoring mass movements are crucial to mitigate their risk. We propose to use Distributed Acoustic Sensing (DAS) to measure strain rate along a fiber-optic cable to characterize ground deformation induced by avalanches. We recorded 12 snow avalanches of various dimensions at the Vallée de la Sionne test site in Switzerland, utilizing existing fiber-optic infrastructure and a DAS interrogation unit during the winter 2020/2021. By training a Bayesian Gaussian Mixture Model, we automatically characterize and classify avalanche-induced ground deformations using physical properties extracted from the frequency-wavenumber and frequency-velocity domain of the DAS recordings. The resulting model can estimate the probability of avalanches in the DAS data and is able to differentiate between the avalanche-generated seismic near-field, the seismo-acoustic far-field, and the mass movement propagating on top of the fiber. By analyzing the mass-movement propagation signals, we are able to identify group velocity packages within an avalanche that propagate faster than the phase velocity of the avalanche front, indicating complex internal structures. Importantly, we show that the seismo-acoustic far-field can be detected before the avalanche reaches the fiber-optic array, highlighting DAS as a potential research and early warning tool for hazardous mass movements.}
+      \field{issn}{2169-9011}
+      \field{journaltitle}{Journal of Geophysical Research: Earth Surface}
+      \field{langid}{english}
+      \field{number}{5}
+      \field{title}{Phenomenology of {{Avalanche Recordings From Distributed Acoustic Sensing}}}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{128}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{e2022JF007011}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1029/2022JF007011
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/KFWMMURI/Paitz et al. - 2023 - Phenomenology of Avalanche Recordings From Distributed Acoustic Sensing.pdf;/Users/salomebachmann/Zotero/storage/43M342AD/2022JF007011.html
+      \endverb
+      \keyw{avalanche dynamics,distributed acoustic sensing,geophysics,mass movement monitoring,natural hazard,seismology}
+    \endentry
+    \entry{schweizerSnowAvalancheFormation2003}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bbe7c73e1cbc3aa3cdba1b964bd4fb71}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9a9967b7ac510599b3b7e84783e1c9c}{%
+           family={Bruce\bibnamedelima Jamieson},
+           familyi={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b242bf8d55c8ff25f1119d0e9236afa7}{%
+           family={Schneebeli},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{680a41c51cd767a645ed8e34b827c0f9}
+      \strng{fullhash}{aef64efe30bb86f3408d055491a92295}
+      \strng{fullhashraw}{aef64efe30bb86f3408d055491a92295}
+      \strng{bibnamehash}{aef64efe30bb86f3408d055491a92295}
+      \strng{authorbibnamehash}{aef64efe30bb86f3408d055491a92295}
+      \strng{authornamehash}{680a41c51cd767a645ed8e34b827c0f9}
+      \strng{authorfullhash}{aef64efe30bb86f3408d055491a92295}
+      \strng{authorfullhashraw}{aef64efe30bb86f3408d055491a92295}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Snow avalanches are a major natural hazard, endangering human life and infrastructure in mountainous areas throughout the world. In many countries with seasonally snow-covered mountains, avalanche-forecasting services reliably warn the public by issuing occurrence probabilities for a certain region. However, at present, a single avalanche event cannot be predicted in time and space. Much about the release process remains unknown, mainly because of the highly variable, layered character of the snowpack, a highly porous material that exists close to its melting point. The complex interaction between terrain, snowpack, and meteorological conditions leading to avalanche release is commonly described as avalanche formation. It is relevant to hazard mapping and essential to short-term forecasting, which involves weighting many contributory factors. Alternatively, the release process can be studied and modeled. This approach relies heavily on snow mechanics and snow properties, including texture. While the effect of meteorological conditions or changes on the deformational behavior of snow is known in qualitative or semiquantitative manner, the knowledge of the quantitative relation between snow texture and mechanical properties is limited, but promising developments are under way. Fracture mechanical models have been applied to explain the fracture propagation, and micromechanical models including the two competing processes (damage and sintering) have been applied to explain snow failure. There are knowledge gaps between the sequence of processes that lead to the release of the snow slab: snow deformation and failure, damage accumulation, fracture initiation, and fracture propagation. Simultaneously, the spatial variability that affects damage, fracture initiation, and fracture propagation has to be considered. This review focuses on dry snow slab avalanches and shows that dealing with a highly porous media close to its melting point and processes covering several orders of scale, from the size of a bond between snow grains to the size of a mountain slope, will continue to be very challenging.}
+      \field{issn}{1944-9208}
+      \field{journaltitle}{Reviews of Geophysics}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{title}{Snow Avalanche Formation}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{41}
+      \field{year}{2003}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1029/2002RG000123
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/GSH4GMQG/Schweizer et al. - 2003 - Snow avalanche formation.pdf;/Users/salomebachmann/Zotero/storage/DLB2TUC2/2002RG000123.html
+      \endverb
+      \keyw{avalanche,snow}
+    \endentry
+    \entry{LongtermStatistics}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=47733eda0c9e7e59fc426abb1be5c05c}{%
+           family={SLF},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{fullhash}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{fullhashraw}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{bibnamehash}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{authorbibnamehash}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{authornamehash}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{authorfullhash}{47733eda0c9e7e59fc426abb1be5c05c}
+      \strng{authorfullhashraw}{47733eda0c9e7e59fc426abb1be5c05c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The SLF has been collecting comprehensive data on all the avalanche accidents that have occurred in Switzerland since the winter of 1936/37}
+      \field{howpublished}{https://www.slf.ch/en/avalanches/avalanches-and-avalanche-accidents/long-term-statistics/}
+      \field{journaltitle}{Institute for Snow and Avalanche Research SLF}
+      \field{langid}{american}
+      \field{title}{Avalanche {{Victims}} since 1936 - {{Long Term Statistics}}}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/KYCGAATA/long-term-statistics.html
+      \endverb
+    \endentry
+    \entry{trottetTransitionSubRayleighAnticrack2022}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=aa439e1bfa733cc2891c7dbf28770c78}{%
+           family={Trottet},
+           familyi={T\bibinitperiod},
+           given={Bertil},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1d29dff480ef7400a4ae4e5211f99c2}{%
+           family={Simenhois},
+           familyi={S\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95db8610b06a0495ae9e84659c58aa7c}{%
+           family={Bobillier},
+           familyi={B\bibinitperiod},
+           given={Gregoire},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45cd7f65b6ceeddfce73beb6b18c5124}{%
+           family={Bergfeld},
+           familyi={B\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
+           family={{van Herwijnen}},
+           familyi={v\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e23acb91338712715b1e858a29723c6b}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Chenfanfu},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
+           family={Gaume},
+           familyi={G\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{ac72662e061ea6b3c4b65a63f462df4c}
+      \strng{fullhash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{fullhashraw}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{bibnamehash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{authorbibnamehash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{authornamehash}{ac72662e061ea6b3c4b65a63f462df4c}
+      \strng{authorfullhash}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \strng{authorfullhashraw}{8ab99e3ab7d0b995ecbed0f01eac1773}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Snow slab avalanches, characterized by a distinct, broad fracture line, are released following anticrack propagation in highly porous weak snow layers buried below cohesive slabs. The anticrack mechanism is driven by the volumetric collapse of the weak layer, which leads to the closure of crack faces and to the onset of frictional contact. Here, on the basis of snow fracture experiments, full-scale avalanche measurements and numerical simulations, we report the existence of a transition from sub-Rayleigh anticrack to supershear crack propagation. This transition follows the Burridge--Andrews mechanism, in which a supershear daughter crack nucleates ahead of the main fracture front and eventually propagates faster than the shear wave speed. Furthermore, we show that the supershear propagation regime can exist even if the shear-to-normal stress ratio is lower than the static friction coefficient as a result of the loss of frictional resistance during collapse. This finding shows that snow slab avalanches have fundamental similarities with strike-slip earthquakes.}
+      \field{issn}{1745-2481}
+      \field{journaltitle}{Nature Physics}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Transition from Sub-{{Rayleigh}} Anticrack to Supershear Crack Propagation in Snow Avalanches}
+      \field{urlday}{4}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{18}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{1094\bibrangedash 1098}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/s41567-022-01662-4
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/2PW34P2Q/Trottet et al. - 2022 - Transition from sub-Rayleigh anticrack to supershear crack propagation in snow avalanches.pdf
+      \endverb
+      \keyw{Applied physics,Computational science,Soft materials}
+    \endentry
+    \entry{turquetAutomatedSnowAvalanche2024}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=9fc4d397065c9e8086e75063e0600d6a}{%
+           family={Turquet},
+           familyi={T\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=354f94e90b61ed6bee9701fef3774ee8}{%
+           family={Wuestefeld},
+           familyi={W\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39e126a31f2968a08d2c152862772068}{%
+           family={Svendsen},
+           familyi={S\bibinitperiod},
+           given={Guro\bibnamedelima K.},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27f546561a9ccfb22610f672c20be878}{%
+           family={Nyhammer},
+           familyi={N\bibinitperiod},
+           given={Finn\bibnamedelima K{å}re},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97a5fcbe1f7e40632c377707c189d6b4}{%
+           family={Nilsen},
+           familyi={N\bibinitperiod},
+           given={Espen\bibnamedelima Lauvlund},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9b7f7fa0506a1ce217ebf3f0eac26f1}{%
+           family={Persson},
+           familyi={P\bibinitperiod},
+           given={Andreas\bibnamedelima Per-Ola},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinithyphendelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1f1a22b98cd345c7d6bcf76dd83ba03}{%
+           family={Refsum},
+           familyi={R\bibinitperiod},
+           given={Vetle},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{e6265223daef230f488788997000b4d3}
+      \strng{fullhash}{857a517c30f76b3bd86254f7ae9dd968}
+      \strng{fullhashraw}{857a517c30f76b3bd86254f7ae9dd968}
+      \strng{bibnamehash}{857a517c30f76b3bd86254f7ae9dd968}
+      \strng{authorbibnamehash}{857a517c30f76b3bd86254f7ae9dd968}
+      \strng{authornamehash}{e6265223daef230f488788997000b4d3}
+      \strng{authorfullhash}{857a517c30f76b3bd86254f7ae9dd968}
+      \strng{authorfullhashraw}{857a517c30f76b3bd86254f7ae9dd968}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Avalanches present substantial hazard risk in mountainous regions, particularly when avalanches obstruct roads, either hitting vehicles directly or leaving traffic exposed to subsequent avalanches during cycles. Traditional detection methods often are designed to cover only a limited section of a road stretch, hampering effective risk management. This research introduces a novel approach using Distributed Acoustic Sensing (DAS) for avalanche detection. The monitoring site in Northern Norway is known to be frequently impacted by avalanches. Between 2022--2024, we continuously monitored the road for avalanches blocking the traffic. The automated alert system identifies avalanches affecting the road and estimates accumulated snow. The system provides continuous, real-time monitoring with competitive sensitivity and accuracy over large areas (up to 170 km) and for multiple sites on parallel. DAS powered alert system can work unaffected by visual barriers or adverse weather conditions. The system successfully identified 10 road-impacting avalanches (100\% detection rate). Our results via DAS align with the previous works and indicate that low frequency part of the signal ({$<$}20 Hz) is crucial for detection and size estimation of avalanche events. Alternative fiber installation methods are evaluated for optimal sensitivity to avalanches. Consequently, this study demonstrates its durability and lower maintenance requirements, especially when compared to the high setup costs and coverage limitations of radar systems, or the weather and lighting vulnerabilities of cameras. Furthermore the system can detect vehicles on the road as important supplemental information for search and rescue operations, and thus the authorities can be alerted, thereby playing a vital role in urgent rescue efforts.}
+      \field{issn}{2624-795X}
+      \field{journaltitle}{GeoHazards}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Automated {{Snow Avalanche Monitoring}} and {{Alert System Using Distributed Acoustic Sensing}} in {{Norway}}}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{5}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{1326\bibrangedash 1345}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.3390/geohazards5040063
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/Q796XH32/Turquet et al. - 2024 - Automated Snow Avalanche Monitoring and Alert System Using Distributed Acoustic Sensing in Norway.pdf
+      \endverb
+      \keyw{automated avalanche detection,distributed acoustic sensing,hazardous mass movements,natural hazards,Norway,signal processing,snow avalanche dynamics}
+    \endentry
+    \entry{roseWavesPlates2014}{inbook}{}{}
+      \name{editor}{1}{}{%
+        {{hash=a7be79920f643b7e2d10bf4a1bd3758c}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={Joseph\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{editorbibnamehash}{a7be79920f643b7e2d10bf4a1bd3758c}
+      \strng{editornamehash}{a7be79920f643b7e2d10bf4a1bd3758c}
+      \strng{editorfullhash}{a7be79920f643b7e2d10bf4a1bd3758c}
+      \strng{editorfullhashraw}{a7be79920f643b7e2d10bf4a1bd3758c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{abstract}{IntroductionThis chapter presents the governing equations of elastodynamics for waves in plates, along with a series of sample problems and practical discussions. The method of displacement potentials is used to obtain a solution for the case of propagation in a free plate (see e.g., Achenbach 1984 for more detail). Also, we give a brief outline of the method of partial waves (see Auld 1990).The classical problem of Lamb wave propagation is associated with wave motion in a traction-free homogeneous and isotropic plate. The procedures we use to develop the governing equations and dispersion curve results of phase velocity versus frequency are similar to those used in a countless number of guided wave problems that incorporate bars, tubes, multiple layers, and anisotropic media. In this chapter we shall therefore detail the basic concepts of guided wave analysis. Interpretation procedures and mathematical analysis of phase and group velocity dispersion curves and wave structure can then be extended to a variety of different guided wave problems. An alternative technique of developing dispersion curves is presented Chapter 9.We will now briefly re-visit the fundamental differences between guided waves and bulk waves. Bulk waves travel in the bulk of the material -- hence, away from the boundaries. However, often there is interaction with boundaries by way of reflection and refraction, and mode conversion occurs between longitudinal and shear waves. Although bulk and guided waves are fundamentally different, they are actually governed by the same set of partial differential wave equations. Mathematically, the principal difference is that, for bulk waves, there are no boundary conditions that need to be satisfied by the proposed solution. In contrast, the solution to a guided wave problem must satisfy the governing equations as well as some physical boundary conditions.}
+      \field{booktitle}{Ultrasonic {{Guided Waves}} in {{Solid Media}}}
+      \field{isbn}{978-1-107-04895-9}
+      \field{title}{Waves in {{Plates}}}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \field{pages}{76\bibrangedash 106}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1017/CBO9781107273610.008
+      \endverb
+      \verb{file}
+      \verb /Users/salomebachmann/Zotero/storage/7MCTF844/EBFAA4EC2C5973D0672A70525E31B16E.html
+      \endverb
+    \endentry
+    \entry{zhuNoteDynamicStatic2002}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b481cb2962c811f1db6f03e5026b2122}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Lupei},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30df23feea612cb1dd50ddd0f0b0b48d}{%
+           family={Rivera},
+           familyi={R\bibinitperiod},
+           given={Luis\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{fullhash}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{fullhashraw}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{bibnamehash}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{authorbibnamehash}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{authornamehash}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{authorfullhash}{aebd55816e5d95a7bcd5a136005d7082}
+      \strng{authorfullhashraw}{aebd55816e5d95a7bcd5a136005d7082}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A simple and unified approach is presented to solve both the elasto-dynamic and elasto-static problems of point sources in a multi-layered half-space by using the Thompson-Haskell propagator matrix technique. It is shown that the apparent incompatibility between the two is associated with the degeneracy of the dynamic problem when {$\omega$} = 0 and both can be handled uniformly using the Jordan canonical forms of matrices. We re-derive the propagator matrices for both the dynamic and static cases. We then show that the dynamic propagator matrix and the solution converge to their static counterparts as {$\omega$} {$\rightarrow$} 0. Satisfactory static deformation can be obtained numerically using the dynamic solution at near-zero frequency.}
+      \field{issn}{0956-540X}
+      \field{journaltitle}{Geophysical Journal International}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{A Note on the Dynamic and Static Displacements from a Point Source in Multilayered Media}
+      \field{urlday}{27}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{148}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \field{pages}{619\bibrangedash 627}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1046/j.1365-246X.2002.01610.x
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

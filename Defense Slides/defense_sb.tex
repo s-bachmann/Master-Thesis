@@ -7,14 +7,13 @@
 ]{biblatex}
 % tkiz--------------------------------------------------------------------------
 \usepackage{tikz}
-\usetikzlibrary{shapes.geometric, arrows}
+\usetikzlibrary{shapes.geometric, arrows.meta}
 % --- Updated TikZ Styles Matched to Palette ---
 \tikzstyle{startstop} = [rectangle, rounded corners, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=ETHPurple!30, font=\tiny]
-\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=ETHGrey!10, font=\tiny]
-\tikzstyle{process} = [rectangle, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=ETHGrey!10, font=\tiny]
-\tikzstyle{decision} = [diamond, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=ETHGrey!10, font=\tiny]
-\tikzstyle{animate}
-\tikzset{arrow/.style={-Stealth, thick}}
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=ETHgray!10, font=\tiny]
+\tikzstyle{process} = [rectangle, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=ETHgray!10, font=\tiny]
+\tikzstyle{decision} = [diamond, minimum width=2cm, minimum height=0.8cm, text centered, text width=1.8cm, draw=black, fill=ETHgray!10, font=\tiny]
+\tikzset{arrow/.style={-{Stealth[length=2mm,width=1.5mm]}, thick}}
 \usepackage{caption}
 \usepackage{animate}
 \addbibresource{../master_thesis.bib}
@@ -86,7 +85,7 @@
 \begin{frame}{Relevance}
 \begin{itemize}
     \item Crack propagation at different speeds: sub-Rayleigh (below vs of material) and Supershear (above vs) \parencite{trottetTransitionSubRayleighAnticrack2022}, transition between two regimes possible \parencite{bergfeldSignaturesSubRayleighSupershear2025}
-        \item Fast crack propagation \rightarrow critical crack length for release \parencite{gaumeModelingCrackPropagation2015} is reached faster
+        \item Fast crack propagation $\rightarrow$ critical crack length for release \parencite{gaumeModelingCrackPropagation2015} is reached faster
         \item Distributed Acoustic Sensing (DAS) already used to monitor avalanches in Swizterland \parencite{paitzPhenomenologyAvalancheRecordings2023,edmeFiberopticDetectionSnow2023} and Norway \parencite{turquetAutomatedSnowAvalanche2024}
         \item No knowledge if crack propagation associated with breakoff can be seen in DAS data
 \end{itemize}
@@ -134,9 +133,9 @@
 \begin{frame}{Results}
     \begin{itemize}
         \item SALVUS Output: Displacement field u
-        \item $\ \frac{\partial u_i}{\partial t}$ \rightarrow velocity in x and y
-        \item $\ \frac{\partial u_i}{\partial j}$ \rightarrow strain in x and y $\ \epsilon$
-        \item $\ \frac{\partial^2 u_i}{\partial t \partial t}$ \rightarrow strain rate $\ \dot{\epsilon}$
+        \item $\frac{\partial u_i}{\partial t}$ $\rightarrow$ velocity in x and y
+        \item $\frac{\partial u_i}{\partial j}$ $\rightarrow$ strain in x and y $\epsilon$
+        \item $\frac{\partial^2 u_i}{\partial t \partial t}$ $\rightarrow$ strain rate $\dot{\epsilon}$
         \item Simulation od DAS data from $\ \epsilon$, $\ \dot{\epsilon}$ using Pyber Gauge length class by \cite{noeFrontiersFullwaveformSeismology2025}, gauge length acoording to \cite{turquetAutomatedSnowAvalanche2024}
         \item Spate-time plots of strain, strain rate and velocity at different reciever depths
         \item Frequency-wavenumber plots with theoretical speeds and dispersion curves
@@ -194,7 +193,7 @@
     \begin{itemize}
         \item One two main wavefronts observed
         \item Crack extent from 75m to 125m: sub-Rayleigh speed from front
-        \item Positive wedge in crack area: extends until rupture arrest, then jumps to same thickness as negative front \rightarrow quasi-static offset
+        \item Positive wedge in crack area: extends until rupture arrest, then jumps to same thickness as negative front $\rightarrow$ quasi-static offset
         \item Backward-propagating front and forward after crack arrest: close to vp/S0 from slope
         \item Second, weaker wavefront: at onset but also arrest: same arrest structure as sub-Rayleigh
         \item Oscillatory wavefronts
@@ -205,7 +204,7 @@
 \begin{frame}{Quasi-Static Offset}
     \begin{itemize}
         \item Static field represents permanent deformation after sources have fired \parencite{zhuNoteDynamicStatic2002,archambeauGeneralTheoryElastodynamic1968}
-        \item MPM STFS are not symmetric: contrary to Ricker wavelets, they do not integrate to 0 over time \rightarrow net displacement of material \parencite{zhuNoteDynamicStatic2002,kAkiRichards19801981}
+        \item MPM STFS are not symmetric: contrary to Ricker wavelets, they do not integrate to 0 over time $\rightarrow$ net displacement of material \parencite{zhuNoteDynamicStatic2002,kAkiRichards19801981}
         \item Cumulative integral of MPM STFs is negative: collapse of the weak layer, as observed by \parencite{heierliAnticracksNewTheory2003, heierliAnticrackNucleationTriggering2008,gaumeDynamicAnticrackPropagation2018,trottetTransitionSubRayleighAnticrack2022}
         \item All components of MPM STF (directionality) indicate mixed-mode anticrack instead of pure opening or shearing (mode I, II or II)
         
@@ -224,16 +223,7 @@
         \centering
         \begin{minipage}[t]{0.48\linewidth}
             \centering
-            % If you have a single animated GIF, extract frames first, for example:
-            % ImageMagick (recommended):
-            % magick -coalesce "path/to/your.gif" "../Wave Propagation GIFS/custom_sub_wavefield_2d_moving_vx_crack%d.png"
-            % or ffmpeg:
-            % ffmpeg -i path/to/your.gif "../Wave Propagation GIFS/custom_sub_wavefield_2d_moving_vx_crack%d.png"
-            % This will produce files named custom_sub_wavefield_2d_moving_vx_crack0.png ... 93.png
-            % Then the following animategraphics call will include them in the PDF.
-      \begin{minipage}[t]{0.48\linewidth}
-            \centering
-            \includegraphics[width=\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/custom_sub_wavefield_2d_moving_vx_crack.png}
+            \includegraphics[width=\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/custom_sub_wavefield_2d_moving_vx_crack.jpg}
             \vspace{0.5ex}
             \caption{Animation still for Sub-Rayleigh Vx}
         \end{minipage}\hfill
@@ -249,10 +239,15 @@
 
 \begin{frame}[allowframebreaks]{MPM-Guided Model: Lamb Wave Identification}
     \begin{itemize}
-        \item Like in simple model: oscillatory wavefronts \rightarrow A0 mode
-       \includegraphics[width=\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/mpm_wavefield_2d_moving_vx_still.png}
-            \vspace{0.5ex}
-            \caption{Animation still for MPM Vx}
+        \item Like in simple model: oscillatory wavefronts $\rightarrow$ A0 mode
+    \end{itemize}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/mpm_wavefield_2d_moving_vx_still.jpg}
+        \vspace{0.5ex}
+        \caption{Animation still for MPM Vx}
+    \end{figure}
+    \begin{itemize}
         \item F-k plots also show concentration of energy around A0 and S0 dispersion curves
         \item Polarity reversal around slab midplane in animation indicative of A0 
     \end{itemize}
@@ -262,10 +257,10 @@
 \begin{frame}[allowframebreaks]{Summary of Results \& Discussion}
     \begin{itemize}
         \item S0 Precursor observed in all Strain \& Strain Rate Plots, as well as in traces
-        \item Main wavfront in all cases is A0 \rightarrow source normal to slab midplane 
+        \item Main wavfront in all cases is A0 $\rightarrow$ source normal to slab midplane 
         \item Different rupture arrest structures depending on propagation speed
         \item Quasi-static wavefield for sources that do not integrate to 0 over time
-        \item Weakening of amplitude only in simple case \rightarrow also thicker slab 
+        \item Weakening of amplitude only in simple case $\rightarrow$ also thicker slab 
     \end{itemize}
     
 \end{frame}
@@ -326,17 +321,17 @@
 
     % Connections
     \coordinate (rootbranch) at (0, -0.45);
-    \draw[thick, draw=idea-dark] (root.south) -- (rootbranch);
+    \draw[thick, draw=ETHPetrol] (root.south) -- (rootbranch);
     \draw[arrow] (rootbranch) -| (leftbox.north);
     \draw[arrow] (rootbranch) -| (rightbox.north);
 
     \coordinate (leftbranch) at (-3.0, -2.95);
-    \draw[thick, draw=idea-dark] (leftbox.south) -- (leftbranch);
+    \draw[thick, draw=ETHPetrol] (leftbox.south) -- (leftbranch);
     \draw[arrow] (leftbranch) -| (left_leaf_1.north);
     \draw[arrow] (leftbranch) -| (left_leaf_2.north);
 
     \coordinate (rightbranch) at (3.0, -2.95);
-    \draw[thick, draw=idea-dark] (rightbox.south) -- (rightbranch);
+    \draw[thick, draw=ETHPetrol] (rightbox.south) -- (rightbranch);
     \draw[arrow] (rightbranch) -| (right_leaf_1.north);
     \draw[arrow] (rightbranch) -| (right_leaf_2.north);
 
