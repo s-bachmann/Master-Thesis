@@ -370,47 +370,6 @@
       \endverb
       \keyw{Physics - Geophysics}
     \endentry
-    \entry{freundDynamicFractureMechanics1998}{book}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=c246f840d0866c70501e884e906fd009}{%
-           family={Freund},
-           familyi={F\bibinitperiod},
-           given={L.\bibnamedelimi B.},
-           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8209a6be3f4820fabeda4fcf01a903f9}{%
-           family={Freud},
-           familyi={F\bibinitperiod},
-           given={L.\bibnamedelimi B.},
-           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{fullhash}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{fullhashraw}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{bibnamehash}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{authorbibnamehash}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{authornamehash}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{authorfullhash}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{authorfullhashraw}{3f4b9581e2338d60f3e724dae58be0ab}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This volume emphasizes fundamental concepts, both on the development of mathematical models of fracture phenomena and on the analysis of these models. Cases involving stress waves impinging on cracks, tractions suddenly applied to the faces of cracks, and rapid crack growth and arrest are considered in detail. Most of the work is concerned with the behavior of nominally elastic materials, but available results on elastic-plastic and elastic-viscoplastic materials are included. Connections to experimental results and to applications in structural mechanics, seismology, and materials science are noted whenever possible.}
-      \field{isbn}{978-0-521-62922-5}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{title}{Dynamic {{Fracture Mechanics}}}
-      \field{year}{1998}
-      \keyw{Mathematics / Applied,Science / Mechanics / Fluids,Technology & Engineering / Fracture Mechanics,Technology & Engineering / Mechanical}
-    \endentry
     \entry{gaumeModelingCrackPropagation2015}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=e772559f9d1c403eec44521d61b399a4}{%
@@ -1763,47 +1722,6 @@
       \verb /Users/salomebachmann/Zotero/storage/24SYMTUA/Edme et al. - 2023 - Fiber-optic detection of snow avalanches using telecommunication infrastructure.pdf;/Users/salomebachmann/Zotero/storage/9Z8DDA3Y/2302.html
       \endverb
       \keyw{Physics - Geophysics}
-    \endentry
-    \entry{freundDynamicFractureMechanics1998}{book}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=c246f840d0866c70501e884e906fd009}{%
-           family={Freund},
-           familyi={F\bibinitperiod},
-           given={L.\bibnamedelimi B.},
-           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8209a6be3f4820fabeda4fcf01a903f9}{%
-           family={Freud},
-           familyi={F\bibinitperiod},
-           given={L.\bibnamedelimi B.},
-           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{fullhash}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{fullhashraw}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{bibnamehash}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{authorbibnamehash}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{authornamehash}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{authorfullhash}{3f4b9581e2338d60f3e724dae58be0ab}
-      \strng{authorfullhashraw}{3f4b9581e2338d60f3e724dae58be0ab}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This volume emphasizes fundamental concepts, both on the development of mathematical models of fracture phenomena and on the analysis of these models. Cases involving stress waves impinging on cracks, tractions suddenly applied to the faces of cracks, and rapid crack growth and arrest are considered in detail. Most of the work is concerned with the behavior of nominally elastic materials, but available results on elastic-plastic and elastic-viscoplastic materials are included. Connections to experimental results and to applications in structural mechanics, seismology, and materials science are noted whenever possible.}
-      \field{isbn}{978-0-521-62922-5}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{title}{Dynamic {{Fracture Mechanics}}}
-      \field{year}{1998}
-      \keyw{Mathematics / Applied,Science / Mechanics / Fluids,Technology & Engineering / Fracture Mechanics,Technology & Engineering / Mechanical}
     \endentry
     \entry{gaumeDynamicAnticrackPropagation2018}{article}{}{}
       \name{author}{5}{}{%
