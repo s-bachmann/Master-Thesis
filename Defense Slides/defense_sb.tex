@@ -231,9 +231,11 @@
             % ffmpeg -i path/to/your.gif "../Wave Propagation GIFS/custom_sub_wavefield_2d_moving_vx_crack%d.png"
             % This will produce files named custom_sub_wavefield_2d_moving_vx_crack0.png ... 93.png
             % Then the following animategraphics call will include them in the PDF.
-            \animategraphics[loop,width=\linewidth]{10}{../Wave Propagation GIFS/custom_sub_wavefield_2d_moving_vx_crack}{0}{93}
+      \begin{minipage}[t]{0.48\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/custom_sub_wavefield_2d_moving_vx_crack.png}
             \vspace{0.5ex}
-            \small{Animation: velocity wavefield (left)}
+            \caption{Animation still for Sub-Rayleigh Vx}
         \end{minipage}\hfill
         \begin{minipage}[t]{0.48\linewidth}
             \centering
@@ -248,9 +250,9 @@
 \begin{frame}[allowframebreaks]{MPM-Guided Model: Lamb Wave Identification}
     \begin{itemize}
         \item Like in simple model: oscillatory wavefronts \rightarrow A0 mode
-       \animategraphics[loop,width=\linewidth]{10}{../Wave Propagation GIFS/mpm_wavefield_moving_vx.gif}{0}{93}
+       \includegraphics[width=\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/mpm_wavefield_2d_moving_vx_still.png}
             \vspace{0.5ex}
-            \small{Animation: velocity wavefield (left)}
+            \caption{Animation still for MPM Vx}
         \item F-k plots also show concentration of energy around A0 and S0 dispersion curves
         \item Polarity reversal around slab midplane in animation indicative of A0 
     \end{itemize}
