@@ -292,7 +292,7 @@
     };
 
     % Main branches
-    \node[process, text width=4.3cm, minimum height=1.45cm, align=left, font=\scriptsize] (leftbox) at (-3.0, -1.7) {
+    \node[process, text width=4.3cm, minimum height=1.45cm, align=left, font=\scriptsize] (leftbox) at (-3.0, -2.7) {
         \begin{itemize}
             \item \textbf{Sub-Rayleigh}
           \item Two Wavefronts
@@ -303,7 +303,7 @@
     };
    
 
-    \node[process, text width=4.3cm, minimum height=1.45cm, align=left, font=\scriptsize] (rightbox) at (3.0, -1.7) {
+    \node[process, text width=4.3cm, minimum height=1.45cm, align=left, font=\scriptsize] (rightbox) at (3.0, -2.7) {
         \begin{itemize}
         \item \textbf{Supershear}
           \item Single Wavefront
@@ -334,14 +334,14 @@
     \draw[arrow] (rootbranch) -| (rightbox.north);
 
     \coordinate (leftbranch) at (-3.0, -2.95);
-    \draw[thick, draw=ETHPetrol] (leftbox.south) -- (leftbranch);
-    \draw[arrow] (leftbranch) -| (left_leaf_1.north);
-    \draw[arrow] (leftbranch) -| (left_leaf_2.north);
+    % \draw[thick, draw=ETHPetrol] (leftbox.south) -- (leftbranch);
+    % \draw[arrow] (leftbranch) -| (left_leaf_1.north);
+    % \draw[arrow] (leftbranch) -| (left_leaf_2.north);
 
     \coordinate (rightbranch) at (3.0, -2.95);
-    \draw[thick, draw=ETHPetrol] (rightbox.south) -- (rightbranch);
-    \draw[arrow] (rightbranch) -| (right_leaf_1.north);
-    \draw[arrow] (rightbranch) -| (right_leaf_2.north);
+    % \draw[thick, draw=ETHPetrol] (rightbox.south) -- (rightbranch);
+    % \draw[arrow] (rightbranch) -| (right_leaf_1.north);
+    % \draw[arrow] (rightbranch) -| (right_leaf_2.north);
 
 \end{tikzpicture}%
 }
