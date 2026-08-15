@@ -115,30 +115,21 @@
 \begin{frame}[allowframebreaks]{Simple Model}
     \begin{figure}[H]
     \includegraphics[width = 0.8\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/domain_sketch.png}
-    \caption{Two-layer model setup in SALVUS. Colors show materials, material types and properties in legend. Source line extent in red.}
+    \caption{Two-layer model setup in SALVUS. Colors show materials, material types and properties in legend. Source line extent in red. Propagation speeds according to \cite{trottetTransitionSubRayleighAnticrack2022}.}
     \label{fig:simple_model}
     \end{figure}
-    \begin{itemize}
-        \item Set up to test custom STF in SALVUS, see physical effects on output
-        \item Sources spaced over 240m in 10cm intervals
-        \item 20Hz central frequency Ricker wavelet
-        \item Source Wavelet in xx (1), xy (1) and yy (-1) direction
-        \item Time delay of wavelet calculated based on propagation speed: sub-Rayleigh speed is $\ 0.6v_s$, Supershear $\ 1.6v_s$ \parencite{trottetTransitionSubRayleighAnticrack2022}
-    \end{itemize}
-    
-\end{frame}
-
-
-
-\begin{frame}{Output} % SIMPLIFY MAJORLY
-    \begin{itemize}
+      \begin{itemize}
         \item SALVUS Output: Displacement field u, used to simulate DAS using Pyber  library by \cite{noeFrontiersFullwaveformSeismology2025}
         \item $\frac{\partial u_i}{\partial t}$ $\rightarrow$ velocity in x and y
         \item $\frac{\partial u_i}{\partial j}$ $\rightarrow$ strain in x and y ($\epsilon$)
         \item $\frac{\partial^2 u_i}{\partial t \partial j}$ $\rightarrow$ strain rate ($\dot{\epsilon}$)
     \end{itemize}
+   
     
 \end{frame}
+
+
+
 
 \begin{frame}{Simple Sub-Rayleigh: Strain and Strain Rate}
     \begin{figure}[H]
