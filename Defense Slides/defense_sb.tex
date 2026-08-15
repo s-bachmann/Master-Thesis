@@ -129,8 +129,7 @@
     \item $\frac{\partial^2 u_i}{\partial t \partial j}$ $\rightarrow$ strain rate ($\dot{\epsilon}$)
 \end{itemize}
 \end{minipage}
-   
-    
+ 
 \end{frame}
 
 
@@ -160,6 +159,31 @@
     
 \end{frame}
 
+\begin{frame}[allowframebreaks]{Simple model: Lamb Wave Identification}
+    \begin{itemize}
+        \item Polarity oscillation in all plots: indicative of Lamb waves
+        \item Plotting dispersion curves over f-k spectra: energy is concentrated at symmetric (S0) and anitsymetric (A0) mode
+        \item Antisymmetric mode gets excited preferentially when source is applied normal to midplane of material \parencite{lambWavesElasticPlate1917,roseWavesPlates2014,achenbachWavePropagationElastic2012}, so in this case yy
+        \item Confirmed by animations of wavefield: 
+    \end{itemize}
+    \begin{figure}[H]
+        \centering
+        \begin{minipage}[t]{0.5\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/custom_sub_wavefield_2d_moving_vx_crack.jpg}
+            \vspace{0.5ex}
+            \caption{Animation still for Sub-Rayleigh Vx}
+        \end{minipage}\hfill
+        \begin{minipage}[t]{0.48\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/lamb_wave_modes.jpg}
+            \vspace{0.5ex}
+            \caption{Lamb wave modes intensity, taken from \cite{cartaLambWavesDiscrete2023}}
+        \end{minipage}
+    \end{figure}
+    
+\end{frame}
+
 \begin{frame}{Simple Supershear: Strain}
     \begin{figure}[H]
         \centering
@@ -185,30 +209,7 @@
 \end{frame}
 
 
-\begin{frame}[allowframebreaks]{Simple model: Lamb Wave Identification}
-    \begin{itemize}
-        \item Polarity oscillation in all plots: indicative of Lamb waves
-        \item Plotting dispersion curves over f-k spectra: energy is concentrated at symmetric (S0) and anitsymetric (A0) mode
-        \item Antisymmetric mode gets excited preferentially when source is applied normal to midplane of material \parencite{lambWavesElasticPlate1917,roseWavesPlates2014,achenbachWavePropagationElastic2012}, so in this case yy
-        \item Confirmed by animations of wavefield: 
-    \end{itemize}
-    \begin{figure}[H]
-        \centering
-        \begin{minipage}[t]{0.5\linewidth}
-            \centering
-            \includegraphics[width=\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/custom_sub_wavefield_2d_moving_vx_crack.jpg}
-            \vspace{0.5ex}
-            \caption{Animation still for Sub-Rayleigh Vx}
-        \end{minipage}\hfill
-        \begin{minipage}[t]{0.48\linewidth}
-            \centering
-            \includegraphics[width=\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/lamb_wave_modes.jpg}
-            \vspace{0.5ex}
-            \caption{Lamb wave modes intensity, taken from \cite{cartaLambWavesDiscrete2023}}
-        \end{minipage}
-    \end{figure}
-    
-\end{frame}
+
 
 \begin{frame}[allowframebreaks]{MPM-Guided Model}
   \begin{minipage}[t]{0.6\linewidth}
