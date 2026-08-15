@@ -135,7 +135,6 @@
 
 
 
-
 \begin{frame}{Simple Sub-Rayleigh: Strain}
     \begin{figure}[H]
         \centering
@@ -217,15 +216,20 @@
 \end{frame}
 
 \begin{frame}[allowframebreaks]{MPM-Guided Model}
-    \begin{figure}[H]
-    \includegraphics[width = 0.8\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/domain_sketch_mpm.png}
+  \begin{minipage}[t]{0.45\linewidth}
+\begin{figure}[H]
+    \includegraphics[width=\linewidth]{../thesis_salome_bachmann_from_particles_to_waves/figures/domain_sketch_mpm.png}
     \caption{Five-layer model setup in SALVUS. Colors show materials, material types and properties in legend. Source line extent in red.}
     \label{fig:mpm_model}
-    \end{figure}
-    \begin{itemize}
-        \item Source-time functions obtained from MPM-simulation of PST by \cite{trottetTransitionSubRayleighAnticrack2022}
-        \item Source Wavelet in all three directions, but irregular and different for every source point
-    \end{itemize}
+\end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\linewidth}
+\begin{itemize}
+    \item Source-time functions obtained from MPM-simulation of PST by \cite{trottetTransitionSubRayleighAnticrack2022}
+    \item Source Wavelet in all three directions, but irregular and different for every source point
+\end{itemize}
+\end{minipage}
 \end{frame}
 
 \begin{frame}{MPM-Guided: Strain and Strain Rate}
