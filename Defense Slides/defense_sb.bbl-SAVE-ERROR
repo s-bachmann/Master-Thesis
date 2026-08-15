@@ -112,51 +112,6 @@
       \verb /Users/salomebachmann/Zotero/storage/5YW7ER6Y/Aki and Richards - 1981 - K. Aki & P. G. Richards 1980. Quantitative Seismology, Theory and Methods. Volume I 557 pp., 169 il.pdf
       \endverb
     \endentry
-    \entry{archambeauGeneralTheoryElastodynamic1968}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=14835bffa52c8a6abde78e21ab2702e0}{%
-           family={Archambeau},
-           familyi={A\bibinitperiod},
-           given={Charles\bibnamedelima B.},
-           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{fullhash}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{fullhashraw}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{bibnamehash}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{authorbibnamehash}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{authornamehash}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{authorfullhash}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{authorfullhashraw}{14835bffa52c8a6abde78e21ab2702e0}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The most important and interesting source of elastic radiation in geophysics is an earthquake, or tectonic source, because the radiation field from such an energy source provides information on the largely unknown stress field within the earth. The actual mechanisms or processes of material failure undoubtedly can be described parametrically by the radiation field in terms of rupture velocity, rupture geometry, and the initial and residual stress within the region of failure. Accurate estimates of stress and the parameters of failure are therefore of particular significance in any description of the physical state of the material and would not be unrelated to the larger-scale dynamical processes taking place within the earth. A number of methods and theories are presently used in estimating some of these parameters. The present study is intended to extend the dynamical theory of tectonic sources in order to provide a more complete description of earthquakes in terms of these basic parameters of rupture, including prestress. No assumptions are made concerning the nature of equivalent forces at the source or of their time dependence. The theory predicts the spatial and temporal form of the radiation field in terms of the initial prestress field and the basic rupture parameters. These predictions follow from the recognition that an earthquake is a relaxation source and that such a phenomenon is described analytically as an initial-value problem. Consequently, such a source satisfies the conservation of energy and linear and angular momentum conditions required for a spontaneous source. The radiation field is produced by the continuous reduction of stored potential strain energy in the elastic medium surrounding a growing rupture zone, where it is assumed that the rupture, or at least a part of the total rupture zone, has a well-defined boundary at a given time to which boundary conditions are applicable. The compatibility of this geometrically sharp, time-varying boundary condition with probable failure processes in the earth is examined and judged to be good. Analytical expressions for the radiation field from an arbitrary source of elastic radiation are given, and within the framework of this formulation the properties of a spontaneous tectonic source are contrasted with `applied force' sources and their special properties, as well as with some of the field observations of earthquake radiation fields. These considerations demonstrate the need for a more general and complete description of tectonic sources in order to explain all the observations and, more fundamentally, to deduce more precisely the nature of the physical processes of failure in the earth. It is concluded that a relaxation theory will provide the flexibility required to describe the characteristics of the observed radiation field and will also provide estimates of rupture parameters bearing on the processes of failure and the state of the material. A complete development of the dynamical relaxation theory for tectonic sources, including considerations of the total energy release and the final equilibrium field, constitutes the main result of this study, providing explicit expressions for the dynamic and static displacement and energy fields. It is shown that the radiation field will generally have a frequency-dependent shape, dependent to first order on the ratio of rupture length to radiation wavelength. A relatively simple example is considered, and the radiation pattern and displacement and energy spectra computed. The radiation pattern is contrasted with the pattern from a more complicated rupture geometry and serves to demonstrate the pattern-shape dependence on frequency, rupture geometry, and prestress. The energy and displacement spectra are also found to have maxima and minima, the number being dependent on the rupture geometry and their location and spacing being dependent on rupture length and velocity.}
-      \field{issn}{1944-9208}
-      \field{journaltitle}{Reviews of Geophysics}
-      \field{langid}{english}
-      \field{number}{3}
-      \field{title}{General Theory of Elastodynamic Source Fields}
-      \field{urlday}{27}
-      \field{urlmonth}{7}
-      \field{urlyear}{2026}
-      \field{volume}{6}
-      \field{year}{1968}
-      \field{urldateera}{ce}
-      \field{pages}{241\bibrangedash 288}
-      \range{pages}{48}
-      \verb{doi}
-      \verb 10.1029/RG006i003p00241
-      \endverb
-      \verb{file}
-      \verb /Users/salomebachmann/Zotero/storage/5QJGBMB2/RG006i003p00241.html
-      \endverb
-    \endentry
     \entry{bergfeldSignaturesSubRayleighSupershear2025}{article}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=45cd7f65b6ceeddfce73beb6b18c5124}{%
@@ -443,80 +398,6 @@
       \verb /Users/salomebachmann/Zotero/storage/VZ7EZF64/Gaume et al. - 2015 - Modeling of crack propagation in weak snowpack layers using the discrete element method.pdf
       \endverb
     \endentry
-    \entry{gaumeDynamicAnticrackPropagation2018}{article}{}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=e772559f9d1c403eec44521d61b399a4}{%
-           family={Gaume},
-           familyi={G\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4747fee44f01c861cddd96b65fd98b7c}{%
-           family={Gast},
-           familyi={G\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c89ea0873d3ee8a41824e2e3fcf458ea}{%
-           family={Teran},
-           familyi={T\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4b00285ad021271e67874fa4fbd65472}{%
-           family={{van Herwijnen}},
-           familyi={v\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2a64771aee5f9d82f63ef7bf9159c3f7}{%
-           family={Jiang},
-           familyi={J\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
-      }
-      \strng{namehash}{b064550235e4e81f319bbf8f77522884}
-      \strng{fullhash}{dc9788698cae2c9b42ddbf83828e43a8}
-      \strng{fullhashraw}{dc9788698cae2c9b42ddbf83828e43a8}
-      \strng{bibnamehash}{dc9788698cae2c9b42ddbf83828e43a8}
-      \strng{authorbibnamehash}{dc9788698cae2c9b42ddbf83828e43a8}
-      \strng{authornamehash}{b064550235e4e81f319bbf8f77522884}
-      \strng{authorfullhash}{dc9788698cae2c9b42ddbf83828e43a8}
-      \strng{authorfullhashraw}{dc9788698cae2c9b42ddbf83828e43a8}
-      \field{extraname}{2}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Continuum numerical modeling of dynamic crack propagation has been a great challenge over the past decade. This is particularly the case for anticracks in porous materials, as reported in sedimentary rocks, deep earthquakes, landslides, and snow avalanches, as material inter-penetration further complicates the problem. Here, on the basis of a new elastoplasticity model for porous cohesive materials and a large strain hybrid Eulerian--Lagrangian numerical method, we accurately reproduced the onset and propagation dynamics of anticracks observed in snow fracture experiments. The key ingredient consists of a modified strain-softening plastic flow rule that captures the complexity of porous materials under mixed-mode loading accounting for the interplay between cohesion loss and volumetric collapse. Our unified model represents a significant step forward as it simulates solid-fluid phase transitions in geomaterials which is of paramount importance to mitigate and forecast gravitational hazards.}
-      \field{issn}{2041-1723}
-      \field{journaltitle}{Nature Communications}
-      \field{langid}{english}
-      \field{month}{8}
-      \field{number}{1}
-      \field{title}{Dynamic Anticrack Propagation in Snow}
-      \field{urlday}{4}
-      \field{urlmonth}{3}
-      \field{urlyear}{2026}
-      \field{volume}{9}
-      \field{year}{2018}
-      \field{urldateera}{ce}
-      \field{pages}{3047}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1038/s41467-018-05181-w
-      \endverb
-      \verb{file}
-      \verb /Users/salomebachmann/Zotero/storage/5HA7C8LY/Gaume et al. - 2018 - Dynamic anticrack propagation in snow.pdf
-      \endverb
-      \keyw{Applied mathematics,Mechanical engineering,Natural hazards}
-    \endentry
     \entry{gaumeSnowFractureRelation2017a}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=8901d3899aeca72b60d6f75e6122c45d}{%
@@ -561,7 +442,7 @@
       \strng{authornamehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
       \strng{authorfullhash}{3507f8435e03c0574550cd83c824584b}
       \strng{authorfullhashraw}{3507f8435e03c0574550cd83c824584b}
-      \field{extraname}{3}
+      \field{extraname}{2}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -589,116 +470,6 @@
       \endverb
       \verb{file}
       \verb /Users/salomebachmann/Zotero/storage/TJ6952VW/Gaume et al. - 2017 - Snow fracture in relation to slab avalanche release critical state for the onset of crack propagati.pdf
-      \endverb
-    \endentry
-    \entry{heierliAnticrackNucleationTriggering2008}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=46ae952760f3a1d78545ceb7cf954c64}{%
-           family={Heierli},
-           familyi={H\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=85e2a4ca6ebd2076b93ac4260f3e5a43}{%
-           family={Gumbsch},
-           familyi={G\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4f450477ded293f4e9bad6ed1b8793aa}{%
-           family={Zaiser},
-           familyi={Z\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {American Association for the Advancement of Science}%
-      }
-      \strng{namehash}{9b126ac5eb74154b5fbf45ace7c01dab}
-      \strng{fullhash}{45123664bc6ca8a14a9b0c30dd3c4751}
-      \strng{fullhashraw}{45123664bc6ca8a14a9b0c30dd3c4751}
-      \strng{bibnamehash}{45123664bc6ca8a14a9b0c30dd3c4751}
-      \strng{authorbibnamehash}{45123664bc6ca8a14a9b0c30dd3c4751}
-      \strng{authornamehash}{9b126ac5eb74154b5fbf45ace7c01dab}
-      \strng{authorfullhash}{45123664bc6ca8a14a9b0c30dd3c4751}
-      \strng{authorfullhashraw}{45123664bc6ca8a14a9b0c30dd3c4751}
-      \field{extraname}{1}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Snow slab avalanches are believed to begin by the gravity-driven shear failure of weak layers in stratified snow. The critical crack length for shear crack propagation along such layers should increase without bound as the slope decreases. However, recent experiments show that the critical length of artificially introduced cracks remains constant or, if anything, slightly decreases with decreasing slope. This surprising observation can be understood in terms of volumetric collapse of the weak layer during failure, resulting in the formation and propagation of mixed-mode anticracks, which are driven simultaneously by slope-parallel and slope-normal components of gravity. Such fractures may propagate even if crack-face friction impedes downhill sliding of the snowpack, indicating a scenario in which two separate conditions have to be met for slab avalanche release.}
-      \field{journaltitle}{Science}
-      \field{month}{7}
-      \field{number}{5886}
-      \field{title}{Anticrack {{Nucleation}} as {{Triggering Mechanism}} for {{Snow Slab Avalanches}}}
-      \field{urlday}{16}
-      \field{urlmonth}{3}
-      \field{urlyear}{2026}
-      \field{volume}{321}
-      \field{year}{2008}
-      \field{urldateera}{ce}
-      \field{pages}{240\bibrangedash 243}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1126/science.1153948
-      \endverb
-      \verb{file}
-      \verb /Users/salomebachmann/Zotero/storage/3B4R8NU5/Heierli et al. - 2008 - Anticrack Nucleation as Triggering Mechanism for Snow Slab Avalanches.pdf
-      \endverb
-    \endentry
-    \entry{heierliAnticracksNewTheory2003}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=fee106f2ba31f0bc04711e8a84258cc5}{%
-           family={Heierli},
-           familyi={H\bibinitperiod},
-           given={Joachim},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
-           family={{van Herwijnen}},
-           familyi={v\bibinitperiod},
-           given={Alec},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=85e2a4ca6ebd2076b93ac4260f3e5a43}{%
-           family={Gumbsch},
-           familyi={G\bibinitperiod},
-           given={P},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=42a9d3f2abfc30a0daf5677cf3a50caf}{%
-           family={Zaiser},
-           familyi={Z\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{f965ee3127f3f32081614e4a1501dba0}
-      \strng{fullhash}{081f8a73a0d735feaa3683562a46986d}
-      \strng{fullhashraw}{081f8a73a0d735feaa3683562a46986d}
-      \strng{bibnamehash}{081f8a73a0d735feaa3683562a46986d}
-      \strng{authorbibnamehash}{081f8a73a0d735feaa3683562a46986d}
-      \strng{authornamehash}{f965ee3127f3f32081614e4a1501dba0}
-      \strng{authorfullhash}{081f8a73a0d735feaa3683562a46986d}
-      \strng{authorfullhashraw}{081f8a73a0d735feaa3683562a46986d}
-      \field{extraname}{2}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Shear failure models have traditionally dominated the research on slab avalanche initiation in snow science, but evidence has accumulated that they tell us only part of the story. In these models weak snowpack layers are regarded as compounds of zero thickness, but in reality they often consist of ice grain aggregates of finite thickness and high porosity. When such granular aggregates fail, the remaining fragments can rearrange in a tighter packing and the weak layer undergoes a reduction in volume. This compaction has fundamental consequences for understanding slab avalanche release. We present a new theory of fracture initiation and propagation in weak layers, based on the mathematical concept of mixed-mode anticracks. Energy criteria for crack propagation and skier triggering are obtained from the theory. Initiation and propagation of anticrack-mediated fracture are illustrated on field measurements.}
-      \field{month}{5}
-      \field{shorttitle}{Anticracks}
-      \field{title}{Anticracks: A New Theory of Fracture Initiation and Fracture Propagation in Snow}
-      \field{year}{2003}
-      \verb{file}
-      \verb /Users/salomebachmann/Zotero/storage/B389RKSQ/Heierli et al. - 2003 - Anticracks a new theory of fracture initiation and fracture propagation in snow.pdf
       \endverb
     \endentry
     \entry{herwijnenSeismicSensorArray2011}{article}{}{}
@@ -1320,54 +1091,6 @@
       \endverb
       \verb{file}
       \verb /Users/salomebachmann/Zotero/storage/7MCTF844/EBFAA4EC2C5973D0672A70525E31B16E.html
-      \endverb
-    \endentry
-    \entry{zhuNoteDynamicStatic2002}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=b481cb2962c811f1db6f03e5026b2122}{%
-           family={Zhu},
-           familyi={Z\bibinitperiod},
-           given={Lupei},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=30df23feea612cb1dd50ddd0f0b0b48d}{%
-           family={Rivera},
-           familyi={R\bibinitperiod},
-           given={Luis\bibnamedelima A.},
-           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{fullhash}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{fullhashraw}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{bibnamehash}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{authorbibnamehash}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{authornamehash}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{authorfullhash}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{authorfullhashraw}{aebd55816e5d95a7bcd5a136005d7082}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{A simple and unified approach is presented to solve both the elasto-dynamic and elasto-static problems of point sources in a multi-layered half-space by using the Thompson-Haskell propagator matrix technique. It is shown that the apparent incompatibility between the two is associated with the degeneracy of the dynamic problem when {$\omega$} = 0 and both can be handled uniformly using the Jordan canonical forms of matrices. We re-derive the propagator matrices for both the dynamic and static cases. We then show that the dynamic propagator matrix and the solution converge to their static counterparts as {$\omega$} {$\rightarrow$} 0. Satisfactory static deformation can be obtained numerically using the dynamic solution at near-zero frequency.}
-      \field{issn}{0956-540X}
-      \field{journaltitle}{Geophysical Journal International}
-      \field{month}{3}
-      \field{number}{3}
-      \field{title}{A Note on the Dynamic and Static Displacements from a Point Source in Multilayered Media}
-      \field{urlday}{27}
-      \field{urlmonth}{7}
-      \field{urlyear}{2026}
-      \field{volume}{148}
-      \field{year}{2002}
-      \field{urldateera}{ce}
-      \field{pages}{619\bibrangedash 627}
-      \range{pages}{9}
-      \verb{doi}
-      \verb 10.1046/j.1365-246X.2002.01610.x
       \endverb
     \endentry
   \enddatalist
@@ -1465,51 +1188,6 @@
       \verb /Users/salomebachmann/Zotero/storage/5YW7ER6Y/Aki and Richards - 1981 - K. Aki & P. G. Richards 1980. Quantitative Seismology, Theory and Methods. Volume I 557 pp., 169 il.pdf
       \endverb
     \endentry
-    \entry{archambeauGeneralTheoryElastodynamic1968}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=14835bffa52c8a6abde78e21ab2702e0}{%
-           family={Archambeau},
-           familyi={A\bibinitperiod},
-           given={Charles\bibnamedelima B.},
-           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{fullhash}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{fullhashraw}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{bibnamehash}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{authorbibnamehash}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{authornamehash}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{authorfullhash}{14835bffa52c8a6abde78e21ab2702e0}
-      \strng{authorfullhashraw}{14835bffa52c8a6abde78e21ab2702e0}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The most important and interesting source of elastic radiation in geophysics is an earthquake, or tectonic source, because the radiation field from such an energy source provides information on the largely unknown stress field within the earth. The actual mechanisms or processes of material failure undoubtedly can be described parametrically by the radiation field in terms of rupture velocity, rupture geometry, and the initial and residual stress within the region of failure. Accurate estimates of stress and the parameters of failure are therefore of particular significance in any description of the physical state of the material and would not be unrelated to the larger-scale dynamical processes taking place within the earth. A number of methods and theories are presently used in estimating some of these parameters. The present study is intended to extend the dynamical theory of tectonic sources in order to provide a more complete description of earthquakes in terms of these basic parameters of rupture, including prestress. No assumptions are made concerning the nature of equivalent forces at the source or of their time dependence. The theory predicts the spatial and temporal form of the radiation field in terms of the initial prestress field and the basic rupture parameters. These predictions follow from the recognition that an earthquake is a relaxation source and that such a phenomenon is described analytically as an initial-value problem. Consequently, such a source satisfies the conservation of energy and linear and angular momentum conditions required for a spontaneous source. The radiation field is produced by the continuous reduction of stored potential strain energy in the elastic medium surrounding a growing rupture zone, where it is assumed that the rupture, or at least a part of the total rupture zone, has a well-defined boundary at a given time to which boundary conditions are applicable. The compatibility of this geometrically sharp, time-varying boundary condition with probable failure processes in the earth is examined and judged to be good. Analytical expressions for the radiation field from an arbitrary source of elastic radiation are given, and within the framework of this formulation the properties of a spontaneous tectonic source are contrasted with `applied force' sources and their special properties, as well as with some of the field observations of earthquake radiation fields. These considerations demonstrate the need for a more general and complete description of tectonic sources in order to explain all the observations and, more fundamentally, to deduce more precisely the nature of the physical processes of failure in the earth. It is concluded that a relaxation theory will provide the flexibility required to describe the characteristics of the observed radiation field and will also provide estimates of rupture parameters bearing on the processes of failure and the state of the material. A complete development of the dynamical relaxation theory for tectonic sources, including considerations of the total energy release and the final equilibrium field, constitutes the main result of this study, providing explicit expressions for the dynamic and static displacement and energy fields. It is shown that the radiation field will generally have a frequency-dependent shape, dependent to first order on the ratio of rupture length to radiation wavelength. A relatively simple example is considered, and the radiation pattern and displacement and energy spectra computed. The radiation pattern is contrasted with the pattern from a more complicated rupture geometry and serves to demonstrate the pattern-shape dependence on frequency, rupture geometry, and prestress. The energy and displacement spectra are also found to have maxima and minima, the number being dependent on the rupture geometry and their location and spacing being dependent on rupture length and velocity.}
-      \field{issn}{1944-9208}
-      \field{journaltitle}{Reviews of Geophysics}
-      \field{langid}{english}
-      \field{number}{3}
-      \field{title}{General Theory of Elastodynamic Source Fields}
-      \field{urlday}{27}
-      \field{urlmonth}{7}
-      \field{urlyear}{2026}
-      \field{volume}{6}
-      \field{year}{1968}
-      \field{urldateera}{ce}
-      \field{pages}{241\bibrangedash 288}
-      \range{pages}{48}
-      \verb{doi}
-      \verb 10.1029/RG006i003p00241
-      \endverb
-      \verb{file}
-      \verb /Users/salomebachmann/Zotero/storage/5QJGBMB2/RG006i003p00241.html
-      \endverb
-    \endentry
     \entry{bergfeldSignaturesSubRayleighSupershear2025}{article}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=45cd7f65b6ceeddfce73beb6b18c5124}{%
@@ -1723,80 +1401,6 @@
       \endverb
       \keyw{Physics - Geophysics}
     \endentry
-    \entry{gaumeDynamicAnticrackPropagation2018}{article}{}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=e772559f9d1c403eec44521d61b399a4}{%
-           family={Gaume},
-           familyi={G\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4747fee44f01c861cddd96b65fd98b7c}{%
-           family={Gast},
-           familyi={G\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c89ea0873d3ee8a41824e2e3fcf458ea}{%
-           family={Teran},
-           familyi={T\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4b00285ad021271e67874fa4fbd65472}{%
-           family={{van Herwijnen}},
-           familyi={v\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2a64771aee5f9d82f63ef7bf9159c3f7}{%
-           family={Jiang},
-           familyi={J\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
-      }
-      \strng{namehash}{b064550235e4e81f319bbf8f77522884}
-      \strng{fullhash}{dc9788698cae2c9b42ddbf83828e43a8}
-      \strng{fullhashraw}{dc9788698cae2c9b42ddbf83828e43a8}
-      \strng{bibnamehash}{dc9788698cae2c9b42ddbf83828e43a8}
-      \strng{authorbibnamehash}{dc9788698cae2c9b42ddbf83828e43a8}
-      \strng{authornamehash}{b064550235e4e81f319bbf8f77522884}
-      \strng{authorfullhash}{dc9788698cae2c9b42ddbf83828e43a8}
-      \strng{authorfullhashraw}{dc9788698cae2c9b42ddbf83828e43a8}
-      \field{extraname}{1}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Continuum numerical modeling of dynamic crack propagation has been a great challenge over the past decade. This is particularly the case for anticracks in porous materials, as reported in sedimentary rocks, deep earthquakes, landslides, and snow avalanches, as material inter-penetration further complicates the problem. Here, on the basis of a new elastoplasticity model for porous cohesive materials and a large strain hybrid Eulerian--Lagrangian numerical method, we accurately reproduced the onset and propagation dynamics of anticracks observed in snow fracture experiments. The key ingredient consists of a modified strain-softening plastic flow rule that captures the complexity of porous materials under mixed-mode loading accounting for the interplay between cohesion loss and volumetric collapse. Our unified model represents a significant step forward as it simulates solid-fluid phase transitions in geomaterials which is of paramount importance to mitigate and forecast gravitational hazards.}
-      \field{issn}{2041-1723}
-      \field{journaltitle}{Nature Communications}
-      \field{langid}{english}
-      \field{month}{8}
-      \field{number}{1}
-      \field{title}{Dynamic Anticrack Propagation in Snow}
-      \field{urlday}{4}
-      \field{urlmonth}{3}
-      \field{urlyear}{2026}
-      \field{volume}{9}
-      \field{year}{2018}
-      \field{urldateera}{ce}
-      \field{pages}{3047}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1038/s41467-018-05181-w
-      \endverb
-      \verb{file}
-      \verb /Users/salomebachmann/Zotero/storage/5HA7C8LY/Gaume et al. - 2018 - Dynamic anticrack propagation in snow.pdf
-      \endverb
-      \keyw{Applied mathematics,Mechanical engineering,Natural hazards}
-    \endentry
     \entry{gaumeModelingCrackPropagation2015}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=e772559f9d1c403eec44521d61b399a4}{%
@@ -1841,7 +1445,7 @@
       \strng{authornamehash}{b064550235e4e81f319bbf8f77522884}
       \strng{authorfullhash}{a077172f1e0786d0af96cf9266b4889f}
       \strng{authorfullhashraw}{a077172f1e0786d0af96cf9266b4889f}
-      \field{extraname}{2}
+      \field{extraname}{1}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -1914,7 +1518,7 @@
       \strng{authornamehash}{868ee8cc1b9a02e3b03a3b80be96ed30}
       \strng{authorfullhash}{3507f8435e03c0574550cd83c824584b}
       \strng{authorfullhashraw}{3507f8435e03c0574550cd83c824584b}
-      \field{extraname}{3}
+      \field{extraname}{2}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -1942,116 +1546,6 @@
       \endverb
       \verb{file}
       \verb /Users/salomebachmann/Zotero/storage/TJ6952VW/Gaume et al. - 2017 - Snow fracture in relation to slab avalanche release critical state for the onset of crack propagati.pdf
-      \endverb
-    \endentry
-    \entry{heierliAnticrackNucleationTriggering2008}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=46ae952760f3a1d78545ceb7cf954c64}{%
-           family={Heierli},
-           familyi={H\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=85e2a4ca6ebd2076b93ac4260f3e5a43}{%
-           family={Gumbsch},
-           familyi={G\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4f450477ded293f4e9bad6ed1b8793aa}{%
-           family={Zaiser},
-           familyi={Z\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {American Association for the Advancement of Science}%
-      }
-      \strng{namehash}{9b126ac5eb74154b5fbf45ace7c01dab}
-      \strng{fullhash}{45123664bc6ca8a14a9b0c30dd3c4751}
-      \strng{fullhashraw}{45123664bc6ca8a14a9b0c30dd3c4751}
-      \strng{bibnamehash}{45123664bc6ca8a14a9b0c30dd3c4751}
-      \strng{authorbibnamehash}{45123664bc6ca8a14a9b0c30dd3c4751}
-      \strng{authornamehash}{9b126ac5eb74154b5fbf45ace7c01dab}
-      \strng{authorfullhash}{45123664bc6ca8a14a9b0c30dd3c4751}
-      \strng{authorfullhashraw}{45123664bc6ca8a14a9b0c30dd3c4751}
-      \field{extraname}{1}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Snow slab avalanches are believed to begin by the gravity-driven shear failure of weak layers in stratified snow. The critical crack length for shear crack propagation along such layers should increase without bound as the slope decreases. However, recent experiments show that the critical length of artificially introduced cracks remains constant or, if anything, slightly decreases with decreasing slope. This surprising observation can be understood in terms of volumetric collapse of the weak layer during failure, resulting in the formation and propagation of mixed-mode anticracks, which are driven simultaneously by slope-parallel and slope-normal components of gravity. Such fractures may propagate even if crack-face friction impedes downhill sliding of the snowpack, indicating a scenario in which two separate conditions have to be met for slab avalanche release.}
-      \field{journaltitle}{Science}
-      \field{month}{7}
-      \field{number}{5886}
-      \field{title}{Anticrack {{Nucleation}} as {{Triggering Mechanism}} for {{Snow Slab Avalanches}}}
-      \field{urlday}{16}
-      \field{urlmonth}{3}
-      \field{urlyear}{2026}
-      \field{volume}{321}
-      \field{year}{2008}
-      \field{urldateera}{ce}
-      \field{pages}{240\bibrangedash 243}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1126/science.1153948
-      \endverb
-      \verb{file}
-      \verb /Users/salomebachmann/Zotero/storage/3B4R8NU5/Heierli et al. - 2008 - Anticrack Nucleation as Triggering Mechanism for Snow Slab Avalanches.pdf
-      \endverb
-    \endentry
-    \entry{heierliAnticracksNewTheory2003}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=fee106f2ba31f0bc04711e8a84258cc5}{%
-           family={Heierli},
-           familyi={H\bibinitperiod},
-           given={Joachim},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=369edbc5369bd52ce386f6f0c63db112}{%
-           family={{van Herwijnen}},
-           familyi={v\bibinitperiod},
-           given={Alec},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=85e2a4ca6ebd2076b93ac4260f3e5a43}{%
-           family={Gumbsch},
-           familyi={G\bibinitperiod},
-           given={P},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=42a9d3f2abfc30a0daf5677cf3a50caf}{%
-           family={Zaiser},
-           familyi={Z\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{f965ee3127f3f32081614e4a1501dba0}
-      \strng{fullhash}{081f8a73a0d735feaa3683562a46986d}
-      \strng{fullhashraw}{081f8a73a0d735feaa3683562a46986d}
-      \strng{bibnamehash}{081f8a73a0d735feaa3683562a46986d}
-      \strng{authorbibnamehash}{081f8a73a0d735feaa3683562a46986d}
-      \strng{authornamehash}{f965ee3127f3f32081614e4a1501dba0}
-      \strng{authorfullhash}{081f8a73a0d735feaa3683562a46986d}
-      \strng{authorfullhashraw}{081f8a73a0d735feaa3683562a46986d}
-      \field{extraname}{2}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Shear failure models have traditionally dominated the research on slab avalanche initiation in snow science, but evidence has accumulated that they tell us only part of the story. In these models weak snowpack layers are regarded as compounds of zero thickness, but in reality they often consist of ice grain aggregates of finite thickness and high porosity. When such granular aggregates fail, the remaining fragments can rearrange in a tighter packing and the weak layer undergoes a reduction in volume. This compaction has fundamental consequences for understanding slab avalanche release. We present a new theory of fracture initiation and propagation in weak layers, based on the mathematical concept of mixed-mode anticracks. Energy criteria for crack propagation and skier triggering are obtained from the theory. Initiation and propagation of anticrack-mediated fracture are illustrated on field measurements.}
-      \field{month}{5}
-      \field{shorttitle}{Anticracks}
-      \field{title}{Anticracks: A New Theory of Fracture Initiation and Fracture Propagation in Snow}
-      \field{year}{2003}
-      \verb{file}
-      \verb /Users/salomebachmann/Zotero/storage/B389RKSQ/Heierli et al. - 2003 - Anticracks a new theory of fracture initiation and fracture propagation in snow.pdf
       \endverb
     \endentry
     \entry{herwijnenSeismicSensorArray2011}{article}{}{}
@@ -2673,54 +2167,6 @@
       \endverb
       \verb{file}
       \verb /Users/salomebachmann/Zotero/storage/7MCTF844/EBFAA4EC2C5973D0672A70525E31B16E.html
-      \endverb
-    \endentry
-    \entry{zhuNoteDynamicStatic2002}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=b481cb2962c811f1db6f03e5026b2122}{%
-           family={Zhu},
-           familyi={Z\bibinitperiod},
-           given={Lupei},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=30df23feea612cb1dd50ddd0f0b0b48d}{%
-           family={Rivera},
-           familyi={R\bibinitperiod},
-           given={Luis\bibnamedelima A.},
-           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{fullhash}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{fullhashraw}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{bibnamehash}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{authorbibnamehash}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{authornamehash}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{authorfullhash}{aebd55816e5d95a7bcd5a136005d7082}
-      \strng{authorfullhashraw}{aebd55816e5d95a7bcd5a136005d7082}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{A simple and unified approach is presented to solve both the elasto-dynamic and elasto-static problems of point sources in a multi-layered half-space by using the Thompson-Haskell propagator matrix technique. It is shown that the apparent incompatibility between the two is associated with the degeneracy of the dynamic problem when {$\omega$} = 0 and both can be handled uniformly using the Jordan canonical forms of matrices. We re-derive the propagator matrices for both the dynamic and static cases. We then show that the dynamic propagator matrix and the solution converge to their static counterparts as {$\omega$} {$\rightarrow$} 0. Satisfactory static deformation can be obtained numerically using the dynamic solution at near-zero frequency.}
-      \field{issn}{0956-540X}
-      \field{journaltitle}{Geophysical Journal International}
-      \field{month}{3}
-      \field{number}{3}
-      \field{title}{A Note on the Dynamic and Static Displacements from a Point Source in Multilayered Media}
-      \field{urlday}{27}
-      \field{urlmonth}{7}
-      \field{urlyear}{2026}
-      \field{volume}{148}
-      \field{year}{2002}
-      \field{urldateera}{ce}
-      \field{pages}{619\bibrangedash 627}
-      \range{pages}{9}
-      \verb{doi}
-      \verb 10.1046/j.1365-246X.2002.01610.x
       \endverb
     \endentry
   \enddatalist
